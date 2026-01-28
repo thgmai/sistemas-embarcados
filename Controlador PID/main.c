@@ -1,118 +1,142 @@
-/**
- * @note    Implementa um controlador PID
+/** ***************************************************************************
+ * @file    main.c
+ * @brief   Implementação de um controlador PID em sistema embarcado
+ *
+ * @details
+ * O controle é executado em tempo discreto utilizando um kernel cooperativo
+ * orientado a tempo (time-triggered). O SysTick gera a base de tempo de 1 ms,
+ * enquanto as tarefas são despachadas no contexto não-interruptivo.
  *
  * @author  Thiago Henrique Genaio Mai
  * @date    11/12/2025
  */
- 
+
 #include <stdint.h>
+
 /*
- * Including this file, it is possible to define which processor using command line
- * E.g. -DEFM32GG995F1024
- * The alternative is to include the processor specific file directly
- * #include "efm32gg995f1024.h"
+ * By including this file, it is possible to define the target processor
+ * via command line, e.g. -DEFM32GG995F1024.
+ * Alternatively, the processor-specific header may be included directly:
+ *   #include "efm32gg995f1024.h"
  */
 #include "em_device.h"
 #include "clock_efm32gg.h"
-#include "timers.h"
+#include "tt_tasks.h"
 #include "control.h"
 
-#define SYSTICKDIVIDER 1000
+/* SysTick frequency: 1 kHz (1 ms) */
+#define DIVIDER 1000
 
-/*****************************************************************************
+/** ***************************************************************************
  * @brief  SysTick interrupt handler
  *
- * @note   Called every 1/DIVIDER seconds (1 ms)
+ * @details
+ * This is the only interrupt service routine in the system.
+ * It provides the time base for the cooperative kernel by calling
+ * Task_Update(), which increments internal task counters.
+ *
+ * @note   Executed every 1 ms
  */
-
 void SysTick_Handler(void) {
+    Task_Update();
+}
 
-    static int8_t state = idle;            // Deve ser estático
+/** ***************************************************************************
+ * @brief  Control state machine
+ *
+ * @details
+ * Implements the control loop as a finite state machine. The controller
+ * advances one state at a time and only executes a full control cycle
+ * when a sampling event (refresh_tick) is generated.
+ *
+ * All states are executed in non-interrupt context.
+ */
+void stateMachine(void) {
+
+    /* Current state of the control state machine */
+    static State state = idle;
 
     switch(state) {
 
         case idle:
-
-            // Espera o tick do timer de amostragem
-
-            if(refresh_tick) {
-                state = read_inputs;
+            /* Wait for the sampling timer event */
+            if (refresh_tick) {
                 refresh_tick = 0;
+                state = read_inputs;
             }
-
             break;
 
         case read_inputs:
-
-            // Lê as entradas
-
+            /* Read setpoint and process variable */
             sp = readSetpoint();
             pv = readProcessVariable();
-
             state = process;
-
             break;
 
         case process:
-
-            // Calcula o sinal de controle
-
+            /* Compute PID control signal */
             cv = controlSignalPID(sp, pv, gain);
-
             state = write_outputs;
-
             break;
 
         case write_outputs:
-
-            // Atualiza as saídas
-
+            /* Update control output and status indicator */
             writeControlVariable(cv);
 
-            if(steadyState()) {
-                writeLED(1);
-            }
-            else {
-                writeLED(0);
-            }
+            /* Indicate steady-state condition via LED */
+            writeLED(steadyState());
 
             state = idle;
-
             break;
-        }
-
-        Timers_dispatch();          // Temporizador de amostragem (100 ms)
+    }
 }
 
+/** ***************************************************************************
+ * @brief  Sampling timer callback
+ *
+ * @details
+ * This function is executed periodically by the task kernel and signals
+ * the control state machine that a new sampling period has elapsed.
+ */
 void sampleTimer(void) {
     refresh_tick = 1;
 }
 
-/*****************************************************************************
+/** ***************************************************************************
  * @brief  Main function
  *
- * @note   Using default clock configuration
- *         HFCLK = HFRCO
- *         HFCORECLK = HFCLK
- *         HFPERCLK  = HFCLK
+ * @details
+ * Initializes the system clock, peripherals, task kernel and control
+ * parameters. After initialization, the system runs indefinitely
+ * executing scheduled tasks in a cooperative manner.
  */
-
 int main(void) {
 
-
-    // Set clock source to external crystal: 48 MHz
+    /* Set system clock source to external crystal: 48 MHz */
     (void) SystemCoreClockSet(CLOCK_HFXO, 1, 1);
 
-    
-    /* Configure Pins in GPIOE */
+    /* Initialize controller I/O pins */
     controllerInit(SP, PV, CV, LED);
 
-    /* Configure SysTick */
-    SysTick_Config(SystemCoreClock/SYSTICKDIVIDER);
+    /* Configure SysTick to generate a 1 ms time base */
+    SysTick_Config(SystemCoreClock / DIVIDER);
 
-    Timers_add(TS, sampleTimer);
+    /* Initialize cooperative task kernel */
+    Task_Init();
+    Task_Add(sampleTimer, TS, 0);      /* Sampling timer task */
+    Task_Add(stateMachine, 1, 0);      /* Control state machine */
 
-    /* Main loop */
-    while (1) {}
+    /* Define PID gains */
+    gain.kp = 2.0;
+    gain.ki = 10.0;
+    gain.kd = 0.0;
+    gain.td = 0.0;
 
+    /* Explicit initialization of sampling event flag */
+    refresh_tick = 0;
+
+    /* Main loop: dispatch ready tasks */
+    while (1) {
+        Task_Dispatch();
+    }
 }

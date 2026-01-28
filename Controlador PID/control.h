@@ -1,120 +1,127 @@
 #ifndef CONTROL_H
 #define CONTROL_H
 
-// Cabeçalhos padrão incluídos:
+/** ***************************************************************************
+ * @file    control.h
+ * @brief   PID control module interface
+ *
+ * @details
+ * This file defines constants, data types, global variables and function
+ * prototypes related to the PID controller and its control state machine.
+ */
 
 #include <stdint.h>
 #include <stdbool.h>
 
-// Constantes:
+/* ************************************************************************** */
+/* Constants                                                                  */
+/* ************************************************************************** */
 
-#define TS 100                          // Tempo de amostragem em ms
-#define CV_MAX 3.3                      // Tensão máxima do sinal de controle em V
-#define CV_MIN 0.0                      // Tensão mínima do sinal de controle em V
-#define INTEGRAL_MAX 3.3                // Limite superior do termo integral (anti-windup)
-#define INTEGRAL_MIN 0.0                // Limite inferior do termo integral (anti-windup)
-#define SS_ERROR_EPS 0.05               // Critério de regime permanente
+#define TS              100     /* Sampling time in milliseconds */
+#define CV_MAX          3.3     /* Maximum control signal voltage (V) */
+#define CV_MIN          0.0     /* Minimum control signal voltage (V) */
+#define INTEGRAL_MAX    3.3     /* Integral term upper limit (anti-windup) */
+#define INTEGRAL_MIN    0.0     /* Integral term lower limit (anti-windup) */
+#define SS_ERROR_EPS    0.05    /* Steady-state error threshold */
 
+/* ************************************************************************** */
+/* Types                                                                      */
+/* ************************************************************************** */
 
-// Tipos:
-
+/** ***************************************************************************
+ * @brief PID controller gains
+ */
 typedef struct gain_pid {
 
-    // Ganhos do controlador PID
-
-    double kp;
-    double ki;
-    double kd;
-    double td;
+    double kp;   /* Proportional gain */
+    double ki;   /* Integral gain */
+    double kd;   /* Derivative gain */
+    double td;   /* Derivative filter parameter */
 
 } Gain;
 
-typedef struct error {
-
-    // Sinal de erro do controlador
-
-    double e;
-    double e_prev;
-
-} Error;
-
+/** ***************************************************************************
+ * @brief Control state machine states
+ */
 typedef enum state {
 
-    // Estados da máquina de estados do controlador
-
-    idle = 0,
-    read_inputs,
-    process,
-    write_outputs
+    idle = 0,        /* Idle state: waiting for sampling event */
+    read_inputs,     /* Input acquisition (SP and PV) */
+    process,         /* Control signal computation */
+    write_outputs    /* Output update */
 
 } State;
 
-// Variáveis globais (definidas em outro módulo)
+/* ************************************************************************** */
+/* Global variables                                                           */
+/* ************************************************************************** */
 
-extern volatile uint8_t refresh_tick;
+extern volatile uint8_t refresh_tick;   /* Sampling event flag */
 
-extern double sp;      // Setpoint
-extern double pv;      // Process Variable
-extern double cv;      // Control Variable
+extern double sp;   /* Setpoint */
+extern double pv;   /* Process variable */
+extern double cv;   /* Control variable */
 
-extern Gain gain;      // Ganho PID
+extern Gain gain;   /* PID gain structure */
 
-// Funções:
+/* ************************************************************************** */
+/* Function prototypes                                                        */
+/* ************************************************************************** */
 
-/**
- * @brief Inicializa o controlador e os periféricos associados
+/** ***************************************************************************
+ * @brief Initializes the controller and associated peripherals
  *
- * @param sp_pin   Pino de leitura do setpoint
- * @param pv_pin   Pino de leitura da variável de processo
- * @param cv_pin   Pino de saída do sinal de controle
- * @param led_pin  Pino do LED de indicação
+ * @param sp_pin   Setpoint input pin
+ * @param pv_pin   Process variable input pin
+ * @param cv_pin   Control signal output pin
+ * @param led_pin  Status LED pin
  */
 void controllerInit(uint8_t sp_pin, uint8_t pv_pin, uint8_t cv_pin, uint8_t led_pin);
 
-/**
- * @brief Lê o valor atual do setpoint
+/** ***************************************************************************
+ * @brief Reads the current setpoint value
  *
- * @return Setpoint em unidades físicas
+ * @return Setpoint in physical units
  */
 double readSetpoint(void);
 
-/**
- * @brief Lê a variável de processo
+/** ***************************************************************************
+ * @brief Reads the current process variable
  *
- * @return Variável de processo em unidades físicas
+ * @return Process variable in physical units
  */
 double readProcessVariable(void);
 
-/**
- * @brief Calcula o sinal de controle PID
+/** ***************************************************************************
+ * @brief Computes the PID control signal
  *
  * @param sp    Setpoint
- * @param pv    Variável de processo
- * @param gain  Estrutura com ganhos do PID
+ * @param pv    Process variable
+ * @param gain  PID gain structure
  *
- * @return Sinal de controle limitado entre CV_MIN e CV_MAX
+ * @return Control signal limited between CV_MIN and CV_MAX
  */
 double controlSignalPID(double sp, double pv, Gain gain);
 
-/**
- * @brief Verifica se o sistema atingiu regime permanente
+/** ***************************************************************************
+ * @brief Checks whether the system has reached steady state
  *
- * @return true se estiver em regime permanente, false caso contrário
+ * @return true if the system is in steady state, false otherwise
  */
 bool steadyState(void);
 
-/**
- * @brief Escreve o sinal de controle na saída
+/** ***************************************************************************
+ * @brief Writes the control signal to the output
  *
- * @param cv Sinal de controle
+ * @param cv Control signal
  */
 void writeControlVariable(double cv);
 
-/**
- * @brief Acende ou apaga o LED de indicação
+/** ***************************************************************************
+ * @brief Controls the status LED
  *
- * @param state 1 para ligar, 0 para desligar
+ * @param state 1 to turn on, 0 to turn off
  */
 void writeLED(uint8_t state);
 
-#endif // CONTROL_H
+#endif /* CONTROL_H */
