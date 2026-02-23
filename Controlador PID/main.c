@@ -1,4 +1,4 @@
-/** ***************************************************************************
+/* ***************************************************************************
  * @file    main.c
  * @brief   Implementação de um controlador PID em sistema embarcado
  *
@@ -9,16 +9,16 @@
  *
  * @author  Thiago Henrique Genaio Mai
  * @date    11/12/2025
- */
+ * ************************************************************************** */
 
 #include <stdint.h>
 
-/*
+/* **************************************************************************
  * By including this file, it is possible to define the target processor
  * via command line, e.g. -DEFM32GG995F1024.
  * Alternatively, the processor-specific header may be included directly:
  *   #include "efm32gg995f1024.h"
- */
+ * ************************************************************************** */
 #include "em_device.h"
 #include "clock_efm32gg.h"
 #include "tt_tasks.h"
@@ -27,7 +27,16 @@
 /* SysTick frequency: 1 kHz (1 ms) */
 #define DIVIDER 1000
 
-/** ***************************************************************************
+/* **************************************************************************
+ * Hardware pin definitions
+ * ************************************************************************** */
+
+#define SP      0   /* ADC channel for Setpoint */
+#define PV      1   /* ADC channel for Process Variable */
+#define CV      2   /* PWM output pin */
+#define LED     3   /* Status LED pin */
+
+/* ***************************************************************************
  * @brief  SysTick interrupt handler
  *
  * @details
@@ -36,12 +45,12 @@
  * Task_Update(), which increments internal task counters.
  *
  * @note   Executed every 1 ms
- */
+ * *************************************************************************** */
 void SysTick_Handler(void) {
     Task_Update();
 }
 
-/** ***************************************************************************
+/* ***************************************************************************
  * @brief  Control state machine
  *
  * @details
@@ -50,17 +59,18 @@ void SysTick_Handler(void) {
  * when a sampling event (refresh_tick) is generated.
  *
  * All states are executed in non-interrupt context.
- */
+ * *************************************************************************** */
 void stateMachine(void) {
 
     /* Current state of the control state machine */
     static State state = idle;
 
-    switch(state) {
-
+    switch(state)
+    {
         case idle:
             /* Wait for the sampling timer event */
-            if (refresh_tick) {
+            if (refresh_tick)
+            {
                 refresh_tick = 0;
                 state = read_inputs;
             }
@@ -80,7 +90,7 @@ void stateMachine(void) {
             break;
 
         case write_outputs:
-            /* Update control output and status indicator */
+            /* Update control output */
             writeControlVariable(cv);
 
             /* Indicate steady-state condition via LED */
@@ -88,18 +98,23 @@ void stateMachine(void) {
 
             state = idle;
             break;
+
+        default:
+            /* Safety fallback */
+            state = idle;
+            break;
     }
 }
 
-/** ***************************************************************************
+/* ***************************************************************************
  * @brief  Sampling timer callback
  *
  * @details
  * This function is executed periodically by the task kernel and signals
  * the control state machine that a new sampling period has elapsed.
- */
+ * *************************************************************************** */
 void sampleTimer(void) {
-    refresh_tick = 1;
+    refresh_tick = 1U;
 }
 
 /** ***************************************************************************
@@ -123,8 +138,10 @@ int main(void) {
 
     /* Initialize cooperative task kernel */
     Task_Init();
-    Task_Add(sampleTimer, TS, 0);      /* Sampling timer task */
-    Task_Add(stateMachine, 1, 0);      /* Control state machine */
+
+    /* Add periodic tasks */
+    Task_Add(sampleTimer, TS, 0);   /* Sampling timer task (TS ms period) */
+    Task_Add(stateMachine, 1, 0);   /* State machine executes every 1 ms */
 
     /* Define PID gains */
     gain.kp = 2.0;
@@ -133,7 +150,7 @@ int main(void) {
     gain.td = 0.0;
 
     /* Explicit initialization of sampling event flag */
-    refresh_tick = 0;
+    refresh_tick = 0U;
 
     /* Main loop: dispatch ready tasks */
     while (1) {
