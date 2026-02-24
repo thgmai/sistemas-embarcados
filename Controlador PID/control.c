@@ -85,19 +85,19 @@ void controllerInit(uint8_t sp_p, uint8_t pv_p, uint8_t cv_p, uint8_t led_p) {
 
 double readSetpoint(void) {
     uint32_t adc_value = ADC_Read(sp_pin);
-    return (CV_MAX * (double)adc_value / ADC_RES);
+    return (V_MAX * (double)adc_value / ADC_RES);
 }
 
 double readProcessVariable(void) {
     uint32_t adc_value = ADC_Read(pv_pin);
-    return (CV_MAX * (double)adc_value / ADC_RES);
+    return (V_MAX * (double)adc_value / ADC_RES);
 }
 
 void writeControlVariable(double cv_value) {
 
-    cv_value = clamper(cv_value, CV_MIN, CV_MAX);
+    cv_value = clamper(cv_value, V_MIN, V_MAX);
 
-    uint32_t pwm_value = (uint32_t)((cv_value / CV_MAX) * MAX_TIMER);
+    uint32_t pwm_value = (uint32_t)((cv_value / V_MAX) * MAX_TIMER);
 
     PWM_Write(TIMER3, 2, pwm_value);
 }
@@ -150,7 +150,7 @@ double controlSignalPID(double sp, double pv, Gain gain) {
     double u_provisional = gain.kp * error + gain.ki * integral_candidate + gain.kd * derivative_raw;
 
     /* Integrate only if not saturating */
-    if ((u_provisional < CV_MAX) && (u_provisional > CV_MIN)) {
+    if ((u_provisional < V_MAX) && (u_provisional > V_MIN)) {
         ctrl_state.integral = integral_candidate;
     }
 
@@ -166,7 +166,7 @@ double controlSignalPID(double sp, double pv, Gain gain) {
 
     u = gain.kp * error + gain.ki * ctrl_state.integral + gain.kd * ctrl_state.derivative;
 
-    u = clamper(u, CV_MIN, CV_MAX);
+    u = clamper(u, V_MIN, V_MAX);
 
     ctrl_state.error_prev = error;
 

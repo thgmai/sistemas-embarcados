@@ -1,0 +1,9 @@
+gpio.h:74:1:GPIO_WritePins	24	static
+control.c:55:6:controllerInit	32	static
+control.c:86:8:readSetpoint	16	static
+control.c:91:8:readProcessVariable	16	static
+control.c:96:6:writeControlVariable	32	static
+control.c:105:6:writeLED	16	static
+control.c:109:6:steadyState	16	static
+control.c:133:8:controlSignalPID	96	static
+control.c:180:15:clamper	24	static

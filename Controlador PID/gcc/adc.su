@@ -1,0 +1,7 @@
+adc.c:150:1:GetCalibrationValues	16	static
+adc.c:179:1:ADC0_IRQHandler	4	static
+adc.c:190:10:ADC_Init	40	static
+adc.c:293:10:ADC_ConfigChannel	24	static
+adc.c:329:10:ADC_Read	16	static
+adc.c:339:10:ADC_StartReading	24	static
+adc.c:365:10:ADC_GetReading	16	static

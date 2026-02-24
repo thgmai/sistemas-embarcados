@@ -1,0 +1,11 @@
+pwm.c:194:6:PWM_Start	16	static
+pwm.c:205:6:PWM_Stop	16	static
+pwm.c:218:19:FindTimerIndex	24	static
+pwm.c:238:12:EnableTimerClock	24	static
+pwm.c:271:5:PWM_Read	24	static
+pwm.c:302:17:finddivencoding	24	static
+pwm.c:329:5:PWM_Write	24	static
+pwm.c:350:5:PWM_ConfigTimer	32	static
+pwm.c:389:12:PWM_ConfigOutputPin	56	static
+pwm.c:452:1:PWM_ConfigChannel	32	static
+pwm.c:520:5:PWM_Init	40	static

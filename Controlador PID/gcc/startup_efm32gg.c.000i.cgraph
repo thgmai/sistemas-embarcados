@@ -1,0 +1,3446 @@
+Trivially needed symbols: Default_Handler/54 _main/53 SystemInit/52 Reset_Handler/51 __Vectors/50 EMU_IRQHandler/49 EBI_IRQHandler/48 AES_IRQHandler/47 MSC_IRQHandler/46 LCD_IRQHandler/45 VCMP_IRQHandler/44 CMU_IRQHandler/43 BURTC_IRQHandler/42 RTC_IRQHandler/41 PCNT2_IRQHandler/40 PCNT1_IRQHandler/39 PCNT0_IRQHandler/38 LETIMER0_IRQHandler/37 LEUART1_IRQHandler/36 LEUART0_IRQHandler/35 UART1_TX_IRQHandler/34 UART1_RX_IRQHandler/33 UART0_TX_IRQHandler/32 UART0_RX_IRQHandler/31 USART2_TX_IRQHandler/30 USART2_RX_IRQHandler/29 LESENSE_IRQHandler/28 USART1_TX_IRQHandler/27 USART1_RX_IRQHandler/26 TIMER3_IRQHandler/25 TIMER2_IRQHandler/24 TIMER1_IRQHandler/23 GPIO_ODD_IRQHandler/22 I2C1_IRQHandler/21 I2C0_IRQHandler/20 DAC0_IRQHandler/19 ADC0_IRQHandler/18 ACMP0_IRQHandler/17 USB_IRQHandler/16 USART0_TX_IRQHandler/15 USART0_RX_IRQHandler/14 TIMER0_IRQHandler/13 GPIO_EVEN_IRQHandler/12 DMA_IRQHandler/11 SysTick_Handler/10 PendSV_Handler/9 SVC_Handler/8 DebugMon_Handler/7 UsageFault_Handler/6 BusFault_Handler/5 MemManage_Handler/4 HardFault_Handler/3 NMI_Handler/2 heap/1 stack/0
+
+
+Initial Symbol table:
+
+main/61 (main) @0x7e1cb7e5a5a0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Reset_Handler/51 
+  Calls: 
+__bss_end__/60 (__bss_end__) @0x7e1cb7e58780
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: Reset_Handler/51 (addr) 
+  Availability: not-ready
+  Varpool flags:
+__bss_start__/59 (__bss_start__) @0x7e1cb7e58700
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: Reset_Handler/51 (addr) 
+  Availability: not-ready
+  Varpool flags:
+__data_end__/58 (__data_end__) @0x7e1cb7e58600
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: Reset_Handler/51 (addr) 
+  Availability: not-ready
+  Varpool flags:
+__data_start__/57 (__data_start__) @0x7e1cb7e58580
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: Reset_Handler/51 (addr) 
+  Availability: not-ready
+  Varpool flags:
+__etext/56 (__etext) @0x7e1cb7e58500
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: Reset_Handler/51 (addr) 
+  Availability: not-ready
+  Varpool flags:
+__StackTop/55 (__StackTop) @0x7e1cb7e5a2d0
+  Type: function
+  Visibility: external public
+  Address is taken.
+  References: 
+  Referring: __Vectors/50 (addr) 
+  Function flags:
+  Called by: 
+  Calls: 
+Default_Handler/54 (Default_Handler) @0x7e1cb7e5a168
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public weak
+  Address is taken.
+  Aux: @0x1c36aa0
+  References: 
+  Referring: EMU_IRQHandler/49 (alias) EBI_IRQHandler/48 (alias) AES_IRQHandler/47 (alias) MSC_IRQHandler/46 (alias) LCD_IRQHandler/45 (alias) VCMP_IRQHandler/44 (alias) CMU_IRQHandler/43 (alias) BURTC_IRQHandler/42 (alias) RTC_IRQHandler/41 (alias) PCNT2_IRQHandler/40 (alias) PCNT1_IRQHandler/39 (alias) PCNT0_IRQHandler/38 (alias) LETIMER0_IRQHandler/37 (alias) LEUART1_IRQHandler/36 (alias) LEUART0_IRQHandler/35 (alias) UART1_TX_IRQHandler/34 (alias) UART1_RX_IRQHandler/33 (alias) UART0_TX_IRQHandler/32 (alias) UART0_RX_IRQHandler/31 (alias) USART2_TX_IRQHandler/30 (alias) USART2_RX_IRQHandler/29 (alias) LESENSE_IRQHandler/28 (alias) USART1_TX_IRQHandler/27 (alias) USART1_RX_IRQHandler/26 (alias) TIMER3_IRQHandler/25 (alias) TIMER2_IRQHandler/24 (alias) TIMER1_IRQHandler/23 (alias) GPIO_ODD_IRQHandler/22 (alias) I2C1_IRQHandler/21 (alias) I2C0_IRQHandler/20 (alias) DAC0_IRQHandler/19 (alias) ADC0_IRQHandler/18 (alias) ACMP0_IRQHandler/17 (alias) USB_IRQHandler/16 (alias) USART0_TX_IRQHandler/15 (alias) USART0_RX_IRQHandler/14 (alias) TIMER0_IRQHandler/13 (alias) GPIO_EVEN_IRQHandler/12 (alias) DMA_IRQHandler/11 (alias) SysTick_Handler/10 (alias) PendSV_Handler/9 (alias) SVC_Handler/8 (alias) DebugMon_Handler/7 (alias) UsageFault_Handler/6 (alias) BusFault_Handler/5 (alias) MemManage_Handler/4 (alias) HardFault_Handler/3 (alias) NMI_Handler/2 (alias) __Vectors/50 (addr) __Vectors/50 (addr) __Vectors/50 (addr) __Vectors/50 (addr) __Vectors/50 (addr) 
+  Function flags: body
+  Called by: 
+  Calls: 
+_main/53 (_main) @0x7e1cb7e5a000
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public weak
+  Aux: @0x7e1cb7e5a168
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: Reset_Handler/51 
+  Calls: 
+SystemInit/52 (SystemInit) @0x7e1cb7e50b40
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public weak
+  Aux: @0x7e1cb7e5a000
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: Reset_Handler/51 
+  Calls: 
+Reset_Handler/51 (Reset_Handler) @0x7e1cb7e50e10
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public weak
+  Address is taken.
+  Aux: @0x7e1cb7e50b40
+  References: __etext/56 (addr) __data_start__/57 (addr) __data_end__/58 (addr) __bss_start__/59 (addr) __bss_end__/60 (addr) 
+  Referring: __Vectors/50 (addr) 
+  Function flags: body
+  Called by: 
+  Calls: main/61 _main/53 SystemInit/52 
+__Vectors/50 (__Vectors) @0x7e1cb7e4cc80
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder public section:.vectors
+  Aux: @0x7e1cb7e50e10
+  References: __StackTop/55 (addr) Reset_Handler/51 (addr) NMI_Handler/2 (addr) HardFault_Handler/3 (addr) MemManage_Handler/4 (addr) BusFault_Handler/5 (addr) UsageFault_Handler/6 (addr) Default_Handler/54 (addr) Default_Handler/54 (addr) Default_Handler/54 (addr) Default_Handler/54 (addr) SVC_Handler/8 (addr) DebugMon_Handler/7 (addr) Default_Handler/54 (addr) PendSV_Handler/9 (addr) SysTick_Handler/10 (addr) DMA_IRQHandler/11 (addr) GPIO_EVEN_IRQHandler/12 (addr) TIMER0_IRQHandler/13 (addr) USART0_RX_IRQHandler/14 (addr) USART0_TX_IRQHandler/15 (addr) USB_IRQHandler/16 (addr) ACMP0_IRQHandler/17 (addr) ADC0_IRQHandler/18 (addr) DAC0_IRQHandler/19 (addr) I2C0_IRQHandler/20 (addr) I2C1_IRQHandler/21 (addr) GPIO_ODD_IRQHandler/22 (addr) TIMER1_IRQHandler/23 (addr) TIMER2_IRQHandler/24 (addr) TIMER3_IRQHandler/25 (addr) USART1_RX_IRQHandler/26 (addr) USART1_TX_IRQHandler/27 (addr) LESENSE_IRQHandler/28 (addr) USART2_RX_IRQHandler/29 (addr) USART2_TX_IRQHandler/30 (addr) UART0_RX_IRQHandler/31 (addr) UART0_TX_IRQHandler/32 (addr) UART1_RX_IRQHandler/33 (addr) UART1_TX_IRQHandler/34 (addr) LEUART0_IRQHandler/35 (addr) LEUART1_IRQHandler/36 (addr) LETIMER0_IRQHandler/37 (addr) PCNT0_IRQHandler/38 (addr) PCNT1_IRQHandler/39 (addr) PCNT2_IRQHandler/40 (addr) RTC_IRQHandler/41 (addr) BURTC_IRQHandler/42 (addr) CMU_IRQHandler/43 (addr) VCMP_IRQHandler/44 (addr) LCD_IRQHandler/45 (addr) MSC_IRQHandler/46 (addr) AES_IRQHandler/47 (addr) EBI_IRQHandler/48 (addr) EMU_IRQHandler/49 (addr) 
+  Referring: 
+  Availability: not-ready
+  Varpool flags: initialized read-only const-value-known
+EMU_IRQHandler/49 (EMU_IRQHandler) @0x7e1cb7e509d8
+  Type: function definition analyzed alias
+  Visibility: public weak
+  Address is taken.
+  Aux: @0x7e1cb7e4cc80
+  References: Default_Handler/54 (alias) 
+  Referring: __Vectors/50 (addr) 
+  Function flags:
+  Called by: 
+  Calls: 
+EBI_IRQHandler/48 (EBI_IRQHandler) @0x7e1cb7e50870
+  Type: function definition analyzed alias
+  Visibility: public weak
+  Address is taken.
+  Aux: @0x7e1cb7e509d8
+  References: Default_Handler/54 (alias) 
+  Referring: __Vectors/50 (addr) 
+  Function flags:
+  Called by: 
+  Calls: 
+AES_IRQHandler/47 (AES_IRQHandler) @0x7e1cb7e50708
+  Type: function definition analyzed alias
+  Visibility: public weak
+  Address is taken.
+  Aux: @0x7e1cb7e50870
+  References: Default_Handler/54 (alias) 
+  Referring: __Vectors/50 (addr) 
+  Function flags:
+  Called by: 
+  Calls: 
+MSC_IRQHandler/46 (MSC_IRQHandler) @0x7e1cb7e505a0
+  Type: function definition analyzed alias
+  Visibility: public weak
+  Address is taken.
+  Aux: @0x7e1cb7e50708
+  References: Default_Handler/54 (alias) 
+  Referring: __Vectors/50 (addr) 
+  Function flags:
+  Called by: 
+  Calls: 
+LCD_IRQHandler/45 (LCD_IRQHandler) @0x7e1cb7e50438
+  Type: function definition analyzed alias
+  Visibility: public weak
+  Address is taken.
+  Aux: @0x7e1cb7e505a0
+  References: Default_Handler/54 (alias) 
+  Referring: __Vectors/50 (addr) 
+  Function flags:
+  Called by: 
+  Calls: 
+VCMP_IRQHandler/44 (VCMP_IRQHandler) @0x7e1cb7e502d0
+  Type: function definition analyzed alias
+  Visibility: public weak
+  Address is taken.
+  Aux: @0x7e1cb7e50438
+  References: Default_Handler/54 (alias) 
+  Referring: __Vectors/50 (addr) 
+  Function flags:
+  Called by: 
+  Calls: 
+CMU_IRQHandler/43 (CMU_IRQHandler) @0x7e1cb7e50168
+  Type: function definition analyzed alias
+  Visibility: public weak
+  Address is taken.
+  Aux: @0x7e1cb7e502d0
+  References: Default_Handler/54 (alias) 
+  Referring: __Vectors/50 (addr) 
+  Function flags:
+  Called by: 
+  Calls: 
+BURTC_IRQHandler/42 (BURTC_IRQHandler) @0x7e1cb7e50000
+  Type: function definition analyzed alias
+  Visibility: public weak
+  Address is taken.
+  Aux: @0x7e1cb7e50168
+  References: Default_Handler/54 (alias) 
+  Referring: __Vectors/50 (addr) 
+  Function flags:
+  Called by: 
+  Calls: 
+RTC_IRQHandler/41 (RTC_IRQHandler) @0x7e1cb7e4de10
+  Type: function definition analyzed alias
+  Visibility: public weak
+  Address is taken.
+  Aux: @0x7e1cb7e50000
+  References: Default_Handler/54 (alias) 
+  Referring: __Vectors/50 (addr) 
+  Function flags:
+  Called by: 
+  Calls: 
+PCNT2_IRQHandler/40 (PCNT2_IRQHandler) @0x7e1cb7e4dca8
+  Type: function definition analyzed alias
+  Visibility: public weak
+  Address is taken.
+  Aux: @0x7e1cb7e4de10
+  References: Default_Handler/54 (alias) 
+  Referring: __Vectors/50 (addr) 
+  Function flags:
+  Called by: 
+  Calls: 
+PCNT1_IRQHandler/39 (PCNT1_IRQHandler) @0x7e1cb7e4db40
+  Type: function definition analyzed alias
+  Visibility: public weak
+  Address is taken.
+  Aux: @0x7e1cb7e4dca8
+  References: Default_Handler/54 (alias) 
+  Referring: __Vectors/50 (addr) 
+  Function flags:
+  Called by: 
+  Calls: 
+PCNT0_IRQHandler/38 (PCNT0_IRQHandler) @0x7e1cb7e4d9d8
+  Type: function definition analyzed alias
+  Visibility: public weak
+  Address is taken.
+  Aux: @0x7e1cb7e4db40
+  References: Default_Handler/54 (alias) 
+  Referring: __Vectors/50 (addr) 
+  Function flags:
+  Called by: 
+  Calls: 
+LETIMER0_IRQHandler/37 (LETIMER0_IRQHandler) @0x7e1cb7e4d870
+  Type: function definition analyzed alias
+  Visibility: public weak
+  Address is taken.
+  Aux: @0x7e1cb7e4d9d8
+  References: Default_Handler/54 (alias) 
+  Referring: __Vectors/50 (addr) 
+  Function flags:
+  Called by: 
+  Calls: 
+LEUART1_IRQHandler/36 (LEUART1_IRQHandler) @0x7e1cb7e4d708
+  Type: function definition analyzed alias
+  Visibility: public weak
+  Address is taken.
+  Aux: @0x7e1cb7e4d870
+  References: Default_Handler/54 (alias) 
+  Referring: __Vectors/50 (addr) 
+  Function flags:
+  Called by: 
+  Calls: 
+LEUART0_IRQHandler/35 (LEUART0_IRQHandler) @0x7e1cb7e4d5a0
+  Type: function definition analyzed alias
+  Visibility: public weak
+  Address is taken.
+  Aux: @0x7e1cb7e4d708
+  References: Default_Handler/54 (alias) 
+  Referring: __Vectors/50 (addr) 
+  Function flags:
+  Called by: 
+  Calls: 
+UART1_TX_IRQHandler/34 (UART1_TX_IRQHandler) @0x7e1cb7e4d438
+  Type: function definition analyzed alias
+  Visibility: public weak
+  Address is taken.
+  Aux: @0x7e1cb7e4d5a0
+  References: Default_Handler/54 (alias) 
+  Referring: __Vectors/50 (addr) 
+  Function flags:
+  Called by: 
+  Calls: 
+UART1_RX_IRQHandler/33 (UART1_RX_IRQHandler) @0x7e1cb7e4d2d0
+  Type: function definition analyzed alias
+  Visibility: public weak
+  Address is taken.
+  Aux: @0x7e1cb7e4d438
+  References: Default_Handler/54 (alias) 
+  Referring: __Vectors/50 (addr) 
+  Function flags:
+  Called by: 
+  Calls: 
+UART0_TX_IRQHandler/32 (UART0_TX_IRQHandler) @0x7e1cb7e4d168
+  Type: function definition analyzed alias
+  Visibility: public weak
+  Address is taken.
+  Aux: @0x7e1cb7e4d2d0
+  References: Default_Handler/54 (alias) 
+  Referring: __Vectors/50 (addr) 
+  Function flags:
+  Called by: 
+  Calls: 
+UART0_RX_IRQHandler/31 (UART0_RX_IRQHandler) @0x7e1cb7e4d000
+  Type: function definition analyzed alias
+  Visibility: public weak
+  Address is taken.
+  Aux: @0x7e1cb7e4d168
+  References: Default_Handler/54 (alias) 
+  Referring: __Vectors/50 (addr) 
+  Function flags:
+  Called by: 
+  Calls: 
+USART2_TX_IRQHandler/30 (USART2_TX_IRQHandler) @0x7e1cb7e462d0
+  Type: function definition analyzed alias
+  Visibility: public weak
+  Address is taken.
+  Aux: @0x7e1cb7e4d000
+  References: Default_Handler/54 (alias) 
+  Referring: __Vectors/50 (addr) 
+  Function flags:
+  Called by: 
+  Calls: 
+USART2_RX_IRQHandler/29 (USART2_RX_IRQHandler) @0x7e1cb7e49e10
+  Type: function definition analyzed alias
+  Visibility: public weak
+  Address is taken.
+  Aux: @0x7e1cb7e462d0
+  References: Default_Handler/54 (alias) 
+  Referring: __Vectors/50 (addr) 
+  Function flags:
+  Called by: 
+  Calls: 
+LESENSE_IRQHandler/28 (LESENSE_IRQHandler) @0x7e1cb7e49ca8
+  Type: function definition analyzed alias
+  Visibility: public weak
+  Address is taken.
+  Aux: @0x7e1cb7e49e10
+  References: Default_Handler/54 (alias) 
+  Referring: __Vectors/50 (addr) 
+  Function flags:
+  Called by: 
+  Calls: 
+USART1_TX_IRQHandler/27 (USART1_TX_IRQHandler) @0x7e1cb7e49b40
+  Type: function definition analyzed alias
+  Visibility: public weak
+  Address is taken.
+  Aux: @0x7e1cb7e49ca8
+  References: Default_Handler/54 (alias) 
+  Referring: __Vectors/50 (addr) 
+  Function flags:
+  Called by: 
+  Calls: 
+USART1_RX_IRQHandler/26 (USART1_RX_IRQHandler) @0x7e1cb7e499d8
+  Type: function definition analyzed alias
+  Visibility: public weak
+  Address is taken.
+  Aux: @0x7e1cb7e49b40
+  References: Default_Handler/54 (alias) 
+  Referring: __Vectors/50 (addr) 
+  Function flags:
+  Called by: 
+  Calls: 
+TIMER3_IRQHandler/25 (TIMER3_IRQHandler) @0x7e1cb7e49870
+  Type: function definition analyzed alias
+  Visibility: public weak
+  Address is taken.
+  Aux: @0x7e1cb7e499d8
+  References: Default_Handler/54 (alias) 
+  Referring: __Vectors/50 (addr) 
+  Function flags:
+  Called by: 
+  Calls: 
+TIMER2_IRQHandler/24 (TIMER2_IRQHandler) @0x7e1cb7e49708
+  Type: function definition analyzed alias
+  Visibility: public weak
+  Address is taken.
+  Aux: @0x7e1cb7e49870
+  References: Default_Handler/54 (alias) 
+  Referring: __Vectors/50 (addr) 
+  Function flags:
+  Called by: 
+  Calls: 
+TIMER1_IRQHandler/23 (TIMER1_IRQHandler) @0x7e1cb7e495a0
+  Type: function definition analyzed alias
+  Visibility: public weak
+  Address is taken.
+  Aux: @0x7e1cb7e49708
+  References: Default_Handler/54 (alias) 
+  Referring: __Vectors/50 (addr) 
+  Function flags:
+  Called by: 
+  Calls: 
+GPIO_ODD_IRQHandler/22 (GPIO_ODD_IRQHandler) @0x7e1cb7e49438
+  Type: function definition analyzed alias
+  Visibility: public weak
+  Address is taken.
+  Aux: @0x7e1cb7e495a0
+  References: Default_Handler/54 (alias) 
+  Referring: __Vectors/50 (addr) 
+  Function flags:
+  Called by: 
+  Calls: 
+I2C1_IRQHandler/21 (I2C1_IRQHandler) @0x7e1cb7e492d0
+  Type: function definition analyzed alias
+  Visibility: public weak
+  Address is taken.
+  Aux: @0x7e1cb7e49438
+  References: Default_Handler/54 (alias) 
+  Referring: __Vectors/50 (addr) 
+  Function flags:
+  Called by: 
+  Calls: 
+I2C0_IRQHandler/20 (I2C0_IRQHandler) @0x7e1cb7e49168
+  Type: function definition analyzed alias
+  Visibility: public weak
+  Address is taken.
+  Aux: @0x7e1cb7e492d0
+  References: Default_Handler/54 (alias) 
+  Referring: __Vectors/50 (addr) 
+  Function flags:
+  Called by: 
+  Calls: 
+DAC0_IRQHandler/19 (DAC0_IRQHandler) @0x7e1cb7e49000
+  Type: function definition analyzed alias
+  Visibility: public weak
+  Address is taken.
+  Aux: @0x7e1cb7e49168
+  References: Default_Handler/54 (alias) 
+  Referring: __Vectors/50 (addr) 
+  Function flags:
+  Called by: 
+  Calls: 
+ADC0_IRQHandler/18 (ADC0_IRQHandler) @0x7e1cb7e46e10
+  Type: function definition analyzed alias
+  Visibility: public weak
+  Address is taken.
+  Aux: @0x7e1cb7e49000
+  References: Default_Handler/54 (alias) 
+  Referring: __Vectors/50 (addr) 
+  Function flags:
+  Called by: 
+  Calls: 
+ACMP0_IRQHandler/17 (ACMP0_IRQHandler) @0x7e1cb7e46ca8
+  Type: function definition analyzed alias
+  Visibility: public weak
+  Address is taken.
+  Aux: @0x7e1cb7e46e10
+  References: Default_Handler/54 (alias) 
+  Referring: __Vectors/50 (addr) 
+  Function flags:
+  Called by: 
+  Calls: 
+USB_IRQHandler/16 (USB_IRQHandler) @0x7e1cb7e46b40
+  Type: function definition analyzed alias
+  Visibility: public weak
+  Address is taken.
+  Aux: @0x7e1cb7e46ca8
+  References: Default_Handler/54 (alias) 
+  Referring: __Vectors/50 (addr) 
+  Function flags:
+  Called by: 
+  Calls: 
+USART0_TX_IRQHandler/15 (USART0_TX_IRQHandler) @0x7e1cb7e469d8
+  Type: function definition analyzed alias
+  Visibility: public weak
+  Address is taken.
+  Aux: @0x7e1cb7e46b40
+  References: Default_Handler/54 (alias) 
+  Referring: __Vectors/50 (addr) 
+  Function flags:
+  Called by: 
+  Calls: 
+USART0_RX_IRQHandler/14 (USART0_RX_IRQHandler) @0x7e1cb7e46870
+  Type: function definition analyzed alias
+  Visibility: public weak
+  Address is taken.
+  Aux: @0x7e1cb7e469d8
+  References: Default_Handler/54 (alias) 
+  Referring: __Vectors/50 (addr) 
+  Function flags:
+  Called by: 
+  Calls: 
+TIMER0_IRQHandler/13 (TIMER0_IRQHandler) @0x7e1cb7e46708
+  Type: function definition analyzed alias
+  Visibility: public weak
+  Address is taken.
+  Aux: @0x7e1cb7e46870
+  References: Default_Handler/54 (alias) 
+  Referring: __Vectors/50 (addr) 
+  Function flags:
+  Called by: 
+  Calls: 
+GPIO_EVEN_IRQHandler/12 (GPIO_EVEN_IRQHandler) @0x7e1cb7e465a0
+  Type: function definition analyzed alias
+  Visibility: public weak
+  Address is taken.
+  Aux: @0x7e1cb7e46708
+  References: Default_Handler/54 (alias) 
+  Referring: __Vectors/50 (addr) 
+  Function flags:
+  Called by: 
+  Calls: 
+DMA_IRQHandler/11 (DMA_IRQHandler) @0x7e1cb7e46438
+  Type: function definition analyzed alias
+  Visibility: public weak
+  Address is taken.
+  Aux: @0x7e1cb7e465a0
+  References: Default_Handler/54 (alias) 
+  Referring: __Vectors/50 (addr) 
+  Function flags:
+  Called by: 
+  Calls: 
+SysTick_Handler/10 (SysTick_Handler) @0x7e1cb7e46168
+  Type: function definition analyzed alias
+  Visibility: public weak
+  Address is taken.
+  Aux: @0x7e1cb7e46438
+  References: Default_Handler/54 (alias) 
+  Referring: __Vectors/50 (addr) 
+  Function flags:
+  Called by: 
+  Calls: 
+PendSV_Handler/9 (PendSV_Handler) @0x7e1cb7e46000
+  Type: function definition analyzed alias
+  Visibility: public weak
+  Address is taken.
+  Aux: @0x7e1cb7e46168
+  References: Default_Handler/54 (alias) 
+  Referring: __Vectors/50 (addr) 
+  Function flags:
+  Called by: 
+  Calls: 
+SVC_Handler/8 (SVC_Handler) @0x7e1cb7e43e10
+  Type: function definition analyzed alias
+  Visibility: public weak
+  Address is taken.
+  Aux: @0x7e1cb7e46000
+  References: Default_Handler/54 (alias) 
+  Referring: __Vectors/50 (addr) 
+  Function flags:
+  Called by: 
+  Calls: 
+DebugMon_Handler/7 (DebugMon_Handler) @0x7e1cb7e43ca8
+  Type: function definition analyzed alias
+  Visibility: public weak
+  Address is taken.
+  Aux: @0x7e1cb7e43e10
+  References: Default_Handler/54 (alias) 
+  Referring: __Vectors/50 (addr) 
+  Function flags:
+  Called by: 
+  Calls: 
+UsageFault_Handler/6 (UsageFault_Handler) @0x7e1cb7e43b40
+  Type: function definition analyzed alias
+  Visibility: public weak
+  Address is taken.
+  Aux: @0x7e1cb7e43ca8
+  References: Default_Handler/54 (alias) 
+  Referring: __Vectors/50 (addr) 
+  Function flags:
+  Called by: 
+  Calls: 
+BusFault_Handler/5 (BusFault_Handler) @0x7e1cb7e439d8
+  Type: function definition analyzed alias
+  Visibility: public weak
+  Address is taken.
+  Aux: @0x7e1cb7e43b40
+  References: Default_Handler/54 (alias) 
+  Referring: __Vectors/50 (addr) 
+  Function flags:
+  Called by: 
+  Calls: 
+MemManage_Handler/4 (MemManage_Handler) @0x7e1cb7e43870
+  Type: function definition analyzed alias
+  Visibility: public weak
+  Address is taken.
+  Aux: @0x7e1cb7e439d8
+  References: Default_Handler/54 (alias) 
+  Referring: __Vectors/50 (addr) 
+  Function flags:
+  Called by: 
+  Calls: 
+HardFault_Handler/3 (HardFault_Handler) @0x7e1cb7e43708
+  Type: function definition analyzed alias
+  Visibility: public weak
+  Address is taken.
+  Aux: @0x7e1cb7e43870
+  References: Default_Handler/54 (alias) 
+  Referring: __Vectors/50 (addr) 
+  Function flags:
+  Called by: 
+  Calls: 
+NMI_Handler/2 (NMI_Handler) @0x7e1cb7e435a0
+  Type: function definition analyzed alias
+  Visibility: public weak
+  Address is taken.
+  Aux: @0x7e1cb7e43708
+  References: Default_Handler/54 (alias) 
+  Referring: __Vectors/50 (addr) 
+  Function flags:
+  Called by: 
+  Calls: 
+heap/1 (heap) @0x7e1cb7e40380
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder section:.heap
+  Aux: @0x7e1cb7e435a0
+  References: 
+  Referring: 
+  Availability: not-ready
+  Varpool flags:
+stack/0 (stack) @0x7e1cb7e40300
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder section:.stack
+  Aux: @0x7e1cb7e40380
+  References: 
+  Referring: 
+  Availability: not-ready
+  Varpool flags:
+
+Removing unused symbols:
+
+Reclaimed Symbol table:
+
+main/61 (main) @0x7e1cb7e5a5a0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Reset_Handler/51 
+  Calls: 
+__bss_end__/60 (__bss_end__) @0x7e1cb7e58780
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: Reset_Handler/51 (addr) 
+  Availability: not-ready
+  Varpool flags:
+__bss_start__/59 (__bss_start__) @0x7e1cb7e58700
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: Reset_Handler/51 (addr) 
+  Availability: not-ready
+  Varpool flags:
+__data_end__/58 (__data_end__) @0x7e1cb7e58600
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: Reset_Handler/51 (addr) 
+  Availability: not-ready
+  Varpool flags:
+__data_start__/57 (__data_start__) @0x7e1cb7e58580
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: Reset_Handler/51 (addr) 
+  Availability: not-ready
+  Varpool flags:
+__etext/56 (__etext) @0x7e1cb7e58500
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: Reset_Handler/51 (addr) 
+  Availability: not-ready
+  Varpool flags:
+__StackTop/55 (__StackTop) @0x7e1cb7e5a2d0
+  Type: function
+  Visibility: external public
+  Address is taken.
+  References: 
+  Referring: __Vectors/50 (addr) 
+  Function flags:
+  Called by: 
+  Calls: 
+Default_Handler/54 (Default_Handler) @0x7e1cb7e5a168
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public weak
+  Address is taken.
+  References: 
+  Referring: EMU_IRQHandler/49 (alias) EBI_IRQHandler/48 (alias) AES_IRQHandler/47 (alias) MSC_IRQHandler/46 (alias) LCD_IRQHandler/45 (alias) VCMP_IRQHandler/44 (alias) CMU_IRQHandler/43 (alias) BURTC_IRQHandler/42 (alias) RTC_IRQHandler/41 (alias) PCNT2_IRQHandler/40 (alias) PCNT1_IRQHandler/39 (alias) PCNT0_IRQHandler/38 (alias) LETIMER0_IRQHandler/37 (alias) LEUART1_IRQHandler/36 (alias) LEUART0_IRQHandler/35 (alias) UART1_TX_IRQHandler/34 (alias) UART1_RX_IRQHandler/33 (alias) UART0_TX_IRQHandler/32 (alias) UART0_RX_IRQHandler/31 (alias) USART2_TX_IRQHandler/30 (alias) USART2_RX_IRQHandler/29 (alias) LESENSE_IRQHandler/28 (alias) USART1_TX_IRQHandler/27 (alias) USART1_RX_IRQHandler/26 (alias) TIMER3_IRQHandler/25 (alias) TIMER2_IRQHandler/24 (alias) TIMER1_IRQHandler/23 (alias) GPIO_ODD_IRQHandler/22 (alias) I2C1_IRQHandler/21 (alias) I2C0_IRQHandler/20 (alias) DAC0_IRQHandler/19 (alias) ADC0_IRQHandler/18 (alias) ACMP0_IRQHandler/17 (alias) USB_IRQHandler/16 (alias) USART0_TX_IRQHandler/15 (alias) USART0_RX_IRQHandler/14 (alias) TIMER0_IRQHandler/13 (alias) GPIO_EVEN_IRQHandler/12 (alias) DMA_IRQHandler/11 (alias) SysTick_Handler/10 (alias) PendSV_Handler/9 (alias) SVC_Handler/8 (alias) DebugMon_Handler/7 (alias) UsageFault_Handler/6 (alias) BusFault_Handler/5 (alias) MemManage_Handler/4 (alias) HardFault_Handler/3 (alias) NMI_Handler/2 (alias) __Vectors/50 (addr) __Vectors/50 (addr) __Vectors/50 (addr) __Vectors/50 (addr) __Vectors/50 (addr) 
+  Function flags: body
+  Called by: 
+  Calls: 
+_main/53 (_main) @0x7e1cb7e5a000
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public weak
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: Reset_Handler/51 
+  Calls: 
+SystemInit/52 (SystemInit) @0x7e1cb7e50b40
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public weak
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: Reset_Handler/51 
+  Calls: 
+Reset_Handler/51 (Reset_Handler) @0x7e1cb7e50e10
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public weak
+  Address is taken.
+  References: __etext/56 (addr) __data_start__/57 (addr) __data_end__/58 (addr) __bss_start__/59 (addr) __bss_end__/60 (addr) 
+  Referring: __Vectors/50 (addr) 
+  Function flags: body
+  Called by: 
+  Calls: main/61 _main/53 SystemInit/52 
+__Vectors/50 (__Vectors) @0x7e1cb7e4cc80
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder public section:.vectors
+  References: __StackTop/55 (addr) Reset_Handler/51 (addr) NMI_Handler/2 (addr) HardFault_Handler/3 (addr) MemManage_Handler/4 (addr) BusFault_Handler/5 (addr) UsageFault_Handler/6 (addr) Default_Handler/54 (addr) Default_Handler/54 (addr) Default_Handler/54 (addr) Default_Handler/54 (addr) SVC_Handler/8 (addr) DebugMon_Handler/7 (addr) Default_Handler/54 (addr) PendSV_Handler/9 (addr) SysTick_Handler/10 (addr) DMA_IRQHandler/11 (addr) GPIO_EVEN_IRQHandler/12 (addr) TIMER0_IRQHandler/13 (addr) USART0_RX_IRQHandler/14 (addr) USART0_TX_IRQHandler/15 (addr) USB_IRQHandler/16 (addr) ACMP0_IRQHandler/17 (addr) ADC0_IRQHandler/18 (addr) DAC0_IRQHandler/19 (addr) I2C0_IRQHandler/20 (addr) I2C1_IRQHandler/21 (addr) GPIO_ODD_IRQHandler/22 (addr) TIMER1_IRQHandler/23 (addr) TIMER2_IRQHandler/24 (addr) TIMER3_IRQHandler/25 (addr) USART1_RX_IRQHandler/26 (addr) USART1_TX_IRQHandler/27 (addr) LESENSE_IRQHandler/28 (addr) USART2_RX_IRQHandler/29 (addr) USART2_TX_IRQHandler/30 (addr) UART0_RX_IRQHandler/31 (addr) UART0_TX_IRQHandler/32 (addr) UART1_RX_IRQHandler/33 (addr) UART1_TX_IRQHandler/34 (addr) LEUART0_IRQHandler/35 (addr) LEUART1_IRQHandler/36 (addr) LETIMER0_IRQHandler/37 (addr) PCNT0_IRQHandler/38 (addr) PCNT1_IRQHandler/39 (addr) PCNT2_IRQHandler/40 (addr) RTC_IRQHandler/41 (addr) BURTC_IRQHandler/42 (addr) CMU_IRQHandler/43 (addr) VCMP_IRQHandler/44 (addr) LCD_IRQHandler/45 (addr) MSC_IRQHandler/46 (addr) AES_IRQHandler/47 (addr) EBI_IRQHandler/48 (addr) EMU_IRQHandler/49 (addr) 
+  Referring: 
+  Availability: not-ready
+  Varpool flags: initialized read-only const-value-known
+EMU_IRQHandler/49 (EMU_IRQHandler) @0x7e1cb7e509d8
+  Type: function definition analyzed alias
+  Visibility: public weak
+  Address is taken.
+  References: Default_Handler/54 (alias) 
+  Referring: __Vectors/50 (addr) 
+  Function flags:
+  Called by: 
+  Calls: 
+EBI_IRQHandler/48 (EBI_IRQHandler) @0x7e1cb7e50870
+  Type: function definition analyzed alias
+  Visibility: public weak
+  Address is taken.
+  References: Default_Handler/54 (alias) 
+  Referring: __Vectors/50 (addr) 
+  Function flags:
+  Called by: 
+  Calls: 
+AES_IRQHandler/47 (AES_IRQHandler) @0x7e1cb7e50708
+  Type: function definition analyzed alias
+  Visibility: public weak
+  Address is taken.
+  References: Default_Handler/54 (alias) 
+  Referring: __Vectors/50 (addr) 
+  Function flags:
+  Called by: 
+  Calls: 
+MSC_IRQHandler/46 (MSC_IRQHandler) @0x7e1cb7e505a0
+  Type: function definition analyzed alias
+  Visibility: public weak
+  Address is taken.
+  References: Default_Handler/54 (alias) 
+  Referring: __Vectors/50 (addr) 
+  Function flags:
+  Called by: 
+  Calls: 
+LCD_IRQHandler/45 (LCD_IRQHandler) @0x7e1cb7e50438
+  Type: function definition analyzed alias
+  Visibility: public weak
+  Address is taken.
+  References: Default_Handler/54 (alias) 
+  Referring: __Vectors/50 (addr) 
+  Function flags:
+  Called by: 
+  Calls: 
+VCMP_IRQHandler/44 (VCMP_IRQHandler) @0x7e1cb7e502d0
+  Type: function definition analyzed alias
+  Visibility: public weak
+  Address is taken.
+  References: Default_Handler/54 (alias) 
+  Referring: __Vectors/50 (addr) 
+  Function flags:
+  Called by: 
+  Calls: 
+CMU_IRQHandler/43 (CMU_IRQHandler) @0x7e1cb7e50168
+  Type: function definition analyzed alias
+  Visibility: public weak
+  Address is taken.
+  References: Default_Handler/54 (alias) 
+  Referring: __Vectors/50 (addr) 
+  Function flags:
+  Called by: 
+  Calls: 
+BURTC_IRQHandler/42 (BURTC_IRQHandler) @0x7e1cb7e50000
+  Type: function definition analyzed alias
+  Visibility: public weak
+  Address is taken.
+  References: Default_Handler/54 (alias) 
+  Referring: __Vectors/50 (addr) 
+  Function flags:
+  Called by: 
+  Calls: 
+RTC_IRQHandler/41 (RTC_IRQHandler) @0x7e1cb7e4de10
+  Type: function definition analyzed alias
+  Visibility: public weak
+  Address is taken.
+  References: Default_Handler/54 (alias) 
+  Referring: __Vectors/50 (addr) 
+  Function flags:
+  Called by: 
+  Calls: 
+PCNT2_IRQHandler/40 (PCNT2_IRQHandler) @0x7e1cb7e4dca8
+  Type: function definition analyzed alias
+  Visibility: public weak
+  Address is taken.
+  References: Default_Handler/54 (alias) 
+  Referring: __Vectors/50 (addr) 
+  Function flags:
+  Called by: 
+  Calls: 
+PCNT1_IRQHandler/39 (PCNT1_IRQHandler) @0x7e1cb7e4db40
+  Type: function definition analyzed alias
+  Visibility: public weak
+  Address is taken.
+  References: Default_Handler/54 (alias) 
+  Referring: __Vectors/50 (addr) 
+  Function flags:
+  Called by: 
+  Calls: 
+PCNT0_IRQHandler/38 (PCNT0_IRQHandler) @0x7e1cb7e4d9d8
+  Type: function definition analyzed alias
+  Visibility: public weak
+  Address is taken.
+  References: Default_Handler/54 (alias) 
+  Referring: __Vectors/50 (addr) 
+  Function flags:
+  Called by: 
+  Calls: 
+LETIMER0_IRQHandler/37 (LETIMER0_IRQHandler) @0x7e1cb7e4d870
+  Type: function definition analyzed alias
+  Visibility: public weak
+  Address is taken.
+  References: Default_Handler/54 (alias) 
+  Referring: __Vectors/50 (addr) 
+  Function flags:
+  Called by: 
+  Calls: 
+LEUART1_IRQHandler/36 (LEUART1_IRQHandler) @0x7e1cb7e4d708
+  Type: function definition analyzed alias
+  Visibility: public weak
+  Address is taken.
+  References: Default_Handler/54 (alias) 
+  Referring: __Vectors/50 (addr) 
+  Function flags:
+  Called by: 
+  Calls: 
+LEUART0_IRQHandler/35 (LEUART0_IRQHandler) @0x7e1cb7e4d5a0
+  Type: function definition analyzed alias
+  Visibility: public weak
+  Address is taken.
+  References: Default_Handler/54 (alias) 
+  Referring: __Vectors/50 (addr) 
+  Function flags:
+  Called by: 
+  Calls: 
+UART1_TX_IRQHandler/34 (UART1_TX_IRQHandler) @0x7e1cb7e4d438
+  Type: function definition analyzed alias
+  Visibility: public weak
+  Address is taken.
+  References: Default_Handler/54 (alias) 
+  Referring: __Vectors/50 (addr) 
+  Function flags:
+  Called by: 
+  Calls: 
+UART1_RX_IRQHandler/33 (UART1_RX_IRQHandler) @0x7e1cb7e4d2d0
+  Type: function definition analyzed alias
+  Visibility: public weak
+  Address is taken.
+  References: Default_Handler/54 (alias) 
+  Referring: __Vectors/50 (addr) 
+  Function flags:
+  Called by: 
+  Calls: 
+UART0_TX_IRQHandler/32 (UART0_TX_IRQHandler) @0x7e1cb7e4d168
+  Type: function definition analyzed alias
+  Visibility: public weak
+  Address is taken.
+  References: Default_Handler/54 (alias) 
+  Referring: __Vectors/50 (addr) 
+  Function flags:
+  Called by: 
+  Calls: 
+UART0_RX_IRQHandler/31 (UART0_RX_IRQHandler) @0x7e1cb7e4d000
+  Type: function definition analyzed alias
+  Visibility: public weak
+  Address is taken.
+  References: Default_Handler/54 (alias) 
+  Referring: __Vectors/50 (addr) 
+  Function flags:
+  Called by: 
+  Calls: 
+USART2_TX_IRQHandler/30 (USART2_TX_IRQHandler) @0x7e1cb7e462d0
+  Type: function definition analyzed alias
+  Visibility: public weak
+  Address is taken.
+  References: Default_Handler/54 (alias) 
+  Referring: __Vectors/50 (addr) 
+  Function flags:
+  Called by: 
+  Calls: 
+USART2_RX_IRQHandler/29 (USART2_RX_IRQHandler) @0x7e1cb7e49e10
+  Type: function definition analyzed alias
+  Visibility: public weak
+  Address is taken.
+  References: Default_Handler/54 (alias) 
+  Referring: __Vectors/50 (addr) 
+  Function flags:
+  Called by: 
+  Calls: 
+LESENSE_IRQHandler/28 (LESENSE_IRQHandler) @0x7e1cb7e49ca8
+  Type: function definition analyzed alias
+  Visibility: public weak
+  Address is taken.
+  References: Default_Handler/54 (alias) 
+  Referring: __Vectors/50 (addr) 
+  Function flags:
+  Called by: 
+  Calls: 
+USART1_TX_IRQHandler/27 (USART1_TX_IRQHandler) @0x7e1cb7e49b40
+  Type: function definition analyzed alias
+  Visibility: public weak
+  Address is taken.
+  References: Default_Handler/54 (alias) 
+  Referring: __Vectors/50 (addr) 
+  Function flags:
+  Called by: 
+  Calls: 
+USART1_RX_IRQHandler/26 (USART1_RX_IRQHandler) @0x7e1cb7e499d8
+  Type: function definition analyzed alias
+  Visibility: public weak
+  Address is taken.
+  References: Default_Handler/54 (alias) 
+  Referring: __Vectors/50 (addr) 
+  Function flags:
+  Called by: 
+  Calls: 
+TIMER3_IRQHandler/25 (TIMER3_IRQHandler) @0x7e1cb7e49870
+  Type: function definition analyzed alias
+  Visibility: public weak
+  Address is taken.
+  References: Default_Handler/54 (alias) 
+  Referring: __Vectors/50 (addr) 
+  Function flags:
+  Called by: 
+  Calls: 
+TIMER2_IRQHandler/24 (TIMER2_IRQHandler) @0x7e1cb7e49708
+  Type: function definition analyzed alias
+  Visibility: public weak
+  Address is taken.
+  References: Default_Handler/54 (alias) 
+  Referring: __Vectors/50 (addr) 
+  Function flags:
+  Called by: 
+  Calls: 
+TIMER1_IRQHandler/23 (TIMER1_IRQHandler) @0x7e1cb7e495a0
+  Type: function definition analyzed alias
+  Visibility: public weak
+  Address is taken.
+  References: Default_Handler/54 (alias) 
+  Referring: __Vectors/50 (addr) 
+  Function flags:
+  Called by: 
+  Calls: 
+GPIO_ODD_IRQHandler/22 (GPIO_ODD_IRQHandler) @0x7e1cb7e49438
+  Type: function definition analyzed alias
+  Visibility: public weak
+  Address is taken.
+  References: Default_Handler/54 (alias) 
+  Referring: __Vectors/50 (addr) 
+  Function flags:
+  Called by: 
+  Calls: 
+I2C1_IRQHandler/21 (I2C1_IRQHandler) @0x7e1cb7e492d0
+  Type: function definition analyzed alias
+  Visibility: public weak
+  Address is taken.
+  References: Default_Handler/54 (alias) 
+  Referring: __Vectors/50 (addr) 
+  Function flags:
+  Called by: 
+  Calls: 
+I2C0_IRQHandler/20 (I2C0_IRQHandler) @0x7e1cb7e49168
+  Type: function definition analyzed alias
+  Visibility: public weak
+  Address is taken.
+  References: Default_Handler/54 (alias) 
+  Referring: __Vectors/50 (addr) 
+  Function flags:
+  Called by: 
+  Calls: 
+DAC0_IRQHandler/19 (DAC0_IRQHandler) @0x7e1cb7e49000
+  Type: function definition analyzed alias
+  Visibility: public weak
+  Address is taken.
+  References: Default_Handler/54 (alias) 
+  Referring: __Vectors/50 (addr) 
+  Function flags:
+  Called by: 
+  Calls: 
+ADC0_IRQHandler/18 (ADC0_IRQHandler) @0x7e1cb7e46e10
+  Type: function definition analyzed alias
+  Visibility: public weak
+  Address is taken.
+  References: Default_Handler/54 (alias) 
+  Referring: __Vectors/50 (addr) 
+  Function flags:
+  Called by: 
+  Calls: 
+ACMP0_IRQHandler/17 (ACMP0_IRQHandler) @0x7e1cb7e46ca8
+  Type: function definition analyzed alias
+  Visibility: public weak
+  Address is taken.
+  References: Default_Handler/54 (alias) 
+  Referring: __Vectors/50 (addr) 
+  Function flags:
+  Called by: 
+  Calls: 
+USB_IRQHandler/16 (USB_IRQHandler) @0x7e1cb7e46b40
+  Type: function definition analyzed alias
+  Visibility: public weak
+  Address is taken.
+  References: Default_Handler/54 (alias) 
+  Referring: __Vectors/50 (addr) 
+  Function flags:
+  Called by: 
+  Calls: 
+USART0_TX_IRQHandler/15 (USART0_TX_IRQHandler) @0x7e1cb7e469d8
+  Type: function definition analyzed alias
+  Visibility: public weak
+  Address is taken.
+  References: Default_Handler/54 (alias) 
+  Referring: __Vectors/50 (addr) 
+  Function flags:
+  Called by: 
+  Calls: 
+USART0_RX_IRQHandler/14 (USART0_RX_IRQHandler) @0x7e1cb7e46870
+  Type: function definition analyzed alias
+  Visibility: public weak
+  Address is taken.
+  References: Default_Handler/54 (alias) 
+  Referring: __Vectors/50 (addr) 
+  Function flags:
+  Called by: 
+  Calls: 
+TIMER0_IRQHandler/13 (TIMER0_IRQHandler) @0x7e1cb7e46708
+  Type: function definition analyzed alias
+  Visibility: public weak
+  Address is taken.
+  References: Default_Handler/54 (alias) 
+  Referring: __Vectors/50 (addr) 
+  Function flags:
+  Called by: 
+  Calls: 
+GPIO_EVEN_IRQHandler/12 (GPIO_EVEN_IRQHandler) @0x7e1cb7e465a0
+  Type: function definition analyzed alias
+  Visibility: public weak
+  Address is taken.
+  References: Default_Handler/54 (alias) 
+  Referring: __Vectors/50 (addr) 
+  Function flags:
+  Called by: 
+  Calls: 
+DMA_IRQHandler/11 (DMA_IRQHandler) @0x7e1cb7e46438
+  Type: function definition analyzed alias
+  Visibility: public weak
+  Address is taken.
+  References: Default_Handler/54 (alias) 
+  Referring: __Vectors/50 (addr) 
+  Function flags:
+  Called by: 
+  Calls: 
+SysTick_Handler/10 (SysTick_Handler) @0x7e1cb7e46168
+  Type: function definition analyzed alias
+  Visibility: public weak
+  Address is taken.
+  References: Default_Handler/54 (alias) 
+  Referring: __Vectors/50 (addr) 
+  Function flags:
+  Called by: 
+  Calls: 
+PendSV_Handler/9 (PendSV_Handler) @0x7e1cb7e46000
+  Type: function definition analyzed alias
+  Visibility: public weak
+  Address is taken.
+  References: Default_Handler/54 (alias) 
+  Referring: __Vectors/50 (addr) 
+  Function flags:
+  Called by: 
+  Calls: 
+SVC_Handler/8 (SVC_Handler) @0x7e1cb7e43e10
+  Type: function definition analyzed alias
+  Visibility: public weak
+  Address is taken.
+  References: Default_Handler/54 (alias) 
+  Referring: __Vectors/50 (addr) 
+  Function flags:
+  Called by: 
+  Calls: 
+DebugMon_Handler/7 (DebugMon_Handler) @0x7e1cb7e43ca8
+  Type: function definition analyzed alias
+  Visibility: public weak
+  Address is taken.
+  References: Default_Handler/54 (alias) 
+  Referring: __Vectors/50 (addr) 
+  Function flags:
+  Called by: 
+  Calls: 
+UsageFault_Handler/6 (UsageFault_Handler) @0x7e1cb7e43b40
+  Type: function definition analyzed alias
+  Visibility: public weak
+  Address is taken.
+  References: Default_Handler/54 (alias) 
+  Referring: __Vectors/50 (addr) 
+  Function flags:
+  Called by: 
+  Calls: 
+BusFault_Handler/5 (BusFault_Handler) @0x7e1cb7e439d8
+  Type: function definition analyzed alias
+  Visibility: public weak
+  Address is taken.
+  References: Default_Handler/54 (alias) 
+  Referring: __Vectors/50 (addr) 
+  Function flags:
+  Called by: 
+  Calls: 
+MemManage_Handler/4 (MemManage_Handler) @0x7e1cb7e43870
+  Type: function definition analyzed alias
+  Visibility: public weak
+  Address is taken.
+  References: Default_Handler/54 (alias) 
+  Referring: __Vectors/50 (addr) 
+  Function flags:
+  Called by: 
+  Calls: 
+HardFault_Handler/3 (HardFault_Handler) @0x7e1cb7e43708
+  Type: function definition analyzed alias
+  Visibility: public weak
+  Address is taken.
+  References: Default_Handler/54 (alias) 
+  Referring: __Vectors/50 (addr) 
+  Function flags:
+  Called by: 
+  Calls: 
+NMI_Handler/2 (NMI_Handler) @0x7e1cb7e435a0
+  Type: function definition analyzed alias
+  Visibility: public weak
+  Address is taken.
+  References: Default_Handler/54 (alias) 
+  Referring: __Vectors/50 (addr) 
+  Function flags:
+  Called by: 
+  Calls: 
+heap/1 (heap) @0x7e1cb7e40380
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder section:.heap
+  References: 
+  Referring: 
+  Availability: not-ready
+  Varpool flags:
+stack/0 (stack) @0x7e1cb7e40300
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder section:.stack
+  References: 
+  Referring: 
+  Availability: not-ready
+  Varpool flags:
+
+
+Initial Symbol table:
+
+main/61 (main) @0x7e1cb7e5a5a0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Reset_Handler/51 
+  Calls: 
+__bss_end__/60 (__bss_end__) @0x7e1cb7e58780
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: Reset_Handler/51 (addr) 
+  Availability: not-ready
+  Varpool flags:
+__bss_start__/59 (__bss_start__) @0x7e1cb7e58700
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: Reset_Handler/51 (addr) 
+  Availability: not-ready
+  Varpool flags:
+__data_end__/58 (__data_end__) @0x7e1cb7e58600
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: Reset_Handler/51 (addr) 
+  Availability: not-ready
+  Varpool flags:
+__data_start__/57 (__data_start__) @0x7e1cb7e58580
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: Reset_Handler/51 (addr) 
+  Availability: not-ready
+  Varpool flags:
+__etext/56 (__etext) @0x7e1cb7e58500
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: Reset_Handler/51 (addr) 
+  Availability: not-ready
+  Varpool flags:
+__StackTop/55 (__StackTop) @0x7e1cb7e5a2d0
+  Type: function
+  Visibility: external public
+  Address is taken.
+  References: 
+  Referring: __Vectors/50 (addr) 
+  Function flags:
+  Called by: 
+  Calls: 
+Default_Handler/54 (Default_Handler) @0x7e1cb7e5a168
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public weak
+  Address is taken.
+  References: 
+  Referring: EMU_IRQHandler/49 (alias) EBI_IRQHandler/48 (alias) AES_IRQHandler/47 (alias) MSC_IRQHandler/46 (alias) LCD_IRQHandler/45 (alias) VCMP_IRQHandler/44 (alias) CMU_IRQHandler/43 (alias) BURTC_IRQHandler/42 (alias) RTC_IRQHandler/41 (alias) PCNT2_IRQHandler/40 (alias) PCNT1_IRQHandler/39 (alias) PCNT0_IRQHandler/38 (alias) LETIMER0_IRQHandler/37 (alias) LEUART1_IRQHandler/36 (alias) LEUART0_IRQHandler/35 (alias) UART1_TX_IRQHandler/34 (alias) UART1_RX_IRQHandler/33 (alias) UART0_TX_IRQHandler/32 (alias) UART0_RX_IRQHandler/31 (alias) USART2_TX_IRQHandler/30 (alias) USART2_RX_IRQHandler/29 (alias) LESENSE_IRQHandler/28 (alias) USART1_TX_IRQHandler/27 (alias) USART1_RX_IRQHandler/26 (alias) TIMER3_IRQHandler/25 (alias) TIMER2_IRQHandler/24 (alias) TIMER1_IRQHandler/23 (alias) GPIO_ODD_IRQHandler/22 (alias) I2C1_IRQHandler/21 (alias) I2C0_IRQHandler/20 (alias) DAC0_IRQHandler/19 (alias) ADC0_IRQHandler/18 (alias) ACMP0_IRQHandler/17 (alias) USB_IRQHandler/16 (alias) USART0_TX_IRQHandler/15 (alias) USART0_RX_IRQHandler/14 (alias) TIMER0_IRQHandler/13 (alias) GPIO_EVEN_IRQHandler/12 (alias) DMA_IRQHandler/11 (alias) SysTick_Handler/10 (alias) PendSV_Handler/9 (alias) SVC_Handler/8 (alias) DebugMon_Handler/7 (alias) UsageFault_Handler/6 (alias) BusFault_Handler/5 (alias) MemManage_Handler/4 (alias) HardFault_Handler/3 (alias) NMI_Handler/2 (alias) __Vectors/50 (addr) __Vectors/50 (addr) __Vectors/50 (addr) __Vectors/50 (addr) __Vectors/50 (addr) 
+  Function flags: body
+  Called by: 
+  Calls: 
+_main/53 (_main) @0x7e1cb7e5a000
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public weak
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: Reset_Handler/51 
+  Calls: 
+SystemInit/52 (SystemInit) @0x7e1cb7e50b40
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public weak
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: Reset_Handler/51 
+  Calls: 
+Reset_Handler/51 (Reset_Handler) @0x7e1cb7e50e10
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public weak
+  Address is taken.
+  References: __etext/56 (addr) __data_start__/57 (addr) __data_end__/58 (addr) __bss_start__/59 (addr) __bss_end__/60 (addr) 
+  Referring: __Vectors/50 (addr) 
+  Function flags: body
+  Called by: 
+  Calls: main/61 _main/53 SystemInit/52 
+__Vectors/50 (__Vectors) @0x7e1cb7e4cc80
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder public section:.vectors
+  References: __StackTop/55 (addr) Reset_Handler/51 (addr) NMI_Handler/2 (addr) HardFault_Handler/3 (addr) MemManage_Handler/4 (addr) BusFault_Handler/5 (addr) UsageFault_Handler/6 (addr) Default_Handler/54 (addr) Default_Handler/54 (addr) Default_Handler/54 (addr) Default_Handler/54 (addr) SVC_Handler/8 (addr) DebugMon_Handler/7 (addr) Default_Handler/54 (addr) PendSV_Handler/9 (addr) SysTick_Handler/10 (addr) DMA_IRQHandler/11 (addr) GPIO_EVEN_IRQHandler/12 (addr) TIMER0_IRQHandler/13 (addr) USART0_RX_IRQHandler/14 (addr) USART0_TX_IRQHandler/15 (addr) USB_IRQHandler/16 (addr) ACMP0_IRQHandler/17 (addr) ADC0_IRQHandler/18 (addr) DAC0_IRQHandler/19 (addr) I2C0_IRQHandler/20 (addr) I2C1_IRQHandler/21 (addr) GPIO_ODD_IRQHandler/22 (addr) TIMER1_IRQHandler/23 (addr) TIMER2_IRQHandler/24 (addr) TIMER3_IRQHandler/25 (addr) USART1_RX_IRQHandler/26 (addr) USART1_TX_IRQHandler/27 (addr) LESENSE_IRQHandler/28 (addr) USART2_RX_IRQHandler/29 (addr) USART2_TX_IRQHandler/30 (addr) UART0_RX_IRQHandler/31 (addr) UART0_TX_IRQHandler/32 (addr) UART1_RX_IRQHandler/33 (addr) UART1_TX_IRQHandler/34 (addr) LEUART0_IRQHandler/35 (addr) LEUART1_IRQHandler/36 (addr) LETIMER0_IRQHandler/37 (addr) PCNT0_IRQHandler/38 (addr) PCNT1_IRQHandler/39 (addr) PCNT2_IRQHandler/40 (addr) RTC_IRQHandler/41 (addr) BURTC_IRQHandler/42 (addr) CMU_IRQHandler/43 (addr) VCMP_IRQHandler/44 (addr) LCD_IRQHandler/45 (addr) MSC_IRQHandler/46 (addr) AES_IRQHandler/47 (addr) EBI_IRQHandler/48 (addr) EMU_IRQHandler/49 (addr) 
+  Referring: 
+  Availability: not-ready
+  Varpool flags: initialized read-only const-value-known
+EMU_IRQHandler/49 (EMU_IRQHandler) @0x7e1cb7e509d8
+  Type: function definition analyzed alias
+  Visibility: public weak
+  Address is taken.
+  References: Default_Handler/54 (alias) 
+  Referring: __Vectors/50 (addr) 
+  Function flags:
+  Called by: 
+  Calls: 
+EBI_IRQHandler/48 (EBI_IRQHandler) @0x7e1cb7e50870
+  Type: function definition analyzed alias
+  Visibility: public weak
+  Address is taken.
+  References: Default_Handler/54 (alias) 
+  Referring: __Vectors/50 (addr) 
+  Function flags:
+  Called by: 
+  Calls: 
+AES_IRQHandler/47 (AES_IRQHandler) @0x7e1cb7e50708
+  Type: function definition analyzed alias
+  Visibility: public weak
+  Address is taken.
+  References: Default_Handler/54 (alias) 
+  Referring: __Vectors/50 (addr) 
+  Function flags:
+  Called by: 
+  Calls: 
+MSC_IRQHandler/46 (MSC_IRQHandler) @0x7e1cb7e505a0
+  Type: function definition analyzed alias
+  Visibility: public weak
+  Address is taken.
+  References: Default_Handler/54 (alias) 
+  Referring: __Vectors/50 (addr) 
+  Function flags:
+  Called by: 
+  Calls: 
+LCD_IRQHandler/45 (LCD_IRQHandler) @0x7e1cb7e50438
+  Type: function definition analyzed alias
+  Visibility: public weak
+  Address is taken.
+  References: Default_Handler/54 (alias) 
+  Referring: __Vectors/50 (addr) 
+  Function flags:
+  Called by: 
+  Calls: 
+VCMP_IRQHandler/44 (VCMP_IRQHandler) @0x7e1cb7e502d0
+  Type: function definition analyzed alias
+  Visibility: public weak
+  Address is taken.
+  References: Default_Handler/54 (alias) 
+  Referring: __Vectors/50 (addr) 
+  Function flags:
+  Called by: 
+  Calls: 
+CMU_IRQHandler/43 (CMU_IRQHandler) @0x7e1cb7e50168
+  Type: function definition analyzed alias
+  Visibility: public weak
+  Address is taken.
+  References: Default_Handler/54 (alias) 
+  Referring: __Vectors/50 (addr) 
+  Function flags:
+  Called by: 
+  Calls: 
+BURTC_IRQHandler/42 (BURTC_IRQHandler) @0x7e1cb7e50000
+  Type: function definition analyzed alias
+  Visibility: public weak
+  Address is taken.
+  References: Default_Handler/54 (alias) 
+  Referring: __Vectors/50 (addr) 
+  Function flags:
+  Called by: 
+  Calls: 
+RTC_IRQHandler/41 (RTC_IRQHandler) @0x7e1cb7e4de10
+  Type: function definition analyzed alias
+  Visibility: public weak
+  Address is taken.
+  References: Default_Handler/54 (alias) 
+  Referring: __Vectors/50 (addr) 
+  Function flags:
+  Called by: 
+  Calls: 
+PCNT2_IRQHandler/40 (PCNT2_IRQHandler) @0x7e1cb7e4dca8
+  Type: function definition analyzed alias
+  Visibility: public weak
+  Address is taken.
+  References: Default_Handler/54 (alias) 
+  Referring: __Vectors/50 (addr) 
+  Function flags:
+  Called by: 
+  Calls: 
+PCNT1_IRQHandler/39 (PCNT1_IRQHandler) @0x7e1cb7e4db40
+  Type: function definition analyzed alias
+  Visibility: public weak
+  Address is taken.
+  References: Default_Handler/54 (alias) 
+  Referring: __Vectors/50 (addr) 
+  Function flags:
+  Called by: 
+  Calls: 
+PCNT0_IRQHandler/38 (PCNT0_IRQHandler) @0x7e1cb7e4d9d8
+  Type: function definition analyzed alias
+  Visibility: public weak
+  Address is taken.
+  References: Default_Handler/54 (alias) 
+  Referring: __Vectors/50 (addr) 
+  Function flags:
+  Called by: 
+  Calls: 
+LETIMER0_IRQHandler/37 (LETIMER0_IRQHandler) @0x7e1cb7e4d870
+  Type: function definition analyzed alias
+  Visibility: public weak
+  Address is taken.
+  References: Default_Handler/54 (alias) 
+  Referring: __Vectors/50 (addr) 
+  Function flags:
+  Called by: 
+  Calls: 
+LEUART1_IRQHandler/36 (LEUART1_IRQHandler) @0x7e1cb7e4d708
+  Type: function definition analyzed alias
+  Visibility: public weak
+  Address is taken.
+  References: Default_Handler/54 (alias) 
+  Referring: __Vectors/50 (addr) 
+  Function flags:
+  Called by: 
+  Calls: 
+LEUART0_IRQHandler/35 (LEUART0_IRQHandler) @0x7e1cb7e4d5a0
+  Type: function definition analyzed alias
+  Visibility: public weak
+  Address is taken.
+  References: Default_Handler/54 (alias) 
+  Referring: __Vectors/50 (addr) 
+  Function flags:
+  Called by: 
+  Calls: 
+UART1_TX_IRQHandler/34 (UART1_TX_IRQHandler) @0x7e1cb7e4d438
+  Type: function definition analyzed alias
+  Visibility: public weak
+  Address is taken.
+  References: Default_Handler/54 (alias) 
+  Referring: __Vectors/50 (addr) 
+  Function flags:
+  Called by: 
+  Calls: 
+UART1_RX_IRQHandler/33 (UART1_RX_IRQHandler) @0x7e1cb7e4d2d0
+  Type: function definition analyzed alias
+  Visibility: public weak
+  Address is taken.
+  References: Default_Handler/54 (alias) 
+  Referring: __Vectors/50 (addr) 
+  Function flags:
+  Called by: 
+  Calls: 
+UART0_TX_IRQHandler/32 (UART0_TX_IRQHandler) @0x7e1cb7e4d168
+  Type: function definition analyzed alias
+  Visibility: public weak
+  Address is taken.
+  References: Default_Handler/54 (alias) 
+  Referring: __Vectors/50 (addr) 
+  Function flags:
+  Called by: 
+  Calls: 
+UART0_RX_IRQHandler/31 (UART0_RX_IRQHandler) @0x7e1cb7e4d000
+  Type: function definition analyzed alias
+  Visibility: public weak
+  Address is taken.
+  References: Default_Handler/54 (alias) 
+  Referring: __Vectors/50 (addr) 
+  Function flags:
+  Called by: 
+  Calls: 
+USART2_TX_IRQHandler/30 (USART2_TX_IRQHandler) @0x7e1cb7e462d0
+  Type: function definition analyzed alias
+  Visibility: public weak
+  Address is taken.
+  References: Default_Handler/54 (alias) 
+  Referring: __Vectors/50 (addr) 
+  Function flags:
+  Called by: 
+  Calls: 
+USART2_RX_IRQHandler/29 (USART2_RX_IRQHandler) @0x7e1cb7e49e10
+  Type: function definition analyzed alias
+  Visibility: public weak
+  Address is taken.
+  References: Default_Handler/54 (alias) 
+  Referring: __Vectors/50 (addr) 
+  Function flags:
+  Called by: 
+  Calls: 
+LESENSE_IRQHandler/28 (LESENSE_IRQHandler) @0x7e1cb7e49ca8
+  Type: function definition analyzed alias
+  Visibility: public weak
+  Address is taken.
+  References: Default_Handler/54 (alias) 
+  Referring: __Vectors/50 (addr) 
+  Function flags:
+  Called by: 
+  Calls: 
+USART1_TX_IRQHandler/27 (USART1_TX_IRQHandler) @0x7e1cb7e49b40
+  Type: function definition analyzed alias
+  Visibility: public weak
+  Address is taken.
+  References: Default_Handler/54 (alias) 
+  Referring: __Vectors/50 (addr) 
+  Function flags:
+  Called by: 
+  Calls: 
+USART1_RX_IRQHandler/26 (USART1_RX_IRQHandler) @0x7e1cb7e499d8
+  Type: function definition analyzed alias
+  Visibility: public weak
+  Address is taken.
+  References: Default_Handler/54 (alias) 
+  Referring: __Vectors/50 (addr) 
+  Function flags:
+  Called by: 
+  Calls: 
+TIMER3_IRQHandler/25 (TIMER3_IRQHandler) @0x7e1cb7e49870
+  Type: function definition analyzed alias
+  Visibility: public weak
+  Address is taken.
+  References: Default_Handler/54 (alias) 
+  Referring: __Vectors/50 (addr) 
+  Function flags:
+  Called by: 
+  Calls: 
+TIMER2_IRQHandler/24 (TIMER2_IRQHandler) @0x7e1cb7e49708
+  Type: function definition analyzed alias
+  Visibility: public weak
+  Address is taken.
+  References: Default_Handler/54 (alias) 
+  Referring: __Vectors/50 (addr) 
+  Function flags:
+  Called by: 
+  Calls: 
+TIMER1_IRQHandler/23 (TIMER1_IRQHandler) @0x7e1cb7e495a0
+  Type: function definition analyzed alias
+  Visibility: public weak
+  Address is taken.
+  References: Default_Handler/54 (alias) 
+  Referring: __Vectors/50 (addr) 
+  Function flags:
+  Called by: 
+  Calls: 
+GPIO_ODD_IRQHandler/22 (GPIO_ODD_IRQHandler) @0x7e1cb7e49438
+  Type: function definition analyzed alias
+  Visibility: public weak
+  Address is taken.
+  References: Default_Handler/54 (alias) 
+  Referring: __Vectors/50 (addr) 
+  Function flags:
+  Called by: 
+  Calls: 
+I2C1_IRQHandler/21 (I2C1_IRQHandler) @0x7e1cb7e492d0
+  Type: function definition analyzed alias
+  Visibility: public weak
+  Address is taken.
+  References: Default_Handler/54 (alias) 
+  Referring: __Vectors/50 (addr) 
+  Function flags:
+  Called by: 
+  Calls: 
+I2C0_IRQHandler/20 (I2C0_IRQHandler) @0x7e1cb7e49168
+  Type: function definition analyzed alias
+  Visibility: public weak
+  Address is taken.
+  References: Default_Handler/54 (alias) 
+  Referring: __Vectors/50 (addr) 
+  Function flags:
+  Called by: 
+  Calls: 
+DAC0_IRQHandler/19 (DAC0_IRQHandler) @0x7e1cb7e49000
+  Type: function definition analyzed alias
+  Visibility: public weak
+  Address is taken.
+  References: Default_Handler/54 (alias) 
+  Referring: __Vectors/50 (addr) 
+  Function flags:
+  Called by: 
+  Calls: 
+ADC0_IRQHandler/18 (ADC0_IRQHandler) @0x7e1cb7e46e10
+  Type: function definition analyzed alias
+  Visibility: public weak
+  Address is taken.
+  References: Default_Handler/54 (alias) 
+  Referring: __Vectors/50 (addr) 
+  Function flags:
+  Called by: 
+  Calls: 
+ACMP0_IRQHandler/17 (ACMP0_IRQHandler) @0x7e1cb7e46ca8
+  Type: function definition analyzed alias
+  Visibility: public weak
+  Address is taken.
+  References: Default_Handler/54 (alias) 
+  Referring: __Vectors/50 (addr) 
+  Function flags:
+  Called by: 
+  Calls: 
+USB_IRQHandler/16 (USB_IRQHandler) @0x7e1cb7e46b40
+  Type: function definition analyzed alias
+  Visibility: public weak
+  Address is taken.
+  References: Default_Handler/54 (alias) 
+  Referring: __Vectors/50 (addr) 
+  Function flags:
+  Called by: 
+  Calls: 
+USART0_TX_IRQHandler/15 (USART0_TX_IRQHandler) @0x7e1cb7e469d8
+  Type: function definition analyzed alias
+  Visibility: public weak
+  Address is taken.
+  References: Default_Handler/54 (alias) 
+  Referring: __Vectors/50 (addr) 
+  Function flags:
+  Called by: 
+  Calls: 
+USART0_RX_IRQHandler/14 (USART0_RX_IRQHandler) @0x7e1cb7e46870
+  Type: function definition analyzed alias
+  Visibility: public weak
+  Address is taken.
+  References: Default_Handler/54 (alias) 
+  Referring: __Vectors/50 (addr) 
+  Function flags:
+  Called by: 
+  Calls: 
+TIMER0_IRQHandler/13 (TIMER0_IRQHandler) @0x7e1cb7e46708
+  Type: function definition analyzed alias
+  Visibility: public weak
+  Address is taken.
+  References: Default_Handler/54 (alias) 
+  Referring: __Vectors/50 (addr) 
+  Function flags:
+  Called by: 
+  Calls: 
+GPIO_EVEN_IRQHandler/12 (GPIO_EVEN_IRQHandler) @0x7e1cb7e465a0
+  Type: function definition analyzed alias
+  Visibility: public weak
+  Address is taken.
+  References: Default_Handler/54 (alias) 
+  Referring: __Vectors/50 (addr) 
+  Function flags:
+  Called by: 
+  Calls: 
+DMA_IRQHandler/11 (DMA_IRQHandler) @0x7e1cb7e46438
+  Type: function definition analyzed alias
+  Visibility: public weak
+  Address is taken.
+  References: Default_Handler/54 (alias) 
+  Referring: __Vectors/50 (addr) 
+  Function flags:
+  Called by: 
+  Calls: 
+SysTick_Handler/10 (SysTick_Handler) @0x7e1cb7e46168
+  Type: function definition analyzed alias
+  Visibility: public weak
+  Address is taken.
+  References: Default_Handler/54 (alias) 
+  Referring: __Vectors/50 (addr) 
+  Function flags:
+  Called by: 
+  Calls: 
+PendSV_Handler/9 (PendSV_Handler) @0x7e1cb7e46000
+  Type: function definition analyzed alias
+  Visibility: public weak
+  Address is taken.
+  References: Default_Handler/54 (alias) 
+  Referring: __Vectors/50 (addr) 
+  Function flags:
+  Called by: 
+  Calls: 
+SVC_Handler/8 (SVC_Handler) @0x7e1cb7e43e10
+  Type: function definition analyzed alias
+  Visibility: public weak
+  Address is taken.
+  References: Default_Handler/54 (alias) 
+  Referring: __Vectors/50 (addr) 
+  Function flags:
+  Called by: 
+  Calls: 
+DebugMon_Handler/7 (DebugMon_Handler) @0x7e1cb7e43ca8
+  Type: function definition analyzed alias
+  Visibility: public weak
+  Address is taken.
+  References: Default_Handler/54 (alias) 
+  Referring: __Vectors/50 (addr) 
+  Function flags:
+  Called by: 
+  Calls: 
+UsageFault_Handler/6 (UsageFault_Handler) @0x7e1cb7e43b40
+  Type: function definition analyzed alias
+  Visibility: public weak
+  Address is taken.
+  References: Default_Handler/54 (alias) 
+  Referring: __Vectors/50 (addr) 
+  Function flags:
+  Called by: 
+  Calls: 
+BusFault_Handler/5 (BusFault_Handler) @0x7e1cb7e439d8
+  Type: function definition analyzed alias
+  Visibility: public weak
+  Address is taken.
+  References: Default_Handler/54 (alias) 
+  Referring: __Vectors/50 (addr) 
+  Function flags:
+  Called by: 
+  Calls: 
+MemManage_Handler/4 (MemManage_Handler) @0x7e1cb7e43870
+  Type: function definition analyzed alias
+  Visibility: public weak
+  Address is taken.
+  References: Default_Handler/54 (alias) 
+  Referring: __Vectors/50 (addr) 
+  Function flags:
+  Called by: 
+  Calls: 
+HardFault_Handler/3 (HardFault_Handler) @0x7e1cb7e43708
+  Type: function definition analyzed alias
+  Visibility: public weak
+  Address is taken.
+  References: Default_Handler/54 (alias) 
+  Referring: __Vectors/50 (addr) 
+  Function flags:
+  Called by: 
+  Calls: 
+NMI_Handler/2 (NMI_Handler) @0x7e1cb7e435a0
+  Type: function definition analyzed alias
+  Visibility: public weak
+  Address is taken.
+  References: Default_Handler/54 (alias) 
+  Referring: __Vectors/50 (addr) 
+  Function flags:
+  Called by: 
+  Calls: 
+heap/1 (heap) @0x7e1cb7e40380
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder section:.heap
+  References: 
+  Referring: 
+  Availability: not-ready
+  Varpool flags:
+stack/0 (stack) @0x7e1cb7e40300
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder section:.stack
+  References: 
+  Referring: 
+  Availability: not-ready
+  Varpool flags:
+
+Removing unused symbols:
+
+Reclaimed Symbol table:
+
+main/61 (main) @0x7e1cb7e5a5a0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: Reset_Handler/51 
+  Calls: 
+__bss_end__/60 (__bss_end__) @0x7e1cb7e58780
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: Reset_Handler/51 (addr) 
+  Availability: not-ready
+  Varpool flags:
+__bss_start__/59 (__bss_start__) @0x7e1cb7e58700
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: Reset_Handler/51 (addr) 
+  Availability: not-ready
+  Varpool flags:
+__data_end__/58 (__data_end__) @0x7e1cb7e58600
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: Reset_Handler/51 (addr) 
+  Availability: not-ready
+  Varpool flags:
+__data_start__/57 (__data_start__) @0x7e1cb7e58580
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: Reset_Handler/51 (addr) 
+  Availability: not-ready
+  Varpool flags:
+__etext/56 (__etext) @0x7e1cb7e58500
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: Reset_Handler/51 (addr) 
+  Availability: not-ready
+  Varpool flags:
+__StackTop/55 (__StackTop) @0x7e1cb7e5a2d0
+  Type: function
+  Visibility: external public
+  Address is taken.
+  References: 
+  Referring: __Vectors/50 (addr) 
+  Function flags:
+  Called by: 
+  Calls: 
+Default_Handler/54 (Default_Handler) @0x7e1cb7e5a168
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public weak
+  Address is taken.
+  References: 
+  Referring: EMU_IRQHandler/49 (alias) EBI_IRQHandler/48 (alias) AES_IRQHandler/47 (alias) MSC_IRQHandler/46 (alias) LCD_IRQHandler/45 (alias) VCMP_IRQHandler/44 (alias) CMU_IRQHandler/43 (alias) BURTC_IRQHandler/42 (alias) RTC_IRQHandler/41 (alias) PCNT2_IRQHandler/40 (alias) PCNT1_IRQHandler/39 (alias) PCNT0_IRQHandler/38 (alias) LETIMER0_IRQHandler/37 (alias) LEUART1_IRQHandler/36 (alias) LEUART0_IRQHandler/35 (alias) UART1_TX_IRQHandler/34 (alias) UART1_RX_IRQHandler/33 (alias) UART0_TX_IRQHandler/32 (alias) UART0_RX_IRQHandler/31 (alias) USART2_TX_IRQHandler/30 (alias) USART2_RX_IRQHandler/29 (alias) LESENSE_IRQHandler/28 (alias) USART1_TX_IRQHandler/27 (alias) USART1_RX_IRQHandler/26 (alias) TIMER3_IRQHandler/25 (alias) TIMER2_IRQHandler/24 (alias) TIMER1_IRQHandler/23 (alias) GPIO_ODD_IRQHandler/22 (alias) I2C1_IRQHandler/21 (alias) I2C0_IRQHandler/20 (alias) DAC0_IRQHandler/19 (alias) ADC0_IRQHandler/18 (alias) ACMP0_IRQHandler/17 (alias) USB_IRQHandler/16 (alias) USART0_TX_IRQHandler/15 (alias) USART0_RX_IRQHandler/14 (alias) TIMER0_IRQHandler/13 (alias) GPIO_EVEN_IRQHandler/12 (alias) DMA_IRQHandler/11 (alias) SysTick_Handler/10 (alias) PendSV_Handler/9 (alias) SVC_Handler/8 (alias) DebugMon_Handler/7 (alias) UsageFault_Handler/6 (alias) BusFault_Handler/5 (alias) MemManage_Handler/4 (alias) HardFault_Handler/3 (alias) NMI_Handler/2 (alias) __Vectors/50 (addr) __Vectors/50 (addr) __Vectors/50 (addr) __Vectors/50 (addr) __Vectors/50 (addr) 
+  Function flags: body
+  Called by: 
+  Calls: 
+_main/53 (_main) @0x7e1cb7e5a000
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public weak
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: Reset_Handler/51 
+  Calls: 
+SystemInit/52 (SystemInit) @0x7e1cb7e50b40
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public weak
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: Reset_Handler/51 
+  Calls: 
+Reset_Handler/51 (Reset_Handler) @0x7e1cb7e50e10
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public weak
+  Address is taken.
+  References: __etext/56 (addr) __data_start__/57 (addr) __data_end__/58 (addr) __bss_start__/59 (addr) __bss_end__/60 (addr) 
+  Referring: __Vectors/50 (addr) 
+  Function flags: body
+  Called by: 
+  Calls: main/61 _main/53 SystemInit/52 
+__Vectors/50 (__Vectors) @0x7e1cb7e4cc80
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder public section:.vectors
+  References: __StackTop/55 (addr) Reset_Handler/51 (addr) NMI_Handler/2 (addr) HardFault_Handler/3 (addr) MemManage_Handler/4 (addr) BusFault_Handler/5 (addr) UsageFault_Handler/6 (addr) Default_Handler/54 (addr) Default_Handler/54 (addr) Default_Handler/54 (addr) Default_Handler/54 (addr) SVC_Handler/8 (addr) DebugMon_Handler/7 (addr) Default_Handler/54 (addr) PendSV_Handler/9 (addr) SysTick_Handler/10 (addr) DMA_IRQHandler/11 (addr) GPIO_EVEN_IRQHandler/12 (addr) TIMER0_IRQHandler/13 (addr) USART0_RX_IRQHandler/14 (addr) USART0_TX_IRQHandler/15 (addr) USB_IRQHandler/16 (addr) ACMP0_IRQHandler/17 (addr) ADC0_IRQHandler/18 (addr) DAC0_IRQHandler/19 (addr) I2C0_IRQHandler/20 (addr) I2C1_IRQHandler/21 (addr) GPIO_ODD_IRQHandler/22 (addr) TIMER1_IRQHandler/23 (addr) TIMER2_IRQHandler/24 (addr) TIMER3_IRQHandler/25 (addr) USART1_RX_IRQHandler/26 (addr) USART1_TX_IRQHandler/27 (addr) LESENSE_IRQHandler/28 (addr) USART2_RX_IRQHandler/29 (addr) USART2_TX_IRQHandler/30 (addr) UART0_RX_IRQHandler/31 (addr) UART0_TX_IRQHandler/32 (addr) UART1_RX_IRQHandler/33 (addr) UART1_TX_IRQHandler/34 (addr) LEUART0_IRQHandler/35 (addr) LEUART1_IRQHandler/36 (addr) LETIMER0_IRQHandler/37 (addr) PCNT0_IRQHandler/38 (addr) PCNT1_IRQHandler/39 (addr) PCNT2_IRQHandler/40 (addr) RTC_IRQHandler/41 (addr) BURTC_IRQHandler/42 (addr) CMU_IRQHandler/43 (addr) VCMP_IRQHandler/44 (addr) LCD_IRQHandler/45 (addr) MSC_IRQHandler/46 (addr) AES_IRQHandler/47 (addr) EBI_IRQHandler/48 (addr) EMU_IRQHandler/49 (addr) 
+  Referring: 
+  Availability: not-ready
+  Varpool flags: initialized read-only const-value-known
+EMU_IRQHandler/49 (EMU_IRQHandler) @0x7e1cb7e509d8
+  Type: function definition analyzed alias
+  Visibility: public weak
+  Address is taken.
+  References: Default_Handler/54 (alias) 
+  Referring: __Vectors/50 (addr) 
+  Function flags:
+  Called by: 
+  Calls: 
+EBI_IRQHandler/48 (EBI_IRQHandler) @0x7e1cb7e50870
+  Type: function definition analyzed alias
+  Visibility: public weak
+  Address is taken.
+  References: Default_Handler/54 (alias) 
+  Referring: __Vectors/50 (addr) 
+  Function flags:
+  Called by: 
+  Calls: 
+AES_IRQHandler/47 (AES_IRQHandler) @0x7e1cb7e50708
+  Type: function definition analyzed alias
+  Visibility: public weak
+  Address is taken.
+  References: Default_Handler/54 (alias) 
+  Referring: __Vectors/50 (addr) 
+  Function flags:
+  Called by: 
+  Calls: 
+MSC_IRQHandler/46 (MSC_IRQHandler) @0x7e1cb7e505a0
+  Type: function definition analyzed alias
+  Visibility: public weak
+  Address is taken.
+  References: Default_Handler/54 (alias) 
+  Referring: __Vectors/50 (addr) 
+  Function flags:
+  Called by: 
+  Calls: 
+LCD_IRQHandler/45 (LCD_IRQHandler) @0x7e1cb7e50438
+  Type: function definition analyzed alias
+  Visibility: public weak
+  Address is taken.
+  References: Default_Handler/54 (alias) 
+  Referring: __Vectors/50 (addr) 
+  Function flags:
+  Called by: 
+  Calls: 
+VCMP_IRQHandler/44 (VCMP_IRQHandler) @0x7e1cb7e502d0
+  Type: function definition analyzed alias
+  Visibility: public weak
+  Address is taken.
+  References: Default_Handler/54 (alias) 
+  Referring: __Vectors/50 (addr) 
+  Function flags:
+  Called by: 
+  Calls: 
+CMU_IRQHandler/43 (CMU_IRQHandler) @0x7e1cb7e50168
+  Type: function definition analyzed alias
+  Visibility: public weak
+  Address is taken.
+  References: Default_Handler/54 (alias) 
+  Referring: __Vectors/50 (addr) 
+  Function flags:
+  Called by: 
+  Calls: 
+BURTC_IRQHandler/42 (BURTC_IRQHandler) @0x7e1cb7e50000
+  Type: function definition analyzed alias
+  Visibility: public weak
+  Address is taken.
+  References: Default_Handler/54 (alias) 
+  Referring: __Vectors/50 (addr) 
+  Function flags:
+  Called by: 
+  Calls: 
+RTC_IRQHandler/41 (RTC_IRQHandler) @0x7e1cb7e4de10
+  Type: function definition analyzed alias
+  Visibility: public weak
+  Address is taken.
+  References: Default_Handler/54 (alias) 
+  Referring: __Vectors/50 (addr) 
+  Function flags:
+  Called by: 
+  Calls: 
+PCNT2_IRQHandler/40 (PCNT2_IRQHandler) @0x7e1cb7e4dca8
+  Type: function definition analyzed alias
+  Visibility: public weak
+  Address is taken.
+  References: Default_Handler/54 (alias) 
+  Referring: __Vectors/50 (addr) 
+  Function flags:
+  Called by: 
+  Calls: 
+PCNT1_IRQHandler/39 (PCNT1_IRQHandler) @0x7e1cb7e4db40
+  Type: function definition analyzed alias
+  Visibility: public weak
+  Address is taken.
+  References: Default_Handler/54 (alias) 
+  Referring: __Vectors/50 (addr) 
+  Function flags:
+  Called by: 
+  Calls: 
+PCNT0_IRQHandler/38 (PCNT0_IRQHandler) @0x7e1cb7e4d9d8
+  Type: function definition analyzed alias
+  Visibility: public weak
+  Address is taken.
+  References: Default_Handler/54 (alias) 
+  Referring: __Vectors/50 (addr) 
+  Function flags:
+  Called by: 
+  Calls: 
+LETIMER0_IRQHandler/37 (LETIMER0_IRQHandler) @0x7e1cb7e4d870
+  Type: function definition analyzed alias
+  Visibility: public weak
+  Address is taken.
+  References: Default_Handler/54 (alias) 
+  Referring: __Vectors/50 (addr) 
+  Function flags:
+  Called by: 
+  Calls: 
+LEUART1_IRQHandler/36 (LEUART1_IRQHandler) @0x7e1cb7e4d708
+  Type: function definition analyzed alias
+  Visibility: public weak
+  Address is taken.
+  References: Default_Handler/54 (alias) 
+  Referring: __Vectors/50 (addr) 
+  Function flags:
+  Called by: 
+  Calls: 
+LEUART0_IRQHandler/35 (LEUART0_IRQHandler) @0x7e1cb7e4d5a0
+  Type: function definition analyzed alias
+  Visibility: public weak
+  Address is taken.
+  References: Default_Handler/54 (alias) 
+  Referring: __Vectors/50 (addr) 
+  Function flags:
+  Called by: 
+  Calls: 
+UART1_TX_IRQHandler/34 (UART1_TX_IRQHandler) @0x7e1cb7e4d438
+  Type: function definition analyzed alias
+  Visibility: public weak
+  Address is taken.
+  References: Default_Handler/54 (alias) 
+  Referring: __Vectors/50 (addr) 
+  Function flags:
+  Called by: 
+  Calls: 
+UART1_RX_IRQHandler/33 (UART1_RX_IRQHandler) @0x7e1cb7e4d2d0
+  Type: function definition analyzed alias
+  Visibility: public weak
+  Address is taken.
+  References: Default_Handler/54 (alias) 
+  Referring: __Vectors/50 (addr) 
+  Function flags:
+  Called by: 
+  Calls: 
+UART0_TX_IRQHandler/32 (UART0_TX_IRQHandler) @0x7e1cb7e4d168
+  Type: function definition analyzed alias
+  Visibility: public weak
+  Address is taken.
+  References: Default_Handler/54 (alias) 
+  Referring: __Vectors/50 (addr) 
+  Function flags:
+  Called by: 
+  Calls: 
+UART0_RX_IRQHandler/31 (UART0_RX_IRQHandler) @0x7e1cb7e4d000
+  Type: function definition analyzed alias
+  Visibility: public weak
+  Address is taken.
+  References: Default_Handler/54 (alias) 
+  Referring: __Vectors/50 (addr) 
+  Function flags:
+  Called by: 
+  Calls: 
+USART2_TX_IRQHandler/30 (USART2_TX_IRQHandler) @0x7e1cb7e462d0
+  Type: function definition analyzed alias
+  Visibility: public weak
+  Address is taken.
+  References: Default_Handler/54 (alias) 
+  Referring: __Vectors/50 (addr) 
+  Function flags:
+  Called by: 
+  Calls: 
+USART2_RX_IRQHandler/29 (USART2_RX_IRQHandler) @0x7e1cb7e49e10
+  Type: function definition analyzed alias
+  Visibility: public weak
+  Address is taken.
+  References: Default_Handler/54 (alias) 
+  Referring: __Vectors/50 (addr) 
+  Function flags:
+  Called by: 
+  Calls: 
+LESENSE_IRQHandler/28 (LESENSE_IRQHandler) @0x7e1cb7e49ca8
+  Type: function definition analyzed alias
+  Visibility: public weak
+  Address is taken.
+  References: Default_Handler/54 (alias) 
+  Referring: __Vectors/50 (addr) 
+  Function flags:
+  Called by: 
+  Calls: 
+USART1_TX_IRQHandler/27 (USART1_TX_IRQHandler) @0x7e1cb7e49b40
+  Type: function definition analyzed alias
+  Visibility: public weak
+  Address is taken.
+  References: Default_Handler/54 (alias) 
+  Referring: __Vectors/50 (addr) 
+  Function flags:
+  Called by: 
+  Calls: 
+USART1_RX_IRQHandler/26 (USART1_RX_IRQHandler) @0x7e1cb7e499d8
+  Type: function definition analyzed alias
+  Visibility: public weak
+  Address is taken.
+  References: Default_Handler/54 (alias) 
+  Referring: __Vectors/50 (addr) 
+  Function flags:
+  Called by: 
+  Calls: 
+TIMER3_IRQHandler/25 (TIMER3_IRQHandler) @0x7e1cb7e49870
+  Type: function definition analyzed alias
+  Visibility: public weak
+  Address is taken.
+  References: Default_Handler/54 (alias) 
+  Referring: __Vectors/50 (addr) 
+  Function flags:
+  Called by: 
+  Calls: 
+TIMER2_IRQHandler/24 (TIMER2_IRQHandler) @0x7e1cb7e49708
+  Type: function definition analyzed alias
+  Visibility: public weak
+  Address is taken.
+  References: Default_Handler/54 (alias) 
+  Referring: __Vectors/50 (addr) 
+  Function flags:
+  Called by: 
+  Calls: 
+TIMER1_IRQHandler/23 (TIMER1_IRQHandler) @0x7e1cb7e495a0
+  Type: function definition analyzed alias
+  Visibility: public weak
+  Address is taken.
+  References: Default_Handler/54 (alias) 
+  Referring: __Vectors/50 (addr) 
+  Function flags:
+  Called by: 
+  Calls: 
+GPIO_ODD_IRQHandler/22 (GPIO_ODD_IRQHandler) @0x7e1cb7e49438
+  Type: function definition analyzed alias
+  Visibility: public weak
+  Address is taken.
+  References: Default_Handler/54 (alias) 
+  Referring: __Vectors/50 (addr) 
+  Function flags:
+  Called by: 
+  Calls: 
+I2C1_IRQHandler/21 (I2C1_IRQHandler) @0x7e1cb7e492d0
+  Type: function definition analyzed alias
+  Visibility: public weak
+  Address is taken.
+  References: Default_Handler/54 (alias) 
+  Referring: __Vectors/50 (addr) 
+  Function flags:
+  Called by: 
+  Calls: 
+I2C0_IRQHandler/20 (I2C0_IRQHandler) @0x7e1cb7e49168
+  Type: function definition analyzed alias
+  Visibility: public weak
+  Address is taken.
+  References: Default_Handler/54 (alias) 
+  Referring: __Vectors/50 (addr) 
+  Function flags:
+  Called by: 
+  Calls: 
+DAC0_IRQHandler/19 (DAC0_IRQHandler) @0x7e1cb7e49000
+  Type: function definition analyzed alias
+  Visibility: public weak
+  Address is taken.
+  References: Default_Handler/54 (alias) 
+  Referring: __Vectors/50 (addr) 
+  Function flags:
+  Called by: 
+  Calls: 
+ADC0_IRQHandler/18 (ADC0_IRQHandler) @0x7e1cb7e46e10
+  Type: function definition analyzed alias
+  Visibility: public weak
+  Address is taken.
+  References: Default_Handler/54 (alias) 
+  Referring: __Vectors/50 (addr) 
+  Function flags:
+  Called by: 
+  Calls: 
+ACMP0_IRQHandler/17 (ACMP0_IRQHandler) @0x7e1cb7e46ca8
+  Type: function definition analyzed alias
+  Visibility: public weak
+  Address is taken.
+  References: Default_Handler/54 (alias) 
+  Referring: __Vectors/50 (addr) 
+  Function flags:
+  Called by: 
+  Calls: 
+USB_IRQHandler/16 (USB_IRQHandler) @0x7e1cb7e46b40
+  Type: function definition analyzed alias
+  Visibility: public weak
+  Address is taken.
+  References: Default_Handler/54 (alias) 
+  Referring: __Vectors/50 (addr) 
+  Function flags:
+  Called by: 
+  Calls: 
+USART0_TX_IRQHandler/15 (USART0_TX_IRQHandler) @0x7e1cb7e469d8
+  Type: function definition analyzed alias
+  Visibility: public weak
+  Address is taken.
+  References: Default_Handler/54 (alias) 
+  Referring: __Vectors/50 (addr) 
+  Function flags:
+  Called by: 
+  Calls: 
+USART0_RX_IRQHandler/14 (USART0_RX_IRQHandler) @0x7e1cb7e46870
+  Type: function definition analyzed alias
+  Visibility: public weak
+  Address is taken.
+  References: Default_Handler/54 (alias) 
+  Referring: __Vectors/50 (addr) 
+  Function flags:
+  Called by: 
+  Calls: 
+TIMER0_IRQHandler/13 (TIMER0_IRQHandler) @0x7e1cb7e46708
+  Type: function definition analyzed alias
+  Visibility: public weak
+  Address is taken.
+  References: Default_Handler/54 (alias) 
+  Referring: __Vectors/50 (addr) 
+  Function flags:
+  Called by: 
+  Calls: 
+GPIO_EVEN_IRQHandler/12 (GPIO_EVEN_IRQHandler) @0x7e1cb7e465a0
+  Type: function definition analyzed alias
+  Visibility: public weak
+  Address is taken.
+  References: Default_Handler/54 (alias) 
+  Referring: __Vectors/50 (addr) 
+  Function flags:
+  Called by: 
+  Calls: 
+DMA_IRQHandler/11 (DMA_IRQHandler) @0x7e1cb7e46438
+  Type: function definition analyzed alias
+  Visibility: public weak
+  Address is taken.
+  References: Default_Handler/54 (alias) 
+  Referring: __Vectors/50 (addr) 
+  Function flags:
+  Called by: 
+  Calls: 
+SysTick_Handler/10 (SysTick_Handler) @0x7e1cb7e46168
+  Type: function definition analyzed alias
+  Visibility: public weak
+  Address is taken.
+  References: Default_Handler/54 (alias) 
+  Referring: __Vectors/50 (addr) 
+  Function flags:
+  Called by: 
+  Calls: 
+PendSV_Handler/9 (PendSV_Handler) @0x7e1cb7e46000
+  Type: function definition analyzed alias
+  Visibility: public weak
+  Address is taken.
+  References: Default_Handler/54 (alias) 
+  Referring: __Vectors/50 (addr) 
+  Function flags:
+  Called by: 
+  Calls: 
+SVC_Handler/8 (SVC_Handler) @0x7e1cb7e43e10
+  Type: function definition analyzed alias
+  Visibility: public weak
+  Address is taken.
+  References: Default_Handler/54 (alias) 
+  Referring: __Vectors/50 (addr) 
+  Function flags:
+  Called by: 
+  Calls: 
+DebugMon_Handler/7 (DebugMon_Handler) @0x7e1cb7e43ca8
+  Type: function definition analyzed alias
+  Visibility: public weak
+  Address is taken.
+  References: Default_Handler/54 (alias) 
+  Referring: __Vectors/50 (addr) 
+  Function flags:
+  Called by: 
+  Calls: 
+UsageFault_Handler/6 (UsageFault_Handler) @0x7e1cb7e43b40
+  Type: function definition analyzed alias
+  Visibility: public weak
+  Address is taken.
+  References: Default_Handler/54 (alias) 
+  Referring: __Vectors/50 (addr) 
+  Function flags:
+  Called by: 
+  Calls: 
+BusFault_Handler/5 (BusFault_Handler) @0x7e1cb7e439d8
+  Type: function definition analyzed alias
+  Visibility: public weak
+  Address is taken.
+  References: Default_Handler/54 (alias) 
+  Referring: __Vectors/50 (addr) 
+  Function flags:
+  Called by: 
+  Calls: 
+MemManage_Handler/4 (MemManage_Handler) @0x7e1cb7e43870
+  Type: function definition analyzed alias
+  Visibility: public weak
+  Address is taken.
+  References: Default_Handler/54 (alias) 
+  Referring: __Vectors/50 (addr) 
+  Function flags:
+  Called by: 
+  Calls: 
+HardFault_Handler/3 (HardFault_Handler) @0x7e1cb7e43708
+  Type: function definition analyzed alias
+  Visibility: public weak
+  Address is taken.
+  References: Default_Handler/54 (alias) 
+  Referring: __Vectors/50 (addr) 
+  Function flags:
+  Called by: 
+  Calls: 
+NMI_Handler/2 (NMI_Handler) @0x7e1cb7e435a0
+  Type: function definition analyzed alias
+  Visibility: public weak
+  Address is taken.
+  References: Default_Handler/54 (alias) 
+  Referring: __Vectors/50 (addr) 
+  Function flags:
+  Called by: 
+  Calls: 
+heap/1 (heap) @0x7e1cb7e40380
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder section:.heap
+  References: 
+  Referring: 
+  Availability: not-ready
+  Varpool flags:
+stack/0 (stack) @0x7e1cb7e40300
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder section:.stack
+  References: 
+  Referring: 
+  Availability: not-ready
+  Varpool flags:
+
+Reclaiming functions:
+Reclaiming variables:
+Clearing address taken flags:
+Optimized Symbol table:
+
+main/61 (main) @0x7e1cb7e5a5a0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: Reset_Handler/51 
+  Calls: 
+__bss_end__/60 (__bss_end__) @0x7e1cb7e58780
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: Reset_Handler/51 (addr) 
+  Availability: not_available
+  Varpool flags:
+__bss_start__/59 (__bss_start__) @0x7e1cb7e58700
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: Reset_Handler/51 (addr) 
+  Availability: not_available
+  Varpool flags:
+__data_end__/58 (__data_end__) @0x7e1cb7e58600
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: Reset_Handler/51 (addr) 
+  Availability: not_available
+  Varpool flags:
+__data_start__/57 (__data_start__) @0x7e1cb7e58580
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: Reset_Handler/51 (addr) 
+  Availability: not_available
+  Varpool flags:
+__etext/56 (__etext) @0x7e1cb7e58500
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: Reset_Handler/51 (addr) 
+  Availability: not_available
+  Varpool flags:
+__StackTop/55 (__StackTop) @0x7e1cb7e5a2d0
+  Type: function
+  Visibility: external public
+  Address is taken.
+  References: 
+  Referring: __Vectors/50 (addr) 
+  Availability: not_available
+  Function flags:
+  Called by: 
+  Calls: 
+Default_Handler/54 (Default_Handler) @0x7e1cb7e5a168
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public weak
+  Address is taken.
+  References: 
+  Referring: EMU_IRQHandler/49 (alias) EBI_IRQHandler/48 (alias) AES_IRQHandler/47 (alias) MSC_IRQHandler/46 (alias) LCD_IRQHandler/45 (alias) VCMP_IRQHandler/44 (alias) CMU_IRQHandler/43 (alias) BURTC_IRQHandler/42 (alias) RTC_IRQHandler/41 (alias) PCNT2_IRQHandler/40 (alias) PCNT1_IRQHandler/39 (alias) PCNT0_IRQHandler/38 (alias) LETIMER0_IRQHandler/37 (alias) LEUART1_IRQHandler/36 (alias) LEUART0_IRQHandler/35 (alias) UART1_TX_IRQHandler/34 (alias) UART1_RX_IRQHandler/33 (alias) UART0_TX_IRQHandler/32 (alias) UART0_RX_IRQHandler/31 (alias) USART2_TX_IRQHandler/30 (alias) USART2_RX_IRQHandler/29 (alias) LESENSE_IRQHandler/28 (alias) USART1_TX_IRQHandler/27 (alias) USART1_RX_IRQHandler/26 (alias) TIMER3_IRQHandler/25 (alias) TIMER2_IRQHandler/24 (alias) TIMER1_IRQHandler/23 (alias) GPIO_ODD_IRQHandler/22 (alias) I2C1_IRQHandler/21 (alias) I2C0_IRQHandler/20 (alias) DAC0_IRQHandler/19 (alias) ADC0_IRQHandler/18 (alias) ACMP0_IRQHandler/17 (alias) USB_IRQHandler/16 (alias) USART0_TX_IRQHandler/15 (alias) USART0_RX_IRQHandler/14 (alias) TIMER0_IRQHandler/13 (alias) GPIO_EVEN_IRQHandler/12 (alias) DMA_IRQHandler/11 (alias) SysTick_Handler/10 (alias) PendSV_Handler/9 (alias) SVC_Handler/8 (alias) DebugMon_Handler/7 (alias) UsageFault_Handler/6 (alias) BusFault_Handler/5 (alias) MemManage_Handler/4 (alias) HardFault_Handler/3 (alias) NMI_Handler/2 (alias) __Vectors/50 (addr) __Vectors/50 (addr) __Vectors/50 (addr) __Vectors/50 (addr) __Vectors/50 (addr) 
+  Availability: overwritable
+  Function flags: body
+  Called by: 
+  Calls: 
+_main/53 (_main) @0x7e1cb7e5a000
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public weak
+  References: 
+  Referring: 
+  Availability: overwritable
+  Function flags: body
+  Called by: Reset_Handler/51 
+  Calls: 
+SystemInit/52 (SystemInit) @0x7e1cb7e50b40
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public weak
+  References: 
+  Referring: 
+  Availability: overwritable
+  Function flags: body
+  Called by: Reset_Handler/51 
+  Calls: 
+Reset_Handler/51 (Reset_Handler) @0x7e1cb7e50e10
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public weak
+  Address is taken.
+  References: __etext/56 (addr) __data_start__/57 (addr) __data_end__/58 (addr) __bss_start__/59 (addr) __bss_end__/60 (addr) 
+  Referring: __Vectors/50 (addr) 
+  Availability: overwritable
+  Function flags: body
+  Called by: 
+  Calls: main/61 _main/53 SystemInit/52 
+__Vectors/50 (__Vectors) @0x7e1cb7e4cc80
+  Type: variable definition analyzed
+  Visibility: force_output externally_visible no_reorder public section:.vectors
+  References: __StackTop/55 (addr) Reset_Handler/51 (addr) NMI_Handler/2 (addr) HardFault_Handler/3 (addr) MemManage_Handler/4 (addr) BusFault_Handler/5 (addr) UsageFault_Handler/6 (addr) Default_Handler/54 (addr) Default_Handler/54 (addr) Default_Handler/54 (addr) Default_Handler/54 (addr) SVC_Handler/8 (addr) DebugMon_Handler/7 (addr) Default_Handler/54 (addr) PendSV_Handler/9 (addr) SysTick_Handler/10 (addr) DMA_IRQHandler/11 (addr) GPIO_EVEN_IRQHandler/12 (addr) TIMER0_IRQHandler/13 (addr) USART0_RX_IRQHandler/14 (addr) USART0_TX_IRQHandler/15 (addr) USB_IRQHandler/16 (addr) ACMP0_IRQHandler/17 (addr) ADC0_IRQHandler/18 (addr) DAC0_IRQHandler/19 (addr) I2C0_IRQHandler/20 (addr) I2C1_IRQHandler/21 (addr) GPIO_ODD_IRQHandler/22 (addr) TIMER1_IRQHandler/23 (addr) TIMER2_IRQHandler/24 (addr) TIMER3_IRQHandler/25 (addr) USART1_RX_IRQHandler/26 (addr) USART1_TX_IRQHandler/27 (addr) LESENSE_IRQHandler/28 (addr) USART2_RX_IRQHandler/29 (addr) USART2_TX_IRQHandler/30 (addr) UART0_RX_IRQHandler/31 (addr) UART0_TX_IRQHandler/32 (addr) UART1_RX_IRQHandler/33 (addr) UART1_TX_IRQHandler/34 (addr) LEUART0_IRQHandler/35 (addr) LEUART1_IRQHandler/36 (addr) LETIMER0_IRQHandler/37 (addr) PCNT0_IRQHandler/38 (addr) PCNT1_IRQHandler/39 (addr) PCNT2_IRQHandler/40 (addr) RTC_IRQHandler/41 (addr) BURTC_IRQHandler/42 (addr) CMU_IRQHandler/43 (addr) VCMP_IRQHandler/44 (addr) LCD_IRQHandler/45 (addr) MSC_IRQHandler/46 (addr) AES_IRQHandler/47 (addr) EBI_IRQHandler/48 (addr) EMU_IRQHandler/49 (addr) 
+  Referring: 
+  Availability: available
+  Varpool flags: initialized read-only const-value-known
+EMU_IRQHandler/49 (EMU_IRQHandler) @0x7e1cb7e509d8
+  Type: function definition analyzed alias
+  Visibility: externally_visible public weak
+  Address is taken.
+  References: Default_Handler/54 (alias) 
+  Referring: __Vectors/50 (addr) 
+  Availability: overwritable
+  Function flags:
+  Called by: 
+  Calls: 
+EBI_IRQHandler/48 (EBI_IRQHandler) @0x7e1cb7e50870
+  Type: function definition analyzed alias
+  Visibility: externally_visible public weak
+  Address is taken.
+  References: Default_Handler/54 (alias) 
+  Referring: __Vectors/50 (addr) 
+  Availability: overwritable
+  Function flags:
+  Called by: 
+  Calls: 
+AES_IRQHandler/47 (AES_IRQHandler) @0x7e1cb7e50708
+  Type: function definition analyzed alias
+  Visibility: externally_visible public weak
+  Address is taken.
+  References: Default_Handler/54 (alias) 
+  Referring: __Vectors/50 (addr) 
+  Availability: overwritable
+  Function flags:
+  Called by: 
+  Calls: 
+MSC_IRQHandler/46 (MSC_IRQHandler) @0x7e1cb7e505a0
+  Type: function definition analyzed alias
+  Visibility: externally_visible public weak
+  Address is taken.
+  References: Default_Handler/54 (alias) 
+  Referring: __Vectors/50 (addr) 
+  Availability: overwritable
+  Function flags:
+  Called by: 
+  Calls: 
+LCD_IRQHandler/45 (LCD_IRQHandler) @0x7e1cb7e50438
+  Type: function definition analyzed alias
+  Visibility: externally_visible public weak
+  Address is taken.
+  References: Default_Handler/54 (alias) 
+  Referring: __Vectors/50 (addr) 
+  Availability: overwritable
+  Function flags:
+  Called by: 
+  Calls: 
+VCMP_IRQHandler/44 (VCMP_IRQHandler) @0x7e1cb7e502d0
+  Type: function definition analyzed alias
+  Visibility: externally_visible public weak
+  Address is taken.
+  References: Default_Handler/54 (alias) 
+  Referring: __Vectors/50 (addr) 
+  Availability: overwritable
+  Function flags:
+  Called by: 
+  Calls: 
+CMU_IRQHandler/43 (CMU_IRQHandler) @0x7e1cb7e50168
+  Type: function definition analyzed alias
+  Visibility: externally_visible public weak
+  Address is taken.
+  References: Default_Handler/54 (alias) 
+  Referring: __Vectors/50 (addr) 
+  Availability: overwritable
+  Function flags:
+  Called by: 
+  Calls: 
+BURTC_IRQHandler/42 (BURTC_IRQHandler) @0x7e1cb7e50000
+  Type: function definition analyzed alias
+  Visibility: externally_visible public weak
+  Address is taken.
+  References: Default_Handler/54 (alias) 
+  Referring: __Vectors/50 (addr) 
+  Availability: overwritable
+  Function flags:
+  Called by: 
+  Calls: 
+RTC_IRQHandler/41 (RTC_IRQHandler) @0x7e1cb7e4de10
+  Type: function definition analyzed alias
+  Visibility: externally_visible public weak
+  Address is taken.
+  References: Default_Handler/54 (alias) 
+  Referring: __Vectors/50 (addr) 
+  Availability: overwritable
+  Function flags:
+  Called by: 
+  Calls: 
+PCNT2_IRQHandler/40 (PCNT2_IRQHandler) @0x7e1cb7e4dca8
+  Type: function definition analyzed alias
+  Visibility: externally_visible public weak
+  Address is taken.
+  References: Default_Handler/54 (alias) 
+  Referring: __Vectors/50 (addr) 
+  Availability: overwritable
+  Function flags:
+  Called by: 
+  Calls: 
+PCNT1_IRQHandler/39 (PCNT1_IRQHandler) @0x7e1cb7e4db40
+  Type: function definition analyzed alias
+  Visibility: externally_visible public weak
+  Address is taken.
+  References: Default_Handler/54 (alias) 
+  Referring: __Vectors/50 (addr) 
+  Availability: overwritable
+  Function flags:
+  Called by: 
+  Calls: 
+PCNT0_IRQHandler/38 (PCNT0_IRQHandler) @0x7e1cb7e4d9d8
+  Type: function definition analyzed alias
+  Visibility: externally_visible public weak
+  Address is taken.
+  References: Default_Handler/54 (alias) 
+  Referring: __Vectors/50 (addr) 
+  Availability: overwritable
+  Function flags:
+  Called by: 
+  Calls: 
+LETIMER0_IRQHandler/37 (LETIMER0_IRQHandler) @0x7e1cb7e4d870
+  Type: function definition analyzed alias
+  Visibility: externally_visible public weak
+  Address is taken.
+  References: Default_Handler/54 (alias) 
+  Referring: __Vectors/50 (addr) 
+  Availability: overwritable
+  Function flags:
+  Called by: 
+  Calls: 
+LEUART1_IRQHandler/36 (LEUART1_IRQHandler) @0x7e1cb7e4d708
+  Type: function definition analyzed alias
+  Visibility: externally_visible public weak
+  Address is taken.
+  References: Default_Handler/54 (alias) 
+  Referring: __Vectors/50 (addr) 
+  Availability: overwritable
+  Function flags:
+  Called by: 
+  Calls: 
+LEUART0_IRQHandler/35 (LEUART0_IRQHandler) @0x7e1cb7e4d5a0
+  Type: function definition analyzed alias
+  Visibility: externally_visible public weak
+  Address is taken.
+  References: Default_Handler/54 (alias) 
+  Referring: __Vectors/50 (addr) 
+  Availability: overwritable
+  Function flags:
+  Called by: 
+  Calls: 
+UART1_TX_IRQHandler/34 (UART1_TX_IRQHandler) @0x7e1cb7e4d438
+  Type: function definition analyzed alias
+  Visibility: externally_visible public weak
+  Address is taken.
+  References: Default_Handler/54 (alias) 
+  Referring: __Vectors/50 (addr) 
+  Availability: overwritable
+  Function flags:
+  Called by: 
+  Calls: 
+UART1_RX_IRQHandler/33 (UART1_RX_IRQHandler) @0x7e1cb7e4d2d0
+  Type: function definition analyzed alias
+  Visibility: externally_visible public weak
+  Address is taken.
+  References: Default_Handler/54 (alias) 
+  Referring: __Vectors/50 (addr) 
+  Availability: overwritable
+  Function flags:
+  Called by: 
+  Calls: 
+UART0_TX_IRQHandler/32 (UART0_TX_IRQHandler) @0x7e1cb7e4d168
+  Type: function definition analyzed alias
+  Visibility: externally_visible public weak
+  Address is taken.
+  References: Default_Handler/54 (alias) 
+  Referring: __Vectors/50 (addr) 
+  Availability: overwritable
+  Function flags:
+  Called by: 
+  Calls: 
+UART0_RX_IRQHandler/31 (UART0_RX_IRQHandler) @0x7e1cb7e4d000
+  Type: function definition analyzed alias
+  Visibility: externally_visible public weak
+  Address is taken.
+  References: Default_Handler/54 (alias) 
+  Referring: __Vectors/50 (addr) 
+  Availability: overwritable
+  Function flags:
+  Called by: 
+  Calls: 
+USART2_TX_IRQHandler/30 (USART2_TX_IRQHandler) @0x7e1cb7e462d0
+  Type: function definition analyzed alias
+  Visibility: externally_visible public weak
+  Address is taken.
+  References: Default_Handler/54 (alias) 
+  Referring: __Vectors/50 (addr) 
+  Availability: overwritable
+  Function flags:
+  Called by: 
+  Calls: 
+USART2_RX_IRQHandler/29 (USART2_RX_IRQHandler) @0x7e1cb7e49e10
+  Type: function definition analyzed alias
+  Visibility: externally_visible public weak
+  Address is taken.
+  References: Default_Handler/54 (alias) 
+  Referring: __Vectors/50 (addr) 
+  Availability: overwritable
+  Function flags:
+  Called by: 
+  Calls: 
+LESENSE_IRQHandler/28 (LESENSE_IRQHandler) @0x7e1cb7e49ca8
+  Type: function definition analyzed alias
+  Visibility: externally_visible public weak
+  Address is taken.
+  References: Default_Handler/54 (alias) 
+  Referring: __Vectors/50 (addr) 
+  Availability: overwritable
+  Function flags:
+  Called by: 
+  Calls: 
+USART1_TX_IRQHandler/27 (USART1_TX_IRQHandler) @0x7e1cb7e49b40
+  Type: function definition analyzed alias
+  Visibility: externally_visible public weak
+  Address is taken.
+  References: Default_Handler/54 (alias) 
+  Referring: __Vectors/50 (addr) 
+  Availability: overwritable
+  Function flags:
+  Called by: 
+  Calls: 
+USART1_RX_IRQHandler/26 (USART1_RX_IRQHandler) @0x7e1cb7e499d8
+  Type: function definition analyzed alias
+  Visibility: externally_visible public weak
+  Address is taken.
+  References: Default_Handler/54 (alias) 
+  Referring: __Vectors/50 (addr) 
+  Availability: overwritable
+  Function flags:
+  Called by: 
+  Calls: 
+TIMER3_IRQHandler/25 (TIMER3_IRQHandler) @0x7e1cb7e49870
+  Type: function definition analyzed alias
+  Visibility: externally_visible public weak
+  Address is taken.
+  References: Default_Handler/54 (alias) 
+  Referring: __Vectors/50 (addr) 
+  Availability: overwritable
+  Function flags:
+  Called by: 
+  Calls: 
+TIMER2_IRQHandler/24 (TIMER2_IRQHandler) @0x7e1cb7e49708
+  Type: function definition analyzed alias
+  Visibility: externally_visible public weak
+  Address is taken.
+  References: Default_Handler/54 (alias) 
+  Referring: __Vectors/50 (addr) 
+  Availability: overwritable
+  Function flags:
+  Called by: 
+  Calls: 
+TIMER1_IRQHandler/23 (TIMER1_IRQHandler) @0x7e1cb7e495a0
+  Type: function definition analyzed alias
+  Visibility: externally_visible public weak
+  Address is taken.
+  References: Default_Handler/54 (alias) 
+  Referring: __Vectors/50 (addr) 
+  Availability: overwritable
+  Function flags:
+  Called by: 
+  Calls: 
+GPIO_ODD_IRQHandler/22 (GPIO_ODD_IRQHandler) @0x7e1cb7e49438
+  Type: function definition analyzed alias
+  Visibility: externally_visible public weak
+  Address is taken.
+  References: Default_Handler/54 (alias) 
+  Referring: __Vectors/50 (addr) 
+  Availability: overwritable
+  Function flags:
+  Called by: 
+  Calls: 
+I2C1_IRQHandler/21 (I2C1_IRQHandler) @0x7e1cb7e492d0
+  Type: function definition analyzed alias
+  Visibility: externally_visible public weak
+  Address is taken.
+  References: Default_Handler/54 (alias) 
+  Referring: __Vectors/50 (addr) 
+  Availability: overwritable
+  Function flags:
+  Called by: 
+  Calls: 
+I2C0_IRQHandler/20 (I2C0_IRQHandler) @0x7e1cb7e49168
+  Type: function definition analyzed alias
+  Visibility: externally_visible public weak
+  Address is taken.
+  References: Default_Handler/54 (alias) 
+  Referring: __Vectors/50 (addr) 
+  Availability: overwritable
+  Function flags:
+  Called by: 
+  Calls: 
+DAC0_IRQHandler/19 (DAC0_IRQHandler) @0x7e1cb7e49000
+  Type: function definition analyzed alias
+  Visibility: externally_visible public weak
+  Address is taken.
+  References: Default_Handler/54 (alias) 
+  Referring: __Vectors/50 (addr) 
+  Availability: overwritable
+  Function flags:
+  Called by: 
+  Calls: 
+ADC0_IRQHandler/18 (ADC0_IRQHandler) @0x7e1cb7e46e10
+  Type: function definition analyzed alias
+  Visibility: externally_visible public weak
+  Address is taken.
+  References: Default_Handler/54 (alias) 
+  Referring: __Vectors/50 (addr) 
+  Availability: overwritable
+  Function flags:
+  Called by: 
+  Calls: 
+ACMP0_IRQHandler/17 (ACMP0_IRQHandler) @0x7e1cb7e46ca8
+  Type: function definition analyzed alias
+  Visibility: externally_visible public weak
+  Address is taken.
+  References: Default_Handler/54 (alias) 
+  Referring: __Vectors/50 (addr) 
+  Availability: overwritable
+  Function flags:
+  Called by: 
+  Calls: 
+USB_IRQHandler/16 (USB_IRQHandler) @0x7e1cb7e46b40
+  Type: function definition analyzed alias
+  Visibility: externally_visible public weak
+  Address is taken.
+  References: Default_Handler/54 (alias) 
+  Referring: __Vectors/50 (addr) 
+  Availability: overwritable
+  Function flags:
+  Called by: 
+  Calls: 
+USART0_TX_IRQHandler/15 (USART0_TX_IRQHandler) @0x7e1cb7e469d8
+  Type: function definition analyzed alias
+  Visibility: externally_visible public weak
+  Address is taken.
+  References: Default_Handler/54 (alias) 
+  Referring: __Vectors/50 (addr) 
+  Availability: overwritable
+  Function flags:
+  Called by: 
+  Calls: 
+USART0_RX_IRQHandler/14 (USART0_RX_IRQHandler) @0x7e1cb7e46870
+  Type: function definition analyzed alias
+  Visibility: externally_visible public weak
+  Address is taken.
+  References: Default_Handler/54 (alias) 
+  Referring: __Vectors/50 (addr) 
+  Availability: overwritable
+  Function flags:
+  Called by: 
+  Calls: 
+TIMER0_IRQHandler/13 (TIMER0_IRQHandler) @0x7e1cb7e46708
+  Type: function definition analyzed alias
+  Visibility: externally_visible public weak
+  Address is taken.
+  References: Default_Handler/54 (alias) 
+  Referring: __Vectors/50 (addr) 
+  Availability: overwritable
+  Function flags:
+  Called by: 
+  Calls: 
+GPIO_EVEN_IRQHandler/12 (GPIO_EVEN_IRQHandler) @0x7e1cb7e465a0
+  Type: function definition analyzed alias
+  Visibility: externally_visible public weak
+  Address is taken.
+  References: Default_Handler/54 (alias) 
+  Referring: __Vectors/50 (addr) 
+  Availability: overwritable
+  Function flags:
+  Called by: 
+  Calls: 
+DMA_IRQHandler/11 (DMA_IRQHandler) @0x7e1cb7e46438
+  Type: function definition analyzed alias
+  Visibility: externally_visible public weak
+  Address is taken.
+  References: Default_Handler/54 (alias) 
+  Referring: __Vectors/50 (addr) 
+  Availability: overwritable
+  Function flags:
+  Called by: 
+  Calls: 
+SysTick_Handler/10 (SysTick_Handler) @0x7e1cb7e46168
+  Type: function definition analyzed alias
+  Visibility: externally_visible public weak
+  Address is taken.
+  References: Default_Handler/54 (alias) 
+  Referring: __Vectors/50 (addr) 
+  Availability: overwritable
+  Function flags:
+  Called by: 
+  Calls: 
+PendSV_Handler/9 (PendSV_Handler) @0x7e1cb7e46000
+  Type: function definition analyzed alias
+  Visibility: externally_visible public weak
+  Address is taken.
+  References: Default_Handler/54 (alias) 
+  Referring: __Vectors/50 (addr) 
+  Availability: overwritable
+  Function flags:
+  Called by: 
+  Calls: 
+SVC_Handler/8 (SVC_Handler) @0x7e1cb7e43e10
+  Type: function definition analyzed alias
+  Visibility: externally_visible public weak
+  Address is taken.
+  References: Default_Handler/54 (alias) 
+  Referring: __Vectors/50 (addr) 
+  Availability: overwritable
+  Function flags:
+  Called by: 
+  Calls: 
+DebugMon_Handler/7 (DebugMon_Handler) @0x7e1cb7e43ca8
+  Type: function definition analyzed alias
+  Visibility: externally_visible public weak
+  Address is taken.
+  References: Default_Handler/54 (alias) 
+  Referring: __Vectors/50 (addr) 
+  Availability: overwritable
+  Function flags:
+  Called by: 
+  Calls: 
+UsageFault_Handler/6 (UsageFault_Handler) @0x7e1cb7e43b40
+  Type: function definition analyzed alias
+  Visibility: externally_visible public weak
+  Address is taken.
+  References: Default_Handler/54 (alias) 
+  Referring: __Vectors/50 (addr) 
+  Availability: overwritable
+  Function flags:
+  Called by: 
+  Calls: 
+BusFault_Handler/5 (BusFault_Handler) @0x7e1cb7e439d8
+  Type: function definition analyzed alias
+  Visibility: externally_visible public weak
+  Address is taken.
+  References: Default_Handler/54 (alias) 
+  Referring: __Vectors/50 (addr) 
+  Availability: overwritable
+  Function flags:
+  Called by: 
+  Calls: 
+MemManage_Handler/4 (MemManage_Handler) @0x7e1cb7e43870
+  Type: function definition analyzed alias
+  Visibility: externally_visible public weak
+  Address is taken.
+  References: Default_Handler/54 (alias) 
+  Referring: __Vectors/50 (addr) 
+  Availability: overwritable
+  Function flags:
+  Called by: 
+  Calls: 
+HardFault_Handler/3 (HardFault_Handler) @0x7e1cb7e43708
+  Type: function definition analyzed alias
+  Visibility: externally_visible public weak
+  Address is taken.
+  References: Default_Handler/54 (alias) 
+  Referring: __Vectors/50 (addr) 
+  Availability: overwritable
+  Function flags:
+  Called by: 
+  Calls: 
+NMI_Handler/2 (NMI_Handler) @0x7e1cb7e435a0
+  Type: function definition analyzed alias
+  Visibility: externally_visible public weak
+  Address is taken.
+  References: Default_Handler/54 (alias) 
+  Referring: __Vectors/50 (addr) 
+  Availability: overwritable
+  Function flags:
+  Called by: 
+  Calls: 
+heap/1 (heap) @0x7e1cb7e40380
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly section:.heap
+  References: 
+  Referring: 
+  Availability: available
+  Varpool flags:
+stack/0 (stack) @0x7e1cb7e40300
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly section:.stack
+  References: 
+  Referring: 
+  Availability: available
+  Varpool flags:
+Materializing clones
+Materialization Call site updates done.
+
+Reclaiming functions:
+Reclaiming variables:
+Clearing address taken flags:
+Trivially needed variables: __Vectors/50 heap/1 stack/0
+Removing variables:
+
+Final Symbol table:
+
+main/61 (main) @0x7e1cb7e5a5a0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: 
+  Calls: 
+__bss_end__/60 (__bss_end__) @0x7e1cb7e58780
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Varpool flags:
+__bss_start__/59 (__bss_start__) @0x7e1cb7e58700
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Varpool flags:
+__data_end__/58 (__data_end__) @0x7e1cb7e58600
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Varpool flags:
+__data_start__/57 (__data_start__) @0x7e1cb7e58580
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Varpool flags:
+__etext/56 (__etext) @0x7e1cb7e58500
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Varpool flags:
+__StackTop/55 (__StackTop) @0x7e1cb7e5a2d0
+  Type: function
+  Visibility: external public
+  Address is taken.
+  References: 
+  Referring: __Vectors/50 (addr) 
+  Availability: not_available
+  Function flags:
+  Called by: 
+  Calls: 
+Default_Handler/54 (Default_Handler) @0x7e1cb7e5a168
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder asm_written public weak section:.text.Default_Handler (implicit_section)
+  Address is taken.
+  References: 
+  Referring: EMU_IRQHandler/49 (alias) EBI_IRQHandler/48 (alias) AES_IRQHandler/47 (alias) MSC_IRQHandler/46 (alias) LCD_IRQHandler/45 (alias) VCMP_IRQHandler/44 (alias) CMU_IRQHandler/43 (alias) BURTC_IRQHandler/42 (alias) RTC_IRQHandler/41 (alias) PCNT2_IRQHandler/40 (alias) PCNT1_IRQHandler/39 (alias) PCNT0_IRQHandler/38 (alias) LETIMER0_IRQHandler/37 (alias) LEUART1_IRQHandler/36 (alias) LEUART0_IRQHandler/35 (alias) UART1_TX_IRQHandler/34 (alias) UART1_RX_IRQHandler/33 (alias) UART0_TX_IRQHandler/32 (alias) UART0_RX_IRQHandler/31 (alias) USART2_TX_IRQHandler/30 (alias) USART2_RX_IRQHandler/29 (alias) LESENSE_IRQHandler/28 (alias) USART1_TX_IRQHandler/27 (alias) USART1_RX_IRQHandler/26 (alias) TIMER3_IRQHandler/25 (alias) TIMER2_IRQHandler/24 (alias) TIMER1_IRQHandler/23 (alias) GPIO_ODD_IRQHandler/22 (alias) I2C1_IRQHandler/21 (alias) I2C0_IRQHandler/20 (alias) DAC0_IRQHandler/19 (alias) ADC0_IRQHandler/18 (alias) ACMP0_IRQHandler/17 (alias) USB_IRQHandler/16 (alias) USART0_TX_IRQHandler/15 (alias) USART0_RX_IRQHandler/14 (alias) TIMER0_IRQHandler/13 (alias) GPIO_EVEN_IRQHandler/12 (alias) DMA_IRQHandler/11 (alias) SysTick_Handler/10 (alias) PendSV_Handler/9 (alias) SVC_Handler/8 (alias) DebugMon_Handler/7 (alias) UsageFault_Handler/6 (alias) BusFault_Handler/5 (alias) MemManage_Handler/4 (alias) HardFault_Handler/3 (alias) NMI_Handler/2 (alias) __Vectors/50 (addr) __Vectors/50 (addr) __Vectors/50 (addr) __Vectors/50 (addr) __Vectors/50 (addr) 
+  Availability: overwritable
+  Function flags:
+  Called by: 
+  Calls: 
+_main/53 (_main) @0x7e1cb7e5a000
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder asm_written public weak section:.text._main (implicit_section)
+  References: 
+  Referring: 
+  Availability: overwritable
+  Function flags:
+  Called by: 
+  Calls: 
+SystemInit/52 (SystemInit) @0x7e1cb7e50b40
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder asm_written public weak section:.text.SystemInit (implicit_section)
+  References: 
+  Referring: 
+  Availability: overwritable
+  Function flags:
+  Called by: 
+  Calls: 
+Reset_Handler/51 (Reset_Handler) @0x7e1cb7e50e10
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder asm_written public weak section:.text.Reset_Handler (implicit_section)
+  Address is taken.
+  References: 
+  Referring: __Vectors/50 (addr) 
+  Availability: overwritable
+  Function flags:
+  Called by: 
+  Calls: 
+__Vectors/50 (__Vectors) @0x7e1cb7e4cc80
+  Type: variable definition analyzed
+  Visibility: force_output externally_visible no_reorder asm_written public section:.vectors
+  Aux: @0x1
+  References: __StackTop/55 (addr) Reset_Handler/51 (addr) NMI_Handler/2 (addr) HardFault_Handler/3 (addr) MemManage_Handler/4 (addr) BusFault_Handler/5 (addr) UsageFault_Handler/6 (addr) Default_Handler/54 (addr) Default_Handler/54 (addr) Default_Handler/54 (addr) Default_Handler/54 (addr) SVC_Handler/8 (addr) DebugMon_Handler/7 (addr) Default_Handler/54 (addr) PendSV_Handler/9 (addr) SysTick_Handler/10 (addr) DMA_IRQHandler/11 (addr) GPIO_EVEN_IRQHandler/12 (addr) TIMER0_IRQHandler/13 (addr) USART0_RX_IRQHandler/14 (addr) USART0_TX_IRQHandler/15 (addr) USB_IRQHandler/16 (addr) ACMP0_IRQHandler/17 (addr) ADC0_IRQHandler/18 (addr) DAC0_IRQHandler/19 (addr) I2C0_IRQHandler/20 (addr) I2C1_IRQHandler/21 (addr) GPIO_ODD_IRQHandler/22 (addr) TIMER1_IRQHandler/23 (addr) TIMER2_IRQHandler/24 (addr) TIMER3_IRQHandler/25 (addr) USART1_RX_IRQHandler/26 (addr) USART1_TX_IRQHandler/27 (addr) LESENSE_IRQHandler/28 (addr) USART2_RX_IRQHandler/29 (addr) USART2_TX_IRQHandler/30 (addr) UART0_RX_IRQHandler/31 (addr) UART0_TX_IRQHandler/32 (addr) UART1_RX_IRQHandler/33 (addr) UART1_TX_IRQHandler/34 (addr) LEUART0_IRQHandler/35 (addr) LEUART1_IRQHandler/36 (addr) LETIMER0_IRQHandler/37 (addr) PCNT0_IRQHandler/38 (addr) PCNT1_IRQHandler/39 (addr) PCNT2_IRQHandler/40 (addr) RTC_IRQHandler/41 (addr) BURTC_IRQHandler/42 (addr) CMU_IRQHandler/43 (addr) VCMP_IRQHandler/44 (addr) LCD_IRQHandler/45 (addr) MSC_IRQHandler/46 (addr) AES_IRQHandler/47 (addr) EBI_IRQHandler/48 (addr) EMU_IRQHandler/49 (addr) 
+  Referring: 
+  Availability: available
+  Varpool flags: initialized read-only const-value-known
+EMU_IRQHandler/49 (EMU_IRQHandler) @0x7e1cb7e509d8
+  Type: function definition analyzed alias
+  Visibility: externally_visible asm_written public weak section:.text.Default_Handler (implicit_section)
+  Address is taken.
+  References: Default_Handler/54 (alias) 
+  Referring: __Vectors/50 (addr) 
+  Availability: overwritable
+  Function flags:
+  Called by: 
+  Calls: 
+EBI_IRQHandler/48 (EBI_IRQHandler) @0x7e1cb7e50870
+  Type: function definition analyzed alias
+  Visibility: externally_visible asm_written public weak section:.text.Default_Handler (implicit_section)
+  Address is taken.
+  References: Default_Handler/54 (alias) 
+  Referring: __Vectors/50 (addr) 
+  Availability: overwritable
+  Function flags:
+  Called by: 
+  Calls: 
+AES_IRQHandler/47 (AES_IRQHandler) @0x7e1cb7e50708
+  Type: function definition analyzed alias
+  Visibility: externally_visible asm_written public weak section:.text.Default_Handler (implicit_section)
+  Address is taken.
+  References: Default_Handler/54 (alias) 
+  Referring: __Vectors/50 (addr) 
+  Availability: overwritable
+  Function flags:
+  Called by: 
+  Calls: 
+MSC_IRQHandler/46 (MSC_IRQHandler) @0x7e1cb7e505a0
+  Type: function definition analyzed alias
+  Visibility: externally_visible asm_written public weak section:.text.Default_Handler (implicit_section)
+  Address is taken.
+  References: Default_Handler/54 (alias) 
+  Referring: __Vectors/50 (addr) 
+  Availability: overwritable
+  Function flags:
+  Called by: 
+  Calls: 
+LCD_IRQHandler/45 (LCD_IRQHandler) @0x7e1cb7e50438
+  Type: function definition analyzed alias
+  Visibility: externally_visible asm_written public weak section:.text.Default_Handler (implicit_section)
+  Address is taken.
+  References: Default_Handler/54 (alias) 
+  Referring: __Vectors/50 (addr) 
+  Availability: overwritable
+  Function flags:
+  Called by: 
+  Calls: 
+VCMP_IRQHandler/44 (VCMP_IRQHandler) @0x7e1cb7e502d0
+  Type: function definition analyzed alias
+  Visibility: externally_visible asm_written public weak section:.text.Default_Handler (implicit_section)
+  Address is taken.
+  References: Default_Handler/54 (alias) 
+  Referring: __Vectors/50 (addr) 
+  Availability: overwritable
+  Function flags:
+  Called by: 
+  Calls: 
+CMU_IRQHandler/43 (CMU_IRQHandler) @0x7e1cb7e50168
+  Type: function definition analyzed alias
+  Visibility: externally_visible asm_written public weak section:.text.Default_Handler (implicit_section)
+  Address is taken.
+  References: Default_Handler/54 (alias) 
+  Referring: __Vectors/50 (addr) 
+  Availability: overwritable
+  Function flags:
+  Called by: 
+  Calls: 
+BURTC_IRQHandler/42 (BURTC_IRQHandler) @0x7e1cb7e50000
+  Type: function definition analyzed alias
+  Visibility: externally_visible asm_written public weak section:.text.Default_Handler (implicit_section)
+  Address is taken.
+  References: Default_Handler/54 (alias) 
+  Referring: __Vectors/50 (addr) 
+  Availability: overwritable
+  Function flags:
+  Called by: 
+  Calls: 
+RTC_IRQHandler/41 (RTC_IRQHandler) @0x7e1cb7e4de10
+  Type: function definition analyzed alias
+  Visibility: externally_visible asm_written public weak section:.text.Default_Handler (implicit_section)
+  Address is taken.
+  References: Default_Handler/54 (alias) 
+  Referring: __Vectors/50 (addr) 
+  Availability: overwritable
+  Function flags:
+  Called by: 
+  Calls: 
+PCNT2_IRQHandler/40 (PCNT2_IRQHandler) @0x7e1cb7e4dca8
+  Type: function definition analyzed alias
+  Visibility: externally_visible asm_written public weak section:.text.Default_Handler (implicit_section)
+  Address is taken.
+  References: Default_Handler/54 (alias) 
+  Referring: __Vectors/50 (addr) 
+  Availability: overwritable
+  Function flags:
+  Called by: 
+  Calls: 
+PCNT1_IRQHandler/39 (PCNT1_IRQHandler) @0x7e1cb7e4db40
+  Type: function definition analyzed alias
+  Visibility: externally_visible asm_written public weak section:.text.Default_Handler (implicit_section)
+  Address is taken.
+  References: Default_Handler/54 (alias) 
+  Referring: __Vectors/50 (addr) 
+  Availability: overwritable
+  Function flags:
+  Called by: 
+  Calls: 
+PCNT0_IRQHandler/38 (PCNT0_IRQHandler) @0x7e1cb7e4d9d8
+  Type: function definition analyzed alias
+  Visibility: externally_visible asm_written public weak section:.text.Default_Handler (implicit_section)
+  Address is taken.
+  References: Default_Handler/54 (alias) 
+  Referring: __Vectors/50 (addr) 
+  Availability: overwritable
+  Function flags:
+  Called by: 
+  Calls: 
+LETIMER0_IRQHandler/37 (LETIMER0_IRQHandler) @0x7e1cb7e4d870
+  Type: function definition analyzed alias
+  Visibility: externally_visible asm_written public weak section:.text.Default_Handler (implicit_section)
+  Address is taken.
+  References: Default_Handler/54 (alias) 
+  Referring: __Vectors/50 (addr) 
+  Availability: overwritable
+  Function flags:
+  Called by: 
+  Calls: 
+LEUART1_IRQHandler/36 (LEUART1_IRQHandler) @0x7e1cb7e4d708
+  Type: function definition analyzed alias
+  Visibility: externally_visible asm_written public weak section:.text.Default_Handler (implicit_section)
+  Address is taken.
+  References: Default_Handler/54 (alias) 
+  Referring: __Vectors/50 (addr) 
+  Availability: overwritable
+  Function flags:
+  Called by: 
+  Calls: 
+LEUART0_IRQHandler/35 (LEUART0_IRQHandler) @0x7e1cb7e4d5a0
+  Type: function definition analyzed alias
+  Visibility: externally_visible asm_written public weak section:.text.Default_Handler (implicit_section)
+  Address is taken.
+  References: Default_Handler/54 (alias) 
+  Referring: __Vectors/50 (addr) 
+  Availability: overwritable
+  Function flags:
+  Called by: 
+  Calls: 
+UART1_TX_IRQHandler/34 (UART1_TX_IRQHandler) @0x7e1cb7e4d438
+  Type: function definition analyzed alias
+  Visibility: externally_visible asm_written public weak section:.text.Default_Handler (implicit_section)
+  Address is taken.
+  References: Default_Handler/54 (alias) 
+  Referring: __Vectors/50 (addr) 
+  Availability: overwritable
+  Function flags:
+  Called by: 
+  Calls: 
+UART1_RX_IRQHandler/33 (UART1_RX_IRQHandler) @0x7e1cb7e4d2d0
+  Type: function definition analyzed alias
+  Visibility: externally_visible asm_written public weak section:.text.Default_Handler (implicit_section)
+  Address is taken.
+  References: Default_Handler/54 (alias) 
+  Referring: __Vectors/50 (addr) 
+  Availability: overwritable
+  Function flags:
+  Called by: 
+  Calls: 
+UART0_TX_IRQHandler/32 (UART0_TX_IRQHandler) @0x7e1cb7e4d168
+  Type: function definition analyzed alias
+  Visibility: externally_visible asm_written public weak section:.text.Default_Handler (implicit_section)
+  Address is taken.
+  References: Default_Handler/54 (alias) 
+  Referring: __Vectors/50 (addr) 
+  Availability: overwritable
+  Function flags:
+  Called by: 
+  Calls: 
+UART0_RX_IRQHandler/31 (UART0_RX_IRQHandler) @0x7e1cb7e4d000
+  Type: function definition analyzed alias
+  Visibility: externally_visible asm_written public weak section:.text.Default_Handler (implicit_section)
+  Address is taken.
+  References: Default_Handler/54 (alias) 
+  Referring: __Vectors/50 (addr) 
+  Availability: overwritable
+  Function flags:
+  Called by: 
+  Calls: 
+USART2_TX_IRQHandler/30 (USART2_TX_IRQHandler) @0x7e1cb7e462d0
+  Type: function definition analyzed alias
+  Visibility: externally_visible asm_written public weak section:.text.Default_Handler (implicit_section)
+  Address is taken.
+  References: Default_Handler/54 (alias) 
+  Referring: __Vectors/50 (addr) 
+  Availability: overwritable
+  Function flags:
+  Called by: 
+  Calls: 
+USART2_RX_IRQHandler/29 (USART2_RX_IRQHandler) @0x7e1cb7e49e10
+  Type: function definition analyzed alias
+  Visibility: externally_visible asm_written public weak section:.text.Default_Handler (implicit_section)
+  Address is taken.
+  References: Default_Handler/54 (alias) 
+  Referring: __Vectors/50 (addr) 
+  Availability: overwritable
+  Function flags:
+  Called by: 
+  Calls: 
+LESENSE_IRQHandler/28 (LESENSE_IRQHandler) @0x7e1cb7e49ca8
+  Type: function definition analyzed alias
+  Visibility: externally_visible asm_written public weak section:.text.Default_Handler (implicit_section)
+  Address is taken.
+  References: Default_Handler/54 (alias) 
+  Referring: __Vectors/50 (addr) 
+  Availability: overwritable
+  Function flags:
+  Called by: 
+  Calls: 
+USART1_TX_IRQHandler/27 (USART1_TX_IRQHandler) @0x7e1cb7e49b40
+  Type: function definition analyzed alias
+  Visibility: externally_visible asm_written public weak section:.text.Default_Handler (implicit_section)
+  Address is taken.
+  References: Default_Handler/54 (alias) 
+  Referring: __Vectors/50 (addr) 
+  Availability: overwritable
+  Function flags:
+  Called by: 
+  Calls: 
+USART1_RX_IRQHandler/26 (USART1_RX_IRQHandler) @0x7e1cb7e499d8
+  Type: function definition analyzed alias
+  Visibility: externally_visible asm_written public weak section:.text.Default_Handler (implicit_section)
+  Address is taken.
+  References: Default_Handler/54 (alias) 
+  Referring: __Vectors/50 (addr) 
+  Availability: overwritable
+  Function flags:
+  Called by: 
+  Calls: 
+TIMER3_IRQHandler/25 (TIMER3_IRQHandler) @0x7e1cb7e49870
+  Type: function definition analyzed alias
+  Visibility: externally_visible asm_written public weak section:.text.Default_Handler (implicit_section)
+  Address is taken.
+  References: Default_Handler/54 (alias) 
+  Referring: __Vectors/50 (addr) 
+  Availability: overwritable
+  Function flags:
+  Called by: 
+  Calls: 
+TIMER2_IRQHandler/24 (TIMER2_IRQHandler) @0x7e1cb7e49708
+  Type: function definition analyzed alias
+  Visibility: externally_visible asm_written public weak section:.text.Default_Handler (implicit_section)
+  Address is taken.
+  References: Default_Handler/54 (alias) 
+  Referring: __Vectors/50 (addr) 
+  Availability: overwritable
+  Function flags:
+  Called by: 
+  Calls: 
+TIMER1_IRQHandler/23 (TIMER1_IRQHandler) @0x7e1cb7e495a0
+  Type: function definition analyzed alias
+  Visibility: externally_visible asm_written public weak section:.text.Default_Handler (implicit_section)
+  Address is taken.
+  References: Default_Handler/54 (alias) 
+  Referring: __Vectors/50 (addr) 
+  Availability: overwritable
+  Function flags:
+  Called by: 
+  Calls: 
+GPIO_ODD_IRQHandler/22 (GPIO_ODD_IRQHandler) @0x7e1cb7e49438
+  Type: function definition analyzed alias
+  Visibility: externally_visible asm_written public weak section:.text.Default_Handler (implicit_section)
+  Address is taken.
+  References: Default_Handler/54 (alias) 
+  Referring: __Vectors/50 (addr) 
+  Availability: overwritable
+  Function flags:
+  Called by: 
+  Calls: 
+I2C1_IRQHandler/21 (I2C1_IRQHandler) @0x7e1cb7e492d0
+  Type: function definition analyzed alias
+  Visibility: externally_visible asm_written public weak section:.text.Default_Handler (implicit_section)
+  Address is taken.
+  References: Default_Handler/54 (alias) 
+  Referring: __Vectors/50 (addr) 
+  Availability: overwritable
+  Function flags:
+  Called by: 
+  Calls: 
+I2C0_IRQHandler/20 (I2C0_IRQHandler) @0x7e1cb7e49168
+  Type: function definition analyzed alias
+  Visibility: externally_visible asm_written public weak section:.text.Default_Handler (implicit_section)
+  Address is taken.
+  References: Default_Handler/54 (alias) 
+  Referring: __Vectors/50 (addr) 
+  Availability: overwritable
+  Function flags:
+  Called by: 
+  Calls: 
+DAC0_IRQHandler/19 (DAC0_IRQHandler) @0x7e1cb7e49000
+  Type: function definition analyzed alias
+  Visibility: externally_visible asm_written public weak section:.text.Default_Handler (implicit_section)
+  Address is taken.
+  References: Default_Handler/54 (alias) 
+  Referring: __Vectors/50 (addr) 
+  Availability: overwritable
+  Function flags:
+  Called by: 
+  Calls: 
+ADC0_IRQHandler/18 (ADC0_IRQHandler) @0x7e1cb7e46e10
+  Type: function definition analyzed alias
+  Visibility: externally_visible asm_written public weak section:.text.Default_Handler (implicit_section)
+  Address is taken.
+  References: Default_Handler/54 (alias) 
+  Referring: __Vectors/50 (addr) 
+  Availability: overwritable
+  Function flags:
+  Called by: 
+  Calls: 
+ACMP0_IRQHandler/17 (ACMP0_IRQHandler) @0x7e1cb7e46ca8
+  Type: function definition analyzed alias
+  Visibility: externally_visible asm_written public weak section:.text.Default_Handler (implicit_section)
+  Address is taken.
+  References: Default_Handler/54 (alias) 
+  Referring: __Vectors/50 (addr) 
+  Availability: overwritable
+  Function flags:
+  Called by: 
+  Calls: 
+USB_IRQHandler/16 (USB_IRQHandler) @0x7e1cb7e46b40
+  Type: function definition analyzed alias
+  Visibility: externally_visible asm_written public weak section:.text.Default_Handler (implicit_section)
+  Address is taken.
+  References: Default_Handler/54 (alias) 
+  Referring: __Vectors/50 (addr) 
+  Availability: overwritable
+  Function flags:
+  Called by: 
+  Calls: 
+USART0_TX_IRQHandler/15 (USART0_TX_IRQHandler) @0x7e1cb7e469d8
+  Type: function definition analyzed alias
+  Visibility: externally_visible asm_written public weak section:.text.Default_Handler (implicit_section)
+  Address is taken.
+  References: Default_Handler/54 (alias) 
+  Referring: __Vectors/50 (addr) 
+  Availability: overwritable
+  Function flags:
+  Called by: 
+  Calls: 
+USART0_RX_IRQHandler/14 (USART0_RX_IRQHandler) @0x7e1cb7e46870
+  Type: function definition analyzed alias
+  Visibility: externally_visible asm_written public weak section:.text.Default_Handler (implicit_section)
+  Address is taken.
+  References: Default_Handler/54 (alias) 
+  Referring: __Vectors/50 (addr) 
+  Availability: overwritable
+  Function flags:
+  Called by: 
+  Calls: 
+TIMER0_IRQHandler/13 (TIMER0_IRQHandler) @0x7e1cb7e46708
+  Type: function definition analyzed alias
+  Visibility: externally_visible asm_written public weak section:.text.Default_Handler (implicit_section)
+  Address is taken.
+  References: Default_Handler/54 (alias) 
+  Referring: __Vectors/50 (addr) 
+  Availability: overwritable
+  Function flags:
+  Called by: 
+  Calls: 
+GPIO_EVEN_IRQHandler/12 (GPIO_EVEN_IRQHandler) @0x7e1cb7e465a0
+  Type: function definition analyzed alias
+  Visibility: externally_visible asm_written public weak section:.text.Default_Handler (implicit_section)
+  Address is taken.
+  References: Default_Handler/54 (alias) 
+  Referring: __Vectors/50 (addr) 
+  Availability: overwritable
+  Function flags:
+  Called by: 
+  Calls: 
+DMA_IRQHandler/11 (DMA_IRQHandler) @0x7e1cb7e46438
+  Type: function definition analyzed alias
+  Visibility: externally_visible asm_written public weak section:.text.Default_Handler (implicit_section)
+  Address is taken.
+  References: Default_Handler/54 (alias) 
+  Referring: __Vectors/50 (addr) 
+  Availability: overwritable
+  Function flags:
+  Called by: 
+  Calls: 
+SysTick_Handler/10 (SysTick_Handler) @0x7e1cb7e46168
+  Type: function definition analyzed alias
+  Visibility: externally_visible asm_written public weak section:.text.Default_Handler (implicit_section)
+  Address is taken.
+  References: Default_Handler/54 (alias) 
+  Referring: __Vectors/50 (addr) 
+  Availability: overwritable
+  Function flags:
+  Called by: 
+  Calls: 
+PendSV_Handler/9 (PendSV_Handler) @0x7e1cb7e46000
+  Type: function definition analyzed alias
+  Visibility: externally_visible asm_written public weak section:.text.Default_Handler (implicit_section)
+  Address is taken.
+  References: Default_Handler/54 (alias) 
+  Referring: __Vectors/50 (addr) 
+  Availability: overwritable
+  Function flags:
+  Called by: 
+  Calls: 
+SVC_Handler/8 (SVC_Handler) @0x7e1cb7e43e10
+  Type: function definition analyzed alias
+  Visibility: externally_visible asm_written public weak section:.text.Default_Handler (implicit_section)
+  Address is taken.
+  References: Default_Handler/54 (alias) 
+  Referring: __Vectors/50 (addr) 
+  Availability: overwritable
+  Function flags:
+  Called by: 
+  Calls: 
+DebugMon_Handler/7 (DebugMon_Handler) @0x7e1cb7e43ca8
+  Type: function definition analyzed alias
+  Visibility: externally_visible asm_written public weak section:.text.Default_Handler (implicit_section)
+  Address is taken.
+  References: Default_Handler/54 (alias) 
+  Referring: __Vectors/50 (addr) 
+  Availability: overwritable
+  Function flags:
+  Called by: 
+  Calls: 
+UsageFault_Handler/6 (UsageFault_Handler) @0x7e1cb7e43b40
+  Type: function definition analyzed alias
+  Visibility: externally_visible asm_written public weak section:.text.Default_Handler (implicit_section)
+  Address is taken.
+  References: Default_Handler/54 (alias) 
+  Referring: __Vectors/50 (addr) 
+  Availability: overwritable
+  Function flags:
+  Called by: 
+  Calls: 
+BusFault_Handler/5 (BusFault_Handler) @0x7e1cb7e439d8
+  Type: function definition analyzed alias
+  Visibility: externally_visible asm_written public weak section:.text.Default_Handler (implicit_section)
+  Address is taken.
+  References: Default_Handler/54 (alias) 
+  Referring: __Vectors/50 (addr) 
+  Availability: overwritable
+  Function flags:
+  Called by: 
+  Calls: 
+MemManage_Handler/4 (MemManage_Handler) @0x7e1cb7e43870
+  Type: function definition analyzed alias
+  Visibility: externally_visible asm_written public weak section:.text.Default_Handler (implicit_section)
+  Address is taken.
+  References: Default_Handler/54 (alias) 
+  Referring: __Vectors/50 (addr) 
+  Availability: overwritable
+  Function flags:
+  Called by: 
+  Calls: 
+HardFault_Handler/3 (HardFault_Handler) @0x7e1cb7e43708
+  Type: function definition analyzed alias
+  Visibility: externally_visible asm_written public weak section:.text.Default_Handler (implicit_section)
+  Address is taken.
+  References: Default_Handler/54 (alias) 
+  Referring: __Vectors/50 (addr) 
+  Availability: overwritable
+  Function flags:
+  Called by: 
+  Calls: 
+NMI_Handler/2 (NMI_Handler) @0x7e1cb7e435a0
+  Type: function definition analyzed alias
+  Visibility: externally_visible asm_written public weak section:.text.Default_Handler (implicit_section)
+  Address is taken.
+  References: Default_Handler/54 (alias) 
+  Referring: __Vectors/50 (addr) 
+  Availability: overwritable
+  Function flags:
+  Called by: 
+  Calls: 
+heap/1 (heap) @0x7e1cb7e40380
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly asm_written section:.heap
+  Aux: @0x7e1cb7e4cc80
+  References: 
+  Referring: 
+  Availability: available
+  Varpool flags:
+stack/0 (stack) @0x7e1cb7e40300
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly asm_written section:.stack
+  Aux: @0x7e1cb7e40380
+  References: 
+  Referring: 
+  Availability: available
+  Varpool flags:

@@ -1,0 +1,1847 @@
+Trivially needed symbols: main/78 sampleTimer/77 stateMachine/76 SysTick_Handler/75
+Trivially needed symbols: state/80
+
+
+Initial Symbol table:
+
+Task_Dispatch/97 (Task_Dispatch) @0x796a8a37d2d0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: main/78 
+  Calls: 
+Task_Add/96 (Task_Add) @0x796a8a37d000
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: main/78 main/78 
+  Calls: 
+Task_Init/95 (Task_Init) @0x796a8a3755a0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: main/78 
+  Calls: 
+SystemCoreClock/94 (SystemCoreClock) @0x796a8a371980
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: main/78 (read) 
+  Availability: not-ready
+  Varpool flags:
+controllerInit/93 (controllerInit) @0x796a8a375e10
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: main/78 
+  Calls: 
+ClockSetCoreClock/92 (ClockSetCoreClock) @0x796a8a375ca8
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: main/78 
+  Calls: 
+writeLED/91 (writeLED) @0x796a8a375b40
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: stateMachine/76 
+  Calls: 
+steadyState/90 (steadyState) @0x796a8a3759d8
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: stateMachine/76 
+  Calls: 
+writeControlVariable/89 (writeControlVariable) @0x796a8a375870
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: stateMachine/76 
+  Calls: 
+cv/88 (cv) @0x796a8a371780
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: stateMachine/76 (write) stateMachine/76 (read) 
+  Availability: not-ready
+  Varpool flags:
+gain/87 (gain) @0x796a8a371700
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: stateMachine/76 (read) main/78 (write) main/78 (write) main/78 (write) main/78 (write) 
+  Availability: not-ready
+  Varpool flags:
+controlSignalPID/86 (controlSignalPID) @0x796a8a375708
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: stateMachine/76 
+  Calls: 
+pv/85 (pv) @0x796a8a371680
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: stateMachine/76 (write) stateMachine/76 (read) 
+  Availability: not-ready
+  Varpool flags:
+readProcessVariable/84 (readProcessVariable) @0x796a8a375438
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: stateMachine/76 
+  Calls: 
+sp/83 (sp) @0x796a8a371600
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: stateMachine/76 (write) stateMachine/76 (read) 
+  Availability: not-ready
+  Varpool flags:
+readSetpoint/82 (readSetpoint) @0x796a8a3752d0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: stateMachine/76 
+  Calls: 
+refresh_tick/81 (refresh_tick) @0x796a8a371500
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: stateMachine/76 (read) stateMachine/76 (write) sampleTimer/77 (write) main/78 (write) 
+  Availability: not-ready
+  Varpool flags:
+state/80 (state) @0x796a8a371480
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  Aux: @0x796a8a36ae10
+  References: 
+  Referring: stateMachine/76 (read) stateMachine/76 (write) stateMachine/76 (write) stateMachine/76 (write) stateMachine/76 (write) stateMachine/76 (write) 
+  Availability: not-ready
+  Varpool flags: initialized
+Task_Update/79 (Task_Update) @0x796a8a375168
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: SysTick_Handler/75 
+  Calls: 
+main/78 (main) @0x796a8a375000
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  Aux: @0x1c36aa0
+  References: SystemCoreClock/94 (read) sampleTimer/77 (addr) stateMachine/76 (addr) gain/87 (write) gain/87 (write) gain/87 (write) gain/87 (write) refresh_tick/81 (write) 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Task_Dispatch/97 Task_Add/96 Task_Add/96 Task_Init/95 SysTick_Config/70 controllerInit/93 ClockSetCoreClock/92 
+sampleTimer/77 (sampleTimer) @0x796a8a36ae10
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  Address is taken.
+  Aux: @0x796a8a375000
+  References: refresh_tick/81 (write) 
+  Referring: main/78 (addr) 
+  Function flags: body
+  Called by: 
+  Calls: 
+stateMachine/76 (stateMachine) @0x796a8a36aca8
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  Address is taken.
+  Aux: @0x796a8a36ae10
+  References: state/80 (read) refresh_tick/81 (read) refresh_tick/81 (write) state/80 (write) sp/83 (write) pv/85 (write) state/80 (write) sp/83 (read) pv/85 (read) gain/87 (read) cv/88 (write) state/80 (write) cv/88 (read) state/80 (write) state/80 (write) 
+  Referring: main/78 (addr) 
+  Function flags: body
+  Called by: 
+  Calls: writeLED/91 steadyState/90 writeControlVariable/89 controlSignalPID/86 readProcessVariable/84 readSetpoint/82 
+SysTick_Handler/75 (SysTick_Handler) @0x796a8a36ab40
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  Aux: @0x796a8a36aca8
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Task_Update/79 
+SystemCoreClockUpdate/74 (SystemCoreClockUpdate) @0x796a8a6f6708
+  Type: function definition
+  Visibility: no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+ITM_CheckChar/73 (ITM_CheckChar) @0x796a8a6f6000
+  Type: function definition
+  Visibility: no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+ITM_ReceiveChar/72 (ITM_ReceiveChar) @0x796a8a6e7e10
+  Type: function definition
+  Visibility: no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+ITM_SendChar/71 (ITM_SendChar) @0x796a8a6e7ca8
+  Type: function definition
+  Visibility: no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+SysTick_Config/70 (SysTick_Config) @0x796a8a6e79d8
+  Type: function definition analyzed
+  Visibility: no_reorder
+  Aux: @0x1c36aa0
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: main/78 
+  Calls: __NVIC_SetPriority/55 
+SCB_GetFPUType/69 (SCB_GetFPUType) @0x796a8a6e7870
+  Type: function definition
+  Visibility: no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+ARM_MPU_Load/68 (ARM_MPU_Load) @0x796a8a6e7708
+  Type: function definition
+  Visibility: no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+ARM_MPU_OrderedMemcpy/67 (ARM_MPU_OrderedMemcpy) @0x796a8a6e75a0
+  Type: function definition
+  Visibility: no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+ARM_MPU_SetRegionEx/66 (ARM_MPU_SetRegionEx) @0x796a8a6e7438
+  Type: function definition
+  Visibility: no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+ARM_MPU_SetRegion/65 (ARM_MPU_SetRegion) @0x796a8a6e72d0
+  Type: function definition
+  Visibility: no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+ARM_MPU_ClrRegion/64 (ARM_MPU_ClrRegion) @0x796a8a6e7168
+  Type: function definition
+  Visibility: no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+ARM_MPU_Disable/63 (ARM_MPU_Disable) @0x796a8a6e7000
+  Type: function definition
+  Visibility: no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+ARM_MPU_Enable/62 (ARM_MPU_Enable) @0x796a8a6dae10
+  Type: function definition
+  Visibility: no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__NVIC_SystemReset/61 (__NVIC_SystemReset) @0x796a8a6da708
+  Type: function definition
+  Visibility: no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__NVIC_GetVector/60 (__NVIC_GetVector) @0x796a8a6da5a0
+  Type: function definition
+  Visibility: no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__NVIC_SetVector/59 (__NVIC_SetVector) @0x796a8a6da438
+  Type: function definition
+  Visibility: no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+NVIC_DecodePriority/58 (NVIC_DecodePriority) @0x796a8a6da2d0
+  Type: function definition
+  Visibility: no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+NVIC_EncodePriority/57 (NVIC_EncodePriority) @0x796a8a6da168
+  Type: function definition
+  Visibility: no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__NVIC_GetPriority/56 (__NVIC_GetPriority) @0x796a8a6da000
+  Type: function definition
+  Visibility: no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__NVIC_SetPriority/55 (__NVIC_SetPriority) @0x796a8a6cae10
+  Type: function definition analyzed
+  Visibility: no_reorder
+  Aux: @0x1c36aa0
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: SysTick_Config/70 
+  Calls: 
+__NVIC_GetActive/54 (__NVIC_GetActive) @0x796a8a6caca8
+  Type: function definition
+  Visibility: no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__NVIC_ClearPendingIRQ/53 (__NVIC_ClearPendingIRQ) @0x796a8a6cab40
+  Type: function definition
+  Visibility: no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__NVIC_SetPendingIRQ/52 (__NVIC_SetPendingIRQ) @0x796a8a6ca9d8
+  Type: function definition
+  Visibility: no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__NVIC_GetPendingIRQ/51 (__NVIC_GetPendingIRQ) @0x796a8a6ca870
+  Type: function definition
+  Visibility: no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__NVIC_DisableIRQ/50 (__NVIC_DisableIRQ) @0x796a8a6ca708
+  Type: function definition
+  Visibility: no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__NVIC_GetEnableIRQ/49 (__NVIC_GetEnableIRQ) @0x796a8a6ca5a0
+  Type: function definition
+  Visibility: no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__NVIC_EnableIRQ/48 (__NVIC_EnableIRQ) @0x796a8a6ca438
+  Type: function definition
+  Visibility: no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__NVIC_GetPriorityGrouping/47 (__NVIC_GetPriorityGrouping) @0x796a8a6ca2d0
+  Type: function definition
+  Visibility: no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__NVIC_SetPriorityGrouping/46 (__NVIC_SetPriorityGrouping) @0x796a8a6ca168
+  Type: function definition
+  Visibility: no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__set_FPSCR/45 (__set_FPSCR) @0x796a8a67b438
+  Type: function definition
+  Visibility: no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__get_FPSCR/44 (__get_FPSCR) @0x796a8a67b2d0
+  Type: function definition
+  Visibility: no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__set_FAULTMASK/43 (__set_FAULTMASK) @0x796a8a67b168
+  Type: function definition
+  Visibility: no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__get_FAULTMASK/42 (__get_FAULTMASK) @0x796a8a67b000
+  Type: function definition
+  Visibility: no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__set_BASEPRI_MAX/41 (__set_BASEPRI_MAX) @0x796a8a676e10
+  Type: function definition
+  Visibility: no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__set_BASEPRI/40 (__set_BASEPRI) @0x796a8a676ca8
+  Type: function definition
+  Visibility: no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__get_BASEPRI/39 (__get_BASEPRI) @0x796a8a676b40
+  Type: function definition
+  Visibility: no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__disable_fault_irq/38 (__disable_fault_irq) @0x796a8a6769d8
+  Type: function definition
+  Visibility: no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__enable_fault_irq/37 (__enable_fault_irq) @0x796a8a676870
+  Type: function definition
+  Visibility: no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__set_PRIMASK/36 (__set_PRIMASK) @0x796a8a676708
+  Type: function definition
+  Visibility: no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__get_PRIMASK/35 (__get_PRIMASK) @0x796a8a6765a0
+  Type: function definition
+  Visibility: no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__set_MSP/34 (__set_MSP) @0x796a8a676438
+  Type: function definition
+  Visibility: no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__get_MSP/33 (__get_MSP) @0x796a8a6762d0
+  Type: function definition
+  Visibility: no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__set_PSP/32 (__set_PSP) @0x796a8a676168
+  Type: function definition
+  Visibility: no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__get_PSP/31 (__get_PSP) @0x796a8a676000
+  Type: function definition
+  Visibility: no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__get_xPSR/30 (__get_xPSR) @0x796a8a66be10
+  Type: function definition
+  Visibility: no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__get_APSR/29 (__get_APSR) @0x796a8a66bca8
+  Type: function definition
+  Visibility: no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__get_IPSR/28 (__get_IPSR) @0x796a8a66bb40
+  Type: function definition
+  Visibility: no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__set_CONTROL/27 (__set_CONTROL) @0x796a8a66b9d8
+  Type: function definition
+  Visibility: no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__get_CONTROL/26 (__get_CONTROL) @0x796a8a66b870
+  Type: function definition
+  Visibility: no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__disable_irq/25 (__disable_irq) @0x796a8a66b708
+  Type: function definition
+  Visibility: no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__enable_irq/24 (__enable_irq) @0x796a8a66b5a0
+  Type: function definition
+  Visibility: no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__STRT/23 (__STRT) @0x796a8a66b438
+  Type: function definition
+  Visibility: no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__STRHT/22 (__STRHT) @0x796a8a66b2d0
+  Type: function definition
+  Visibility: no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__STRBT/21 (__STRBT) @0x796a8a66b168
+  Type: function definition
+  Visibility: no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__LDRT/20 (__LDRT) @0x796a8a66b000
+  Type: function definition
+  Visibility: no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__LDRHT/19 (__LDRHT) @0x796a8a663e10
+  Type: function definition
+  Visibility: no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__LDRBT/18 (__LDRBT) @0x796a8a663ca8
+  Type: function definition
+  Visibility: no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__RRX/17 (__RRX) @0x796a8a663b40
+  Type: function definition
+  Visibility: no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__CLREX/16 (__CLREX) @0x796a8a6639d8
+  Type: function definition
+  Visibility: no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__STREXW/15 (__STREXW) @0x796a8a663870
+  Type: function definition
+  Visibility: no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__STREXH/14 (__STREXH) @0x796a8a663708
+  Type: function definition
+  Visibility: no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__STREXB/13 (__STREXB) @0x796a8a6635a0
+  Type: function definition
+  Visibility: no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__LDREXW/12 (__LDREXW) @0x796a8a663438
+  Type: function definition
+  Visibility: no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__LDREXH/11 (__LDREXH) @0x796a8a6632d0
+  Type: function definition
+  Visibility: no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__LDREXB/10 (__LDREXB) @0x796a8a663168
+  Type: function definition
+  Visibility: no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__CLZ/9 (__CLZ) @0x796a8a663000
+  Type: function definition
+  Visibility: no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__RBIT/8 (__RBIT) @0x796a8a654e10
+  Type: function definition
+  Visibility: no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__ROR/7 (__ROR) @0x796a8a654ca8
+  Type: function definition
+  Visibility: no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__REVSH/6 (__REVSH) @0x796a8a654b40
+  Type: function definition
+  Visibility: no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__REV16/5 (__REV16) @0x796a8a6549d8
+  Type: function definition
+  Visibility: no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__REV/4 (__REV) @0x796a8a654870
+  Type: function definition
+  Visibility: no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__DMB/3 (__DMB) @0x796a8a654708
+  Type: function definition
+  Visibility: no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__DSB/2 (__DSB) @0x796a8a6545a0
+  Type: function definition
+  Visibility: no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__ISB/1 (__ISB) @0x796a8a654438
+  Type: function definition
+  Visibility: no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__cmsis_start/0 (__cmsis_start) @0x796a8a654168
+  Type: function definition
+  Visibility: no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+
+Removing unused symbols: SystemCoreClockUpdate/74 ITM_CheckChar/73 ITM_ReceiveChar/72 ITM_SendChar/71 SCB_GetFPUType/69 ARM_MPU_Load/68 ARM_MPU_OrderedMemcpy/67 ARM_MPU_SetRegionEx/66 ARM_MPU_SetRegion/65 ARM_MPU_ClrRegion/64 ARM_MPU_Disable/63 ARM_MPU_Enable/62 __NVIC_SystemReset/61 __NVIC_GetVector/60 __NVIC_SetVector/59 NVIC_DecodePriority/58 NVIC_EncodePriority/57 __NVIC_GetPriority/56 __NVIC_GetActive/54 __NVIC_ClearPendingIRQ/53 __NVIC_SetPendingIRQ/52 __NVIC_GetPendingIRQ/51 __NVIC_DisableIRQ/50 __NVIC_GetEnableIRQ/49 __NVIC_EnableIRQ/48 __NVIC_GetPriorityGrouping/47 __NVIC_SetPriorityGrouping/46 __set_FPSCR/45 __get_FPSCR/44 __set_FAULTMASK/43 __get_FAULTMASK/42 __set_BASEPRI_MAX/41 __set_BASEPRI/40 __get_BASEPRI/39 __disable_fault_irq/38 __enable_fault_irq/37 __set_PRIMASK/36 __get_PRIMASK/35 __set_MSP/34 __get_MSP/33 __set_PSP/32 __get_PSP/31 __get_xPSR/30 __get_APSR/29 __get_IPSR/28 __set_CONTROL/27 __get_CONTROL/26 __disable_irq/25 __enable_irq/24 __STRT/23 __STRHT/22 __STRBT/21 __LDRT/20 __LDRHT/19 __LDRBT/18 __RRX/17 __CLREX/16 __STREXW/15 __STREXH/14 __STREXB/13 __LDREXW/12 __LDREXH/11 __LDREXB/10 __CLZ/9 __RBIT/8 __ROR/7 __REVSH/6 __REV16/5 __REV/4 __DMB/3 __DSB/2 __ISB/1 __cmsis_start/0
+
+Reclaimed Symbol table:
+
+Task_Dispatch/97 (Task_Dispatch) @0x796a8a37d2d0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: main/78 
+  Calls: 
+Task_Add/96 (Task_Add) @0x796a8a37d000
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: main/78 main/78 
+  Calls: 
+Task_Init/95 (Task_Init) @0x796a8a3755a0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: main/78 
+  Calls: 
+SystemCoreClock/94 (SystemCoreClock) @0x796a8a371980
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: main/78 (read) 
+  Availability: not-ready
+  Varpool flags:
+controllerInit/93 (controllerInit) @0x796a8a375e10
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: main/78 
+  Calls: 
+ClockSetCoreClock/92 (ClockSetCoreClock) @0x796a8a375ca8
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: main/78 
+  Calls: 
+writeLED/91 (writeLED) @0x796a8a375b40
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: stateMachine/76 
+  Calls: 
+steadyState/90 (steadyState) @0x796a8a3759d8
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: stateMachine/76 
+  Calls: 
+writeControlVariable/89 (writeControlVariable) @0x796a8a375870
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: stateMachine/76 
+  Calls: 
+cv/88 (cv) @0x796a8a371780
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: stateMachine/76 (write) stateMachine/76 (read) 
+  Availability: not-ready
+  Varpool flags:
+gain/87 (gain) @0x796a8a371700
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: stateMachine/76 (read) main/78 (write) main/78 (write) main/78 (write) main/78 (write) 
+  Availability: not-ready
+  Varpool flags:
+controlSignalPID/86 (controlSignalPID) @0x796a8a375708
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: stateMachine/76 
+  Calls: 
+pv/85 (pv) @0x796a8a371680
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: stateMachine/76 (write) stateMachine/76 (read) 
+  Availability: not-ready
+  Varpool flags:
+readProcessVariable/84 (readProcessVariable) @0x796a8a375438
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: stateMachine/76 
+  Calls: 
+sp/83 (sp) @0x796a8a371600
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: stateMachine/76 (write) stateMachine/76 (read) 
+  Availability: not-ready
+  Varpool flags:
+readSetpoint/82 (readSetpoint) @0x796a8a3752d0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: stateMachine/76 
+  Calls: 
+refresh_tick/81 (refresh_tick) @0x796a8a371500
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: stateMachine/76 (read) stateMachine/76 (write) sampleTimer/77 (write) main/78 (write) 
+  Availability: not-ready
+  Varpool flags:
+state/80 (state) @0x796a8a371480
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: stateMachine/76 (read) stateMachine/76 (write) stateMachine/76 (write) stateMachine/76 (write) stateMachine/76 (write) stateMachine/76 (write) 
+  Availability: not-ready
+  Varpool flags: initialized
+Task_Update/79 (Task_Update) @0x796a8a375168
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: SysTick_Handler/75 
+  Calls: 
+main/78 (main) @0x796a8a375000
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: SystemCoreClock/94 (read) sampleTimer/77 (addr) stateMachine/76 (addr) gain/87 (write) gain/87 (write) gain/87 (write) gain/87 (write) refresh_tick/81 (write) 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Task_Dispatch/97 Task_Add/96 Task_Add/96 Task_Init/95 SysTick_Config/70 controllerInit/93 ClockSetCoreClock/92 
+sampleTimer/77 (sampleTimer) @0x796a8a36ae10
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  Address is taken.
+  References: refresh_tick/81 (write) 
+  Referring: main/78 (addr) 
+  Function flags: body
+  Called by: 
+  Calls: 
+stateMachine/76 (stateMachine) @0x796a8a36aca8
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  Address is taken.
+  References: state/80 (read) refresh_tick/81 (read) refresh_tick/81 (write) state/80 (write) sp/83 (write) pv/85 (write) state/80 (write) sp/83 (read) pv/85 (read) gain/87 (read) cv/88 (write) state/80 (write) cv/88 (read) state/80 (write) state/80 (write) 
+  Referring: main/78 (addr) 
+  Function flags: body
+  Called by: 
+  Calls: writeLED/91 steadyState/90 writeControlVariable/89 controlSignalPID/86 readProcessVariable/84 readSetpoint/82 
+SysTick_Handler/75 (SysTick_Handler) @0x796a8a36ab40
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Task_Update/79 
+SysTick_Config/70 (SysTick_Config) @0x796a8a6e79d8
+  Type: function definition analyzed
+  Visibility: no_reorder
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: main/78 
+  Calls: __NVIC_SetPriority/55 
+__NVIC_SetPriority/55 (__NVIC_SetPriority) @0x796a8a6cae10
+  Type: function definition analyzed
+  Visibility: no_reorder
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: SysTick_Config/70 
+  Calls: 
+
+
+Initial Symbol table:
+
+Task_Dispatch/97 (Task_Dispatch) @0x796a8a37d2d0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: main/78 
+  Calls: 
+Task_Add/96 (Task_Add) @0x796a8a37d000
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: main/78 main/78 
+  Calls: 
+Task_Init/95 (Task_Init) @0x796a8a3755a0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: main/78 
+  Calls: 
+SystemCoreClock/94 (SystemCoreClock) @0x796a8a371980
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: main/78 (read) 
+  Availability: not-ready
+  Varpool flags:
+controllerInit/93 (controllerInit) @0x796a8a375e10
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: main/78 
+  Calls: 
+ClockSetCoreClock/92 (ClockSetCoreClock) @0x796a8a375ca8
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: main/78 
+  Calls: 
+writeLED/91 (writeLED) @0x796a8a375b40
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: stateMachine/76 
+  Calls: 
+steadyState/90 (steadyState) @0x796a8a3759d8
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: stateMachine/76 
+  Calls: 
+writeControlVariable/89 (writeControlVariable) @0x796a8a375870
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: stateMachine/76 
+  Calls: 
+cv/88 (cv) @0x796a8a371780
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: stateMachine/76 (write) stateMachine/76 (read) 
+  Availability: not-ready
+  Varpool flags:
+gain/87 (gain) @0x796a8a371700
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: stateMachine/76 (read) main/78 (write) main/78 (write) main/78 (write) main/78 (write) 
+  Availability: not-ready
+  Varpool flags:
+controlSignalPID/86 (controlSignalPID) @0x796a8a375708
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: stateMachine/76 
+  Calls: 
+pv/85 (pv) @0x796a8a371680
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: stateMachine/76 (write) stateMachine/76 (read) 
+  Availability: not-ready
+  Varpool flags:
+readProcessVariable/84 (readProcessVariable) @0x796a8a375438
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: stateMachine/76 
+  Calls: 
+sp/83 (sp) @0x796a8a371600
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: stateMachine/76 (write) stateMachine/76 (read) 
+  Availability: not-ready
+  Varpool flags:
+readSetpoint/82 (readSetpoint) @0x796a8a3752d0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: stateMachine/76 
+  Calls: 
+refresh_tick/81 (refresh_tick) @0x796a8a371500
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: stateMachine/76 (read) stateMachine/76 (write) sampleTimer/77 (write) main/78 (write) 
+  Availability: not-ready
+  Varpool flags:
+state.0/80 (state) @0x796a8a371480
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: stateMachine/76 (read) stateMachine/76 (write) stateMachine/76 (write) stateMachine/76 (write) stateMachine/76 (write) stateMachine/76 (write) 
+  Availability: not-ready
+  Varpool flags: initialized
+Task_Update/79 (Task_Update) @0x796a8a375168
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: SysTick_Handler/75 
+  Calls: 
+main/78 (main) @0x796a8a375000
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: SystemCoreClock/94 (read) sampleTimer/77 (addr) stateMachine/76 (addr) gain/87 (write) gain/87 (write) gain/87 (write) gain/87 (write) refresh_tick/81 (write) 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Task_Dispatch/97 Task_Add/96 Task_Add/96 Task_Init/95 SysTick_Config/70 controllerInit/93 ClockSetCoreClock/92 
+sampleTimer/77 (sampleTimer) @0x796a8a36ae10
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  Address is taken.
+  References: refresh_tick/81 (write) 
+  Referring: main/78 (addr) 
+  Function flags: body
+  Called by: 
+  Calls: 
+stateMachine/76 (stateMachine) @0x796a8a36aca8
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  Address is taken.
+  References: state.0/80 (read) refresh_tick/81 (read) refresh_tick/81 (write) state.0/80 (write) sp/83 (write) pv/85 (write) state.0/80 (write) sp/83 (read) pv/85 (read) gain/87 (read) cv/88 (write) state.0/80 (write) cv/88 (read) state.0/80 (write) state.0/80 (write) 
+  Referring: main/78 (addr) 
+  Function flags: body
+  Called by: 
+  Calls: writeLED/91 steadyState/90 writeControlVariable/89 controlSignalPID/86 readProcessVariable/84 readSetpoint/82 
+SysTick_Handler/75 (SysTick_Handler) @0x796a8a36ab40
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Task_Update/79 
+SysTick_Config/70 (SysTick_Config) @0x796a8a6e79d8
+  Type: function definition analyzed
+  Visibility: no_reorder
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: main/78 
+  Calls: __NVIC_SetPriority/55 
+__NVIC_SetPriority/55 (__NVIC_SetPriority) @0x796a8a6cae10
+  Type: function definition analyzed
+  Visibility: no_reorder
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: SysTick_Config/70 
+  Calls: 
+
+Removing unused symbols:
+
+Reclaimed Symbol table:
+
+Task_Dispatch/97 (Task_Dispatch) @0x796a8a37d2d0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: main/78 
+  Calls: 
+Task_Add/96 (Task_Add) @0x796a8a37d000
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: main/78 main/78 
+  Calls: 
+Task_Init/95 (Task_Init) @0x796a8a3755a0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: main/78 
+  Calls: 
+SystemCoreClock/94 (SystemCoreClock) @0x796a8a371980
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: main/78 (read) 
+  Availability: not-ready
+  Varpool flags:
+controllerInit/93 (controllerInit) @0x796a8a375e10
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: main/78 
+  Calls: 
+ClockSetCoreClock/92 (ClockSetCoreClock) @0x796a8a375ca8
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: main/78 
+  Calls: 
+writeLED/91 (writeLED) @0x796a8a375b40
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: stateMachine/76 
+  Calls: 
+steadyState/90 (steadyState) @0x796a8a3759d8
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: stateMachine/76 
+  Calls: 
+writeControlVariable/89 (writeControlVariable) @0x796a8a375870
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: stateMachine/76 
+  Calls: 
+cv/88 (cv) @0x796a8a371780
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: stateMachine/76 (write) stateMachine/76 (read) 
+  Availability: not-ready
+  Varpool flags:
+gain/87 (gain) @0x796a8a371700
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: stateMachine/76 (read) main/78 (write) main/78 (write) main/78 (write) main/78 (write) 
+  Availability: not-ready
+  Varpool flags:
+controlSignalPID/86 (controlSignalPID) @0x796a8a375708
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: stateMachine/76 
+  Calls: 
+pv/85 (pv) @0x796a8a371680
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: stateMachine/76 (write) stateMachine/76 (read) 
+  Availability: not-ready
+  Varpool flags:
+readProcessVariable/84 (readProcessVariable) @0x796a8a375438
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: stateMachine/76 
+  Calls: 
+sp/83 (sp) @0x796a8a371600
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: stateMachine/76 (write) stateMachine/76 (read) 
+  Availability: not-ready
+  Varpool flags:
+readSetpoint/82 (readSetpoint) @0x796a8a3752d0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: stateMachine/76 
+  Calls: 
+refresh_tick/81 (refresh_tick) @0x796a8a371500
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: stateMachine/76 (read) stateMachine/76 (write) sampleTimer/77 (write) main/78 (write) 
+  Availability: not-ready
+  Varpool flags:
+state.0/80 (state) @0x796a8a371480
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: stateMachine/76 (read) stateMachine/76 (write) stateMachine/76 (write) stateMachine/76 (write) stateMachine/76 (write) stateMachine/76 (write) 
+  Availability: not-ready
+  Varpool flags: initialized
+Task_Update/79 (Task_Update) @0x796a8a375168
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags:
+  Called by: SysTick_Handler/75 
+  Calls: 
+main/78 (main) @0x796a8a375000
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: SystemCoreClock/94 (read) sampleTimer/77 (addr) stateMachine/76 (addr) gain/87 (write) gain/87 (write) gain/87 (write) gain/87 (write) refresh_tick/81 (write) 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Task_Dispatch/97 Task_Add/96 Task_Add/96 Task_Init/95 SysTick_Config/70 controllerInit/93 ClockSetCoreClock/92 
+sampleTimer/77 (sampleTimer) @0x796a8a36ae10
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  Address is taken.
+  References: refresh_tick/81 (write) 
+  Referring: main/78 (addr) 
+  Function flags: body
+  Called by: 
+  Calls: 
+stateMachine/76 (stateMachine) @0x796a8a36aca8
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  Address is taken.
+  References: state.0/80 (read) refresh_tick/81 (read) refresh_tick/81 (write) state.0/80 (write) sp/83 (write) pv/85 (write) state.0/80 (write) sp/83 (read) pv/85 (read) gain/87 (read) cv/88 (write) state.0/80 (write) cv/88 (read) state.0/80 (write) state.0/80 (write) 
+  Referring: main/78 (addr) 
+  Function flags: body
+  Called by: 
+  Calls: writeLED/91 steadyState/90 writeControlVariable/89 controlSignalPID/86 readProcessVariable/84 readSetpoint/82 
+SysTick_Handler/75 (SysTick_Handler) @0x796a8a36ab40
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: Task_Update/79 
+SysTick_Config/70 (SysTick_Config) @0x796a8a6e79d8
+  Type: function definition analyzed
+  Visibility: no_reorder
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: main/78 
+  Calls: __NVIC_SetPriority/55 
+__NVIC_SetPriority/55 (__NVIC_SetPriority) @0x796a8a6cae10
+  Type: function definition analyzed
+  Visibility: no_reorder
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: SysTick_Config/70 
+  Calls: 
+
+Reclaiming functions:
+Reclaiming variables:
+Clearing address taken flags:
+Optimized Symbol table:
+
+Task_Dispatch/97 (Task_Dispatch) @0x796a8a37d2d0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: main/78 
+  Calls: 
+Task_Add/96 (Task_Add) @0x796a8a37d000
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: main/78 main/78 
+  Calls: 
+Task_Init/95 (Task_Init) @0x796a8a3755a0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: main/78 
+  Calls: 
+SystemCoreClock/94 (SystemCoreClock) @0x796a8a371980
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: main/78 (read) 
+  Availability: not_available
+  Varpool flags:
+controllerInit/93 (controllerInit) @0x796a8a375e10
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: main/78 
+  Calls: 
+ClockSetCoreClock/92 (ClockSetCoreClock) @0x796a8a375ca8
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: main/78 
+  Calls: 
+writeLED/91 (writeLED) @0x796a8a375b40
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: stateMachine/76 
+  Calls: 
+steadyState/90 (steadyState) @0x796a8a3759d8
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: stateMachine/76 
+  Calls: 
+writeControlVariable/89 (writeControlVariable) @0x796a8a375870
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: stateMachine/76 
+  Calls: 
+cv/88 (cv) @0x796a8a371780
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: stateMachine/76 (write) stateMachine/76 (read) 
+  Availability: not_available
+  Varpool flags:
+gain/87 (gain) @0x796a8a371700
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: stateMachine/76 (read) main/78 (write) main/78 (write) main/78 (write) main/78 (write) 
+  Availability: not_available
+  Varpool flags:
+controlSignalPID/86 (controlSignalPID) @0x796a8a375708
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: stateMachine/76 
+  Calls: 
+pv/85 (pv) @0x796a8a371680
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: stateMachine/76 (write) stateMachine/76 (read) 
+  Availability: not_available
+  Varpool flags:
+readProcessVariable/84 (readProcessVariable) @0x796a8a375438
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: stateMachine/76 
+  Calls: 
+sp/83 (sp) @0x796a8a371600
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: stateMachine/76 (write) stateMachine/76 (read) 
+  Availability: not_available
+  Varpool flags:
+readSetpoint/82 (readSetpoint) @0x796a8a3752d0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: stateMachine/76 
+  Calls: 
+refresh_tick/81 (refresh_tick) @0x796a8a371500
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: sampleTimer/77 (write) stateMachine/76 (write) stateMachine/76 (read) main/78 (write) 
+  Availability: not_available
+  Varpool flags:
+state.0/80 (state) @0x796a8a371480
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: 
+  Referring: stateMachine/76 (read) stateMachine/76 (write) stateMachine/76 (write) stateMachine/76 (write) stateMachine/76 (write) stateMachine/76 (write) 
+  Availability: available
+  Varpool flags: initialized
+Task_Update/79 (Task_Update) @0x796a8a375168
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: SysTick_Handler/75 
+  Calls: 
+main/78 (main) @0x796a8a375000
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: SystemCoreClock/94 (read) sampleTimer/77 (addr) stateMachine/76 (addr) gain/87 (write) gain/87 (write) gain/87 (write) gain/87 (write) refresh_tick/81 (write) 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: Task_Dispatch/97 Task_Add/96 Task_Add/96 Task_Init/95 SysTick_Config/70 controllerInit/93 ClockSetCoreClock/92 
+sampleTimer/77 (sampleTimer) @0x796a8a36ae10
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  Address is taken.
+  References: refresh_tick/81 (write) 
+  Referring: main/78 (addr) 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: 
+stateMachine/76 (stateMachine) @0x796a8a36aca8
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  Address is taken.
+  References: state.0/80 (read) refresh_tick/81 (read) refresh_tick/81 (write) state.0/80 (write) sp/83 (write) pv/85 (write) state.0/80 (write) sp/83 (read) pv/85 (read) gain/87 (read) cv/88 (write) state.0/80 (write) cv/88 (read) state.0/80 (write) state.0/80 (write) 
+  Referring: main/78 (addr) 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: writeLED/91 steadyState/90 writeControlVariable/89 controlSignalPID/86 readProcessVariable/84 readSetpoint/82 
+SysTick_Handler/75 (SysTick_Handler) @0x796a8a36ab40
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: Task_Update/79 
+SysTick_Config/70 (SysTick_Config) @0x796a8a6e79d8
+  Type: function definition analyzed
+  Visibility: no_reorder prevailing_def_ironly
+  References: 
+  Referring: 
+  Availability: local
+  Function flags: body local
+  Called by: main/78 
+  Calls: __NVIC_SetPriority/55 
+__NVIC_SetPriority/55 (__NVIC_SetPriority) @0x796a8a6cae10
+  Type: function definition analyzed
+  Visibility: no_reorder prevailing_def_ironly
+  References: 
+  Referring: 
+  Availability: local
+  Function flags: body local
+  Called by: SysTick_Config/70 
+  Calls: 
+Materializing clones
+Materialization Call site updates done.
+
+Reclaiming functions:
+Reclaiming variables:
+Clearing address taken flags:
+Trivially needed variables: state.0/80
+Removing variables:
+
+Final Symbol table:
+
+Task_Dispatch/97 (Task_Dispatch) @0x796a8a37d2d0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: 
+  Calls: 
+Task_Add/96 (Task_Add) @0x796a8a37d000
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: 
+  Calls: 
+Task_Init/95 (Task_Init) @0x796a8a3755a0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: 
+  Calls: 
+SystemCoreClock/94 (SystemCoreClock) @0x796a8a371980
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Varpool flags:
+controllerInit/93 (controllerInit) @0x796a8a375e10
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: 
+  Calls: 
+ClockSetCoreClock/92 (ClockSetCoreClock) @0x796a8a375ca8
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: 
+  Calls: 
+writeLED/91 (writeLED) @0x796a8a375b40
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: 
+  Calls: 
+steadyState/90 (steadyState) @0x796a8a3759d8
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: 
+  Calls: 
+writeControlVariable/89 (writeControlVariable) @0x796a8a375870
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: 
+  Calls: 
+cv/88 (cv) @0x796a8a371780
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Varpool flags:
+gain/87 (gain) @0x796a8a371700
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Varpool flags:
+controlSignalPID/86 (controlSignalPID) @0x796a8a375708
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: 
+  Calls: 
+pv/85 (pv) @0x796a8a371680
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Varpool flags:
+readProcessVariable/84 (readProcessVariable) @0x796a8a375438
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: 
+  Calls: 
+sp/83 (sp) @0x796a8a371600
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Varpool flags:
+readSetpoint/82 (readSetpoint) @0x796a8a3752d0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: 
+  Calls: 
+refresh_tick/81 (refresh_tick) @0x796a8a371500
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Varpool flags:
+state.0/80 (state) @0x796a8a371480
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly asm_written section:.bss.state.0 (implicit_section)
+  Aux: @0x1
+  References: 
+  Referring: 
+  Availability: available
+  Varpool flags: initialized
+Task_Update/79 (Task_Update) @0x796a8a375168
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags:
+  Called by: 
+  Calls: 
+main/78 (main) @0x796a8a375000
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder asm_written public section:.text.main (implicit_section)
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+sampleTimer/77 (sampleTimer) @0x796a8a36ae10
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder asm_written public section:.text.sampleTimer (implicit_section)
+  Address is taken.
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+stateMachine/76 (stateMachine) @0x796a8a36aca8
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder asm_written public section:.text.stateMachine (implicit_section)
+  Address is taken.
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+SysTick_Handler/75 (SysTick_Handler) @0x796a8a36ab40
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder asm_written public section:.text.SysTick_Handler (implicit_section)
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+SysTick_Config/70 (SysTick_Config) @0x796a8a6e79d8
+  Type: function definition analyzed
+  Visibility: no_reorder prevailing_def_ironly asm_written section:.text.SysTick_Config (implicit_section)
+  References: 
+  Referring: 
+  Availability: local
+  Function flags: local
+  Called by: 
+  Calls: 
+__NVIC_SetPriority/55 (__NVIC_SetPriority) @0x796a8a6cae10
+  Type: function definition analyzed
+  Visibility: no_reorder prevailing_def_ironly asm_written section:.text.__NVIC_SetPriority (implicit_section)
+  References: 
+  Referring: 
+  Availability: local
+  Function flags: local
+  Called by: 
+  Calls: 

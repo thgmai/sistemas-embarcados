@@ -1,0 +1,1329 @@
+Trivially needed symbols: SystemLFXOClockSet/88 SystemLFXOClockGet/87 SystemULFRCOClockGet/86 SystemLFRCOClockGet/85 SystemInit/84 SystemHFXOClockSet/83 SystemHFXOClockGet/82 SystemHFClockGet/81 SystemMaxCoreClockGet/80 SystemCoreClockGet/79 SystemCoreClock/78 SystemLFXOClock/76 SystemHFXOClock/75
+
+
+Initial Symbol table:
+
+SystemLFXOClockSet/88 (SystemLFXOClockSet) @0x7d9372569438
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  Aux: @0x1c36aa0
+  References: SystemLFXOClock/76 (write) 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: SystemCoreClockGet/79 
+SystemLFXOClockGet/87 (SystemLFXOClockGet) @0x7d93725692d0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  Aux: @0x7d9372569438
+  References: SystemLFXOClock/76 (read) 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: 
+SystemULFRCOClockGet/86 (SystemULFRCOClockGet) @0x7d9372569168
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  Aux: @0x7d93725692d0
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: 
+SystemLFRCOClockGet/85 (SystemLFRCOClockGet) @0x7d9372569000
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  Aux: @0x7d9372569168
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: 
+SystemInit/84 (SystemInit) @0x7d937253ce10
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  Aux: @0x7d9372569000
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: 
+SystemHFXOClockSet/83 (SystemHFXOClockSet) @0x7d937253cca8
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  Aux: @0x7d937253ce10
+  References: SystemHFXOClock/75 (write) 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: SystemCoreClockGet/79 
+SystemHFXOClockGet/82 (SystemHFXOClockGet) @0x7d937253cb40
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  Aux: @0x7d937253cca8
+  References: SystemHFXOClock/75 (read) 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: 
+SystemHFClockGet/81 (SystemHFClockGet) @0x7d937253c9d8
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  Aux: @0x7d937253cb40
+  References: SystemLFXOClock/76 (read) SystemHFXOClock/75 (read) 
+  Referring: 
+  Function flags: body
+  Called by: SystemCoreClockGet/79 
+  Calls: GetProdRev/77 GetProdRev/77 
+SystemMaxCoreClockGet/80 (SystemMaxCoreClockGet) @0x7d937253c870
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  Aux: @0x7d937253c9d8
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: 
+SystemCoreClockGet/79 (SystemCoreClockGet) @0x7d937253c708
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  Aux: @0x7d937253c870
+  References: SystemCoreClock/78 (write) 
+  Referring: 
+  Function flags: body
+  Called by: SystemLFXOClockSet/88 SystemHFXOClockSet/83 
+  Calls: SystemHFClockGet/81 
+SystemCoreClock/78 (SystemCoreClock) @0x7d93728fda80
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder public
+  Aux: @0x7d937253c708
+  References: 
+  Referring: SystemCoreClockGet/79 (write) 
+  Availability: not-ready
+  Varpool flags: initialized
+GetProdRev/77 (GetProdRev) @0x7d937253c5a0
+  Type: function definition analyzed
+  Visibility: no_reorder
+  Aux: @0x7d937253cb40
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: SystemHFClockGet/81 SystemHFClockGet/81 
+  Calls: 
+SystemLFXOClock/76 (SystemLFXOClock) @0x7d93728fd980
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  Aux: @0x7d93728fda80
+  References: 
+  Referring: SystemHFClockGet/81 (read) SystemLFXOClockGet/87 (read) SystemLFXOClockSet/88 (write) 
+  Availability: not-ready
+  Varpool flags: initialized
+SystemHFXOClock/75 (SystemHFXOClock) @0x7d93728fd900
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  Aux: @0x7d93728fd980
+  References: 
+  Referring: SystemHFClockGet/81 (read) SystemHFXOClockGet/82 (read) SystemHFXOClockSet/83 (write) 
+  Availability: not-ready
+  Varpool flags: initialized
+SystemCoreClockUpdate/74 (SystemCoreClockUpdate) @0x7d93728f6708
+  Type: function definition
+  Visibility: no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+ITM_CheckChar/73 (ITM_CheckChar) @0x7d93728f6000
+  Type: function definition
+  Visibility: no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+ITM_ReceiveChar/72 (ITM_ReceiveChar) @0x7d93728e7e10
+  Type: function definition
+  Visibility: no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+ITM_SendChar/71 (ITM_SendChar) @0x7d93728e7ca8
+  Type: function definition
+  Visibility: no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+SysTick_Config/70 (SysTick_Config) @0x7d93728e79d8
+  Type: function definition
+  Visibility: no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+SCB_GetFPUType/69 (SCB_GetFPUType) @0x7d93728e7870
+  Type: function definition
+  Visibility: no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+ARM_MPU_Load/68 (ARM_MPU_Load) @0x7d93728e7708
+  Type: function definition
+  Visibility: no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+ARM_MPU_OrderedMemcpy/67 (ARM_MPU_OrderedMemcpy) @0x7d93728e75a0
+  Type: function definition
+  Visibility: no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+ARM_MPU_SetRegionEx/66 (ARM_MPU_SetRegionEx) @0x7d93728e7438
+  Type: function definition
+  Visibility: no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+ARM_MPU_SetRegion/65 (ARM_MPU_SetRegion) @0x7d93728e72d0
+  Type: function definition
+  Visibility: no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+ARM_MPU_ClrRegion/64 (ARM_MPU_ClrRegion) @0x7d93728e7168
+  Type: function definition
+  Visibility: no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+ARM_MPU_Disable/63 (ARM_MPU_Disable) @0x7d93728e7000
+  Type: function definition
+  Visibility: no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+ARM_MPU_Enable/62 (ARM_MPU_Enable) @0x7d93728dae10
+  Type: function definition
+  Visibility: no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__NVIC_SystemReset/61 (__NVIC_SystemReset) @0x7d93728da708
+  Type: function definition
+  Visibility: no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__NVIC_GetVector/60 (__NVIC_GetVector) @0x7d93728da5a0
+  Type: function definition
+  Visibility: no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__NVIC_SetVector/59 (__NVIC_SetVector) @0x7d93728da438
+  Type: function definition
+  Visibility: no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+NVIC_DecodePriority/58 (NVIC_DecodePriority) @0x7d93728da2d0
+  Type: function definition
+  Visibility: no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+NVIC_EncodePriority/57 (NVIC_EncodePriority) @0x7d93728da168
+  Type: function definition
+  Visibility: no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__NVIC_GetPriority/56 (__NVIC_GetPriority) @0x7d93728da000
+  Type: function definition
+  Visibility: no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__NVIC_SetPriority/55 (__NVIC_SetPriority) @0x7d93728cae10
+  Type: function definition
+  Visibility: no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__NVIC_GetActive/54 (__NVIC_GetActive) @0x7d93728caca8
+  Type: function definition
+  Visibility: no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__NVIC_ClearPendingIRQ/53 (__NVIC_ClearPendingIRQ) @0x7d93728cab40
+  Type: function definition
+  Visibility: no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__NVIC_SetPendingIRQ/52 (__NVIC_SetPendingIRQ) @0x7d93728ca9d8
+  Type: function definition
+  Visibility: no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__NVIC_GetPendingIRQ/51 (__NVIC_GetPendingIRQ) @0x7d93728ca870
+  Type: function definition
+  Visibility: no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__NVIC_DisableIRQ/50 (__NVIC_DisableIRQ) @0x7d93728ca708
+  Type: function definition
+  Visibility: no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__NVIC_GetEnableIRQ/49 (__NVIC_GetEnableIRQ) @0x7d93728ca5a0
+  Type: function definition
+  Visibility: no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__NVIC_EnableIRQ/48 (__NVIC_EnableIRQ) @0x7d93728ca438
+  Type: function definition
+  Visibility: no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__NVIC_GetPriorityGrouping/47 (__NVIC_GetPriorityGrouping) @0x7d93728ca2d0
+  Type: function definition
+  Visibility: no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__NVIC_SetPriorityGrouping/46 (__NVIC_SetPriorityGrouping) @0x7d93728ca168
+  Type: function definition
+  Visibility: no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__set_FPSCR/45 (__set_FPSCR) @0x7d937287b438
+  Type: function definition
+  Visibility: no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__get_FPSCR/44 (__get_FPSCR) @0x7d937287b2d0
+  Type: function definition
+  Visibility: no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__set_FAULTMASK/43 (__set_FAULTMASK) @0x7d937287b168
+  Type: function definition
+  Visibility: no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__get_FAULTMASK/42 (__get_FAULTMASK) @0x7d937287b000
+  Type: function definition
+  Visibility: no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__set_BASEPRI_MAX/41 (__set_BASEPRI_MAX) @0x7d9372876e10
+  Type: function definition
+  Visibility: no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__set_BASEPRI/40 (__set_BASEPRI) @0x7d9372876ca8
+  Type: function definition
+  Visibility: no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__get_BASEPRI/39 (__get_BASEPRI) @0x7d9372876b40
+  Type: function definition
+  Visibility: no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__disable_fault_irq/38 (__disable_fault_irq) @0x7d93728769d8
+  Type: function definition
+  Visibility: no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__enable_fault_irq/37 (__enable_fault_irq) @0x7d9372876870
+  Type: function definition
+  Visibility: no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__set_PRIMASK/36 (__set_PRIMASK) @0x7d9372876708
+  Type: function definition
+  Visibility: no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__get_PRIMASK/35 (__get_PRIMASK) @0x7d93728765a0
+  Type: function definition
+  Visibility: no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__set_MSP/34 (__set_MSP) @0x7d9372876438
+  Type: function definition
+  Visibility: no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__get_MSP/33 (__get_MSP) @0x7d93728762d0
+  Type: function definition
+  Visibility: no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__set_PSP/32 (__set_PSP) @0x7d9372876168
+  Type: function definition
+  Visibility: no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__get_PSP/31 (__get_PSP) @0x7d9372876000
+  Type: function definition
+  Visibility: no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__get_xPSR/30 (__get_xPSR) @0x7d937286be10
+  Type: function definition
+  Visibility: no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__get_APSR/29 (__get_APSR) @0x7d937286bca8
+  Type: function definition
+  Visibility: no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__get_IPSR/28 (__get_IPSR) @0x7d937286bb40
+  Type: function definition
+  Visibility: no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__set_CONTROL/27 (__set_CONTROL) @0x7d937286b9d8
+  Type: function definition
+  Visibility: no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__get_CONTROL/26 (__get_CONTROL) @0x7d937286b870
+  Type: function definition
+  Visibility: no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__disable_irq/25 (__disable_irq) @0x7d937286b708
+  Type: function definition
+  Visibility: no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__enable_irq/24 (__enable_irq) @0x7d937286b5a0
+  Type: function definition
+  Visibility: no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__STRT/23 (__STRT) @0x7d937286b438
+  Type: function definition
+  Visibility: no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__STRHT/22 (__STRHT) @0x7d937286b2d0
+  Type: function definition
+  Visibility: no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__STRBT/21 (__STRBT) @0x7d937286b168
+  Type: function definition
+  Visibility: no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__LDRT/20 (__LDRT) @0x7d937286b000
+  Type: function definition
+  Visibility: no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__LDRHT/19 (__LDRHT) @0x7d9372863e10
+  Type: function definition
+  Visibility: no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__LDRBT/18 (__LDRBT) @0x7d9372863ca8
+  Type: function definition
+  Visibility: no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__RRX/17 (__RRX) @0x7d9372863b40
+  Type: function definition
+  Visibility: no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__CLREX/16 (__CLREX) @0x7d93728639d8
+  Type: function definition
+  Visibility: no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__STREXW/15 (__STREXW) @0x7d9372863870
+  Type: function definition
+  Visibility: no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__STREXH/14 (__STREXH) @0x7d9372863708
+  Type: function definition
+  Visibility: no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__STREXB/13 (__STREXB) @0x7d93728635a0
+  Type: function definition
+  Visibility: no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__LDREXW/12 (__LDREXW) @0x7d9372863438
+  Type: function definition
+  Visibility: no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__LDREXH/11 (__LDREXH) @0x7d93728632d0
+  Type: function definition
+  Visibility: no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__LDREXB/10 (__LDREXB) @0x7d9372863168
+  Type: function definition
+  Visibility: no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__CLZ/9 (__CLZ) @0x7d9372863000
+  Type: function definition
+  Visibility: no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__RBIT/8 (__RBIT) @0x7d9372854e10
+  Type: function definition
+  Visibility: no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__ROR/7 (__ROR) @0x7d9372854ca8
+  Type: function definition
+  Visibility: no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__REVSH/6 (__REVSH) @0x7d9372854b40
+  Type: function definition
+  Visibility: no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__REV16/5 (__REV16) @0x7d93728549d8
+  Type: function definition
+  Visibility: no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__REV/4 (__REV) @0x7d9372854870
+  Type: function definition
+  Visibility: no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__DMB/3 (__DMB) @0x7d9372854708
+  Type: function definition
+  Visibility: no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__DSB/2 (__DSB) @0x7d93728545a0
+  Type: function definition
+  Visibility: no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__ISB/1 (__ISB) @0x7d9372854438
+  Type: function definition
+  Visibility: no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__cmsis_start/0 (__cmsis_start) @0x7d9372854168
+  Type: function definition
+  Visibility: no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+
+Removing unused symbols: SystemCoreClockUpdate/74 ITM_CheckChar/73 ITM_ReceiveChar/72 ITM_SendChar/71 SysTick_Config/70 SCB_GetFPUType/69 ARM_MPU_Load/68 ARM_MPU_OrderedMemcpy/67 ARM_MPU_SetRegionEx/66 ARM_MPU_SetRegion/65 ARM_MPU_ClrRegion/64 ARM_MPU_Disable/63 ARM_MPU_Enable/62 __NVIC_SystemReset/61 __NVIC_GetVector/60 __NVIC_SetVector/59 NVIC_DecodePriority/58 NVIC_EncodePriority/57 __NVIC_GetPriority/56 __NVIC_SetPriority/55 __NVIC_GetActive/54 __NVIC_ClearPendingIRQ/53 __NVIC_SetPendingIRQ/52 __NVIC_GetPendingIRQ/51 __NVIC_DisableIRQ/50 __NVIC_GetEnableIRQ/49 __NVIC_EnableIRQ/48 __NVIC_GetPriorityGrouping/47 __NVIC_SetPriorityGrouping/46 __set_FPSCR/45 __get_FPSCR/44 __set_FAULTMASK/43 __get_FAULTMASK/42 __set_BASEPRI_MAX/41 __set_BASEPRI/40 __get_BASEPRI/39 __disable_fault_irq/38 __enable_fault_irq/37 __set_PRIMASK/36 __get_PRIMASK/35 __set_MSP/34 __get_MSP/33 __set_PSP/32 __get_PSP/31 __get_xPSR/30 __get_APSR/29 __get_IPSR/28 __set_CONTROL/27 __get_CONTROL/26 __disable_irq/25 __enable_irq/24 __STRT/23 __STRHT/22 __STRBT/21 __LDRT/20 __LDRHT/19 __LDRBT/18 __RRX/17 __CLREX/16 __STREXW/15 __STREXH/14 __STREXB/13 __LDREXW/12 __LDREXH/11 __LDREXB/10 __CLZ/9 __RBIT/8 __ROR/7 __REVSH/6 __REV16/5 __REV/4 __DMB/3 __DSB/2 __ISB/1 __cmsis_start/0
+
+Reclaimed Symbol table:
+
+SystemLFXOClockSet/88 (SystemLFXOClockSet) @0x7d9372569438
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: SystemLFXOClock/76 (write) 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: SystemCoreClockGet/79 
+SystemLFXOClockGet/87 (SystemLFXOClockGet) @0x7d93725692d0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: SystemLFXOClock/76 (read) 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: 
+SystemULFRCOClockGet/86 (SystemULFRCOClockGet) @0x7d9372569168
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: 
+SystemLFRCOClockGet/85 (SystemLFRCOClockGet) @0x7d9372569000
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: 
+SystemInit/84 (SystemInit) @0x7d937253ce10
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: 
+SystemHFXOClockSet/83 (SystemHFXOClockSet) @0x7d937253cca8
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: SystemHFXOClock/75 (write) 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: SystemCoreClockGet/79 
+SystemHFXOClockGet/82 (SystemHFXOClockGet) @0x7d937253cb40
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: SystemHFXOClock/75 (read) 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: 
+SystemHFClockGet/81 (SystemHFClockGet) @0x7d937253c9d8
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: SystemLFXOClock/76 (read) SystemHFXOClock/75 (read) 
+  Referring: 
+  Function flags: body
+  Called by: SystemCoreClockGet/79 
+  Calls: GetProdRev/77 GetProdRev/77 
+SystemMaxCoreClockGet/80 (SystemMaxCoreClockGet) @0x7d937253c870
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: 
+SystemCoreClockGet/79 (SystemCoreClockGet) @0x7d937253c708
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: SystemCoreClock/78 (write) 
+  Referring: 
+  Function flags: body
+  Called by: SystemLFXOClockSet/88 SystemHFXOClockSet/83 
+  Calls: SystemHFClockGet/81 
+SystemCoreClock/78 (SystemCoreClock) @0x7d93728fda80
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: SystemCoreClockGet/79 (write) 
+  Availability: not-ready
+  Varpool flags: initialized
+GetProdRev/77 (GetProdRev) @0x7d937253c5a0
+  Type: function definition analyzed
+  Visibility: no_reorder
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: SystemHFClockGet/81 SystemHFClockGet/81 
+  Calls: 
+SystemLFXOClock/76 (SystemLFXOClock) @0x7d93728fd980
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: SystemHFClockGet/81 (read) SystemLFXOClockGet/87 (read) SystemLFXOClockSet/88 (write) 
+  Availability: not-ready
+  Varpool flags: initialized
+SystemHFXOClock/75 (SystemHFXOClock) @0x7d93728fd900
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: SystemHFClockGet/81 (read) SystemHFXOClockGet/82 (read) SystemHFXOClockSet/83 (write) 
+  Availability: not-ready
+  Varpool flags: initialized
+
+
+Initial Symbol table:
+
+SystemLFXOClockSet/88 (SystemLFXOClockSet) @0x7d9372569438
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: SystemLFXOClock/76 (write) 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: SystemCoreClockGet/79 
+SystemLFXOClockGet/87 (SystemLFXOClockGet) @0x7d93725692d0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: SystemLFXOClock/76 (read) 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: 
+SystemULFRCOClockGet/86 (SystemULFRCOClockGet) @0x7d9372569168
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: 
+SystemLFRCOClockGet/85 (SystemLFRCOClockGet) @0x7d9372569000
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: 
+SystemInit/84 (SystemInit) @0x7d937253ce10
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: 
+SystemHFXOClockSet/83 (SystemHFXOClockSet) @0x7d937253cca8
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: SystemHFXOClock/75 (write) 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: SystemCoreClockGet/79 
+SystemHFXOClockGet/82 (SystemHFXOClockGet) @0x7d937253cb40
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: SystemHFXOClock/75 (read) 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: 
+SystemHFClockGet/81 (SystemHFClockGet) @0x7d937253c9d8
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: SystemLFXOClock/76 (read) SystemHFXOClock/75 (read) 
+  Referring: 
+  Function flags: body
+  Called by: SystemCoreClockGet/79 
+  Calls: GetProdRev/77 GetProdRev/77 
+SystemMaxCoreClockGet/80 (SystemMaxCoreClockGet) @0x7d937253c870
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: 
+SystemCoreClockGet/79 (SystemCoreClockGet) @0x7d937253c708
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: SystemCoreClock/78 (write) 
+  Referring: 
+  Function flags: body
+  Called by: SystemLFXOClockSet/88 SystemHFXOClockSet/83 
+  Calls: SystemHFClockGet/81 
+SystemCoreClock/78 (SystemCoreClock) @0x7d93728fda80
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: SystemCoreClockGet/79 (write) 
+  Availability: not-ready
+  Varpool flags: initialized
+GetProdRev/77 (GetProdRev) @0x7d937253c5a0
+  Type: function definition analyzed
+  Visibility: no_reorder
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: SystemHFClockGet/81 SystemHFClockGet/81 
+  Calls: 
+SystemLFXOClock/76 (SystemLFXOClock) @0x7d93728fd980
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: SystemHFClockGet/81 (read) SystemLFXOClockGet/87 (read) SystemLFXOClockSet/88 (write) 
+  Availability: not-ready
+  Varpool flags: initialized
+SystemHFXOClock/75 (SystemHFXOClock) @0x7d93728fd900
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: SystemHFClockGet/81 (read) SystemHFXOClockGet/82 (read) SystemHFXOClockSet/83 (write) 
+  Availability: not-ready
+  Varpool flags: initialized
+
+Removing unused symbols:
+
+Reclaimed Symbol table:
+
+SystemLFXOClockSet/88 (SystemLFXOClockSet) @0x7d9372569438
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: SystemLFXOClock/76 (write) 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: SystemCoreClockGet/79 
+SystemLFXOClockGet/87 (SystemLFXOClockGet) @0x7d93725692d0
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: SystemLFXOClock/76 (read) 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: 
+SystemULFRCOClockGet/86 (SystemULFRCOClockGet) @0x7d9372569168
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: 
+SystemLFRCOClockGet/85 (SystemLFRCOClockGet) @0x7d9372569000
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: 
+SystemInit/84 (SystemInit) @0x7d937253ce10
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: 
+SystemHFXOClockSet/83 (SystemHFXOClockSet) @0x7d937253cca8
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: SystemHFXOClock/75 (write) 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: SystemCoreClockGet/79 
+SystemHFXOClockGet/82 (SystemHFXOClockGet) @0x7d937253cb40
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: SystemHFXOClock/75 (read) 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: 
+SystemHFClockGet/81 (SystemHFClockGet) @0x7d937253c9d8
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: SystemLFXOClock/76 (read) SystemHFXOClock/75 (read) 
+  Referring: 
+  Function flags: body
+  Called by: SystemCoreClockGet/79 
+  Calls: GetProdRev/77 GetProdRev/77 
+SystemMaxCoreClockGet/80 (SystemMaxCoreClockGet) @0x7d937253c870
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: 
+SystemCoreClockGet/79 (SystemCoreClockGet) @0x7d937253c708
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: SystemCoreClock/78 (write) 
+  Referring: 
+  Function flags: body
+  Called by: SystemLFXOClockSet/88 SystemHFXOClockSet/83 
+  Calls: SystemHFClockGet/81 
+SystemCoreClock/78 (SystemCoreClock) @0x7d93728fda80
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: SystemCoreClockGet/79 (write) 
+  Availability: not-ready
+  Varpool flags: initialized
+GetProdRev/77 (GetProdRev) @0x7d937253c5a0
+  Type: function definition analyzed
+  Visibility: no_reorder
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: SystemHFClockGet/81 SystemHFClockGet/81 
+  Calls: 
+SystemLFXOClock/76 (SystemLFXOClock) @0x7d93728fd980
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: SystemHFClockGet/81 (read) SystemLFXOClockGet/87 (read) SystemLFXOClockSet/88 (write) 
+  Availability: not-ready
+  Varpool flags: initialized
+SystemHFXOClock/75 (SystemHFXOClock) @0x7d93728fd900
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: SystemHFClockGet/81 (read) SystemHFXOClockGet/82 (read) SystemHFXOClockSet/83 (write) 
+  Availability: not-ready
+  Varpool flags: initialized
+
+Reclaiming functions:
+Reclaiming variables:
+Clearing address taken flags:
+Optimized Symbol table:
+
+SystemLFXOClockSet/88 (SystemLFXOClockSet) @0x7d9372569438
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: SystemLFXOClock/76 (write) 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: SystemCoreClockGet/79 
+SystemLFXOClockGet/87 (SystemLFXOClockGet) @0x7d93725692d0
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: SystemLFXOClock/76 (read) 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: 
+SystemULFRCOClockGet/86 (SystemULFRCOClockGet) @0x7d9372569168
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: 
+SystemLFRCOClockGet/85 (SystemLFRCOClockGet) @0x7d9372569000
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: 
+SystemInit/84 (SystemInit) @0x7d937253ce10
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: 
+SystemHFXOClockSet/83 (SystemHFXOClockSet) @0x7d937253cca8
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: SystemHFXOClock/75 (write) 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: SystemCoreClockGet/79 
+SystemHFXOClockGet/82 (SystemHFXOClockGet) @0x7d937253cb40
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: SystemHFXOClock/75 (read) 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: 
+SystemHFClockGet/81 (SystemHFClockGet) @0x7d937253c9d8
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: SystemLFXOClock/76 (read) SystemHFXOClock/75 (read) 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: SystemCoreClockGet/79 
+  Calls: GetProdRev/77 GetProdRev/77 
+SystemMaxCoreClockGet/80 (SystemMaxCoreClockGet) @0x7d937253c870
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: 
+SystemCoreClockGet/79 (SystemCoreClockGet) @0x7d937253c708
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: SystemCoreClock/78 (write) 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: SystemLFXOClockSet/88 SystemHFXOClockSet/83 
+  Calls: SystemHFClockGet/81 
+SystemCoreClock/78 (SystemCoreClock) @0x7d93728fda80
+  Type: variable definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: SystemCoreClockGet/79 (write) 
+  Availability: available
+  Varpool flags: initialized
+GetProdRev/77 (GetProdRev) @0x7d937253c5a0
+  Type: function definition analyzed
+  Visibility: no_reorder prevailing_def_ironly
+  References: 
+  Referring: 
+  Availability: local
+  Function flags: body local
+  Called by: SystemHFClockGet/81 SystemHFClockGet/81 
+  Calls: 
+SystemLFXOClock/76 (SystemLFXOClock) @0x7d93728fd980
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: 
+  Referring: SystemHFClockGet/81 (read) SystemLFXOClockGet/87 (read) SystemLFXOClockSet/88 (write) 
+  Availability: available
+  Varpool flags: initialized
+SystemHFXOClock/75 (SystemHFXOClock) @0x7d93728fd900
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: 
+  Referring: SystemHFClockGet/81 (read) SystemHFXOClockGet/82 (read) SystemHFXOClockSet/83 (write) 
+  Availability: available
+  Varpool flags: initialized
+Materializing clones
+Materialization Call site updates done.
+
+Reclaiming functions:
+Reclaiming variables:
+Clearing address taken flags:
+Trivially needed variables: SystemCoreClock/78 SystemLFXOClock/76 SystemHFXOClock/75
+Removing variables:
+
+Final Symbol table:
+
+SystemLFXOClockSet/88 (SystemLFXOClockSet) @0x7d9372569438
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder asm_written public section:.text.SystemLFXOClockSet (implicit_section)
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+SystemLFXOClockGet/87 (SystemLFXOClockGet) @0x7d93725692d0
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder asm_written public section:.text.SystemLFXOClockGet (implicit_section)
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+SystemULFRCOClockGet/86 (SystemULFRCOClockGet) @0x7d9372569168
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder asm_written public section:.text.SystemULFRCOClockGet (implicit_section)
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+SystemLFRCOClockGet/85 (SystemLFRCOClockGet) @0x7d9372569000
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder asm_written public section:.text.SystemLFRCOClockGet (implicit_section)
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+SystemInit/84 (SystemInit) @0x7d937253ce10
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder asm_written public section:.text.SystemInit (implicit_section)
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+SystemHFXOClockSet/83 (SystemHFXOClockSet) @0x7d937253cca8
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder asm_written public section:.text.SystemHFXOClockSet (implicit_section)
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+SystemHFXOClockGet/82 (SystemHFXOClockGet) @0x7d937253cb40
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder asm_written public section:.text.SystemHFXOClockGet (implicit_section)
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+SystemHFClockGet/81 (SystemHFClockGet) @0x7d937253c9d8
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder asm_written public section:.text.SystemHFClockGet (implicit_section)
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+SystemMaxCoreClockGet/80 (SystemMaxCoreClockGet) @0x7d937253c870
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder asm_written public section:.text.SystemMaxCoreClockGet (implicit_section)
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+SystemCoreClockGet/79 (SystemCoreClockGet) @0x7d937253c708
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder asm_written public section:.text.SystemCoreClockGet (implicit_section)
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+SystemCoreClock/78 (SystemCoreClock) @0x7d93728fda80
+  Type: variable definition analyzed
+  Visibility: force_output externally_visible no_reorder asm_written public section:.data.SystemCoreClock (implicit_section)
+  Aux: @0x1
+  References: 
+  Referring: 
+  Availability: available
+  Varpool flags: initialized
+GetProdRev/77 (GetProdRev) @0x7d937253c5a0
+  Type: function definition analyzed
+  Visibility: no_reorder prevailing_def_ironly asm_written section:.text.GetProdRev (implicit_section)
+  References: 
+  Referring: 
+  Availability: local
+  Function flags: local
+  Called by: 
+  Calls: 
+SystemLFXOClock/76 (SystemLFXOClock) @0x7d93728fd980
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly asm_written section:.data.SystemLFXOClock (implicit_section)
+  Aux: @0x7d93728fda80
+  References: 
+  Referring: 
+  Availability: available
+  Varpool flags: initialized
+SystemHFXOClock/75 (SystemHFXOClock) @0x7d93728fd900
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly asm_written section:.data.SystemHFXOClock (implicit_section)
+  Aux: @0x7d93728fd980
+  References: 
+  Referring: 
+  Availability: available
+  Varpool flags: initialized

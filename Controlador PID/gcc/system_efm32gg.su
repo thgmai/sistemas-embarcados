@@ -1,0 +1,11 @@
+system_efm32gg.c:84:25:GetProdRev	4	static
+system_efm32gg.c:124:10:SystemCoreClockGet	16	static
+system_efm32gg.c:149:10:SystemMaxCoreClockGet	4	static
+system_efm32gg.c:166:10:SystemHFClockGet	16	static
+system_efm32gg.c:252:10:SystemHFXOClockGet	4	static
+system_efm32gg.c:278:6:SystemHFXOClockSet	16	static
+system_efm32gg.c:308:6:SystemInit	4	static
+system_efm32gg.c:322:10:SystemLFRCOClockGet	4	static
+system_efm32gg.c:341:10:SystemULFRCOClockGet	4	static
+system_efm32gg.c:358:10:SystemLFXOClockGet	4	static
+system_efm32gg.c:384:6:SystemLFXOClockSet	16	static

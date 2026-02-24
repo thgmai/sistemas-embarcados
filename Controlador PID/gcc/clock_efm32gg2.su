@@ -1,0 +1,14 @@
+/home/thgm/Documentos/EFM32/SDK/platform/Device/SiliconLabs/EFM32GG/Include/system_efm32gg.h:138:22:SystemCoreClockUpdate	8	static
+clock_efm32gg2.c:63:25:GetProdRev	4	static
+clock_efm32gg2.c:77:1:nearestpower2exp	32	static
+clock_efm32gg2.c:107:5:ClockRegisterCallback	32	static
+clock_efm32gg2.c:140:5:ClockProcessPreChange	24	static
+clock_efm32gg2.c:159:5:ClockProcessPostChange	24	static
+clock_efm32gg2.c:196:1:ClockSetCoreClock	48	static
+clock_efm32gg2.c:401:1:ClockGetConfiguration	56	static
+clock_efm32gg2.c:502:1:ClockConfigureSystemForClockFrequency	24	static
+clock_efm32gg2.c:549:1:ClockSetPrescalers	48	static
+clock_efm32gg2.c:622:1:ClockSetLFCLKA	24	static
+clock_efm32gg2.c:692:1:ClockSetLFCLKB	24	static
+clock_efm32gg2.c:758:1:ClockGetPeripheralClockFrequency	56	static
+clock_efm32gg2.c:775:1:ClockGetCoreClockFrequency	56	static

@@ -1,0 +1,1730 @@
+Trivially needed symbols: GPIO_Init/101 GPIO_ConfigPins/100 GPIO_MODE_WIREDANDDRIVEPULLUPFILTER/96 GPIO_MODE_WIREDANDDRIVEPULLUP/95 GPIO_MODE_WIREDANDDRIVEFILTER/94 GPIO_MODE_WIREDANDDRIVE/93 GPIO_MODE_WIREDANDPULLUPFILTER/92 GPIO_MODE_WIREDANDPULLUP/91 GPIO_MODE_WIREDANDFILTER/90 GPIO_MODE_WIREDAND/89 GPIO_MODE_WIREDORPULLDOWN/88 GPIO_MODE_WIREDOR/87 GPIO_MODE_PUSHPULLDRIVE/86 GPIO_MODE_PUSHPULL/85 GPIO_MODE_INPUTPULLFILTER/84 GPIO_MODE_INPUTPULL/83 GPIO_MODE_INPUT/82 GPIO_MODE_DISABLE/81 GPIOF/80 GPIOE/79 GPIOD/78 GPIOC/77 GPIOB/76 GPIOA/75
+
+
+Initial Symbol table:
+
+GPIO_Init/101 (GPIO_Init) @0x728d03f669d8
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  Aux: @0x1c36aa0
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: GPIO_ConfigPins/100 GPIO_ConfigPins/100 
+GPIO_ConfigPins/100 (GPIO_ConfigPins) @0x728d03f66870
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  Aux: @0x728d03f669d8
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: GPIO_Init/101 GPIO_Init/101 
+  Calls: 
+GPIO_ReadPins/99 (GPIO_ReadPins) @0x728d03f66708
+  Type: function definition
+  Visibility: no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+GPIO_TogglePins/98 (GPIO_TogglePins) @0x728d03f665a0
+  Type: function definition
+  Visibility: no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+GPIO_WritePins/97 (GPIO_WritePins) @0x728d03f66438
+  Type: function definition
+  Visibility: no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+GPIO_MODE_WIREDANDDRIVEPULLUPFILTER/96 (GPIO_MODE_WIREDANDDRIVEPULLUPFILTER) @0x728d03f65380
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  Aux: @0x728d03f66870
+  References: 
+  Referring: 
+  Availability: not-ready
+  Varpool flags: initialized read-only const-value-known
+GPIO_MODE_WIREDANDDRIVEPULLUP/95 (GPIO_MODE_WIREDANDDRIVEPULLUP) @0x728d03f65300
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  Aux: @0x728d03f65380
+  References: 
+  Referring: 
+  Availability: not-ready
+  Varpool flags: initialized read-only const-value-known
+GPIO_MODE_WIREDANDDRIVEFILTER/94 (GPIO_MODE_WIREDANDDRIVEFILTER) @0x728d03f65280
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  Aux: @0x728d03f65300
+  References: 
+  Referring: 
+  Availability: not-ready
+  Varpool flags: initialized read-only const-value-known
+GPIO_MODE_WIREDANDDRIVE/93 (GPIO_MODE_WIREDANDDRIVE) @0x728d03f65200
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  Aux: @0x728d03f65280
+  References: 
+  Referring: 
+  Availability: not-ready
+  Varpool flags: initialized read-only const-value-known
+GPIO_MODE_WIREDANDPULLUPFILTER/92 (GPIO_MODE_WIREDANDPULLUPFILTER) @0x728d03f65180
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  Aux: @0x728d03f65200
+  References: 
+  Referring: 
+  Availability: not-ready
+  Varpool flags: initialized read-only const-value-known
+GPIO_MODE_WIREDANDPULLUP/91 (GPIO_MODE_WIREDANDPULLUP) @0x728d03f65100
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  Aux: @0x728d03f65180
+  References: 
+  Referring: 
+  Availability: not-ready
+  Varpool flags: initialized read-only const-value-known
+GPIO_MODE_WIREDANDFILTER/90 (GPIO_MODE_WIREDANDFILTER) @0x728d03f65080
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  Aux: @0x728d03f65100
+  References: 
+  Referring: 
+  Availability: not-ready
+  Varpool flags: initialized read-only const-value-known
+GPIO_MODE_WIREDAND/89 (GPIO_MODE_WIREDAND) @0x728d03f65000
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  Aux: @0x728d03f65080
+  References: 
+  Referring: 
+  Availability: not-ready
+  Varpool flags: initialized read-only const-value-known
+GPIO_MODE_WIREDORPULLDOWN/88 (GPIO_MODE_WIREDORPULLDOWN) @0x728d042fdf80
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  Aux: @0x728d03f65000
+  References: 
+  Referring: 
+  Availability: not-ready
+  Varpool flags: initialized read-only const-value-known
+GPIO_MODE_WIREDOR/87 (GPIO_MODE_WIREDOR) @0x728d042fdf00
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  Aux: @0x728d042fdf80
+  References: 
+  Referring: 
+  Availability: not-ready
+  Varpool flags: initialized read-only const-value-known
+GPIO_MODE_PUSHPULLDRIVE/86 (GPIO_MODE_PUSHPULLDRIVE) @0x728d042fde80
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  Aux: @0x728d042fdf00
+  References: 
+  Referring: 
+  Availability: not-ready
+  Varpool flags: initialized read-only const-value-known
+GPIO_MODE_PUSHPULL/85 (GPIO_MODE_PUSHPULL) @0x728d042fde00
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  Aux: @0x728d042fde80
+  References: 
+  Referring: 
+  Availability: not-ready
+  Varpool flags: initialized read-only const-value-known
+GPIO_MODE_INPUTPULLFILTER/84 (GPIO_MODE_INPUTPULLFILTER) @0x728d042fdd80
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  Aux: @0x728d042fde00
+  References: 
+  Referring: 
+  Availability: not-ready
+  Varpool flags: initialized read-only const-value-known
+GPIO_MODE_INPUTPULL/83 (GPIO_MODE_INPUTPULL) @0x728d042fdd00
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  Aux: @0x728d042fdd80
+  References: 
+  Referring: 
+  Availability: not-ready
+  Varpool flags: initialized read-only const-value-known
+GPIO_MODE_INPUT/82 (GPIO_MODE_INPUT) @0x728d042fdc80
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  Aux: @0x728d042fdd00
+  References: 
+  Referring: 
+  Availability: not-ready
+  Varpool flags: initialized read-only const-value-known
+GPIO_MODE_DISABLE/81 (GPIO_MODE_DISABLE) @0x728d042fdc00
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  Aux: @0x728d042fdc80
+  References: 
+  Referring: 
+  Availability: not-ready
+  Varpool flags: initialized read-only const-value-known
+GPIOF/80 (GPIOF) @0x728d042fdb80
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  Aux: @0x728d042fdc00
+  References: 
+  Referring: 
+  Availability: not-ready
+  Varpool flags: initialized read-only const-value-known
+GPIOE/79 (GPIOE) @0x728d042fdb00
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  Aux: @0x728d042fdb80
+  References: 
+  Referring: 
+  Availability: not-ready
+  Varpool flags: initialized read-only const-value-known
+GPIOD/78 (GPIOD) @0x728d042fda80
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  Aux: @0x728d042fdb00
+  References: 
+  Referring: 
+  Availability: not-ready
+  Varpool flags: initialized read-only const-value-known
+GPIOC/77 (GPIOC) @0x728d042fda00
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  Aux: @0x728d042fda80
+  References: 
+  Referring: 
+  Availability: not-ready
+  Varpool flags: initialized read-only const-value-known
+GPIOB/76 (GPIOB) @0x728d042fd980
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  Aux: @0x728d042fda00
+  References: 
+  Referring: 
+  Availability: not-ready
+  Varpool flags: initialized read-only const-value-known
+GPIOA/75 (GPIOA) @0x728d042fd900
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  Aux: @0x728d042fd980
+  References: 
+  Referring: 
+  Availability: not-ready
+  Varpool flags: initialized read-only const-value-known
+SystemCoreClockUpdate/74 (SystemCoreClockUpdate) @0x728d042f6708
+  Type: function definition
+  Visibility: no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+ITM_CheckChar/73 (ITM_CheckChar) @0x728d042f6000
+  Type: function definition
+  Visibility: no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+ITM_ReceiveChar/72 (ITM_ReceiveChar) @0x728d042e7e10
+  Type: function definition
+  Visibility: no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+ITM_SendChar/71 (ITM_SendChar) @0x728d042e7ca8
+  Type: function definition
+  Visibility: no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+SysTick_Config/70 (SysTick_Config) @0x728d042e79d8
+  Type: function definition
+  Visibility: no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+SCB_GetFPUType/69 (SCB_GetFPUType) @0x728d042e7870
+  Type: function definition
+  Visibility: no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+ARM_MPU_Load/68 (ARM_MPU_Load) @0x728d042e7708
+  Type: function definition
+  Visibility: no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+ARM_MPU_OrderedMemcpy/67 (ARM_MPU_OrderedMemcpy) @0x728d042e75a0
+  Type: function definition
+  Visibility: no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+ARM_MPU_SetRegionEx/66 (ARM_MPU_SetRegionEx) @0x728d042e7438
+  Type: function definition
+  Visibility: no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+ARM_MPU_SetRegion/65 (ARM_MPU_SetRegion) @0x728d042e72d0
+  Type: function definition
+  Visibility: no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+ARM_MPU_ClrRegion/64 (ARM_MPU_ClrRegion) @0x728d042e7168
+  Type: function definition
+  Visibility: no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+ARM_MPU_Disable/63 (ARM_MPU_Disable) @0x728d042e7000
+  Type: function definition
+  Visibility: no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+ARM_MPU_Enable/62 (ARM_MPU_Enable) @0x728d042dae10
+  Type: function definition
+  Visibility: no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__NVIC_SystemReset/61 (__NVIC_SystemReset) @0x728d042da708
+  Type: function definition
+  Visibility: no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__NVIC_GetVector/60 (__NVIC_GetVector) @0x728d042da5a0
+  Type: function definition
+  Visibility: no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__NVIC_SetVector/59 (__NVIC_SetVector) @0x728d042da438
+  Type: function definition
+  Visibility: no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+NVIC_DecodePriority/58 (NVIC_DecodePriority) @0x728d042da2d0
+  Type: function definition
+  Visibility: no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+NVIC_EncodePriority/57 (NVIC_EncodePriority) @0x728d042da168
+  Type: function definition
+  Visibility: no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__NVIC_GetPriority/56 (__NVIC_GetPriority) @0x728d042da000
+  Type: function definition
+  Visibility: no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__NVIC_SetPriority/55 (__NVIC_SetPriority) @0x728d042cae10
+  Type: function definition
+  Visibility: no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__NVIC_GetActive/54 (__NVIC_GetActive) @0x728d042caca8
+  Type: function definition
+  Visibility: no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__NVIC_ClearPendingIRQ/53 (__NVIC_ClearPendingIRQ) @0x728d042cab40
+  Type: function definition
+  Visibility: no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__NVIC_SetPendingIRQ/52 (__NVIC_SetPendingIRQ) @0x728d042ca9d8
+  Type: function definition
+  Visibility: no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__NVIC_GetPendingIRQ/51 (__NVIC_GetPendingIRQ) @0x728d042ca870
+  Type: function definition
+  Visibility: no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__NVIC_DisableIRQ/50 (__NVIC_DisableIRQ) @0x728d042ca708
+  Type: function definition
+  Visibility: no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__NVIC_GetEnableIRQ/49 (__NVIC_GetEnableIRQ) @0x728d042ca5a0
+  Type: function definition
+  Visibility: no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__NVIC_EnableIRQ/48 (__NVIC_EnableIRQ) @0x728d042ca438
+  Type: function definition
+  Visibility: no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__NVIC_GetPriorityGrouping/47 (__NVIC_GetPriorityGrouping) @0x728d042ca2d0
+  Type: function definition
+  Visibility: no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__NVIC_SetPriorityGrouping/46 (__NVIC_SetPriorityGrouping) @0x728d042ca168
+  Type: function definition
+  Visibility: no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__set_FPSCR/45 (__set_FPSCR) @0x728d0427b438
+  Type: function definition
+  Visibility: no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__get_FPSCR/44 (__get_FPSCR) @0x728d0427b2d0
+  Type: function definition
+  Visibility: no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__set_FAULTMASK/43 (__set_FAULTMASK) @0x728d0427b168
+  Type: function definition
+  Visibility: no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__get_FAULTMASK/42 (__get_FAULTMASK) @0x728d0427b000
+  Type: function definition
+  Visibility: no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__set_BASEPRI_MAX/41 (__set_BASEPRI_MAX) @0x728d04276e10
+  Type: function definition
+  Visibility: no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__set_BASEPRI/40 (__set_BASEPRI) @0x728d04276ca8
+  Type: function definition
+  Visibility: no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__get_BASEPRI/39 (__get_BASEPRI) @0x728d04276b40
+  Type: function definition
+  Visibility: no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__disable_fault_irq/38 (__disable_fault_irq) @0x728d042769d8
+  Type: function definition
+  Visibility: no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__enable_fault_irq/37 (__enable_fault_irq) @0x728d04276870
+  Type: function definition
+  Visibility: no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__set_PRIMASK/36 (__set_PRIMASK) @0x728d04276708
+  Type: function definition
+  Visibility: no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__get_PRIMASK/35 (__get_PRIMASK) @0x728d042765a0
+  Type: function definition
+  Visibility: no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__set_MSP/34 (__set_MSP) @0x728d04276438
+  Type: function definition
+  Visibility: no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__get_MSP/33 (__get_MSP) @0x728d042762d0
+  Type: function definition
+  Visibility: no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__set_PSP/32 (__set_PSP) @0x728d04276168
+  Type: function definition
+  Visibility: no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__get_PSP/31 (__get_PSP) @0x728d04276000
+  Type: function definition
+  Visibility: no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__get_xPSR/30 (__get_xPSR) @0x728d0426be10
+  Type: function definition
+  Visibility: no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__get_APSR/29 (__get_APSR) @0x728d0426bca8
+  Type: function definition
+  Visibility: no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__get_IPSR/28 (__get_IPSR) @0x728d0426bb40
+  Type: function definition
+  Visibility: no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__set_CONTROL/27 (__set_CONTROL) @0x728d0426b9d8
+  Type: function definition
+  Visibility: no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__get_CONTROL/26 (__get_CONTROL) @0x728d0426b870
+  Type: function definition
+  Visibility: no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__disable_irq/25 (__disable_irq) @0x728d0426b708
+  Type: function definition
+  Visibility: no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__enable_irq/24 (__enable_irq) @0x728d0426b5a0
+  Type: function definition
+  Visibility: no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__STRT/23 (__STRT) @0x728d0426b438
+  Type: function definition
+  Visibility: no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__STRHT/22 (__STRHT) @0x728d0426b2d0
+  Type: function definition
+  Visibility: no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__STRBT/21 (__STRBT) @0x728d0426b168
+  Type: function definition
+  Visibility: no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__LDRT/20 (__LDRT) @0x728d0426b000
+  Type: function definition
+  Visibility: no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__LDRHT/19 (__LDRHT) @0x728d04263e10
+  Type: function definition
+  Visibility: no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__LDRBT/18 (__LDRBT) @0x728d04263ca8
+  Type: function definition
+  Visibility: no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__RRX/17 (__RRX) @0x728d04263b40
+  Type: function definition
+  Visibility: no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__CLREX/16 (__CLREX) @0x728d042639d8
+  Type: function definition
+  Visibility: no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__STREXW/15 (__STREXW) @0x728d04263870
+  Type: function definition
+  Visibility: no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__STREXH/14 (__STREXH) @0x728d04263708
+  Type: function definition
+  Visibility: no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__STREXB/13 (__STREXB) @0x728d042635a0
+  Type: function definition
+  Visibility: no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__LDREXW/12 (__LDREXW) @0x728d04263438
+  Type: function definition
+  Visibility: no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__LDREXH/11 (__LDREXH) @0x728d042632d0
+  Type: function definition
+  Visibility: no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__LDREXB/10 (__LDREXB) @0x728d04263168
+  Type: function definition
+  Visibility: no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__CLZ/9 (__CLZ) @0x728d04263000
+  Type: function definition
+  Visibility: no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__RBIT/8 (__RBIT) @0x728d04254e10
+  Type: function definition
+  Visibility: no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__ROR/7 (__ROR) @0x728d04254ca8
+  Type: function definition
+  Visibility: no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__REVSH/6 (__REVSH) @0x728d04254b40
+  Type: function definition
+  Visibility: no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__REV16/5 (__REV16) @0x728d042549d8
+  Type: function definition
+  Visibility: no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__REV/4 (__REV) @0x728d04254870
+  Type: function definition
+  Visibility: no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__DMB/3 (__DMB) @0x728d04254708
+  Type: function definition
+  Visibility: no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__DSB/2 (__DSB) @0x728d042545a0
+  Type: function definition
+  Visibility: no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__ISB/1 (__ISB) @0x728d04254438
+  Type: function definition
+  Visibility: no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+__cmsis_start/0 (__cmsis_start) @0x728d04254168
+  Type: function definition
+  Visibility: no_reorder
+  References: 
+  Referring: 
+  Function flags:
+  Called by: 
+  Calls: 
+
+Removing unused symbols: GPIO_ReadPins/99 GPIO_TogglePins/98 GPIO_WritePins/97 SystemCoreClockUpdate/74 ITM_CheckChar/73 ITM_ReceiveChar/72 ITM_SendChar/71 SysTick_Config/70 SCB_GetFPUType/69 ARM_MPU_Load/68 ARM_MPU_OrderedMemcpy/67 ARM_MPU_SetRegionEx/66 ARM_MPU_SetRegion/65 ARM_MPU_ClrRegion/64 ARM_MPU_Disable/63 ARM_MPU_Enable/62 __NVIC_SystemReset/61 __NVIC_GetVector/60 __NVIC_SetVector/59 NVIC_DecodePriority/58 NVIC_EncodePriority/57 __NVIC_GetPriority/56 __NVIC_SetPriority/55 __NVIC_GetActive/54 __NVIC_ClearPendingIRQ/53 __NVIC_SetPendingIRQ/52 __NVIC_GetPendingIRQ/51 __NVIC_DisableIRQ/50 __NVIC_GetEnableIRQ/49 __NVIC_EnableIRQ/48 __NVIC_GetPriorityGrouping/47 __NVIC_SetPriorityGrouping/46 __set_FPSCR/45 __get_FPSCR/44 __set_FAULTMASK/43 __get_FAULTMASK/42 __set_BASEPRI_MAX/41 __set_BASEPRI/40 __get_BASEPRI/39 __disable_fault_irq/38 __enable_fault_irq/37 __set_PRIMASK/36 __get_PRIMASK/35 __set_MSP/34 __get_MSP/33 __set_PSP/32 __get_PSP/31 __get_xPSR/30 __get_APSR/29 __get_IPSR/28 __set_CONTROL/27 __get_CONTROL/26 __disable_irq/25 __enable_irq/24 __STRT/23 __STRHT/22 __STRBT/21 __LDRT/20 __LDRHT/19 __LDRBT/18 __RRX/17 __CLREX/16 __STREXW/15 __STREXH/14 __STREXB/13 __LDREXW/12 __LDREXH/11 __LDREXB/10 __CLZ/9 __RBIT/8 __ROR/7 __REVSH/6 __REV16/5 __REV/4 __DMB/3 __DSB/2 __ISB/1 __cmsis_start/0
+
+Reclaimed Symbol table:
+
+GPIO_Init/101 (GPIO_Init) @0x728d03f669d8
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: GPIO_ConfigPins/100 GPIO_ConfigPins/100 
+GPIO_ConfigPins/100 (GPIO_ConfigPins) @0x728d03f66870
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: GPIO_Init/101 GPIO_Init/101 
+  Calls: 
+GPIO_MODE_WIREDANDDRIVEPULLUPFILTER/96 (GPIO_MODE_WIREDANDDRIVEPULLUPFILTER) @0x728d03f65380
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: 
+  Availability: not-ready
+  Varpool flags: initialized read-only const-value-known
+GPIO_MODE_WIREDANDDRIVEPULLUP/95 (GPIO_MODE_WIREDANDDRIVEPULLUP) @0x728d03f65300
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: 
+  Availability: not-ready
+  Varpool flags: initialized read-only const-value-known
+GPIO_MODE_WIREDANDDRIVEFILTER/94 (GPIO_MODE_WIREDANDDRIVEFILTER) @0x728d03f65280
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: 
+  Availability: not-ready
+  Varpool flags: initialized read-only const-value-known
+GPIO_MODE_WIREDANDDRIVE/93 (GPIO_MODE_WIREDANDDRIVE) @0x728d03f65200
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: 
+  Availability: not-ready
+  Varpool flags: initialized read-only const-value-known
+GPIO_MODE_WIREDANDPULLUPFILTER/92 (GPIO_MODE_WIREDANDPULLUPFILTER) @0x728d03f65180
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: 
+  Availability: not-ready
+  Varpool flags: initialized read-only const-value-known
+GPIO_MODE_WIREDANDPULLUP/91 (GPIO_MODE_WIREDANDPULLUP) @0x728d03f65100
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: 
+  Availability: not-ready
+  Varpool flags: initialized read-only const-value-known
+GPIO_MODE_WIREDANDFILTER/90 (GPIO_MODE_WIREDANDFILTER) @0x728d03f65080
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: 
+  Availability: not-ready
+  Varpool flags: initialized read-only const-value-known
+GPIO_MODE_WIREDAND/89 (GPIO_MODE_WIREDAND) @0x728d03f65000
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: 
+  Availability: not-ready
+  Varpool flags: initialized read-only const-value-known
+GPIO_MODE_WIREDORPULLDOWN/88 (GPIO_MODE_WIREDORPULLDOWN) @0x728d042fdf80
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: 
+  Availability: not-ready
+  Varpool flags: initialized read-only const-value-known
+GPIO_MODE_WIREDOR/87 (GPIO_MODE_WIREDOR) @0x728d042fdf00
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: 
+  Availability: not-ready
+  Varpool flags: initialized read-only const-value-known
+GPIO_MODE_PUSHPULLDRIVE/86 (GPIO_MODE_PUSHPULLDRIVE) @0x728d042fde80
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: 
+  Availability: not-ready
+  Varpool flags: initialized read-only const-value-known
+GPIO_MODE_PUSHPULL/85 (GPIO_MODE_PUSHPULL) @0x728d042fde00
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: 
+  Availability: not-ready
+  Varpool flags: initialized read-only const-value-known
+GPIO_MODE_INPUTPULLFILTER/84 (GPIO_MODE_INPUTPULLFILTER) @0x728d042fdd80
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: 
+  Availability: not-ready
+  Varpool flags: initialized read-only const-value-known
+GPIO_MODE_INPUTPULL/83 (GPIO_MODE_INPUTPULL) @0x728d042fdd00
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: 
+  Availability: not-ready
+  Varpool flags: initialized read-only const-value-known
+GPIO_MODE_INPUT/82 (GPIO_MODE_INPUT) @0x728d042fdc80
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: 
+  Availability: not-ready
+  Varpool flags: initialized read-only const-value-known
+GPIO_MODE_DISABLE/81 (GPIO_MODE_DISABLE) @0x728d042fdc00
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: 
+  Availability: not-ready
+  Varpool flags: initialized read-only const-value-known
+GPIOF/80 (GPIOF) @0x728d042fdb80
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: 
+  Availability: not-ready
+  Varpool flags: initialized read-only const-value-known
+GPIOE/79 (GPIOE) @0x728d042fdb00
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: 
+  Availability: not-ready
+  Varpool flags: initialized read-only const-value-known
+GPIOD/78 (GPIOD) @0x728d042fda80
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: 
+  Availability: not-ready
+  Varpool flags: initialized read-only const-value-known
+GPIOC/77 (GPIOC) @0x728d042fda00
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: 
+  Availability: not-ready
+  Varpool flags: initialized read-only const-value-known
+GPIOB/76 (GPIOB) @0x728d042fd980
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: 
+  Availability: not-ready
+  Varpool flags: initialized read-only const-value-known
+GPIOA/75 (GPIOA) @0x728d042fd900
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: 
+  Availability: not-ready
+  Varpool flags: initialized read-only const-value-known
+
+
+Initial Symbol table:
+
+GPIO_Init/101 (GPIO_Init) @0x728d03f669d8
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: GPIO_ConfigPins/100 GPIO_ConfigPins/100 
+GPIO_ConfigPins/100 (GPIO_ConfigPins) @0x728d03f66870
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: GPIO_Init/101 GPIO_Init/101 
+  Calls: 
+GPIO_MODE_WIREDANDDRIVEPULLUPFILTER/96 (GPIO_MODE_WIREDANDDRIVEPULLUPFILTER) @0x728d03f65380
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: 
+  Availability: not-ready
+  Varpool flags: initialized read-only const-value-known
+GPIO_MODE_WIREDANDDRIVEPULLUP/95 (GPIO_MODE_WIREDANDDRIVEPULLUP) @0x728d03f65300
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: 
+  Availability: not-ready
+  Varpool flags: initialized read-only const-value-known
+GPIO_MODE_WIREDANDDRIVEFILTER/94 (GPIO_MODE_WIREDANDDRIVEFILTER) @0x728d03f65280
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: 
+  Availability: not-ready
+  Varpool flags: initialized read-only const-value-known
+GPIO_MODE_WIREDANDDRIVE/93 (GPIO_MODE_WIREDANDDRIVE) @0x728d03f65200
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: 
+  Availability: not-ready
+  Varpool flags: initialized read-only const-value-known
+GPIO_MODE_WIREDANDPULLUPFILTER/92 (GPIO_MODE_WIREDANDPULLUPFILTER) @0x728d03f65180
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: 
+  Availability: not-ready
+  Varpool flags: initialized read-only const-value-known
+GPIO_MODE_WIREDANDPULLUP/91 (GPIO_MODE_WIREDANDPULLUP) @0x728d03f65100
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: 
+  Availability: not-ready
+  Varpool flags: initialized read-only const-value-known
+GPIO_MODE_WIREDANDFILTER/90 (GPIO_MODE_WIREDANDFILTER) @0x728d03f65080
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: 
+  Availability: not-ready
+  Varpool flags: initialized read-only const-value-known
+GPIO_MODE_WIREDAND/89 (GPIO_MODE_WIREDAND) @0x728d03f65000
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: 
+  Availability: not-ready
+  Varpool flags: initialized read-only const-value-known
+GPIO_MODE_WIREDORPULLDOWN/88 (GPIO_MODE_WIREDORPULLDOWN) @0x728d042fdf80
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: 
+  Availability: not-ready
+  Varpool flags: initialized read-only const-value-known
+GPIO_MODE_WIREDOR/87 (GPIO_MODE_WIREDOR) @0x728d042fdf00
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: 
+  Availability: not-ready
+  Varpool flags: initialized read-only const-value-known
+GPIO_MODE_PUSHPULLDRIVE/86 (GPIO_MODE_PUSHPULLDRIVE) @0x728d042fde80
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: 
+  Availability: not-ready
+  Varpool flags: initialized read-only const-value-known
+GPIO_MODE_PUSHPULL/85 (GPIO_MODE_PUSHPULL) @0x728d042fde00
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: 
+  Availability: not-ready
+  Varpool flags: initialized read-only const-value-known
+GPIO_MODE_INPUTPULLFILTER/84 (GPIO_MODE_INPUTPULLFILTER) @0x728d042fdd80
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: 
+  Availability: not-ready
+  Varpool flags: initialized read-only const-value-known
+GPIO_MODE_INPUTPULL/83 (GPIO_MODE_INPUTPULL) @0x728d042fdd00
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: 
+  Availability: not-ready
+  Varpool flags: initialized read-only const-value-known
+GPIO_MODE_INPUT/82 (GPIO_MODE_INPUT) @0x728d042fdc80
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: 
+  Availability: not-ready
+  Varpool flags: initialized read-only const-value-known
+GPIO_MODE_DISABLE/81 (GPIO_MODE_DISABLE) @0x728d042fdc00
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: 
+  Availability: not-ready
+  Varpool flags: initialized read-only const-value-known
+GPIOF/80 (GPIOF) @0x728d042fdb80
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: 
+  Availability: not-ready
+  Varpool flags: initialized read-only const-value-known
+GPIOE/79 (GPIOE) @0x728d042fdb00
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: 
+  Availability: not-ready
+  Varpool flags: initialized read-only const-value-known
+GPIOD/78 (GPIOD) @0x728d042fda80
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: 
+  Availability: not-ready
+  Varpool flags: initialized read-only const-value-known
+GPIOC/77 (GPIOC) @0x728d042fda00
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: 
+  Availability: not-ready
+  Varpool flags: initialized read-only const-value-known
+GPIOB/76 (GPIOB) @0x728d042fd980
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: 
+  Availability: not-ready
+  Varpool flags: initialized read-only const-value-known
+GPIOA/75 (GPIOA) @0x728d042fd900
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: 
+  Availability: not-ready
+  Varpool flags: initialized read-only const-value-known
+
+Removing unused symbols:
+
+Reclaimed Symbol table:
+
+GPIO_Init/101 (GPIO_Init) @0x728d03f669d8
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: 
+  Calls: GPIO_ConfigPins/100 GPIO_ConfigPins/100 
+GPIO_ConfigPins/100 (GPIO_ConfigPins) @0x728d03f66870
+  Type: function definition analyzed
+  Visibility: force_output no_reorder public
+  References: 
+  Referring: 
+  Function flags: body
+  Called by: GPIO_Init/101 GPIO_Init/101 
+  Calls: 
+GPIO_MODE_WIREDANDDRIVEPULLUPFILTER/96 (GPIO_MODE_WIREDANDDRIVEPULLUPFILTER) @0x728d03f65380
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: 
+  Availability: not-ready
+  Varpool flags: initialized read-only const-value-known
+GPIO_MODE_WIREDANDDRIVEPULLUP/95 (GPIO_MODE_WIREDANDDRIVEPULLUP) @0x728d03f65300
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: 
+  Availability: not-ready
+  Varpool flags: initialized read-only const-value-known
+GPIO_MODE_WIREDANDDRIVEFILTER/94 (GPIO_MODE_WIREDANDDRIVEFILTER) @0x728d03f65280
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: 
+  Availability: not-ready
+  Varpool flags: initialized read-only const-value-known
+GPIO_MODE_WIREDANDDRIVE/93 (GPIO_MODE_WIREDANDDRIVE) @0x728d03f65200
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: 
+  Availability: not-ready
+  Varpool flags: initialized read-only const-value-known
+GPIO_MODE_WIREDANDPULLUPFILTER/92 (GPIO_MODE_WIREDANDPULLUPFILTER) @0x728d03f65180
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: 
+  Availability: not-ready
+  Varpool flags: initialized read-only const-value-known
+GPIO_MODE_WIREDANDPULLUP/91 (GPIO_MODE_WIREDANDPULLUP) @0x728d03f65100
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: 
+  Availability: not-ready
+  Varpool flags: initialized read-only const-value-known
+GPIO_MODE_WIREDANDFILTER/90 (GPIO_MODE_WIREDANDFILTER) @0x728d03f65080
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: 
+  Availability: not-ready
+  Varpool flags: initialized read-only const-value-known
+GPIO_MODE_WIREDAND/89 (GPIO_MODE_WIREDAND) @0x728d03f65000
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: 
+  Availability: not-ready
+  Varpool flags: initialized read-only const-value-known
+GPIO_MODE_WIREDORPULLDOWN/88 (GPIO_MODE_WIREDORPULLDOWN) @0x728d042fdf80
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: 
+  Availability: not-ready
+  Varpool flags: initialized read-only const-value-known
+GPIO_MODE_WIREDOR/87 (GPIO_MODE_WIREDOR) @0x728d042fdf00
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: 
+  Availability: not-ready
+  Varpool flags: initialized read-only const-value-known
+GPIO_MODE_PUSHPULLDRIVE/86 (GPIO_MODE_PUSHPULLDRIVE) @0x728d042fde80
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: 
+  Availability: not-ready
+  Varpool flags: initialized read-only const-value-known
+GPIO_MODE_PUSHPULL/85 (GPIO_MODE_PUSHPULL) @0x728d042fde00
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: 
+  Availability: not-ready
+  Varpool flags: initialized read-only const-value-known
+GPIO_MODE_INPUTPULLFILTER/84 (GPIO_MODE_INPUTPULLFILTER) @0x728d042fdd80
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: 
+  Availability: not-ready
+  Varpool flags: initialized read-only const-value-known
+GPIO_MODE_INPUTPULL/83 (GPIO_MODE_INPUTPULL) @0x728d042fdd00
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: 
+  Availability: not-ready
+  Varpool flags: initialized read-only const-value-known
+GPIO_MODE_INPUT/82 (GPIO_MODE_INPUT) @0x728d042fdc80
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: 
+  Availability: not-ready
+  Varpool flags: initialized read-only const-value-known
+GPIO_MODE_DISABLE/81 (GPIO_MODE_DISABLE) @0x728d042fdc00
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: 
+  Availability: not-ready
+  Varpool flags: initialized read-only const-value-known
+GPIOF/80 (GPIOF) @0x728d042fdb80
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: 
+  Availability: not-ready
+  Varpool flags: initialized read-only const-value-known
+GPIOE/79 (GPIOE) @0x728d042fdb00
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: 
+  Availability: not-ready
+  Varpool flags: initialized read-only const-value-known
+GPIOD/78 (GPIOD) @0x728d042fda80
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: 
+  Availability: not-ready
+  Varpool flags: initialized read-only const-value-known
+GPIOC/77 (GPIOC) @0x728d042fda00
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: 
+  Availability: not-ready
+  Varpool flags: initialized read-only const-value-known
+GPIOB/76 (GPIOB) @0x728d042fd980
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: 
+  Availability: not-ready
+  Varpool flags: initialized read-only const-value-known
+GPIOA/75 (GPIOA) @0x728d042fd900
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder
+  References: 
+  Referring: 
+  Availability: not-ready
+  Varpool flags: initialized read-only const-value-known
+
+Reclaiming functions:
+Reclaiming variables:
+Clearing address taken flags:
+Optimized Symbol table:
+
+GPIO_Init/101 (GPIO_Init) @0x728d03f669d8
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: 
+  Calls: GPIO_ConfigPins/100 GPIO_ConfigPins/100 
+GPIO_ConfigPins/100 (GPIO_ConfigPins) @0x728d03f66870
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body
+  Called by: GPIO_Init/101 GPIO_Init/101 
+  Calls: 
+GPIO_MODE_WIREDANDDRIVEPULLUPFILTER/96 (GPIO_MODE_WIREDANDDRIVEPULLUPFILTER) @0x728d03f65380
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: 
+  Referring: 
+  Availability: available
+  Varpool flags: initialized read-only const-value-known
+GPIO_MODE_WIREDANDDRIVEPULLUP/95 (GPIO_MODE_WIREDANDDRIVEPULLUP) @0x728d03f65300
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: 
+  Referring: 
+  Availability: available
+  Varpool flags: initialized read-only const-value-known
+GPIO_MODE_WIREDANDDRIVEFILTER/94 (GPIO_MODE_WIREDANDDRIVEFILTER) @0x728d03f65280
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: 
+  Referring: 
+  Availability: available
+  Varpool flags: initialized read-only const-value-known
+GPIO_MODE_WIREDANDDRIVE/93 (GPIO_MODE_WIREDANDDRIVE) @0x728d03f65200
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: 
+  Referring: 
+  Availability: available
+  Varpool flags: initialized read-only const-value-known
+GPIO_MODE_WIREDANDPULLUPFILTER/92 (GPIO_MODE_WIREDANDPULLUPFILTER) @0x728d03f65180
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: 
+  Referring: 
+  Availability: available
+  Varpool flags: initialized read-only const-value-known
+GPIO_MODE_WIREDANDPULLUP/91 (GPIO_MODE_WIREDANDPULLUP) @0x728d03f65100
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: 
+  Referring: 
+  Availability: available
+  Varpool flags: initialized read-only const-value-known
+GPIO_MODE_WIREDANDFILTER/90 (GPIO_MODE_WIREDANDFILTER) @0x728d03f65080
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: 
+  Referring: 
+  Availability: available
+  Varpool flags: initialized read-only const-value-known
+GPIO_MODE_WIREDAND/89 (GPIO_MODE_WIREDAND) @0x728d03f65000
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: 
+  Referring: 
+  Availability: available
+  Varpool flags: initialized read-only const-value-known
+GPIO_MODE_WIREDORPULLDOWN/88 (GPIO_MODE_WIREDORPULLDOWN) @0x728d042fdf80
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: 
+  Referring: 
+  Availability: available
+  Varpool flags: initialized read-only const-value-known
+GPIO_MODE_WIREDOR/87 (GPIO_MODE_WIREDOR) @0x728d042fdf00
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: 
+  Referring: 
+  Availability: available
+  Varpool flags: initialized read-only const-value-known
+GPIO_MODE_PUSHPULLDRIVE/86 (GPIO_MODE_PUSHPULLDRIVE) @0x728d042fde80
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: 
+  Referring: 
+  Availability: available
+  Varpool flags: initialized read-only const-value-known
+GPIO_MODE_PUSHPULL/85 (GPIO_MODE_PUSHPULL) @0x728d042fde00
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: 
+  Referring: 
+  Availability: available
+  Varpool flags: initialized read-only const-value-known
+GPIO_MODE_INPUTPULLFILTER/84 (GPIO_MODE_INPUTPULLFILTER) @0x728d042fdd80
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: 
+  Referring: 
+  Availability: available
+  Varpool flags: initialized read-only const-value-known
+GPIO_MODE_INPUTPULL/83 (GPIO_MODE_INPUTPULL) @0x728d042fdd00
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: 
+  Referring: 
+  Availability: available
+  Varpool flags: initialized read-only const-value-known
+GPIO_MODE_INPUT/82 (GPIO_MODE_INPUT) @0x728d042fdc80
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: 
+  Referring: 
+  Availability: available
+  Varpool flags: initialized read-only const-value-known
+GPIO_MODE_DISABLE/81 (GPIO_MODE_DISABLE) @0x728d042fdc00
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: 
+  Referring: 
+  Availability: available
+  Varpool flags: initialized read-only const-value-known
+GPIOF/80 (GPIOF) @0x728d042fdb80
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: 
+  Referring: 
+  Availability: available
+  Varpool flags: initialized read-only const-value-known
+GPIOE/79 (GPIOE) @0x728d042fdb00
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: 
+  Referring: 
+  Availability: available
+  Varpool flags: initialized read-only const-value-known
+GPIOD/78 (GPIOD) @0x728d042fda80
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: 
+  Referring: 
+  Availability: available
+  Varpool flags: initialized read-only const-value-known
+GPIOC/77 (GPIOC) @0x728d042fda00
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: 
+  Referring: 
+  Availability: available
+  Varpool flags: initialized read-only const-value-known
+GPIOB/76 (GPIOB) @0x728d042fd980
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: 
+  Referring: 
+  Availability: available
+  Varpool flags: initialized read-only const-value-known
+GPIOA/75 (GPIOA) @0x728d042fd900
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly
+  References: 
+  Referring: 
+  Availability: available
+  Varpool flags: initialized read-only const-value-known
+Materializing clones
+Materialization Call site updates done.
+
+Reclaiming functions:
+Reclaiming variables:
+Clearing address taken flags:
+Trivially needed variables: GPIO_MODE_WIREDANDDRIVEPULLUPFILTER/96 GPIO_MODE_WIREDANDDRIVEPULLUP/95 GPIO_MODE_WIREDANDDRIVEFILTER/94 GPIO_MODE_WIREDANDDRIVE/93 GPIO_MODE_WIREDANDPULLUPFILTER/92 GPIO_MODE_WIREDANDPULLUP/91 GPIO_MODE_WIREDANDFILTER/90 GPIO_MODE_WIREDAND/89 GPIO_MODE_WIREDORPULLDOWN/88 GPIO_MODE_WIREDOR/87 GPIO_MODE_PUSHPULLDRIVE/86 GPIO_MODE_PUSHPULL/85 GPIO_MODE_INPUTPULLFILTER/84 GPIO_MODE_INPUTPULL/83 GPIO_MODE_INPUT/82 GPIO_MODE_DISABLE/81 GPIOF/80 GPIOE/79 GPIOD/78 GPIOC/77 GPIOB/76 GPIOA/75
+Removing variables:
+
+Final Symbol table:
+
+GPIO_Init/101 (GPIO_Init) @0x728d03f669d8
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder asm_written public section:.text.GPIO_Init (implicit_section)
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+GPIO_ConfigPins/100 (GPIO_ConfigPins) @0x728d03f66870
+  Type: function definition analyzed
+  Visibility: force_output externally_visible no_reorder asm_written public section:.text.GPIO_ConfigPins (implicit_section)
+  References: 
+  Referring: 
+  Availability: available
+  Function flags:
+  Called by: 
+  Calls: 
+GPIO_MODE_WIREDANDDRIVEPULLUPFILTER/96 (GPIO_MODE_WIREDANDDRIVEPULLUPFILTER) @0x728d03f65380
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly asm_written section:.rodata.GPIO_MODE_WIREDANDDRIVEPULLUPFILTER (implicit_section)
+  Aux: @0x1
+  References: 
+  Referring: 
+  Availability: available
+  Varpool flags: initialized read-only const-value-known
+GPIO_MODE_WIREDANDDRIVEPULLUP/95 (GPIO_MODE_WIREDANDDRIVEPULLUP) @0x728d03f65300
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly asm_written section:.rodata.GPIO_MODE_WIREDANDDRIVEPULLUP (implicit_section)
+  Aux: @0x728d03f65380
+  References: 
+  Referring: 
+  Availability: available
+  Varpool flags: initialized read-only const-value-known
+GPIO_MODE_WIREDANDDRIVEFILTER/94 (GPIO_MODE_WIREDANDDRIVEFILTER) @0x728d03f65280
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly asm_written section:.rodata.GPIO_MODE_WIREDANDDRIVEFILTER (implicit_section)
+  Aux: @0x728d03f65300
+  References: 
+  Referring: 
+  Availability: available
+  Varpool flags: initialized read-only const-value-known
+GPIO_MODE_WIREDANDDRIVE/93 (GPIO_MODE_WIREDANDDRIVE) @0x728d03f65200
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly asm_written section:.rodata.GPIO_MODE_WIREDANDDRIVE (implicit_section)
+  Aux: @0x728d03f65280
+  References: 
+  Referring: 
+  Availability: available
+  Varpool flags: initialized read-only const-value-known
+GPIO_MODE_WIREDANDPULLUPFILTER/92 (GPIO_MODE_WIREDANDPULLUPFILTER) @0x728d03f65180
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly asm_written section:.rodata.GPIO_MODE_WIREDANDPULLUPFILTER (implicit_section)
+  Aux: @0x728d03f65200
+  References: 
+  Referring: 
+  Availability: available
+  Varpool flags: initialized read-only const-value-known
+GPIO_MODE_WIREDANDPULLUP/91 (GPIO_MODE_WIREDANDPULLUP) @0x728d03f65100
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly asm_written section:.rodata.GPIO_MODE_WIREDANDPULLUP (implicit_section)
+  Aux: @0x728d03f65180
+  References: 
+  Referring: 
+  Availability: available
+  Varpool flags: initialized read-only const-value-known
+GPIO_MODE_WIREDANDFILTER/90 (GPIO_MODE_WIREDANDFILTER) @0x728d03f65080
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly asm_written section:.rodata.GPIO_MODE_WIREDANDFILTER (implicit_section)
+  Aux: @0x728d03f65100
+  References: 
+  Referring: 
+  Availability: available
+  Varpool flags: initialized read-only const-value-known
+GPIO_MODE_WIREDAND/89 (GPIO_MODE_WIREDAND) @0x728d03f65000
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly asm_written section:.rodata.GPIO_MODE_WIREDAND (implicit_section)
+  Aux: @0x728d03f65080
+  References: 
+  Referring: 
+  Availability: available
+  Varpool flags: initialized read-only const-value-known
+GPIO_MODE_WIREDORPULLDOWN/88 (GPIO_MODE_WIREDORPULLDOWN) @0x728d042fdf80
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly asm_written section:.rodata.GPIO_MODE_WIREDORPULLDOWN (implicit_section)
+  Aux: @0x728d03f65000
+  References: 
+  Referring: 
+  Availability: available
+  Varpool flags: initialized read-only const-value-known
+GPIO_MODE_WIREDOR/87 (GPIO_MODE_WIREDOR) @0x728d042fdf00
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly asm_written section:.rodata.GPIO_MODE_WIREDOR (implicit_section)
+  Aux: @0x728d042fdf80
+  References: 
+  Referring: 
+  Availability: available
+  Varpool flags: initialized read-only const-value-known
+GPIO_MODE_PUSHPULLDRIVE/86 (GPIO_MODE_PUSHPULLDRIVE) @0x728d042fde80
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly asm_written section:.rodata.GPIO_MODE_PUSHPULLDRIVE (implicit_section)
+  Aux: @0x728d042fdf00
+  References: 
+  Referring: 
+  Availability: available
+  Varpool flags: initialized read-only const-value-known
+GPIO_MODE_PUSHPULL/85 (GPIO_MODE_PUSHPULL) @0x728d042fde00
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly asm_written section:.rodata.GPIO_MODE_PUSHPULL (implicit_section)
+  Aux: @0x728d042fde80
+  References: 
+  Referring: 
+  Availability: available
+  Varpool flags: initialized read-only const-value-known
+GPIO_MODE_INPUTPULLFILTER/84 (GPIO_MODE_INPUTPULLFILTER) @0x728d042fdd80
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly asm_written section:.rodata.GPIO_MODE_INPUTPULLFILTER (implicit_section)
+  Aux: @0x728d042fde00
+  References: 
+  Referring: 
+  Availability: available
+  Varpool flags: initialized read-only const-value-known
+GPIO_MODE_INPUTPULL/83 (GPIO_MODE_INPUTPULL) @0x728d042fdd00
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly asm_written section:.rodata.GPIO_MODE_INPUTPULL (implicit_section)
+  Aux: @0x728d042fdd80
+  References: 
+  Referring: 
+  Availability: available
+  Varpool flags: initialized read-only const-value-known
+GPIO_MODE_INPUT/82 (GPIO_MODE_INPUT) @0x728d042fdc80
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly asm_written section:.rodata.GPIO_MODE_INPUT (implicit_section)
+  Aux: @0x728d042fdd00
+  References: 
+  Referring: 
+  Availability: available
+  Varpool flags: initialized read-only const-value-known
+GPIO_MODE_DISABLE/81 (GPIO_MODE_DISABLE) @0x728d042fdc00
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly asm_written section:.rodata.GPIO_MODE_DISABLE (implicit_section)
+  Aux: @0x728d042fdc80
+  References: 
+  Referring: 
+  Availability: available
+  Varpool flags: initialized read-only const-value-known
+GPIOF/80 (GPIOF) @0x728d042fdb80
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly asm_written section:.rodata.GPIOF (implicit_section)
+  Aux: @0x728d042fdc00
+  References: 
+  Referring: 
+  Availability: available
+  Varpool flags: initialized read-only const-value-known
+GPIOE/79 (GPIOE) @0x728d042fdb00
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly asm_written section:.rodata.GPIOE (implicit_section)
+  Aux: @0x728d042fdb80
+  References: 
+  Referring: 
+  Availability: available
+  Varpool flags: initialized read-only const-value-known
+GPIOD/78 (GPIOD) @0x728d042fda80
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly asm_written section:.rodata.GPIOD (implicit_section)
+  Aux: @0x728d042fdb00
+  References: 
+  Referring: 
+  Availability: available
+  Varpool flags: initialized read-only const-value-known
+GPIOC/77 (GPIOC) @0x728d042fda00
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly asm_written section:.rodata.GPIOC (implicit_section)
+  Aux: @0x728d042fda80
+  References: 
+  Referring: 
+  Availability: available
+  Varpool flags: initialized read-only const-value-known
+GPIOB/76 (GPIOB) @0x728d042fd980
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly asm_written section:.rodata.GPIOB (implicit_section)
+  Aux: @0x728d042fda00
+  References: 
+  Referring: 
+  Availability: available
+  Varpool flags: initialized read-only const-value-known
+GPIOA/75 (GPIOA) @0x728d042fd900
+  Type: variable definition analyzed
+  Visibility: force_output no_reorder prevailing_def_ironly asm_written section:.rodata.GPIOA (implicit_section)
+  Aux: @0x728d042fd980
+  References: 
+  Referring: 
+  Availability: available
+  Varpool flags: initialized read-only const-value-known

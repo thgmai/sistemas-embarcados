@@ -20,7 +20,7 @@
  *   #include "efm32gg995f1024.h"
  * ************************************************************************** */
 #include "em_device.h"
-#include "clock_efm32gg.h"
+#include "clock_efm32gg2.h"
 #include "tt_tasks.h"
 #include "control.h"
 

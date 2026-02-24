@@ -1,0 +1,6 @@
+tt_tasks.c:64:1:Task_Init	16	static
+tt_tasks.c:80:1:Task_Add	32	static
+tt_tasks.c:99:1:Task_Delete	16	static
+tt_tasks.c:113:1:Task_Dispatch	24	static
+tt_tasks.c:165:1:Task_Update	4	static
+tt_tasks.c:180:1:Task_ModifyPeriod	24	static

@@ -20,8 +20,8 @@
 #define TS              100     /* Sampling time in milliseconds */
 #define ADC_FREQ        500000  /* ADC frequency (Hz) */
 #define ADC_RES         4095    /* ADC resolution (12-bit = 4095) */
-#define CV_MAX          3.3     /* Maximum control signal voltage (V) */
-#define CV_MIN          0.0     /* Minimum control signal voltage (V) */
+#define V_MAX           3.3     /* Maximum control signal voltage (V) */
+#define V_MIN           0.0     /* Minimum control signal voltage (V) */
 #define INTEGRAL_MAX    10.0    /* Integral term upper limit (anti-windup) */
 #define INTEGRAL_MIN   -10.0    /* Integral term lower limit (anti-windup) */
 #define SS_ERROR_EPS    0.05    /* Steady-state error threshold */
