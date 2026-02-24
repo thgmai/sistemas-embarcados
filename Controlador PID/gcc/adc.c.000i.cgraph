@@ -3,7 +3,7 @@ Trivially needed symbols: ADC_GetReading/95 ADC_StartReading/94 ADC_Read/93 ADC_
 
 Initial Symbol table:
 
-ClockGetCoreClockFrequency/96 (ClockGetCoreClockFrequency) @0x76fcaa173b40
+ClockGetCoreClockFrequency/96 (ClockGetCoreClockFrequency) @0x7d4a0b373b40
   Type: function
   Visibility: external public
   References: 
@@ -11,7 +11,7 @@ ClockGetCoreClockFrequency/96 (ClockGetCoreClockFrequency) @0x76fcaa173b40
   Function flags:
   Called by: ADC_Init/91 
   Calls: 
-ADC_GetReading/95 (ADC_GetReading) @0x76fcaa173870
+ADC_GetReading/95 (ADC_GetReading) @0x7d4a0b373870
   Type: function definition analyzed
   Visibility: force_output no_reorder public
   Aux: @0x1c36aa0
@@ -20,173 +20,173 @@ ADC_GetReading/95 (ADC_GetReading) @0x76fcaa173870
   Function flags: body
   Called by: ADC_Read/93 
   Calls: 
-ADC_StartReading/94 (ADC_StartReading) @0x76fcaa173708
+ADC_StartReading/94 (ADC_StartReading) @0x7d4a0b373708
   Type: function definition analyzed
   Visibility: force_output no_reorder public
-  Aux: @0x76fcaa173870
+  Aux: @0x7d4a0b373870
   References: singlectrl/76 (read) 
   Referring: 
   Function flags: body
   Called by: ADC_Read/93 
   Calls: 
-ADC_Read/93 (ADC_Read) @0x76fcaa1735a0
+ADC_Read/93 (ADC_Read) @0x7d4a0b3735a0
   Type: function definition analyzed
   Visibility: force_output no_reorder public
-  Aux: @0x76fcaa173708
+  Aux: @0x7d4a0b373708
   References: 
   Referring: 
   Function flags: body
   Called by: 
   Calls: ADC_GetReading/95 ADC_StartReading/94 
-ADC_ConfigChannel/92 (ADC_ConfigChannel) @0x76fcaa173438
+ADC_ConfigChannel/92 (ADC_ConfigChannel) @0x7d4a0b373438
   Type: function definition analyzed
   Visibility: force_output no_reorder public
-  Aux: @0x76fcaa1735a0
+  Aux: @0x7d4a0b3735a0
   References: singlectrl/76 (write) 
   Referring: 
   Function flags: body
   Called by: 
   Calls: 
-ADC_Init/91 (ADC_Init) @0x76fcaa1732d0
+ADC_Init/91 (ADC_Init) @0x7d4a0b3732d0
   Type: function definition analyzed
   Visibility: force_output no_reorder public
-  Aux: @0x76fcaa173438
+  Aux: @0x7d4a0b373438
   References: default_singlectrl/75 (read) singlectrl/76 (write) 
   Referring: 
   Function flags: body
   Called by: 
   Calls: GetCalibrationValues/89 ClockGetCoreClockFrequency/96 
-ADC0_IRQHandler/90 (ADC0_IRQHandler) @0x76fcaa173168
+ADC0_IRQHandler/90 (ADC0_IRQHandler) @0x7d4a0b373168
   Type: function definition analyzed
   Visibility: force_output no_reorder public
-  Aux: @0x76fcaa1732d0
+  Aux: @0x7d4a0b3732d0
   References: 
   Referring: 
   Function flags: body
   Called by: 
   Calls: 
-GetCalibrationValues/89 (GetCalibrationValues) @0x76fcaa173000
+GetCalibrationValues/89 (GetCalibrationValues) @0x7d4a0b373000
   Type: function definition analyzed
   Visibility: force_output no_reorder
-  Aux: @0x76fcaa173168
+  Aux: @0x7d4a0b373168
   References: adc_cal/77 (write) adc_bias/78 (write) cal_gain_1v25/79 (write) cal_offset_1v25/80 (write) cal_gain_2v5/81 (write) cal_offset_2v5/82 (write) cal_gain_vdd/83 (write) cal_offset_vdd/84 (write) cal_gain_5v/85 (write) cal_offset_5v/86 (write) cal_gain_2xvdd/87 (write) cal_offset_2xvdd/88 (write) 
   Referring: 
   Function flags: body
   Called by: ADC_Init/91 
   Calls: 
-cal_offset_2xvdd/88 (cal_offset_2xvdd) @0x76fcaa167b80
+cal_offset_2xvdd/88 (cal_offset_2xvdd) @0x7d4a0b367b80
   Type: variable definition analyzed
   Visibility: force_output no_reorder
-  Aux: @0x76fcaa173000
+  Aux: @0x7d4a0b373000
   References: 
   Referring: GetCalibrationValues/89 (write) 
   Availability: not-ready
   Varpool flags:
-cal_gain_2xvdd/87 (cal_gain_2xvdd) @0x76fcaa167b00
+cal_gain_2xvdd/87 (cal_gain_2xvdd) @0x7d4a0b367b00
   Type: variable definition analyzed
   Visibility: force_output no_reorder
-  Aux: @0x76fcaa167b80
+  Aux: @0x7d4a0b367b80
   References: 
   Referring: GetCalibrationValues/89 (write) 
   Availability: not-ready
   Varpool flags:
-cal_offset_5v/86 (cal_offset_5v) @0x76fcaa167a80
+cal_offset_5v/86 (cal_offset_5v) @0x7d4a0b367a80
   Type: variable definition analyzed
   Visibility: force_output no_reorder
-  Aux: @0x76fcaa167b00
+  Aux: @0x7d4a0b367b00
   References: 
   Referring: GetCalibrationValues/89 (write) 
   Availability: not-ready
   Varpool flags:
-cal_gain_5v/85 (cal_gain_5v) @0x76fcaa167a00
+cal_gain_5v/85 (cal_gain_5v) @0x7d4a0b367a00
   Type: variable definition analyzed
   Visibility: force_output no_reorder
-  Aux: @0x76fcaa167a80
+  Aux: @0x7d4a0b367a80
   References: 
   Referring: GetCalibrationValues/89 (write) 
   Availability: not-ready
   Varpool flags:
-cal_offset_vdd/84 (cal_offset_vdd) @0x76fcaa167980
+cal_offset_vdd/84 (cal_offset_vdd) @0x7d4a0b367980
   Type: variable definition analyzed
   Visibility: force_output no_reorder
-  Aux: @0x76fcaa167a00
+  Aux: @0x7d4a0b367a00
   References: 
   Referring: GetCalibrationValues/89 (write) 
   Availability: not-ready
   Varpool flags:
-cal_gain_vdd/83 (cal_gain_vdd) @0x76fcaa167900
+cal_gain_vdd/83 (cal_gain_vdd) @0x7d4a0b367900
   Type: variable definition analyzed
   Visibility: force_output no_reorder
-  Aux: @0x76fcaa167980
+  Aux: @0x7d4a0b367980
   References: 
   Referring: GetCalibrationValues/89 (write) 
   Availability: not-ready
   Varpool flags:
-cal_offset_2v5/82 (cal_offset_2v5) @0x76fcaa167880
+cal_offset_2v5/82 (cal_offset_2v5) @0x7d4a0b367880
   Type: variable definition analyzed
   Visibility: force_output no_reorder
-  Aux: @0x76fcaa167900
+  Aux: @0x7d4a0b367900
   References: 
   Referring: GetCalibrationValues/89 (write) 
   Availability: not-ready
   Varpool flags:
-cal_gain_2v5/81 (cal_gain_2v5) @0x76fcaa167800
+cal_gain_2v5/81 (cal_gain_2v5) @0x7d4a0b367800
   Type: variable definition analyzed
   Visibility: force_output no_reorder
-  Aux: @0x76fcaa167880
+  Aux: @0x7d4a0b367880
   References: 
   Referring: GetCalibrationValues/89 (write) 
   Availability: not-ready
   Varpool flags:
-cal_offset_1v25/80 (cal_offset_1v25) @0x76fcaa167780
+cal_offset_1v25/80 (cal_offset_1v25) @0x7d4a0b367780
   Type: variable definition analyzed
   Visibility: force_output no_reorder
-  Aux: @0x76fcaa167800
+  Aux: @0x7d4a0b367800
   References: 
   Referring: GetCalibrationValues/89 (write) 
   Availability: not-ready
   Varpool flags:
-cal_gain_1v25/79 (cal_gain_1v25) @0x76fcaa167700
+cal_gain_1v25/79 (cal_gain_1v25) @0x7d4a0b367700
   Type: variable definition analyzed
   Visibility: force_output no_reorder
-  Aux: @0x76fcaa167780
+  Aux: @0x7d4a0b367780
   References: 
   Referring: GetCalibrationValues/89 (write) 
   Availability: not-ready
   Varpool flags:
-adc_bias/78 (adc_bias) @0x76fcaa167680
+adc_bias/78 (adc_bias) @0x7d4a0b367680
   Type: variable definition analyzed
   Visibility: force_output no_reorder
-  Aux: @0x76fcaa167700
+  Aux: @0x7d4a0b367700
   References: 
   Referring: GetCalibrationValues/89 (write) 
   Availability: not-ready
   Varpool flags:
-adc_cal/77 (adc_cal) @0x76fcaa167600
+adc_cal/77 (adc_cal) @0x7d4a0b367600
   Type: variable definition analyzed
   Visibility: force_output no_reorder
-  Aux: @0x76fcaa167680
+  Aux: @0x7d4a0b367680
   References: 
   Referring: GetCalibrationValues/89 (write) 
   Availability: not-ready
   Varpool flags:
-singlectrl/76 (singlectrl) @0x76fcaa167580
+singlectrl/76 (singlectrl) @0x7d4a0b367580
   Type: variable definition analyzed
   Visibility: force_output no_reorder
-  Aux: @0x76fcaa167600
+  Aux: @0x7d4a0b367600
   References: 
   Referring: ADC_Init/91 (write) ADC_ConfigChannel/92 (write) ADC_StartReading/94 (read) 
   Availability: not-ready
   Varpool flags:
-default_singlectrl/75 (default_singlectrl) @0x76fcaa167500
+default_singlectrl/75 (default_singlectrl) @0x7d4a0b367500
   Type: variable definition analyzed
   Visibility: force_output no_reorder
-  Aux: @0x76fcaa167580
+  Aux: @0x7d4a0b367580
   References: 
   Referring: ADC_Init/91 (read) 
   Availability: not-ready
   Varpool flags: initialized read-only const-value-known
-SystemCoreClockUpdate/74 (SystemCoreClockUpdate) @0x76fcaa4f6708
+SystemCoreClockUpdate/74 (SystemCoreClockUpdate) @0x7d4a0b6f6708
   Type: function definition
   Visibility: no_reorder
   References: 
@@ -194,7 +194,7 @@ SystemCoreClockUpdate/74 (SystemCoreClockUpdate) @0x76fcaa4f6708
   Function flags:
   Called by: 
   Calls: 
-ITM_CheckChar/73 (ITM_CheckChar) @0x76fcaa4f6000
+ITM_CheckChar/73 (ITM_CheckChar) @0x7d4a0b6f6000
   Type: function definition
   Visibility: no_reorder
   References: 
@@ -202,7 +202,7 @@ ITM_CheckChar/73 (ITM_CheckChar) @0x76fcaa4f6000
   Function flags:
   Called by: 
   Calls: 
-ITM_ReceiveChar/72 (ITM_ReceiveChar) @0x76fcaa4e7e10
+ITM_ReceiveChar/72 (ITM_ReceiveChar) @0x7d4a0b6e7e10
   Type: function definition
   Visibility: no_reorder
   References: 
@@ -210,7 +210,7 @@ ITM_ReceiveChar/72 (ITM_ReceiveChar) @0x76fcaa4e7e10
   Function flags:
   Called by: 
   Calls: 
-ITM_SendChar/71 (ITM_SendChar) @0x76fcaa4e7ca8
+ITM_SendChar/71 (ITM_SendChar) @0x7d4a0b6e7ca8
   Type: function definition
   Visibility: no_reorder
   References: 
@@ -218,7 +218,7 @@ ITM_SendChar/71 (ITM_SendChar) @0x76fcaa4e7ca8
   Function flags:
   Called by: 
   Calls: 
-SysTick_Config/70 (SysTick_Config) @0x76fcaa4e79d8
+SysTick_Config/70 (SysTick_Config) @0x7d4a0b6e79d8
   Type: function definition
   Visibility: no_reorder
   References: 
@@ -226,7 +226,7 @@ SysTick_Config/70 (SysTick_Config) @0x76fcaa4e79d8
   Function flags:
   Called by: 
   Calls: 
-SCB_GetFPUType/69 (SCB_GetFPUType) @0x76fcaa4e7870
+SCB_GetFPUType/69 (SCB_GetFPUType) @0x7d4a0b6e7870
   Type: function definition
   Visibility: no_reorder
   References: 
@@ -234,7 +234,7 @@ SCB_GetFPUType/69 (SCB_GetFPUType) @0x76fcaa4e7870
   Function flags:
   Called by: 
   Calls: 
-ARM_MPU_Load/68 (ARM_MPU_Load) @0x76fcaa4e7708
+ARM_MPU_Load/68 (ARM_MPU_Load) @0x7d4a0b6e7708
   Type: function definition
   Visibility: no_reorder
   References: 
@@ -242,7 +242,7 @@ ARM_MPU_Load/68 (ARM_MPU_Load) @0x76fcaa4e7708
   Function flags:
   Called by: 
   Calls: 
-ARM_MPU_OrderedMemcpy/67 (ARM_MPU_OrderedMemcpy) @0x76fcaa4e75a0
+ARM_MPU_OrderedMemcpy/67 (ARM_MPU_OrderedMemcpy) @0x7d4a0b6e75a0
   Type: function definition
   Visibility: no_reorder
   References: 
@@ -250,7 +250,7 @@ ARM_MPU_OrderedMemcpy/67 (ARM_MPU_OrderedMemcpy) @0x76fcaa4e75a0
   Function flags:
   Called by: 
   Calls: 
-ARM_MPU_SetRegionEx/66 (ARM_MPU_SetRegionEx) @0x76fcaa4e7438
+ARM_MPU_SetRegionEx/66 (ARM_MPU_SetRegionEx) @0x7d4a0b6e7438
   Type: function definition
   Visibility: no_reorder
   References: 
@@ -258,7 +258,7 @@ ARM_MPU_SetRegionEx/66 (ARM_MPU_SetRegionEx) @0x76fcaa4e7438
   Function flags:
   Called by: 
   Calls: 
-ARM_MPU_SetRegion/65 (ARM_MPU_SetRegion) @0x76fcaa4e72d0
+ARM_MPU_SetRegion/65 (ARM_MPU_SetRegion) @0x7d4a0b6e72d0
   Type: function definition
   Visibility: no_reorder
   References: 
@@ -266,7 +266,7 @@ ARM_MPU_SetRegion/65 (ARM_MPU_SetRegion) @0x76fcaa4e72d0
   Function flags:
   Called by: 
   Calls: 
-ARM_MPU_ClrRegion/64 (ARM_MPU_ClrRegion) @0x76fcaa4e7168
+ARM_MPU_ClrRegion/64 (ARM_MPU_ClrRegion) @0x7d4a0b6e7168
   Type: function definition
   Visibility: no_reorder
   References: 
@@ -274,7 +274,7 @@ ARM_MPU_ClrRegion/64 (ARM_MPU_ClrRegion) @0x76fcaa4e7168
   Function flags:
   Called by: 
   Calls: 
-ARM_MPU_Disable/63 (ARM_MPU_Disable) @0x76fcaa4e7000
+ARM_MPU_Disable/63 (ARM_MPU_Disable) @0x7d4a0b6e7000
   Type: function definition
   Visibility: no_reorder
   References: 
@@ -282,7 +282,7 @@ ARM_MPU_Disable/63 (ARM_MPU_Disable) @0x76fcaa4e7000
   Function flags:
   Called by: 
   Calls: 
-ARM_MPU_Enable/62 (ARM_MPU_Enable) @0x76fcaa4dae10
+ARM_MPU_Enable/62 (ARM_MPU_Enable) @0x7d4a0b6dae10
   Type: function definition
   Visibility: no_reorder
   References: 
@@ -290,7 +290,7 @@ ARM_MPU_Enable/62 (ARM_MPU_Enable) @0x76fcaa4dae10
   Function flags:
   Called by: 
   Calls: 
-__NVIC_SystemReset/61 (__NVIC_SystemReset) @0x76fcaa4da708
+__NVIC_SystemReset/61 (__NVIC_SystemReset) @0x7d4a0b6da708
   Type: function definition
   Visibility: no_reorder
   References: 
@@ -298,7 +298,7 @@ __NVIC_SystemReset/61 (__NVIC_SystemReset) @0x76fcaa4da708
   Function flags:
   Called by: 
   Calls: 
-__NVIC_GetVector/60 (__NVIC_GetVector) @0x76fcaa4da5a0
+__NVIC_GetVector/60 (__NVIC_GetVector) @0x7d4a0b6da5a0
   Type: function definition
   Visibility: no_reorder
   References: 
@@ -306,7 +306,7 @@ __NVIC_GetVector/60 (__NVIC_GetVector) @0x76fcaa4da5a0
   Function flags:
   Called by: 
   Calls: 
-__NVIC_SetVector/59 (__NVIC_SetVector) @0x76fcaa4da438
+__NVIC_SetVector/59 (__NVIC_SetVector) @0x7d4a0b6da438
   Type: function definition
   Visibility: no_reorder
   References: 
@@ -314,7 +314,7 @@ __NVIC_SetVector/59 (__NVIC_SetVector) @0x76fcaa4da438
   Function flags:
   Called by: 
   Calls: 
-NVIC_DecodePriority/58 (NVIC_DecodePriority) @0x76fcaa4da2d0
+NVIC_DecodePriority/58 (NVIC_DecodePriority) @0x7d4a0b6da2d0
   Type: function definition
   Visibility: no_reorder
   References: 
@@ -322,7 +322,7 @@ NVIC_DecodePriority/58 (NVIC_DecodePriority) @0x76fcaa4da2d0
   Function flags:
   Called by: 
   Calls: 
-NVIC_EncodePriority/57 (NVIC_EncodePriority) @0x76fcaa4da168
+NVIC_EncodePriority/57 (NVIC_EncodePriority) @0x7d4a0b6da168
   Type: function definition
   Visibility: no_reorder
   References: 
@@ -330,7 +330,7 @@ NVIC_EncodePriority/57 (NVIC_EncodePriority) @0x76fcaa4da168
   Function flags:
   Called by: 
   Calls: 
-__NVIC_GetPriority/56 (__NVIC_GetPriority) @0x76fcaa4da000
+__NVIC_GetPriority/56 (__NVIC_GetPriority) @0x7d4a0b6da000
   Type: function definition
   Visibility: no_reorder
   References: 
@@ -338,7 +338,7 @@ __NVIC_GetPriority/56 (__NVIC_GetPriority) @0x76fcaa4da000
   Function flags:
   Called by: 
   Calls: 
-__NVIC_SetPriority/55 (__NVIC_SetPriority) @0x76fcaa4cae10
+__NVIC_SetPriority/55 (__NVIC_SetPriority) @0x7d4a0b6cae10
   Type: function definition
   Visibility: no_reorder
   References: 
@@ -346,7 +346,7 @@ __NVIC_SetPriority/55 (__NVIC_SetPriority) @0x76fcaa4cae10
   Function flags:
   Called by: 
   Calls: 
-__NVIC_GetActive/54 (__NVIC_GetActive) @0x76fcaa4caca8
+__NVIC_GetActive/54 (__NVIC_GetActive) @0x7d4a0b6caca8
   Type: function definition
   Visibility: no_reorder
   References: 
@@ -354,7 +354,7 @@ __NVIC_GetActive/54 (__NVIC_GetActive) @0x76fcaa4caca8
   Function flags:
   Called by: 
   Calls: 
-__NVIC_ClearPendingIRQ/53 (__NVIC_ClearPendingIRQ) @0x76fcaa4cab40
+__NVIC_ClearPendingIRQ/53 (__NVIC_ClearPendingIRQ) @0x7d4a0b6cab40
   Type: function definition
   Visibility: no_reorder
   References: 
@@ -362,7 +362,7 @@ __NVIC_ClearPendingIRQ/53 (__NVIC_ClearPendingIRQ) @0x76fcaa4cab40
   Function flags:
   Called by: 
   Calls: 
-__NVIC_SetPendingIRQ/52 (__NVIC_SetPendingIRQ) @0x76fcaa4ca9d8
+__NVIC_SetPendingIRQ/52 (__NVIC_SetPendingIRQ) @0x7d4a0b6ca9d8
   Type: function definition
   Visibility: no_reorder
   References: 
@@ -370,7 +370,7 @@ __NVIC_SetPendingIRQ/52 (__NVIC_SetPendingIRQ) @0x76fcaa4ca9d8
   Function flags:
   Called by: 
   Calls: 
-__NVIC_GetPendingIRQ/51 (__NVIC_GetPendingIRQ) @0x76fcaa4ca870
+__NVIC_GetPendingIRQ/51 (__NVIC_GetPendingIRQ) @0x7d4a0b6ca870
   Type: function definition
   Visibility: no_reorder
   References: 
@@ -378,7 +378,7 @@ __NVIC_GetPendingIRQ/51 (__NVIC_GetPendingIRQ) @0x76fcaa4ca870
   Function flags:
   Called by: 
   Calls: 
-__NVIC_DisableIRQ/50 (__NVIC_DisableIRQ) @0x76fcaa4ca708
+__NVIC_DisableIRQ/50 (__NVIC_DisableIRQ) @0x7d4a0b6ca708
   Type: function definition
   Visibility: no_reorder
   References: 
@@ -386,7 +386,7 @@ __NVIC_DisableIRQ/50 (__NVIC_DisableIRQ) @0x76fcaa4ca708
   Function flags:
   Called by: 
   Calls: 
-__NVIC_GetEnableIRQ/49 (__NVIC_GetEnableIRQ) @0x76fcaa4ca5a0
+__NVIC_GetEnableIRQ/49 (__NVIC_GetEnableIRQ) @0x7d4a0b6ca5a0
   Type: function definition
   Visibility: no_reorder
   References: 
@@ -394,7 +394,7 @@ __NVIC_GetEnableIRQ/49 (__NVIC_GetEnableIRQ) @0x76fcaa4ca5a0
   Function flags:
   Called by: 
   Calls: 
-__NVIC_EnableIRQ/48 (__NVIC_EnableIRQ) @0x76fcaa4ca438
+__NVIC_EnableIRQ/48 (__NVIC_EnableIRQ) @0x7d4a0b6ca438
   Type: function definition
   Visibility: no_reorder
   References: 
@@ -402,7 +402,7 @@ __NVIC_EnableIRQ/48 (__NVIC_EnableIRQ) @0x76fcaa4ca438
   Function flags:
   Called by: 
   Calls: 
-__NVIC_GetPriorityGrouping/47 (__NVIC_GetPriorityGrouping) @0x76fcaa4ca2d0
+__NVIC_GetPriorityGrouping/47 (__NVIC_GetPriorityGrouping) @0x7d4a0b6ca2d0
   Type: function definition
   Visibility: no_reorder
   References: 
@@ -410,7 +410,7 @@ __NVIC_GetPriorityGrouping/47 (__NVIC_GetPriorityGrouping) @0x76fcaa4ca2d0
   Function flags:
   Called by: 
   Calls: 
-__NVIC_SetPriorityGrouping/46 (__NVIC_SetPriorityGrouping) @0x76fcaa4ca168
+__NVIC_SetPriorityGrouping/46 (__NVIC_SetPriorityGrouping) @0x7d4a0b6ca168
   Type: function definition
   Visibility: no_reorder
   References: 
@@ -418,7 +418,7 @@ __NVIC_SetPriorityGrouping/46 (__NVIC_SetPriorityGrouping) @0x76fcaa4ca168
   Function flags:
   Called by: 
   Calls: 
-__set_FPSCR/45 (__set_FPSCR) @0x76fcaa47b438
+__set_FPSCR/45 (__set_FPSCR) @0x7d4a0b67b438
   Type: function definition
   Visibility: no_reorder
   References: 
@@ -426,7 +426,7 @@ __set_FPSCR/45 (__set_FPSCR) @0x76fcaa47b438
   Function flags:
   Called by: 
   Calls: 
-__get_FPSCR/44 (__get_FPSCR) @0x76fcaa47b2d0
+__get_FPSCR/44 (__get_FPSCR) @0x7d4a0b67b2d0
   Type: function definition
   Visibility: no_reorder
   References: 
@@ -434,7 +434,7 @@ __get_FPSCR/44 (__get_FPSCR) @0x76fcaa47b2d0
   Function flags:
   Called by: 
   Calls: 
-__set_FAULTMASK/43 (__set_FAULTMASK) @0x76fcaa47b168
+__set_FAULTMASK/43 (__set_FAULTMASK) @0x7d4a0b67b168
   Type: function definition
   Visibility: no_reorder
   References: 
@@ -442,7 +442,7 @@ __set_FAULTMASK/43 (__set_FAULTMASK) @0x76fcaa47b168
   Function flags:
   Called by: 
   Calls: 
-__get_FAULTMASK/42 (__get_FAULTMASK) @0x76fcaa47b000
+__get_FAULTMASK/42 (__get_FAULTMASK) @0x7d4a0b67b000
   Type: function definition
   Visibility: no_reorder
   References: 
@@ -450,7 +450,7 @@ __get_FAULTMASK/42 (__get_FAULTMASK) @0x76fcaa47b000
   Function flags:
   Called by: 
   Calls: 
-__set_BASEPRI_MAX/41 (__set_BASEPRI_MAX) @0x76fcaa476e10
+__set_BASEPRI_MAX/41 (__set_BASEPRI_MAX) @0x7d4a0b676e10
   Type: function definition
   Visibility: no_reorder
   References: 
@@ -458,7 +458,7 @@ __set_BASEPRI_MAX/41 (__set_BASEPRI_MAX) @0x76fcaa476e10
   Function flags:
   Called by: 
   Calls: 
-__set_BASEPRI/40 (__set_BASEPRI) @0x76fcaa476ca8
+__set_BASEPRI/40 (__set_BASEPRI) @0x7d4a0b676ca8
   Type: function definition
   Visibility: no_reorder
   References: 
@@ -466,7 +466,7 @@ __set_BASEPRI/40 (__set_BASEPRI) @0x76fcaa476ca8
   Function flags:
   Called by: 
   Calls: 
-__get_BASEPRI/39 (__get_BASEPRI) @0x76fcaa476b40
+__get_BASEPRI/39 (__get_BASEPRI) @0x7d4a0b676b40
   Type: function definition
   Visibility: no_reorder
   References: 
@@ -474,7 +474,7 @@ __get_BASEPRI/39 (__get_BASEPRI) @0x76fcaa476b40
   Function flags:
   Called by: 
   Calls: 
-__disable_fault_irq/38 (__disable_fault_irq) @0x76fcaa4769d8
+__disable_fault_irq/38 (__disable_fault_irq) @0x7d4a0b6769d8
   Type: function definition
   Visibility: no_reorder
   References: 
@@ -482,7 +482,7 @@ __disable_fault_irq/38 (__disable_fault_irq) @0x76fcaa4769d8
   Function flags:
   Called by: 
   Calls: 
-__enable_fault_irq/37 (__enable_fault_irq) @0x76fcaa476870
+__enable_fault_irq/37 (__enable_fault_irq) @0x7d4a0b676870
   Type: function definition
   Visibility: no_reorder
   References: 
@@ -490,7 +490,7 @@ __enable_fault_irq/37 (__enable_fault_irq) @0x76fcaa476870
   Function flags:
   Called by: 
   Calls: 
-__set_PRIMASK/36 (__set_PRIMASK) @0x76fcaa476708
+__set_PRIMASK/36 (__set_PRIMASK) @0x7d4a0b676708
   Type: function definition
   Visibility: no_reorder
   References: 
@@ -498,7 +498,7 @@ __set_PRIMASK/36 (__set_PRIMASK) @0x76fcaa476708
   Function flags:
   Called by: 
   Calls: 
-__get_PRIMASK/35 (__get_PRIMASK) @0x76fcaa4765a0
+__get_PRIMASK/35 (__get_PRIMASK) @0x7d4a0b6765a0
   Type: function definition
   Visibility: no_reorder
   References: 
@@ -506,7 +506,7 @@ __get_PRIMASK/35 (__get_PRIMASK) @0x76fcaa4765a0
   Function flags:
   Called by: 
   Calls: 
-__set_MSP/34 (__set_MSP) @0x76fcaa476438
+__set_MSP/34 (__set_MSP) @0x7d4a0b676438
   Type: function definition
   Visibility: no_reorder
   References: 
@@ -514,7 +514,7 @@ __set_MSP/34 (__set_MSP) @0x76fcaa476438
   Function flags:
   Called by: 
   Calls: 
-__get_MSP/33 (__get_MSP) @0x76fcaa4762d0
+__get_MSP/33 (__get_MSP) @0x7d4a0b6762d0
   Type: function definition
   Visibility: no_reorder
   References: 
@@ -522,7 +522,7 @@ __get_MSP/33 (__get_MSP) @0x76fcaa4762d0
   Function flags:
   Called by: 
   Calls: 
-__set_PSP/32 (__set_PSP) @0x76fcaa476168
+__set_PSP/32 (__set_PSP) @0x7d4a0b676168
   Type: function definition
   Visibility: no_reorder
   References: 
@@ -530,7 +530,7 @@ __set_PSP/32 (__set_PSP) @0x76fcaa476168
   Function flags:
   Called by: 
   Calls: 
-__get_PSP/31 (__get_PSP) @0x76fcaa476000
+__get_PSP/31 (__get_PSP) @0x7d4a0b676000
   Type: function definition
   Visibility: no_reorder
   References: 
@@ -538,7 +538,7 @@ __get_PSP/31 (__get_PSP) @0x76fcaa476000
   Function flags:
   Called by: 
   Calls: 
-__get_xPSR/30 (__get_xPSR) @0x76fcaa46be10
+__get_xPSR/30 (__get_xPSR) @0x7d4a0b66be10
   Type: function definition
   Visibility: no_reorder
   References: 
@@ -546,7 +546,7 @@ __get_xPSR/30 (__get_xPSR) @0x76fcaa46be10
   Function flags:
   Called by: 
   Calls: 
-__get_APSR/29 (__get_APSR) @0x76fcaa46bca8
+__get_APSR/29 (__get_APSR) @0x7d4a0b66bca8
   Type: function definition
   Visibility: no_reorder
   References: 
@@ -554,7 +554,7 @@ __get_APSR/29 (__get_APSR) @0x76fcaa46bca8
   Function flags:
   Called by: 
   Calls: 
-__get_IPSR/28 (__get_IPSR) @0x76fcaa46bb40
+__get_IPSR/28 (__get_IPSR) @0x7d4a0b66bb40
   Type: function definition
   Visibility: no_reorder
   References: 
@@ -562,7 +562,7 @@ __get_IPSR/28 (__get_IPSR) @0x76fcaa46bb40
   Function flags:
   Called by: 
   Calls: 
-__set_CONTROL/27 (__set_CONTROL) @0x76fcaa46b9d8
+__set_CONTROL/27 (__set_CONTROL) @0x7d4a0b66b9d8
   Type: function definition
   Visibility: no_reorder
   References: 
@@ -570,7 +570,7 @@ __set_CONTROL/27 (__set_CONTROL) @0x76fcaa46b9d8
   Function flags:
   Called by: 
   Calls: 
-__get_CONTROL/26 (__get_CONTROL) @0x76fcaa46b870
+__get_CONTROL/26 (__get_CONTROL) @0x7d4a0b66b870
   Type: function definition
   Visibility: no_reorder
   References: 
@@ -578,7 +578,7 @@ __get_CONTROL/26 (__get_CONTROL) @0x76fcaa46b870
   Function flags:
   Called by: 
   Calls: 
-__disable_irq/25 (__disable_irq) @0x76fcaa46b708
+__disable_irq/25 (__disable_irq) @0x7d4a0b66b708
   Type: function definition
   Visibility: no_reorder
   References: 
@@ -586,7 +586,7 @@ __disable_irq/25 (__disable_irq) @0x76fcaa46b708
   Function flags:
   Called by: 
   Calls: 
-__enable_irq/24 (__enable_irq) @0x76fcaa46b5a0
+__enable_irq/24 (__enable_irq) @0x7d4a0b66b5a0
   Type: function definition
   Visibility: no_reorder
   References: 
@@ -594,7 +594,7 @@ __enable_irq/24 (__enable_irq) @0x76fcaa46b5a0
   Function flags:
   Called by: 
   Calls: 
-__STRT/23 (__STRT) @0x76fcaa46b438
+__STRT/23 (__STRT) @0x7d4a0b66b438
   Type: function definition
   Visibility: no_reorder
   References: 
@@ -602,7 +602,7 @@ __STRT/23 (__STRT) @0x76fcaa46b438
   Function flags:
   Called by: 
   Calls: 
-__STRHT/22 (__STRHT) @0x76fcaa46b2d0
+__STRHT/22 (__STRHT) @0x7d4a0b66b2d0
   Type: function definition
   Visibility: no_reorder
   References: 
@@ -610,7 +610,7 @@ __STRHT/22 (__STRHT) @0x76fcaa46b2d0
   Function flags:
   Called by: 
   Calls: 
-__STRBT/21 (__STRBT) @0x76fcaa46b168
+__STRBT/21 (__STRBT) @0x7d4a0b66b168
   Type: function definition
   Visibility: no_reorder
   References: 
@@ -618,7 +618,7 @@ __STRBT/21 (__STRBT) @0x76fcaa46b168
   Function flags:
   Called by: 
   Calls: 
-__LDRT/20 (__LDRT) @0x76fcaa46b000
+__LDRT/20 (__LDRT) @0x7d4a0b66b000
   Type: function definition
   Visibility: no_reorder
   References: 
@@ -626,7 +626,7 @@ __LDRT/20 (__LDRT) @0x76fcaa46b000
   Function flags:
   Called by: 
   Calls: 
-__LDRHT/19 (__LDRHT) @0x76fcaa463e10
+__LDRHT/19 (__LDRHT) @0x7d4a0b663e10
   Type: function definition
   Visibility: no_reorder
   References: 
@@ -634,7 +634,7 @@ __LDRHT/19 (__LDRHT) @0x76fcaa463e10
   Function flags:
   Called by: 
   Calls: 
-__LDRBT/18 (__LDRBT) @0x76fcaa463ca8
+__LDRBT/18 (__LDRBT) @0x7d4a0b663ca8
   Type: function definition
   Visibility: no_reorder
   References: 
@@ -642,7 +642,7 @@ __LDRBT/18 (__LDRBT) @0x76fcaa463ca8
   Function flags:
   Called by: 
   Calls: 
-__RRX/17 (__RRX) @0x76fcaa463b40
+__RRX/17 (__RRX) @0x7d4a0b663b40
   Type: function definition
   Visibility: no_reorder
   References: 
@@ -650,7 +650,7 @@ __RRX/17 (__RRX) @0x76fcaa463b40
   Function flags:
   Called by: 
   Calls: 
-__CLREX/16 (__CLREX) @0x76fcaa4639d8
+__CLREX/16 (__CLREX) @0x7d4a0b6639d8
   Type: function definition
   Visibility: no_reorder
   References: 
@@ -658,7 +658,7 @@ __CLREX/16 (__CLREX) @0x76fcaa4639d8
   Function flags:
   Called by: 
   Calls: 
-__STREXW/15 (__STREXW) @0x76fcaa463870
+__STREXW/15 (__STREXW) @0x7d4a0b663870
   Type: function definition
   Visibility: no_reorder
   References: 
@@ -666,7 +666,7 @@ __STREXW/15 (__STREXW) @0x76fcaa463870
   Function flags:
   Called by: 
   Calls: 
-__STREXH/14 (__STREXH) @0x76fcaa463708
+__STREXH/14 (__STREXH) @0x7d4a0b663708
   Type: function definition
   Visibility: no_reorder
   References: 
@@ -674,7 +674,7 @@ __STREXH/14 (__STREXH) @0x76fcaa463708
   Function flags:
   Called by: 
   Calls: 
-__STREXB/13 (__STREXB) @0x76fcaa4635a0
+__STREXB/13 (__STREXB) @0x7d4a0b6635a0
   Type: function definition
   Visibility: no_reorder
   References: 
@@ -682,7 +682,7 @@ __STREXB/13 (__STREXB) @0x76fcaa4635a0
   Function flags:
   Called by: 
   Calls: 
-__LDREXW/12 (__LDREXW) @0x76fcaa463438
+__LDREXW/12 (__LDREXW) @0x7d4a0b663438
   Type: function definition
   Visibility: no_reorder
   References: 
@@ -690,7 +690,7 @@ __LDREXW/12 (__LDREXW) @0x76fcaa463438
   Function flags:
   Called by: 
   Calls: 
-__LDREXH/11 (__LDREXH) @0x76fcaa4632d0
+__LDREXH/11 (__LDREXH) @0x7d4a0b6632d0
   Type: function definition
   Visibility: no_reorder
   References: 
@@ -698,7 +698,7 @@ __LDREXH/11 (__LDREXH) @0x76fcaa4632d0
   Function flags:
   Called by: 
   Calls: 
-__LDREXB/10 (__LDREXB) @0x76fcaa463168
+__LDREXB/10 (__LDREXB) @0x7d4a0b663168
   Type: function definition
   Visibility: no_reorder
   References: 
@@ -706,7 +706,7 @@ __LDREXB/10 (__LDREXB) @0x76fcaa463168
   Function flags:
   Called by: 
   Calls: 
-__CLZ/9 (__CLZ) @0x76fcaa463000
+__CLZ/9 (__CLZ) @0x7d4a0b663000
   Type: function definition
   Visibility: no_reorder
   References: 
@@ -714,7 +714,7 @@ __CLZ/9 (__CLZ) @0x76fcaa463000
   Function flags:
   Called by: 
   Calls: 
-__RBIT/8 (__RBIT) @0x76fcaa454e10
+__RBIT/8 (__RBIT) @0x7d4a0b654e10
   Type: function definition
   Visibility: no_reorder
   References: 
@@ -722,7 +722,7 @@ __RBIT/8 (__RBIT) @0x76fcaa454e10
   Function flags:
   Called by: 
   Calls: 
-__ROR/7 (__ROR) @0x76fcaa454ca8
+__ROR/7 (__ROR) @0x7d4a0b654ca8
   Type: function definition
   Visibility: no_reorder
   References: 
@@ -730,7 +730,7 @@ __ROR/7 (__ROR) @0x76fcaa454ca8
   Function flags:
   Called by: 
   Calls: 
-__REVSH/6 (__REVSH) @0x76fcaa454b40
+__REVSH/6 (__REVSH) @0x7d4a0b654b40
   Type: function definition
   Visibility: no_reorder
   References: 
@@ -738,7 +738,7 @@ __REVSH/6 (__REVSH) @0x76fcaa454b40
   Function flags:
   Called by: 
   Calls: 
-__REV16/5 (__REV16) @0x76fcaa4549d8
+__REV16/5 (__REV16) @0x7d4a0b6549d8
   Type: function definition
   Visibility: no_reorder
   References: 
@@ -746,7 +746,7 @@ __REV16/5 (__REV16) @0x76fcaa4549d8
   Function flags:
   Called by: 
   Calls: 
-__REV/4 (__REV) @0x76fcaa454870
+__REV/4 (__REV) @0x7d4a0b654870
   Type: function definition
   Visibility: no_reorder
   References: 
@@ -754,7 +754,7 @@ __REV/4 (__REV) @0x76fcaa454870
   Function flags:
   Called by: 
   Calls: 
-__DMB/3 (__DMB) @0x76fcaa454708
+__DMB/3 (__DMB) @0x7d4a0b654708
   Type: function definition
   Visibility: no_reorder
   References: 
@@ -762,7 +762,7 @@ __DMB/3 (__DMB) @0x76fcaa454708
   Function flags:
   Called by: 
   Calls: 
-__DSB/2 (__DSB) @0x76fcaa4545a0
+__DSB/2 (__DSB) @0x7d4a0b6545a0
   Type: function definition
   Visibility: no_reorder
   References: 
@@ -770,7 +770,7 @@ __DSB/2 (__DSB) @0x76fcaa4545a0
   Function flags:
   Called by: 
   Calls: 
-__ISB/1 (__ISB) @0x76fcaa454438
+__ISB/1 (__ISB) @0x7d4a0b654438
   Type: function definition
   Visibility: no_reorder
   References: 
@@ -778,7 +778,7 @@ __ISB/1 (__ISB) @0x76fcaa454438
   Function flags:
   Called by: 
   Calls: 
-__cmsis_start/0 (__cmsis_start) @0x76fcaa454168
+__cmsis_start/0 (__cmsis_start) @0x7d4a0b654168
   Type: function definition
   Visibility: no_reorder
   References: 
@@ -791,7 +791,7 @@ Removing unused symbols: SystemCoreClockUpdate/74 ITM_CheckChar/73 ITM_ReceiveCh
 
 Reclaimed Symbol table:
 
-ClockGetCoreClockFrequency/96 (ClockGetCoreClockFrequency) @0x76fcaa173b40
+ClockGetCoreClockFrequency/96 (ClockGetCoreClockFrequency) @0x7d4a0b373b40
   Type: function
   Visibility: external public
   References: 
@@ -799,7 +799,7 @@ ClockGetCoreClockFrequency/96 (ClockGetCoreClockFrequency) @0x76fcaa173b40
   Function flags:
   Called by: ADC_Init/91 
   Calls: 
-ADC_GetReading/95 (ADC_GetReading) @0x76fcaa173870
+ADC_GetReading/95 (ADC_GetReading) @0x7d4a0b373870
   Type: function definition analyzed
   Visibility: force_output no_reorder public
   References: 
@@ -807,7 +807,7 @@ ADC_GetReading/95 (ADC_GetReading) @0x76fcaa173870
   Function flags: body
   Called by: ADC_Read/93 
   Calls: 
-ADC_StartReading/94 (ADC_StartReading) @0x76fcaa173708
+ADC_StartReading/94 (ADC_StartReading) @0x7d4a0b373708
   Type: function definition analyzed
   Visibility: force_output no_reorder public
   References: singlectrl/76 (read) 
@@ -815,7 +815,7 @@ ADC_StartReading/94 (ADC_StartReading) @0x76fcaa173708
   Function flags: body
   Called by: ADC_Read/93 
   Calls: 
-ADC_Read/93 (ADC_Read) @0x76fcaa1735a0
+ADC_Read/93 (ADC_Read) @0x7d4a0b3735a0
   Type: function definition analyzed
   Visibility: force_output no_reorder public
   References: 
@@ -823,7 +823,7 @@ ADC_Read/93 (ADC_Read) @0x76fcaa1735a0
   Function flags: body
   Called by: 
   Calls: ADC_GetReading/95 ADC_StartReading/94 
-ADC_ConfigChannel/92 (ADC_ConfigChannel) @0x76fcaa173438
+ADC_ConfigChannel/92 (ADC_ConfigChannel) @0x7d4a0b373438
   Type: function definition analyzed
   Visibility: force_output no_reorder public
   References: singlectrl/76 (write) 
@@ -831,7 +831,7 @@ ADC_ConfigChannel/92 (ADC_ConfigChannel) @0x76fcaa173438
   Function flags: body
   Called by: 
   Calls: 
-ADC_Init/91 (ADC_Init) @0x76fcaa1732d0
+ADC_Init/91 (ADC_Init) @0x7d4a0b3732d0
   Type: function definition analyzed
   Visibility: force_output no_reorder public
   References: default_singlectrl/75 (read) singlectrl/76 (write) 
@@ -839,7 +839,7 @@ ADC_Init/91 (ADC_Init) @0x76fcaa1732d0
   Function flags: body
   Called by: 
   Calls: GetCalibrationValues/89 ClockGetCoreClockFrequency/96 
-ADC0_IRQHandler/90 (ADC0_IRQHandler) @0x76fcaa173168
+ADC0_IRQHandler/90 (ADC0_IRQHandler) @0x7d4a0b373168
   Type: function definition analyzed
   Visibility: force_output no_reorder public
   References: 
@@ -847,7 +847,7 @@ ADC0_IRQHandler/90 (ADC0_IRQHandler) @0x76fcaa173168
   Function flags: body
   Called by: 
   Calls: 
-GetCalibrationValues/89 (GetCalibrationValues) @0x76fcaa173000
+GetCalibrationValues/89 (GetCalibrationValues) @0x7d4a0b373000
   Type: function definition analyzed
   Visibility: force_output no_reorder
   References: adc_cal/77 (write) adc_bias/78 (write) cal_gain_1v25/79 (write) cal_offset_1v25/80 (write) cal_gain_2v5/81 (write) cal_offset_2v5/82 (write) cal_gain_vdd/83 (write) cal_offset_vdd/84 (write) cal_gain_5v/85 (write) cal_offset_5v/86 (write) cal_gain_2xvdd/87 (write) cal_offset_2xvdd/88 (write) 
@@ -855,98 +855,98 @@ GetCalibrationValues/89 (GetCalibrationValues) @0x76fcaa173000
   Function flags: body
   Called by: ADC_Init/91 
   Calls: 
-cal_offset_2xvdd/88 (cal_offset_2xvdd) @0x76fcaa167b80
+cal_offset_2xvdd/88 (cal_offset_2xvdd) @0x7d4a0b367b80
   Type: variable definition analyzed
   Visibility: force_output no_reorder
   References: 
   Referring: GetCalibrationValues/89 (write) 
   Availability: not-ready
   Varpool flags:
-cal_gain_2xvdd/87 (cal_gain_2xvdd) @0x76fcaa167b00
+cal_gain_2xvdd/87 (cal_gain_2xvdd) @0x7d4a0b367b00
   Type: variable definition analyzed
   Visibility: force_output no_reorder
   References: 
   Referring: GetCalibrationValues/89 (write) 
   Availability: not-ready
   Varpool flags:
-cal_offset_5v/86 (cal_offset_5v) @0x76fcaa167a80
+cal_offset_5v/86 (cal_offset_5v) @0x7d4a0b367a80
   Type: variable definition analyzed
   Visibility: force_output no_reorder
   References: 
   Referring: GetCalibrationValues/89 (write) 
   Availability: not-ready
   Varpool flags:
-cal_gain_5v/85 (cal_gain_5v) @0x76fcaa167a00
+cal_gain_5v/85 (cal_gain_5v) @0x7d4a0b367a00
   Type: variable definition analyzed
   Visibility: force_output no_reorder
   References: 
   Referring: GetCalibrationValues/89 (write) 
   Availability: not-ready
   Varpool flags:
-cal_offset_vdd/84 (cal_offset_vdd) @0x76fcaa167980
+cal_offset_vdd/84 (cal_offset_vdd) @0x7d4a0b367980
   Type: variable definition analyzed
   Visibility: force_output no_reorder
   References: 
   Referring: GetCalibrationValues/89 (write) 
   Availability: not-ready
   Varpool flags:
-cal_gain_vdd/83 (cal_gain_vdd) @0x76fcaa167900
+cal_gain_vdd/83 (cal_gain_vdd) @0x7d4a0b367900
   Type: variable definition analyzed
   Visibility: force_output no_reorder
   References: 
   Referring: GetCalibrationValues/89 (write) 
   Availability: not-ready
   Varpool flags:
-cal_offset_2v5/82 (cal_offset_2v5) @0x76fcaa167880
+cal_offset_2v5/82 (cal_offset_2v5) @0x7d4a0b367880
   Type: variable definition analyzed
   Visibility: force_output no_reorder
   References: 
   Referring: GetCalibrationValues/89 (write) 
   Availability: not-ready
   Varpool flags:
-cal_gain_2v5/81 (cal_gain_2v5) @0x76fcaa167800
+cal_gain_2v5/81 (cal_gain_2v5) @0x7d4a0b367800
   Type: variable definition analyzed
   Visibility: force_output no_reorder
   References: 
   Referring: GetCalibrationValues/89 (write) 
   Availability: not-ready
   Varpool flags:
-cal_offset_1v25/80 (cal_offset_1v25) @0x76fcaa167780
+cal_offset_1v25/80 (cal_offset_1v25) @0x7d4a0b367780
   Type: variable definition analyzed
   Visibility: force_output no_reorder
   References: 
   Referring: GetCalibrationValues/89 (write) 
   Availability: not-ready
   Varpool flags:
-cal_gain_1v25/79 (cal_gain_1v25) @0x76fcaa167700
+cal_gain_1v25/79 (cal_gain_1v25) @0x7d4a0b367700
   Type: variable definition analyzed
   Visibility: force_output no_reorder
   References: 
   Referring: GetCalibrationValues/89 (write) 
   Availability: not-ready
   Varpool flags:
-adc_bias/78 (adc_bias) @0x76fcaa167680
+adc_bias/78 (adc_bias) @0x7d4a0b367680
   Type: variable definition analyzed
   Visibility: force_output no_reorder
   References: 
   Referring: GetCalibrationValues/89 (write) 
   Availability: not-ready
   Varpool flags:
-adc_cal/77 (adc_cal) @0x76fcaa167600
+adc_cal/77 (adc_cal) @0x7d4a0b367600
   Type: variable definition analyzed
   Visibility: force_output no_reorder
   References: 
   Referring: GetCalibrationValues/89 (write) 
   Availability: not-ready
   Varpool flags:
-singlectrl/76 (singlectrl) @0x76fcaa167580
+singlectrl/76 (singlectrl) @0x7d4a0b367580
   Type: variable definition analyzed
   Visibility: force_output no_reorder
   References: 
   Referring: ADC_Init/91 (write) ADC_ConfigChannel/92 (write) ADC_StartReading/94 (read) 
   Availability: not-ready
   Varpool flags:
-default_singlectrl/75 (default_singlectrl) @0x76fcaa167500
+default_singlectrl/75 (default_singlectrl) @0x7d4a0b367500
   Type: variable definition analyzed
   Visibility: force_output no_reorder
   References: 
@@ -957,7 +957,7 @@ default_singlectrl/75 (default_singlectrl) @0x76fcaa167500
 
 Initial Symbol table:
 
-ClockGetCoreClockFrequency/96 (ClockGetCoreClockFrequency) @0x76fcaa173b40
+ClockGetCoreClockFrequency/96 (ClockGetCoreClockFrequency) @0x7d4a0b373b40
   Type: function
   Visibility: external public
   References: 
@@ -965,7 +965,7 @@ ClockGetCoreClockFrequency/96 (ClockGetCoreClockFrequency) @0x76fcaa173b40
   Function flags:
   Called by: ADC_Init/91 
   Calls: 
-ADC_GetReading/95 (ADC_GetReading) @0x76fcaa173870
+ADC_GetReading/95 (ADC_GetReading) @0x7d4a0b373870
   Type: function definition analyzed
   Visibility: force_output no_reorder public
   References: 
@@ -973,7 +973,7 @@ ADC_GetReading/95 (ADC_GetReading) @0x76fcaa173870
   Function flags: body
   Called by: ADC_Read/93 
   Calls: 
-ADC_StartReading/94 (ADC_StartReading) @0x76fcaa173708
+ADC_StartReading/94 (ADC_StartReading) @0x7d4a0b373708
   Type: function definition analyzed
   Visibility: force_output no_reorder public
   References: singlectrl/76 (read) 
@@ -981,7 +981,7 @@ ADC_StartReading/94 (ADC_StartReading) @0x76fcaa173708
   Function flags: body
   Called by: ADC_Read/93 
   Calls: 
-ADC_Read/93 (ADC_Read) @0x76fcaa1735a0
+ADC_Read/93 (ADC_Read) @0x7d4a0b3735a0
   Type: function definition analyzed
   Visibility: force_output no_reorder public
   References: 
@@ -989,7 +989,7 @@ ADC_Read/93 (ADC_Read) @0x76fcaa1735a0
   Function flags: body
   Called by: 
   Calls: ADC_GetReading/95 ADC_StartReading/94 
-ADC_ConfigChannel/92 (ADC_ConfigChannel) @0x76fcaa173438
+ADC_ConfigChannel/92 (ADC_ConfigChannel) @0x7d4a0b373438
   Type: function definition analyzed
   Visibility: force_output no_reorder public
   References: singlectrl/76 (write) 
@@ -997,7 +997,7 @@ ADC_ConfigChannel/92 (ADC_ConfigChannel) @0x76fcaa173438
   Function flags: body
   Called by: 
   Calls: 
-ADC_Init/91 (ADC_Init) @0x76fcaa1732d0
+ADC_Init/91 (ADC_Init) @0x7d4a0b3732d0
   Type: function definition analyzed
   Visibility: force_output no_reorder public
   References: default_singlectrl/75 (read) singlectrl/76 (write) 
@@ -1005,7 +1005,7 @@ ADC_Init/91 (ADC_Init) @0x76fcaa1732d0
   Function flags: body
   Called by: 
   Calls: GetCalibrationValues/89 ClockGetCoreClockFrequency/96 
-ADC0_IRQHandler/90 (ADC0_IRQHandler) @0x76fcaa173168
+ADC0_IRQHandler/90 (ADC0_IRQHandler) @0x7d4a0b373168
   Type: function definition analyzed
   Visibility: force_output no_reorder public
   References: 
@@ -1013,7 +1013,7 @@ ADC0_IRQHandler/90 (ADC0_IRQHandler) @0x76fcaa173168
   Function flags: body
   Called by: 
   Calls: 
-GetCalibrationValues/89 (GetCalibrationValues) @0x76fcaa173000
+GetCalibrationValues/89 (GetCalibrationValues) @0x7d4a0b373000
   Type: function definition analyzed
   Visibility: force_output no_reorder
   References: adc_cal/77 (write) adc_bias/78 (write) cal_gain_1v25/79 (write) cal_offset_1v25/80 (write) cal_gain_2v5/81 (write) cal_offset_2v5/82 (write) cal_gain_vdd/83 (write) cal_offset_vdd/84 (write) cal_gain_5v/85 (write) cal_offset_5v/86 (write) cal_gain_2xvdd/87 (write) cal_offset_2xvdd/88 (write) 
@@ -1021,98 +1021,98 @@ GetCalibrationValues/89 (GetCalibrationValues) @0x76fcaa173000
   Function flags: body
   Called by: ADC_Init/91 
   Calls: 
-cal_offset_2xvdd/88 (cal_offset_2xvdd) @0x76fcaa167b80
+cal_offset_2xvdd/88 (cal_offset_2xvdd) @0x7d4a0b367b80
   Type: variable definition analyzed
   Visibility: force_output no_reorder
   References: 
   Referring: GetCalibrationValues/89 (write) 
   Availability: not-ready
   Varpool flags:
-cal_gain_2xvdd/87 (cal_gain_2xvdd) @0x76fcaa167b00
+cal_gain_2xvdd/87 (cal_gain_2xvdd) @0x7d4a0b367b00
   Type: variable definition analyzed
   Visibility: force_output no_reorder
   References: 
   Referring: GetCalibrationValues/89 (write) 
   Availability: not-ready
   Varpool flags:
-cal_offset_5v/86 (cal_offset_5v) @0x76fcaa167a80
+cal_offset_5v/86 (cal_offset_5v) @0x7d4a0b367a80
   Type: variable definition analyzed
   Visibility: force_output no_reorder
   References: 
   Referring: GetCalibrationValues/89 (write) 
   Availability: not-ready
   Varpool flags:
-cal_gain_5v/85 (cal_gain_5v) @0x76fcaa167a00
+cal_gain_5v/85 (cal_gain_5v) @0x7d4a0b367a00
   Type: variable definition analyzed
   Visibility: force_output no_reorder
   References: 
   Referring: GetCalibrationValues/89 (write) 
   Availability: not-ready
   Varpool flags:
-cal_offset_vdd/84 (cal_offset_vdd) @0x76fcaa167980
+cal_offset_vdd/84 (cal_offset_vdd) @0x7d4a0b367980
   Type: variable definition analyzed
   Visibility: force_output no_reorder
   References: 
   Referring: GetCalibrationValues/89 (write) 
   Availability: not-ready
   Varpool flags:
-cal_gain_vdd/83 (cal_gain_vdd) @0x76fcaa167900
+cal_gain_vdd/83 (cal_gain_vdd) @0x7d4a0b367900
   Type: variable definition analyzed
   Visibility: force_output no_reorder
   References: 
   Referring: GetCalibrationValues/89 (write) 
   Availability: not-ready
   Varpool flags:
-cal_offset_2v5/82 (cal_offset_2v5) @0x76fcaa167880
+cal_offset_2v5/82 (cal_offset_2v5) @0x7d4a0b367880
   Type: variable definition analyzed
   Visibility: force_output no_reorder
   References: 
   Referring: GetCalibrationValues/89 (write) 
   Availability: not-ready
   Varpool flags:
-cal_gain_2v5/81 (cal_gain_2v5) @0x76fcaa167800
+cal_gain_2v5/81 (cal_gain_2v5) @0x7d4a0b367800
   Type: variable definition analyzed
   Visibility: force_output no_reorder
   References: 
   Referring: GetCalibrationValues/89 (write) 
   Availability: not-ready
   Varpool flags:
-cal_offset_1v25/80 (cal_offset_1v25) @0x76fcaa167780
+cal_offset_1v25/80 (cal_offset_1v25) @0x7d4a0b367780
   Type: variable definition analyzed
   Visibility: force_output no_reorder
   References: 
   Referring: GetCalibrationValues/89 (write) 
   Availability: not-ready
   Varpool flags:
-cal_gain_1v25/79 (cal_gain_1v25) @0x76fcaa167700
+cal_gain_1v25/79 (cal_gain_1v25) @0x7d4a0b367700
   Type: variable definition analyzed
   Visibility: force_output no_reorder
   References: 
   Referring: GetCalibrationValues/89 (write) 
   Availability: not-ready
   Varpool flags:
-adc_bias/78 (adc_bias) @0x76fcaa167680
+adc_bias/78 (adc_bias) @0x7d4a0b367680
   Type: variable definition analyzed
   Visibility: force_output no_reorder
   References: 
   Referring: GetCalibrationValues/89 (write) 
   Availability: not-ready
   Varpool flags:
-adc_cal/77 (adc_cal) @0x76fcaa167600
+adc_cal/77 (adc_cal) @0x7d4a0b367600
   Type: variable definition analyzed
   Visibility: force_output no_reorder
   References: 
   Referring: GetCalibrationValues/89 (write) 
   Availability: not-ready
   Varpool flags:
-singlectrl/76 (singlectrl) @0x76fcaa167580
+singlectrl/76 (singlectrl) @0x7d4a0b367580
   Type: variable definition analyzed
   Visibility: force_output no_reorder
   References: 
   Referring: ADC_Init/91 (write) ADC_ConfigChannel/92 (write) ADC_StartReading/94 (read) 
   Availability: not-ready
   Varpool flags:
-default_singlectrl/75 (default_singlectrl) @0x76fcaa167500
+default_singlectrl/75 (default_singlectrl) @0x7d4a0b367500
   Type: variable definition analyzed
   Visibility: force_output no_reorder
   References: 
@@ -1124,7 +1124,7 @@ Removing unused symbols:
 
 Reclaimed Symbol table:
 
-ClockGetCoreClockFrequency/96 (ClockGetCoreClockFrequency) @0x76fcaa173b40
+ClockGetCoreClockFrequency/96 (ClockGetCoreClockFrequency) @0x7d4a0b373b40
   Type: function
   Visibility: external public
   References: 
@@ -1132,7 +1132,7 @@ ClockGetCoreClockFrequency/96 (ClockGetCoreClockFrequency) @0x76fcaa173b40
   Function flags:
   Called by: ADC_Init/91 
   Calls: 
-ADC_GetReading/95 (ADC_GetReading) @0x76fcaa173870
+ADC_GetReading/95 (ADC_GetReading) @0x7d4a0b373870
   Type: function definition analyzed
   Visibility: force_output no_reorder public
   References: 
@@ -1140,7 +1140,7 @@ ADC_GetReading/95 (ADC_GetReading) @0x76fcaa173870
   Function flags: body
   Called by: ADC_Read/93 
   Calls: 
-ADC_StartReading/94 (ADC_StartReading) @0x76fcaa173708
+ADC_StartReading/94 (ADC_StartReading) @0x7d4a0b373708
   Type: function definition analyzed
   Visibility: force_output no_reorder public
   References: singlectrl/76 (read) 
@@ -1148,7 +1148,7 @@ ADC_StartReading/94 (ADC_StartReading) @0x76fcaa173708
   Function flags: body
   Called by: ADC_Read/93 
   Calls: 
-ADC_Read/93 (ADC_Read) @0x76fcaa1735a0
+ADC_Read/93 (ADC_Read) @0x7d4a0b3735a0
   Type: function definition analyzed
   Visibility: force_output no_reorder public
   References: 
@@ -1156,7 +1156,7 @@ ADC_Read/93 (ADC_Read) @0x76fcaa1735a0
   Function flags: body
   Called by: 
   Calls: ADC_GetReading/95 ADC_StartReading/94 
-ADC_ConfigChannel/92 (ADC_ConfigChannel) @0x76fcaa173438
+ADC_ConfigChannel/92 (ADC_ConfigChannel) @0x7d4a0b373438
   Type: function definition analyzed
   Visibility: force_output no_reorder public
   References: singlectrl/76 (write) 
@@ -1164,7 +1164,7 @@ ADC_ConfigChannel/92 (ADC_ConfigChannel) @0x76fcaa173438
   Function flags: body
   Called by: 
   Calls: 
-ADC_Init/91 (ADC_Init) @0x76fcaa1732d0
+ADC_Init/91 (ADC_Init) @0x7d4a0b3732d0
   Type: function definition analyzed
   Visibility: force_output no_reorder public
   References: default_singlectrl/75 (read) singlectrl/76 (write) 
@@ -1172,7 +1172,7 @@ ADC_Init/91 (ADC_Init) @0x76fcaa1732d0
   Function flags: body
   Called by: 
   Calls: GetCalibrationValues/89 ClockGetCoreClockFrequency/96 
-ADC0_IRQHandler/90 (ADC0_IRQHandler) @0x76fcaa173168
+ADC0_IRQHandler/90 (ADC0_IRQHandler) @0x7d4a0b373168
   Type: function definition analyzed
   Visibility: force_output no_reorder public
   References: 
@@ -1180,7 +1180,7 @@ ADC0_IRQHandler/90 (ADC0_IRQHandler) @0x76fcaa173168
   Function flags: body
   Called by: 
   Calls: 
-GetCalibrationValues/89 (GetCalibrationValues) @0x76fcaa173000
+GetCalibrationValues/89 (GetCalibrationValues) @0x7d4a0b373000
   Type: function definition analyzed
   Visibility: force_output no_reorder
   References: adc_cal/77 (write) adc_bias/78 (write) cal_gain_1v25/79 (write) cal_offset_1v25/80 (write) cal_gain_2v5/81 (write) cal_offset_2v5/82 (write) cal_gain_vdd/83 (write) cal_offset_vdd/84 (write) cal_gain_5v/85 (write) cal_offset_5v/86 (write) cal_gain_2xvdd/87 (write) cal_offset_2xvdd/88 (write) 
@@ -1188,98 +1188,98 @@ GetCalibrationValues/89 (GetCalibrationValues) @0x76fcaa173000
   Function flags: body
   Called by: ADC_Init/91 
   Calls: 
-cal_offset_2xvdd/88 (cal_offset_2xvdd) @0x76fcaa167b80
+cal_offset_2xvdd/88 (cal_offset_2xvdd) @0x7d4a0b367b80
   Type: variable definition analyzed
   Visibility: force_output no_reorder
   References: 
   Referring: GetCalibrationValues/89 (write) 
   Availability: not-ready
   Varpool flags:
-cal_gain_2xvdd/87 (cal_gain_2xvdd) @0x76fcaa167b00
+cal_gain_2xvdd/87 (cal_gain_2xvdd) @0x7d4a0b367b00
   Type: variable definition analyzed
   Visibility: force_output no_reorder
   References: 
   Referring: GetCalibrationValues/89 (write) 
   Availability: not-ready
   Varpool flags:
-cal_offset_5v/86 (cal_offset_5v) @0x76fcaa167a80
+cal_offset_5v/86 (cal_offset_5v) @0x7d4a0b367a80
   Type: variable definition analyzed
   Visibility: force_output no_reorder
   References: 
   Referring: GetCalibrationValues/89 (write) 
   Availability: not-ready
   Varpool flags:
-cal_gain_5v/85 (cal_gain_5v) @0x76fcaa167a00
+cal_gain_5v/85 (cal_gain_5v) @0x7d4a0b367a00
   Type: variable definition analyzed
   Visibility: force_output no_reorder
   References: 
   Referring: GetCalibrationValues/89 (write) 
   Availability: not-ready
   Varpool flags:
-cal_offset_vdd/84 (cal_offset_vdd) @0x76fcaa167980
+cal_offset_vdd/84 (cal_offset_vdd) @0x7d4a0b367980
   Type: variable definition analyzed
   Visibility: force_output no_reorder
   References: 
   Referring: GetCalibrationValues/89 (write) 
   Availability: not-ready
   Varpool flags:
-cal_gain_vdd/83 (cal_gain_vdd) @0x76fcaa167900
+cal_gain_vdd/83 (cal_gain_vdd) @0x7d4a0b367900
   Type: variable definition analyzed
   Visibility: force_output no_reorder
   References: 
   Referring: GetCalibrationValues/89 (write) 
   Availability: not-ready
   Varpool flags:
-cal_offset_2v5/82 (cal_offset_2v5) @0x76fcaa167880
+cal_offset_2v5/82 (cal_offset_2v5) @0x7d4a0b367880
   Type: variable definition analyzed
   Visibility: force_output no_reorder
   References: 
   Referring: GetCalibrationValues/89 (write) 
   Availability: not-ready
   Varpool flags:
-cal_gain_2v5/81 (cal_gain_2v5) @0x76fcaa167800
+cal_gain_2v5/81 (cal_gain_2v5) @0x7d4a0b367800
   Type: variable definition analyzed
   Visibility: force_output no_reorder
   References: 
   Referring: GetCalibrationValues/89 (write) 
   Availability: not-ready
   Varpool flags:
-cal_offset_1v25/80 (cal_offset_1v25) @0x76fcaa167780
+cal_offset_1v25/80 (cal_offset_1v25) @0x7d4a0b367780
   Type: variable definition analyzed
   Visibility: force_output no_reorder
   References: 
   Referring: GetCalibrationValues/89 (write) 
   Availability: not-ready
   Varpool flags:
-cal_gain_1v25/79 (cal_gain_1v25) @0x76fcaa167700
+cal_gain_1v25/79 (cal_gain_1v25) @0x7d4a0b367700
   Type: variable definition analyzed
   Visibility: force_output no_reorder
   References: 
   Referring: GetCalibrationValues/89 (write) 
   Availability: not-ready
   Varpool flags:
-adc_bias/78 (adc_bias) @0x76fcaa167680
+adc_bias/78 (adc_bias) @0x7d4a0b367680
   Type: variable definition analyzed
   Visibility: force_output no_reorder
   References: 
   Referring: GetCalibrationValues/89 (write) 
   Availability: not-ready
   Varpool flags:
-adc_cal/77 (adc_cal) @0x76fcaa167600
+adc_cal/77 (adc_cal) @0x7d4a0b367600
   Type: variable definition analyzed
   Visibility: force_output no_reorder
   References: 
   Referring: GetCalibrationValues/89 (write) 
   Availability: not-ready
   Varpool flags:
-singlectrl/76 (singlectrl) @0x76fcaa167580
+singlectrl/76 (singlectrl) @0x7d4a0b367580
   Type: variable definition analyzed
   Visibility: force_output no_reorder
   References: 
   Referring: ADC_Init/91 (write) ADC_ConfigChannel/92 (write) ADC_StartReading/94 (read) 
   Availability: not-ready
   Varpool flags:
-default_singlectrl/75 (default_singlectrl) @0x76fcaa167500
+default_singlectrl/75 (default_singlectrl) @0x7d4a0b367500
   Type: variable definition analyzed
   Visibility: force_output no_reorder
   References: 
@@ -1292,7 +1292,7 @@ Reclaiming variables:
 Clearing address taken flags:
 Optimized Symbol table:
 
-ClockGetCoreClockFrequency/96 (ClockGetCoreClockFrequency) @0x76fcaa173b40
+ClockGetCoreClockFrequency/96 (ClockGetCoreClockFrequency) @0x7d4a0b373b40
   Type: function
   Visibility: external public
   References: 
@@ -1301,7 +1301,7 @@ ClockGetCoreClockFrequency/96 (ClockGetCoreClockFrequency) @0x76fcaa173b40
   Function flags:
   Called by: ADC_Init/91 
   Calls: 
-ADC_GetReading/95 (ADC_GetReading) @0x76fcaa173870
+ADC_GetReading/95 (ADC_GetReading) @0x7d4a0b373870
   Type: function definition analyzed
   Visibility: force_output externally_visible no_reorder public
   References: 
@@ -1310,7 +1310,7 @@ ADC_GetReading/95 (ADC_GetReading) @0x76fcaa173870
   Function flags: body
   Called by: ADC_Read/93 
   Calls: 
-ADC_StartReading/94 (ADC_StartReading) @0x76fcaa173708
+ADC_StartReading/94 (ADC_StartReading) @0x7d4a0b373708
   Type: function definition analyzed
   Visibility: force_output externally_visible no_reorder public
   References: singlectrl/76 (read) 
@@ -1319,7 +1319,7 @@ ADC_StartReading/94 (ADC_StartReading) @0x76fcaa173708
   Function flags: body
   Called by: ADC_Read/93 
   Calls: 
-ADC_Read/93 (ADC_Read) @0x76fcaa1735a0
+ADC_Read/93 (ADC_Read) @0x7d4a0b3735a0
   Type: function definition analyzed
   Visibility: force_output externally_visible no_reorder public
   References: 
@@ -1328,7 +1328,7 @@ ADC_Read/93 (ADC_Read) @0x76fcaa1735a0
   Function flags: body
   Called by: 
   Calls: ADC_GetReading/95 ADC_StartReading/94 
-ADC_ConfigChannel/92 (ADC_ConfigChannel) @0x76fcaa173438
+ADC_ConfigChannel/92 (ADC_ConfigChannel) @0x7d4a0b373438
   Type: function definition analyzed
   Visibility: force_output externally_visible no_reorder public
   References: singlectrl/76 (write) 
@@ -1337,7 +1337,7 @@ ADC_ConfigChannel/92 (ADC_ConfigChannel) @0x76fcaa173438
   Function flags: body
   Called by: 
   Calls: 
-ADC_Init/91 (ADC_Init) @0x76fcaa1732d0
+ADC_Init/91 (ADC_Init) @0x7d4a0b3732d0
   Type: function definition analyzed
   Visibility: force_output externally_visible no_reorder public
   References: default_singlectrl/75 (read) singlectrl/76 (write) 
@@ -1346,7 +1346,7 @@ ADC_Init/91 (ADC_Init) @0x76fcaa1732d0
   Function flags: body
   Called by: 
   Calls: GetCalibrationValues/89 ClockGetCoreClockFrequency/96 
-ADC0_IRQHandler/90 (ADC0_IRQHandler) @0x76fcaa173168
+ADC0_IRQHandler/90 (ADC0_IRQHandler) @0x7d4a0b373168
   Type: function definition analyzed
   Visibility: force_output externally_visible no_reorder public
   References: 
@@ -1355,7 +1355,7 @@ ADC0_IRQHandler/90 (ADC0_IRQHandler) @0x76fcaa173168
   Function flags: body
   Called by: 
   Calls: 
-GetCalibrationValues/89 (GetCalibrationValues) @0x76fcaa173000
+GetCalibrationValues/89 (GetCalibrationValues) @0x7d4a0b373000
   Type: function definition analyzed
   Visibility: force_output no_reorder prevailing_def_ironly
   References: adc_cal/77 (write) adc_bias/78 (write) cal_gain_1v25/79 (write) cal_offset_1v25/80 (write) cal_gain_2v5/81 (write) cal_offset_2v5/82 (write) cal_gain_vdd/83 (write) cal_offset_vdd/84 (write) cal_gain_5v/85 (write) cal_offset_5v/86 (write) cal_gain_2xvdd/87 (write) cal_offset_2xvdd/88 (write) 
@@ -1364,98 +1364,98 @@ GetCalibrationValues/89 (GetCalibrationValues) @0x76fcaa173000
   Function flags: body
   Called by: ADC_Init/91 
   Calls: 
-cal_offset_2xvdd/88 (cal_offset_2xvdd) @0x76fcaa167b80
+cal_offset_2xvdd/88 (cal_offset_2xvdd) @0x7d4a0b367b80
   Type: variable definition analyzed
   Visibility: force_output no_reorder prevailing_def_ironly
   References: 
   Referring: GetCalibrationValues/89 (write) 
   Availability: available
   Varpool flags:
-cal_gain_2xvdd/87 (cal_gain_2xvdd) @0x76fcaa167b00
+cal_gain_2xvdd/87 (cal_gain_2xvdd) @0x7d4a0b367b00
   Type: variable definition analyzed
   Visibility: force_output no_reorder prevailing_def_ironly
   References: 
   Referring: GetCalibrationValues/89 (write) 
   Availability: available
   Varpool flags:
-cal_offset_5v/86 (cal_offset_5v) @0x76fcaa167a80
+cal_offset_5v/86 (cal_offset_5v) @0x7d4a0b367a80
   Type: variable definition analyzed
   Visibility: force_output no_reorder prevailing_def_ironly
   References: 
   Referring: GetCalibrationValues/89 (write) 
   Availability: available
   Varpool flags:
-cal_gain_5v/85 (cal_gain_5v) @0x76fcaa167a00
+cal_gain_5v/85 (cal_gain_5v) @0x7d4a0b367a00
   Type: variable definition analyzed
   Visibility: force_output no_reorder prevailing_def_ironly
   References: 
   Referring: GetCalibrationValues/89 (write) 
   Availability: available
   Varpool flags:
-cal_offset_vdd/84 (cal_offset_vdd) @0x76fcaa167980
+cal_offset_vdd/84 (cal_offset_vdd) @0x7d4a0b367980
   Type: variable definition analyzed
   Visibility: force_output no_reorder prevailing_def_ironly
   References: 
   Referring: GetCalibrationValues/89 (write) 
   Availability: available
   Varpool flags:
-cal_gain_vdd/83 (cal_gain_vdd) @0x76fcaa167900
+cal_gain_vdd/83 (cal_gain_vdd) @0x7d4a0b367900
   Type: variable definition analyzed
   Visibility: force_output no_reorder prevailing_def_ironly
   References: 
   Referring: GetCalibrationValues/89 (write) 
   Availability: available
   Varpool flags:
-cal_offset_2v5/82 (cal_offset_2v5) @0x76fcaa167880
+cal_offset_2v5/82 (cal_offset_2v5) @0x7d4a0b367880
   Type: variable definition analyzed
   Visibility: force_output no_reorder prevailing_def_ironly
   References: 
   Referring: GetCalibrationValues/89 (write) 
   Availability: available
   Varpool flags:
-cal_gain_2v5/81 (cal_gain_2v5) @0x76fcaa167800
+cal_gain_2v5/81 (cal_gain_2v5) @0x7d4a0b367800
   Type: variable definition analyzed
   Visibility: force_output no_reorder prevailing_def_ironly
   References: 
   Referring: GetCalibrationValues/89 (write) 
   Availability: available
   Varpool flags:
-cal_offset_1v25/80 (cal_offset_1v25) @0x76fcaa167780
+cal_offset_1v25/80 (cal_offset_1v25) @0x7d4a0b367780
   Type: variable definition analyzed
   Visibility: force_output no_reorder prevailing_def_ironly
   References: 
   Referring: GetCalibrationValues/89 (write) 
   Availability: available
   Varpool flags:
-cal_gain_1v25/79 (cal_gain_1v25) @0x76fcaa167700
+cal_gain_1v25/79 (cal_gain_1v25) @0x7d4a0b367700
   Type: variable definition analyzed
   Visibility: force_output no_reorder prevailing_def_ironly
   References: 
   Referring: GetCalibrationValues/89 (write) 
   Availability: available
   Varpool flags:
-adc_bias/78 (adc_bias) @0x76fcaa167680
+adc_bias/78 (adc_bias) @0x7d4a0b367680
   Type: variable definition analyzed
   Visibility: force_output no_reorder prevailing_def_ironly
   References: 
   Referring: GetCalibrationValues/89 (write) 
   Availability: available
   Varpool flags:
-adc_cal/77 (adc_cal) @0x76fcaa167600
+adc_cal/77 (adc_cal) @0x7d4a0b367600
   Type: variable definition analyzed
   Visibility: force_output no_reorder prevailing_def_ironly
   References: 
   Referring: GetCalibrationValues/89 (write) 
   Availability: available
   Varpool flags:
-singlectrl/76 (singlectrl) @0x76fcaa167580
+singlectrl/76 (singlectrl) @0x7d4a0b367580
   Type: variable definition analyzed
   Visibility: force_output no_reorder prevailing_def_ironly
   References: 
   Referring: ADC_Init/91 (write) ADC_ConfigChannel/92 (write) ADC_StartReading/94 (read) 
   Availability: available
   Varpool flags:
-default_singlectrl/75 (default_singlectrl) @0x76fcaa167500
+default_singlectrl/75 (default_singlectrl) @0x7d4a0b367500
   Type: variable definition analyzed
   Visibility: force_output no_reorder prevailing_def_ironly
   References: 
@@ -1473,7 +1473,7 @@ Removing variables:
 
 Final Symbol table:
 
-ClockGetCoreClockFrequency/96 (ClockGetCoreClockFrequency) @0x76fcaa173b40
+ClockGetCoreClockFrequency/96 (ClockGetCoreClockFrequency) @0x7d4a0b373b40
   Type: function
   Visibility: external public
   References: 
@@ -1482,7 +1482,7 @@ ClockGetCoreClockFrequency/96 (ClockGetCoreClockFrequency) @0x76fcaa173b40
   Function flags:
   Called by: 
   Calls: 
-ADC_GetReading/95 (ADC_GetReading) @0x76fcaa173870
+ADC_GetReading/95 (ADC_GetReading) @0x7d4a0b373870
   Type: function definition analyzed
   Visibility: force_output externally_visible no_reorder asm_written public section:.text.ADC_GetReading (implicit_section)
   References: 
@@ -1491,7 +1491,7 @@ ADC_GetReading/95 (ADC_GetReading) @0x76fcaa173870
   Function flags:
   Called by: 
   Calls: 
-ADC_StartReading/94 (ADC_StartReading) @0x76fcaa173708
+ADC_StartReading/94 (ADC_StartReading) @0x7d4a0b373708
   Type: function definition analyzed
   Visibility: force_output externally_visible no_reorder asm_written public section:.text.ADC_StartReading (implicit_section)
   References: 
@@ -1500,7 +1500,7 @@ ADC_StartReading/94 (ADC_StartReading) @0x76fcaa173708
   Function flags:
   Called by: 
   Calls: 
-ADC_Read/93 (ADC_Read) @0x76fcaa1735a0
+ADC_Read/93 (ADC_Read) @0x7d4a0b3735a0
   Type: function definition analyzed
   Visibility: force_output externally_visible no_reorder asm_written public section:.text.ADC_Read (implicit_section)
   References: 
@@ -1509,7 +1509,7 @@ ADC_Read/93 (ADC_Read) @0x76fcaa1735a0
   Function flags:
   Called by: 
   Calls: 
-ADC_ConfigChannel/92 (ADC_ConfigChannel) @0x76fcaa173438
+ADC_ConfigChannel/92 (ADC_ConfigChannel) @0x7d4a0b373438
   Type: function definition analyzed
   Visibility: force_output externally_visible no_reorder asm_written public section:.text.ADC_ConfigChannel (implicit_section)
   References: 
@@ -1518,7 +1518,7 @@ ADC_ConfigChannel/92 (ADC_ConfigChannel) @0x76fcaa173438
   Function flags:
   Called by: 
   Calls: 
-ADC_Init/91 (ADC_Init) @0x76fcaa1732d0
+ADC_Init/91 (ADC_Init) @0x7d4a0b3732d0
   Type: function definition analyzed
   Visibility: force_output externally_visible no_reorder asm_written public section:.text.ADC_Init (implicit_section)
   References: 
@@ -1527,7 +1527,7 @@ ADC_Init/91 (ADC_Init) @0x76fcaa1732d0
   Function flags:
   Called by: 
   Calls: 
-ADC0_IRQHandler/90 (ADC0_IRQHandler) @0x76fcaa173168
+ADC0_IRQHandler/90 (ADC0_IRQHandler) @0x7d4a0b373168
   Type: function definition analyzed
   Visibility: force_output externally_visible no_reorder asm_written public section:.text.ADC0_IRQHandler (implicit_section)
   References: 
@@ -1536,7 +1536,7 @@ ADC0_IRQHandler/90 (ADC0_IRQHandler) @0x76fcaa173168
   Function flags:
   Called by: 
   Calls: 
-GetCalibrationValues/89 (GetCalibrationValues) @0x76fcaa173000
+GetCalibrationValues/89 (GetCalibrationValues) @0x7d4a0b373000
   Type: function definition analyzed
   Visibility: force_output no_reorder prevailing_def_ironly asm_written section:.text.GetCalibrationValues (implicit_section)
   References: 
@@ -1545,7 +1545,7 @@ GetCalibrationValues/89 (GetCalibrationValues) @0x76fcaa173000
   Function flags:
   Called by: 
   Calls: 
-cal_offset_2xvdd/88 (cal_offset_2xvdd) @0x76fcaa167b80
+cal_offset_2xvdd/88 (cal_offset_2xvdd) @0x7d4a0b367b80
   Type: variable definition analyzed
   Visibility: force_output no_reorder prevailing_def_ironly asm_written section:.bss.cal_offset_2xvdd (implicit_section)
   Aux: @0x1
@@ -1553,106 +1553,106 @@ cal_offset_2xvdd/88 (cal_offset_2xvdd) @0x76fcaa167b80
   Referring: 
   Availability: available
   Varpool flags:
-cal_gain_2xvdd/87 (cal_gain_2xvdd) @0x76fcaa167b00
+cal_gain_2xvdd/87 (cal_gain_2xvdd) @0x7d4a0b367b00
   Type: variable definition analyzed
   Visibility: force_output no_reorder prevailing_def_ironly asm_written section:.bss.cal_gain_2xvdd (implicit_section)
-  Aux: @0x76fcaa167b80
+  Aux: @0x7d4a0b367b80
   References: 
   Referring: 
   Availability: available
   Varpool flags:
-cal_offset_5v/86 (cal_offset_5v) @0x76fcaa167a80
+cal_offset_5v/86 (cal_offset_5v) @0x7d4a0b367a80
   Type: variable definition analyzed
   Visibility: force_output no_reorder prevailing_def_ironly asm_written section:.bss.cal_offset_5v (implicit_section)
-  Aux: @0x76fcaa167b00
+  Aux: @0x7d4a0b367b00
   References: 
   Referring: 
   Availability: available
   Varpool flags:
-cal_gain_5v/85 (cal_gain_5v) @0x76fcaa167a00
+cal_gain_5v/85 (cal_gain_5v) @0x7d4a0b367a00
   Type: variable definition analyzed
   Visibility: force_output no_reorder prevailing_def_ironly asm_written section:.bss.cal_gain_5v (implicit_section)
-  Aux: @0x76fcaa167a80
+  Aux: @0x7d4a0b367a80
   References: 
   Referring: 
   Availability: available
   Varpool flags:
-cal_offset_vdd/84 (cal_offset_vdd) @0x76fcaa167980
+cal_offset_vdd/84 (cal_offset_vdd) @0x7d4a0b367980
   Type: variable definition analyzed
   Visibility: force_output no_reorder prevailing_def_ironly asm_written section:.bss.cal_offset_vdd (implicit_section)
-  Aux: @0x76fcaa167a00
+  Aux: @0x7d4a0b367a00
   References: 
   Referring: 
   Availability: available
   Varpool flags:
-cal_gain_vdd/83 (cal_gain_vdd) @0x76fcaa167900
+cal_gain_vdd/83 (cal_gain_vdd) @0x7d4a0b367900
   Type: variable definition analyzed
   Visibility: force_output no_reorder prevailing_def_ironly asm_written section:.bss.cal_gain_vdd (implicit_section)
-  Aux: @0x76fcaa167980
+  Aux: @0x7d4a0b367980
   References: 
   Referring: 
   Availability: available
   Varpool flags:
-cal_offset_2v5/82 (cal_offset_2v5) @0x76fcaa167880
+cal_offset_2v5/82 (cal_offset_2v5) @0x7d4a0b367880
   Type: variable definition analyzed
   Visibility: force_output no_reorder prevailing_def_ironly asm_written section:.bss.cal_offset_2v5 (implicit_section)
-  Aux: @0x76fcaa167900
+  Aux: @0x7d4a0b367900
   References: 
   Referring: 
   Availability: available
   Varpool flags:
-cal_gain_2v5/81 (cal_gain_2v5) @0x76fcaa167800
+cal_gain_2v5/81 (cal_gain_2v5) @0x7d4a0b367800
   Type: variable definition analyzed
   Visibility: force_output no_reorder prevailing_def_ironly asm_written section:.bss.cal_gain_2v5 (implicit_section)
-  Aux: @0x76fcaa167880
+  Aux: @0x7d4a0b367880
   References: 
   Referring: 
   Availability: available
   Varpool flags:
-cal_offset_1v25/80 (cal_offset_1v25) @0x76fcaa167780
+cal_offset_1v25/80 (cal_offset_1v25) @0x7d4a0b367780
   Type: variable definition analyzed
   Visibility: force_output no_reorder prevailing_def_ironly asm_written section:.bss.cal_offset_1v25 (implicit_section)
-  Aux: @0x76fcaa167800
+  Aux: @0x7d4a0b367800
   References: 
   Referring: 
   Availability: available
   Varpool flags:
-cal_gain_1v25/79 (cal_gain_1v25) @0x76fcaa167700
+cal_gain_1v25/79 (cal_gain_1v25) @0x7d4a0b367700
   Type: variable definition analyzed
   Visibility: force_output no_reorder prevailing_def_ironly asm_written section:.bss.cal_gain_1v25 (implicit_section)
-  Aux: @0x76fcaa167780
+  Aux: @0x7d4a0b367780
   References: 
   Referring: 
   Availability: available
   Varpool flags:
-adc_bias/78 (adc_bias) @0x76fcaa167680
+adc_bias/78 (adc_bias) @0x7d4a0b367680
   Type: variable definition analyzed
   Visibility: force_output no_reorder prevailing_def_ironly asm_written section:.bss.adc_bias (implicit_section)
-  Aux: @0x76fcaa167700
+  Aux: @0x7d4a0b367700
   References: 
   Referring: 
   Availability: available
   Varpool flags:
-adc_cal/77 (adc_cal) @0x76fcaa167600
+adc_cal/77 (adc_cal) @0x7d4a0b367600
   Type: variable definition analyzed
   Visibility: force_output no_reorder prevailing_def_ironly asm_written section:.bss.adc_cal (implicit_section)
-  Aux: @0x76fcaa167680
+  Aux: @0x7d4a0b367680
   References: 
   Referring: 
   Availability: available
   Varpool flags:
-singlectrl/76 (singlectrl) @0x76fcaa167580
+singlectrl/76 (singlectrl) @0x7d4a0b367580
   Type: variable definition analyzed
   Visibility: force_output no_reorder prevailing_def_ironly asm_written section:.bss.singlectrl (implicit_section)
-  Aux: @0x76fcaa167600
+  Aux: @0x7d4a0b367600
   References: 
   Referring: 
   Availability: available
   Varpool flags:
-default_singlectrl/75 (default_singlectrl) @0x76fcaa167500
+default_singlectrl/75 (default_singlectrl) @0x7d4a0b367500
   Type: variable definition analyzed
   Visibility: force_output no_reorder prevailing_def_ironly asm_written section:.rodata.default_singlectrl (implicit_section)
-  Aux: @0x76fcaa167580
+  Aux: @0x7d4a0b367580
   References: 
   Referring: 
   Availability: available

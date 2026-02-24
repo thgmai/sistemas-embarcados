@@ -3,7 +3,7 @@ Trivially needed symbols: Default_Handler/54 _main/53 SystemInit/52 Reset_Handle
 
 Initial Symbol table:
 
-main/61 (main) @0x7e1cb7e5a5a0
+main/61 (main) @0x74eaa3a5a5a0
   Type: function
   Visibility: external public
   References: 
@@ -11,42 +11,42 @@ main/61 (main) @0x7e1cb7e5a5a0
   Function flags:
   Called by: Reset_Handler/51 
   Calls: 
-__bss_end__/60 (__bss_end__) @0x7e1cb7e58780
+__bss_end__/60 (__bss_end__) @0x74eaa3a58780
   Type: variable
   Visibility: external public
   References: 
   Referring: Reset_Handler/51 (addr) 
   Availability: not-ready
   Varpool flags:
-__bss_start__/59 (__bss_start__) @0x7e1cb7e58700
+__bss_start__/59 (__bss_start__) @0x74eaa3a58700
   Type: variable
   Visibility: external public
   References: 
   Referring: Reset_Handler/51 (addr) 
   Availability: not-ready
   Varpool flags:
-__data_end__/58 (__data_end__) @0x7e1cb7e58600
+__data_end__/58 (__data_end__) @0x74eaa3a58600
   Type: variable
   Visibility: external public
   References: 
   Referring: Reset_Handler/51 (addr) 
   Availability: not-ready
   Varpool flags:
-__data_start__/57 (__data_start__) @0x7e1cb7e58580
+__data_start__/57 (__data_start__) @0x74eaa3a58580
   Type: variable
   Visibility: external public
   References: 
   Referring: Reset_Handler/51 (addr) 
   Availability: not-ready
   Varpool flags:
-__etext/56 (__etext) @0x7e1cb7e58500
+__etext/56 (__etext) @0x74eaa3a58500
   Type: variable
   Visibility: external public
   References: 
   Referring: Reset_Handler/51 (addr) 
   Availability: not-ready
   Varpool flags:
-__StackTop/55 (__StackTop) @0x7e1cb7e5a2d0
+__StackTop/55 (__StackTop) @0x74eaa3a5a2d0
   Type: function
   Visibility: external public
   Address is taken.
@@ -55,7 +55,7 @@ __StackTop/55 (__StackTop) @0x7e1cb7e5a2d0
   Function flags:
   Called by: 
   Calls: 
-Default_Handler/54 (Default_Handler) @0x7e1cb7e5a168
+Default_Handler/54 (Default_Handler) @0x74eaa3a5a168
   Type: function definition analyzed
   Visibility: force_output no_reorder public weak
   Address is taken.
@@ -65,534 +65,534 @@ Default_Handler/54 (Default_Handler) @0x7e1cb7e5a168
   Function flags: body
   Called by: 
   Calls: 
-_main/53 (_main) @0x7e1cb7e5a000
+_main/53 (_main) @0x74eaa3a5a000
   Type: function definition analyzed
   Visibility: force_output no_reorder public weak
-  Aux: @0x7e1cb7e5a168
+  Aux: @0x74eaa3a5a168
   References: 
   Referring: 
   Function flags: body
   Called by: Reset_Handler/51 
   Calls: 
-SystemInit/52 (SystemInit) @0x7e1cb7e50b40
+SystemInit/52 (SystemInit) @0x74eaa3a50b40
   Type: function definition analyzed
   Visibility: force_output no_reorder public weak
-  Aux: @0x7e1cb7e5a000
+  Aux: @0x74eaa3a5a000
   References: 
   Referring: 
   Function flags: body
   Called by: Reset_Handler/51 
   Calls: 
-Reset_Handler/51 (Reset_Handler) @0x7e1cb7e50e10
+Reset_Handler/51 (Reset_Handler) @0x74eaa3a50e10
   Type: function definition analyzed
   Visibility: force_output no_reorder public weak
   Address is taken.
-  Aux: @0x7e1cb7e50b40
+  Aux: @0x74eaa3a50b40
   References: __etext/56 (addr) __data_start__/57 (addr) __data_end__/58 (addr) __bss_start__/59 (addr) __bss_end__/60 (addr) 
   Referring: __Vectors/50 (addr) 
   Function flags: body
   Called by: 
   Calls: main/61 _main/53 SystemInit/52 
-__Vectors/50 (__Vectors) @0x7e1cb7e4cc80
+__Vectors/50 (__Vectors) @0x74eaa3a4cc80
   Type: variable definition analyzed
   Visibility: force_output no_reorder public section:.vectors
-  Aux: @0x7e1cb7e50e10
+  Aux: @0x74eaa3a50e10
   References: __StackTop/55 (addr) Reset_Handler/51 (addr) NMI_Handler/2 (addr) HardFault_Handler/3 (addr) MemManage_Handler/4 (addr) BusFault_Handler/5 (addr) UsageFault_Handler/6 (addr) Default_Handler/54 (addr) Default_Handler/54 (addr) Default_Handler/54 (addr) Default_Handler/54 (addr) SVC_Handler/8 (addr) DebugMon_Handler/7 (addr) Default_Handler/54 (addr) PendSV_Handler/9 (addr) SysTick_Handler/10 (addr) DMA_IRQHandler/11 (addr) GPIO_EVEN_IRQHandler/12 (addr) TIMER0_IRQHandler/13 (addr) USART0_RX_IRQHandler/14 (addr) USART0_TX_IRQHandler/15 (addr) USB_IRQHandler/16 (addr) ACMP0_IRQHandler/17 (addr) ADC0_IRQHandler/18 (addr) DAC0_IRQHandler/19 (addr) I2C0_IRQHandler/20 (addr) I2C1_IRQHandler/21 (addr) GPIO_ODD_IRQHandler/22 (addr) TIMER1_IRQHandler/23 (addr) TIMER2_IRQHandler/24 (addr) TIMER3_IRQHandler/25 (addr) USART1_RX_IRQHandler/26 (addr) USART1_TX_IRQHandler/27 (addr) LESENSE_IRQHandler/28 (addr) USART2_RX_IRQHandler/29 (addr) USART2_TX_IRQHandler/30 (addr) UART0_RX_IRQHandler/31 (addr) UART0_TX_IRQHandler/32 (addr) UART1_RX_IRQHandler/33 (addr) UART1_TX_IRQHandler/34 (addr) LEUART0_IRQHandler/35 (addr) LEUART1_IRQHandler/36 (addr) LETIMER0_IRQHandler/37 (addr) PCNT0_IRQHandler/38 (addr) PCNT1_IRQHandler/39 (addr) PCNT2_IRQHandler/40 (addr) RTC_IRQHandler/41 (addr) BURTC_IRQHandler/42 (addr) CMU_IRQHandler/43 (addr) VCMP_IRQHandler/44 (addr) LCD_IRQHandler/45 (addr) MSC_IRQHandler/46 (addr) AES_IRQHandler/47 (addr) EBI_IRQHandler/48 (addr) EMU_IRQHandler/49 (addr) 
   Referring: 
   Availability: not-ready
   Varpool flags: initialized read-only const-value-known
-EMU_IRQHandler/49 (EMU_IRQHandler) @0x7e1cb7e509d8
+EMU_IRQHandler/49 (EMU_IRQHandler) @0x74eaa3a509d8
   Type: function definition analyzed alias
   Visibility: public weak
   Address is taken.
-  Aux: @0x7e1cb7e4cc80
+  Aux: @0x74eaa3a4cc80
   References: Default_Handler/54 (alias) 
   Referring: __Vectors/50 (addr) 
   Function flags:
   Called by: 
   Calls: 
-EBI_IRQHandler/48 (EBI_IRQHandler) @0x7e1cb7e50870
+EBI_IRQHandler/48 (EBI_IRQHandler) @0x74eaa3a50870
   Type: function definition analyzed alias
   Visibility: public weak
   Address is taken.
-  Aux: @0x7e1cb7e509d8
+  Aux: @0x74eaa3a509d8
   References: Default_Handler/54 (alias) 
   Referring: __Vectors/50 (addr) 
   Function flags:
   Called by: 
   Calls: 
-AES_IRQHandler/47 (AES_IRQHandler) @0x7e1cb7e50708
+AES_IRQHandler/47 (AES_IRQHandler) @0x74eaa3a50708
   Type: function definition analyzed alias
   Visibility: public weak
   Address is taken.
-  Aux: @0x7e1cb7e50870
+  Aux: @0x74eaa3a50870
   References: Default_Handler/54 (alias) 
   Referring: __Vectors/50 (addr) 
   Function flags:
   Called by: 
   Calls: 
-MSC_IRQHandler/46 (MSC_IRQHandler) @0x7e1cb7e505a0
+MSC_IRQHandler/46 (MSC_IRQHandler) @0x74eaa3a505a0
   Type: function definition analyzed alias
   Visibility: public weak
   Address is taken.
-  Aux: @0x7e1cb7e50708
+  Aux: @0x74eaa3a50708
   References: Default_Handler/54 (alias) 
   Referring: __Vectors/50 (addr) 
   Function flags:
   Called by: 
   Calls: 
-LCD_IRQHandler/45 (LCD_IRQHandler) @0x7e1cb7e50438
+LCD_IRQHandler/45 (LCD_IRQHandler) @0x74eaa3a50438
   Type: function definition analyzed alias
   Visibility: public weak
   Address is taken.
-  Aux: @0x7e1cb7e505a0
+  Aux: @0x74eaa3a505a0
   References: Default_Handler/54 (alias) 
   Referring: __Vectors/50 (addr) 
   Function flags:
   Called by: 
   Calls: 
-VCMP_IRQHandler/44 (VCMP_IRQHandler) @0x7e1cb7e502d0
+VCMP_IRQHandler/44 (VCMP_IRQHandler) @0x74eaa3a502d0
   Type: function definition analyzed alias
   Visibility: public weak
   Address is taken.
-  Aux: @0x7e1cb7e50438
+  Aux: @0x74eaa3a50438
   References: Default_Handler/54 (alias) 
   Referring: __Vectors/50 (addr) 
   Function flags:
   Called by: 
   Calls: 
-CMU_IRQHandler/43 (CMU_IRQHandler) @0x7e1cb7e50168
+CMU_IRQHandler/43 (CMU_IRQHandler) @0x74eaa3a50168
   Type: function definition analyzed alias
   Visibility: public weak
   Address is taken.
-  Aux: @0x7e1cb7e502d0
+  Aux: @0x74eaa3a502d0
   References: Default_Handler/54 (alias) 
   Referring: __Vectors/50 (addr) 
   Function flags:
   Called by: 
   Calls: 
-BURTC_IRQHandler/42 (BURTC_IRQHandler) @0x7e1cb7e50000
+BURTC_IRQHandler/42 (BURTC_IRQHandler) @0x74eaa3a50000
   Type: function definition analyzed alias
   Visibility: public weak
   Address is taken.
-  Aux: @0x7e1cb7e50168
+  Aux: @0x74eaa3a50168
   References: Default_Handler/54 (alias) 
   Referring: __Vectors/50 (addr) 
   Function flags:
   Called by: 
   Calls: 
-RTC_IRQHandler/41 (RTC_IRQHandler) @0x7e1cb7e4de10
+RTC_IRQHandler/41 (RTC_IRQHandler) @0x74eaa3a4de10
   Type: function definition analyzed alias
   Visibility: public weak
   Address is taken.
-  Aux: @0x7e1cb7e50000
+  Aux: @0x74eaa3a50000
   References: Default_Handler/54 (alias) 
   Referring: __Vectors/50 (addr) 
   Function flags:
   Called by: 
   Calls: 
-PCNT2_IRQHandler/40 (PCNT2_IRQHandler) @0x7e1cb7e4dca8
+PCNT2_IRQHandler/40 (PCNT2_IRQHandler) @0x74eaa3a4dca8
   Type: function definition analyzed alias
   Visibility: public weak
   Address is taken.
-  Aux: @0x7e1cb7e4de10
+  Aux: @0x74eaa3a4de10
   References: Default_Handler/54 (alias) 
   Referring: __Vectors/50 (addr) 
   Function flags:
   Called by: 
   Calls: 
-PCNT1_IRQHandler/39 (PCNT1_IRQHandler) @0x7e1cb7e4db40
+PCNT1_IRQHandler/39 (PCNT1_IRQHandler) @0x74eaa3a4db40
   Type: function definition analyzed alias
   Visibility: public weak
   Address is taken.
-  Aux: @0x7e1cb7e4dca8
+  Aux: @0x74eaa3a4dca8
   References: Default_Handler/54 (alias) 
   Referring: __Vectors/50 (addr) 
   Function flags:
   Called by: 
   Calls: 
-PCNT0_IRQHandler/38 (PCNT0_IRQHandler) @0x7e1cb7e4d9d8
+PCNT0_IRQHandler/38 (PCNT0_IRQHandler) @0x74eaa3a4d9d8
   Type: function definition analyzed alias
   Visibility: public weak
   Address is taken.
-  Aux: @0x7e1cb7e4db40
+  Aux: @0x74eaa3a4db40
   References: Default_Handler/54 (alias) 
   Referring: __Vectors/50 (addr) 
   Function flags:
   Called by: 
   Calls: 
-LETIMER0_IRQHandler/37 (LETIMER0_IRQHandler) @0x7e1cb7e4d870
+LETIMER0_IRQHandler/37 (LETIMER0_IRQHandler) @0x74eaa3a4d870
   Type: function definition analyzed alias
   Visibility: public weak
   Address is taken.
-  Aux: @0x7e1cb7e4d9d8
+  Aux: @0x74eaa3a4d9d8
   References: Default_Handler/54 (alias) 
   Referring: __Vectors/50 (addr) 
   Function flags:
   Called by: 
   Calls: 
-LEUART1_IRQHandler/36 (LEUART1_IRQHandler) @0x7e1cb7e4d708
+LEUART1_IRQHandler/36 (LEUART1_IRQHandler) @0x74eaa3a4d708
   Type: function definition analyzed alias
   Visibility: public weak
   Address is taken.
-  Aux: @0x7e1cb7e4d870
+  Aux: @0x74eaa3a4d870
   References: Default_Handler/54 (alias) 
   Referring: __Vectors/50 (addr) 
   Function flags:
   Called by: 
   Calls: 
-LEUART0_IRQHandler/35 (LEUART0_IRQHandler) @0x7e1cb7e4d5a0
+LEUART0_IRQHandler/35 (LEUART0_IRQHandler) @0x74eaa3a4d5a0
   Type: function definition analyzed alias
   Visibility: public weak
   Address is taken.
-  Aux: @0x7e1cb7e4d708
+  Aux: @0x74eaa3a4d708
   References: Default_Handler/54 (alias) 
   Referring: __Vectors/50 (addr) 
   Function flags:
   Called by: 
   Calls: 
-UART1_TX_IRQHandler/34 (UART1_TX_IRQHandler) @0x7e1cb7e4d438
+UART1_TX_IRQHandler/34 (UART1_TX_IRQHandler) @0x74eaa3a4d438
   Type: function definition analyzed alias
   Visibility: public weak
   Address is taken.
-  Aux: @0x7e1cb7e4d5a0
+  Aux: @0x74eaa3a4d5a0
   References: Default_Handler/54 (alias) 
   Referring: __Vectors/50 (addr) 
   Function flags:
   Called by: 
   Calls: 
-UART1_RX_IRQHandler/33 (UART1_RX_IRQHandler) @0x7e1cb7e4d2d0
+UART1_RX_IRQHandler/33 (UART1_RX_IRQHandler) @0x74eaa3a4d2d0
   Type: function definition analyzed alias
   Visibility: public weak
   Address is taken.
-  Aux: @0x7e1cb7e4d438
+  Aux: @0x74eaa3a4d438
   References: Default_Handler/54 (alias) 
   Referring: __Vectors/50 (addr) 
   Function flags:
   Called by: 
   Calls: 
-UART0_TX_IRQHandler/32 (UART0_TX_IRQHandler) @0x7e1cb7e4d168
+UART0_TX_IRQHandler/32 (UART0_TX_IRQHandler) @0x74eaa3a4d168
   Type: function definition analyzed alias
   Visibility: public weak
   Address is taken.
-  Aux: @0x7e1cb7e4d2d0
+  Aux: @0x74eaa3a4d2d0
   References: Default_Handler/54 (alias) 
   Referring: __Vectors/50 (addr) 
   Function flags:
   Called by: 
   Calls: 
-UART0_RX_IRQHandler/31 (UART0_RX_IRQHandler) @0x7e1cb7e4d000
+UART0_RX_IRQHandler/31 (UART0_RX_IRQHandler) @0x74eaa3a4d000
   Type: function definition analyzed alias
   Visibility: public weak
   Address is taken.
-  Aux: @0x7e1cb7e4d168
+  Aux: @0x74eaa3a4d168
   References: Default_Handler/54 (alias) 
   Referring: __Vectors/50 (addr) 
   Function flags:
   Called by: 
   Calls: 
-USART2_TX_IRQHandler/30 (USART2_TX_IRQHandler) @0x7e1cb7e462d0
+USART2_TX_IRQHandler/30 (USART2_TX_IRQHandler) @0x74eaa3a462d0
   Type: function definition analyzed alias
   Visibility: public weak
   Address is taken.
-  Aux: @0x7e1cb7e4d000
+  Aux: @0x74eaa3a4d000
   References: Default_Handler/54 (alias) 
   Referring: __Vectors/50 (addr) 
   Function flags:
   Called by: 
   Calls: 
-USART2_RX_IRQHandler/29 (USART2_RX_IRQHandler) @0x7e1cb7e49e10
+USART2_RX_IRQHandler/29 (USART2_RX_IRQHandler) @0x74eaa3a49e10
   Type: function definition analyzed alias
   Visibility: public weak
   Address is taken.
-  Aux: @0x7e1cb7e462d0
+  Aux: @0x74eaa3a462d0
   References: Default_Handler/54 (alias) 
   Referring: __Vectors/50 (addr) 
   Function flags:
   Called by: 
   Calls: 
-LESENSE_IRQHandler/28 (LESENSE_IRQHandler) @0x7e1cb7e49ca8
+LESENSE_IRQHandler/28 (LESENSE_IRQHandler) @0x74eaa3a49ca8
   Type: function definition analyzed alias
   Visibility: public weak
   Address is taken.
-  Aux: @0x7e1cb7e49e10
+  Aux: @0x74eaa3a49e10
   References: Default_Handler/54 (alias) 
   Referring: __Vectors/50 (addr) 
   Function flags:
   Called by: 
   Calls: 
-USART1_TX_IRQHandler/27 (USART1_TX_IRQHandler) @0x7e1cb7e49b40
+USART1_TX_IRQHandler/27 (USART1_TX_IRQHandler) @0x74eaa3a49b40
   Type: function definition analyzed alias
   Visibility: public weak
   Address is taken.
-  Aux: @0x7e1cb7e49ca8
+  Aux: @0x74eaa3a49ca8
   References: Default_Handler/54 (alias) 
   Referring: __Vectors/50 (addr) 
   Function flags:
   Called by: 
   Calls: 
-USART1_RX_IRQHandler/26 (USART1_RX_IRQHandler) @0x7e1cb7e499d8
+USART1_RX_IRQHandler/26 (USART1_RX_IRQHandler) @0x74eaa3a499d8
   Type: function definition analyzed alias
   Visibility: public weak
   Address is taken.
-  Aux: @0x7e1cb7e49b40
+  Aux: @0x74eaa3a49b40
   References: Default_Handler/54 (alias) 
   Referring: __Vectors/50 (addr) 
   Function flags:
   Called by: 
   Calls: 
-TIMER3_IRQHandler/25 (TIMER3_IRQHandler) @0x7e1cb7e49870
+TIMER3_IRQHandler/25 (TIMER3_IRQHandler) @0x74eaa3a49870
   Type: function definition analyzed alias
   Visibility: public weak
   Address is taken.
-  Aux: @0x7e1cb7e499d8
+  Aux: @0x74eaa3a499d8
   References: Default_Handler/54 (alias) 
   Referring: __Vectors/50 (addr) 
   Function flags:
   Called by: 
   Calls: 
-TIMER2_IRQHandler/24 (TIMER2_IRQHandler) @0x7e1cb7e49708
+TIMER2_IRQHandler/24 (TIMER2_IRQHandler) @0x74eaa3a49708
   Type: function definition analyzed alias
   Visibility: public weak
   Address is taken.
-  Aux: @0x7e1cb7e49870
+  Aux: @0x74eaa3a49870
   References: Default_Handler/54 (alias) 
   Referring: __Vectors/50 (addr) 
   Function flags:
   Called by: 
   Calls: 
-TIMER1_IRQHandler/23 (TIMER1_IRQHandler) @0x7e1cb7e495a0
+TIMER1_IRQHandler/23 (TIMER1_IRQHandler) @0x74eaa3a495a0
   Type: function definition analyzed alias
   Visibility: public weak
   Address is taken.
-  Aux: @0x7e1cb7e49708
+  Aux: @0x74eaa3a49708
   References: Default_Handler/54 (alias) 
   Referring: __Vectors/50 (addr) 
   Function flags:
   Called by: 
   Calls: 
-GPIO_ODD_IRQHandler/22 (GPIO_ODD_IRQHandler) @0x7e1cb7e49438
+GPIO_ODD_IRQHandler/22 (GPIO_ODD_IRQHandler) @0x74eaa3a49438
   Type: function definition analyzed alias
   Visibility: public weak
   Address is taken.
-  Aux: @0x7e1cb7e495a0
+  Aux: @0x74eaa3a495a0
   References: Default_Handler/54 (alias) 
   Referring: __Vectors/50 (addr) 
   Function flags:
   Called by: 
   Calls: 
-I2C1_IRQHandler/21 (I2C1_IRQHandler) @0x7e1cb7e492d0
+I2C1_IRQHandler/21 (I2C1_IRQHandler) @0x74eaa3a492d0
   Type: function definition analyzed alias
   Visibility: public weak
   Address is taken.
-  Aux: @0x7e1cb7e49438
+  Aux: @0x74eaa3a49438
   References: Default_Handler/54 (alias) 
   Referring: __Vectors/50 (addr) 
   Function flags:
   Called by: 
   Calls: 
-I2C0_IRQHandler/20 (I2C0_IRQHandler) @0x7e1cb7e49168
+I2C0_IRQHandler/20 (I2C0_IRQHandler) @0x74eaa3a49168
   Type: function definition analyzed alias
   Visibility: public weak
   Address is taken.
-  Aux: @0x7e1cb7e492d0
+  Aux: @0x74eaa3a492d0
   References: Default_Handler/54 (alias) 
   Referring: __Vectors/50 (addr) 
   Function flags:
   Called by: 
   Calls: 
-DAC0_IRQHandler/19 (DAC0_IRQHandler) @0x7e1cb7e49000
+DAC0_IRQHandler/19 (DAC0_IRQHandler) @0x74eaa3a49000
   Type: function definition analyzed alias
   Visibility: public weak
   Address is taken.
-  Aux: @0x7e1cb7e49168
+  Aux: @0x74eaa3a49168
   References: Default_Handler/54 (alias) 
   Referring: __Vectors/50 (addr) 
   Function flags:
   Called by: 
   Calls: 
-ADC0_IRQHandler/18 (ADC0_IRQHandler) @0x7e1cb7e46e10
+ADC0_IRQHandler/18 (ADC0_IRQHandler) @0x74eaa3a46e10
   Type: function definition analyzed alias
   Visibility: public weak
   Address is taken.
-  Aux: @0x7e1cb7e49000
+  Aux: @0x74eaa3a49000
   References: Default_Handler/54 (alias) 
   Referring: __Vectors/50 (addr) 
   Function flags:
   Called by: 
   Calls: 
-ACMP0_IRQHandler/17 (ACMP0_IRQHandler) @0x7e1cb7e46ca8
+ACMP0_IRQHandler/17 (ACMP0_IRQHandler) @0x74eaa3a46ca8
   Type: function definition analyzed alias
   Visibility: public weak
   Address is taken.
-  Aux: @0x7e1cb7e46e10
+  Aux: @0x74eaa3a46e10
   References: Default_Handler/54 (alias) 
   Referring: __Vectors/50 (addr) 
   Function flags:
   Called by: 
   Calls: 
-USB_IRQHandler/16 (USB_IRQHandler) @0x7e1cb7e46b40
+USB_IRQHandler/16 (USB_IRQHandler) @0x74eaa3a46b40
   Type: function definition analyzed alias
   Visibility: public weak
   Address is taken.
-  Aux: @0x7e1cb7e46ca8
+  Aux: @0x74eaa3a46ca8
   References: Default_Handler/54 (alias) 
   Referring: __Vectors/50 (addr) 
   Function flags:
   Called by: 
   Calls: 
-USART0_TX_IRQHandler/15 (USART0_TX_IRQHandler) @0x7e1cb7e469d8
+USART0_TX_IRQHandler/15 (USART0_TX_IRQHandler) @0x74eaa3a469d8
   Type: function definition analyzed alias
   Visibility: public weak
   Address is taken.
-  Aux: @0x7e1cb7e46b40
+  Aux: @0x74eaa3a46b40
   References: Default_Handler/54 (alias) 
   Referring: __Vectors/50 (addr) 
   Function flags:
   Called by: 
   Calls: 
-USART0_RX_IRQHandler/14 (USART0_RX_IRQHandler) @0x7e1cb7e46870
+USART0_RX_IRQHandler/14 (USART0_RX_IRQHandler) @0x74eaa3a46870
   Type: function definition analyzed alias
   Visibility: public weak
   Address is taken.
-  Aux: @0x7e1cb7e469d8
+  Aux: @0x74eaa3a469d8
   References: Default_Handler/54 (alias) 
   Referring: __Vectors/50 (addr) 
   Function flags:
   Called by: 
   Calls: 
-TIMER0_IRQHandler/13 (TIMER0_IRQHandler) @0x7e1cb7e46708
+TIMER0_IRQHandler/13 (TIMER0_IRQHandler) @0x74eaa3a46708
   Type: function definition analyzed alias
   Visibility: public weak
   Address is taken.
-  Aux: @0x7e1cb7e46870
+  Aux: @0x74eaa3a46870
   References: Default_Handler/54 (alias) 
   Referring: __Vectors/50 (addr) 
   Function flags:
   Called by: 
   Calls: 
-GPIO_EVEN_IRQHandler/12 (GPIO_EVEN_IRQHandler) @0x7e1cb7e465a0
+GPIO_EVEN_IRQHandler/12 (GPIO_EVEN_IRQHandler) @0x74eaa3a465a0
   Type: function definition analyzed alias
   Visibility: public weak
   Address is taken.
-  Aux: @0x7e1cb7e46708
+  Aux: @0x74eaa3a46708
   References: Default_Handler/54 (alias) 
   Referring: __Vectors/50 (addr) 
   Function flags:
   Called by: 
   Calls: 
-DMA_IRQHandler/11 (DMA_IRQHandler) @0x7e1cb7e46438
+DMA_IRQHandler/11 (DMA_IRQHandler) @0x74eaa3a46438
   Type: function definition analyzed alias
   Visibility: public weak
   Address is taken.
-  Aux: @0x7e1cb7e465a0
+  Aux: @0x74eaa3a465a0
   References: Default_Handler/54 (alias) 
   Referring: __Vectors/50 (addr) 
   Function flags:
   Called by: 
   Calls: 
-SysTick_Handler/10 (SysTick_Handler) @0x7e1cb7e46168
+SysTick_Handler/10 (SysTick_Handler) @0x74eaa3a46168
   Type: function definition analyzed alias
   Visibility: public weak
   Address is taken.
-  Aux: @0x7e1cb7e46438
+  Aux: @0x74eaa3a46438
   References: Default_Handler/54 (alias) 
   Referring: __Vectors/50 (addr) 
   Function flags:
   Called by: 
   Calls: 
-PendSV_Handler/9 (PendSV_Handler) @0x7e1cb7e46000
+PendSV_Handler/9 (PendSV_Handler) @0x74eaa3a46000
   Type: function definition analyzed alias
   Visibility: public weak
   Address is taken.
-  Aux: @0x7e1cb7e46168
+  Aux: @0x74eaa3a46168
   References: Default_Handler/54 (alias) 
   Referring: __Vectors/50 (addr) 
   Function flags:
   Called by: 
   Calls: 
-SVC_Handler/8 (SVC_Handler) @0x7e1cb7e43e10
+SVC_Handler/8 (SVC_Handler) @0x74eaa3a43e10
   Type: function definition analyzed alias
   Visibility: public weak
   Address is taken.
-  Aux: @0x7e1cb7e46000
+  Aux: @0x74eaa3a46000
   References: Default_Handler/54 (alias) 
   Referring: __Vectors/50 (addr) 
   Function flags:
   Called by: 
   Calls: 
-DebugMon_Handler/7 (DebugMon_Handler) @0x7e1cb7e43ca8
+DebugMon_Handler/7 (DebugMon_Handler) @0x74eaa3a43ca8
   Type: function definition analyzed alias
   Visibility: public weak
   Address is taken.
-  Aux: @0x7e1cb7e43e10
+  Aux: @0x74eaa3a43e10
   References: Default_Handler/54 (alias) 
   Referring: __Vectors/50 (addr) 
   Function flags:
   Called by: 
   Calls: 
-UsageFault_Handler/6 (UsageFault_Handler) @0x7e1cb7e43b40
+UsageFault_Handler/6 (UsageFault_Handler) @0x74eaa3a43b40
   Type: function definition analyzed alias
   Visibility: public weak
   Address is taken.
-  Aux: @0x7e1cb7e43ca8
+  Aux: @0x74eaa3a43ca8
   References: Default_Handler/54 (alias) 
   Referring: __Vectors/50 (addr) 
   Function flags:
   Called by: 
   Calls: 
-BusFault_Handler/5 (BusFault_Handler) @0x7e1cb7e439d8
+BusFault_Handler/5 (BusFault_Handler) @0x74eaa3a439d8
   Type: function definition analyzed alias
   Visibility: public weak
   Address is taken.
-  Aux: @0x7e1cb7e43b40
+  Aux: @0x74eaa3a43b40
   References: Default_Handler/54 (alias) 
   Referring: __Vectors/50 (addr) 
   Function flags:
   Called by: 
   Calls: 
-MemManage_Handler/4 (MemManage_Handler) @0x7e1cb7e43870
+MemManage_Handler/4 (MemManage_Handler) @0x74eaa3a43870
   Type: function definition analyzed alias
   Visibility: public weak
   Address is taken.
-  Aux: @0x7e1cb7e439d8
+  Aux: @0x74eaa3a439d8
   References: Default_Handler/54 (alias) 
   Referring: __Vectors/50 (addr) 
   Function flags:
   Called by: 
   Calls: 
-HardFault_Handler/3 (HardFault_Handler) @0x7e1cb7e43708
+HardFault_Handler/3 (HardFault_Handler) @0x74eaa3a43708
   Type: function definition analyzed alias
   Visibility: public weak
   Address is taken.
-  Aux: @0x7e1cb7e43870
+  Aux: @0x74eaa3a43870
   References: Default_Handler/54 (alias) 
   Referring: __Vectors/50 (addr) 
   Function flags:
   Called by: 
   Calls: 
-NMI_Handler/2 (NMI_Handler) @0x7e1cb7e435a0
+NMI_Handler/2 (NMI_Handler) @0x74eaa3a435a0
   Type: function definition analyzed alias
   Visibility: public weak
   Address is taken.
-  Aux: @0x7e1cb7e43708
+  Aux: @0x74eaa3a43708
   References: Default_Handler/54 (alias) 
   Referring: __Vectors/50 (addr) 
   Function flags:
   Called by: 
   Calls: 
-heap/1 (heap) @0x7e1cb7e40380
+heap/1 (heap) @0x74eaa3a40380
   Type: variable definition analyzed
   Visibility: force_output no_reorder section:.heap
-  Aux: @0x7e1cb7e435a0
+  Aux: @0x74eaa3a435a0
   References: 
   Referring: 
   Availability: not-ready
   Varpool flags:
-stack/0 (stack) @0x7e1cb7e40300
+stack/0 (stack) @0x74eaa3a40300
   Type: variable definition analyzed
   Visibility: force_output no_reorder section:.stack
-  Aux: @0x7e1cb7e40380
+  Aux: @0x74eaa3a40380
   References: 
   Referring: 
   Availability: not-ready
@@ -602,7 +602,7 @@ Removing unused symbols:
 
 Reclaimed Symbol table:
 
-main/61 (main) @0x7e1cb7e5a5a0
+main/61 (main) @0x74eaa3a5a5a0
   Type: function
   Visibility: external public
   References: 
@@ -610,42 +610,42 @@ main/61 (main) @0x7e1cb7e5a5a0
   Function flags:
   Called by: Reset_Handler/51 
   Calls: 
-__bss_end__/60 (__bss_end__) @0x7e1cb7e58780
+__bss_end__/60 (__bss_end__) @0x74eaa3a58780
   Type: variable
   Visibility: external public
   References: 
   Referring: Reset_Handler/51 (addr) 
   Availability: not-ready
   Varpool flags:
-__bss_start__/59 (__bss_start__) @0x7e1cb7e58700
+__bss_start__/59 (__bss_start__) @0x74eaa3a58700
   Type: variable
   Visibility: external public
   References: 
   Referring: Reset_Handler/51 (addr) 
   Availability: not-ready
   Varpool flags:
-__data_end__/58 (__data_end__) @0x7e1cb7e58600
+__data_end__/58 (__data_end__) @0x74eaa3a58600
   Type: variable
   Visibility: external public
   References: 
   Referring: Reset_Handler/51 (addr) 
   Availability: not-ready
   Varpool flags:
-__data_start__/57 (__data_start__) @0x7e1cb7e58580
+__data_start__/57 (__data_start__) @0x74eaa3a58580
   Type: variable
   Visibility: external public
   References: 
   Referring: Reset_Handler/51 (addr) 
   Availability: not-ready
   Varpool flags:
-__etext/56 (__etext) @0x7e1cb7e58500
+__etext/56 (__etext) @0x74eaa3a58500
   Type: variable
   Visibility: external public
   References: 
   Referring: Reset_Handler/51 (addr) 
   Availability: not-ready
   Varpool flags:
-__StackTop/55 (__StackTop) @0x7e1cb7e5a2d0
+__StackTop/55 (__StackTop) @0x74eaa3a5a2d0
   Type: function
   Visibility: external public
   Address is taken.
@@ -654,7 +654,7 @@ __StackTop/55 (__StackTop) @0x7e1cb7e5a2d0
   Function flags:
   Called by: 
   Calls: 
-Default_Handler/54 (Default_Handler) @0x7e1cb7e5a168
+Default_Handler/54 (Default_Handler) @0x74eaa3a5a168
   Type: function definition analyzed
   Visibility: force_output no_reorder public weak
   Address is taken.
@@ -663,7 +663,7 @@ Default_Handler/54 (Default_Handler) @0x7e1cb7e5a168
   Function flags: body
   Called by: 
   Calls: 
-_main/53 (_main) @0x7e1cb7e5a000
+_main/53 (_main) @0x74eaa3a5a000
   Type: function definition analyzed
   Visibility: force_output no_reorder public weak
   References: 
@@ -671,7 +671,7 @@ _main/53 (_main) @0x7e1cb7e5a000
   Function flags: body
   Called by: Reset_Handler/51 
   Calls: 
-SystemInit/52 (SystemInit) @0x7e1cb7e50b40
+SystemInit/52 (SystemInit) @0x74eaa3a50b40
   Type: function definition analyzed
   Visibility: force_output no_reorder public weak
   References: 
@@ -679,7 +679,7 @@ SystemInit/52 (SystemInit) @0x7e1cb7e50b40
   Function flags: body
   Called by: Reset_Handler/51 
   Calls: 
-Reset_Handler/51 (Reset_Handler) @0x7e1cb7e50e10
+Reset_Handler/51 (Reset_Handler) @0x74eaa3a50e10
   Type: function definition analyzed
   Visibility: force_output no_reorder public weak
   Address is taken.
@@ -688,14 +688,14 @@ Reset_Handler/51 (Reset_Handler) @0x7e1cb7e50e10
   Function flags: body
   Called by: 
   Calls: main/61 _main/53 SystemInit/52 
-__Vectors/50 (__Vectors) @0x7e1cb7e4cc80
+__Vectors/50 (__Vectors) @0x74eaa3a4cc80
   Type: variable definition analyzed
   Visibility: force_output no_reorder public section:.vectors
   References: __StackTop/55 (addr) Reset_Handler/51 (addr) NMI_Handler/2 (addr) HardFault_Handler/3 (addr) MemManage_Handler/4 (addr) BusFault_Handler/5 (addr) UsageFault_Handler/6 (addr) Default_Handler/54 (addr) Default_Handler/54 (addr) Default_Handler/54 (addr) Default_Handler/54 (addr) SVC_Handler/8 (addr) DebugMon_Handler/7 (addr) Default_Handler/54 (addr) PendSV_Handler/9 (addr) SysTick_Handler/10 (addr) DMA_IRQHandler/11 (addr) GPIO_EVEN_IRQHandler/12 (addr) TIMER0_IRQHandler/13 (addr) USART0_RX_IRQHandler/14 (addr) USART0_TX_IRQHandler/15 (addr) USB_IRQHandler/16 (addr) ACMP0_IRQHandler/17 (addr) ADC0_IRQHandler/18 (addr) DAC0_IRQHandler/19 (addr) I2C0_IRQHandler/20 (addr) I2C1_IRQHandler/21 (addr) GPIO_ODD_IRQHandler/22 (addr) TIMER1_IRQHandler/23 (addr) TIMER2_IRQHandler/24 (addr) TIMER3_IRQHandler/25 (addr) USART1_RX_IRQHandler/26 (addr) USART1_TX_IRQHandler/27 (addr) LESENSE_IRQHandler/28 (addr) USART2_RX_IRQHandler/29 (addr) USART2_TX_IRQHandler/30 (addr) UART0_RX_IRQHandler/31 (addr) UART0_TX_IRQHandler/32 (addr) UART1_RX_IRQHandler/33 (addr) UART1_TX_IRQHandler/34 (addr) LEUART0_IRQHandler/35 (addr) LEUART1_IRQHandler/36 (addr) LETIMER0_IRQHandler/37 (addr) PCNT0_IRQHandler/38 (addr) PCNT1_IRQHandler/39 (addr) PCNT2_IRQHandler/40 (addr) RTC_IRQHandler/41 (addr) BURTC_IRQHandler/42 (addr) CMU_IRQHandler/43 (addr) VCMP_IRQHandler/44 (addr) LCD_IRQHandler/45 (addr) MSC_IRQHandler/46 (addr) AES_IRQHandler/47 (addr) EBI_IRQHandler/48 (addr) EMU_IRQHandler/49 (addr) 
   Referring: 
   Availability: not-ready
   Varpool flags: initialized read-only const-value-known
-EMU_IRQHandler/49 (EMU_IRQHandler) @0x7e1cb7e509d8
+EMU_IRQHandler/49 (EMU_IRQHandler) @0x74eaa3a509d8
   Type: function definition analyzed alias
   Visibility: public weak
   Address is taken.
@@ -704,7 +704,7 @@ EMU_IRQHandler/49 (EMU_IRQHandler) @0x7e1cb7e509d8
   Function flags:
   Called by: 
   Calls: 
-EBI_IRQHandler/48 (EBI_IRQHandler) @0x7e1cb7e50870
+EBI_IRQHandler/48 (EBI_IRQHandler) @0x74eaa3a50870
   Type: function definition analyzed alias
   Visibility: public weak
   Address is taken.
@@ -713,7 +713,7 @@ EBI_IRQHandler/48 (EBI_IRQHandler) @0x7e1cb7e50870
   Function flags:
   Called by: 
   Calls: 
-AES_IRQHandler/47 (AES_IRQHandler) @0x7e1cb7e50708
+AES_IRQHandler/47 (AES_IRQHandler) @0x74eaa3a50708
   Type: function definition analyzed alias
   Visibility: public weak
   Address is taken.
@@ -722,7 +722,7 @@ AES_IRQHandler/47 (AES_IRQHandler) @0x7e1cb7e50708
   Function flags:
   Called by: 
   Calls: 
-MSC_IRQHandler/46 (MSC_IRQHandler) @0x7e1cb7e505a0
+MSC_IRQHandler/46 (MSC_IRQHandler) @0x74eaa3a505a0
   Type: function definition analyzed alias
   Visibility: public weak
   Address is taken.
@@ -731,7 +731,7 @@ MSC_IRQHandler/46 (MSC_IRQHandler) @0x7e1cb7e505a0
   Function flags:
   Called by: 
   Calls: 
-LCD_IRQHandler/45 (LCD_IRQHandler) @0x7e1cb7e50438
+LCD_IRQHandler/45 (LCD_IRQHandler) @0x74eaa3a50438
   Type: function definition analyzed alias
   Visibility: public weak
   Address is taken.
@@ -740,7 +740,7 @@ LCD_IRQHandler/45 (LCD_IRQHandler) @0x7e1cb7e50438
   Function flags:
   Called by: 
   Calls: 
-VCMP_IRQHandler/44 (VCMP_IRQHandler) @0x7e1cb7e502d0
+VCMP_IRQHandler/44 (VCMP_IRQHandler) @0x74eaa3a502d0
   Type: function definition analyzed alias
   Visibility: public weak
   Address is taken.
@@ -749,7 +749,7 @@ VCMP_IRQHandler/44 (VCMP_IRQHandler) @0x7e1cb7e502d0
   Function flags:
   Called by: 
   Calls: 
-CMU_IRQHandler/43 (CMU_IRQHandler) @0x7e1cb7e50168
+CMU_IRQHandler/43 (CMU_IRQHandler) @0x74eaa3a50168
   Type: function definition analyzed alias
   Visibility: public weak
   Address is taken.
@@ -758,7 +758,7 @@ CMU_IRQHandler/43 (CMU_IRQHandler) @0x7e1cb7e50168
   Function flags:
   Called by: 
   Calls: 
-BURTC_IRQHandler/42 (BURTC_IRQHandler) @0x7e1cb7e50000
+BURTC_IRQHandler/42 (BURTC_IRQHandler) @0x74eaa3a50000
   Type: function definition analyzed alias
   Visibility: public weak
   Address is taken.
@@ -767,7 +767,7 @@ BURTC_IRQHandler/42 (BURTC_IRQHandler) @0x7e1cb7e50000
   Function flags:
   Called by: 
   Calls: 
-RTC_IRQHandler/41 (RTC_IRQHandler) @0x7e1cb7e4de10
+RTC_IRQHandler/41 (RTC_IRQHandler) @0x74eaa3a4de10
   Type: function definition analyzed alias
   Visibility: public weak
   Address is taken.
@@ -776,7 +776,7 @@ RTC_IRQHandler/41 (RTC_IRQHandler) @0x7e1cb7e4de10
   Function flags:
   Called by: 
   Calls: 
-PCNT2_IRQHandler/40 (PCNT2_IRQHandler) @0x7e1cb7e4dca8
+PCNT2_IRQHandler/40 (PCNT2_IRQHandler) @0x74eaa3a4dca8
   Type: function definition analyzed alias
   Visibility: public weak
   Address is taken.
@@ -785,7 +785,7 @@ PCNT2_IRQHandler/40 (PCNT2_IRQHandler) @0x7e1cb7e4dca8
   Function flags:
   Called by: 
   Calls: 
-PCNT1_IRQHandler/39 (PCNT1_IRQHandler) @0x7e1cb7e4db40
+PCNT1_IRQHandler/39 (PCNT1_IRQHandler) @0x74eaa3a4db40
   Type: function definition analyzed alias
   Visibility: public weak
   Address is taken.
@@ -794,7 +794,7 @@ PCNT1_IRQHandler/39 (PCNT1_IRQHandler) @0x7e1cb7e4db40
   Function flags:
   Called by: 
   Calls: 
-PCNT0_IRQHandler/38 (PCNT0_IRQHandler) @0x7e1cb7e4d9d8
+PCNT0_IRQHandler/38 (PCNT0_IRQHandler) @0x74eaa3a4d9d8
   Type: function definition analyzed alias
   Visibility: public weak
   Address is taken.
@@ -803,7 +803,7 @@ PCNT0_IRQHandler/38 (PCNT0_IRQHandler) @0x7e1cb7e4d9d8
   Function flags:
   Called by: 
   Calls: 
-LETIMER0_IRQHandler/37 (LETIMER0_IRQHandler) @0x7e1cb7e4d870
+LETIMER0_IRQHandler/37 (LETIMER0_IRQHandler) @0x74eaa3a4d870
   Type: function definition analyzed alias
   Visibility: public weak
   Address is taken.
@@ -812,7 +812,7 @@ LETIMER0_IRQHandler/37 (LETIMER0_IRQHandler) @0x7e1cb7e4d870
   Function flags:
   Called by: 
   Calls: 
-LEUART1_IRQHandler/36 (LEUART1_IRQHandler) @0x7e1cb7e4d708
+LEUART1_IRQHandler/36 (LEUART1_IRQHandler) @0x74eaa3a4d708
   Type: function definition analyzed alias
   Visibility: public weak
   Address is taken.
@@ -821,7 +821,7 @@ LEUART1_IRQHandler/36 (LEUART1_IRQHandler) @0x7e1cb7e4d708
   Function flags:
   Called by: 
   Calls: 
-LEUART0_IRQHandler/35 (LEUART0_IRQHandler) @0x7e1cb7e4d5a0
+LEUART0_IRQHandler/35 (LEUART0_IRQHandler) @0x74eaa3a4d5a0
   Type: function definition analyzed alias
   Visibility: public weak
   Address is taken.
@@ -830,7 +830,7 @@ LEUART0_IRQHandler/35 (LEUART0_IRQHandler) @0x7e1cb7e4d5a0
   Function flags:
   Called by: 
   Calls: 
-UART1_TX_IRQHandler/34 (UART1_TX_IRQHandler) @0x7e1cb7e4d438
+UART1_TX_IRQHandler/34 (UART1_TX_IRQHandler) @0x74eaa3a4d438
   Type: function definition analyzed alias
   Visibility: public weak
   Address is taken.
@@ -839,7 +839,7 @@ UART1_TX_IRQHandler/34 (UART1_TX_IRQHandler) @0x7e1cb7e4d438
   Function flags:
   Called by: 
   Calls: 
-UART1_RX_IRQHandler/33 (UART1_RX_IRQHandler) @0x7e1cb7e4d2d0
+UART1_RX_IRQHandler/33 (UART1_RX_IRQHandler) @0x74eaa3a4d2d0
   Type: function definition analyzed alias
   Visibility: public weak
   Address is taken.
@@ -848,7 +848,7 @@ UART1_RX_IRQHandler/33 (UART1_RX_IRQHandler) @0x7e1cb7e4d2d0
   Function flags:
   Called by: 
   Calls: 
-UART0_TX_IRQHandler/32 (UART0_TX_IRQHandler) @0x7e1cb7e4d168
+UART0_TX_IRQHandler/32 (UART0_TX_IRQHandler) @0x74eaa3a4d168
   Type: function definition analyzed alias
   Visibility: public weak
   Address is taken.
@@ -857,7 +857,7 @@ UART0_TX_IRQHandler/32 (UART0_TX_IRQHandler) @0x7e1cb7e4d168
   Function flags:
   Called by: 
   Calls: 
-UART0_RX_IRQHandler/31 (UART0_RX_IRQHandler) @0x7e1cb7e4d000
+UART0_RX_IRQHandler/31 (UART0_RX_IRQHandler) @0x74eaa3a4d000
   Type: function definition analyzed alias
   Visibility: public weak
   Address is taken.
@@ -866,7 +866,7 @@ UART0_RX_IRQHandler/31 (UART0_RX_IRQHandler) @0x7e1cb7e4d000
   Function flags:
   Called by: 
   Calls: 
-USART2_TX_IRQHandler/30 (USART2_TX_IRQHandler) @0x7e1cb7e462d0
+USART2_TX_IRQHandler/30 (USART2_TX_IRQHandler) @0x74eaa3a462d0
   Type: function definition analyzed alias
   Visibility: public weak
   Address is taken.
@@ -875,7 +875,7 @@ USART2_TX_IRQHandler/30 (USART2_TX_IRQHandler) @0x7e1cb7e462d0
   Function flags:
   Called by: 
   Calls: 
-USART2_RX_IRQHandler/29 (USART2_RX_IRQHandler) @0x7e1cb7e49e10
+USART2_RX_IRQHandler/29 (USART2_RX_IRQHandler) @0x74eaa3a49e10
   Type: function definition analyzed alias
   Visibility: public weak
   Address is taken.
@@ -884,7 +884,7 @@ USART2_RX_IRQHandler/29 (USART2_RX_IRQHandler) @0x7e1cb7e49e10
   Function flags:
   Called by: 
   Calls: 
-LESENSE_IRQHandler/28 (LESENSE_IRQHandler) @0x7e1cb7e49ca8
+LESENSE_IRQHandler/28 (LESENSE_IRQHandler) @0x74eaa3a49ca8
   Type: function definition analyzed alias
   Visibility: public weak
   Address is taken.
@@ -893,7 +893,7 @@ LESENSE_IRQHandler/28 (LESENSE_IRQHandler) @0x7e1cb7e49ca8
   Function flags:
   Called by: 
   Calls: 
-USART1_TX_IRQHandler/27 (USART1_TX_IRQHandler) @0x7e1cb7e49b40
+USART1_TX_IRQHandler/27 (USART1_TX_IRQHandler) @0x74eaa3a49b40
   Type: function definition analyzed alias
   Visibility: public weak
   Address is taken.
@@ -902,7 +902,7 @@ USART1_TX_IRQHandler/27 (USART1_TX_IRQHandler) @0x7e1cb7e49b40
   Function flags:
   Called by: 
   Calls: 
-USART1_RX_IRQHandler/26 (USART1_RX_IRQHandler) @0x7e1cb7e499d8
+USART1_RX_IRQHandler/26 (USART1_RX_IRQHandler) @0x74eaa3a499d8
   Type: function definition analyzed alias
   Visibility: public weak
   Address is taken.
@@ -911,7 +911,7 @@ USART1_RX_IRQHandler/26 (USART1_RX_IRQHandler) @0x7e1cb7e499d8
   Function flags:
   Called by: 
   Calls: 
-TIMER3_IRQHandler/25 (TIMER3_IRQHandler) @0x7e1cb7e49870
+TIMER3_IRQHandler/25 (TIMER3_IRQHandler) @0x74eaa3a49870
   Type: function definition analyzed alias
   Visibility: public weak
   Address is taken.
@@ -920,7 +920,7 @@ TIMER3_IRQHandler/25 (TIMER3_IRQHandler) @0x7e1cb7e49870
   Function flags:
   Called by: 
   Calls: 
-TIMER2_IRQHandler/24 (TIMER2_IRQHandler) @0x7e1cb7e49708
+TIMER2_IRQHandler/24 (TIMER2_IRQHandler) @0x74eaa3a49708
   Type: function definition analyzed alias
   Visibility: public weak
   Address is taken.
@@ -929,7 +929,7 @@ TIMER2_IRQHandler/24 (TIMER2_IRQHandler) @0x7e1cb7e49708
   Function flags:
   Called by: 
   Calls: 
-TIMER1_IRQHandler/23 (TIMER1_IRQHandler) @0x7e1cb7e495a0
+TIMER1_IRQHandler/23 (TIMER1_IRQHandler) @0x74eaa3a495a0
   Type: function definition analyzed alias
   Visibility: public weak
   Address is taken.
@@ -938,7 +938,7 @@ TIMER1_IRQHandler/23 (TIMER1_IRQHandler) @0x7e1cb7e495a0
   Function flags:
   Called by: 
   Calls: 
-GPIO_ODD_IRQHandler/22 (GPIO_ODD_IRQHandler) @0x7e1cb7e49438
+GPIO_ODD_IRQHandler/22 (GPIO_ODD_IRQHandler) @0x74eaa3a49438
   Type: function definition analyzed alias
   Visibility: public weak
   Address is taken.
@@ -947,7 +947,7 @@ GPIO_ODD_IRQHandler/22 (GPIO_ODD_IRQHandler) @0x7e1cb7e49438
   Function flags:
   Called by: 
   Calls: 
-I2C1_IRQHandler/21 (I2C1_IRQHandler) @0x7e1cb7e492d0
+I2C1_IRQHandler/21 (I2C1_IRQHandler) @0x74eaa3a492d0
   Type: function definition analyzed alias
   Visibility: public weak
   Address is taken.
@@ -956,7 +956,7 @@ I2C1_IRQHandler/21 (I2C1_IRQHandler) @0x7e1cb7e492d0
   Function flags:
   Called by: 
   Calls: 
-I2C0_IRQHandler/20 (I2C0_IRQHandler) @0x7e1cb7e49168
+I2C0_IRQHandler/20 (I2C0_IRQHandler) @0x74eaa3a49168
   Type: function definition analyzed alias
   Visibility: public weak
   Address is taken.
@@ -965,7 +965,7 @@ I2C0_IRQHandler/20 (I2C0_IRQHandler) @0x7e1cb7e49168
   Function flags:
   Called by: 
   Calls: 
-DAC0_IRQHandler/19 (DAC0_IRQHandler) @0x7e1cb7e49000
+DAC0_IRQHandler/19 (DAC0_IRQHandler) @0x74eaa3a49000
   Type: function definition analyzed alias
   Visibility: public weak
   Address is taken.
@@ -974,7 +974,7 @@ DAC0_IRQHandler/19 (DAC0_IRQHandler) @0x7e1cb7e49000
   Function flags:
   Called by: 
   Calls: 
-ADC0_IRQHandler/18 (ADC0_IRQHandler) @0x7e1cb7e46e10
+ADC0_IRQHandler/18 (ADC0_IRQHandler) @0x74eaa3a46e10
   Type: function definition analyzed alias
   Visibility: public weak
   Address is taken.
@@ -983,7 +983,7 @@ ADC0_IRQHandler/18 (ADC0_IRQHandler) @0x7e1cb7e46e10
   Function flags:
   Called by: 
   Calls: 
-ACMP0_IRQHandler/17 (ACMP0_IRQHandler) @0x7e1cb7e46ca8
+ACMP0_IRQHandler/17 (ACMP0_IRQHandler) @0x74eaa3a46ca8
   Type: function definition analyzed alias
   Visibility: public weak
   Address is taken.
@@ -992,7 +992,7 @@ ACMP0_IRQHandler/17 (ACMP0_IRQHandler) @0x7e1cb7e46ca8
   Function flags:
   Called by: 
   Calls: 
-USB_IRQHandler/16 (USB_IRQHandler) @0x7e1cb7e46b40
+USB_IRQHandler/16 (USB_IRQHandler) @0x74eaa3a46b40
   Type: function definition analyzed alias
   Visibility: public weak
   Address is taken.
@@ -1001,7 +1001,7 @@ USB_IRQHandler/16 (USB_IRQHandler) @0x7e1cb7e46b40
   Function flags:
   Called by: 
   Calls: 
-USART0_TX_IRQHandler/15 (USART0_TX_IRQHandler) @0x7e1cb7e469d8
+USART0_TX_IRQHandler/15 (USART0_TX_IRQHandler) @0x74eaa3a469d8
   Type: function definition analyzed alias
   Visibility: public weak
   Address is taken.
@@ -1010,7 +1010,7 @@ USART0_TX_IRQHandler/15 (USART0_TX_IRQHandler) @0x7e1cb7e469d8
   Function flags:
   Called by: 
   Calls: 
-USART0_RX_IRQHandler/14 (USART0_RX_IRQHandler) @0x7e1cb7e46870
+USART0_RX_IRQHandler/14 (USART0_RX_IRQHandler) @0x74eaa3a46870
   Type: function definition analyzed alias
   Visibility: public weak
   Address is taken.
@@ -1019,7 +1019,7 @@ USART0_RX_IRQHandler/14 (USART0_RX_IRQHandler) @0x7e1cb7e46870
   Function flags:
   Called by: 
   Calls: 
-TIMER0_IRQHandler/13 (TIMER0_IRQHandler) @0x7e1cb7e46708
+TIMER0_IRQHandler/13 (TIMER0_IRQHandler) @0x74eaa3a46708
   Type: function definition analyzed alias
   Visibility: public weak
   Address is taken.
@@ -1028,7 +1028,7 @@ TIMER0_IRQHandler/13 (TIMER0_IRQHandler) @0x7e1cb7e46708
   Function flags:
   Called by: 
   Calls: 
-GPIO_EVEN_IRQHandler/12 (GPIO_EVEN_IRQHandler) @0x7e1cb7e465a0
+GPIO_EVEN_IRQHandler/12 (GPIO_EVEN_IRQHandler) @0x74eaa3a465a0
   Type: function definition analyzed alias
   Visibility: public weak
   Address is taken.
@@ -1037,7 +1037,7 @@ GPIO_EVEN_IRQHandler/12 (GPIO_EVEN_IRQHandler) @0x7e1cb7e465a0
   Function flags:
   Called by: 
   Calls: 
-DMA_IRQHandler/11 (DMA_IRQHandler) @0x7e1cb7e46438
+DMA_IRQHandler/11 (DMA_IRQHandler) @0x74eaa3a46438
   Type: function definition analyzed alias
   Visibility: public weak
   Address is taken.
@@ -1046,7 +1046,7 @@ DMA_IRQHandler/11 (DMA_IRQHandler) @0x7e1cb7e46438
   Function flags:
   Called by: 
   Calls: 
-SysTick_Handler/10 (SysTick_Handler) @0x7e1cb7e46168
+SysTick_Handler/10 (SysTick_Handler) @0x74eaa3a46168
   Type: function definition analyzed alias
   Visibility: public weak
   Address is taken.
@@ -1055,7 +1055,7 @@ SysTick_Handler/10 (SysTick_Handler) @0x7e1cb7e46168
   Function flags:
   Called by: 
   Calls: 
-PendSV_Handler/9 (PendSV_Handler) @0x7e1cb7e46000
+PendSV_Handler/9 (PendSV_Handler) @0x74eaa3a46000
   Type: function definition analyzed alias
   Visibility: public weak
   Address is taken.
@@ -1064,7 +1064,7 @@ PendSV_Handler/9 (PendSV_Handler) @0x7e1cb7e46000
   Function flags:
   Called by: 
   Calls: 
-SVC_Handler/8 (SVC_Handler) @0x7e1cb7e43e10
+SVC_Handler/8 (SVC_Handler) @0x74eaa3a43e10
   Type: function definition analyzed alias
   Visibility: public weak
   Address is taken.
@@ -1073,7 +1073,7 @@ SVC_Handler/8 (SVC_Handler) @0x7e1cb7e43e10
   Function flags:
   Called by: 
   Calls: 
-DebugMon_Handler/7 (DebugMon_Handler) @0x7e1cb7e43ca8
+DebugMon_Handler/7 (DebugMon_Handler) @0x74eaa3a43ca8
   Type: function definition analyzed alias
   Visibility: public weak
   Address is taken.
@@ -1082,7 +1082,7 @@ DebugMon_Handler/7 (DebugMon_Handler) @0x7e1cb7e43ca8
   Function flags:
   Called by: 
   Calls: 
-UsageFault_Handler/6 (UsageFault_Handler) @0x7e1cb7e43b40
+UsageFault_Handler/6 (UsageFault_Handler) @0x74eaa3a43b40
   Type: function definition analyzed alias
   Visibility: public weak
   Address is taken.
@@ -1091,7 +1091,7 @@ UsageFault_Handler/6 (UsageFault_Handler) @0x7e1cb7e43b40
   Function flags:
   Called by: 
   Calls: 
-BusFault_Handler/5 (BusFault_Handler) @0x7e1cb7e439d8
+BusFault_Handler/5 (BusFault_Handler) @0x74eaa3a439d8
   Type: function definition analyzed alias
   Visibility: public weak
   Address is taken.
@@ -1100,7 +1100,7 @@ BusFault_Handler/5 (BusFault_Handler) @0x7e1cb7e439d8
   Function flags:
   Called by: 
   Calls: 
-MemManage_Handler/4 (MemManage_Handler) @0x7e1cb7e43870
+MemManage_Handler/4 (MemManage_Handler) @0x74eaa3a43870
   Type: function definition analyzed alias
   Visibility: public weak
   Address is taken.
@@ -1109,7 +1109,7 @@ MemManage_Handler/4 (MemManage_Handler) @0x7e1cb7e43870
   Function flags:
   Called by: 
   Calls: 
-HardFault_Handler/3 (HardFault_Handler) @0x7e1cb7e43708
+HardFault_Handler/3 (HardFault_Handler) @0x74eaa3a43708
   Type: function definition analyzed alias
   Visibility: public weak
   Address is taken.
@@ -1118,7 +1118,7 @@ HardFault_Handler/3 (HardFault_Handler) @0x7e1cb7e43708
   Function flags:
   Called by: 
   Calls: 
-NMI_Handler/2 (NMI_Handler) @0x7e1cb7e435a0
+NMI_Handler/2 (NMI_Handler) @0x74eaa3a435a0
   Type: function definition analyzed alias
   Visibility: public weak
   Address is taken.
@@ -1127,14 +1127,14 @@ NMI_Handler/2 (NMI_Handler) @0x7e1cb7e435a0
   Function flags:
   Called by: 
   Calls: 
-heap/1 (heap) @0x7e1cb7e40380
+heap/1 (heap) @0x74eaa3a40380
   Type: variable definition analyzed
   Visibility: force_output no_reorder section:.heap
   References: 
   Referring: 
   Availability: not-ready
   Varpool flags:
-stack/0 (stack) @0x7e1cb7e40300
+stack/0 (stack) @0x74eaa3a40300
   Type: variable definition analyzed
   Visibility: force_output no_reorder section:.stack
   References: 
@@ -1145,7 +1145,7 @@ stack/0 (stack) @0x7e1cb7e40300
 
 Initial Symbol table:
 
-main/61 (main) @0x7e1cb7e5a5a0
+main/61 (main) @0x74eaa3a5a5a0
   Type: function
   Visibility: external public
   References: 
@@ -1153,42 +1153,42 @@ main/61 (main) @0x7e1cb7e5a5a0
   Function flags:
   Called by: Reset_Handler/51 
   Calls: 
-__bss_end__/60 (__bss_end__) @0x7e1cb7e58780
+__bss_end__/60 (__bss_end__) @0x74eaa3a58780
   Type: variable
   Visibility: external public
   References: 
   Referring: Reset_Handler/51 (addr) 
   Availability: not-ready
   Varpool flags:
-__bss_start__/59 (__bss_start__) @0x7e1cb7e58700
+__bss_start__/59 (__bss_start__) @0x74eaa3a58700
   Type: variable
   Visibility: external public
   References: 
   Referring: Reset_Handler/51 (addr) 
   Availability: not-ready
   Varpool flags:
-__data_end__/58 (__data_end__) @0x7e1cb7e58600
+__data_end__/58 (__data_end__) @0x74eaa3a58600
   Type: variable
   Visibility: external public
   References: 
   Referring: Reset_Handler/51 (addr) 
   Availability: not-ready
   Varpool flags:
-__data_start__/57 (__data_start__) @0x7e1cb7e58580
+__data_start__/57 (__data_start__) @0x74eaa3a58580
   Type: variable
   Visibility: external public
   References: 
   Referring: Reset_Handler/51 (addr) 
   Availability: not-ready
   Varpool flags:
-__etext/56 (__etext) @0x7e1cb7e58500
+__etext/56 (__etext) @0x74eaa3a58500
   Type: variable
   Visibility: external public
   References: 
   Referring: Reset_Handler/51 (addr) 
   Availability: not-ready
   Varpool flags:
-__StackTop/55 (__StackTop) @0x7e1cb7e5a2d0
+__StackTop/55 (__StackTop) @0x74eaa3a5a2d0
   Type: function
   Visibility: external public
   Address is taken.
@@ -1197,7 +1197,7 @@ __StackTop/55 (__StackTop) @0x7e1cb7e5a2d0
   Function flags:
   Called by: 
   Calls: 
-Default_Handler/54 (Default_Handler) @0x7e1cb7e5a168
+Default_Handler/54 (Default_Handler) @0x74eaa3a5a168
   Type: function definition analyzed
   Visibility: force_output no_reorder public weak
   Address is taken.
@@ -1206,7 +1206,7 @@ Default_Handler/54 (Default_Handler) @0x7e1cb7e5a168
   Function flags: body
   Called by: 
   Calls: 
-_main/53 (_main) @0x7e1cb7e5a000
+_main/53 (_main) @0x74eaa3a5a000
   Type: function definition analyzed
   Visibility: force_output no_reorder public weak
   References: 
@@ -1214,7 +1214,7 @@ _main/53 (_main) @0x7e1cb7e5a000
   Function flags: body
   Called by: Reset_Handler/51 
   Calls: 
-SystemInit/52 (SystemInit) @0x7e1cb7e50b40
+SystemInit/52 (SystemInit) @0x74eaa3a50b40
   Type: function definition analyzed
   Visibility: force_output no_reorder public weak
   References: 
@@ -1222,7 +1222,7 @@ SystemInit/52 (SystemInit) @0x7e1cb7e50b40
   Function flags: body
   Called by: Reset_Handler/51 
   Calls: 
-Reset_Handler/51 (Reset_Handler) @0x7e1cb7e50e10
+Reset_Handler/51 (Reset_Handler) @0x74eaa3a50e10
   Type: function definition analyzed
   Visibility: force_output no_reorder public weak
   Address is taken.
@@ -1231,14 +1231,14 @@ Reset_Handler/51 (Reset_Handler) @0x7e1cb7e50e10
   Function flags: body
   Called by: 
   Calls: main/61 _main/53 SystemInit/52 
-__Vectors/50 (__Vectors) @0x7e1cb7e4cc80
+__Vectors/50 (__Vectors) @0x74eaa3a4cc80
   Type: variable definition analyzed
   Visibility: force_output no_reorder public section:.vectors
   References: __StackTop/55 (addr) Reset_Handler/51 (addr) NMI_Handler/2 (addr) HardFault_Handler/3 (addr) MemManage_Handler/4 (addr) BusFault_Handler/5 (addr) UsageFault_Handler/6 (addr) Default_Handler/54 (addr) Default_Handler/54 (addr) Default_Handler/54 (addr) Default_Handler/54 (addr) SVC_Handler/8 (addr) DebugMon_Handler/7 (addr) Default_Handler/54 (addr) PendSV_Handler/9 (addr) SysTick_Handler/10 (addr) DMA_IRQHandler/11 (addr) GPIO_EVEN_IRQHandler/12 (addr) TIMER0_IRQHandler/13 (addr) USART0_RX_IRQHandler/14 (addr) USART0_TX_IRQHandler/15 (addr) USB_IRQHandler/16 (addr) ACMP0_IRQHandler/17 (addr) ADC0_IRQHandler/18 (addr) DAC0_IRQHandler/19 (addr) I2C0_IRQHandler/20 (addr) I2C1_IRQHandler/21 (addr) GPIO_ODD_IRQHandler/22 (addr) TIMER1_IRQHandler/23 (addr) TIMER2_IRQHandler/24 (addr) TIMER3_IRQHandler/25 (addr) USART1_RX_IRQHandler/26 (addr) USART1_TX_IRQHandler/27 (addr) LESENSE_IRQHandler/28 (addr) USART2_RX_IRQHandler/29 (addr) USART2_TX_IRQHandler/30 (addr) UART0_RX_IRQHandler/31 (addr) UART0_TX_IRQHandler/32 (addr) UART1_RX_IRQHandler/33 (addr) UART1_TX_IRQHandler/34 (addr) LEUART0_IRQHandler/35 (addr) LEUART1_IRQHandler/36 (addr) LETIMER0_IRQHandler/37 (addr) PCNT0_IRQHandler/38 (addr) PCNT1_IRQHandler/39 (addr) PCNT2_IRQHandler/40 (addr) RTC_IRQHandler/41 (addr) BURTC_IRQHandler/42 (addr) CMU_IRQHandler/43 (addr) VCMP_IRQHandler/44 (addr) LCD_IRQHandler/45 (addr) MSC_IRQHandler/46 (addr) AES_IRQHandler/47 (addr) EBI_IRQHandler/48 (addr) EMU_IRQHandler/49 (addr) 
   Referring: 
   Availability: not-ready
   Varpool flags: initialized read-only const-value-known
-EMU_IRQHandler/49 (EMU_IRQHandler) @0x7e1cb7e509d8
+EMU_IRQHandler/49 (EMU_IRQHandler) @0x74eaa3a509d8
   Type: function definition analyzed alias
   Visibility: public weak
   Address is taken.
@@ -1247,7 +1247,7 @@ EMU_IRQHandler/49 (EMU_IRQHandler) @0x7e1cb7e509d8
   Function flags:
   Called by: 
   Calls: 
-EBI_IRQHandler/48 (EBI_IRQHandler) @0x7e1cb7e50870
+EBI_IRQHandler/48 (EBI_IRQHandler) @0x74eaa3a50870
   Type: function definition analyzed alias
   Visibility: public weak
   Address is taken.
@@ -1256,7 +1256,7 @@ EBI_IRQHandler/48 (EBI_IRQHandler) @0x7e1cb7e50870
   Function flags:
   Called by: 
   Calls: 
-AES_IRQHandler/47 (AES_IRQHandler) @0x7e1cb7e50708
+AES_IRQHandler/47 (AES_IRQHandler) @0x74eaa3a50708
   Type: function definition analyzed alias
   Visibility: public weak
   Address is taken.
@@ -1265,7 +1265,7 @@ AES_IRQHandler/47 (AES_IRQHandler) @0x7e1cb7e50708
   Function flags:
   Called by: 
   Calls: 
-MSC_IRQHandler/46 (MSC_IRQHandler) @0x7e1cb7e505a0
+MSC_IRQHandler/46 (MSC_IRQHandler) @0x74eaa3a505a0
   Type: function definition analyzed alias
   Visibility: public weak
   Address is taken.
@@ -1274,7 +1274,7 @@ MSC_IRQHandler/46 (MSC_IRQHandler) @0x7e1cb7e505a0
   Function flags:
   Called by: 
   Calls: 
-LCD_IRQHandler/45 (LCD_IRQHandler) @0x7e1cb7e50438
+LCD_IRQHandler/45 (LCD_IRQHandler) @0x74eaa3a50438
   Type: function definition analyzed alias
   Visibility: public weak
   Address is taken.
@@ -1283,7 +1283,7 @@ LCD_IRQHandler/45 (LCD_IRQHandler) @0x7e1cb7e50438
   Function flags:
   Called by: 
   Calls: 
-VCMP_IRQHandler/44 (VCMP_IRQHandler) @0x7e1cb7e502d0
+VCMP_IRQHandler/44 (VCMP_IRQHandler) @0x74eaa3a502d0
   Type: function definition analyzed alias
   Visibility: public weak
   Address is taken.
@@ -1292,7 +1292,7 @@ VCMP_IRQHandler/44 (VCMP_IRQHandler) @0x7e1cb7e502d0
   Function flags:
   Called by: 
   Calls: 
-CMU_IRQHandler/43 (CMU_IRQHandler) @0x7e1cb7e50168
+CMU_IRQHandler/43 (CMU_IRQHandler) @0x74eaa3a50168
   Type: function definition analyzed alias
   Visibility: public weak
   Address is taken.
@@ -1301,7 +1301,7 @@ CMU_IRQHandler/43 (CMU_IRQHandler) @0x7e1cb7e50168
   Function flags:
   Called by: 
   Calls: 
-BURTC_IRQHandler/42 (BURTC_IRQHandler) @0x7e1cb7e50000
+BURTC_IRQHandler/42 (BURTC_IRQHandler) @0x74eaa3a50000
   Type: function definition analyzed alias
   Visibility: public weak
   Address is taken.
@@ -1310,7 +1310,7 @@ BURTC_IRQHandler/42 (BURTC_IRQHandler) @0x7e1cb7e50000
   Function flags:
   Called by: 
   Calls: 
-RTC_IRQHandler/41 (RTC_IRQHandler) @0x7e1cb7e4de10
+RTC_IRQHandler/41 (RTC_IRQHandler) @0x74eaa3a4de10
   Type: function definition analyzed alias
   Visibility: public weak
   Address is taken.
@@ -1319,7 +1319,7 @@ RTC_IRQHandler/41 (RTC_IRQHandler) @0x7e1cb7e4de10
   Function flags:
   Called by: 
   Calls: 
-PCNT2_IRQHandler/40 (PCNT2_IRQHandler) @0x7e1cb7e4dca8
+PCNT2_IRQHandler/40 (PCNT2_IRQHandler) @0x74eaa3a4dca8
   Type: function definition analyzed alias
   Visibility: public weak
   Address is taken.
@@ -1328,7 +1328,7 @@ PCNT2_IRQHandler/40 (PCNT2_IRQHandler) @0x7e1cb7e4dca8
   Function flags:
   Called by: 
   Calls: 
-PCNT1_IRQHandler/39 (PCNT1_IRQHandler) @0x7e1cb7e4db40
+PCNT1_IRQHandler/39 (PCNT1_IRQHandler) @0x74eaa3a4db40
   Type: function definition analyzed alias
   Visibility: public weak
   Address is taken.
@@ -1337,7 +1337,7 @@ PCNT1_IRQHandler/39 (PCNT1_IRQHandler) @0x7e1cb7e4db40
   Function flags:
   Called by: 
   Calls: 
-PCNT0_IRQHandler/38 (PCNT0_IRQHandler) @0x7e1cb7e4d9d8
+PCNT0_IRQHandler/38 (PCNT0_IRQHandler) @0x74eaa3a4d9d8
   Type: function definition analyzed alias
   Visibility: public weak
   Address is taken.
@@ -1346,7 +1346,7 @@ PCNT0_IRQHandler/38 (PCNT0_IRQHandler) @0x7e1cb7e4d9d8
   Function flags:
   Called by: 
   Calls: 
-LETIMER0_IRQHandler/37 (LETIMER0_IRQHandler) @0x7e1cb7e4d870
+LETIMER0_IRQHandler/37 (LETIMER0_IRQHandler) @0x74eaa3a4d870
   Type: function definition analyzed alias
   Visibility: public weak
   Address is taken.
@@ -1355,7 +1355,7 @@ LETIMER0_IRQHandler/37 (LETIMER0_IRQHandler) @0x7e1cb7e4d870
   Function flags:
   Called by: 
   Calls: 
-LEUART1_IRQHandler/36 (LEUART1_IRQHandler) @0x7e1cb7e4d708
+LEUART1_IRQHandler/36 (LEUART1_IRQHandler) @0x74eaa3a4d708
   Type: function definition analyzed alias
   Visibility: public weak
   Address is taken.
@@ -1364,7 +1364,7 @@ LEUART1_IRQHandler/36 (LEUART1_IRQHandler) @0x7e1cb7e4d708
   Function flags:
   Called by: 
   Calls: 
-LEUART0_IRQHandler/35 (LEUART0_IRQHandler) @0x7e1cb7e4d5a0
+LEUART0_IRQHandler/35 (LEUART0_IRQHandler) @0x74eaa3a4d5a0
   Type: function definition analyzed alias
   Visibility: public weak
   Address is taken.
@@ -1373,7 +1373,7 @@ LEUART0_IRQHandler/35 (LEUART0_IRQHandler) @0x7e1cb7e4d5a0
   Function flags:
   Called by: 
   Calls: 
-UART1_TX_IRQHandler/34 (UART1_TX_IRQHandler) @0x7e1cb7e4d438
+UART1_TX_IRQHandler/34 (UART1_TX_IRQHandler) @0x74eaa3a4d438
   Type: function definition analyzed alias
   Visibility: public weak
   Address is taken.
@@ -1382,7 +1382,7 @@ UART1_TX_IRQHandler/34 (UART1_TX_IRQHandler) @0x7e1cb7e4d438
   Function flags:
   Called by: 
   Calls: 
-UART1_RX_IRQHandler/33 (UART1_RX_IRQHandler) @0x7e1cb7e4d2d0
+UART1_RX_IRQHandler/33 (UART1_RX_IRQHandler) @0x74eaa3a4d2d0
   Type: function definition analyzed alias
   Visibility: public weak
   Address is taken.
@@ -1391,7 +1391,7 @@ UART1_RX_IRQHandler/33 (UART1_RX_IRQHandler) @0x7e1cb7e4d2d0
   Function flags:
   Called by: 
   Calls: 
-UART0_TX_IRQHandler/32 (UART0_TX_IRQHandler) @0x7e1cb7e4d168
+UART0_TX_IRQHandler/32 (UART0_TX_IRQHandler) @0x74eaa3a4d168
   Type: function definition analyzed alias
   Visibility: public weak
   Address is taken.
@@ -1400,7 +1400,7 @@ UART0_TX_IRQHandler/32 (UART0_TX_IRQHandler) @0x7e1cb7e4d168
   Function flags:
   Called by: 
   Calls: 
-UART0_RX_IRQHandler/31 (UART0_RX_IRQHandler) @0x7e1cb7e4d000
+UART0_RX_IRQHandler/31 (UART0_RX_IRQHandler) @0x74eaa3a4d000
   Type: function definition analyzed alias
   Visibility: public weak
   Address is taken.
@@ -1409,7 +1409,7 @@ UART0_RX_IRQHandler/31 (UART0_RX_IRQHandler) @0x7e1cb7e4d000
   Function flags:
   Called by: 
   Calls: 
-USART2_TX_IRQHandler/30 (USART2_TX_IRQHandler) @0x7e1cb7e462d0
+USART2_TX_IRQHandler/30 (USART2_TX_IRQHandler) @0x74eaa3a462d0
   Type: function definition analyzed alias
   Visibility: public weak
   Address is taken.
@@ -1418,7 +1418,7 @@ USART2_TX_IRQHandler/30 (USART2_TX_IRQHandler) @0x7e1cb7e462d0
   Function flags:
   Called by: 
   Calls: 
-USART2_RX_IRQHandler/29 (USART2_RX_IRQHandler) @0x7e1cb7e49e10
+USART2_RX_IRQHandler/29 (USART2_RX_IRQHandler) @0x74eaa3a49e10
   Type: function definition analyzed alias
   Visibility: public weak
   Address is taken.
@@ -1427,7 +1427,7 @@ USART2_RX_IRQHandler/29 (USART2_RX_IRQHandler) @0x7e1cb7e49e10
   Function flags:
   Called by: 
   Calls: 
-LESENSE_IRQHandler/28 (LESENSE_IRQHandler) @0x7e1cb7e49ca8
+LESENSE_IRQHandler/28 (LESENSE_IRQHandler) @0x74eaa3a49ca8
   Type: function definition analyzed alias
   Visibility: public weak
   Address is taken.
@@ -1436,7 +1436,7 @@ LESENSE_IRQHandler/28 (LESENSE_IRQHandler) @0x7e1cb7e49ca8
   Function flags:
   Called by: 
   Calls: 
-USART1_TX_IRQHandler/27 (USART1_TX_IRQHandler) @0x7e1cb7e49b40
+USART1_TX_IRQHandler/27 (USART1_TX_IRQHandler) @0x74eaa3a49b40
   Type: function definition analyzed alias
   Visibility: public weak
   Address is taken.
@@ -1445,7 +1445,7 @@ USART1_TX_IRQHandler/27 (USART1_TX_IRQHandler) @0x7e1cb7e49b40
   Function flags:
   Called by: 
   Calls: 
-USART1_RX_IRQHandler/26 (USART1_RX_IRQHandler) @0x7e1cb7e499d8
+USART1_RX_IRQHandler/26 (USART1_RX_IRQHandler) @0x74eaa3a499d8
   Type: function definition analyzed alias
   Visibility: public weak
   Address is taken.
@@ -1454,7 +1454,7 @@ USART1_RX_IRQHandler/26 (USART1_RX_IRQHandler) @0x7e1cb7e499d8
   Function flags:
   Called by: 
   Calls: 
-TIMER3_IRQHandler/25 (TIMER3_IRQHandler) @0x7e1cb7e49870
+TIMER3_IRQHandler/25 (TIMER3_IRQHandler) @0x74eaa3a49870
   Type: function definition analyzed alias
   Visibility: public weak
   Address is taken.
@@ -1463,7 +1463,7 @@ TIMER3_IRQHandler/25 (TIMER3_IRQHandler) @0x7e1cb7e49870
   Function flags:
   Called by: 
   Calls: 
-TIMER2_IRQHandler/24 (TIMER2_IRQHandler) @0x7e1cb7e49708
+TIMER2_IRQHandler/24 (TIMER2_IRQHandler) @0x74eaa3a49708
   Type: function definition analyzed alias
   Visibility: public weak
   Address is taken.
@@ -1472,7 +1472,7 @@ TIMER2_IRQHandler/24 (TIMER2_IRQHandler) @0x7e1cb7e49708
   Function flags:
   Called by: 
   Calls: 
-TIMER1_IRQHandler/23 (TIMER1_IRQHandler) @0x7e1cb7e495a0
+TIMER1_IRQHandler/23 (TIMER1_IRQHandler) @0x74eaa3a495a0
   Type: function definition analyzed alias
   Visibility: public weak
   Address is taken.
@@ -1481,7 +1481,7 @@ TIMER1_IRQHandler/23 (TIMER1_IRQHandler) @0x7e1cb7e495a0
   Function flags:
   Called by: 
   Calls: 
-GPIO_ODD_IRQHandler/22 (GPIO_ODD_IRQHandler) @0x7e1cb7e49438
+GPIO_ODD_IRQHandler/22 (GPIO_ODD_IRQHandler) @0x74eaa3a49438
   Type: function definition analyzed alias
   Visibility: public weak
   Address is taken.
@@ -1490,7 +1490,7 @@ GPIO_ODD_IRQHandler/22 (GPIO_ODD_IRQHandler) @0x7e1cb7e49438
   Function flags:
   Called by: 
   Calls: 
-I2C1_IRQHandler/21 (I2C1_IRQHandler) @0x7e1cb7e492d0
+I2C1_IRQHandler/21 (I2C1_IRQHandler) @0x74eaa3a492d0
   Type: function definition analyzed alias
   Visibility: public weak
   Address is taken.
@@ -1499,7 +1499,7 @@ I2C1_IRQHandler/21 (I2C1_IRQHandler) @0x7e1cb7e492d0
   Function flags:
   Called by: 
   Calls: 
-I2C0_IRQHandler/20 (I2C0_IRQHandler) @0x7e1cb7e49168
+I2C0_IRQHandler/20 (I2C0_IRQHandler) @0x74eaa3a49168
   Type: function definition analyzed alias
   Visibility: public weak
   Address is taken.
@@ -1508,7 +1508,7 @@ I2C0_IRQHandler/20 (I2C0_IRQHandler) @0x7e1cb7e49168
   Function flags:
   Called by: 
   Calls: 
-DAC0_IRQHandler/19 (DAC0_IRQHandler) @0x7e1cb7e49000
+DAC0_IRQHandler/19 (DAC0_IRQHandler) @0x74eaa3a49000
   Type: function definition analyzed alias
   Visibility: public weak
   Address is taken.
@@ -1517,7 +1517,7 @@ DAC0_IRQHandler/19 (DAC0_IRQHandler) @0x7e1cb7e49000
   Function flags:
   Called by: 
   Calls: 
-ADC0_IRQHandler/18 (ADC0_IRQHandler) @0x7e1cb7e46e10
+ADC0_IRQHandler/18 (ADC0_IRQHandler) @0x74eaa3a46e10
   Type: function definition analyzed alias
   Visibility: public weak
   Address is taken.
@@ -1526,7 +1526,7 @@ ADC0_IRQHandler/18 (ADC0_IRQHandler) @0x7e1cb7e46e10
   Function flags:
   Called by: 
   Calls: 
-ACMP0_IRQHandler/17 (ACMP0_IRQHandler) @0x7e1cb7e46ca8
+ACMP0_IRQHandler/17 (ACMP0_IRQHandler) @0x74eaa3a46ca8
   Type: function definition analyzed alias
   Visibility: public weak
   Address is taken.
@@ -1535,7 +1535,7 @@ ACMP0_IRQHandler/17 (ACMP0_IRQHandler) @0x7e1cb7e46ca8
   Function flags:
   Called by: 
   Calls: 
-USB_IRQHandler/16 (USB_IRQHandler) @0x7e1cb7e46b40
+USB_IRQHandler/16 (USB_IRQHandler) @0x74eaa3a46b40
   Type: function definition analyzed alias
   Visibility: public weak
   Address is taken.
@@ -1544,7 +1544,7 @@ USB_IRQHandler/16 (USB_IRQHandler) @0x7e1cb7e46b40
   Function flags:
   Called by: 
   Calls: 
-USART0_TX_IRQHandler/15 (USART0_TX_IRQHandler) @0x7e1cb7e469d8
+USART0_TX_IRQHandler/15 (USART0_TX_IRQHandler) @0x74eaa3a469d8
   Type: function definition analyzed alias
   Visibility: public weak
   Address is taken.
@@ -1553,7 +1553,7 @@ USART0_TX_IRQHandler/15 (USART0_TX_IRQHandler) @0x7e1cb7e469d8
   Function flags:
   Called by: 
   Calls: 
-USART0_RX_IRQHandler/14 (USART0_RX_IRQHandler) @0x7e1cb7e46870
+USART0_RX_IRQHandler/14 (USART0_RX_IRQHandler) @0x74eaa3a46870
   Type: function definition analyzed alias
   Visibility: public weak
   Address is taken.
@@ -1562,7 +1562,7 @@ USART0_RX_IRQHandler/14 (USART0_RX_IRQHandler) @0x7e1cb7e46870
   Function flags:
   Called by: 
   Calls: 
-TIMER0_IRQHandler/13 (TIMER0_IRQHandler) @0x7e1cb7e46708
+TIMER0_IRQHandler/13 (TIMER0_IRQHandler) @0x74eaa3a46708
   Type: function definition analyzed alias
   Visibility: public weak
   Address is taken.
@@ -1571,7 +1571,7 @@ TIMER0_IRQHandler/13 (TIMER0_IRQHandler) @0x7e1cb7e46708
   Function flags:
   Called by: 
   Calls: 
-GPIO_EVEN_IRQHandler/12 (GPIO_EVEN_IRQHandler) @0x7e1cb7e465a0
+GPIO_EVEN_IRQHandler/12 (GPIO_EVEN_IRQHandler) @0x74eaa3a465a0
   Type: function definition analyzed alias
   Visibility: public weak
   Address is taken.
@@ -1580,7 +1580,7 @@ GPIO_EVEN_IRQHandler/12 (GPIO_EVEN_IRQHandler) @0x7e1cb7e465a0
   Function flags:
   Called by: 
   Calls: 
-DMA_IRQHandler/11 (DMA_IRQHandler) @0x7e1cb7e46438
+DMA_IRQHandler/11 (DMA_IRQHandler) @0x74eaa3a46438
   Type: function definition analyzed alias
   Visibility: public weak
   Address is taken.
@@ -1589,7 +1589,7 @@ DMA_IRQHandler/11 (DMA_IRQHandler) @0x7e1cb7e46438
   Function flags:
   Called by: 
   Calls: 
-SysTick_Handler/10 (SysTick_Handler) @0x7e1cb7e46168
+SysTick_Handler/10 (SysTick_Handler) @0x74eaa3a46168
   Type: function definition analyzed alias
   Visibility: public weak
   Address is taken.
@@ -1598,7 +1598,7 @@ SysTick_Handler/10 (SysTick_Handler) @0x7e1cb7e46168
   Function flags:
   Called by: 
   Calls: 
-PendSV_Handler/9 (PendSV_Handler) @0x7e1cb7e46000
+PendSV_Handler/9 (PendSV_Handler) @0x74eaa3a46000
   Type: function definition analyzed alias
   Visibility: public weak
   Address is taken.
@@ -1607,7 +1607,7 @@ PendSV_Handler/9 (PendSV_Handler) @0x7e1cb7e46000
   Function flags:
   Called by: 
   Calls: 
-SVC_Handler/8 (SVC_Handler) @0x7e1cb7e43e10
+SVC_Handler/8 (SVC_Handler) @0x74eaa3a43e10
   Type: function definition analyzed alias
   Visibility: public weak
   Address is taken.
@@ -1616,7 +1616,7 @@ SVC_Handler/8 (SVC_Handler) @0x7e1cb7e43e10
   Function flags:
   Called by: 
   Calls: 
-DebugMon_Handler/7 (DebugMon_Handler) @0x7e1cb7e43ca8
+DebugMon_Handler/7 (DebugMon_Handler) @0x74eaa3a43ca8
   Type: function definition analyzed alias
   Visibility: public weak
   Address is taken.
@@ -1625,7 +1625,7 @@ DebugMon_Handler/7 (DebugMon_Handler) @0x7e1cb7e43ca8
   Function flags:
   Called by: 
   Calls: 
-UsageFault_Handler/6 (UsageFault_Handler) @0x7e1cb7e43b40
+UsageFault_Handler/6 (UsageFault_Handler) @0x74eaa3a43b40
   Type: function definition analyzed alias
   Visibility: public weak
   Address is taken.
@@ -1634,7 +1634,7 @@ UsageFault_Handler/6 (UsageFault_Handler) @0x7e1cb7e43b40
   Function flags:
   Called by: 
   Calls: 
-BusFault_Handler/5 (BusFault_Handler) @0x7e1cb7e439d8
+BusFault_Handler/5 (BusFault_Handler) @0x74eaa3a439d8
   Type: function definition analyzed alias
   Visibility: public weak
   Address is taken.
@@ -1643,7 +1643,7 @@ BusFault_Handler/5 (BusFault_Handler) @0x7e1cb7e439d8
   Function flags:
   Called by: 
   Calls: 
-MemManage_Handler/4 (MemManage_Handler) @0x7e1cb7e43870
+MemManage_Handler/4 (MemManage_Handler) @0x74eaa3a43870
   Type: function definition analyzed alias
   Visibility: public weak
   Address is taken.
@@ -1652,7 +1652,7 @@ MemManage_Handler/4 (MemManage_Handler) @0x7e1cb7e43870
   Function flags:
   Called by: 
   Calls: 
-HardFault_Handler/3 (HardFault_Handler) @0x7e1cb7e43708
+HardFault_Handler/3 (HardFault_Handler) @0x74eaa3a43708
   Type: function definition analyzed alias
   Visibility: public weak
   Address is taken.
@@ -1661,7 +1661,7 @@ HardFault_Handler/3 (HardFault_Handler) @0x7e1cb7e43708
   Function flags:
   Called by: 
   Calls: 
-NMI_Handler/2 (NMI_Handler) @0x7e1cb7e435a0
+NMI_Handler/2 (NMI_Handler) @0x74eaa3a435a0
   Type: function definition analyzed alias
   Visibility: public weak
   Address is taken.
@@ -1670,14 +1670,14 @@ NMI_Handler/2 (NMI_Handler) @0x7e1cb7e435a0
   Function flags:
   Called by: 
   Calls: 
-heap/1 (heap) @0x7e1cb7e40380
+heap/1 (heap) @0x74eaa3a40380
   Type: variable definition analyzed
   Visibility: force_output no_reorder section:.heap
   References: 
   Referring: 
   Availability: not-ready
   Varpool flags:
-stack/0 (stack) @0x7e1cb7e40300
+stack/0 (stack) @0x74eaa3a40300
   Type: variable definition analyzed
   Visibility: force_output no_reorder section:.stack
   References: 
@@ -1689,7 +1689,7 @@ Removing unused symbols:
 
 Reclaimed Symbol table:
 
-main/61 (main) @0x7e1cb7e5a5a0
+main/61 (main) @0x74eaa3a5a5a0
   Type: function
   Visibility: external public
   References: 
@@ -1697,42 +1697,42 @@ main/61 (main) @0x7e1cb7e5a5a0
   Function flags:
   Called by: Reset_Handler/51 
   Calls: 
-__bss_end__/60 (__bss_end__) @0x7e1cb7e58780
+__bss_end__/60 (__bss_end__) @0x74eaa3a58780
   Type: variable
   Visibility: external public
   References: 
   Referring: Reset_Handler/51 (addr) 
   Availability: not-ready
   Varpool flags:
-__bss_start__/59 (__bss_start__) @0x7e1cb7e58700
+__bss_start__/59 (__bss_start__) @0x74eaa3a58700
   Type: variable
   Visibility: external public
   References: 
   Referring: Reset_Handler/51 (addr) 
   Availability: not-ready
   Varpool flags:
-__data_end__/58 (__data_end__) @0x7e1cb7e58600
+__data_end__/58 (__data_end__) @0x74eaa3a58600
   Type: variable
   Visibility: external public
   References: 
   Referring: Reset_Handler/51 (addr) 
   Availability: not-ready
   Varpool flags:
-__data_start__/57 (__data_start__) @0x7e1cb7e58580
+__data_start__/57 (__data_start__) @0x74eaa3a58580
   Type: variable
   Visibility: external public
   References: 
   Referring: Reset_Handler/51 (addr) 
   Availability: not-ready
   Varpool flags:
-__etext/56 (__etext) @0x7e1cb7e58500
+__etext/56 (__etext) @0x74eaa3a58500
   Type: variable
   Visibility: external public
   References: 
   Referring: Reset_Handler/51 (addr) 
   Availability: not-ready
   Varpool flags:
-__StackTop/55 (__StackTop) @0x7e1cb7e5a2d0
+__StackTop/55 (__StackTop) @0x74eaa3a5a2d0
   Type: function
   Visibility: external public
   Address is taken.
@@ -1741,7 +1741,7 @@ __StackTop/55 (__StackTop) @0x7e1cb7e5a2d0
   Function flags:
   Called by: 
   Calls: 
-Default_Handler/54 (Default_Handler) @0x7e1cb7e5a168
+Default_Handler/54 (Default_Handler) @0x74eaa3a5a168
   Type: function definition analyzed
   Visibility: force_output no_reorder public weak
   Address is taken.
@@ -1750,7 +1750,7 @@ Default_Handler/54 (Default_Handler) @0x7e1cb7e5a168
   Function flags: body
   Called by: 
   Calls: 
-_main/53 (_main) @0x7e1cb7e5a000
+_main/53 (_main) @0x74eaa3a5a000
   Type: function definition analyzed
   Visibility: force_output no_reorder public weak
   References: 
@@ -1758,7 +1758,7 @@ _main/53 (_main) @0x7e1cb7e5a000
   Function flags: body
   Called by: Reset_Handler/51 
   Calls: 
-SystemInit/52 (SystemInit) @0x7e1cb7e50b40
+SystemInit/52 (SystemInit) @0x74eaa3a50b40
   Type: function definition analyzed
   Visibility: force_output no_reorder public weak
   References: 
@@ -1766,7 +1766,7 @@ SystemInit/52 (SystemInit) @0x7e1cb7e50b40
   Function flags: body
   Called by: Reset_Handler/51 
   Calls: 
-Reset_Handler/51 (Reset_Handler) @0x7e1cb7e50e10
+Reset_Handler/51 (Reset_Handler) @0x74eaa3a50e10
   Type: function definition analyzed
   Visibility: force_output no_reorder public weak
   Address is taken.
@@ -1775,14 +1775,14 @@ Reset_Handler/51 (Reset_Handler) @0x7e1cb7e50e10
   Function flags: body
   Called by: 
   Calls: main/61 _main/53 SystemInit/52 
-__Vectors/50 (__Vectors) @0x7e1cb7e4cc80
+__Vectors/50 (__Vectors) @0x74eaa3a4cc80
   Type: variable definition analyzed
   Visibility: force_output no_reorder public section:.vectors
   References: __StackTop/55 (addr) Reset_Handler/51 (addr) NMI_Handler/2 (addr) HardFault_Handler/3 (addr) MemManage_Handler/4 (addr) BusFault_Handler/5 (addr) UsageFault_Handler/6 (addr) Default_Handler/54 (addr) Default_Handler/54 (addr) Default_Handler/54 (addr) Default_Handler/54 (addr) SVC_Handler/8 (addr) DebugMon_Handler/7 (addr) Default_Handler/54 (addr) PendSV_Handler/9 (addr) SysTick_Handler/10 (addr) DMA_IRQHandler/11 (addr) GPIO_EVEN_IRQHandler/12 (addr) TIMER0_IRQHandler/13 (addr) USART0_RX_IRQHandler/14 (addr) USART0_TX_IRQHandler/15 (addr) USB_IRQHandler/16 (addr) ACMP0_IRQHandler/17 (addr) ADC0_IRQHandler/18 (addr) DAC0_IRQHandler/19 (addr) I2C0_IRQHandler/20 (addr) I2C1_IRQHandler/21 (addr) GPIO_ODD_IRQHandler/22 (addr) TIMER1_IRQHandler/23 (addr) TIMER2_IRQHandler/24 (addr) TIMER3_IRQHandler/25 (addr) USART1_RX_IRQHandler/26 (addr) USART1_TX_IRQHandler/27 (addr) LESENSE_IRQHandler/28 (addr) USART2_RX_IRQHandler/29 (addr) USART2_TX_IRQHandler/30 (addr) UART0_RX_IRQHandler/31 (addr) UART0_TX_IRQHandler/32 (addr) UART1_RX_IRQHandler/33 (addr) UART1_TX_IRQHandler/34 (addr) LEUART0_IRQHandler/35 (addr) LEUART1_IRQHandler/36 (addr) LETIMER0_IRQHandler/37 (addr) PCNT0_IRQHandler/38 (addr) PCNT1_IRQHandler/39 (addr) PCNT2_IRQHandler/40 (addr) RTC_IRQHandler/41 (addr) BURTC_IRQHandler/42 (addr) CMU_IRQHandler/43 (addr) VCMP_IRQHandler/44 (addr) LCD_IRQHandler/45 (addr) MSC_IRQHandler/46 (addr) AES_IRQHandler/47 (addr) EBI_IRQHandler/48 (addr) EMU_IRQHandler/49 (addr) 
   Referring: 
   Availability: not-ready
   Varpool flags: initialized read-only const-value-known
-EMU_IRQHandler/49 (EMU_IRQHandler) @0x7e1cb7e509d8
+EMU_IRQHandler/49 (EMU_IRQHandler) @0x74eaa3a509d8
   Type: function definition analyzed alias
   Visibility: public weak
   Address is taken.
@@ -1791,7 +1791,7 @@ EMU_IRQHandler/49 (EMU_IRQHandler) @0x7e1cb7e509d8
   Function flags:
   Called by: 
   Calls: 
-EBI_IRQHandler/48 (EBI_IRQHandler) @0x7e1cb7e50870
+EBI_IRQHandler/48 (EBI_IRQHandler) @0x74eaa3a50870
   Type: function definition analyzed alias
   Visibility: public weak
   Address is taken.
@@ -1800,7 +1800,7 @@ EBI_IRQHandler/48 (EBI_IRQHandler) @0x7e1cb7e50870
   Function flags:
   Called by: 
   Calls: 
-AES_IRQHandler/47 (AES_IRQHandler) @0x7e1cb7e50708
+AES_IRQHandler/47 (AES_IRQHandler) @0x74eaa3a50708
   Type: function definition analyzed alias
   Visibility: public weak
   Address is taken.
@@ -1809,7 +1809,7 @@ AES_IRQHandler/47 (AES_IRQHandler) @0x7e1cb7e50708
   Function flags:
   Called by: 
   Calls: 
-MSC_IRQHandler/46 (MSC_IRQHandler) @0x7e1cb7e505a0
+MSC_IRQHandler/46 (MSC_IRQHandler) @0x74eaa3a505a0
   Type: function definition analyzed alias
   Visibility: public weak
   Address is taken.
@@ -1818,7 +1818,7 @@ MSC_IRQHandler/46 (MSC_IRQHandler) @0x7e1cb7e505a0
   Function flags:
   Called by: 
   Calls: 
-LCD_IRQHandler/45 (LCD_IRQHandler) @0x7e1cb7e50438
+LCD_IRQHandler/45 (LCD_IRQHandler) @0x74eaa3a50438
   Type: function definition analyzed alias
   Visibility: public weak
   Address is taken.
@@ -1827,7 +1827,7 @@ LCD_IRQHandler/45 (LCD_IRQHandler) @0x7e1cb7e50438
   Function flags:
   Called by: 
   Calls: 
-VCMP_IRQHandler/44 (VCMP_IRQHandler) @0x7e1cb7e502d0
+VCMP_IRQHandler/44 (VCMP_IRQHandler) @0x74eaa3a502d0
   Type: function definition analyzed alias
   Visibility: public weak
   Address is taken.
@@ -1836,7 +1836,7 @@ VCMP_IRQHandler/44 (VCMP_IRQHandler) @0x7e1cb7e502d0
   Function flags:
   Called by: 
   Calls: 
-CMU_IRQHandler/43 (CMU_IRQHandler) @0x7e1cb7e50168
+CMU_IRQHandler/43 (CMU_IRQHandler) @0x74eaa3a50168
   Type: function definition analyzed alias
   Visibility: public weak
   Address is taken.
@@ -1845,7 +1845,7 @@ CMU_IRQHandler/43 (CMU_IRQHandler) @0x7e1cb7e50168
   Function flags:
   Called by: 
   Calls: 
-BURTC_IRQHandler/42 (BURTC_IRQHandler) @0x7e1cb7e50000
+BURTC_IRQHandler/42 (BURTC_IRQHandler) @0x74eaa3a50000
   Type: function definition analyzed alias
   Visibility: public weak
   Address is taken.
@@ -1854,7 +1854,7 @@ BURTC_IRQHandler/42 (BURTC_IRQHandler) @0x7e1cb7e50000
   Function flags:
   Called by: 
   Calls: 
-RTC_IRQHandler/41 (RTC_IRQHandler) @0x7e1cb7e4de10
+RTC_IRQHandler/41 (RTC_IRQHandler) @0x74eaa3a4de10
   Type: function definition analyzed alias
   Visibility: public weak
   Address is taken.
@@ -1863,7 +1863,7 @@ RTC_IRQHandler/41 (RTC_IRQHandler) @0x7e1cb7e4de10
   Function flags:
   Called by: 
   Calls: 
-PCNT2_IRQHandler/40 (PCNT2_IRQHandler) @0x7e1cb7e4dca8
+PCNT2_IRQHandler/40 (PCNT2_IRQHandler) @0x74eaa3a4dca8
   Type: function definition analyzed alias
   Visibility: public weak
   Address is taken.
@@ -1872,7 +1872,7 @@ PCNT2_IRQHandler/40 (PCNT2_IRQHandler) @0x7e1cb7e4dca8
   Function flags:
   Called by: 
   Calls: 
-PCNT1_IRQHandler/39 (PCNT1_IRQHandler) @0x7e1cb7e4db40
+PCNT1_IRQHandler/39 (PCNT1_IRQHandler) @0x74eaa3a4db40
   Type: function definition analyzed alias
   Visibility: public weak
   Address is taken.
@@ -1881,7 +1881,7 @@ PCNT1_IRQHandler/39 (PCNT1_IRQHandler) @0x7e1cb7e4db40
   Function flags:
   Called by: 
   Calls: 
-PCNT0_IRQHandler/38 (PCNT0_IRQHandler) @0x7e1cb7e4d9d8
+PCNT0_IRQHandler/38 (PCNT0_IRQHandler) @0x74eaa3a4d9d8
   Type: function definition analyzed alias
   Visibility: public weak
   Address is taken.
@@ -1890,7 +1890,7 @@ PCNT0_IRQHandler/38 (PCNT0_IRQHandler) @0x7e1cb7e4d9d8
   Function flags:
   Called by: 
   Calls: 
-LETIMER0_IRQHandler/37 (LETIMER0_IRQHandler) @0x7e1cb7e4d870
+LETIMER0_IRQHandler/37 (LETIMER0_IRQHandler) @0x74eaa3a4d870
   Type: function definition analyzed alias
   Visibility: public weak
   Address is taken.
@@ -1899,7 +1899,7 @@ LETIMER0_IRQHandler/37 (LETIMER0_IRQHandler) @0x7e1cb7e4d870
   Function flags:
   Called by: 
   Calls: 
-LEUART1_IRQHandler/36 (LEUART1_IRQHandler) @0x7e1cb7e4d708
+LEUART1_IRQHandler/36 (LEUART1_IRQHandler) @0x74eaa3a4d708
   Type: function definition analyzed alias
   Visibility: public weak
   Address is taken.
@@ -1908,7 +1908,7 @@ LEUART1_IRQHandler/36 (LEUART1_IRQHandler) @0x7e1cb7e4d708
   Function flags:
   Called by: 
   Calls: 
-LEUART0_IRQHandler/35 (LEUART0_IRQHandler) @0x7e1cb7e4d5a0
+LEUART0_IRQHandler/35 (LEUART0_IRQHandler) @0x74eaa3a4d5a0
   Type: function definition analyzed alias
   Visibility: public weak
   Address is taken.
@@ -1917,7 +1917,7 @@ LEUART0_IRQHandler/35 (LEUART0_IRQHandler) @0x7e1cb7e4d5a0
   Function flags:
   Called by: 
   Calls: 
-UART1_TX_IRQHandler/34 (UART1_TX_IRQHandler) @0x7e1cb7e4d438
+UART1_TX_IRQHandler/34 (UART1_TX_IRQHandler) @0x74eaa3a4d438
   Type: function definition analyzed alias
   Visibility: public weak
   Address is taken.
@@ -1926,7 +1926,7 @@ UART1_TX_IRQHandler/34 (UART1_TX_IRQHandler) @0x7e1cb7e4d438
   Function flags:
   Called by: 
   Calls: 
-UART1_RX_IRQHandler/33 (UART1_RX_IRQHandler) @0x7e1cb7e4d2d0
+UART1_RX_IRQHandler/33 (UART1_RX_IRQHandler) @0x74eaa3a4d2d0
   Type: function definition analyzed alias
   Visibility: public weak
   Address is taken.
@@ -1935,7 +1935,7 @@ UART1_RX_IRQHandler/33 (UART1_RX_IRQHandler) @0x7e1cb7e4d2d0
   Function flags:
   Called by: 
   Calls: 
-UART0_TX_IRQHandler/32 (UART0_TX_IRQHandler) @0x7e1cb7e4d168
+UART0_TX_IRQHandler/32 (UART0_TX_IRQHandler) @0x74eaa3a4d168
   Type: function definition analyzed alias
   Visibility: public weak
   Address is taken.
@@ -1944,7 +1944,7 @@ UART0_TX_IRQHandler/32 (UART0_TX_IRQHandler) @0x7e1cb7e4d168
   Function flags:
   Called by: 
   Calls: 
-UART0_RX_IRQHandler/31 (UART0_RX_IRQHandler) @0x7e1cb7e4d000
+UART0_RX_IRQHandler/31 (UART0_RX_IRQHandler) @0x74eaa3a4d000
   Type: function definition analyzed alias
   Visibility: public weak
   Address is taken.
@@ -1953,7 +1953,7 @@ UART0_RX_IRQHandler/31 (UART0_RX_IRQHandler) @0x7e1cb7e4d000
   Function flags:
   Called by: 
   Calls: 
-USART2_TX_IRQHandler/30 (USART2_TX_IRQHandler) @0x7e1cb7e462d0
+USART2_TX_IRQHandler/30 (USART2_TX_IRQHandler) @0x74eaa3a462d0
   Type: function definition analyzed alias
   Visibility: public weak
   Address is taken.
@@ -1962,7 +1962,7 @@ USART2_TX_IRQHandler/30 (USART2_TX_IRQHandler) @0x7e1cb7e462d0
   Function flags:
   Called by: 
   Calls: 
-USART2_RX_IRQHandler/29 (USART2_RX_IRQHandler) @0x7e1cb7e49e10
+USART2_RX_IRQHandler/29 (USART2_RX_IRQHandler) @0x74eaa3a49e10
   Type: function definition analyzed alias
   Visibility: public weak
   Address is taken.
@@ -1971,7 +1971,7 @@ USART2_RX_IRQHandler/29 (USART2_RX_IRQHandler) @0x7e1cb7e49e10
   Function flags:
   Called by: 
   Calls: 
-LESENSE_IRQHandler/28 (LESENSE_IRQHandler) @0x7e1cb7e49ca8
+LESENSE_IRQHandler/28 (LESENSE_IRQHandler) @0x74eaa3a49ca8
   Type: function definition analyzed alias
   Visibility: public weak
   Address is taken.
@@ -1980,7 +1980,7 @@ LESENSE_IRQHandler/28 (LESENSE_IRQHandler) @0x7e1cb7e49ca8
   Function flags:
   Called by: 
   Calls: 
-USART1_TX_IRQHandler/27 (USART1_TX_IRQHandler) @0x7e1cb7e49b40
+USART1_TX_IRQHandler/27 (USART1_TX_IRQHandler) @0x74eaa3a49b40
   Type: function definition analyzed alias
   Visibility: public weak
   Address is taken.
@@ -1989,7 +1989,7 @@ USART1_TX_IRQHandler/27 (USART1_TX_IRQHandler) @0x7e1cb7e49b40
   Function flags:
   Called by: 
   Calls: 
-USART1_RX_IRQHandler/26 (USART1_RX_IRQHandler) @0x7e1cb7e499d8
+USART1_RX_IRQHandler/26 (USART1_RX_IRQHandler) @0x74eaa3a499d8
   Type: function definition analyzed alias
   Visibility: public weak
   Address is taken.
@@ -1998,7 +1998,7 @@ USART1_RX_IRQHandler/26 (USART1_RX_IRQHandler) @0x7e1cb7e499d8
   Function flags:
   Called by: 
   Calls: 
-TIMER3_IRQHandler/25 (TIMER3_IRQHandler) @0x7e1cb7e49870
+TIMER3_IRQHandler/25 (TIMER3_IRQHandler) @0x74eaa3a49870
   Type: function definition analyzed alias
   Visibility: public weak
   Address is taken.
@@ -2007,7 +2007,7 @@ TIMER3_IRQHandler/25 (TIMER3_IRQHandler) @0x7e1cb7e49870
   Function flags:
   Called by: 
   Calls: 
-TIMER2_IRQHandler/24 (TIMER2_IRQHandler) @0x7e1cb7e49708
+TIMER2_IRQHandler/24 (TIMER2_IRQHandler) @0x74eaa3a49708
   Type: function definition analyzed alias
   Visibility: public weak
   Address is taken.
@@ -2016,7 +2016,7 @@ TIMER2_IRQHandler/24 (TIMER2_IRQHandler) @0x7e1cb7e49708
   Function flags:
   Called by: 
   Calls: 
-TIMER1_IRQHandler/23 (TIMER1_IRQHandler) @0x7e1cb7e495a0
+TIMER1_IRQHandler/23 (TIMER1_IRQHandler) @0x74eaa3a495a0
   Type: function definition analyzed alias
   Visibility: public weak
   Address is taken.
@@ -2025,7 +2025,7 @@ TIMER1_IRQHandler/23 (TIMER1_IRQHandler) @0x7e1cb7e495a0
   Function flags:
   Called by: 
   Calls: 
-GPIO_ODD_IRQHandler/22 (GPIO_ODD_IRQHandler) @0x7e1cb7e49438
+GPIO_ODD_IRQHandler/22 (GPIO_ODD_IRQHandler) @0x74eaa3a49438
   Type: function definition analyzed alias
   Visibility: public weak
   Address is taken.
@@ -2034,7 +2034,7 @@ GPIO_ODD_IRQHandler/22 (GPIO_ODD_IRQHandler) @0x7e1cb7e49438
   Function flags:
   Called by: 
   Calls: 
-I2C1_IRQHandler/21 (I2C1_IRQHandler) @0x7e1cb7e492d0
+I2C1_IRQHandler/21 (I2C1_IRQHandler) @0x74eaa3a492d0
   Type: function definition analyzed alias
   Visibility: public weak
   Address is taken.
@@ -2043,7 +2043,7 @@ I2C1_IRQHandler/21 (I2C1_IRQHandler) @0x7e1cb7e492d0
   Function flags:
   Called by: 
   Calls: 
-I2C0_IRQHandler/20 (I2C0_IRQHandler) @0x7e1cb7e49168
+I2C0_IRQHandler/20 (I2C0_IRQHandler) @0x74eaa3a49168
   Type: function definition analyzed alias
   Visibility: public weak
   Address is taken.
@@ -2052,7 +2052,7 @@ I2C0_IRQHandler/20 (I2C0_IRQHandler) @0x7e1cb7e49168
   Function flags:
   Called by: 
   Calls: 
-DAC0_IRQHandler/19 (DAC0_IRQHandler) @0x7e1cb7e49000
+DAC0_IRQHandler/19 (DAC0_IRQHandler) @0x74eaa3a49000
   Type: function definition analyzed alias
   Visibility: public weak
   Address is taken.
@@ -2061,7 +2061,7 @@ DAC0_IRQHandler/19 (DAC0_IRQHandler) @0x7e1cb7e49000
   Function flags:
   Called by: 
   Calls: 
-ADC0_IRQHandler/18 (ADC0_IRQHandler) @0x7e1cb7e46e10
+ADC0_IRQHandler/18 (ADC0_IRQHandler) @0x74eaa3a46e10
   Type: function definition analyzed alias
   Visibility: public weak
   Address is taken.
@@ -2070,7 +2070,7 @@ ADC0_IRQHandler/18 (ADC0_IRQHandler) @0x7e1cb7e46e10
   Function flags:
   Called by: 
   Calls: 
-ACMP0_IRQHandler/17 (ACMP0_IRQHandler) @0x7e1cb7e46ca8
+ACMP0_IRQHandler/17 (ACMP0_IRQHandler) @0x74eaa3a46ca8
   Type: function definition analyzed alias
   Visibility: public weak
   Address is taken.
@@ -2079,7 +2079,7 @@ ACMP0_IRQHandler/17 (ACMP0_IRQHandler) @0x7e1cb7e46ca8
   Function flags:
   Called by: 
   Calls: 
-USB_IRQHandler/16 (USB_IRQHandler) @0x7e1cb7e46b40
+USB_IRQHandler/16 (USB_IRQHandler) @0x74eaa3a46b40
   Type: function definition analyzed alias
   Visibility: public weak
   Address is taken.
@@ -2088,7 +2088,7 @@ USB_IRQHandler/16 (USB_IRQHandler) @0x7e1cb7e46b40
   Function flags:
   Called by: 
   Calls: 
-USART0_TX_IRQHandler/15 (USART0_TX_IRQHandler) @0x7e1cb7e469d8
+USART0_TX_IRQHandler/15 (USART0_TX_IRQHandler) @0x74eaa3a469d8
   Type: function definition analyzed alias
   Visibility: public weak
   Address is taken.
@@ -2097,7 +2097,7 @@ USART0_TX_IRQHandler/15 (USART0_TX_IRQHandler) @0x7e1cb7e469d8
   Function flags:
   Called by: 
   Calls: 
-USART0_RX_IRQHandler/14 (USART0_RX_IRQHandler) @0x7e1cb7e46870
+USART0_RX_IRQHandler/14 (USART0_RX_IRQHandler) @0x74eaa3a46870
   Type: function definition analyzed alias
   Visibility: public weak
   Address is taken.
@@ -2106,7 +2106,7 @@ USART0_RX_IRQHandler/14 (USART0_RX_IRQHandler) @0x7e1cb7e46870
   Function flags:
   Called by: 
   Calls: 
-TIMER0_IRQHandler/13 (TIMER0_IRQHandler) @0x7e1cb7e46708
+TIMER0_IRQHandler/13 (TIMER0_IRQHandler) @0x74eaa3a46708
   Type: function definition analyzed alias
   Visibility: public weak
   Address is taken.
@@ -2115,7 +2115,7 @@ TIMER0_IRQHandler/13 (TIMER0_IRQHandler) @0x7e1cb7e46708
   Function flags:
   Called by: 
   Calls: 
-GPIO_EVEN_IRQHandler/12 (GPIO_EVEN_IRQHandler) @0x7e1cb7e465a0
+GPIO_EVEN_IRQHandler/12 (GPIO_EVEN_IRQHandler) @0x74eaa3a465a0
   Type: function definition analyzed alias
   Visibility: public weak
   Address is taken.
@@ -2124,7 +2124,7 @@ GPIO_EVEN_IRQHandler/12 (GPIO_EVEN_IRQHandler) @0x7e1cb7e465a0
   Function flags:
   Called by: 
   Calls: 
-DMA_IRQHandler/11 (DMA_IRQHandler) @0x7e1cb7e46438
+DMA_IRQHandler/11 (DMA_IRQHandler) @0x74eaa3a46438
   Type: function definition analyzed alias
   Visibility: public weak
   Address is taken.
@@ -2133,7 +2133,7 @@ DMA_IRQHandler/11 (DMA_IRQHandler) @0x7e1cb7e46438
   Function flags:
   Called by: 
   Calls: 
-SysTick_Handler/10 (SysTick_Handler) @0x7e1cb7e46168
+SysTick_Handler/10 (SysTick_Handler) @0x74eaa3a46168
   Type: function definition analyzed alias
   Visibility: public weak
   Address is taken.
@@ -2142,7 +2142,7 @@ SysTick_Handler/10 (SysTick_Handler) @0x7e1cb7e46168
   Function flags:
   Called by: 
   Calls: 
-PendSV_Handler/9 (PendSV_Handler) @0x7e1cb7e46000
+PendSV_Handler/9 (PendSV_Handler) @0x74eaa3a46000
   Type: function definition analyzed alias
   Visibility: public weak
   Address is taken.
@@ -2151,7 +2151,7 @@ PendSV_Handler/9 (PendSV_Handler) @0x7e1cb7e46000
   Function flags:
   Called by: 
   Calls: 
-SVC_Handler/8 (SVC_Handler) @0x7e1cb7e43e10
+SVC_Handler/8 (SVC_Handler) @0x74eaa3a43e10
   Type: function definition analyzed alias
   Visibility: public weak
   Address is taken.
@@ -2160,7 +2160,7 @@ SVC_Handler/8 (SVC_Handler) @0x7e1cb7e43e10
   Function flags:
   Called by: 
   Calls: 
-DebugMon_Handler/7 (DebugMon_Handler) @0x7e1cb7e43ca8
+DebugMon_Handler/7 (DebugMon_Handler) @0x74eaa3a43ca8
   Type: function definition analyzed alias
   Visibility: public weak
   Address is taken.
@@ -2169,7 +2169,7 @@ DebugMon_Handler/7 (DebugMon_Handler) @0x7e1cb7e43ca8
   Function flags:
   Called by: 
   Calls: 
-UsageFault_Handler/6 (UsageFault_Handler) @0x7e1cb7e43b40
+UsageFault_Handler/6 (UsageFault_Handler) @0x74eaa3a43b40
   Type: function definition analyzed alias
   Visibility: public weak
   Address is taken.
@@ -2178,7 +2178,7 @@ UsageFault_Handler/6 (UsageFault_Handler) @0x7e1cb7e43b40
   Function flags:
   Called by: 
   Calls: 
-BusFault_Handler/5 (BusFault_Handler) @0x7e1cb7e439d8
+BusFault_Handler/5 (BusFault_Handler) @0x74eaa3a439d8
   Type: function definition analyzed alias
   Visibility: public weak
   Address is taken.
@@ -2187,7 +2187,7 @@ BusFault_Handler/5 (BusFault_Handler) @0x7e1cb7e439d8
   Function flags:
   Called by: 
   Calls: 
-MemManage_Handler/4 (MemManage_Handler) @0x7e1cb7e43870
+MemManage_Handler/4 (MemManage_Handler) @0x74eaa3a43870
   Type: function definition analyzed alias
   Visibility: public weak
   Address is taken.
@@ -2196,7 +2196,7 @@ MemManage_Handler/4 (MemManage_Handler) @0x7e1cb7e43870
   Function flags:
   Called by: 
   Calls: 
-HardFault_Handler/3 (HardFault_Handler) @0x7e1cb7e43708
+HardFault_Handler/3 (HardFault_Handler) @0x74eaa3a43708
   Type: function definition analyzed alias
   Visibility: public weak
   Address is taken.
@@ -2205,7 +2205,7 @@ HardFault_Handler/3 (HardFault_Handler) @0x7e1cb7e43708
   Function flags:
   Called by: 
   Calls: 
-NMI_Handler/2 (NMI_Handler) @0x7e1cb7e435a0
+NMI_Handler/2 (NMI_Handler) @0x74eaa3a435a0
   Type: function definition analyzed alias
   Visibility: public weak
   Address is taken.
@@ -2214,14 +2214,14 @@ NMI_Handler/2 (NMI_Handler) @0x7e1cb7e435a0
   Function flags:
   Called by: 
   Calls: 
-heap/1 (heap) @0x7e1cb7e40380
+heap/1 (heap) @0x74eaa3a40380
   Type: variable definition analyzed
   Visibility: force_output no_reorder section:.heap
   References: 
   Referring: 
   Availability: not-ready
   Varpool flags:
-stack/0 (stack) @0x7e1cb7e40300
+stack/0 (stack) @0x74eaa3a40300
   Type: variable definition analyzed
   Visibility: force_output no_reorder section:.stack
   References: 
@@ -2234,7 +2234,7 @@ Reclaiming variables:
 Clearing address taken flags:
 Optimized Symbol table:
 
-main/61 (main) @0x7e1cb7e5a5a0
+main/61 (main) @0x74eaa3a5a5a0
   Type: function
   Visibility: external public
   References: 
@@ -2243,7 +2243,7 @@ main/61 (main) @0x7e1cb7e5a5a0
   Function flags:
   Called by: Reset_Handler/51 
   Calls: 
-__bss_end__/60 (__bss_end__) @0x7e1cb7e58780
+__bss_end__/60 (__bss_end__) @0x74eaa3a58780
   Type: variable
   Body removed by symtab_remove_unreachable_nodes
   Visibility: external public
@@ -2251,7 +2251,7 @@ __bss_end__/60 (__bss_end__) @0x7e1cb7e58780
   Referring: Reset_Handler/51 (addr) 
   Availability: not_available
   Varpool flags:
-__bss_start__/59 (__bss_start__) @0x7e1cb7e58700
+__bss_start__/59 (__bss_start__) @0x74eaa3a58700
   Type: variable
   Body removed by symtab_remove_unreachable_nodes
   Visibility: external public
@@ -2259,7 +2259,7 @@ __bss_start__/59 (__bss_start__) @0x7e1cb7e58700
   Referring: Reset_Handler/51 (addr) 
   Availability: not_available
   Varpool flags:
-__data_end__/58 (__data_end__) @0x7e1cb7e58600
+__data_end__/58 (__data_end__) @0x74eaa3a58600
   Type: variable
   Body removed by symtab_remove_unreachable_nodes
   Visibility: external public
@@ -2267,7 +2267,7 @@ __data_end__/58 (__data_end__) @0x7e1cb7e58600
   Referring: Reset_Handler/51 (addr) 
   Availability: not_available
   Varpool flags:
-__data_start__/57 (__data_start__) @0x7e1cb7e58580
+__data_start__/57 (__data_start__) @0x74eaa3a58580
   Type: variable
   Body removed by symtab_remove_unreachable_nodes
   Visibility: external public
@@ -2275,7 +2275,7 @@ __data_start__/57 (__data_start__) @0x7e1cb7e58580
   Referring: Reset_Handler/51 (addr) 
   Availability: not_available
   Varpool flags:
-__etext/56 (__etext) @0x7e1cb7e58500
+__etext/56 (__etext) @0x74eaa3a58500
   Type: variable
   Body removed by symtab_remove_unreachable_nodes
   Visibility: external public
@@ -2283,7 +2283,7 @@ __etext/56 (__etext) @0x7e1cb7e58500
   Referring: Reset_Handler/51 (addr) 
   Availability: not_available
   Varpool flags:
-__StackTop/55 (__StackTop) @0x7e1cb7e5a2d0
+__StackTop/55 (__StackTop) @0x74eaa3a5a2d0
   Type: function
   Visibility: external public
   Address is taken.
@@ -2293,7 +2293,7 @@ __StackTop/55 (__StackTop) @0x7e1cb7e5a2d0
   Function flags:
   Called by: 
   Calls: 
-Default_Handler/54 (Default_Handler) @0x7e1cb7e5a168
+Default_Handler/54 (Default_Handler) @0x74eaa3a5a168
   Type: function definition analyzed
   Visibility: force_output externally_visible no_reorder public weak
   Address is taken.
@@ -2303,7 +2303,7 @@ Default_Handler/54 (Default_Handler) @0x7e1cb7e5a168
   Function flags: body
   Called by: 
   Calls: 
-_main/53 (_main) @0x7e1cb7e5a000
+_main/53 (_main) @0x74eaa3a5a000
   Type: function definition analyzed
   Visibility: force_output externally_visible no_reorder public weak
   References: 
@@ -2312,7 +2312,7 @@ _main/53 (_main) @0x7e1cb7e5a000
   Function flags: body
   Called by: Reset_Handler/51 
   Calls: 
-SystemInit/52 (SystemInit) @0x7e1cb7e50b40
+SystemInit/52 (SystemInit) @0x74eaa3a50b40
   Type: function definition analyzed
   Visibility: force_output externally_visible no_reorder public weak
   References: 
@@ -2321,7 +2321,7 @@ SystemInit/52 (SystemInit) @0x7e1cb7e50b40
   Function flags: body
   Called by: Reset_Handler/51 
   Calls: 
-Reset_Handler/51 (Reset_Handler) @0x7e1cb7e50e10
+Reset_Handler/51 (Reset_Handler) @0x74eaa3a50e10
   Type: function definition analyzed
   Visibility: force_output externally_visible no_reorder public weak
   Address is taken.
@@ -2331,14 +2331,14 @@ Reset_Handler/51 (Reset_Handler) @0x7e1cb7e50e10
   Function flags: body
   Called by: 
   Calls: main/61 _main/53 SystemInit/52 
-__Vectors/50 (__Vectors) @0x7e1cb7e4cc80
+__Vectors/50 (__Vectors) @0x74eaa3a4cc80
   Type: variable definition analyzed
   Visibility: force_output externally_visible no_reorder public section:.vectors
   References: __StackTop/55 (addr) Reset_Handler/51 (addr) NMI_Handler/2 (addr) HardFault_Handler/3 (addr) MemManage_Handler/4 (addr) BusFault_Handler/5 (addr) UsageFault_Handler/6 (addr) Default_Handler/54 (addr) Default_Handler/54 (addr) Default_Handler/54 (addr) Default_Handler/54 (addr) SVC_Handler/8 (addr) DebugMon_Handler/7 (addr) Default_Handler/54 (addr) PendSV_Handler/9 (addr) SysTick_Handler/10 (addr) DMA_IRQHandler/11 (addr) GPIO_EVEN_IRQHandler/12 (addr) TIMER0_IRQHandler/13 (addr) USART0_RX_IRQHandler/14 (addr) USART0_TX_IRQHandler/15 (addr) USB_IRQHandler/16 (addr) ACMP0_IRQHandler/17 (addr) ADC0_IRQHandler/18 (addr) DAC0_IRQHandler/19 (addr) I2C0_IRQHandler/20 (addr) I2C1_IRQHandler/21 (addr) GPIO_ODD_IRQHandler/22 (addr) TIMER1_IRQHandler/23 (addr) TIMER2_IRQHandler/24 (addr) TIMER3_IRQHandler/25 (addr) USART1_RX_IRQHandler/26 (addr) USART1_TX_IRQHandler/27 (addr) LESENSE_IRQHandler/28 (addr) USART2_RX_IRQHandler/29 (addr) USART2_TX_IRQHandler/30 (addr) UART0_RX_IRQHandler/31 (addr) UART0_TX_IRQHandler/32 (addr) UART1_RX_IRQHandler/33 (addr) UART1_TX_IRQHandler/34 (addr) LEUART0_IRQHandler/35 (addr) LEUART1_IRQHandler/36 (addr) LETIMER0_IRQHandler/37 (addr) PCNT0_IRQHandler/38 (addr) PCNT1_IRQHandler/39 (addr) PCNT2_IRQHandler/40 (addr) RTC_IRQHandler/41 (addr) BURTC_IRQHandler/42 (addr) CMU_IRQHandler/43 (addr) VCMP_IRQHandler/44 (addr) LCD_IRQHandler/45 (addr) MSC_IRQHandler/46 (addr) AES_IRQHandler/47 (addr) EBI_IRQHandler/48 (addr) EMU_IRQHandler/49 (addr) 
   Referring: 
   Availability: available
   Varpool flags: initialized read-only const-value-known
-EMU_IRQHandler/49 (EMU_IRQHandler) @0x7e1cb7e509d8
+EMU_IRQHandler/49 (EMU_IRQHandler) @0x74eaa3a509d8
   Type: function definition analyzed alias
   Visibility: externally_visible public weak
   Address is taken.
@@ -2348,7 +2348,7 @@ EMU_IRQHandler/49 (EMU_IRQHandler) @0x7e1cb7e509d8
   Function flags:
   Called by: 
   Calls: 
-EBI_IRQHandler/48 (EBI_IRQHandler) @0x7e1cb7e50870
+EBI_IRQHandler/48 (EBI_IRQHandler) @0x74eaa3a50870
   Type: function definition analyzed alias
   Visibility: externally_visible public weak
   Address is taken.
@@ -2358,7 +2358,7 @@ EBI_IRQHandler/48 (EBI_IRQHandler) @0x7e1cb7e50870
   Function flags:
   Called by: 
   Calls: 
-AES_IRQHandler/47 (AES_IRQHandler) @0x7e1cb7e50708
+AES_IRQHandler/47 (AES_IRQHandler) @0x74eaa3a50708
   Type: function definition analyzed alias
   Visibility: externally_visible public weak
   Address is taken.
@@ -2368,7 +2368,7 @@ AES_IRQHandler/47 (AES_IRQHandler) @0x7e1cb7e50708
   Function flags:
   Called by: 
   Calls: 
-MSC_IRQHandler/46 (MSC_IRQHandler) @0x7e1cb7e505a0
+MSC_IRQHandler/46 (MSC_IRQHandler) @0x74eaa3a505a0
   Type: function definition analyzed alias
   Visibility: externally_visible public weak
   Address is taken.
@@ -2378,7 +2378,7 @@ MSC_IRQHandler/46 (MSC_IRQHandler) @0x7e1cb7e505a0
   Function flags:
   Called by: 
   Calls: 
-LCD_IRQHandler/45 (LCD_IRQHandler) @0x7e1cb7e50438
+LCD_IRQHandler/45 (LCD_IRQHandler) @0x74eaa3a50438
   Type: function definition analyzed alias
   Visibility: externally_visible public weak
   Address is taken.
@@ -2388,7 +2388,7 @@ LCD_IRQHandler/45 (LCD_IRQHandler) @0x7e1cb7e50438
   Function flags:
   Called by: 
   Calls: 
-VCMP_IRQHandler/44 (VCMP_IRQHandler) @0x7e1cb7e502d0
+VCMP_IRQHandler/44 (VCMP_IRQHandler) @0x74eaa3a502d0
   Type: function definition analyzed alias
   Visibility: externally_visible public weak
   Address is taken.
@@ -2398,7 +2398,7 @@ VCMP_IRQHandler/44 (VCMP_IRQHandler) @0x7e1cb7e502d0
   Function flags:
   Called by: 
   Calls: 
-CMU_IRQHandler/43 (CMU_IRQHandler) @0x7e1cb7e50168
+CMU_IRQHandler/43 (CMU_IRQHandler) @0x74eaa3a50168
   Type: function definition analyzed alias
   Visibility: externally_visible public weak
   Address is taken.
@@ -2408,7 +2408,7 @@ CMU_IRQHandler/43 (CMU_IRQHandler) @0x7e1cb7e50168
   Function flags:
   Called by: 
   Calls: 
-BURTC_IRQHandler/42 (BURTC_IRQHandler) @0x7e1cb7e50000
+BURTC_IRQHandler/42 (BURTC_IRQHandler) @0x74eaa3a50000
   Type: function definition analyzed alias
   Visibility: externally_visible public weak
   Address is taken.
@@ -2418,7 +2418,7 @@ BURTC_IRQHandler/42 (BURTC_IRQHandler) @0x7e1cb7e50000
   Function flags:
   Called by: 
   Calls: 
-RTC_IRQHandler/41 (RTC_IRQHandler) @0x7e1cb7e4de10
+RTC_IRQHandler/41 (RTC_IRQHandler) @0x74eaa3a4de10
   Type: function definition analyzed alias
   Visibility: externally_visible public weak
   Address is taken.
@@ -2428,7 +2428,7 @@ RTC_IRQHandler/41 (RTC_IRQHandler) @0x7e1cb7e4de10
   Function flags:
   Called by: 
   Calls: 
-PCNT2_IRQHandler/40 (PCNT2_IRQHandler) @0x7e1cb7e4dca8
+PCNT2_IRQHandler/40 (PCNT2_IRQHandler) @0x74eaa3a4dca8
   Type: function definition analyzed alias
   Visibility: externally_visible public weak
   Address is taken.
@@ -2438,7 +2438,7 @@ PCNT2_IRQHandler/40 (PCNT2_IRQHandler) @0x7e1cb7e4dca8
   Function flags:
   Called by: 
   Calls: 
-PCNT1_IRQHandler/39 (PCNT1_IRQHandler) @0x7e1cb7e4db40
+PCNT1_IRQHandler/39 (PCNT1_IRQHandler) @0x74eaa3a4db40
   Type: function definition analyzed alias
   Visibility: externally_visible public weak
   Address is taken.
@@ -2448,7 +2448,7 @@ PCNT1_IRQHandler/39 (PCNT1_IRQHandler) @0x7e1cb7e4db40
   Function flags:
   Called by: 
   Calls: 
-PCNT0_IRQHandler/38 (PCNT0_IRQHandler) @0x7e1cb7e4d9d8
+PCNT0_IRQHandler/38 (PCNT0_IRQHandler) @0x74eaa3a4d9d8
   Type: function definition analyzed alias
   Visibility: externally_visible public weak
   Address is taken.
@@ -2458,7 +2458,7 @@ PCNT0_IRQHandler/38 (PCNT0_IRQHandler) @0x7e1cb7e4d9d8
   Function flags:
   Called by: 
   Calls: 
-LETIMER0_IRQHandler/37 (LETIMER0_IRQHandler) @0x7e1cb7e4d870
+LETIMER0_IRQHandler/37 (LETIMER0_IRQHandler) @0x74eaa3a4d870
   Type: function definition analyzed alias
   Visibility: externally_visible public weak
   Address is taken.
@@ -2468,7 +2468,7 @@ LETIMER0_IRQHandler/37 (LETIMER0_IRQHandler) @0x7e1cb7e4d870
   Function flags:
   Called by: 
   Calls: 
-LEUART1_IRQHandler/36 (LEUART1_IRQHandler) @0x7e1cb7e4d708
+LEUART1_IRQHandler/36 (LEUART1_IRQHandler) @0x74eaa3a4d708
   Type: function definition analyzed alias
   Visibility: externally_visible public weak
   Address is taken.
@@ -2478,7 +2478,7 @@ LEUART1_IRQHandler/36 (LEUART1_IRQHandler) @0x7e1cb7e4d708
   Function flags:
   Called by: 
   Calls: 
-LEUART0_IRQHandler/35 (LEUART0_IRQHandler) @0x7e1cb7e4d5a0
+LEUART0_IRQHandler/35 (LEUART0_IRQHandler) @0x74eaa3a4d5a0
   Type: function definition analyzed alias
   Visibility: externally_visible public weak
   Address is taken.
@@ -2488,7 +2488,7 @@ LEUART0_IRQHandler/35 (LEUART0_IRQHandler) @0x7e1cb7e4d5a0
   Function flags:
   Called by: 
   Calls: 
-UART1_TX_IRQHandler/34 (UART1_TX_IRQHandler) @0x7e1cb7e4d438
+UART1_TX_IRQHandler/34 (UART1_TX_IRQHandler) @0x74eaa3a4d438
   Type: function definition analyzed alias
   Visibility: externally_visible public weak
   Address is taken.
@@ -2498,7 +2498,7 @@ UART1_TX_IRQHandler/34 (UART1_TX_IRQHandler) @0x7e1cb7e4d438
   Function flags:
   Called by: 
   Calls: 
-UART1_RX_IRQHandler/33 (UART1_RX_IRQHandler) @0x7e1cb7e4d2d0
+UART1_RX_IRQHandler/33 (UART1_RX_IRQHandler) @0x74eaa3a4d2d0
   Type: function definition analyzed alias
   Visibility: externally_visible public weak
   Address is taken.
@@ -2508,7 +2508,7 @@ UART1_RX_IRQHandler/33 (UART1_RX_IRQHandler) @0x7e1cb7e4d2d0
   Function flags:
   Called by: 
   Calls: 
-UART0_TX_IRQHandler/32 (UART0_TX_IRQHandler) @0x7e1cb7e4d168
+UART0_TX_IRQHandler/32 (UART0_TX_IRQHandler) @0x74eaa3a4d168
   Type: function definition analyzed alias
   Visibility: externally_visible public weak
   Address is taken.
@@ -2518,7 +2518,7 @@ UART0_TX_IRQHandler/32 (UART0_TX_IRQHandler) @0x7e1cb7e4d168
   Function flags:
   Called by: 
   Calls: 
-UART0_RX_IRQHandler/31 (UART0_RX_IRQHandler) @0x7e1cb7e4d000
+UART0_RX_IRQHandler/31 (UART0_RX_IRQHandler) @0x74eaa3a4d000
   Type: function definition analyzed alias
   Visibility: externally_visible public weak
   Address is taken.
@@ -2528,7 +2528,7 @@ UART0_RX_IRQHandler/31 (UART0_RX_IRQHandler) @0x7e1cb7e4d000
   Function flags:
   Called by: 
   Calls: 
-USART2_TX_IRQHandler/30 (USART2_TX_IRQHandler) @0x7e1cb7e462d0
+USART2_TX_IRQHandler/30 (USART2_TX_IRQHandler) @0x74eaa3a462d0
   Type: function definition analyzed alias
   Visibility: externally_visible public weak
   Address is taken.
@@ -2538,7 +2538,7 @@ USART2_TX_IRQHandler/30 (USART2_TX_IRQHandler) @0x7e1cb7e462d0
   Function flags:
   Called by: 
   Calls: 
-USART2_RX_IRQHandler/29 (USART2_RX_IRQHandler) @0x7e1cb7e49e10
+USART2_RX_IRQHandler/29 (USART2_RX_IRQHandler) @0x74eaa3a49e10
   Type: function definition analyzed alias
   Visibility: externally_visible public weak
   Address is taken.
@@ -2548,7 +2548,7 @@ USART2_RX_IRQHandler/29 (USART2_RX_IRQHandler) @0x7e1cb7e49e10
   Function flags:
   Called by: 
   Calls: 
-LESENSE_IRQHandler/28 (LESENSE_IRQHandler) @0x7e1cb7e49ca8
+LESENSE_IRQHandler/28 (LESENSE_IRQHandler) @0x74eaa3a49ca8
   Type: function definition analyzed alias
   Visibility: externally_visible public weak
   Address is taken.
@@ -2558,7 +2558,7 @@ LESENSE_IRQHandler/28 (LESENSE_IRQHandler) @0x7e1cb7e49ca8
   Function flags:
   Called by: 
   Calls: 
-USART1_TX_IRQHandler/27 (USART1_TX_IRQHandler) @0x7e1cb7e49b40
+USART1_TX_IRQHandler/27 (USART1_TX_IRQHandler) @0x74eaa3a49b40
   Type: function definition analyzed alias
   Visibility: externally_visible public weak
   Address is taken.
@@ -2568,7 +2568,7 @@ USART1_TX_IRQHandler/27 (USART1_TX_IRQHandler) @0x7e1cb7e49b40
   Function flags:
   Called by: 
   Calls: 
-USART1_RX_IRQHandler/26 (USART1_RX_IRQHandler) @0x7e1cb7e499d8
+USART1_RX_IRQHandler/26 (USART1_RX_IRQHandler) @0x74eaa3a499d8
   Type: function definition analyzed alias
   Visibility: externally_visible public weak
   Address is taken.
@@ -2578,7 +2578,7 @@ USART1_RX_IRQHandler/26 (USART1_RX_IRQHandler) @0x7e1cb7e499d8
   Function flags:
   Called by: 
   Calls: 
-TIMER3_IRQHandler/25 (TIMER3_IRQHandler) @0x7e1cb7e49870
+TIMER3_IRQHandler/25 (TIMER3_IRQHandler) @0x74eaa3a49870
   Type: function definition analyzed alias
   Visibility: externally_visible public weak
   Address is taken.
@@ -2588,7 +2588,7 @@ TIMER3_IRQHandler/25 (TIMER3_IRQHandler) @0x7e1cb7e49870
   Function flags:
   Called by: 
   Calls: 
-TIMER2_IRQHandler/24 (TIMER2_IRQHandler) @0x7e1cb7e49708
+TIMER2_IRQHandler/24 (TIMER2_IRQHandler) @0x74eaa3a49708
   Type: function definition analyzed alias
   Visibility: externally_visible public weak
   Address is taken.
@@ -2598,7 +2598,7 @@ TIMER2_IRQHandler/24 (TIMER2_IRQHandler) @0x7e1cb7e49708
   Function flags:
   Called by: 
   Calls: 
-TIMER1_IRQHandler/23 (TIMER1_IRQHandler) @0x7e1cb7e495a0
+TIMER1_IRQHandler/23 (TIMER1_IRQHandler) @0x74eaa3a495a0
   Type: function definition analyzed alias
   Visibility: externally_visible public weak
   Address is taken.
@@ -2608,7 +2608,7 @@ TIMER1_IRQHandler/23 (TIMER1_IRQHandler) @0x7e1cb7e495a0
   Function flags:
   Called by: 
   Calls: 
-GPIO_ODD_IRQHandler/22 (GPIO_ODD_IRQHandler) @0x7e1cb7e49438
+GPIO_ODD_IRQHandler/22 (GPIO_ODD_IRQHandler) @0x74eaa3a49438
   Type: function definition analyzed alias
   Visibility: externally_visible public weak
   Address is taken.
@@ -2618,7 +2618,7 @@ GPIO_ODD_IRQHandler/22 (GPIO_ODD_IRQHandler) @0x7e1cb7e49438
   Function flags:
   Called by: 
   Calls: 
-I2C1_IRQHandler/21 (I2C1_IRQHandler) @0x7e1cb7e492d0
+I2C1_IRQHandler/21 (I2C1_IRQHandler) @0x74eaa3a492d0
   Type: function definition analyzed alias
   Visibility: externally_visible public weak
   Address is taken.
@@ -2628,7 +2628,7 @@ I2C1_IRQHandler/21 (I2C1_IRQHandler) @0x7e1cb7e492d0
   Function flags:
   Called by: 
   Calls: 
-I2C0_IRQHandler/20 (I2C0_IRQHandler) @0x7e1cb7e49168
+I2C0_IRQHandler/20 (I2C0_IRQHandler) @0x74eaa3a49168
   Type: function definition analyzed alias
   Visibility: externally_visible public weak
   Address is taken.
@@ -2638,7 +2638,7 @@ I2C0_IRQHandler/20 (I2C0_IRQHandler) @0x7e1cb7e49168
   Function flags:
   Called by: 
   Calls: 
-DAC0_IRQHandler/19 (DAC0_IRQHandler) @0x7e1cb7e49000
+DAC0_IRQHandler/19 (DAC0_IRQHandler) @0x74eaa3a49000
   Type: function definition analyzed alias
   Visibility: externally_visible public weak
   Address is taken.
@@ -2648,7 +2648,7 @@ DAC0_IRQHandler/19 (DAC0_IRQHandler) @0x7e1cb7e49000
   Function flags:
   Called by: 
   Calls: 
-ADC0_IRQHandler/18 (ADC0_IRQHandler) @0x7e1cb7e46e10
+ADC0_IRQHandler/18 (ADC0_IRQHandler) @0x74eaa3a46e10
   Type: function definition analyzed alias
   Visibility: externally_visible public weak
   Address is taken.
@@ -2658,7 +2658,7 @@ ADC0_IRQHandler/18 (ADC0_IRQHandler) @0x7e1cb7e46e10
   Function flags:
   Called by: 
   Calls: 
-ACMP0_IRQHandler/17 (ACMP0_IRQHandler) @0x7e1cb7e46ca8
+ACMP0_IRQHandler/17 (ACMP0_IRQHandler) @0x74eaa3a46ca8
   Type: function definition analyzed alias
   Visibility: externally_visible public weak
   Address is taken.
@@ -2668,7 +2668,7 @@ ACMP0_IRQHandler/17 (ACMP0_IRQHandler) @0x7e1cb7e46ca8
   Function flags:
   Called by: 
   Calls: 
-USB_IRQHandler/16 (USB_IRQHandler) @0x7e1cb7e46b40
+USB_IRQHandler/16 (USB_IRQHandler) @0x74eaa3a46b40
   Type: function definition analyzed alias
   Visibility: externally_visible public weak
   Address is taken.
@@ -2678,7 +2678,7 @@ USB_IRQHandler/16 (USB_IRQHandler) @0x7e1cb7e46b40
   Function flags:
   Called by: 
   Calls: 
-USART0_TX_IRQHandler/15 (USART0_TX_IRQHandler) @0x7e1cb7e469d8
+USART0_TX_IRQHandler/15 (USART0_TX_IRQHandler) @0x74eaa3a469d8
   Type: function definition analyzed alias
   Visibility: externally_visible public weak
   Address is taken.
@@ -2688,7 +2688,7 @@ USART0_TX_IRQHandler/15 (USART0_TX_IRQHandler) @0x7e1cb7e469d8
   Function flags:
   Called by: 
   Calls: 
-USART0_RX_IRQHandler/14 (USART0_RX_IRQHandler) @0x7e1cb7e46870
+USART0_RX_IRQHandler/14 (USART0_RX_IRQHandler) @0x74eaa3a46870
   Type: function definition analyzed alias
   Visibility: externally_visible public weak
   Address is taken.
@@ -2698,7 +2698,7 @@ USART0_RX_IRQHandler/14 (USART0_RX_IRQHandler) @0x7e1cb7e46870
   Function flags:
   Called by: 
   Calls: 
-TIMER0_IRQHandler/13 (TIMER0_IRQHandler) @0x7e1cb7e46708
+TIMER0_IRQHandler/13 (TIMER0_IRQHandler) @0x74eaa3a46708
   Type: function definition analyzed alias
   Visibility: externally_visible public weak
   Address is taken.
@@ -2708,7 +2708,7 @@ TIMER0_IRQHandler/13 (TIMER0_IRQHandler) @0x7e1cb7e46708
   Function flags:
   Called by: 
   Calls: 
-GPIO_EVEN_IRQHandler/12 (GPIO_EVEN_IRQHandler) @0x7e1cb7e465a0
+GPIO_EVEN_IRQHandler/12 (GPIO_EVEN_IRQHandler) @0x74eaa3a465a0
   Type: function definition analyzed alias
   Visibility: externally_visible public weak
   Address is taken.
@@ -2718,7 +2718,7 @@ GPIO_EVEN_IRQHandler/12 (GPIO_EVEN_IRQHandler) @0x7e1cb7e465a0
   Function flags:
   Called by: 
   Calls: 
-DMA_IRQHandler/11 (DMA_IRQHandler) @0x7e1cb7e46438
+DMA_IRQHandler/11 (DMA_IRQHandler) @0x74eaa3a46438
   Type: function definition analyzed alias
   Visibility: externally_visible public weak
   Address is taken.
@@ -2728,7 +2728,7 @@ DMA_IRQHandler/11 (DMA_IRQHandler) @0x7e1cb7e46438
   Function flags:
   Called by: 
   Calls: 
-SysTick_Handler/10 (SysTick_Handler) @0x7e1cb7e46168
+SysTick_Handler/10 (SysTick_Handler) @0x74eaa3a46168
   Type: function definition analyzed alias
   Visibility: externally_visible public weak
   Address is taken.
@@ -2738,7 +2738,7 @@ SysTick_Handler/10 (SysTick_Handler) @0x7e1cb7e46168
   Function flags:
   Called by: 
   Calls: 
-PendSV_Handler/9 (PendSV_Handler) @0x7e1cb7e46000
+PendSV_Handler/9 (PendSV_Handler) @0x74eaa3a46000
   Type: function definition analyzed alias
   Visibility: externally_visible public weak
   Address is taken.
@@ -2748,7 +2748,7 @@ PendSV_Handler/9 (PendSV_Handler) @0x7e1cb7e46000
   Function flags:
   Called by: 
   Calls: 
-SVC_Handler/8 (SVC_Handler) @0x7e1cb7e43e10
+SVC_Handler/8 (SVC_Handler) @0x74eaa3a43e10
   Type: function definition analyzed alias
   Visibility: externally_visible public weak
   Address is taken.
@@ -2758,7 +2758,7 @@ SVC_Handler/8 (SVC_Handler) @0x7e1cb7e43e10
   Function flags:
   Called by: 
   Calls: 
-DebugMon_Handler/7 (DebugMon_Handler) @0x7e1cb7e43ca8
+DebugMon_Handler/7 (DebugMon_Handler) @0x74eaa3a43ca8
   Type: function definition analyzed alias
   Visibility: externally_visible public weak
   Address is taken.
@@ -2768,7 +2768,7 @@ DebugMon_Handler/7 (DebugMon_Handler) @0x7e1cb7e43ca8
   Function flags:
   Called by: 
   Calls: 
-UsageFault_Handler/6 (UsageFault_Handler) @0x7e1cb7e43b40
+UsageFault_Handler/6 (UsageFault_Handler) @0x74eaa3a43b40
   Type: function definition analyzed alias
   Visibility: externally_visible public weak
   Address is taken.
@@ -2778,7 +2778,7 @@ UsageFault_Handler/6 (UsageFault_Handler) @0x7e1cb7e43b40
   Function flags:
   Called by: 
   Calls: 
-BusFault_Handler/5 (BusFault_Handler) @0x7e1cb7e439d8
+BusFault_Handler/5 (BusFault_Handler) @0x74eaa3a439d8
   Type: function definition analyzed alias
   Visibility: externally_visible public weak
   Address is taken.
@@ -2788,7 +2788,7 @@ BusFault_Handler/5 (BusFault_Handler) @0x7e1cb7e439d8
   Function flags:
   Called by: 
   Calls: 
-MemManage_Handler/4 (MemManage_Handler) @0x7e1cb7e43870
+MemManage_Handler/4 (MemManage_Handler) @0x74eaa3a43870
   Type: function definition analyzed alias
   Visibility: externally_visible public weak
   Address is taken.
@@ -2798,7 +2798,7 @@ MemManage_Handler/4 (MemManage_Handler) @0x7e1cb7e43870
   Function flags:
   Called by: 
   Calls: 
-HardFault_Handler/3 (HardFault_Handler) @0x7e1cb7e43708
+HardFault_Handler/3 (HardFault_Handler) @0x74eaa3a43708
   Type: function definition analyzed alias
   Visibility: externally_visible public weak
   Address is taken.
@@ -2808,7 +2808,7 @@ HardFault_Handler/3 (HardFault_Handler) @0x7e1cb7e43708
   Function flags:
   Called by: 
   Calls: 
-NMI_Handler/2 (NMI_Handler) @0x7e1cb7e435a0
+NMI_Handler/2 (NMI_Handler) @0x74eaa3a435a0
   Type: function definition analyzed alias
   Visibility: externally_visible public weak
   Address is taken.
@@ -2818,14 +2818,14 @@ NMI_Handler/2 (NMI_Handler) @0x7e1cb7e435a0
   Function flags:
   Called by: 
   Calls: 
-heap/1 (heap) @0x7e1cb7e40380
+heap/1 (heap) @0x74eaa3a40380
   Type: variable definition analyzed
   Visibility: force_output no_reorder prevailing_def_ironly section:.heap
   References: 
   Referring: 
   Availability: available
   Varpool flags:
-stack/0 (stack) @0x7e1cb7e40300
+stack/0 (stack) @0x74eaa3a40300
   Type: variable definition analyzed
   Visibility: force_output no_reorder prevailing_def_ironly section:.stack
   References: 
@@ -2843,7 +2843,7 @@ Removing variables:
 
 Final Symbol table:
 
-main/61 (main) @0x7e1cb7e5a5a0
+main/61 (main) @0x74eaa3a5a5a0
   Type: function
   Visibility: external public
   References: 
@@ -2852,7 +2852,7 @@ main/61 (main) @0x7e1cb7e5a5a0
   Function flags:
   Called by: 
   Calls: 
-__bss_end__/60 (__bss_end__) @0x7e1cb7e58780
+__bss_end__/60 (__bss_end__) @0x74eaa3a58780
   Type: variable
   Body removed by symtab_remove_unreachable_nodes
   Visibility: external public
@@ -2860,7 +2860,7 @@ __bss_end__/60 (__bss_end__) @0x7e1cb7e58780
   Referring: 
   Availability: not_available
   Varpool flags:
-__bss_start__/59 (__bss_start__) @0x7e1cb7e58700
+__bss_start__/59 (__bss_start__) @0x74eaa3a58700
   Type: variable
   Body removed by symtab_remove_unreachable_nodes
   Visibility: external public
@@ -2868,7 +2868,7 @@ __bss_start__/59 (__bss_start__) @0x7e1cb7e58700
   Referring: 
   Availability: not_available
   Varpool flags:
-__data_end__/58 (__data_end__) @0x7e1cb7e58600
+__data_end__/58 (__data_end__) @0x74eaa3a58600
   Type: variable
   Body removed by symtab_remove_unreachable_nodes
   Visibility: external public
@@ -2876,7 +2876,7 @@ __data_end__/58 (__data_end__) @0x7e1cb7e58600
   Referring: 
   Availability: not_available
   Varpool flags:
-__data_start__/57 (__data_start__) @0x7e1cb7e58580
+__data_start__/57 (__data_start__) @0x74eaa3a58580
   Type: variable
   Body removed by symtab_remove_unreachable_nodes
   Visibility: external public
@@ -2884,7 +2884,7 @@ __data_start__/57 (__data_start__) @0x7e1cb7e58580
   Referring: 
   Availability: not_available
   Varpool flags:
-__etext/56 (__etext) @0x7e1cb7e58500
+__etext/56 (__etext) @0x74eaa3a58500
   Type: variable
   Body removed by symtab_remove_unreachable_nodes
   Visibility: external public
@@ -2892,7 +2892,7 @@ __etext/56 (__etext) @0x7e1cb7e58500
   Referring: 
   Availability: not_available
   Varpool flags:
-__StackTop/55 (__StackTop) @0x7e1cb7e5a2d0
+__StackTop/55 (__StackTop) @0x74eaa3a5a2d0
   Type: function
   Visibility: external public
   Address is taken.
@@ -2902,7 +2902,7 @@ __StackTop/55 (__StackTop) @0x7e1cb7e5a2d0
   Function flags:
   Called by: 
   Calls: 
-Default_Handler/54 (Default_Handler) @0x7e1cb7e5a168
+Default_Handler/54 (Default_Handler) @0x74eaa3a5a168
   Type: function definition analyzed
   Visibility: force_output externally_visible no_reorder asm_written public weak section:.text.Default_Handler (implicit_section)
   Address is taken.
@@ -2912,7 +2912,7 @@ Default_Handler/54 (Default_Handler) @0x7e1cb7e5a168
   Function flags:
   Called by: 
   Calls: 
-_main/53 (_main) @0x7e1cb7e5a000
+_main/53 (_main) @0x74eaa3a5a000
   Type: function definition analyzed
   Visibility: force_output externally_visible no_reorder asm_written public weak section:.text._main (implicit_section)
   References: 
@@ -2921,7 +2921,7 @@ _main/53 (_main) @0x7e1cb7e5a000
   Function flags:
   Called by: 
   Calls: 
-SystemInit/52 (SystemInit) @0x7e1cb7e50b40
+SystemInit/52 (SystemInit) @0x74eaa3a50b40
   Type: function definition analyzed
   Visibility: force_output externally_visible no_reorder asm_written public weak section:.text.SystemInit (implicit_section)
   References: 
@@ -2930,7 +2930,7 @@ SystemInit/52 (SystemInit) @0x7e1cb7e50b40
   Function flags:
   Called by: 
   Calls: 
-Reset_Handler/51 (Reset_Handler) @0x7e1cb7e50e10
+Reset_Handler/51 (Reset_Handler) @0x74eaa3a50e10
   Type: function definition analyzed
   Visibility: force_output externally_visible no_reorder asm_written public weak section:.text.Reset_Handler (implicit_section)
   Address is taken.
@@ -2940,7 +2940,7 @@ Reset_Handler/51 (Reset_Handler) @0x7e1cb7e50e10
   Function flags:
   Called by: 
   Calls: 
-__Vectors/50 (__Vectors) @0x7e1cb7e4cc80
+__Vectors/50 (__Vectors) @0x74eaa3a4cc80
   Type: variable definition analyzed
   Visibility: force_output externally_visible no_reorder asm_written public section:.vectors
   Aux: @0x1
@@ -2948,7 +2948,7 @@ __Vectors/50 (__Vectors) @0x7e1cb7e4cc80
   Referring: 
   Availability: available
   Varpool flags: initialized read-only const-value-known
-EMU_IRQHandler/49 (EMU_IRQHandler) @0x7e1cb7e509d8
+EMU_IRQHandler/49 (EMU_IRQHandler) @0x74eaa3a509d8
   Type: function definition analyzed alias
   Visibility: externally_visible asm_written public weak section:.text.Default_Handler (implicit_section)
   Address is taken.
@@ -2958,7 +2958,7 @@ EMU_IRQHandler/49 (EMU_IRQHandler) @0x7e1cb7e509d8
   Function flags:
   Called by: 
   Calls: 
-EBI_IRQHandler/48 (EBI_IRQHandler) @0x7e1cb7e50870
+EBI_IRQHandler/48 (EBI_IRQHandler) @0x74eaa3a50870
   Type: function definition analyzed alias
   Visibility: externally_visible asm_written public weak section:.text.Default_Handler (implicit_section)
   Address is taken.
@@ -2968,7 +2968,7 @@ EBI_IRQHandler/48 (EBI_IRQHandler) @0x7e1cb7e50870
   Function flags:
   Called by: 
   Calls: 
-AES_IRQHandler/47 (AES_IRQHandler) @0x7e1cb7e50708
+AES_IRQHandler/47 (AES_IRQHandler) @0x74eaa3a50708
   Type: function definition analyzed alias
   Visibility: externally_visible asm_written public weak section:.text.Default_Handler (implicit_section)
   Address is taken.
@@ -2978,7 +2978,7 @@ AES_IRQHandler/47 (AES_IRQHandler) @0x7e1cb7e50708
   Function flags:
   Called by: 
   Calls: 
-MSC_IRQHandler/46 (MSC_IRQHandler) @0x7e1cb7e505a0
+MSC_IRQHandler/46 (MSC_IRQHandler) @0x74eaa3a505a0
   Type: function definition analyzed alias
   Visibility: externally_visible asm_written public weak section:.text.Default_Handler (implicit_section)
   Address is taken.
@@ -2988,7 +2988,7 @@ MSC_IRQHandler/46 (MSC_IRQHandler) @0x7e1cb7e505a0
   Function flags:
   Called by: 
   Calls: 
-LCD_IRQHandler/45 (LCD_IRQHandler) @0x7e1cb7e50438
+LCD_IRQHandler/45 (LCD_IRQHandler) @0x74eaa3a50438
   Type: function definition analyzed alias
   Visibility: externally_visible asm_written public weak section:.text.Default_Handler (implicit_section)
   Address is taken.
@@ -2998,7 +2998,7 @@ LCD_IRQHandler/45 (LCD_IRQHandler) @0x7e1cb7e50438
   Function flags:
   Called by: 
   Calls: 
-VCMP_IRQHandler/44 (VCMP_IRQHandler) @0x7e1cb7e502d0
+VCMP_IRQHandler/44 (VCMP_IRQHandler) @0x74eaa3a502d0
   Type: function definition analyzed alias
   Visibility: externally_visible asm_written public weak section:.text.Default_Handler (implicit_section)
   Address is taken.
@@ -3008,7 +3008,7 @@ VCMP_IRQHandler/44 (VCMP_IRQHandler) @0x7e1cb7e502d0
   Function flags:
   Called by: 
   Calls: 
-CMU_IRQHandler/43 (CMU_IRQHandler) @0x7e1cb7e50168
+CMU_IRQHandler/43 (CMU_IRQHandler) @0x74eaa3a50168
   Type: function definition analyzed alias
   Visibility: externally_visible asm_written public weak section:.text.Default_Handler (implicit_section)
   Address is taken.
@@ -3018,7 +3018,7 @@ CMU_IRQHandler/43 (CMU_IRQHandler) @0x7e1cb7e50168
   Function flags:
   Called by: 
   Calls: 
-BURTC_IRQHandler/42 (BURTC_IRQHandler) @0x7e1cb7e50000
+BURTC_IRQHandler/42 (BURTC_IRQHandler) @0x74eaa3a50000
   Type: function definition analyzed alias
   Visibility: externally_visible asm_written public weak section:.text.Default_Handler (implicit_section)
   Address is taken.
@@ -3028,7 +3028,7 @@ BURTC_IRQHandler/42 (BURTC_IRQHandler) @0x7e1cb7e50000
   Function flags:
   Called by: 
   Calls: 
-RTC_IRQHandler/41 (RTC_IRQHandler) @0x7e1cb7e4de10
+RTC_IRQHandler/41 (RTC_IRQHandler) @0x74eaa3a4de10
   Type: function definition analyzed alias
   Visibility: externally_visible asm_written public weak section:.text.Default_Handler (implicit_section)
   Address is taken.
@@ -3038,7 +3038,7 @@ RTC_IRQHandler/41 (RTC_IRQHandler) @0x7e1cb7e4de10
   Function flags:
   Called by: 
   Calls: 
-PCNT2_IRQHandler/40 (PCNT2_IRQHandler) @0x7e1cb7e4dca8
+PCNT2_IRQHandler/40 (PCNT2_IRQHandler) @0x74eaa3a4dca8
   Type: function definition analyzed alias
   Visibility: externally_visible asm_written public weak section:.text.Default_Handler (implicit_section)
   Address is taken.
@@ -3048,7 +3048,7 @@ PCNT2_IRQHandler/40 (PCNT2_IRQHandler) @0x7e1cb7e4dca8
   Function flags:
   Called by: 
   Calls: 
-PCNT1_IRQHandler/39 (PCNT1_IRQHandler) @0x7e1cb7e4db40
+PCNT1_IRQHandler/39 (PCNT1_IRQHandler) @0x74eaa3a4db40
   Type: function definition analyzed alias
   Visibility: externally_visible asm_written public weak section:.text.Default_Handler (implicit_section)
   Address is taken.
@@ -3058,7 +3058,7 @@ PCNT1_IRQHandler/39 (PCNT1_IRQHandler) @0x7e1cb7e4db40
   Function flags:
   Called by: 
   Calls: 
-PCNT0_IRQHandler/38 (PCNT0_IRQHandler) @0x7e1cb7e4d9d8
+PCNT0_IRQHandler/38 (PCNT0_IRQHandler) @0x74eaa3a4d9d8
   Type: function definition analyzed alias
   Visibility: externally_visible asm_written public weak section:.text.Default_Handler (implicit_section)
   Address is taken.
@@ -3068,7 +3068,7 @@ PCNT0_IRQHandler/38 (PCNT0_IRQHandler) @0x7e1cb7e4d9d8
   Function flags:
   Called by: 
   Calls: 
-LETIMER0_IRQHandler/37 (LETIMER0_IRQHandler) @0x7e1cb7e4d870
+LETIMER0_IRQHandler/37 (LETIMER0_IRQHandler) @0x74eaa3a4d870
   Type: function definition analyzed alias
   Visibility: externally_visible asm_written public weak section:.text.Default_Handler (implicit_section)
   Address is taken.
@@ -3078,7 +3078,7 @@ LETIMER0_IRQHandler/37 (LETIMER0_IRQHandler) @0x7e1cb7e4d870
   Function flags:
   Called by: 
   Calls: 
-LEUART1_IRQHandler/36 (LEUART1_IRQHandler) @0x7e1cb7e4d708
+LEUART1_IRQHandler/36 (LEUART1_IRQHandler) @0x74eaa3a4d708
   Type: function definition analyzed alias
   Visibility: externally_visible asm_written public weak section:.text.Default_Handler (implicit_section)
   Address is taken.
@@ -3088,7 +3088,7 @@ LEUART1_IRQHandler/36 (LEUART1_IRQHandler) @0x7e1cb7e4d708
   Function flags:
   Called by: 
   Calls: 
-LEUART0_IRQHandler/35 (LEUART0_IRQHandler) @0x7e1cb7e4d5a0
+LEUART0_IRQHandler/35 (LEUART0_IRQHandler) @0x74eaa3a4d5a0
   Type: function definition analyzed alias
   Visibility: externally_visible asm_written public weak section:.text.Default_Handler (implicit_section)
   Address is taken.
@@ -3098,7 +3098,7 @@ LEUART0_IRQHandler/35 (LEUART0_IRQHandler) @0x7e1cb7e4d5a0
   Function flags:
   Called by: 
   Calls: 
-UART1_TX_IRQHandler/34 (UART1_TX_IRQHandler) @0x7e1cb7e4d438
+UART1_TX_IRQHandler/34 (UART1_TX_IRQHandler) @0x74eaa3a4d438
   Type: function definition analyzed alias
   Visibility: externally_visible asm_written public weak section:.text.Default_Handler (implicit_section)
   Address is taken.
@@ -3108,7 +3108,7 @@ UART1_TX_IRQHandler/34 (UART1_TX_IRQHandler) @0x7e1cb7e4d438
   Function flags:
   Called by: 
   Calls: 
-UART1_RX_IRQHandler/33 (UART1_RX_IRQHandler) @0x7e1cb7e4d2d0
+UART1_RX_IRQHandler/33 (UART1_RX_IRQHandler) @0x74eaa3a4d2d0
   Type: function definition analyzed alias
   Visibility: externally_visible asm_written public weak section:.text.Default_Handler (implicit_section)
   Address is taken.
@@ -3118,7 +3118,7 @@ UART1_RX_IRQHandler/33 (UART1_RX_IRQHandler) @0x7e1cb7e4d2d0
   Function flags:
   Called by: 
   Calls: 
-UART0_TX_IRQHandler/32 (UART0_TX_IRQHandler) @0x7e1cb7e4d168
+UART0_TX_IRQHandler/32 (UART0_TX_IRQHandler) @0x74eaa3a4d168
   Type: function definition analyzed alias
   Visibility: externally_visible asm_written public weak section:.text.Default_Handler (implicit_section)
   Address is taken.
@@ -3128,7 +3128,7 @@ UART0_TX_IRQHandler/32 (UART0_TX_IRQHandler) @0x7e1cb7e4d168
   Function flags:
   Called by: 
   Calls: 
-UART0_RX_IRQHandler/31 (UART0_RX_IRQHandler) @0x7e1cb7e4d000
+UART0_RX_IRQHandler/31 (UART0_RX_IRQHandler) @0x74eaa3a4d000
   Type: function definition analyzed alias
   Visibility: externally_visible asm_written public weak section:.text.Default_Handler (implicit_section)
   Address is taken.
@@ -3138,7 +3138,7 @@ UART0_RX_IRQHandler/31 (UART0_RX_IRQHandler) @0x7e1cb7e4d000
   Function flags:
   Called by: 
   Calls: 
-USART2_TX_IRQHandler/30 (USART2_TX_IRQHandler) @0x7e1cb7e462d0
+USART2_TX_IRQHandler/30 (USART2_TX_IRQHandler) @0x74eaa3a462d0
   Type: function definition analyzed alias
   Visibility: externally_visible asm_written public weak section:.text.Default_Handler (implicit_section)
   Address is taken.
@@ -3148,7 +3148,7 @@ USART2_TX_IRQHandler/30 (USART2_TX_IRQHandler) @0x7e1cb7e462d0
   Function flags:
   Called by: 
   Calls: 
-USART2_RX_IRQHandler/29 (USART2_RX_IRQHandler) @0x7e1cb7e49e10
+USART2_RX_IRQHandler/29 (USART2_RX_IRQHandler) @0x74eaa3a49e10
   Type: function definition analyzed alias
   Visibility: externally_visible asm_written public weak section:.text.Default_Handler (implicit_section)
   Address is taken.
@@ -3158,7 +3158,7 @@ USART2_RX_IRQHandler/29 (USART2_RX_IRQHandler) @0x7e1cb7e49e10
   Function flags:
   Called by: 
   Calls: 
-LESENSE_IRQHandler/28 (LESENSE_IRQHandler) @0x7e1cb7e49ca8
+LESENSE_IRQHandler/28 (LESENSE_IRQHandler) @0x74eaa3a49ca8
   Type: function definition analyzed alias
   Visibility: externally_visible asm_written public weak section:.text.Default_Handler (implicit_section)
   Address is taken.
@@ -3168,7 +3168,7 @@ LESENSE_IRQHandler/28 (LESENSE_IRQHandler) @0x7e1cb7e49ca8
   Function flags:
   Called by: 
   Calls: 
-USART1_TX_IRQHandler/27 (USART1_TX_IRQHandler) @0x7e1cb7e49b40
+USART1_TX_IRQHandler/27 (USART1_TX_IRQHandler) @0x74eaa3a49b40
   Type: function definition analyzed alias
   Visibility: externally_visible asm_written public weak section:.text.Default_Handler (implicit_section)
   Address is taken.
@@ -3178,7 +3178,7 @@ USART1_TX_IRQHandler/27 (USART1_TX_IRQHandler) @0x7e1cb7e49b40
   Function flags:
   Called by: 
   Calls: 
-USART1_RX_IRQHandler/26 (USART1_RX_IRQHandler) @0x7e1cb7e499d8
+USART1_RX_IRQHandler/26 (USART1_RX_IRQHandler) @0x74eaa3a499d8
   Type: function definition analyzed alias
   Visibility: externally_visible asm_written public weak section:.text.Default_Handler (implicit_section)
   Address is taken.
@@ -3188,7 +3188,7 @@ USART1_RX_IRQHandler/26 (USART1_RX_IRQHandler) @0x7e1cb7e499d8
   Function flags:
   Called by: 
   Calls: 
-TIMER3_IRQHandler/25 (TIMER3_IRQHandler) @0x7e1cb7e49870
+TIMER3_IRQHandler/25 (TIMER3_IRQHandler) @0x74eaa3a49870
   Type: function definition analyzed alias
   Visibility: externally_visible asm_written public weak section:.text.Default_Handler (implicit_section)
   Address is taken.
@@ -3198,7 +3198,7 @@ TIMER3_IRQHandler/25 (TIMER3_IRQHandler) @0x7e1cb7e49870
   Function flags:
   Called by: 
   Calls: 
-TIMER2_IRQHandler/24 (TIMER2_IRQHandler) @0x7e1cb7e49708
+TIMER2_IRQHandler/24 (TIMER2_IRQHandler) @0x74eaa3a49708
   Type: function definition analyzed alias
   Visibility: externally_visible asm_written public weak section:.text.Default_Handler (implicit_section)
   Address is taken.
@@ -3208,7 +3208,7 @@ TIMER2_IRQHandler/24 (TIMER2_IRQHandler) @0x7e1cb7e49708
   Function flags:
   Called by: 
   Calls: 
-TIMER1_IRQHandler/23 (TIMER1_IRQHandler) @0x7e1cb7e495a0
+TIMER1_IRQHandler/23 (TIMER1_IRQHandler) @0x74eaa3a495a0
   Type: function definition analyzed alias
   Visibility: externally_visible asm_written public weak section:.text.Default_Handler (implicit_section)
   Address is taken.
@@ -3218,7 +3218,7 @@ TIMER1_IRQHandler/23 (TIMER1_IRQHandler) @0x7e1cb7e495a0
   Function flags:
   Called by: 
   Calls: 
-GPIO_ODD_IRQHandler/22 (GPIO_ODD_IRQHandler) @0x7e1cb7e49438
+GPIO_ODD_IRQHandler/22 (GPIO_ODD_IRQHandler) @0x74eaa3a49438
   Type: function definition analyzed alias
   Visibility: externally_visible asm_written public weak section:.text.Default_Handler (implicit_section)
   Address is taken.
@@ -3228,7 +3228,7 @@ GPIO_ODD_IRQHandler/22 (GPIO_ODD_IRQHandler) @0x7e1cb7e49438
   Function flags:
   Called by: 
   Calls: 
-I2C1_IRQHandler/21 (I2C1_IRQHandler) @0x7e1cb7e492d0
+I2C1_IRQHandler/21 (I2C1_IRQHandler) @0x74eaa3a492d0
   Type: function definition analyzed alias
   Visibility: externally_visible asm_written public weak section:.text.Default_Handler (implicit_section)
   Address is taken.
@@ -3238,7 +3238,7 @@ I2C1_IRQHandler/21 (I2C1_IRQHandler) @0x7e1cb7e492d0
   Function flags:
   Called by: 
   Calls: 
-I2C0_IRQHandler/20 (I2C0_IRQHandler) @0x7e1cb7e49168
+I2C0_IRQHandler/20 (I2C0_IRQHandler) @0x74eaa3a49168
   Type: function definition analyzed alias
   Visibility: externally_visible asm_written public weak section:.text.Default_Handler (implicit_section)
   Address is taken.
@@ -3248,7 +3248,7 @@ I2C0_IRQHandler/20 (I2C0_IRQHandler) @0x7e1cb7e49168
   Function flags:
   Called by: 
   Calls: 
-DAC0_IRQHandler/19 (DAC0_IRQHandler) @0x7e1cb7e49000
+DAC0_IRQHandler/19 (DAC0_IRQHandler) @0x74eaa3a49000
   Type: function definition analyzed alias
   Visibility: externally_visible asm_written public weak section:.text.Default_Handler (implicit_section)
   Address is taken.
@@ -3258,7 +3258,7 @@ DAC0_IRQHandler/19 (DAC0_IRQHandler) @0x7e1cb7e49000
   Function flags:
   Called by: 
   Calls: 
-ADC0_IRQHandler/18 (ADC0_IRQHandler) @0x7e1cb7e46e10
+ADC0_IRQHandler/18 (ADC0_IRQHandler) @0x74eaa3a46e10
   Type: function definition analyzed alias
   Visibility: externally_visible asm_written public weak section:.text.Default_Handler (implicit_section)
   Address is taken.
@@ -3268,7 +3268,7 @@ ADC0_IRQHandler/18 (ADC0_IRQHandler) @0x7e1cb7e46e10
   Function flags:
   Called by: 
   Calls: 
-ACMP0_IRQHandler/17 (ACMP0_IRQHandler) @0x7e1cb7e46ca8
+ACMP0_IRQHandler/17 (ACMP0_IRQHandler) @0x74eaa3a46ca8
   Type: function definition analyzed alias
   Visibility: externally_visible asm_written public weak section:.text.Default_Handler (implicit_section)
   Address is taken.
@@ -3278,7 +3278,7 @@ ACMP0_IRQHandler/17 (ACMP0_IRQHandler) @0x7e1cb7e46ca8
   Function flags:
   Called by: 
   Calls: 
-USB_IRQHandler/16 (USB_IRQHandler) @0x7e1cb7e46b40
+USB_IRQHandler/16 (USB_IRQHandler) @0x74eaa3a46b40
   Type: function definition analyzed alias
   Visibility: externally_visible asm_written public weak section:.text.Default_Handler (implicit_section)
   Address is taken.
@@ -3288,7 +3288,7 @@ USB_IRQHandler/16 (USB_IRQHandler) @0x7e1cb7e46b40
   Function flags:
   Called by: 
   Calls: 
-USART0_TX_IRQHandler/15 (USART0_TX_IRQHandler) @0x7e1cb7e469d8
+USART0_TX_IRQHandler/15 (USART0_TX_IRQHandler) @0x74eaa3a469d8
   Type: function definition analyzed alias
   Visibility: externally_visible asm_written public weak section:.text.Default_Handler (implicit_section)
   Address is taken.
@@ -3298,7 +3298,7 @@ USART0_TX_IRQHandler/15 (USART0_TX_IRQHandler) @0x7e1cb7e469d8
   Function flags:
   Called by: 
   Calls: 
-USART0_RX_IRQHandler/14 (USART0_RX_IRQHandler) @0x7e1cb7e46870
+USART0_RX_IRQHandler/14 (USART0_RX_IRQHandler) @0x74eaa3a46870
   Type: function definition analyzed alias
   Visibility: externally_visible asm_written public weak section:.text.Default_Handler (implicit_section)
   Address is taken.
@@ -3308,7 +3308,7 @@ USART0_RX_IRQHandler/14 (USART0_RX_IRQHandler) @0x7e1cb7e46870
   Function flags:
   Called by: 
   Calls: 
-TIMER0_IRQHandler/13 (TIMER0_IRQHandler) @0x7e1cb7e46708
+TIMER0_IRQHandler/13 (TIMER0_IRQHandler) @0x74eaa3a46708
   Type: function definition analyzed alias
   Visibility: externally_visible asm_written public weak section:.text.Default_Handler (implicit_section)
   Address is taken.
@@ -3318,7 +3318,7 @@ TIMER0_IRQHandler/13 (TIMER0_IRQHandler) @0x7e1cb7e46708
   Function flags:
   Called by: 
   Calls: 
-GPIO_EVEN_IRQHandler/12 (GPIO_EVEN_IRQHandler) @0x7e1cb7e465a0
+GPIO_EVEN_IRQHandler/12 (GPIO_EVEN_IRQHandler) @0x74eaa3a465a0
   Type: function definition analyzed alias
   Visibility: externally_visible asm_written public weak section:.text.Default_Handler (implicit_section)
   Address is taken.
@@ -3328,7 +3328,7 @@ GPIO_EVEN_IRQHandler/12 (GPIO_EVEN_IRQHandler) @0x7e1cb7e465a0
   Function flags:
   Called by: 
   Calls: 
-DMA_IRQHandler/11 (DMA_IRQHandler) @0x7e1cb7e46438
+DMA_IRQHandler/11 (DMA_IRQHandler) @0x74eaa3a46438
   Type: function definition analyzed alias
   Visibility: externally_visible asm_written public weak section:.text.Default_Handler (implicit_section)
   Address is taken.
@@ -3338,7 +3338,7 @@ DMA_IRQHandler/11 (DMA_IRQHandler) @0x7e1cb7e46438
   Function flags:
   Called by: 
   Calls: 
-SysTick_Handler/10 (SysTick_Handler) @0x7e1cb7e46168
+SysTick_Handler/10 (SysTick_Handler) @0x74eaa3a46168
   Type: function definition analyzed alias
   Visibility: externally_visible asm_written public weak section:.text.Default_Handler (implicit_section)
   Address is taken.
@@ -3348,7 +3348,7 @@ SysTick_Handler/10 (SysTick_Handler) @0x7e1cb7e46168
   Function flags:
   Called by: 
   Calls: 
-PendSV_Handler/9 (PendSV_Handler) @0x7e1cb7e46000
+PendSV_Handler/9 (PendSV_Handler) @0x74eaa3a46000
   Type: function definition analyzed alias
   Visibility: externally_visible asm_written public weak section:.text.Default_Handler (implicit_section)
   Address is taken.
@@ -3358,7 +3358,7 @@ PendSV_Handler/9 (PendSV_Handler) @0x7e1cb7e46000
   Function flags:
   Called by: 
   Calls: 
-SVC_Handler/8 (SVC_Handler) @0x7e1cb7e43e10
+SVC_Handler/8 (SVC_Handler) @0x74eaa3a43e10
   Type: function definition analyzed alias
   Visibility: externally_visible asm_written public weak section:.text.Default_Handler (implicit_section)
   Address is taken.
@@ -3368,7 +3368,7 @@ SVC_Handler/8 (SVC_Handler) @0x7e1cb7e43e10
   Function flags:
   Called by: 
   Calls: 
-DebugMon_Handler/7 (DebugMon_Handler) @0x7e1cb7e43ca8
+DebugMon_Handler/7 (DebugMon_Handler) @0x74eaa3a43ca8
   Type: function definition analyzed alias
   Visibility: externally_visible asm_written public weak section:.text.Default_Handler (implicit_section)
   Address is taken.
@@ -3378,7 +3378,7 @@ DebugMon_Handler/7 (DebugMon_Handler) @0x7e1cb7e43ca8
   Function flags:
   Called by: 
   Calls: 
-UsageFault_Handler/6 (UsageFault_Handler) @0x7e1cb7e43b40
+UsageFault_Handler/6 (UsageFault_Handler) @0x74eaa3a43b40
   Type: function definition analyzed alias
   Visibility: externally_visible asm_written public weak section:.text.Default_Handler (implicit_section)
   Address is taken.
@@ -3388,7 +3388,7 @@ UsageFault_Handler/6 (UsageFault_Handler) @0x7e1cb7e43b40
   Function flags:
   Called by: 
   Calls: 
-BusFault_Handler/5 (BusFault_Handler) @0x7e1cb7e439d8
+BusFault_Handler/5 (BusFault_Handler) @0x74eaa3a439d8
   Type: function definition analyzed alias
   Visibility: externally_visible asm_written public weak section:.text.Default_Handler (implicit_section)
   Address is taken.
@@ -3398,7 +3398,7 @@ BusFault_Handler/5 (BusFault_Handler) @0x7e1cb7e439d8
   Function flags:
   Called by: 
   Calls: 
-MemManage_Handler/4 (MemManage_Handler) @0x7e1cb7e43870
+MemManage_Handler/4 (MemManage_Handler) @0x74eaa3a43870
   Type: function definition analyzed alias
   Visibility: externally_visible asm_written public weak section:.text.Default_Handler (implicit_section)
   Address is taken.
@@ -3408,7 +3408,7 @@ MemManage_Handler/4 (MemManage_Handler) @0x7e1cb7e43870
   Function flags:
   Called by: 
   Calls: 
-HardFault_Handler/3 (HardFault_Handler) @0x7e1cb7e43708
+HardFault_Handler/3 (HardFault_Handler) @0x74eaa3a43708
   Type: function definition analyzed alias
   Visibility: externally_visible asm_written public weak section:.text.Default_Handler (implicit_section)
   Address is taken.
@@ -3418,7 +3418,7 @@ HardFault_Handler/3 (HardFault_Handler) @0x7e1cb7e43708
   Function flags:
   Called by: 
   Calls: 
-NMI_Handler/2 (NMI_Handler) @0x7e1cb7e435a0
+NMI_Handler/2 (NMI_Handler) @0x74eaa3a435a0
   Type: function definition analyzed alias
   Visibility: externally_visible asm_written public weak section:.text.Default_Handler (implicit_section)
   Address is taken.
@@ -3428,18 +3428,18 @@ NMI_Handler/2 (NMI_Handler) @0x7e1cb7e435a0
   Function flags:
   Called by: 
   Calls: 
-heap/1 (heap) @0x7e1cb7e40380
+heap/1 (heap) @0x74eaa3a40380
   Type: variable definition analyzed
   Visibility: force_output no_reorder prevailing_def_ironly asm_written section:.heap
-  Aux: @0x7e1cb7e4cc80
+  Aux: @0x74eaa3a4cc80
   References: 
   Referring: 
   Availability: available
   Varpool flags:
-stack/0 (stack) @0x7e1cb7e40300
+stack/0 (stack) @0x74eaa3a40300
   Type: variable definition analyzed
   Visibility: force_output no_reorder prevailing_def_ironly asm_written section:.stack
-  Aux: @0x7e1cb7e40380
+  Aux: @0x74eaa3a40380
   References: 
   Referring: 
   Availability: available

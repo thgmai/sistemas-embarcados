@@ -67,7 +67,7 @@ extern Gain gain;   /* PID gain structure */
 /* Function prototypes                                                        */
 /* ************************************************************************** */
 
-void controllerInit(uint8_t sp_pin, uint8_t pv_pin, uint8_t cv_pin, uint8_t led_pin);
+void controllerInit(uint8_t sp_ch, uint8_t pv_ch, uint8_t cv_ch, uint8_t led_p);
 
 double readSetpoint(void);
 double readProcessVariable(void);
@@ -77,6 +77,6 @@ double controlSignalPID(double sp, double pv, Gain gain);
 bool steadyState(void);
 
 void writeControlVariable(double cv);
-void writeLED(uint8_t state);
+void writeLED(bool state);
 
 #endif /* CONTROL_H */

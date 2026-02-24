@@ -3,7 +3,7 @@ Trivially needed symbols: ClockGetCoreClockFrequency/88 ClockGetPeripheralClockF
 
 Initial Symbol table:
 
-SystemCoreClockGet/90 (SystemCoreClockGet) @0x7c1696b875a0
+SystemCoreClockGet/90 (SystemCoreClockGet) @0x75545ed875a0
   Type: function
   Visibility: external public
   References: 
@@ -11,14 +11,14 @@ SystemCoreClockGet/90 (SystemCoreClockGet) @0x7c1696b875a0
   Function flags:
   Called by: SystemCoreClockUpdate/74 
   Calls: 
-SystemCoreClock/89 (SystemCoreClock) @0x7c1696b9d100
+SystemCoreClock/89 (SystemCoreClock) @0x75545ed9d100
   Type: variable
   Visibility: external public
   References: 
   Referring: ClockSetCoreClock/81 (read) ClockSetPrescalers/84 (read) ClockSetPrescalers/84 (read) ClockSetLFCLKA/85 (read) ClockSetLFCLKA/85 (read) ClockSetLFCLKB/86 (read) ClockSetLFCLKB/86 (read) 
   Availability: not-ready
   Varpool flags:
-ClockGetCoreClockFrequency/88 (ClockGetCoreClockFrequency) @0x7c1696b872d0
+ClockGetCoreClockFrequency/88 (ClockGetCoreClockFrequency) @0x75545ed872d0
   Type: function definition analyzed
   Visibility: force_output no_reorder public
   Aux: @0x1c36aa0
@@ -27,134 +27,134 @@ ClockGetCoreClockFrequency/88 (ClockGetCoreClockFrequency) @0x7c1696b872d0
   Function flags: body
   Called by: 
   Calls: ClockGetConfiguration/82 
-ClockGetPeripheralClockFrequency/87 (ClockGetPeripheralClockFrequency) @0x7c1696b87168
+ClockGetPeripheralClockFrequency/87 (ClockGetPeripheralClockFrequency) @0x75545ed87168
   Type: function definition analyzed
   Visibility: force_output no_reorder public
-  Aux: @0x7c1696b872d0
+  Aux: @0x75545ed872d0
   References: 
   Referring: 
   Function flags: body
   Called by: 
   Calls: ClockGetConfiguration/82 
-ClockSetLFCLKB/86 (ClockSetLFCLKB) @0x7c1696b87000
+ClockSetLFCLKB/86 (ClockSetLFCLKB) @0x75545ed87000
   Type: function definition analyzed
   Visibility: force_output no_reorder public
-  Aux: @0x7c1696b87168
+  Aux: @0x75545ed87168
   References: SystemCoreClock/89 (read) SystemCoreClock/89 (read) 
   Referring: 
   Function flags: body
   Called by: 
   Calls: ClockProcessPostChange/80 ClockProcessPreChange/79 
-ClockSetLFCLKA/85 (ClockSetLFCLKA) @0x7c1696b6ce10
+ClockSetLFCLKA/85 (ClockSetLFCLKA) @0x75545ed6ce10
   Type: function definition analyzed
   Visibility: force_output no_reorder public
-  Aux: @0x7c1696b87000
+  Aux: @0x75545ed87000
   References: SystemCoreClock/89 (read) SystemCoreClock/89 (read) 
   Referring: 
   Function flags: body
   Called by: 
   Calls: ClockProcessPostChange/80 ClockProcessPreChange/79 
-ClockSetPrescalers/84 (ClockSetPrescalers) @0x7c1696b6cca8
+ClockSetPrescalers/84 (ClockSetPrescalers) @0x75545ed6cca8
   Type: function definition analyzed
   Visibility: force_output no_reorder public
-  Aux: @0x7c1696b6ce10
+  Aux: @0x75545ed6ce10
   References: SystemCoreClock/89 (read) SystemCoreClock/89 (read) 
   Referring: 
   Function flags: body
   Called by: 
   Calls: ClockProcessPostChange/80 ClockConfigureSystemForClockFrequency/83 SystemCoreClockUpdate/74 nearestpower2exp/77 nearestpower2exp/77 ClockConfigureSystemForClockFrequency/83 ClockProcessPreChange/79 
-ClockConfigureSystemForClockFrequency/83 (ClockConfigureSystemForClockFrequency) @0x7c1696b6cb40
+ClockConfigureSystemForClockFrequency/83 (ClockConfigureSystemForClockFrequency) @0x75545ed6cb40
   Type: function definition analyzed
   Visibility: force_output no_reorder public
-  Aux: @0x7c1696b6cca8
+  Aux: @0x75545ed6cca8
   References: 
   Referring: 
   Function flags: body
   Called by: ClockSetPrescalers/84 ClockSetPrescalers/84 ClockSetCoreClock/81 ClockSetCoreClock/81 
   Calls: 
-ClockGetConfiguration/82 (ClockGetConfiguration) @0x7c1696b6c9d8
+ClockGetConfiguration/82 (ClockGetConfiguration) @0x75545ed6c9d8
   Type: function definition analyzed
   Visibility: force_output no_reorder public
-  Aux: @0x7c1696b6cb40
+  Aux: @0x75545ed6cb40
   References: 
   Referring: 
   Function flags: body
   Called by: ClockGetCoreClockFrequency/88 ClockGetPeripheralClockFrequency/87 
   Calls: GetProdRev/76 GetProdRev/76 
-ClockSetCoreClock/81 (ClockSetCoreClock) @0x7c1696b6c870
+ClockSetCoreClock/81 (ClockSetCoreClock) @0x75545ed6c870
   Type: function definition analyzed
   Visibility: force_output no_reorder public
-  Aux: @0x7c1696b6c9d8
+  Aux: @0x75545ed6c9d8
   References: SystemCoreClock/89 (read) 
   Referring: 
   Function flags: body
   Called by: 
   Calls: ClockProcessPostChange/80 ClockConfigureSystemForClockFrequency/83 SystemCoreClockUpdate/74 nearestpower2exp/77 GetProdRev/76 GetProdRev/76 ClockConfigureSystemForClockFrequency/83 ClockProcessPreChange/79 
-ClockProcessPostChange/80 (ClockProcessPostChange) @0x7c1696b6c708
+ClockProcessPostChange/80 (ClockProcessPostChange) @0x75545ed6c708
   Type: function definition analyzed
   Visibility: force_output no_reorder public
-  Aux: @0x7c1696b6c870
+  Aux: @0x75545ed6c870
   References: callbacks/75 (read) callbacks/75 (read) callbacks/75 (read) 
   Referring: 
   Function flags: body
   Called by: ClockSetLFCLKB/86 ClockSetLFCLKA/85 ClockSetPrescalers/84 ClockSetCoreClock/81 
   Calls: 
    Indirect call Num speculative call targets: 0
-ClockProcessPreChange/79 (ClockProcessPreChange) @0x7c1696b6c5a0
+ClockProcessPreChange/79 (ClockProcessPreChange) @0x75545ed6c5a0
   Type: function definition analyzed
   Visibility: force_output no_reorder public
-  Aux: @0x7c1696b6c708
+  Aux: @0x75545ed6c708
   References: callbacks/75 (read) callbacks/75 (read) callbacks/75 (read) 
   Referring: 
   Function flags: body
   Called by: ClockSetLFCLKB/86 ClockSetLFCLKA/85 ClockSetPrescalers/84 ClockSetCoreClock/81 
   Calls: 
    Indirect call Num speculative call targets: 0
-ClockRegisterCallback/78 (ClockRegisterCallback) @0x7c1696b6c438
+ClockRegisterCallback/78 (ClockRegisterCallback) @0x75545ed6c438
   Type: function definition analyzed
   Visibility: force_output no_reorder public
-  Aux: @0x7c1696b6c5a0
+  Aux: @0x75545ed6c5a0
   References: callbacks/75 (read) callbacks/75 (write) callbacks/75 (write) callbacks/75 (write) 
   Referring: 
   Function flags: body
   Called by: 
   Calls: 
-nearestpower2exp/77 (nearestpower2exp) @0x7c1696b6c2d0
+nearestpower2exp/77 (nearestpower2exp) @0x75545ed6c2d0
   Type: function definition analyzed
   Visibility: force_output no_reorder
-  Aux: @0x7c1696b6c438
+  Aux: @0x75545ed6c438
   References: 
   Referring: 
   Function flags: body
   Called by: ClockSetPrescalers/84 ClockSetPrescalers/84 ClockSetCoreClock/81 
   Calls: 
-GetProdRev/76 (GetProdRev) @0x7c1696b6c168
+GetProdRev/76 (GetProdRev) @0x75545ed6c168
   Type: function definition analyzed
   Visibility: no_reorder
-  Aux: @0x7c1696ef6708
+  Aux: @0x75545f0f6708
   References: 
   Referring: 
   Function flags: body
   Called by: ClockGetConfiguration/82 ClockGetConfiguration/82 ClockSetCoreClock/81 ClockSetCoreClock/81 
   Calls: 
-callbacks/75 (callbacks) @0x7c1696b67300
+callbacks/75 (callbacks) @0x75545ed67300
   Type: variable definition analyzed
   Visibility: force_output no_reorder
-  Aux: @0x7c1696b6c2d0
+  Aux: @0x75545ed6c2d0
   References: 
   Referring: ClockRegisterCallback/78 (read) ClockRegisterCallback/78 (write) ClockRegisterCallback/78 (write) ClockRegisterCallback/78 (write) ClockProcessPreChange/79 (read) ClockProcessPreChange/79 (read) ClockProcessPreChange/79 (read) ClockProcessPostChange/80 (read) ClockProcessPostChange/80 (read) ClockProcessPostChange/80 (read) 
   Availability: not-ready
   Varpool flags: initialized
-SystemCoreClockUpdate/74 (SystemCoreClockUpdate) @0x7c1696ef6708
+SystemCoreClockUpdate/74 (SystemCoreClockUpdate) @0x75545f0f6708
   Type: function definition analyzed
   Visibility: no_reorder
-  Aux: @0x7c1696b6c9d8
+  Aux: @0x75545ed6c9d8
   References: 
   Referring: 
   Function flags: body
   Called by: ClockSetPrescalers/84 ClockSetCoreClock/81 
   Calls: SystemCoreClockGet/90 
-ITM_CheckChar/73 (ITM_CheckChar) @0x7c1696ef6000
+ITM_CheckChar/73 (ITM_CheckChar) @0x75545f0f6000
   Type: function definition
   Visibility: no_reorder
   References: 
@@ -162,7 +162,7 @@ ITM_CheckChar/73 (ITM_CheckChar) @0x7c1696ef6000
   Function flags:
   Called by: 
   Calls: 
-ITM_ReceiveChar/72 (ITM_ReceiveChar) @0x7c1696ee7e10
+ITM_ReceiveChar/72 (ITM_ReceiveChar) @0x75545f0e7e10
   Type: function definition
   Visibility: no_reorder
   References: 
@@ -170,7 +170,7 @@ ITM_ReceiveChar/72 (ITM_ReceiveChar) @0x7c1696ee7e10
   Function flags:
   Called by: 
   Calls: 
-ITM_SendChar/71 (ITM_SendChar) @0x7c1696ee7ca8
+ITM_SendChar/71 (ITM_SendChar) @0x75545f0e7ca8
   Type: function definition
   Visibility: no_reorder
   References: 
@@ -178,7 +178,7 @@ ITM_SendChar/71 (ITM_SendChar) @0x7c1696ee7ca8
   Function flags:
   Called by: 
   Calls: 
-SysTick_Config/70 (SysTick_Config) @0x7c1696ee79d8
+SysTick_Config/70 (SysTick_Config) @0x75545f0e79d8
   Type: function definition
   Visibility: no_reorder
   References: 
@@ -186,7 +186,7 @@ SysTick_Config/70 (SysTick_Config) @0x7c1696ee79d8
   Function flags:
   Called by: 
   Calls: 
-SCB_GetFPUType/69 (SCB_GetFPUType) @0x7c1696ee7870
+SCB_GetFPUType/69 (SCB_GetFPUType) @0x75545f0e7870
   Type: function definition
   Visibility: no_reorder
   References: 
@@ -194,7 +194,7 @@ SCB_GetFPUType/69 (SCB_GetFPUType) @0x7c1696ee7870
   Function flags:
   Called by: 
   Calls: 
-ARM_MPU_Load/68 (ARM_MPU_Load) @0x7c1696ee7708
+ARM_MPU_Load/68 (ARM_MPU_Load) @0x75545f0e7708
   Type: function definition
   Visibility: no_reorder
   References: 
@@ -202,7 +202,7 @@ ARM_MPU_Load/68 (ARM_MPU_Load) @0x7c1696ee7708
   Function flags:
   Called by: 
   Calls: 
-ARM_MPU_OrderedMemcpy/67 (ARM_MPU_OrderedMemcpy) @0x7c1696ee75a0
+ARM_MPU_OrderedMemcpy/67 (ARM_MPU_OrderedMemcpy) @0x75545f0e75a0
   Type: function definition
   Visibility: no_reorder
   References: 
@@ -210,7 +210,7 @@ ARM_MPU_OrderedMemcpy/67 (ARM_MPU_OrderedMemcpy) @0x7c1696ee75a0
   Function flags:
   Called by: 
   Calls: 
-ARM_MPU_SetRegionEx/66 (ARM_MPU_SetRegionEx) @0x7c1696ee7438
+ARM_MPU_SetRegionEx/66 (ARM_MPU_SetRegionEx) @0x75545f0e7438
   Type: function definition
   Visibility: no_reorder
   References: 
@@ -218,7 +218,7 @@ ARM_MPU_SetRegionEx/66 (ARM_MPU_SetRegionEx) @0x7c1696ee7438
   Function flags:
   Called by: 
   Calls: 
-ARM_MPU_SetRegion/65 (ARM_MPU_SetRegion) @0x7c1696ee72d0
+ARM_MPU_SetRegion/65 (ARM_MPU_SetRegion) @0x75545f0e72d0
   Type: function definition
   Visibility: no_reorder
   References: 
@@ -226,7 +226,7 @@ ARM_MPU_SetRegion/65 (ARM_MPU_SetRegion) @0x7c1696ee72d0
   Function flags:
   Called by: 
   Calls: 
-ARM_MPU_ClrRegion/64 (ARM_MPU_ClrRegion) @0x7c1696ee7168
+ARM_MPU_ClrRegion/64 (ARM_MPU_ClrRegion) @0x75545f0e7168
   Type: function definition
   Visibility: no_reorder
   References: 
@@ -234,7 +234,7 @@ ARM_MPU_ClrRegion/64 (ARM_MPU_ClrRegion) @0x7c1696ee7168
   Function flags:
   Called by: 
   Calls: 
-ARM_MPU_Disable/63 (ARM_MPU_Disable) @0x7c1696ee7000
+ARM_MPU_Disable/63 (ARM_MPU_Disable) @0x75545f0e7000
   Type: function definition
   Visibility: no_reorder
   References: 
@@ -242,7 +242,7 @@ ARM_MPU_Disable/63 (ARM_MPU_Disable) @0x7c1696ee7000
   Function flags:
   Called by: 
   Calls: 
-ARM_MPU_Enable/62 (ARM_MPU_Enable) @0x7c1696edae10
+ARM_MPU_Enable/62 (ARM_MPU_Enable) @0x75545f0dae10
   Type: function definition
   Visibility: no_reorder
   References: 
@@ -250,7 +250,7 @@ ARM_MPU_Enable/62 (ARM_MPU_Enable) @0x7c1696edae10
   Function flags:
   Called by: 
   Calls: 
-__NVIC_SystemReset/61 (__NVIC_SystemReset) @0x7c1696eda708
+__NVIC_SystemReset/61 (__NVIC_SystemReset) @0x75545f0da708
   Type: function definition
   Visibility: no_reorder
   References: 
@@ -258,7 +258,7 @@ __NVIC_SystemReset/61 (__NVIC_SystemReset) @0x7c1696eda708
   Function flags:
   Called by: 
   Calls: 
-__NVIC_GetVector/60 (__NVIC_GetVector) @0x7c1696eda5a0
+__NVIC_GetVector/60 (__NVIC_GetVector) @0x75545f0da5a0
   Type: function definition
   Visibility: no_reorder
   References: 
@@ -266,7 +266,7 @@ __NVIC_GetVector/60 (__NVIC_GetVector) @0x7c1696eda5a0
   Function flags:
   Called by: 
   Calls: 
-__NVIC_SetVector/59 (__NVIC_SetVector) @0x7c1696eda438
+__NVIC_SetVector/59 (__NVIC_SetVector) @0x75545f0da438
   Type: function definition
   Visibility: no_reorder
   References: 
@@ -274,7 +274,7 @@ __NVIC_SetVector/59 (__NVIC_SetVector) @0x7c1696eda438
   Function flags:
   Called by: 
   Calls: 
-NVIC_DecodePriority/58 (NVIC_DecodePriority) @0x7c1696eda2d0
+NVIC_DecodePriority/58 (NVIC_DecodePriority) @0x75545f0da2d0
   Type: function definition
   Visibility: no_reorder
   References: 
@@ -282,7 +282,7 @@ NVIC_DecodePriority/58 (NVIC_DecodePriority) @0x7c1696eda2d0
   Function flags:
   Called by: 
   Calls: 
-NVIC_EncodePriority/57 (NVIC_EncodePriority) @0x7c1696eda168
+NVIC_EncodePriority/57 (NVIC_EncodePriority) @0x75545f0da168
   Type: function definition
   Visibility: no_reorder
   References: 
@@ -290,7 +290,7 @@ NVIC_EncodePriority/57 (NVIC_EncodePriority) @0x7c1696eda168
   Function flags:
   Called by: 
   Calls: 
-__NVIC_GetPriority/56 (__NVIC_GetPriority) @0x7c1696eda000
+__NVIC_GetPriority/56 (__NVIC_GetPriority) @0x75545f0da000
   Type: function definition
   Visibility: no_reorder
   References: 
@@ -298,7 +298,7 @@ __NVIC_GetPriority/56 (__NVIC_GetPriority) @0x7c1696eda000
   Function flags:
   Called by: 
   Calls: 
-__NVIC_SetPriority/55 (__NVIC_SetPriority) @0x7c1696ecae10
+__NVIC_SetPriority/55 (__NVIC_SetPriority) @0x75545f0cae10
   Type: function definition
   Visibility: no_reorder
   References: 
@@ -306,7 +306,7 @@ __NVIC_SetPriority/55 (__NVIC_SetPriority) @0x7c1696ecae10
   Function flags:
   Called by: 
   Calls: 
-__NVIC_GetActive/54 (__NVIC_GetActive) @0x7c1696ecaca8
+__NVIC_GetActive/54 (__NVIC_GetActive) @0x75545f0caca8
   Type: function definition
   Visibility: no_reorder
   References: 
@@ -314,7 +314,7 @@ __NVIC_GetActive/54 (__NVIC_GetActive) @0x7c1696ecaca8
   Function flags:
   Called by: 
   Calls: 
-__NVIC_ClearPendingIRQ/53 (__NVIC_ClearPendingIRQ) @0x7c1696ecab40
+__NVIC_ClearPendingIRQ/53 (__NVIC_ClearPendingIRQ) @0x75545f0cab40
   Type: function definition
   Visibility: no_reorder
   References: 
@@ -322,7 +322,7 @@ __NVIC_ClearPendingIRQ/53 (__NVIC_ClearPendingIRQ) @0x7c1696ecab40
   Function flags:
   Called by: 
   Calls: 
-__NVIC_SetPendingIRQ/52 (__NVIC_SetPendingIRQ) @0x7c1696eca9d8
+__NVIC_SetPendingIRQ/52 (__NVIC_SetPendingIRQ) @0x75545f0ca9d8
   Type: function definition
   Visibility: no_reorder
   References: 
@@ -330,7 +330,7 @@ __NVIC_SetPendingIRQ/52 (__NVIC_SetPendingIRQ) @0x7c1696eca9d8
   Function flags:
   Called by: 
   Calls: 
-__NVIC_GetPendingIRQ/51 (__NVIC_GetPendingIRQ) @0x7c1696eca870
+__NVIC_GetPendingIRQ/51 (__NVIC_GetPendingIRQ) @0x75545f0ca870
   Type: function definition
   Visibility: no_reorder
   References: 
@@ -338,7 +338,7 @@ __NVIC_GetPendingIRQ/51 (__NVIC_GetPendingIRQ) @0x7c1696eca870
   Function flags:
   Called by: 
   Calls: 
-__NVIC_DisableIRQ/50 (__NVIC_DisableIRQ) @0x7c1696eca708
+__NVIC_DisableIRQ/50 (__NVIC_DisableIRQ) @0x75545f0ca708
   Type: function definition
   Visibility: no_reorder
   References: 
@@ -346,7 +346,7 @@ __NVIC_DisableIRQ/50 (__NVIC_DisableIRQ) @0x7c1696eca708
   Function flags:
   Called by: 
   Calls: 
-__NVIC_GetEnableIRQ/49 (__NVIC_GetEnableIRQ) @0x7c1696eca5a0
+__NVIC_GetEnableIRQ/49 (__NVIC_GetEnableIRQ) @0x75545f0ca5a0
   Type: function definition
   Visibility: no_reorder
   References: 
@@ -354,7 +354,7 @@ __NVIC_GetEnableIRQ/49 (__NVIC_GetEnableIRQ) @0x7c1696eca5a0
   Function flags:
   Called by: 
   Calls: 
-__NVIC_EnableIRQ/48 (__NVIC_EnableIRQ) @0x7c1696eca438
+__NVIC_EnableIRQ/48 (__NVIC_EnableIRQ) @0x75545f0ca438
   Type: function definition
   Visibility: no_reorder
   References: 
@@ -362,7 +362,7 @@ __NVIC_EnableIRQ/48 (__NVIC_EnableIRQ) @0x7c1696eca438
   Function flags:
   Called by: 
   Calls: 
-__NVIC_GetPriorityGrouping/47 (__NVIC_GetPriorityGrouping) @0x7c1696eca2d0
+__NVIC_GetPriorityGrouping/47 (__NVIC_GetPriorityGrouping) @0x75545f0ca2d0
   Type: function definition
   Visibility: no_reorder
   References: 
@@ -370,7 +370,7 @@ __NVIC_GetPriorityGrouping/47 (__NVIC_GetPriorityGrouping) @0x7c1696eca2d0
   Function flags:
   Called by: 
   Calls: 
-__NVIC_SetPriorityGrouping/46 (__NVIC_SetPriorityGrouping) @0x7c1696eca168
+__NVIC_SetPriorityGrouping/46 (__NVIC_SetPriorityGrouping) @0x75545f0ca168
   Type: function definition
   Visibility: no_reorder
   References: 
@@ -378,7 +378,7 @@ __NVIC_SetPriorityGrouping/46 (__NVIC_SetPriorityGrouping) @0x7c1696eca168
   Function flags:
   Called by: 
   Calls: 
-__set_FPSCR/45 (__set_FPSCR) @0x7c1696e7b438
+__set_FPSCR/45 (__set_FPSCR) @0x75545f07b438
   Type: function definition
   Visibility: no_reorder
   References: 
@@ -386,7 +386,7 @@ __set_FPSCR/45 (__set_FPSCR) @0x7c1696e7b438
   Function flags:
   Called by: 
   Calls: 
-__get_FPSCR/44 (__get_FPSCR) @0x7c1696e7b2d0
+__get_FPSCR/44 (__get_FPSCR) @0x75545f07b2d0
   Type: function definition
   Visibility: no_reorder
   References: 
@@ -394,7 +394,7 @@ __get_FPSCR/44 (__get_FPSCR) @0x7c1696e7b2d0
   Function flags:
   Called by: 
   Calls: 
-__set_FAULTMASK/43 (__set_FAULTMASK) @0x7c1696e7b168
+__set_FAULTMASK/43 (__set_FAULTMASK) @0x75545f07b168
   Type: function definition
   Visibility: no_reorder
   References: 
@@ -402,7 +402,7 @@ __set_FAULTMASK/43 (__set_FAULTMASK) @0x7c1696e7b168
   Function flags:
   Called by: 
   Calls: 
-__get_FAULTMASK/42 (__get_FAULTMASK) @0x7c1696e7b000
+__get_FAULTMASK/42 (__get_FAULTMASK) @0x75545f07b000
   Type: function definition
   Visibility: no_reorder
   References: 
@@ -410,7 +410,7 @@ __get_FAULTMASK/42 (__get_FAULTMASK) @0x7c1696e7b000
   Function flags:
   Called by: 
   Calls: 
-__set_BASEPRI_MAX/41 (__set_BASEPRI_MAX) @0x7c1696e76e10
+__set_BASEPRI_MAX/41 (__set_BASEPRI_MAX) @0x75545f076e10
   Type: function definition
   Visibility: no_reorder
   References: 
@@ -418,7 +418,7 @@ __set_BASEPRI_MAX/41 (__set_BASEPRI_MAX) @0x7c1696e76e10
   Function flags:
   Called by: 
   Calls: 
-__set_BASEPRI/40 (__set_BASEPRI) @0x7c1696e76ca8
+__set_BASEPRI/40 (__set_BASEPRI) @0x75545f076ca8
   Type: function definition
   Visibility: no_reorder
   References: 
@@ -426,7 +426,7 @@ __set_BASEPRI/40 (__set_BASEPRI) @0x7c1696e76ca8
   Function flags:
   Called by: 
   Calls: 
-__get_BASEPRI/39 (__get_BASEPRI) @0x7c1696e76b40
+__get_BASEPRI/39 (__get_BASEPRI) @0x75545f076b40
   Type: function definition
   Visibility: no_reorder
   References: 
@@ -434,7 +434,7 @@ __get_BASEPRI/39 (__get_BASEPRI) @0x7c1696e76b40
   Function flags:
   Called by: 
   Calls: 
-__disable_fault_irq/38 (__disable_fault_irq) @0x7c1696e769d8
+__disable_fault_irq/38 (__disable_fault_irq) @0x75545f0769d8
   Type: function definition
   Visibility: no_reorder
   References: 
@@ -442,7 +442,7 @@ __disable_fault_irq/38 (__disable_fault_irq) @0x7c1696e769d8
   Function flags:
   Called by: 
   Calls: 
-__enable_fault_irq/37 (__enable_fault_irq) @0x7c1696e76870
+__enable_fault_irq/37 (__enable_fault_irq) @0x75545f076870
   Type: function definition
   Visibility: no_reorder
   References: 
@@ -450,7 +450,7 @@ __enable_fault_irq/37 (__enable_fault_irq) @0x7c1696e76870
   Function flags:
   Called by: 
   Calls: 
-__set_PRIMASK/36 (__set_PRIMASK) @0x7c1696e76708
+__set_PRIMASK/36 (__set_PRIMASK) @0x75545f076708
   Type: function definition
   Visibility: no_reorder
   References: 
@@ -458,7 +458,7 @@ __set_PRIMASK/36 (__set_PRIMASK) @0x7c1696e76708
   Function flags:
   Called by: 
   Calls: 
-__get_PRIMASK/35 (__get_PRIMASK) @0x7c1696e765a0
+__get_PRIMASK/35 (__get_PRIMASK) @0x75545f0765a0
   Type: function definition
   Visibility: no_reorder
   References: 
@@ -466,7 +466,7 @@ __get_PRIMASK/35 (__get_PRIMASK) @0x7c1696e765a0
   Function flags:
   Called by: 
   Calls: 
-__set_MSP/34 (__set_MSP) @0x7c1696e76438
+__set_MSP/34 (__set_MSP) @0x75545f076438
   Type: function definition
   Visibility: no_reorder
   References: 
@@ -474,7 +474,7 @@ __set_MSP/34 (__set_MSP) @0x7c1696e76438
   Function flags:
   Called by: 
   Calls: 
-__get_MSP/33 (__get_MSP) @0x7c1696e762d0
+__get_MSP/33 (__get_MSP) @0x75545f0762d0
   Type: function definition
   Visibility: no_reorder
   References: 
@@ -482,7 +482,7 @@ __get_MSP/33 (__get_MSP) @0x7c1696e762d0
   Function flags:
   Called by: 
   Calls: 
-__set_PSP/32 (__set_PSP) @0x7c1696e76168
+__set_PSP/32 (__set_PSP) @0x75545f076168
   Type: function definition
   Visibility: no_reorder
   References: 
@@ -490,7 +490,7 @@ __set_PSP/32 (__set_PSP) @0x7c1696e76168
   Function flags:
   Called by: 
   Calls: 
-__get_PSP/31 (__get_PSP) @0x7c1696e76000
+__get_PSP/31 (__get_PSP) @0x75545f076000
   Type: function definition
   Visibility: no_reorder
   References: 
@@ -498,7 +498,7 @@ __get_PSP/31 (__get_PSP) @0x7c1696e76000
   Function flags:
   Called by: 
   Calls: 
-__get_xPSR/30 (__get_xPSR) @0x7c1696e6be10
+__get_xPSR/30 (__get_xPSR) @0x75545f06be10
   Type: function definition
   Visibility: no_reorder
   References: 
@@ -506,7 +506,7 @@ __get_xPSR/30 (__get_xPSR) @0x7c1696e6be10
   Function flags:
   Called by: 
   Calls: 
-__get_APSR/29 (__get_APSR) @0x7c1696e6bca8
+__get_APSR/29 (__get_APSR) @0x75545f06bca8
   Type: function definition
   Visibility: no_reorder
   References: 
@@ -514,7 +514,7 @@ __get_APSR/29 (__get_APSR) @0x7c1696e6bca8
   Function flags:
   Called by: 
   Calls: 
-__get_IPSR/28 (__get_IPSR) @0x7c1696e6bb40
+__get_IPSR/28 (__get_IPSR) @0x75545f06bb40
   Type: function definition
   Visibility: no_reorder
   References: 
@@ -522,7 +522,7 @@ __get_IPSR/28 (__get_IPSR) @0x7c1696e6bb40
   Function flags:
   Called by: 
   Calls: 
-__set_CONTROL/27 (__set_CONTROL) @0x7c1696e6b9d8
+__set_CONTROL/27 (__set_CONTROL) @0x75545f06b9d8
   Type: function definition
   Visibility: no_reorder
   References: 
@@ -530,7 +530,7 @@ __set_CONTROL/27 (__set_CONTROL) @0x7c1696e6b9d8
   Function flags:
   Called by: 
   Calls: 
-__get_CONTROL/26 (__get_CONTROL) @0x7c1696e6b870
+__get_CONTROL/26 (__get_CONTROL) @0x75545f06b870
   Type: function definition
   Visibility: no_reorder
   References: 
@@ -538,7 +538,7 @@ __get_CONTROL/26 (__get_CONTROL) @0x7c1696e6b870
   Function flags:
   Called by: 
   Calls: 
-__disable_irq/25 (__disable_irq) @0x7c1696e6b708
+__disable_irq/25 (__disable_irq) @0x75545f06b708
   Type: function definition
   Visibility: no_reorder
   References: 
@@ -546,7 +546,7 @@ __disable_irq/25 (__disable_irq) @0x7c1696e6b708
   Function flags:
   Called by: 
   Calls: 
-__enable_irq/24 (__enable_irq) @0x7c1696e6b5a0
+__enable_irq/24 (__enable_irq) @0x75545f06b5a0
   Type: function definition
   Visibility: no_reorder
   References: 
@@ -554,7 +554,7 @@ __enable_irq/24 (__enable_irq) @0x7c1696e6b5a0
   Function flags:
   Called by: 
   Calls: 
-__STRT/23 (__STRT) @0x7c1696e6b438
+__STRT/23 (__STRT) @0x75545f06b438
   Type: function definition
   Visibility: no_reorder
   References: 
@@ -562,7 +562,7 @@ __STRT/23 (__STRT) @0x7c1696e6b438
   Function flags:
   Called by: 
   Calls: 
-__STRHT/22 (__STRHT) @0x7c1696e6b2d0
+__STRHT/22 (__STRHT) @0x75545f06b2d0
   Type: function definition
   Visibility: no_reorder
   References: 
@@ -570,7 +570,7 @@ __STRHT/22 (__STRHT) @0x7c1696e6b2d0
   Function flags:
   Called by: 
   Calls: 
-__STRBT/21 (__STRBT) @0x7c1696e6b168
+__STRBT/21 (__STRBT) @0x75545f06b168
   Type: function definition
   Visibility: no_reorder
   References: 
@@ -578,7 +578,7 @@ __STRBT/21 (__STRBT) @0x7c1696e6b168
   Function flags:
   Called by: 
   Calls: 
-__LDRT/20 (__LDRT) @0x7c1696e6b000
+__LDRT/20 (__LDRT) @0x75545f06b000
   Type: function definition
   Visibility: no_reorder
   References: 
@@ -586,7 +586,7 @@ __LDRT/20 (__LDRT) @0x7c1696e6b000
   Function flags:
   Called by: 
   Calls: 
-__LDRHT/19 (__LDRHT) @0x7c1696e63e10
+__LDRHT/19 (__LDRHT) @0x75545f063e10
   Type: function definition
   Visibility: no_reorder
   References: 
@@ -594,7 +594,7 @@ __LDRHT/19 (__LDRHT) @0x7c1696e63e10
   Function flags:
   Called by: 
   Calls: 
-__LDRBT/18 (__LDRBT) @0x7c1696e63ca8
+__LDRBT/18 (__LDRBT) @0x75545f063ca8
   Type: function definition
   Visibility: no_reorder
   References: 
@@ -602,7 +602,7 @@ __LDRBT/18 (__LDRBT) @0x7c1696e63ca8
   Function flags:
   Called by: 
   Calls: 
-__RRX/17 (__RRX) @0x7c1696e63b40
+__RRX/17 (__RRX) @0x75545f063b40
   Type: function definition
   Visibility: no_reorder
   References: 
@@ -610,7 +610,7 @@ __RRX/17 (__RRX) @0x7c1696e63b40
   Function flags:
   Called by: 
   Calls: 
-__CLREX/16 (__CLREX) @0x7c1696e639d8
+__CLREX/16 (__CLREX) @0x75545f0639d8
   Type: function definition
   Visibility: no_reorder
   References: 
@@ -618,7 +618,7 @@ __CLREX/16 (__CLREX) @0x7c1696e639d8
   Function flags:
   Called by: 
   Calls: 
-__STREXW/15 (__STREXW) @0x7c1696e63870
+__STREXW/15 (__STREXW) @0x75545f063870
   Type: function definition
   Visibility: no_reorder
   References: 
@@ -626,7 +626,7 @@ __STREXW/15 (__STREXW) @0x7c1696e63870
   Function flags:
   Called by: 
   Calls: 
-__STREXH/14 (__STREXH) @0x7c1696e63708
+__STREXH/14 (__STREXH) @0x75545f063708
   Type: function definition
   Visibility: no_reorder
   References: 
@@ -634,7 +634,7 @@ __STREXH/14 (__STREXH) @0x7c1696e63708
   Function flags:
   Called by: 
   Calls: 
-__STREXB/13 (__STREXB) @0x7c1696e635a0
+__STREXB/13 (__STREXB) @0x75545f0635a0
   Type: function definition
   Visibility: no_reorder
   References: 
@@ -642,7 +642,7 @@ __STREXB/13 (__STREXB) @0x7c1696e635a0
   Function flags:
   Called by: 
   Calls: 
-__LDREXW/12 (__LDREXW) @0x7c1696e63438
+__LDREXW/12 (__LDREXW) @0x75545f063438
   Type: function definition
   Visibility: no_reorder
   References: 
@@ -650,7 +650,7 @@ __LDREXW/12 (__LDREXW) @0x7c1696e63438
   Function flags:
   Called by: 
   Calls: 
-__LDREXH/11 (__LDREXH) @0x7c1696e632d0
+__LDREXH/11 (__LDREXH) @0x75545f0632d0
   Type: function definition
   Visibility: no_reorder
   References: 
@@ -658,7 +658,7 @@ __LDREXH/11 (__LDREXH) @0x7c1696e632d0
   Function flags:
   Called by: 
   Calls: 
-__LDREXB/10 (__LDREXB) @0x7c1696e63168
+__LDREXB/10 (__LDREXB) @0x75545f063168
   Type: function definition
   Visibility: no_reorder
   References: 
@@ -666,7 +666,7 @@ __LDREXB/10 (__LDREXB) @0x7c1696e63168
   Function flags:
   Called by: 
   Calls: 
-__CLZ/9 (__CLZ) @0x7c1696e63000
+__CLZ/9 (__CLZ) @0x75545f063000
   Type: function definition
   Visibility: no_reorder
   References: 
@@ -674,7 +674,7 @@ __CLZ/9 (__CLZ) @0x7c1696e63000
   Function flags:
   Called by: 
   Calls: 
-__RBIT/8 (__RBIT) @0x7c1696e54e10
+__RBIT/8 (__RBIT) @0x75545f054e10
   Type: function definition
   Visibility: no_reorder
   References: 
@@ -682,7 +682,7 @@ __RBIT/8 (__RBIT) @0x7c1696e54e10
   Function flags:
   Called by: 
   Calls: 
-__ROR/7 (__ROR) @0x7c1696e54ca8
+__ROR/7 (__ROR) @0x75545f054ca8
   Type: function definition
   Visibility: no_reorder
   References: 
@@ -690,7 +690,7 @@ __ROR/7 (__ROR) @0x7c1696e54ca8
   Function flags:
   Called by: 
   Calls: 
-__REVSH/6 (__REVSH) @0x7c1696e54b40
+__REVSH/6 (__REVSH) @0x75545f054b40
   Type: function definition
   Visibility: no_reorder
   References: 
@@ -698,7 +698,7 @@ __REVSH/6 (__REVSH) @0x7c1696e54b40
   Function flags:
   Called by: 
   Calls: 
-__REV16/5 (__REV16) @0x7c1696e549d8
+__REV16/5 (__REV16) @0x75545f0549d8
   Type: function definition
   Visibility: no_reorder
   References: 
@@ -706,7 +706,7 @@ __REV16/5 (__REV16) @0x7c1696e549d8
   Function flags:
   Called by: 
   Calls: 
-__REV/4 (__REV) @0x7c1696e54870
+__REV/4 (__REV) @0x75545f054870
   Type: function definition
   Visibility: no_reorder
   References: 
@@ -714,7 +714,7 @@ __REV/4 (__REV) @0x7c1696e54870
   Function flags:
   Called by: 
   Calls: 
-__DMB/3 (__DMB) @0x7c1696e54708
+__DMB/3 (__DMB) @0x75545f054708
   Type: function definition
   Visibility: no_reorder
   References: 
@@ -722,7 +722,7 @@ __DMB/3 (__DMB) @0x7c1696e54708
   Function flags:
   Called by: 
   Calls: 
-__DSB/2 (__DSB) @0x7c1696e545a0
+__DSB/2 (__DSB) @0x75545f0545a0
   Type: function definition
   Visibility: no_reorder
   References: 
@@ -730,7 +730,7 @@ __DSB/2 (__DSB) @0x7c1696e545a0
   Function flags:
   Called by: 
   Calls: 
-__ISB/1 (__ISB) @0x7c1696e54438
+__ISB/1 (__ISB) @0x75545f054438
   Type: function definition
   Visibility: no_reorder
   References: 
@@ -738,7 +738,7 @@ __ISB/1 (__ISB) @0x7c1696e54438
   Function flags:
   Called by: 
   Calls: 
-__cmsis_start/0 (__cmsis_start) @0x7c1696e54168
+__cmsis_start/0 (__cmsis_start) @0x75545f054168
   Type: function definition
   Visibility: no_reorder
   References: 
@@ -751,7 +751,7 @@ Removing unused symbols: ITM_CheckChar/73 ITM_ReceiveChar/72 ITM_SendChar/71 Sys
 
 Reclaimed Symbol table:
 
-SystemCoreClockGet/90 (SystemCoreClockGet) @0x7c1696b875a0
+SystemCoreClockGet/90 (SystemCoreClockGet) @0x75545ed875a0
   Type: function
   Visibility: external public
   References: 
@@ -759,14 +759,14 @@ SystemCoreClockGet/90 (SystemCoreClockGet) @0x7c1696b875a0
   Function flags:
   Called by: SystemCoreClockUpdate/74 
   Calls: 
-SystemCoreClock/89 (SystemCoreClock) @0x7c1696b9d100
+SystemCoreClock/89 (SystemCoreClock) @0x75545ed9d100
   Type: variable
   Visibility: external public
   References: 
   Referring: ClockSetCoreClock/81 (read) ClockSetPrescalers/84 (read) ClockSetPrescalers/84 (read) ClockSetLFCLKA/85 (read) ClockSetLFCLKA/85 (read) ClockSetLFCLKB/86 (read) ClockSetLFCLKB/86 (read) 
   Availability: not-ready
   Varpool flags:
-ClockGetCoreClockFrequency/88 (ClockGetCoreClockFrequency) @0x7c1696b872d0
+ClockGetCoreClockFrequency/88 (ClockGetCoreClockFrequency) @0x75545ed872d0
   Type: function definition analyzed
   Visibility: force_output no_reorder public
   References: 
@@ -774,7 +774,7 @@ ClockGetCoreClockFrequency/88 (ClockGetCoreClockFrequency) @0x7c1696b872d0
   Function flags: body
   Called by: 
   Calls: ClockGetConfiguration/82 
-ClockGetPeripheralClockFrequency/87 (ClockGetPeripheralClockFrequency) @0x7c1696b87168
+ClockGetPeripheralClockFrequency/87 (ClockGetPeripheralClockFrequency) @0x75545ed87168
   Type: function definition analyzed
   Visibility: force_output no_reorder public
   References: 
@@ -782,7 +782,7 @@ ClockGetPeripheralClockFrequency/87 (ClockGetPeripheralClockFrequency) @0x7c1696
   Function flags: body
   Called by: 
   Calls: ClockGetConfiguration/82 
-ClockSetLFCLKB/86 (ClockSetLFCLKB) @0x7c1696b87000
+ClockSetLFCLKB/86 (ClockSetLFCLKB) @0x75545ed87000
   Type: function definition analyzed
   Visibility: force_output no_reorder public
   References: SystemCoreClock/89 (read) SystemCoreClock/89 (read) 
@@ -790,7 +790,7 @@ ClockSetLFCLKB/86 (ClockSetLFCLKB) @0x7c1696b87000
   Function flags: body
   Called by: 
   Calls: ClockProcessPostChange/80 ClockProcessPreChange/79 
-ClockSetLFCLKA/85 (ClockSetLFCLKA) @0x7c1696b6ce10
+ClockSetLFCLKA/85 (ClockSetLFCLKA) @0x75545ed6ce10
   Type: function definition analyzed
   Visibility: force_output no_reorder public
   References: SystemCoreClock/89 (read) SystemCoreClock/89 (read) 
@@ -798,7 +798,7 @@ ClockSetLFCLKA/85 (ClockSetLFCLKA) @0x7c1696b6ce10
   Function flags: body
   Called by: 
   Calls: ClockProcessPostChange/80 ClockProcessPreChange/79 
-ClockSetPrescalers/84 (ClockSetPrescalers) @0x7c1696b6cca8
+ClockSetPrescalers/84 (ClockSetPrescalers) @0x75545ed6cca8
   Type: function definition analyzed
   Visibility: force_output no_reorder public
   References: SystemCoreClock/89 (read) SystemCoreClock/89 (read) 
@@ -806,7 +806,7 @@ ClockSetPrescalers/84 (ClockSetPrescalers) @0x7c1696b6cca8
   Function flags: body
   Called by: 
   Calls: ClockProcessPostChange/80 ClockConfigureSystemForClockFrequency/83 SystemCoreClockUpdate/74 nearestpower2exp/77 nearestpower2exp/77 ClockConfigureSystemForClockFrequency/83 ClockProcessPreChange/79 
-ClockConfigureSystemForClockFrequency/83 (ClockConfigureSystemForClockFrequency) @0x7c1696b6cb40
+ClockConfigureSystemForClockFrequency/83 (ClockConfigureSystemForClockFrequency) @0x75545ed6cb40
   Type: function definition analyzed
   Visibility: force_output no_reorder public
   References: 
@@ -814,7 +814,7 @@ ClockConfigureSystemForClockFrequency/83 (ClockConfigureSystemForClockFrequency)
   Function flags: body
   Called by: ClockSetPrescalers/84 ClockSetPrescalers/84 ClockSetCoreClock/81 ClockSetCoreClock/81 
   Calls: 
-ClockGetConfiguration/82 (ClockGetConfiguration) @0x7c1696b6c9d8
+ClockGetConfiguration/82 (ClockGetConfiguration) @0x75545ed6c9d8
   Type: function definition analyzed
   Visibility: force_output no_reorder public
   References: 
@@ -822,7 +822,7 @@ ClockGetConfiguration/82 (ClockGetConfiguration) @0x7c1696b6c9d8
   Function flags: body
   Called by: ClockGetCoreClockFrequency/88 ClockGetPeripheralClockFrequency/87 
   Calls: GetProdRev/76 GetProdRev/76 
-ClockSetCoreClock/81 (ClockSetCoreClock) @0x7c1696b6c870
+ClockSetCoreClock/81 (ClockSetCoreClock) @0x75545ed6c870
   Type: function definition analyzed
   Visibility: force_output no_reorder public
   References: SystemCoreClock/89 (read) 
@@ -830,7 +830,7 @@ ClockSetCoreClock/81 (ClockSetCoreClock) @0x7c1696b6c870
   Function flags: body
   Called by: 
   Calls: ClockProcessPostChange/80 ClockConfigureSystemForClockFrequency/83 SystemCoreClockUpdate/74 nearestpower2exp/77 GetProdRev/76 GetProdRev/76 ClockConfigureSystemForClockFrequency/83 ClockProcessPreChange/79 
-ClockProcessPostChange/80 (ClockProcessPostChange) @0x7c1696b6c708
+ClockProcessPostChange/80 (ClockProcessPostChange) @0x75545ed6c708
   Type: function definition analyzed
   Visibility: force_output no_reorder public
   References: callbacks/75 (read) callbacks/75 (read) callbacks/75 (read) 
@@ -839,7 +839,7 @@ ClockProcessPostChange/80 (ClockProcessPostChange) @0x7c1696b6c708
   Called by: ClockSetLFCLKB/86 ClockSetLFCLKA/85 ClockSetPrescalers/84 ClockSetCoreClock/81 
   Calls: 
    Indirect call Num speculative call targets: 0
-ClockProcessPreChange/79 (ClockProcessPreChange) @0x7c1696b6c5a0
+ClockProcessPreChange/79 (ClockProcessPreChange) @0x75545ed6c5a0
   Type: function definition analyzed
   Visibility: force_output no_reorder public
   References: callbacks/75 (read) callbacks/75 (read) callbacks/75 (read) 
@@ -848,7 +848,7 @@ ClockProcessPreChange/79 (ClockProcessPreChange) @0x7c1696b6c5a0
   Called by: ClockSetLFCLKB/86 ClockSetLFCLKA/85 ClockSetPrescalers/84 ClockSetCoreClock/81 
   Calls: 
    Indirect call Num speculative call targets: 0
-ClockRegisterCallback/78 (ClockRegisterCallback) @0x7c1696b6c438
+ClockRegisterCallback/78 (ClockRegisterCallback) @0x75545ed6c438
   Type: function definition analyzed
   Visibility: force_output no_reorder public
   References: callbacks/75 (read) callbacks/75 (write) callbacks/75 (write) callbacks/75 (write) 
@@ -856,7 +856,7 @@ ClockRegisterCallback/78 (ClockRegisterCallback) @0x7c1696b6c438
   Function flags: body
   Called by: 
   Calls: 
-nearestpower2exp/77 (nearestpower2exp) @0x7c1696b6c2d0
+nearestpower2exp/77 (nearestpower2exp) @0x75545ed6c2d0
   Type: function definition analyzed
   Visibility: force_output no_reorder
   References: 
@@ -864,7 +864,7 @@ nearestpower2exp/77 (nearestpower2exp) @0x7c1696b6c2d0
   Function flags: body
   Called by: ClockSetPrescalers/84 ClockSetPrescalers/84 ClockSetCoreClock/81 
   Calls: 
-GetProdRev/76 (GetProdRev) @0x7c1696b6c168
+GetProdRev/76 (GetProdRev) @0x75545ed6c168
   Type: function definition analyzed
   Visibility: no_reorder
   References: 
@@ -872,14 +872,14 @@ GetProdRev/76 (GetProdRev) @0x7c1696b6c168
   Function flags: body
   Called by: ClockGetConfiguration/82 ClockGetConfiguration/82 ClockSetCoreClock/81 ClockSetCoreClock/81 
   Calls: 
-callbacks/75 (callbacks) @0x7c1696b67300
+callbacks/75 (callbacks) @0x75545ed67300
   Type: variable definition analyzed
   Visibility: force_output no_reorder
   References: 
   Referring: ClockRegisterCallback/78 (read) ClockRegisterCallback/78 (write) ClockRegisterCallback/78 (write) ClockRegisterCallback/78 (write) ClockProcessPreChange/79 (read) ClockProcessPreChange/79 (read) ClockProcessPreChange/79 (read) ClockProcessPostChange/80 (read) ClockProcessPostChange/80 (read) ClockProcessPostChange/80 (read) 
   Availability: not-ready
   Varpool flags: initialized
-SystemCoreClockUpdate/74 (SystemCoreClockUpdate) @0x7c1696ef6708
+SystemCoreClockUpdate/74 (SystemCoreClockUpdate) @0x75545f0f6708
   Type: function definition analyzed
   Visibility: no_reorder
   References: 
@@ -891,7 +891,7 @@ SystemCoreClockUpdate/74 (SystemCoreClockUpdate) @0x7c1696ef6708
 
 Initial Symbol table:
 
-SystemCoreClockGet/90 (SystemCoreClockGet) @0x7c1696b875a0
+SystemCoreClockGet/90 (SystemCoreClockGet) @0x75545ed875a0
   Type: function
   Visibility: external public
   References: 
@@ -899,14 +899,14 @@ SystemCoreClockGet/90 (SystemCoreClockGet) @0x7c1696b875a0
   Function flags:
   Called by: SystemCoreClockUpdate/74 
   Calls: 
-SystemCoreClock/89 (SystemCoreClock) @0x7c1696b9d100
+SystemCoreClock/89 (SystemCoreClock) @0x75545ed9d100
   Type: variable
   Visibility: external public
   References: 
   Referring: ClockSetCoreClock/81 (read) ClockSetPrescalers/84 (read) ClockSetPrescalers/84 (read) ClockSetLFCLKA/85 (read) ClockSetLFCLKA/85 (read) ClockSetLFCLKB/86 (read) ClockSetLFCLKB/86 (read) 
   Availability: not-ready
   Varpool flags:
-ClockGetCoreClockFrequency/88 (ClockGetCoreClockFrequency) @0x7c1696b872d0
+ClockGetCoreClockFrequency/88 (ClockGetCoreClockFrequency) @0x75545ed872d0
   Type: function definition analyzed
   Visibility: force_output no_reorder public
   References: 
@@ -914,7 +914,7 @@ ClockGetCoreClockFrequency/88 (ClockGetCoreClockFrequency) @0x7c1696b872d0
   Function flags: body
   Called by: 
   Calls: ClockGetConfiguration/82 
-ClockGetPeripheralClockFrequency/87 (ClockGetPeripheralClockFrequency) @0x7c1696b87168
+ClockGetPeripheralClockFrequency/87 (ClockGetPeripheralClockFrequency) @0x75545ed87168
   Type: function definition analyzed
   Visibility: force_output no_reorder public
   References: 
@@ -922,7 +922,7 @@ ClockGetPeripheralClockFrequency/87 (ClockGetPeripheralClockFrequency) @0x7c1696
   Function flags: body
   Called by: 
   Calls: ClockGetConfiguration/82 
-ClockSetLFCLKB/86 (ClockSetLFCLKB) @0x7c1696b87000
+ClockSetLFCLKB/86 (ClockSetLFCLKB) @0x75545ed87000
   Type: function definition analyzed
   Visibility: force_output no_reorder public
   References: SystemCoreClock/89 (read) SystemCoreClock/89 (read) 
@@ -930,7 +930,7 @@ ClockSetLFCLKB/86 (ClockSetLFCLKB) @0x7c1696b87000
   Function flags: body
   Called by: 
   Calls: ClockProcessPostChange/80 ClockProcessPreChange/79 
-ClockSetLFCLKA/85 (ClockSetLFCLKA) @0x7c1696b6ce10
+ClockSetLFCLKA/85 (ClockSetLFCLKA) @0x75545ed6ce10
   Type: function definition analyzed
   Visibility: force_output no_reorder public
   References: SystemCoreClock/89 (read) SystemCoreClock/89 (read) 
@@ -938,7 +938,7 @@ ClockSetLFCLKA/85 (ClockSetLFCLKA) @0x7c1696b6ce10
   Function flags: body
   Called by: 
   Calls: ClockProcessPostChange/80 ClockProcessPreChange/79 
-ClockSetPrescalers/84 (ClockSetPrescalers) @0x7c1696b6cca8
+ClockSetPrescalers/84 (ClockSetPrescalers) @0x75545ed6cca8
   Type: function definition analyzed
   Visibility: force_output no_reorder public
   References: SystemCoreClock/89 (read) SystemCoreClock/89 (read) 
@@ -946,7 +946,7 @@ ClockSetPrescalers/84 (ClockSetPrescalers) @0x7c1696b6cca8
   Function flags: body
   Called by: 
   Calls: ClockProcessPostChange/80 ClockConfigureSystemForClockFrequency/83 SystemCoreClockUpdate/74 nearestpower2exp/77 nearestpower2exp/77 ClockConfigureSystemForClockFrequency/83 ClockProcessPreChange/79 
-ClockConfigureSystemForClockFrequency/83 (ClockConfigureSystemForClockFrequency) @0x7c1696b6cb40
+ClockConfigureSystemForClockFrequency/83 (ClockConfigureSystemForClockFrequency) @0x75545ed6cb40
   Type: function definition analyzed
   Visibility: force_output no_reorder public
   References: 
@@ -954,7 +954,7 @@ ClockConfigureSystemForClockFrequency/83 (ClockConfigureSystemForClockFrequency)
   Function flags: body
   Called by: ClockSetPrescalers/84 ClockSetPrescalers/84 ClockSetCoreClock/81 ClockSetCoreClock/81 
   Calls: 
-ClockGetConfiguration/82 (ClockGetConfiguration) @0x7c1696b6c9d8
+ClockGetConfiguration/82 (ClockGetConfiguration) @0x75545ed6c9d8
   Type: function definition analyzed
   Visibility: force_output no_reorder public
   References: 
@@ -962,7 +962,7 @@ ClockGetConfiguration/82 (ClockGetConfiguration) @0x7c1696b6c9d8
   Function flags: body
   Called by: ClockGetCoreClockFrequency/88 ClockGetPeripheralClockFrequency/87 
   Calls: GetProdRev/76 GetProdRev/76 
-ClockSetCoreClock/81 (ClockSetCoreClock) @0x7c1696b6c870
+ClockSetCoreClock/81 (ClockSetCoreClock) @0x75545ed6c870
   Type: function definition analyzed
   Visibility: force_output no_reorder public
   References: SystemCoreClock/89 (read) 
@@ -970,7 +970,7 @@ ClockSetCoreClock/81 (ClockSetCoreClock) @0x7c1696b6c870
   Function flags: body
   Called by: 
   Calls: ClockProcessPostChange/80 ClockConfigureSystemForClockFrequency/83 SystemCoreClockUpdate/74 nearestpower2exp/77 GetProdRev/76 GetProdRev/76 ClockConfigureSystemForClockFrequency/83 ClockProcessPreChange/79 
-ClockProcessPostChange/80 (ClockProcessPostChange) @0x7c1696b6c708
+ClockProcessPostChange/80 (ClockProcessPostChange) @0x75545ed6c708
   Type: function definition analyzed
   Visibility: force_output no_reorder public
   References: callbacks/75 (read) callbacks/75 (read) callbacks/75 (read) 
@@ -979,7 +979,7 @@ ClockProcessPostChange/80 (ClockProcessPostChange) @0x7c1696b6c708
   Called by: ClockSetLFCLKB/86 ClockSetLFCLKA/85 ClockSetPrescalers/84 ClockSetCoreClock/81 
   Calls: 
    Indirect call Num speculative call targets: 0
-ClockProcessPreChange/79 (ClockProcessPreChange) @0x7c1696b6c5a0
+ClockProcessPreChange/79 (ClockProcessPreChange) @0x75545ed6c5a0
   Type: function definition analyzed
   Visibility: force_output no_reorder public
   References: callbacks/75 (read) callbacks/75 (read) callbacks/75 (read) 
@@ -988,7 +988,7 @@ ClockProcessPreChange/79 (ClockProcessPreChange) @0x7c1696b6c5a0
   Called by: ClockSetLFCLKB/86 ClockSetLFCLKA/85 ClockSetPrescalers/84 ClockSetCoreClock/81 
   Calls: 
    Indirect call Num speculative call targets: 0
-ClockRegisterCallback/78 (ClockRegisterCallback) @0x7c1696b6c438
+ClockRegisterCallback/78 (ClockRegisterCallback) @0x75545ed6c438
   Type: function definition analyzed
   Visibility: force_output no_reorder public
   References: callbacks/75 (read) callbacks/75 (write) callbacks/75 (write) callbacks/75 (write) 
@@ -996,7 +996,7 @@ ClockRegisterCallback/78 (ClockRegisterCallback) @0x7c1696b6c438
   Function flags: body
   Called by: 
   Calls: 
-nearestpower2exp/77 (nearestpower2exp) @0x7c1696b6c2d0
+nearestpower2exp/77 (nearestpower2exp) @0x75545ed6c2d0
   Type: function definition analyzed
   Visibility: force_output no_reorder
   References: 
@@ -1004,7 +1004,7 @@ nearestpower2exp/77 (nearestpower2exp) @0x7c1696b6c2d0
   Function flags: body
   Called by: ClockSetPrescalers/84 ClockSetPrescalers/84 ClockSetCoreClock/81 
   Calls: 
-GetProdRev/76 (GetProdRev) @0x7c1696b6c168
+GetProdRev/76 (GetProdRev) @0x75545ed6c168
   Type: function definition analyzed
   Visibility: no_reorder
   References: 
@@ -1012,14 +1012,14 @@ GetProdRev/76 (GetProdRev) @0x7c1696b6c168
   Function flags: body
   Called by: ClockGetConfiguration/82 ClockGetConfiguration/82 ClockSetCoreClock/81 ClockSetCoreClock/81 
   Calls: 
-callbacks/75 (callbacks) @0x7c1696b67300
+callbacks/75 (callbacks) @0x75545ed67300
   Type: variable definition analyzed
   Visibility: force_output no_reorder
   References: 
   Referring: ClockRegisterCallback/78 (read) ClockRegisterCallback/78 (write) ClockRegisterCallback/78 (write) ClockRegisterCallback/78 (write) ClockProcessPreChange/79 (read) ClockProcessPreChange/79 (read) ClockProcessPreChange/79 (read) ClockProcessPostChange/80 (read) ClockProcessPostChange/80 (read) ClockProcessPostChange/80 (read) 
   Availability: not-ready
   Varpool flags: initialized
-SystemCoreClockUpdate/74 (SystemCoreClockUpdate) @0x7c1696ef6708
+SystemCoreClockUpdate/74 (SystemCoreClockUpdate) @0x75545f0f6708
   Type: function definition analyzed
   Visibility: no_reorder
   References: 
@@ -1032,7 +1032,7 @@ Removing unused symbols:
 
 Reclaimed Symbol table:
 
-SystemCoreClockGet/90 (SystemCoreClockGet) @0x7c1696b875a0
+SystemCoreClockGet/90 (SystemCoreClockGet) @0x75545ed875a0
   Type: function
   Visibility: external public
   References: 
@@ -1040,14 +1040,14 @@ SystemCoreClockGet/90 (SystemCoreClockGet) @0x7c1696b875a0
   Function flags:
   Called by: SystemCoreClockUpdate/74 
   Calls: 
-SystemCoreClock/89 (SystemCoreClock) @0x7c1696b9d100
+SystemCoreClock/89 (SystemCoreClock) @0x75545ed9d100
   Type: variable
   Visibility: external public
   References: 
   Referring: ClockSetCoreClock/81 (read) ClockSetPrescalers/84 (read) ClockSetPrescalers/84 (read) ClockSetLFCLKA/85 (read) ClockSetLFCLKA/85 (read) ClockSetLFCLKB/86 (read) ClockSetLFCLKB/86 (read) 
   Availability: not-ready
   Varpool flags:
-ClockGetCoreClockFrequency/88 (ClockGetCoreClockFrequency) @0x7c1696b872d0
+ClockGetCoreClockFrequency/88 (ClockGetCoreClockFrequency) @0x75545ed872d0
   Type: function definition analyzed
   Visibility: force_output no_reorder public
   References: 
@@ -1055,7 +1055,7 @@ ClockGetCoreClockFrequency/88 (ClockGetCoreClockFrequency) @0x7c1696b872d0
   Function flags: body
   Called by: 
   Calls: ClockGetConfiguration/82 
-ClockGetPeripheralClockFrequency/87 (ClockGetPeripheralClockFrequency) @0x7c1696b87168
+ClockGetPeripheralClockFrequency/87 (ClockGetPeripheralClockFrequency) @0x75545ed87168
   Type: function definition analyzed
   Visibility: force_output no_reorder public
   References: 
@@ -1063,7 +1063,7 @@ ClockGetPeripheralClockFrequency/87 (ClockGetPeripheralClockFrequency) @0x7c1696
   Function flags: body
   Called by: 
   Calls: ClockGetConfiguration/82 
-ClockSetLFCLKB/86 (ClockSetLFCLKB) @0x7c1696b87000
+ClockSetLFCLKB/86 (ClockSetLFCLKB) @0x75545ed87000
   Type: function definition analyzed
   Visibility: force_output no_reorder public
   References: SystemCoreClock/89 (read) SystemCoreClock/89 (read) 
@@ -1071,7 +1071,7 @@ ClockSetLFCLKB/86 (ClockSetLFCLKB) @0x7c1696b87000
   Function flags: body
   Called by: 
   Calls: ClockProcessPostChange/80 ClockProcessPreChange/79 
-ClockSetLFCLKA/85 (ClockSetLFCLKA) @0x7c1696b6ce10
+ClockSetLFCLKA/85 (ClockSetLFCLKA) @0x75545ed6ce10
   Type: function definition analyzed
   Visibility: force_output no_reorder public
   References: SystemCoreClock/89 (read) SystemCoreClock/89 (read) 
@@ -1079,7 +1079,7 @@ ClockSetLFCLKA/85 (ClockSetLFCLKA) @0x7c1696b6ce10
   Function flags: body
   Called by: 
   Calls: ClockProcessPostChange/80 ClockProcessPreChange/79 
-ClockSetPrescalers/84 (ClockSetPrescalers) @0x7c1696b6cca8
+ClockSetPrescalers/84 (ClockSetPrescalers) @0x75545ed6cca8
   Type: function definition analyzed
   Visibility: force_output no_reorder public
   References: SystemCoreClock/89 (read) SystemCoreClock/89 (read) 
@@ -1087,7 +1087,7 @@ ClockSetPrescalers/84 (ClockSetPrescalers) @0x7c1696b6cca8
   Function flags: body
   Called by: 
   Calls: ClockProcessPostChange/80 ClockConfigureSystemForClockFrequency/83 SystemCoreClockUpdate/74 nearestpower2exp/77 nearestpower2exp/77 ClockConfigureSystemForClockFrequency/83 ClockProcessPreChange/79 
-ClockConfigureSystemForClockFrequency/83 (ClockConfigureSystemForClockFrequency) @0x7c1696b6cb40
+ClockConfigureSystemForClockFrequency/83 (ClockConfigureSystemForClockFrequency) @0x75545ed6cb40
   Type: function definition analyzed
   Visibility: force_output no_reorder public
   References: 
@@ -1095,7 +1095,7 @@ ClockConfigureSystemForClockFrequency/83 (ClockConfigureSystemForClockFrequency)
   Function flags: body
   Called by: ClockSetPrescalers/84 ClockSetPrescalers/84 ClockSetCoreClock/81 ClockSetCoreClock/81 
   Calls: 
-ClockGetConfiguration/82 (ClockGetConfiguration) @0x7c1696b6c9d8
+ClockGetConfiguration/82 (ClockGetConfiguration) @0x75545ed6c9d8
   Type: function definition analyzed
   Visibility: force_output no_reorder public
   References: 
@@ -1103,7 +1103,7 @@ ClockGetConfiguration/82 (ClockGetConfiguration) @0x7c1696b6c9d8
   Function flags: body
   Called by: ClockGetCoreClockFrequency/88 ClockGetPeripheralClockFrequency/87 
   Calls: GetProdRev/76 GetProdRev/76 
-ClockSetCoreClock/81 (ClockSetCoreClock) @0x7c1696b6c870
+ClockSetCoreClock/81 (ClockSetCoreClock) @0x75545ed6c870
   Type: function definition analyzed
   Visibility: force_output no_reorder public
   References: SystemCoreClock/89 (read) 
@@ -1111,7 +1111,7 @@ ClockSetCoreClock/81 (ClockSetCoreClock) @0x7c1696b6c870
   Function flags: body
   Called by: 
   Calls: ClockProcessPostChange/80 ClockConfigureSystemForClockFrequency/83 SystemCoreClockUpdate/74 nearestpower2exp/77 GetProdRev/76 GetProdRev/76 ClockConfigureSystemForClockFrequency/83 ClockProcessPreChange/79 
-ClockProcessPostChange/80 (ClockProcessPostChange) @0x7c1696b6c708
+ClockProcessPostChange/80 (ClockProcessPostChange) @0x75545ed6c708
   Type: function definition analyzed
   Visibility: force_output no_reorder public
   References: callbacks/75 (read) callbacks/75 (read) callbacks/75 (read) 
@@ -1120,7 +1120,7 @@ ClockProcessPostChange/80 (ClockProcessPostChange) @0x7c1696b6c708
   Called by: ClockSetLFCLKB/86 ClockSetLFCLKA/85 ClockSetPrescalers/84 ClockSetCoreClock/81 
   Calls: 
    Indirect call Num speculative call targets: 0
-ClockProcessPreChange/79 (ClockProcessPreChange) @0x7c1696b6c5a0
+ClockProcessPreChange/79 (ClockProcessPreChange) @0x75545ed6c5a0
   Type: function definition analyzed
   Visibility: force_output no_reorder public
   References: callbacks/75 (read) callbacks/75 (read) callbacks/75 (read) 
@@ -1129,7 +1129,7 @@ ClockProcessPreChange/79 (ClockProcessPreChange) @0x7c1696b6c5a0
   Called by: ClockSetLFCLKB/86 ClockSetLFCLKA/85 ClockSetPrescalers/84 ClockSetCoreClock/81 
   Calls: 
    Indirect call Num speculative call targets: 0
-ClockRegisterCallback/78 (ClockRegisterCallback) @0x7c1696b6c438
+ClockRegisterCallback/78 (ClockRegisterCallback) @0x75545ed6c438
   Type: function definition analyzed
   Visibility: force_output no_reorder public
   References: callbacks/75 (read) callbacks/75 (write) callbacks/75 (write) callbacks/75 (write) 
@@ -1137,7 +1137,7 @@ ClockRegisterCallback/78 (ClockRegisterCallback) @0x7c1696b6c438
   Function flags: body
   Called by: 
   Calls: 
-nearestpower2exp/77 (nearestpower2exp) @0x7c1696b6c2d0
+nearestpower2exp/77 (nearestpower2exp) @0x75545ed6c2d0
   Type: function definition analyzed
   Visibility: force_output no_reorder
   References: 
@@ -1145,7 +1145,7 @@ nearestpower2exp/77 (nearestpower2exp) @0x7c1696b6c2d0
   Function flags: body
   Called by: ClockSetPrescalers/84 ClockSetPrescalers/84 ClockSetCoreClock/81 
   Calls: 
-GetProdRev/76 (GetProdRev) @0x7c1696b6c168
+GetProdRev/76 (GetProdRev) @0x75545ed6c168
   Type: function definition analyzed
   Visibility: no_reorder
   References: 
@@ -1153,14 +1153,14 @@ GetProdRev/76 (GetProdRev) @0x7c1696b6c168
   Function flags: body
   Called by: ClockGetConfiguration/82 ClockGetConfiguration/82 ClockSetCoreClock/81 ClockSetCoreClock/81 
   Calls: 
-callbacks/75 (callbacks) @0x7c1696b67300
+callbacks/75 (callbacks) @0x75545ed67300
   Type: variable definition analyzed
   Visibility: force_output no_reorder
   References: 
   Referring: ClockRegisterCallback/78 (read) ClockRegisterCallback/78 (write) ClockRegisterCallback/78 (write) ClockRegisterCallback/78 (write) ClockProcessPreChange/79 (read) ClockProcessPreChange/79 (read) ClockProcessPreChange/79 (read) ClockProcessPostChange/80 (read) ClockProcessPostChange/80 (read) ClockProcessPostChange/80 (read) 
   Availability: not-ready
   Varpool flags: initialized
-SystemCoreClockUpdate/74 (SystemCoreClockUpdate) @0x7c1696ef6708
+SystemCoreClockUpdate/74 (SystemCoreClockUpdate) @0x75545f0f6708
   Type: function definition analyzed
   Visibility: no_reorder
   References: 
@@ -1174,7 +1174,7 @@ Reclaiming variables:
 Clearing address taken flags:
 Optimized Symbol table:
 
-SystemCoreClockGet/90 (SystemCoreClockGet) @0x7c1696b875a0
+SystemCoreClockGet/90 (SystemCoreClockGet) @0x75545ed875a0
   Type: function
   Visibility: external public
   References: 
@@ -1183,7 +1183,7 @@ SystemCoreClockGet/90 (SystemCoreClockGet) @0x7c1696b875a0
   Function flags:
   Called by: SystemCoreClockUpdate/74 
   Calls: 
-SystemCoreClock/89 (SystemCoreClock) @0x7c1696b9d100
+SystemCoreClock/89 (SystemCoreClock) @0x75545ed9d100
   Type: variable
   Body removed by symtab_remove_unreachable_nodes
   Visibility: external public
@@ -1191,7 +1191,7 @@ SystemCoreClock/89 (SystemCoreClock) @0x7c1696b9d100
   Referring: ClockSetPrescalers/84 (read) ClockSetPrescalers/84 (read) ClockSetLFCLKA/85 (read) ClockSetLFCLKA/85 (read) ClockSetCoreClock/81 (read) ClockSetLFCLKB/86 (read) ClockSetLFCLKB/86 (read) 
   Availability: not_available
   Varpool flags:
-ClockGetCoreClockFrequency/88 (ClockGetCoreClockFrequency) @0x7c1696b872d0
+ClockGetCoreClockFrequency/88 (ClockGetCoreClockFrequency) @0x75545ed872d0
   Type: function definition analyzed
   Visibility: force_output externally_visible no_reorder public
   References: 
@@ -1200,7 +1200,7 @@ ClockGetCoreClockFrequency/88 (ClockGetCoreClockFrequency) @0x7c1696b872d0
   Function flags: body
   Called by: 
   Calls: ClockGetConfiguration/82 
-ClockGetPeripheralClockFrequency/87 (ClockGetPeripheralClockFrequency) @0x7c1696b87168
+ClockGetPeripheralClockFrequency/87 (ClockGetPeripheralClockFrequency) @0x75545ed87168
   Type: function definition analyzed
   Visibility: force_output externally_visible no_reorder public
   References: 
@@ -1209,7 +1209,7 @@ ClockGetPeripheralClockFrequency/87 (ClockGetPeripheralClockFrequency) @0x7c1696
   Function flags: body
   Called by: 
   Calls: ClockGetConfiguration/82 
-ClockSetLFCLKB/86 (ClockSetLFCLKB) @0x7c1696b87000
+ClockSetLFCLKB/86 (ClockSetLFCLKB) @0x75545ed87000
   Type: function definition analyzed
   Visibility: force_output externally_visible no_reorder public
   References: SystemCoreClock/89 (read) SystemCoreClock/89 (read) 
@@ -1218,7 +1218,7 @@ ClockSetLFCLKB/86 (ClockSetLFCLKB) @0x7c1696b87000
   Function flags: body
   Called by: 
   Calls: ClockProcessPostChange/80 ClockProcessPreChange/79 
-ClockSetLFCLKA/85 (ClockSetLFCLKA) @0x7c1696b6ce10
+ClockSetLFCLKA/85 (ClockSetLFCLKA) @0x75545ed6ce10
   Type: function definition analyzed
   Visibility: force_output externally_visible no_reorder public
   References: SystemCoreClock/89 (read) SystemCoreClock/89 (read) 
@@ -1227,7 +1227,7 @@ ClockSetLFCLKA/85 (ClockSetLFCLKA) @0x7c1696b6ce10
   Function flags: body
   Called by: 
   Calls: ClockProcessPostChange/80 ClockProcessPreChange/79 
-ClockSetPrescalers/84 (ClockSetPrescalers) @0x7c1696b6cca8
+ClockSetPrescalers/84 (ClockSetPrescalers) @0x75545ed6cca8
   Type: function definition analyzed
   Visibility: force_output externally_visible no_reorder public
   References: SystemCoreClock/89 (read) SystemCoreClock/89 (read) 
@@ -1236,7 +1236,7 @@ ClockSetPrescalers/84 (ClockSetPrescalers) @0x7c1696b6cca8
   Function flags: body
   Called by: 
   Calls: ClockProcessPostChange/80 ClockConfigureSystemForClockFrequency/83 SystemCoreClockUpdate/74 nearestpower2exp/77 nearestpower2exp/77 ClockConfigureSystemForClockFrequency/83 ClockProcessPreChange/79 
-ClockConfigureSystemForClockFrequency/83 (ClockConfigureSystemForClockFrequency) @0x7c1696b6cb40
+ClockConfigureSystemForClockFrequency/83 (ClockConfigureSystemForClockFrequency) @0x75545ed6cb40
   Type: function definition analyzed
   Visibility: force_output externally_visible no_reorder public
   References: 
@@ -1245,7 +1245,7 @@ ClockConfigureSystemForClockFrequency/83 (ClockConfigureSystemForClockFrequency)
   Function flags: body
   Called by: ClockSetPrescalers/84 ClockSetPrescalers/84 ClockSetCoreClock/81 ClockSetCoreClock/81 
   Calls: 
-ClockGetConfiguration/82 (ClockGetConfiguration) @0x7c1696b6c9d8
+ClockGetConfiguration/82 (ClockGetConfiguration) @0x75545ed6c9d8
   Type: function definition analyzed
   Visibility: force_output externally_visible no_reorder public
   References: 
@@ -1254,7 +1254,7 @@ ClockGetConfiguration/82 (ClockGetConfiguration) @0x7c1696b6c9d8
   Function flags: body
   Called by: ClockGetCoreClockFrequency/88 ClockGetPeripheralClockFrequency/87 
   Calls: GetProdRev/76 GetProdRev/76 
-ClockSetCoreClock/81 (ClockSetCoreClock) @0x7c1696b6c870
+ClockSetCoreClock/81 (ClockSetCoreClock) @0x75545ed6c870
   Type: function definition analyzed
   Visibility: force_output externally_visible no_reorder public
   References: SystemCoreClock/89 (read) 
@@ -1263,7 +1263,7 @@ ClockSetCoreClock/81 (ClockSetCoreClock) @0x7c1696b6c870
   Function flags: body
   Called by: 
   Calls: ClockProcessPostChange/80 ClockConfigureSystemForClockFrequency/83 SystemCoreClockUpdate/74 nearestpower2exp/77 GetProdRev/76 GetProdRev/76 ClockConfigureSystemForClockFrequency/83 ClockProcessPreChange/79 
-ClockProcessPostChange/80 (ClockProcessPostChange) @0x7c1696b6c708
+ClockProcessPostChange/80 (ClockProcessPostChange) @0x75545ed6c708
   Type: function definition analyzed
   Visibility: force_output externally_visible no_reorder public
   References: callbacks/75 (read) callbacks/75 (read) callbacks/75 (read) 
@@ -1273,7 +1273,7 @@ ClockProcessPostChange/80 (ClockProcessPostChange) @0x7c1696b6c708
   Called by: ClockSetLFCLKB/86 ClockSetLFCLKA/85 ClockSetPrescalers/84 ClockSetCoreClock/81 
   Calls: 
    Indirect call Num speculative call targets: 0
-ClockProcessPreChange/79 (ClockProcessPreChange) @0x7c1696b6c5a0
+ClockProcessPreChange/79 (ClockProcessPreChange) @0x75545ed6c5a0
   Type: function definition analyzed
   Visibility: force_output externally_visible no_reorder public
   References: callbacks/75 (read) callbacks/75 (read) callbacks/75 (read) 
@@ -1283,7 +1283,7 @@ ClockProcessPreChange/79 (ClockProcessPreChange) @0x7c1696b6c5a0
   Called by: ClockSetLFCLKB/86 ClockSetLFCLKA/85 ClockSetPrescalers/84 ClockSetCoreClock/81 
   Calls: 
    Indirect call Num speculative call targets: 0
-ClockRegisterCallback/78 (ClockRegisterCallback) @0x7c1696b6c438
+ClockRegisterCallback/78 (ClockRegisterCallback) @0x75545ed6c438
   Type: function definition analyzed
   Visibility: force_output externally_visible no_reorder public
   References: callbacks/75 (read) callbacks/75 (write) callbacks/75 (write) callbacks/75 (write) 
@@ -1292,7 +1292,7 @@ ClockRegisterCallback/78 (ClockRegisterCallback) @0x7c1696b6c438
   Function flags: body
   Called by: 
   Calls: 
-nearestpower2exp/77 (nearestpower2exp) @0x7c1696b6c2d0
+nearestpower2exp/77 (nearestpower2exp) @0x75545ed6c2d0
   Type: function definition analyzed
   Visibility: force_output no_reorder prevailing_def_ironly
   References: 
@@ -1301,7 +1301,7 @@ nearestpower2exp/77 (nearestpower2exp) @0x7c1696b6c2d0
   Function flags: body
   Called by: ClockSetPrescalers/84 ClockSetPrescalers/84 ClockSetCoreClock/81 
   Calls: 
-GetProdRev/76 (GetProdRev) @0x7c1696b6c168
+GetProdRev/76 (GetProdRev) @0x75545ed6c168
   Type: function definition analyzed
   Visibility: no_reorder prevailing_def_ironly
   References: 
@@ -1310,14 +1310,14 @@ GetProdRev/76 (GetProdRev) @0x7c1696b6c168
   Function flags: body local
   Called by: ClockSetCoreClock/81 ClockSetCoreClock/81 ClockGetConfiguration/82 ClockGetConfiguration/82 
   Calls: 
-callbacks/75 (callbacks) @0x7c1696b67300
+callbacks/75 (callbacks) @0x75545ed67300
   Type: variable definition analyzed
   Visibility: force_output no_reorder prevailing_def_ironly
   References: 
   Referring: ClockProcessPreChange/79 (read) ClockRegisterCallback/78 (write) ClockRegisterCallback/78 (write) ClockRegisterCallback/78 (write) ClockProcessPreChange/79 (read) ClockProcessPreChange/79 (read) ClockRegisterCallback/78 (read) ClockProcessPostChange/80 (read) ClockProcessPostChange/80 (read) ClockProcessPostChange/80 (read) 
   Availability: available
   Varpool flags: initialized
-SystemCoreClockUpdate/74 (SystemCoreClockUpdate) @0x7c1696ef6708
+SystemCoreClockUpdate/74 (SystemCoreClockUpdate) @0x75545f0f6708
   Type: function definition analyzed
   Visibility: no_reorder prevailing_def_ironly
   References: 
@@ -1337,7 +1337,7 @@ Removing variables:
 
 Final Symbol table:
 
-SystemCoreClockGet/90 (SystemCoreClockGet) @0x7c1696b875a0
+SystemCoreClockGet/90 (SystemCoreClockGet) @0x75545ed875a0
   Type: function
   Visibility: external public
   References: 
@@ -1346,7 +1346,7 @@ SystemCoreClockGet/90 (SystemCoreClockGet) @0x7c1696b875a0
   Function flags:
   Called by: 
   Calls: 
-SystemCoreClock/89 (SystemCoreClock) @0x7c1696b9d100
+SystemCoreClock/89 (SystemCoreClock) @0x75545ed9d100
   Type: variable
   Body removed by symtab_remove_unreachable_nodes
   Visibility: external public
@@ -1354,7 +1354,7 @@ SystemCoreClock/89 (SystemCoreClock) @0x7c1696b9d100
   Referring: 
   Availability: not_available
   Varpool flags:
-ClockGetCoreClockFrequency/88 (ClockGetCoreClockFrequency) @0x7c1696b872d0
+ClockGetCoreClockFrequency/88 (ClockGetCoreClockFrequency) @0x75545ed872d0
   Type: function definition analyzed
   Visibility: force_output externally_visible no_reorder asm_written public section:.text.ClockGetCoreClockFrequency (implicit_section)
   References: 
@@ -1363,7 +1363,7 @@ ClockGetCoreClockFrequency/88 (ClockGetCoreClockFrequency) @0x7c1696b872d0
   Function flags:
   Called by: 
   Calls: 
-ClockGetPeripheralClockFrequency/87 (ClockGetPeripheralClockFrequency) @0x7c1696b87168
+ClockGetPeripheralClockFrequency/87 (ClockGetPeripheralClockFrequency) @0x75545ed87168
   Type: function definition analyzed
   Visibility: force_output externally_visible no_reorder asm_written public section:.text.ClockGetPeripheralClockFrequency (implicit_section)
   References: 
@@ -1372,7 +1372,7 @@ ClockGetPeripheralClockFrequency/87 (ClockGetPeripheralClockFrequency) @0x7c1696
   Function flags:
   Called by: 
   Calls: 
-ClockSetLFCLKB/86 (ClockSetLFCLKB) @0x7c1696b87000
+ClockSetLFCLKB/86 (ClockSetLFCLKB) @0x75545ed87000
   Type: function definition analyzed
   Visibility: force_output externally_visible no_reorder asm_written public section:.text.ClockSetLFCLKB (implicit_section)
   References: 
@@ -1381,7 +1381,7 @@ ClockSetLFCLKB/86 (ClockSetLFCLKB) @0x7c1696b87000
   Function flags:
   Called by: 
   Calls: 
-ClockSetLFCLKA/85 (ClockSetLFCLKA) @0x7c1696b6ce10
+ClockSetLFCLKA/85 (ClockSetLFCLKA) @0x75545ed6ce10
   Type: function definition analyzed
   Visibility: force_output externally_visible no_reorder asm_written public section:.text.ClockSetLFCLKA (implicit_section)
   References: 
@@ -1390,7 +1390,7 @@ ClockSetLFCLKA/85 (ClockSetLFCLKA) @0x7c1696b6ce10
   Function flags:
   Called by: 
   Calls: 
-ClockSetPrescalers/84 (ClockSetPrescalers) @0x7c1696b6cca8
+ClockSetPrescalers/84 (ClockSetPrescalers) @0x75545ed6cca8
   Type: function definition analyzed
   Visibility: force_output externally_visible no_reorder asm_written public section:.text.ClockSetPrescalers (implicit_section)
   References: 
@@ -1399,7 +1399,7 @@ ClockSetPrescalers/84 (ClockSetPrescalers) @0x7c1696b6cca8
   Function flags:
   Called by: 
   Calls: 
-ClockConfigureSystemForClockFrequency/83 (ClockConfigureSystemForClockFrequency) @0x7c1696b6cb40
+ClockConfigureSystemForClockFrequency/83 (ClockConfigureSystemForClockFrequency) @0x75545ed6cb40
   Type: function definition analyzed
   Visibility: force_output externally_visible no_reorder asm_written public section:.text.ClockConfigureSystemForClockFrequency (implicit_section)
   References: 
@@ -1408,7 +1408,7 @@ ClockConfigureSystemForClockFrequency/83 (ClockConfigureSystemForClockFrequency)
   Function flags:
   Called by: 
   Calls: 
-ClockGetConfiguration/82 (ClockGetConfiguration) @0x7c1696b6c9d8
+ClockGetConfiguration/82 (ClockGetConfiguration) @0x75545ed6c9d8
   Type: function definition analyzed
   Visibility: force_output externally_visible no_reorder asm_written public section:.text.ClockGetConfiguration (implicit_section)
   References: 
@@ -1417,7 +1417,7 @@ ClockGetConfiguration/82 (ClockGetConfiguration) @0x7c1696b6c9d8
   Function flags:
   Called by: 
   Calls: 
-ClockSetCoreClock/81 (ClockSetCoreClock) @0x7c1696b6c870
+ClockSetCoreClock/81 (ClockSetCoreClock) @0x75545ed6c870
   Type: function definition analyzed
   Visibility: force_output externally_visible no_reorder asm_written public section:.text.ClockSetCoreClock (implicit_section)
   References: 
@@ -1426,7 +1426,7 @@ ClockSetCoreClock/81 (ClockSetCoreClock) @0x7c1696b6c870
   Function flags:
   Called by: 
   Calls: 
-ClockProcessPostChange/80 (ClockProcessPostChange) @0x7c1696b6c708
+ClockProcessPostChange/80 (ClockProcessPostChange) @0x75545ed6c708
   Type: function definition analyzed
   Visibility: force_output externally_visible no_reorder asm_written public section:.text.ClockProcessPostChange (implicit_section)
   References: 
@@ -1435,7 +1435,7 @@ ClockProcessPostChange/80 (ClockProcessPostChange) @0x7c1696b6c708
   Function flags:
   Called by: 
   Calls: 
-ClockProcessPreChange/79 (ClockProcessPreChange) @0x7c1696b6c5a0
+ClockProcessPreChange/79 (ClockProcessPreChange) @0x75545ed6c5a0
   Type: function definition analyzed
   Visibility: force_output externally_visible no_reorder asm_written public section:.text.ClockProcessPreChange (implicit_section)
   References: 
@@ -1444,7 +1444,7 @@ ClockProcessPreChange/79 (ClockProcessPreChange) @0x7c1696b6c5a0
   Function flags:
   Called by: 
   Calls: 
-ClockRegisterCallback/78 (ClockRegisterCallback) @0x7c1696b6c438
+ClockRegisterCallback/78 (ClockRegisterCallback) @0x75545ed6c438
   Type: function definition analyzed
   Visibility: force_output externally_visible no_reorder asm_written public section:.text.ClockRegisterCallback (implicit_section)
   References: 
@@ -1453,7 +1453,7 @@ ClockRegisterCallback/78 (ClockRegisterCallback) @0x7c1696b6c438
   Function flags:
   Called by: 
   Calls: 
-nearestpower2exp/77 (nearestpower2exp) @0x7c1696b6c2d0
+nearestpower2exp/77 (nearestpower2exp) @0x75545ed6c2d0
   Type: function definition analyzed
   Visibility: force_output no_reorder prevailing_def_ironly asm_written section:.text.nearestpower2exp (implicit_section)
   References: 
@@ -1462,7 +1462,7 @@ nearestpower2exp/77 (nearestpower2exp) @0x7c1696b6c2d0
   Function flags:
   Called by: 
   Calls: 
-GetProdRev/76 (GetProdRev) @0x7c1696b6c168
+GetProdRev/76 (GetProdRev) @0x75545ed6c168
   Type: function definition analyzed
   Visibility: no_reorder prevailing_def_ironly asm_written section:.text.GetProdRev (implicit_section)
   References: 
@@ -1471,7 +1471,7 @@ GetProdRev/76 (GetProdRev) @0x7c1696b6c168
   Function flags: local
   Called by: 
   Calls: 
-callbacks/75 (callbacks) @0x7c1696b67300
+callbacks/75 (callbacks) @0x75545ed67300
   Type: variable definition analyzed
   Visibility: force_output no_reorder prevailing_def_ironly asm_written section:.bss.callbacks (implicit_section)
   Aux: @0x1
@@ -1479,7 +1479,7 @@ callbacks/75 (callbacks) @0x7c1696b67300
   Referring: 
   Availability: available
   Varpool flags: initialized
-SystemCoreClockUpdate/74 (SystemCoreClockUpdate) @0x7c1696ef6708
+SystemCoreClockUpdate/74 (SystemCoreClockUpdate) @0x75545f0f6708
   Type: function definition analyzed
   Visibility: no_reorder prevailing_def_ironly asm_written section:.text.SystemCoreClockUpdate (implicit_section)
   References: 

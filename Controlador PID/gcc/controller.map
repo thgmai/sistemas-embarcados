@@ -236,7 +236,7 @@ LOAD /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v7-m/nof
 END GROUP
                 0x0000000000001000                HEAPSIZE = 0x1000
 
-.text           0x0000000000000000     0x2690
+.text           0x0000000000000000     0x2684
  *(.vectors)
  .vectors       0x0000000000000000       0xdc gcc/startup_efm32gg.o
                 0x0000000000000000                __Vectors
@@ -293,199 +293,200 @@ END GROUP
                 0x0000000000000b48       0x22 gcc/control.o
  *fill*         0x0000000000000b6a        0x2 
  .text.controllerInit
-                0x0000000000000b6c      0x114 gcc/control.o
+                0x0000000000000b6c       0xf8 gcc/control.o
                 0x0000000000000b6c                controllerInit
+ *fill*         0x0000000000000c64        0x4 
  .text.readSetpoint
-                0x0000000000000c80       0x5c gcc/control.o
-                0x0000000000000c80                readSetpoint
- *fill*         0x0000000000000cdc        0x4 
+                0x0000000000000c68       0x5c gcc/control.o
+                0x0000000000000c68                readSetpoint
+ *fill*         0x0000000000000cc4        0x4 
  .text.readProcessVariable
-                0x0000000000000ce0       0x5c gcc/control.o
-                0x0000000000000ce0                readProcessVariable
- *fill*         0x0000000000000d3c        0x4 
+                0x0000000000000cc8       0x5c gcc/control.o
+                0x0000000000000cc8                readProcessVariable
+ *fill*         0x0000000000000d24        0x4 
  .text.writeControlVariable
-                0x0000000000000d40       0x84 gcc/control.o
-                0x0000000000000d40                writeControlVariable
+                0x0000000000000d28       0x88 gcc/control.o
+                0x0000000000000d28                writeControlVariable
  .text.writeLED
-                0x0000000000000dc4       0x44 gcc/control.o
-                0x0000000000000dc4                writeLED
+                0x0000000000000db0       0x48 gcc/control.o
+                0x0000000000000db0                writeLED
  .text.steadyState
-                0x0000000000000e08       0x80 gcc/control.o
-                0x0000000000000e08                steadyState
+                0x0000000000000df8       0x80 gcc/control.o
+                0x0000000000000df8                steadyState
  .text.controlSignalPID
-                0x0000000000000e88      0x240 gcc/control.o
-                0x0000000000000e88                controlSignalPID
- .text.clamper  0x00000000000010c8       0x4c gcc/control.o
+                0x0000000000000e78      0x240 gcc/control.o
+                0x0000000000000e78                controlSignalPID
+ .text.clamper  0x00000000000010b8       0x4c gcc/control.o
  .text.GPIO_ConfigPins
-                0x0000000000001114       0xb0 gcc/gpio.o
-                0x0000000000001114                GPIO_ConfigPins
+                0x0000000000001104       0xb0 gcc/gpio.o
+                0x0000000000001104                GPIO_ConfigPins
  .text.GPIO_Init
-                0x00000000000011c4       0x48 gcc/gpio.o
-                0x00000000000011c4                GPIO_Init
+                0x00000000000011b4       0x48 gcc/gpio.o
+                0x00000000000011b4                GPIO_Init
  .text.__NVIC_SetPriority
-                0x000000000000120c       0x54 gcc/main.o
+                0x00000000000011fc       0x54 gcc/main.o
  .text.SysTick_Config
-                0x0000000000001260       0x44 gcc/main.o
+                0x0000000000001250       0x44 gcc/main.o
  .text.SysTick_Handler
-                0x00000000000012a4        0xc gcc/main.o
-                0x00000000000012a4                SysTick_Handler
+                0x0000000000001294        0xc gcc/main.o
+                0x0000000000001294                SysTick_Handler
  .text.stateMachine
-                0x00000000000012b0       0xec gcc/main.o
-                0x00000000000012b0                stateMachine
+                0x00000000000012a0       0xec gcc/main.o
+                0x00000000000012a0                stateMachine
  .text.sampleTimer
-                0x000000000000139c       0x18 gcc/main.o
-                0x000000000000139c                sampleTimer
- .text.main     0x00000000000013b4       0xa4 gcc/main.o
-                0x00000000000013b4                main
+                0x000000000000138c       0x18 gcc/main.o
+                0x000000000000138c                sampleTimer
+ .text.main     0x00000000000013a4       0xa8 gcc/main.o
+                0x00000000000013a4                main
  .text.PWM_Start
-                0x0000000000001458       0x18 gcc/pwm.o
-                0x0000000000001458                PWM_Start
+                0x000000000000144c       0x18 gcc/pwm.o
+                0x000000000000144c                PWM_Start
  .text.PWM_Stop
-                0x0000000000001470       0x18 gcc/pwm.o
-                0x0000000000001470                PWM_Stop
+                0x0000000000001464       0x18 gcc/pwm.o
+                0x0000000000001464                PWM_Stop
  .text.FindTimerIndex
-                0x0000000000001488       0x50 gcc/pwm.o
+                0x000000000000147c       0x50 gcc/pwm.o
  .text.EnableTimerClock
-                0x00000000000014d8       0x58 gcc/pwm.o
+                0x00000000000014cc       0x58 gcc/pwm.o
  .text.finddivencoding
-                0x0000000000001530       0x32 gcc/pwm.o
+                0x0000000000001524       0x32 gcc/pwm.o
  .text.PWM_Write
-                0x0000000000001562       0x26 gcc/pwm.o
-                0x0000000000001562                PWM_Write
+                0x0000000000001556       0x26 gcc/pwm.o
+                0x0000000000001556                PWM_Write
  .text.PWM_ConfigTimer
-                0x0000000000001588       0x52 gcc/pwm.o
-                0x0000000000001588                PWM_ConfigTimer
- *fill*         0x00000000000015da        0x2 
+                0x000000000000157c       0x52 gcc/pwm.o
+                0x000000000000157c                PWM_ConfigTimer
+ *fill*         0x00000000000015ce        0x2 
  .text.PWM_ConfigOutputPin
-                0x00000000000015dc      0x120 gcc/pwm.o
+                0x00000000000015d0      0x120 gcc/pwm.o
  .text.PWM_ConfigChannel
-                0x00000000000016fc      0x128 gcc/pwm.o
-                0x00000000000016fc                PWM_ConfigChannel
+                0x00000000000016f0      0x128 gcc/pwm.o
+                0x00000000000016f0                PWM_ConfigChannel
  .text.PWM_Init
-                0x0000000000001824       0xd0 gcc/pwm.o
-                0x0000000000001824                PWM_Init
+                0x0000000000001818       0xd0 gcc/pwm.o
+                0x0000000000001818                PWM_Init
  .text.Reset_Handler
-                0x00000000000018f4       0x4c gcc/startup_efm32gg.o
-                0x00000000000018f4                Reset_Handler
- .text._main    0x0000000000001940        0xc gcc/startup_efm32gg.o
-                0x0000000000001940                _main
+                0x00000000000018e8       0x4c gcc/startup_efm32gg.o
+                0x00000000000018e8                Reset_Handler
+ .text._main    0x0000000000001934        0xc gcc/startup_efm32gg.o
+                0x0000000000001934                _main
  .text.Default_Handler
-                0x000000000000194c        0x6 gcc/startup_efm32gg.o
-                0x000000000000194c                TIMER2_IRQHandler
-                0x000000000000194c                DebugMon_Handler
-                0x000000000000194c                USART0_TX_IRQHandler
-                0x000000000000194c                I2C0_IRQHandler
-                0x000000000000194c                HardFault_Handler
-                0x000000000000194c                LEUART1_IRQHandler
-                0x000000000000194c                USART1_RX_IRQHandler
-                0x000000000000194c                PendSV_Handler
-                0x000000000000194c                NMI_Handler
-                0x000000000000194c                I2C1_IRQHandler
-                0x000000000000194c                TIMER3_IRQHandler
-                0x000000000000194c                USART1_TX_IRQHandler
-                0x000000000000194c                MSC_IRQHandler
-                0x000000000000194c                UsageFault_Handler
-                0x000000000000194c                LEUART0_IRQHandler
-                0x000000000000194c                GPIO_EVEN_IRQHandler
-                0x000000000000194c                UART0_TX_IRQHandler
-                0x000000000000194c                UART1_TX_IRQHandler
-                0x000000000000194c                RTC_IRQHandler
-                0x000000000000194c                TIMER0_IRQHandler
-                0x000000000000194c                LCD_IRQHandler
-                0x000000000000194c                PCNT2_IRQHandler
-                0x000000000000194c                UART0_RX_IRQHandler
-                0x000000000000194c                LETIMER0_IRQHandler
-                0x000000000000194c                TIMER1_IRQHandler
-                0x000000000000194c                USART2_RX_IRQHandler
-                0x000000000000194c                Default_Handler
-                0x000000000000194c                EMU_IRQHandler
-                0x000000000000194c                PCNT0_IRQHandler
-                0x000000000000194c                USB_IRQHandler
-                0x000000000000194c                BURTC_IRQHandler
-                0x000000000000194c                PCNT1_IRQHandler
-                0x000000000000194c                ACMP0_IRQHandler
-                0x000000000000194c                USART0_RX_IRQHandler
-                0x000000000000194c                MemManage_Handler
-                0x000000000000194c                SVC_Handler
-                0x000000000000194c                DAC0_IRQHandler
-                0x000000000000194c                UART1_RX_IRQHandler
-                0x000000000000194c                CMU_IRQHandler
-                0x000000000000194c                EBI_IRQHandler
-                0x000000000000194c                LESENSE_IRQHandler
-                0x000000000000194c                GPIO_ODD_IRQHandler
-                0x000000000000194c                AES_IRQHandler
-                0x000000000000194c                VCMP_IRQHandler
-                0x000000000000194c                DMA_IRQHandler
-                0x000000000000194c                BusFault_Handler
-                0x000000000000194c                USART2_TX_IRQHandler
- *fill*         0x0000000000001952        0x2 
+                0x0000000000001940        0x6 gcc/startup_efm32gg.o
+                0x0000000000001940                TIMER2_IRQHandler
+                0x0000000000001940                DebugMon_Handler
+                0x0000000000001940                USART0_TX_IRQHandler
+                0x0000000000001940                I2C0_IRQHandler
+                0x0000000000001940                HardFault_Handler
+                0x0000000000001940                LEUART1_IRQHandler
+                0x0000000000001940                USART1_RX_IRQHandler
+                0x0000000000001940                PendSV_Handler
+                0x0000000000001940                NMI_Handler
+                0x0000000000001940                I2C1_IRQHandler
+                0x0000000000001940                TIMER3_IRQHandler
+                0x0000000000001940                USART1_TX_IRQHandler
+                0x0000000000001940                MSC_IRQHandler
+                0x0000000000001940                UsageFault_Handler
+                0x0000000000001940                LEUART0_IRQHandler
+                0x0000000000001940                GPIO_EVEN_IRQHandler
+                0x0000000000001940                UART0_TX_IRQHandler
+                0x0000000000001940                UART1_TX_IRQHandler
+                0x0000000000001940                RTC_IRQHandler
+                0x0000000000001940                TIMER0_IRQHandler
+                0x0000000000001940                LCD_IRQHandler
+                0x0000000000001940                PCNT2_IRQHandler
+                0x0000000000001940                UART0_RX_IRQHandler
+                0x0000000000001940                LETIMER0_IRQHandler
+                0x0000000000001940                TIMER1_IRQHandler
+                0x0000000000001940                USART2_RX_IRQHandler
+                0x0000000000001940                Default_Handler
+                0x0000000000001940                EMU_IRQHandler
+                0x0000000000001940                PCNT0_IRQHandler
+                0x0000000000001940                USB_IRQHandler
+                0x0000000000001940                BURTC_IRQHandler
+                0x0000000000001940                PCNT1_IRQHandler
+                0x0000000000001940                ACMP0_IRQHandler
+                0x0000000000001940                USART0_RX_IRQHandler
+                0x0000000000001940                MemManage_Handler
+                0x0000000000001940                SVC_Handler
+                0x0000000000001940                DAC0_IRQHandler
+                0x0000000000001940                UART1_RX_IRQHandler
+                0x0000000000001940                CMU_IRQHandler
+                0x0000000000001940                EBI_IRQHandler
+                0x0000000000001940                LESENSE_IRQHandler
+                0x0000000000001940                GPIO_ODD_IRQHandler
+                0x0000000000001940                AES_IRQHandler
+                0x0000000000001940                VCMP_IRQHandler
+                0x0000000000001940                DMA_IRQHandler
+                0x0000000000001940                BusFault_Handler
+                0x0000000000001940                USART2_TX_IRQHandler
+ *fill*         0x0000000000001946        0x2 
  .text.GetProdRev
-                0x0000000000001954       0x18 gcc/system_efm32gg.o
+                0x0000000000001948       0x18 gcc/system_efm32gg.o
  .text.SystemCoreClockGet
-                0x000000000000196c       0x34 gcc/system_efm32gg.o
-                0x000000000000196c                SystemCoreClockGet
+                0x0000000000001960       0x34 gcc/system_efm32gg.o
+                0x0000000000001960                SystemCoreClockGet
  .text.SystemHFClockGet
-                0x00000000000019a0      0x118 gcc/system_efm32gg.o
-                0x00000000000019a0                SystemHFClockGet
+                0x0000000000001994      0x118 gcc/system_efm32gg.o
+                0x0000000000001994                SystemHFClockGet
  .text.SystemInit
-                0x0000000000001ab8        0xc gcc/system_efm32gg.o
-                0x0000000000001ab8                SystemInit
+                0x0000000000001aac        0xc gcc/system_efm32gg.o
+                0x0000000000001aac                SystemInit
  .text.Task_Init
-                0x0000000000001ac4       0x2a gcc/tt_tasks.o
-                0x0000000000001ac4                Task_Init
- *fill*         0x0000000000001aee        0x2 
+                0x0000000000001ab8       0x2a gcc/tt_tasks.o
+                0x0000000000001ab8                Task_Init
+ *fill*         0x0000000000001ae2        0x2 
  .text.Task_Add
-                0x0000000000001af0       0x74 gcc/tt_tasks.o
-                0x0000000000001af0                Task_Add
+                0x0000000000001ae4       0x74 gcc/tt_tasks.o
+                0x0000000000001ae4                Task_Add
  .text.Task_Delete
-                0x0000000000001b64       0x40 gcc/tt_tasks.o
-                0x0000000000001b64                Task_Delete
+                0x0000000000001b58       0x40 gcc/tt_tasks.o
+                0x0000000000001b58                Task_Delete
  .text.Task_Dispatch
-                0x0000000000001ba4       0xc0 gcc/tt_tasks.o
-                0x0000000000001ba4                Task_Dispatch
+                0x0000000000001b98       0xc0 gcc/tt_tasks.o
+                0x0000000000001b98                Task_Dispatch
  .text.Task_Update
-                0x0000000000001c64       0x1c gcc/tt_tasks.o
-                0x0000000000001c64                Task_Update
- .text          0x0000000000001c80      0x378 /usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v7-m/nofp/libgcc.a(_arm_addsubdf3.o)
-                0x0000000000001c80                __aeabi_drsub
-                0x0000000000001c88                __aeabi_dsub
-                0x0000000000001c88                __subdf3
-                0x0000000000001c8c                __adddf3
-                0x0000000000001c8c                __aeabi_dadd
-                0x0000000000001f04                __aeabi_ui2d
-                0x0000000000001f04                __floatunsidf
-                0x0000000000001f24                __floatsidf
-                0x0000000000001f24                __aeabi_i2d
-                0x0000000000001f48                __extendsfdf2
-                0x0000000000001f48                __aeabi_f2d
-                0x0000000000001f8c                __aeabi_ul2d
-                0x0000000000001f8c                __floatundidf
-                0x0000000000001f9c                __floatdidf
-                0x0000000000001f9c                __aeabi_l2d
- .text          0x0000000000001ff8      0x424 /usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v7-m/nofp/libgcc.a(_arm_muldivdf3.o)
-                0x0000000000001ff8                __aeabi_dmul
-                0x0000000000001ff8                __muldf3
-                0x000000000000224c                __aeabi_ddiv
-                0x000000000000224c                __divdf3
- .text          0x000000000000241c      0x110 /usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v7-m/nofp/libgcc.a(_arm_cmpdf2.o)
-                0x000000000000241c                __gtdf2
-                0x000000000000241c                __gedf2
-                0x0000000000002424                __ltdf2
-                0x0000000000002424                __ledf2
-                0x000000000000242c                __cmpdf2
-                0x000000000000242c                __eqdf2
-                0x000000000000242c                __nedf2
-                0x00000000000024a8                __aeabi_cdrcmple
-                0x00000000000024b8                __aeabi_cdcmple
-                0x00000000000024b8                __aeabi_cdcmpeq
-                0x00000000000024c8                __aeabi_dcmpeq
-                0x00000000000024dc                __aeabi_dcmplt
-                0x00000000000024f0                __aeabi_dcmple
-                0x0000000000002504                __aeabi_dcmpge
-                0x0000000000002518                __aeabi_dcmpgt
- .text          0x000000000000252c       0x40 /usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v7-m/nofp/libgcc.a(_arm_fixunsdfsi.o)
-                0x000000000000252c                __fixunsdfsi
-                0x000000000000252c                __aeabi_d2uiz
+                0x0000000000001c58       0x1c gcc/tt_tasks.o
+                0x0000000000001c58                Task_Update
+ .text          0x0000000000001c74      0x378 /usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v7-m/nofp/libgcc.a(_arm_addsubdf3.o)
+                0x0000000000001c74                __aeabi_drsub
+                0x0000000000001c7c                __aeabi_dsub
+                0x0000000000001c7c                __subdf3
+                0x0000000000001c80                __adddf3
+                0x0000000000001c80                __aeabi_dadd
+                0x0000000000001ef8                __aeabi_ui2d
+                0x0000000000001ef8                __floatunsidf
+                0x0000000000001f18                __floatsidf
+                0x0000000000001f18                __aeabi_i2d
+                0x0000000000001f3c                __extendsfdf2
+                0x0000000000001f3c                __aeabi_f2d
+                0x0000000000001f80                __aeabi_ul2d
+                0x0000000000001f80                __floatundidf
+                0x0000000000001f90                __floatdidf
+                0x0000000000001f90                __aeabi_l2d
+ .text          0x0000000000001fec      0x424 /usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v7-m/nofp/libgcc.a(_arm_muldivdf3.o)
+                0x0000000000001fec                __aeabi_dmul
+                0x0000000000001fec                __muldf3
+                0x0000000000002240                __aeabi_ddiv
+                0x0000000000002240                __divdf3
+ .text          0x0000000000002410      0x110 /usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v7-m/nofp/libgcc.a(_arm_cmpdf2.o)
+                0x0000000000002410                __gtdf2
+                0x0000000000002410                __gedf2
+                0x0000000000002418                __ltdf2
+                0x0000000000002418                __ledf2
+                0x0000000000002420                __cmpdf2
+                0x0000000000002420                __eqdf2
+                0x0000000000002420                __nedf2
+                0x000000000000249c                __aeabi_cdrcmple
+                0x00000000000024ac                __aeabi_cdcmple
+                0x00000000000024ac                __aeabi_cdcmpeq
+                0x00000000000024bc                __aeabi_dcmpeq
+                0x00000000000024d0                __aeabi_dcmplt
+                0x00000000000024e4                __aeabi_dcmple
+                0x00000000000024f8                __aeabi_dcmpge
+                0x000000000000250c                __aeabi_dcmpgt
+ .text          0x0000000000002520       0x40 /usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v7-m/nofp/libgcc.a(_arm_fixunsdfsi.o)
+                0x0000000000002520                __fixunsdfsi
+                0x0000000000002520                __aeabi_d2uiz
  *(.init)
  *(.fini)
  *crtbegin.o(.ctors)
@@ -500,45 +501,45 @@ END GROUP
  *(.dtors)
  *(.rodata*)
  .rodata.default_singlectrl
-                0x000000000000256c       0x54 gcc/adc.o
+                0x0000000000002560       0x54 gcc/adc.o
  .rodata.STEADY_COUNT_REQUIRED.0
-                0x00000000000025c0        0x4 gcc/control.o
+                0x00000000000025b4        0x4 gcc/control.o
  .rodata.timerpins
-                0x00000000000025c4       0xb4 gcc/pwm.o
+                0x00000000000025b8       0xb4 gcc/pwm.o
  .rodata.ientable.1
-                0x0000000000002678        0xc gcc/pwm.o
+                0x000000000000266c        0xc gcc/pwm.o
  .rodata.pinenable.0
-                0x0000000000002684        0xc gcc/pwm.o
+                0x0000000000002678        0xc gcc/pwm.o
  *(.eh_frame*)
 
-.glue_7         0x0000000000002690        0x0
- .glue_7        0x0000000000002690        0x0 linker stubs
+.glue_7         0x0000000000002684        0x0
+ .glue_7        0x0000000000002684        0x0 linker stubs
 
-.glue_7t        0x0000000000002690        0x0
- .glue_7t       0x0000000000002690        0x0 linker stubs
+.glue_7t        0x0000000000002684        0x0
+ .glue_7t       0x0000000000002684        0x0 linker stubs
 
-.vfp11_veneer   0x0000000000002690        0x0
- .vfp11_veneer  0x0000000000002690        0x0 linker stubs
+.vfp11_veneer   0x0000000000002684        0x0
+ .vfp11_veneer  0x0000000000002684        0x0 linker stubs
 
-.v4_bx          0x0000000000002690        0x0
- .v4_bx         0x0000000000002690        0x0 linker stubs
+.v4_bx          0x0000000000002684        0x0
+ .v4_bx         0x0000000000002684        0x0 linker stubs
 
-.iplt           0x0000000000002690        0x0
- .iplt          0x0000000000002690        0x0 gcc/adc.o
+.iplt           0x0000000000002684        0x0
+ .iplt          0x0000000000002684        0x0 gcc/adc.o
 
-.rel.dyn        0x0000000000002690        0x0
- .rel.iplt      0x0000000000002690        0x0 gcc/adc.o
+.rel.dyn        0x0000000000002684        0x0
+ .rel.iplt      0x0000000000002684        0x0 gcc/adc.o
 
 .ARM.extab
  *(.ARM.extab* .gnu.linkonce.armextab.*)
-                0x0000000000002690                __exidx_start = .
+                0x0000000000002684                __exidx_start = .
 
 .ARM.exidx
  *(.ARM.exidx* .gnu.linkonce.armexidx.*)
-                0x0000000000002690                __exidx_end = .
-                0x0000000000002690                __etext = .
+                0x0000000000002684                __exidx_end = .
+                0x0000000000002684                __etext = .
 
-.data           0x0000000020000000       0x30 load address 0x0000000000002690
+.data           0x0000000020000000       0x30 load address 0x0000000000002684
                 0x0000000020000000                __data_start__ = .
  *(vtable)
  *(.data*)
@@ -573,10 +574,10 @@ END GROUP
                 0x0000000020000030                . = ALIGN (0x4)
                 0x0000000020000030                __data_end__ = .
 
-.igot.plt       0x0000000020000030        0x0 load address 0x00000000000026c0
+.igot.plt       0x0000000020000030        0x0 load address 0x00000000000026b4
  .igot.plt      0x0000000020000030        0x0 gcc/adc.o
 
-.bss            0x0000000020000030      0x1dc load address 0x00000000000026c0
+.bss            0x0000000020000030      0x1dc load address 0x00000000000026b8
                 0x0000000020000030                . = ALIGN (0x4)
                 0x0000000020000030                __bss_start__ = .
  *(.bss*)
@@ -609,9 +610,12 @@ END GROUP
  *fill*         0x000000002000012c        0x4 
  .bss.ctrl_state
                 0x0000000020000130       0x18 gcc/control.o
- .bss.sp_pin    0x0000000020000148        0x1 gcc/control.o
- .bss.pv_pin    0x0000000020000149        0x1 gcc/control.o
- .bss.cv_pin    0x000000002000014a        0x1 gcc/control.o
+ .bss.sp_channel
+                0x0000000020000148        0x1 gcc/control.o
+ .bss.pv_channel
+                0x0000000020000149        0x1 gcc/control.o
+ .bss.cv_channel
+                0x000000002000014a        0x1 gcc/control.o
  .bss.led_pin   0x000000002000014b        0x1 gcc/control.o
  .bss.refresh_tick
                 0x000000002000014c        0x1 gcc/control.o
@@ -661,35 +665,35 @@ END GROUP
 OUTPUT(gcc/controller.axf elf32-littlearm)
 LOAD linker stubs
 
-.debug_info     0x0000000000000000     0x40ae
+.debug_info     0x0000000000000000     0x40ef
  .debug_info    0x0000000000000000      0x8c2 gcc/adc.o
  .debug_info    0x00000000000008c2      0xab1 gcc/clock_efm32gg2.o
- .debug_info    0x0000000000001373      0x9cb gcc/control.o
- .debug_info    0x0000000000001d3e      0x674 gcc/gpio.o
- .debug_info    0x00000000000023b2      0x6f8 gcc/main.o
- .debug_info    0x0000000000002aaa      0xc25 gcc/pwm.o
- .debug_info    0x00000000000036cf      0x1c9 gcc/startup_efm32gg.o
- .debug_info    0x0000000000003898      0x4ec gcc/system_efm32gg.o
- .debug_info    0x0000000000003d84      0x292 gcc/tt_tasks.o
- .debug_info    0x0000000000004016       0x26 /usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v7-m/nofp/libgcc.a(_arm_addsubdf3.o)
- .debug_info    0x000000000000403c       0x26 /usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v7-m/nofp/libgcc.a(_arm_muldivdf3.o)
- .debug_info    0x0000000000004062       0x26 /usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v7-m/nofp/libgcc.a(_arm_cmpdf2.o)
- .debug_info    0x0000000000004088       0x26 /usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v7-m/nofp/libgcc.a(_arm_fixunsdfsi.o)
+ .debug_info    0x0000000000001373      0x9e9 gcc/control.o
+ .debug_info    0x0000000000001d5c      0x674 gcc/gpio.o
+ .debug_info    0x00000000000023d0      0x71b gcc/main.o
+ .debug_info    0x0000000000002aeb      0xc25 gcc/pwm.o
+ .debug_info    0x0000000000003710      0x1c9 gcc/startup_efm32gg.o
+ .debug_info    0x00000000000038d9      0x4ec gcc/system_efm32gg.o
+ .debug_info    0x0000000000003dc5      0x292 gcc/tt_tasks.o
+ .debug_info    0x0000000000004057       0x26 /usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v7-m/nofp/libgcc.a(_arm_addsubdf3.o)
+ .debug_info    0x000000000000407d       0x26 /usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v7-m/nofp/libgcc.a(_arm_muldivdf3.o)
+ .debug_info    0x00000000000040a3       0x26 /usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v7-m/nofp/libgcc.a(_arm_cmpdf2.o)
+ .debug_info    0x00000000000040c9       0x26 /usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v7-m/nofp/libgcc.a(_arm_fixunsdfsi.o)
 
-.debug_abbrev   0x0000000000000000      0xef9
+.debug_abbrev   0x0000000000000000      0xf1f
  .debug_abbrev  0x0000000000000000      0x1b6 gcc/adc.o
  .debug_abbrev  0x00000000000001b6      0x220 gcc/clock_efm32gg2.o
  .debug_abbrev  0x00000000000003d6      0x1bc gcc/control.o
  .debug_abbrev  0x0000000000000592      0x12d gcc/gpio.o
- .debug_abbrev  0x00000000000006bf      0x217 gcc/main.o
- .debug_abbrev  0x00000000000008d6      0x226 gcc/pwm.o
- .debug_abbrev  0x0000000000000afc       0xfb gcc/startup_efm32gg.o
- .debug_abbrev  0x0000000000000bf7      0x185 gcc/system_efm32gg.o
- .debug_abbrev  0x0000000000000d7c      0x12d gcc/tt_tasks.o
- .debug_abbrev  0x0000000000000ea9       0x14 /usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v7-m/nofp/libgcc.a(_arm_addsubdf3.o)
- .debug_abbrev  0x0000000000000ebd       0x14 /usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v7-m/nofp/libgcc.a(_arm_muldivdf3.o)
- .debug_abbrev  0x0000000000000ed1       0x14 /usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v7-m/nofp/libgcc.a(_arm_cmpdf2.o)
- .debug_abbrev  0x0000000000000ee5       0x14 /usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v7-m/nofp/libgcc.a(_arm_fixunsdfsi.o)
+ .debug_abbrev  0x00000000000006bf      0x23d gcc/main.o
+ .debug_abbrev  0x00000000000008fc      0x226 gcc/pwm.o
+ .debug_abbrev  0x0000000000000b22       0xfb gcc/startup_efm32gg.o
+ .debug_abbrev  0x0000000000000c1d      0x185 gcc/system_efm32gg.o
+ .debug_abbrev  0x0000000000000da2      0x12d gcc/tt_tasks.o
+ .debug_abbrev  0x0000000000000ecf       0x14 /usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v7-m/nofp/libgcc.a(_arm_addsubdf3.o)
+ .debug_abbrev  0x0000000000000ee3       0x14 /usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v7-m/nofp/libgcc.a(_arm_muldivdf3.o)
+ .debug_abbrev  0x0000000000000ef7       0x14 /usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v7-m/nofp/libgcc.a(_arm_cmpdf2.o)
+ .debug_abbrev  0x0000000000000f0b       0x14 /usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v7-m/nofp/libgcc.a(_arm_fixunsdfsi.o)
 
 .debug_aranges  0x0000000000000000      0x388
  .debug_aranges
@@ -730,44 +734,44 @@ LOAD linker stubs
  .debug_ranges  0x00000000000001e0       0x60 gcc/system_efm32gg.o
  .debug_ranges  0x0000000000000240       0x38 gcc/tt_tasks.o
 
-.debug_line     0x0000000000000000     0x1fe3
+.debug_line     0x0000000000000000     0x1fde
  .debug_line    0x0000000000000000      0x35b gcc/adc.o
  .debug_line    0x000000000000035b      0x803 gcc/clock_efm32gg2.o
- .debug_line    0x0000000000000b5e      0x312 gcc/control.o
- .debug_line    0x0000000000000e70      0x186 gcc/gpio.o
- .debug_line    0x0000000000000ff6      0x272 gcc/main.o
- .debug_line    0x0000000000001268      0x3d3 gcc/pwm.o
- .debug_line    0x000000000000163b       0xf0 gcc/startup_efm32gg.o
- .debug_line    0x000000000000172b      0x28c gcc/system_efm32gg.o
- .debug_line    0x00000000000019b7      0x1d9 gcc/tt_tasks.o
- .debug_line    0x0000000000001b90      0x186 /usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v7-m/nofp/libgcc.a(_arm_addsubdf3.o)
- .debug_line    0x0000000000001d16      0x19b /usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v7-m/nofp/libgcc.a(_arm_muldivdf3.o)
- .debug_line    0x0000000000001eb1       0xbd /usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v7-m/nofp/libgcc.a(_arm_cmpdf2.o)
- .debug_line    0x0000000000001f6e       0x75 /usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v7-m/nofp/libgcc.a(_arm_fixunsdfsi.o)
+ .debug_line    0x0000000000000b5e      0x2f3 gcc/control.o
+ .debug_line    0x0000000000000e51      0x186 gcc/gpio.o
+ .debug_line    0x0000000000000fd7      0x28c gcc/main.o
+ .debug_line    0x0000000000001263      0x3d3 gcc/pwm.o
+ .debug_line    0x0000000000001636       0xf0 gcc/startup_efm32gg.o
+ .debug_line    0x0000000000001726      0x28c gcc/system_efm32gg.o
+ .debug_line    0x00000000000019b2      0x1d9 gcc/tt_tasks.o
+ .debug_line    0x0000000000001b8b      0x186 /usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v7-m/nofp/libgcc.a(_arm_addsubdf3.o)
+ .debug_line    0x0000000000001d11      0x19b /usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v7-m/nofp/libgcc.a(_arm_muldivdf3.o)
+ .debug_line    0x0000000000001eac       0xbd /usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v7-m/nofp/libgcc.a(_arm_cmpdf2.o)
+ .debug_line    0x0000000000001f69       0x75 /usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v7-m/nofp/libgcc.a(_arm_fixunsdfsi.o)
 
-.debug_str      0x0000000000000000     0x14c2
+.debug_str      0x0000000000000000     0x14ec
  .debug_str     0x0000000000000000      0x4f6 gcc/adc.o
                                         0x562 (size before relaxing)
  .debug_str     0x00000000000004f6      0x3d1 gcc/clock_efm32gg2.o
                                         0x6e4 (size before relaxing)
- .debug_str     0x00000000000008c7      0x407 gcc/control.o
-                                        0x654 (size before relaxing)
- .debug_str     0x0000000000000cce       0x30 gcc/gpio.o
+ .debug_str     0x00000000000008c7      0x445 gcc/control.o
+                                        0x683 (size before relaxing)
+ .debug_str     0x0000000000000d0c       0x2b gcc/gpio.o
                                         0x4f6 (size before relaxing)
- .debug_str     0x0000000000000cfe      0x377 gcc/main.o
-                                        0x62d (size before relaxing)
- .debug_str     0x0000000000001075      0x161 gcc/pwm.o
+ .debug_str     0x0000000000000d37      0x384 gcc/main.o
+                                        0x63a (size before relaxing)
+ .debug_str     0x00000000000010bb      0x152 gcc/pwm.o
                                         0x692 (size before relaxing)
- .debug_str     0x00000000000011d6       0xac gcc/startup_efm32gg.o
+ .debug_str     0x000000000000120d       0xac gcc/startup_efm32gg.o
                                         0x209 (size before relaxing)
- .debug_str     0x0000000000001282       0xe0 gcc/system_efm32gg.o
+ .debug_str     0x00000000000012b9       0xe0 gcc/system_efm32gg.o
                                         0x411 (size before relaxing)
- .debug_str     0x0000000000001362       0xb9 gcc/tt_tasks.o
+ .debug_str     0x0000000000001399       0xac gcc/tt_tasks.o
                                         0x215 (size before relaxing)
- .debug_str     0x000000000000141b       0xa7 /usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v7-m/nofp/libgcc.a(_arm_addsubdf3.o)
- .debug_str     0x00000000000014c2       0xa7 /usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v7-m/nofp/libgcc.a(_arm_muldivdf3.o)
- .debug_str     0x00000000000014c2       0xa7 /usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v7-m/nofp/libgcc.a(_arm_cmpdf2.o)
- .debug_str     0x00000000000014c2       0xa7 /usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v7-m/nofp/libgcc.a(_arm_fixunsdfsi.o)
+ .debug_str     0x0000000000001445       0xa7 /usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v7-m/nofp/libgcc.a(_arm_addsubdf3.o)
+ .debug_str     0x00000000000014ec       0xa7 /usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v7-m/nofp/libgcc.a(_arm_muldivdf3.o)
+ .debug_str     0x00000000000014ec       0xa7 /usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v7-m/nofp/libgcc.a(_arm_cmpdf2.o)
+ .debug_str     0x00000000000014ec       0xa7 /usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v7-m/nofp/libgcc.a(_arm_fixunsdfsi.o)
 
 .comment        0x0000000000000000       0x33
  .comment       0x0000000000000000       0x33 gcc/adc.o

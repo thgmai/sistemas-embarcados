@@ -25,9 +25,9 @@ typedef struct controller_state {
 static ControllerState ctrl_state;
 
 /* Pin definitions (module scope) */
-static uint8_t sp_pin;
-static uint8_t pv_pin;
-static uint8_t cv_pin;
+static uint8_t sp_channel;
+static uint8_t pv_channel;
+static uint8_t cv_channel;
 static uint8_t led_pin;
 
 /* ************************************************************************** */
@@ -52,29 +52,30 @@ static double clamper(double value, double lower_limit, double upper_limit);
 /* Public Functions                                                           */
 /* ************************************************************************** */
 
-void controllerInit(uint8_t sp_p, uint8_t pv_p, uint8_t cv_p, uint8_t led_p) {
+void controllerInit(uint8_t sp_ch, uint8_t pv_ch, uint8_t cv_ch, uint8_t led_p) {
 
     /* Store pin assignments */
-    sp_pin  = sp_p;
-    pv_pin  = pv_p;
-    cv_pin  = cv_p;
-    led_pin = led_p;
+    sp_channel  = sp_ch;
+    pv_channel  = pv_ch;
+    cv_channel  = cv_ch;
+    led_pin     = led_p;
 
-    uint16_t inputs  = (1U << sp_pin) | (1U << pv_pin);
-    uint16_t outputs = (1U << cv_pin) | (1U << led_pin);
+    uint16_t digital_inputs  = 0U;
+    uint16_t digital_outputs = (1U << led_p);
 
     /* Configure GPIO */
-    GPIO_Init(GPIOE, inputs, outputs);
-    GPIO_WritePins(GPIOE, outputs, 0);
+    GPIO_Init(GPIOE, digital_inputs, digital_outputs);
+    GPIO_WritePins(GPIOE, digital_outputs, 0);
 
     /* Initialize ADC */
     ADC_Init(ADC_FREQ);
-    ADC_ConfigChannel(sp_pin, 0);
-    ADC_ConfigChannel(pv_pin, 0);
+    ADC_ConfigChannel(sp_channel, 0);
+    ADC_ConfigChannel(pv_channel, 0);
 
     /* Initialize PWM */
-    PWM_Init(TIMER3, PWM_LOC1, PWM_PARAMS_CH2_ENABLEPIN);
-    PWM_Write(TIMER3, 2, 0);
+    unsigned params = (PWM_PARAMS_ENABLEPIN << (4 * cv_channel));
+    PWM_Init(TIMER3, PWM_LOC1, params);
+    PWM_Write(TIMER3, cv_channel, 0);
     PWM_Start(TIMER3);
 
     /* Reset controller internal state */
@@ -84,12 +85,12 @@ void controllerInit(uint8_t sp_p, uint8_t pv_p, uint8_t cv_p, uint8_t led_p) {
 }
 
 double readSetpoint(void) {
-    uint32_t adc_value = ADC_Read(sp_pin);
+    uint32_t adc_value = ADC_Read(sp_channel);
     return (V_MAX * (double)adc_value / ADC_RES);
 }
 
 double readProcessVariable(void) {
-    uint32_t adc_value = ADC_Read(pv_pin);
+    uint32_t adc_value = ADC_Read(pv_channel);
     return (V_MAX * (double)adc_value / ADC_RES);
 }
 
@@ -97,13 +98,21 @@ void writeControlVariable(double cv_value) {
 
     cv_value = clamper(cv_value, V_MIN, V_MAX);
 
-    uint32_t pwm_value = (uint32_t)((cv_value / V_MAX) * MAX_TIMER);
+    uint32_t pwm_value = (uint32_t)(((cv_value - V_MIN) / (V_MAX - V_MIN)) * MAX_TIMER);
 
-    PWM_Write(TIMER3, 2, pwm_value);
+    PWM_Write(TIMER3, cv_channel, pwm_value);
 }
 
-void writeLED(uint8_t state) {
-    GPIO_WritePins(GPIOE, (1U << led_pin), state ? (1U << led_pin) : 0);
+void writeLED(bool state) {
+
+    uint16_t led_mask = (1U << led_pin);
+
+    if (state) {
+        GPIO_WritePins(GPIOE, 0, led_mask);
+    }
+    else {
+        GPIO_WritePins(GPIOE, led_mask, 0);
+    }
 }
 
 bool steadyState(void) {

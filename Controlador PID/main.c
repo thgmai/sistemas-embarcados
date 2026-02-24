@@ -33,7 +33,7 @@
 
 #define SP      0   /* ADC channel for Setpoint */
 #define PV      1   /* ADC channel for Process Variable */
-#define CV      2   /* PWM output pin */
+#define CV      2   /* PWM output channel */
 #define LED     3   /* Status LED pin */
 
 /* ***************************************************************************
@@ -151,6 +151,9 @@ int main(void) {
 
     /* Explicit initialization of sampling event flag */
     refresh_tick = 0U;
+
+	/* Enable IRQs */
+    __enable_irq();
 
     /* Main loop: dispatch ready tasks */
     while (1) {
