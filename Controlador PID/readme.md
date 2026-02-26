@@ -8,13 +8,13 @@ Sistema de controle em malha fechada implementado em microcontrolador, utilizand
 
 ### Entradas Analógicas (ADC)
 
-- **Referência (SP)** → PD0  
-- **Variável de Processo (PV)** → PD1  
+- **Referência (SP)** → PD0
+- **Variável de Processo (PV)** → PD1
 
 ### Saída Analógica (PWM)
 
 - **Variável de Controle (CV)** → PE2
-  - Saída implementada via PWM (duty cycle proporcional ao sinal de controle)
+  - Saída implementada via modulação por largura de pulso (sinal PWM com duty cycle proporcional ao sinal de controle)
 
 ### Saída Digital
 
