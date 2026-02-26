@@ -39,6 +39,8 @@ A variável de controle é limitada entre `V_MIN` e `V_MAX`, sendo convertida pr
 
 ## Planta Controlada
 
+![Diagrama elétrico da planta](diagrama-eletrico-planta.png)
+
 A planta é um sistema RC equivalente de primeira ordem:
 
 \[
