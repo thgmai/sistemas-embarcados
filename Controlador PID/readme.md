@@ -44,7 +44,7 @@ A variável de controle é limitada entre `V_MIN` e `V_MAX`, sendo convertida pr
 A planta é um sistema RC equivalente de primeira ordem:
 
 $$
-\tau = (R_1 \parallel R_2) \cdot C = 5 \quad s
+\tau = (R_1 \parallel R_2) \cdot C = 5 \text{ } s
 $$
 
 $$
@@ -66,7 +66,7 @@ A planta simula um processo físico real com dinâmica lenta.
 Foi utilizada **Sintonia Lambda (Síntese Direta)** com:
 
 $$
-\lambda = 2 \quad s
+\lambda = 2 \text{ } s
 $$
 
 Ganhos obtidos:
@@ -76,7 +76,7 @@ K_p = \frac{\tau}{K \lambda} = 5
 $$
 
 $$
-K_i = \frac{1}{K \lambda} = 1 \quad s^{-1}
+K_i = \frac{1}{K \lambda} = 1 \text{ } s^{-1}
 $$
 
 Controlador implementado (PI):
