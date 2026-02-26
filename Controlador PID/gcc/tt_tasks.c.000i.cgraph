@@ -3,7 +3,7 @@ Trivially needed symbols: Task_ModifyPeriod/9 Task_Update/8 Task_Dispatch/7 Task
 
 Initial Symbol table:
 
-Task_ModifyPeriod/9 (Task_ModifyPeriod) @0x7820d8c46ca8
+Task_ModifyPeriod/9 (Task_ModifyPeriod) @0x7804a0246ca8
   Type: function definition analyzed
   Visibility: force_output no_reorder public
   Aux: @0x1c36aa0
@@ -12,81 +12,81 @@ Task_ModifyPeriod/9 (Task_ModifyPeriod) @0x7820d8c46ca8
   Function flags: body
   Called by: 
   Calls: 
-Task_Update/8 (Task_Update) @0x7820d8c46b40
+Task_Update/8 (Task_Update) @0x7804a0246b40
   Type: function definition analyzed
   Visibility: force_output no_reorder public
-  Aux: @0x7820d8c46ca8
+  Aux: @0x7804a0246ca8
   References: task_tickcounter/2 (read) task_tickcounter/2 (write) 
   Referring: 
   Function flags: body
   Called by: 
   Calls: 
-Task_Dispatch/7 (Task_Dispatch) @0x7820d8c469d8
+Task_Dispatch/7 (Task_Dispatch) @0x7804a02469d8
   Type: function definition analyzed
   Visibility: force_output no_reorder public
-  Aux: @0x7820d8c46b40
+  Aux: @0x7804a0246b40
   References: task_tickcounter/2 (read) task_tickcounter/2 (read) task_tickcounter/2 (write) taskinfo/3 (addr) task_tickcounter/2 (read) task_tickcounter/2 (read) task_tickcounter/2 (write) 
   Referring: 
   Function flags: body
   Called by: 
   Calls: __enable_irq/0 __disable_irq/1 Task_Delete/6 __enable_irq/0 __disable_irq/1 
    Indirect call Num speculative call targets: 0
-Task_Delete/6 (Task_Delete) @0x7820d8c46870
+Task_Delete/6 (Task_Delete) @0x7804a0246870
   Type: function definition analyzed
   Visibility: force_output no_reorder public
-  Aux: @0x7820d8c469d8
+  Aux: @0x7804a02469d8
   References: taskinfo/3 (write) taskinfo/3 (write) 
   Referring: 
   Function flags: body
   Called by: Task_Dispatch/7 Task_Init/4 
   Calls: 
-Task_Add/5 (Task_Add) @0x7820d8c46708
+Task_Add/5 (Task_Add) @0x7804a0246708
   Type: function definition analyzed
   Visibility: force_output no_reorder public
-  Aux: @0x7820d8c46870
+  Aux: @0x7804a0246870
   References: taskinfo/3 (read) taskinfo/3 (write) taskinfo/3 (write) 
   Referring: 
   Function flags: body
   Called by: 
   Calls: 
-Task_Init/4 (Task_Init) @0x7820d8c465a0
+Task_Init/4 (Task_Init) @0x7804a02465a0
   Type: function definition analyzed
   Visibility: force_output no_reorder public
-  Aux: @0x7820d8c46708
+  Aux: @0x7804a0246708
   References: 
   Referring: 
   Function flags: body
   Called by: 
   Calls: Task_Delete/6 
-taskinfo/3 (taskinfo) @0x7820d8c40700
+taskinfo/3 (taskinfo) @0x7804a0240700
   Type: variable definition analyzed
   Visibility: force_output no_reorder
-  Aux: @0x7820d8c465a0
+  Aux: @0x7804a02465a0
   References: 
   Referring: Task_Add/5 (read) Task_Add/5 (write) Task_Add/5 (write) Task_Delete/6 (write) Task_Delete/6 (write) Task_Dispatch/7 (addr) Task_ModifyPeriod/9 (read) Task_ModifyPeriod/9 (write) 
   Availability: not-ready
   Varpool flags:
-task_tickcounter/2 (task_tickcounter) @0x7820d8c40500
+task_tickcounter/2 (task_tickcounter) @0x7804a0240500
   Type: variable definition analyzed
   Visibility: force_output no_reorder
-  Aux: @0x7820d8c40700
+  Aux: @0x7804a0240700
   References: 
   Referring: Task_Dispatch/7 (read) Task_Dispatch/7 (read) Task_Dispatch/7 (write) Task_Dispatch/7 (read) Task_Dispatch/7 (read) Task_Dispatch/7 (write) Task_Update/8 (read) Task_Update/8 (write) 
   Availability: not-ready
   Varpool flags: initialized
-__disable_irq/1 (__disable_irq) @0x7820d8c3ab40
+__disable_irq/1 (__disable_irq) @0x7804a023ab40
   Type: function definition analyzed
   Visibility: no_reorder
-  Aux: @0x7820d8c3a9d8
+  Aux: @0x7804a023a9d8
   References: 
   Referring: 
   Function flags: body
   Called by: Task_Dispatch/7 Task_Dispatch/7 
   Calls: 
-__enable_irq/0 (__enable_irq) @0x7820d8c3a9d8
+__enable_irq/0 (__enable_irq) @0x7804a023a9d8
   Type: function definition analyzed
   Visibility: no_reorder
-  Aux: @0x7820d8c46b40
+  Aux: @0x7804a0246b40
   References: 
   Referring: 
   Function flags: body
@@ -97,7 +97,7 @@ Removing unused symbols:
 
 Reclaimed Symbol table:
 
-Task_ModifyPeriod/9 (Task_ModifyPeriod) @0x7820d8c46ca8
+Task_ModifyPeriod/9 (Task_ModifyPeriod) @0x7804a0246ca8
   Type: function definition analyzed
   Visibility: force_output no_reorder public
   References: taskinfo/3 (read) taskinfo/3 (write) 
@@ -105,7 +105,7 @@ Task_ModifyPeriod/9 (Task_ModifyPeriod) @0x7820d8c46ca8
   Function flags: body
   Called by: 
   Calls: 
-Task_Update/8 (Task_Update) @0x7820d8c46b40
+Task_Update/8 (Task_Update) @0x7804a0246b40
   Type: function definition analyzed
   Visibility: force_output no_reorder public
   References: task_tickcounter/2 (read) task_tickcounter/2 (write) 
@@ -113,7 +113,7 @@ Task_Update/8 (Task_Update) @0x7820d8c46b40
   Function flags: body
   Called by: 
   Calls: 
-Task_Dispatch/7 (Task_Dispatch) @0x7820d8c469d8
+Task_Dispatch/7 (Task_Dispatch) @0x7804a02469d8
   Type: function definition analyzed
   Visibility: force_output no_reorder public
   References: task_tickcounter/2 (read) task_tickcounter/2 (read) task_tickcounter/2 (write) taskinfo/3 (addr) task_tickcounter/2 (read) task_tickcounter/2 (read) task_tickcounter/2 (write) 
@@ -122,7 +122,7 @@ Task_Dispatch/7 (Task_Dispatch) @0x7820d8c469d8
   Called by: 
   Calls: __enable_irq/0 __disable_irq/1 Task_Delete/6 __enable_irq/0 __disable_irq/1 
    Indirect call Num speculative call targets: 0
-Task_Delete/6 (Task_Delete) @0x7820d8c46870
+Task_Delete/6 (Task_Delete) @0x7804a0246870
   Type: function definition analyzed
   Visibility: force_output no_reorder public
   References: taskinfo/3 (write) taskinfo/3 (write) 
@@ -130,7 +130,7 @@ Task_Delete/6 (Task_Delete) @0x7820d8c46870
   Function flags: body
   Called by: Task_Dispatch/7 Task_Init/4 
   Calls: 
-Task_Add/5 (Task_Add) @0x7820d8c46708
+Task_Add/5 (Task_Add) @0x7804a0246708
   Type: function definition analyzed
   Visibility: force_output no_reorder public
   References: taskinfo/3 (read) taskinfo/3 (write) taskinfo/3 (write) 
@@ -138,7 +138,7 @@ Task_Add/5 (Task_Add) @0x7820d8c46708
   Function flags: body
   Called by: 
   Calls: 
-Task_Init/4 (Task_Init) @0x7820d8c465a0
+Task_Init/4 (Task_Init) @0x7804a02465a0
   Type: function definition analyzed
   Visibility: force_output no_reorder public
   References: 
@@ -146,21 +146,21 @@ Task_Init/4 (Task_Init) @0x7820d8c465a0
   Function flags: body
   Called by: 
   Calls: Task_Delete/6 
-taskinfo/3 (taskinfo) @0x7820d8c40700
+taskinfo/3 (taskinfo) @0x7804a0240700
   Type: variable definition analyzed
   Visibility: force_output no_reorder
   References: 
   Referring: Task_Add/5 (read) Task_Add/5 (write) Task_Add/5 (write) Task_Delete/6 (write) Task_Delete/6 (write) Task_Dispatch/7 (addr) Task_ModifyPeriod/9 (read) Task_ModifyPeriod/9 (write) 
   Availability: not-ready
   Varpool flags:
-task_tickcounter/2 (task_tickcounter) @0x7820d8c40500
+task_tickcounter/2 (task_tickcounter) @0x7804a0240500
   Type: variable definition analyzed
   Visibility: force_output no_reorder
   References: 
   Referring: Task_Dispatch/7 (read) Task_Dispatch/7 (read) Task_Dispatch/7 (write) Task_Dispatch/7 (read) Task_Dispatch/7 (read) Task_Dispatch/7 (write) Task_Update/8 (read) Task_Update/8 (write) 
   Availability: not-ready
   Varpool flags: initialized
-__disable_irq/1 (__disable_irq) @0x7820d8c3ab40
+__disable_irq/1 (__disable_irq) @0x7804a023ab40
   Type: function definition analyzed
   Visibility: no_reorder
   References: 
@@ -168,7 +168,7 @@ __disable_irq/1 (__disable_irq) @0x7820d8c3ab40
   Function flags: body
   Called by: Task_Dispatch/7 Task_Dispatch/7 
   Calls: 
-__enable_irq/0 (__enable_irq) @0x7820d8c3a9d8
+__enable_irq/0 (__enable_irq) @0x7804a023a9d8
   Type: function definition analyzed
   Visibility: no_reorder
   References: 
@@ -180,7 +180,7 @@ __enable_irq/0 (__enable_irq) @0x7820d8c3a9d8
 
 Initial Symbol table:
 
-Task_ModifyPeriod/9 (Task_ModifyPeriod) @0x7820d8c46ca8
+Task_ModifyPeriod/9 (Task_ModifyPeriod) @0x7804a0246ca8
   Type: function definition analyzed
   Visibility: force_output no_reorder public
   References: taskinfo/3 (read) taskinfo/3 (write) 
@@ -188,7 +188,7 @@ Task_ModifyPeriod/9 (Task_ModifyPeriod) @0x7820d8c46ca8
   Function flags: body
   Called by: 
   Calls: 
-Task_Update/8 (Task_Update) @0x7820d8c46b40
+Task_Update/8 (Task_Update) @0x7804a0246b40
   Type: function definition analyzed
   Visibility: force_output no_reorder public
   References: task_tickcounter/2 (read) task_tickcounter/2 (write) 
@@ -196,7 +196,7 @@ Task_Update/8 (Task_Update) @0x7820d8c46b40
   Function flags: body
   Called by: 
   Calls: 
-Task_Dispatch/7 (Task_Dispatch) @0x7820d8c469d8
+Task_Dispatch/7 (Task_Dispatch) @0x7804a02469d8
   Type: function definition analyzed
   Visibility: force_output no_reorder public
   References: task_tickcounter/2 (read) task_tickcounter/2 (read) task_tickcounter/2 (write) taskinfo/3 (addr) task_tickcounter/2 (read) task_tickcounter/2 (read) task_tickcounter/2 (write) 
@@ -205,7 +205,7 @@ Task_Dispatch/7 (Task_Dispatch) @0x7820d8c469d8
   Called by: 
   Calls: __enable_irq/0 __disable_irq/1 Task_Delete/6 __enable_irq/0 __disable_irq/1 
    Indirect call Num speculative call targets: 0
-Task_Delete/6 (Task_Delete) @0x7820d8c46870
+Task_Delete/6 (Task_Delete) @0x7804a0246870
   Type: function definition analyzed
   Visibility: force_output no_reorder public
   References: taskinfo/3 (write) taskinfo/3 (write) 
@@ -213,7 +213,7 @@ Task_Delete/6 (Task_Delete) @0x7820d8c46870
   Function flags: body
   Called by: Task_Dispatch/7 Task_Init/4 
   Calls: 
-Task_Add/5 (Task_Add) @0x7820d8c46708
+Task_Add/5 (Task_Add) @0x7804a0246708
   Type: function definition analyzed
   Visibility: force_output no_reorder public
   References: taskinfo/3 (read) taskinfo/3 (write) taskinfo/3 (write) 
@@ -221,7 +221,7 @@ Task_Add/5 (Task_Add) @0x7820d8c46708
   Function flags: body
   Called by: 
   Calls: 
-Task_Init/4 (Task_Init) @0x7820d8c465a0
+Task_Init/4 (Task_Init) @0x7804a02465a0
   Type: function definition analyzed
   Visibility: force_output no_reorder public
   References: 
@@ -229,21 +229,21 @@ Task_Init/4 (Task_Init) @0x7820d8c465a0
   Function flags: body
   Called by: 
   Calls: Task_Delete/6 
-taskinfo/3 (taskinfo) @0x7820d8c40700
+taskinfo/3 (taskinfo) @0x7804a0240700
   Type: variable definition analyzed
   Visibility: force_output no_reorder
   References: 
   Referring: Task_Add/5 (read) Task_Add/5 (write) Task_Add/5 (write) Task_Delete/6 (write) Task_Delete/6 (write) Task_Dispatch/7 (addr) Task_ModifyPeriod/9 (read) Task_ModifyPeriod/9 (write) 
   Availability: not-ready
   Varpool flags:
-task_tickcounter/2 (task_tickcounter) @0x7820d8c40500
+task_tickcounter/2 (task_tickcounter) @0x7804a0240500
   Type: variable definition analyzed
   Visibility: force_output no_reorder
   References: 
   Referring: Task_Dispatch/7 (read) Task_Dispatch/7 (read) Task_Dispatch/7 (write) Task_Dispatch/7 (read) Task_Dispatch/7 (read) Task_Dispatch/7 (write) Task_Update/8 (read) Task_Update/8 (write) 
   Availability: not-ready
   Varpool flags: initialized
-__disable_irq/1 (__disable_irq) @0x7820d8c3ab40
+__disable_irq/1 (__disable_irq) @0x7804a023ab40
   Type: function definition analyzed
   Visibility: no_reorder
   References: 
@@ -251,7 +251,7 @@ __disable_irq/1 (__disable_irq) @0x7820d8c3ab40
   Function flags: body
   Called by: Task_Dispatch/7 Task_Dispatch/7 
   Calls: 
-__enable_irq/0 (__enable_irq) @0x7820d8c3a9d8
+__enable_irq/0 (__enable_irq) @0x7804a023a9d8
   Type: function definition analyzed
   Visibility: no_reorder
   References: 
@@ -264,7 +264,7 @@ Removing unused symbols:
 
 Reclaimed Symbol table:
 
-Task_ModifyPeriod/9 (Task_ModifyPeriod) @0x7820d8c46ca8
+Task_ModifyPeriod/9 (Task_ModifyPeriod) @0x7804a0246ca8
   Type: function definition analyzed
   Visibility: force_output no_reorder public
   References: taskinfo/3 (read) taskinfo/3 (write) 
@@ -272,7 +272,7 @@ Task_ModifyPeriod/9 (Task_ModifyPeriod) @0x7820d8c46ca8
   Function flags: body
   Called by: 
   Calls: 
-Task_Update/8 (Task_Update) @0x7820d8c46b40
+Task_Update/8 (Task_Update) @0x7804a0246b40
   Type: function definition analyzed
   Visibility: force_output no_reorder public
   References: task_tickcounter/2 (read) task_tickcounter/2 (write) 
@@ -280,7 +280,7 @@ Task_Update/8 (Task_Update) @0x7820d8c46b40
   Function flags: body
   Called by: 
   Calls: 
-Task_Dispatch/7 (Task_Dispatch) @0x7820d8c469d8
+Task_Dispatch/7 (Task_Dispatch) @0x7804a02469d8
   Type: function definition analyzed
   Visibility: force_output no_reorder public
   References: task_tickcounter/2 (read) task_tickcounter/2 (read) task_tickcounter/2 (write) taskinfo/3 (addr) task_tickcounter/2 (read) task_tickcounter/2 (read) task_tickcounter/2 (write) 
@@ -289,7 +289,7 @@ Task_Dispatch/7 (Task_Dispatch) @0x7820d8c469d8
   Called by: 
   Calls: __enable_irq/0 __disable_irq/1 Task_Delete/6 __enable_irq/0 __disable_irq/1 
    Indirect call Num speculative call targets: 0
-Task_Delete/6 (Task_Delete) @0x7820d8c46870
+Task_Delete/6 (Task_Delete) @0x7804a0246870
   Type: function definition analyzed
   Visibility: force_output no_reorder public
   References: taskinfo/3 (write) taskinfo/3 (write) 
@@ -297,7 +297,7 @@ Task_Delete/6 (Task_Delete) @0x7820d8c46870
   Function flags: body
   Called by: Task_Dispatch/7 Task_Init/4 
   Calls: 
-Task_Add/5 (Task_Add) @0x7820d8c46708
+Task_Add/5 (Task_Add) @0x7804a0246708
   Type: function definition analyzed
   Visibility: force_output no_reorder public
   References: taskinfo/3 (read) taskinfo/3 (write) taskinfo/3 (write) 
@@ -305,7 +305,7 @@ Task_Add/5 (Task_Add) @0x7820d8c46708
   Function flags: body
   Called by: 
   Calls: 
-Task_Init/4 (Task_Init) @0x7820d8c465a0
+Task_Init/4 (Task_Init) @0x7804a02465a0
   Type: function definition analyzed
   Visibility: force_output no_reorder public
   References: 
@@ -313,21 +313,21 @@ Task_Init/4 (Task_Init) @0x7820d8c465a0
   Function flags: body
   Called by: 
   Calls: Task_Delete/6 
-taskinfo/3 (taskinfo) @0x7820d8c40700
+taskinfo/3 (taskinfo) @0x7804a0240700
   Type: variable definition analyzed
   Visibility: force_output no_reorder
   References: 
   Referring: Task_Add/5 (read) Task_Add/5 (write) Task_Add/5 (write) Task_Delete/6 (write) Task_Delete/6 (write) Task_Dispatch/7 (addr) Task_ModifyPeriod/9 (read) Task_ModifyPeriod/9 (write) 
   Availability: not-ready
   Varpool flags:
-task_tickcounter/2 (task_tickcounter) @0x7820d8c40500
+task_tickcounter/2 (task_tickcounter) @0x7804a0240500
   Type: variable definition analyzed
   Visibility: force_output no_reorder
   References: 
   Referring: Task_Dispatch/7 (read) Task_Dispatch/7 (read) Task_Dispatch/7 (write) Task_Dispatch/7 (read) Task_Dispatch/7 (read) Task_Dispatch/7 (write) Task_Update/8 (read) Task_Update/8 (write) 
   Availability: not-ready
   Varpool flags: initialized
-__disable_irq/1 (__disable_irq) @0x7820d8c3ab40
+__disable_irq/1 (__disable_irq) @0x7804a023ab40
   Type: function definition analyzed
   Visibility: no_reorder
   References: 
@@ -335,7 +335,7 @@ __disable_irq/1 (__disable_irq) @0x7820d8c3ab40
   Function flags: body
   Called by: Task_Dispatch/7 Task_Dispatch/7 
   Calls: 
-__enable_irq/0 (__enable_irq) @0x7820d8c3a9d8
+__enable_irq/0 (__enable_irq) @0x7804a023a9d8
   Type: function definition analyzed
   Visibility: no_reorder
   References: 
@@ -349,7 +349,7 @@ Reclaiming variables:
 Clearing address taken flags:
 Optimized Symbol table:
 
-Task_ModifyPeriod/9 (Task_ModifyPeriod) @0x7820d8c46ca8
+Task_ModifyPeriod/9 (Task_ModifyPeriod) @0x7804a0246ca8
   Type: function definition analyzed
   Visibility: force_output externally_visible no_reorder public
   References: taskinfo/3 (read) taskinfo/3 (write) 
@@ -358,7 +358,7 @@ Task_ModifyPeriod/9 (Task_ModifyPeriod) @0x7820d8c46ca8
   Function flags: body
   Called by: 
   Calls: 
-Task_Update/8 (Task_Update) @0x7820d8c46b40
+Task_Update/8 (Task_Update) @0x7804a0246b40
   Type: function definition analyzed
   Visibility: force_output externally_visible no_reorder public
   References: task_tickcounter/2 (read) task_tickcounter/2 (write) 
@@ -367,7 +367,7 @@ Task_Update/8 (Task_Update) @0x7820d8c46b40
   Function flags: body
   Called by: 
   Calls: 
-Task_Dispatch/7 (Task_Dispatch) @0x7820d8c469d8
+Task_Dispatch/7 (Task_Dispatch) @0x7804a02469d8
   Type: function definition analyzed
   Visibility: force_output externally_visible no_reorder public
   References: task_tickcounter/2 (read) task_tickcounter/2 (read) task_tickcounter/2 (write) taskinfo/3 (addr) task_tickcounter/2 (read) task_tickcounter/2 (read) task_tickcounter/2 (write) 
@@ -377,7 +377,7 @@ Task_Dispatch/7 (Task_Dispatch) @0x7820d8c469d8
   Called by: 
   Calls: Task_Delete/6 
    Indirect call Num speculative call targets: 0
-Task_Delete/6 (Task_Delete) @0x7820d8c46870
+Task_Delete/6 (Task_Delete) @0x7804a0246870
   Type: function definition analyzed
   Visibility: force_output externally_visible no_reorder public
   References: taskinfo/3 (write) taskinfo/3 (write) 
@@ -386,7 +386,7 @@ Task_Delete/6 (Task_Delete) @0x7820d8c46870
   Function flags: body
   Called by: Task_Dispatch/7 Task_Init/4 
   Calls: 
-Task_Add/5 (Task_Add) @0x7820d8c46708
+Task_Add/5 (Task_Add) @0x7804a0246708
   Type: function definition analyzed
   Visibility: force_output externally_visible no_reorder public
   References: taskinfo/3 (read) taskinfo/3 (write) taskinfo/3 (write) 
@@ -395,7 +395,7 @@ Task_Add/5 (Task_Add) @0x7820d8c46708
   Function flags: body
   Called by: 
   Calls: 
-Task_Init/4 (Task_Init) @0x7820d8c465a0
+Task_Init/4 (Task_Init) @0x7804a02465a0
   Type: function definition analyzed
   Visibility: force_output externally_visible no_reorder public
   References: 
@@ -404,14 +404,14 @@ Task_Init/4 (Task_Init) @0x7820d8c465a0
   Function flags: body
   Called by: 
   Calls: Task_Delete/6 
-taskinfo/3 (taskinfo) @0x7820d8c40700
+taskinfo/3 (taskinfo) @0x7804a0240700
   Type: variable definition analyzed
   Visibility: force_output no_reorder prevailing_def_ironly
   References: 
   Referring: Task_Add/5 (write) Task_Add/5 (write) Task_Delete/6 (write) Task_Delete/6 (write) Task_Dispatch/7 (addr) Task_Add/5 (read) Task_ModifyPeriod/9 (read) Task_ModifyPeriod/9 (write) 
   Availability: available
   Varpool flags:
-task_tickcounter/2 (task_tickcounter) @0x7820d8c40500
+task_tickcounter/2 (task_tickcounter) @0x7804a0240500
   Type: variable definition analyzed
   Visibility: force_output no_reorder prevailing_def_ironly
   References: 
@@ -429,7 +429,7 @@ Removing variables:
 
 Final Symbol table:
 
-Task_ModifyPeriod/9 (Task_ModifyPeriod) @0x7820d8c46ca8
+Task_ModifyPeriod/9 (Task_ModifyPeriod) @0x7804a0246ca8
   Type: function definition analyzed
   Visibility: force_output externally_visible no_reorder asm_written public section:.text.Task_ModifyPeriod (implicit_section)
   References: 
@@ -438,7 +438,7 @@ Task_ModifyPeriod/9 (Task_ModifyPeriod) @0x7820d8c46ca8
   Function flags:
   Called by: 
   Calls: 
-Task_Update/8 (Task_Update) @0x7820d8c46b40
+Task_Update/8 (Task_Update) @0x7804a0246b40
   Type: function definition analyzed
   Visibility: force_output externally_visible no_reorder asm_written public section:.text.Task_Update (implicit_section)
   References: 
@@ -447,7 +447,7 @@ Task_Update/8 (Task_Update) @0x7820d8c46b40
   Function flags:
   Called by: 
   Calls: 
-Task_Dispatch/7 (Task_Dispatch) @0x7820d8c469d8
+Task_Dispatch/7 (Task_Dispatch) @0x7804a02469d8
   Type: function definition analyzed
   Visibility: force_output externally_visible no_reorder asm_written public section:.text.Task_Dispatch (implicit_section)
   References: 
@@ -456,7 +456,7 @@ Task_Dispatch/7 (Task_Dispatch) @0x7820d8c469d8
   Function flags:
   Called by: 
   Calls: 
-Task_Delete/6 (Task_Delete) @0x7820d8c46870
+Task_Delete/6 (Task_Delete) @0x7804a0246870
   Type: function definition analyzed
   Visibility: force_output externally_visible no_reorder asm_written public section:.text.Task_Delete (implicit_section)
   References: 
@@ -465,7 +465,7 @@ Task_Delete/6 (Task_Delete) @0x7820d8c46870
   Function flags:
   Called by: 
   Calls: 
-Task_Add/5 (Task_Add) @0x7820d8c46708
+Task_Add/5 (Task_Add) @0x7804a0246708
   Type: function definition analyzed
   Visibility: force_output externally_visible no_reorder asm_written public section:.text.Task_Add (implicit_section)
   References: 
@@ -474,7 +474,7 @@ Task_Add/5 (Task_Add) @0x7820d8c46708
   Function flags:
   Called by: 
   Calls: 
-Task_Init/4 (Task_Init) @0x7820d8c465a0
+Task_Init/4 (Task_Init) @0x7804a02465a0
   Type: function definition analyzed
   Visibility: force_output externally_visible no_reorder asm_written public section:.text.Task_Init (implicit_section)
   References: 
@@ -483,7 +483,7 @@ Task_Init/4 (Task_Init) @0x7820d8c465a0
   Function flags:
   Called by: 
   Calls: 
-taskinfo/3 (taskinfo) @0x7820d8c40700
+taskinfo/3 (taskinfo) @0x7804a0240700
   Type: variable definition analyzed
   Visibility: force_output no_reorder prevailing_def_ironly asm_written section:.bss.taskinfo (implicit_section)
   Aux: @0x1
@@ -491,10 +491,10 @@ taskinfo/3 (taskinfo) @0x7820d8c40700
   Referring: 
   Availability: available
   Varpool flags:
-task_tickcounter/2 (task_tickcounter) @0x7820d8c40500
+task_tickcounter/2 (task_tickcounter) @0x7804a0240500
   Type: variable definition analyzed
   Visibility: force_output no_reorder prevailing_def_ironly asm_written section:.bss.task_tickcounter (implicit_section)
-  Aux: @0x7820d8c40700
+  Aux: @0x7804a0240700
   References: 
   Referring: 
   Availability: available

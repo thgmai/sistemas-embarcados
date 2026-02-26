@@ -31,10 +31,10 @@
  * Hardware pin definitions
  * ************************************************************************** */
 
-#define SP      0   /* ADC channel for Setpoint */
-#define PV      1   /* ADC channel for Process Variable */
-#define CV      2   /* PWM output channel */
-#define LED     3   /* Status LED pin */
+#define SP      0   /* ADC channel for Setpoint (PD0) */
+#define PV      1   /* ADC channel for Process Variable (PD1) */
+#define CV      2   /* PWM output channel (PE2) */
+#define LED     3   /* Status LED pin (PE3)*/
 
 /* ***************************************************************************
  * @brief  SysTick interrupt handler
@@ -144,8 +144,8 @@ int main(void) {
     Task_Add(stateMachine, 1, 0);   /* State machine executes every 1 ms */
 
     /* Define PID gains */
-    gain.kp = 2.0;
-    gain.ki = 10.0;
+    gain.kp = 5.0;
+    gain.ki = 1.0;
     gain.kd = 0.0;
     gain.td = 0.0;
 

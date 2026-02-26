@@ -4,23 +4,23 @@ Trivially needed symbols: STEADY_COUNT_REQUIRED/126 steady_counter/125
 
 Initial Symbol table:
 
-STEADY_COUNT_REQUIRED/126 (STEADY_COUNT_REQUIRED) @0x79b3417e5a00
+STEADY_COUNT_REQUIRED/126 (STEADY_COUNT_REQUIRED) @0x7697d53e5a00
   Type: variable definition analyzed
   Visibility: force_output no_reorder
-  Aux: @0x79b3417deb40
+  Aux: @0x7697d53deb40
   References: 
   Referring: steadyState/115 (read) 
   Availability: not-ready
   Varpool flags: initialized read-only const-value-known
-steady_counter/125 (steady_counter) @0x79b3417e5900
+steady_counter/125 (steady_counter) @0x7697d53e5900
   Type: variable definition analyzed
   Visibility: force_output no_reorder
-  Aux: @0x79b3417e5a00
+  Aux: @0x7697d53e5a00
   References: 
   Referring: steadyState/115 (read) steadyState/115 (write) steadyState/115 (read) steadyState/115 (write) 
   Availability: not-ready
   Varpool flags: initialized
-ADC_Read/124 (ADC_Read) @0x79b3417ed870
+ADC_Read/124 (ADC_Read) @0x7697d53ed870
   Type: function
   Visibility: external public
   References: 
@@ -28,7 +28,7 @@ ADC_Read/124 (ADC_Read) @0x79b3417ed870
   Function flags:
   Called by: readProcessVariable/112 readSetpoint/111 
   Calls: 
-PWM_Start/123 (PWM_Start) @0x79b3417ed708
+PWM_Start/123 (PWM_Start) @0x7697d53ed708
   Type: function
   Visibility: external public
   References: 
@@ -36,7 +36,7 @@ PWM_Start/123 (PWM_Start) @0x79b3417ed708
   Function flags:
   Called by: controllerInit/110 
   Calls: 
-PWM_Write/122 (PWM_Write) @0x79b3417ed5a0
+PWM_Write/122 (PWM_Write) @0x7697d53ed5a0
   Type: function
   Visibility: external public
   References: 
@@ -44,7 +44,7 @@ PWM_Write/122 (PWM_Write) @0x79b3417ed5a0
   Function flags:
   Called by: writeControlVariable/113 controllerInit/110 
   Calls: 
-PWM_Init/121 (PWM_Init) @0x79b3417ed438
+PWM_Init/121 (PWM_Init) @0x7697d53ed438
   Type: function
   Visibility: external public
   References: 
@@ -52,7 +52,7 @@ PWM_Init/121 (PWM_Init) @0x79b3417ed438
   Function flags:
   Called by: controllerInit/110 
   Calls: 
-ADC_ConfigChannel/120 (ADC_ConfigChannel) @0x79b3417ed168
+ADC_ConfigChannel/120 (ADC_ConfigChannel) @0x7697d53ed168
   Type: function
   Visibility: external public
   References: 
@@ -60,7 +60,7 @@ ADC_ConfigChannel/120 (ADC_ConfigChannel) @0x79b3417ed168
   Function flags:
   Called by: controllerInit/110 controllerInit/110 
   Calls: 
-ADC_Init/119 (ADC_Init) @0x79b3417ed000
+ADC_Init/119 (ADC_Init) @0x7697d53ed000
   Type: function
   Visibility: external public
   References: 
@@ -68,7 +68,7 @@ ADC_Init/119 (ADC_Init) @0x79b3417ed000
   Function flags:
   Called by: controllerInit/110 
   Calls: 
-GPIO_Init/118 (GPIO_Init) @0x79b3417dee10
+GPIO_Init/118 (GPIO_Init) @0x7697d53dee10
   Type: function
   Visibility: external public
   References: 
@@ -76,7 +76,7 @@ GPIO_Init/118 (GPIO_Init) @0x79b3417dee10
   Function flags:
   Called by: controllerInit/110 
   Calls: 
-clamper/117 (clamper) @0x79b3417deca8
+clamper/117 (clamper) @0x7697d53deca8
   Type: function definition analyzed
   Visibility: force_output no_reorder
   Aux: @0x1c36aa0
@@ -85,150 +85,150 @@ clamper/117 (clamper) @0x79b3417deca8
   Function flags: body
   Called by: controlSignalPID/116 controlSignalPID/116 writeControlVariable/113 
   Calls: 
-controlSignalPID/116 (controlSignalPID) @0x79b3417deb40
+controlSignalPID/116 (controlSignalPID) @0x7697d53deb40
   Type: function definition analyzed
   Visibility: force_output no_reorder public
-  Aux: @0x79b3417deca8
+  Aux: @0x7697d53deca8
   References: ctrl_state/100 (read) ctrl_state/100 (read) ctrl_state/100 (write) ctrl_state/100 (read) ctrl_state/100 (write) ctrl_state/100 (read) ctrl_state/100 (write) ctrl_state/100 (read) ctrl_state/100 (read) ctrl_state/100 (write) 
   Referring: 
   Function flags: body
   Called by: 
   Calls: clamper/117 clamper/117 
-steadyState/115 (steadyState) @0x79b3417de9d8
+steadyState/115 (steadyState) @0x7697d53de9d8
   Type: function definition analyzed
   Visibility: force_output no_reorder public
-  Aux: @0x79b3417deb40
+  Aux: @0x7697d53deb40
   References: sp/106 (read) pv/107 (read) steady_counter/125 (read) steady_counter/125 (write) steady_counter/125 (read) STEADY_COUNT_REQUIRED/126 (read) steady_counter/125 (write) 
   Referring: 
   Function flags: body
   Called by: 
   Calls: 
-writeLED/114 (writeLED) @0x79b3417de870
+writeLED/114 (writeLED) @0x7697d53de870
   Type: function definition analyzed
   Visibility: force_output no_reorder public
-  Aux: @0x79b3417de9d8
+  Aux: @0x7697d53de9d8
   References: led_pin/104 (read) 
   Referring: 
   Function flags: body
   Called by: 
   Calls: GPIO_WritePins/97 GPIO_WritePins/97 
-writeControlVariable/113 (writeControlVariable) @0x79b3417de708
+writeControlVariable/113 (writeControlVariable) @0x7697d53de708
   Type: function definition analyzed
   Visibility: force_output no_reorder public
-  Aux: @0x79b3417de870
+  Aux: @0x7697d53de870
   References: cv_channel/103 (read) 
   Referring: 
   Function flags: body
   Called by: 
   Calls: PWM_Write/122 clamper/117 
-readProcessVariable/112 (readProcessVariable) @0x79b3417de5a0
+readProcessVariable/112 (readProcessVariable) @0x7697d53de5a0
   Type: function definition analyzed
   Visibility: force_output no_reorder public
-  Aux: @0x79b3417de708
+  Aux: @0x7697d53de708
   References: pv_channel/102 (read) 
   Referring: 
   Function flags: body
   Called by: 
   Calls: ADC_Read/124 
-readSetpoint/111 (readSetpoint) @0x79b3417de438
+readSetpoint/111 (readSetpoint) @0x7697d53de438
   Type: function definition analyzed
   Visibility: force_output no_reorder public
-  Aux: @0x79b3417de5a0
+  Aux: @0x7697d53de5a0
   References: sp_channel/101 (read) 
   Referring: 
   Function flags: body
   Called by: 
   Calls: ADC_Read/124 
-controllerInit/110 (controllerInit) @0x79b3417de2d0
+controllerInit/110 (controllerInit) @0x7697d53de2d0
   Type: function definition analyzed
   Visibility: force_output no_reorder public
-  Aux: @0x79b3417de438
+  Aux: @0x7697d53de438
   References: sp_channel/101 (write) pv_channel/102 (write) cv_channel/103 (write) led_pin/104 (write) sp_channel/101 (read) pv_channel/102 (read) cv_channel/103 (read) cv_channel/103 (read) ctrl_state/100 (write) ctrl_state/100 (write) ctrl_state/100 (write) 
   Referring: 
   Function flags: body
   Called by: 
   Calls: PWM_Start/123 PWM_Write/122 PWM_Init/121 ADC_ConfigChannel/120 ADC_ConfigChannel/120 ADC_Init/119 GPIO_WritePins/97 GPIO_Init/118 
-gain/109 (gain) @0x79b3417d7980
+gain/109 (gain) @0x7697d53d7980
   Type: variable definition analyzed
   Visibility: force_output no_reorder public
-  Aux: @0x79b3417de2d0
+  Aux: @0x7697d53de2d0
   References: 
   Referring: 
   Availability: not-ready
   Varpool flags: initialized
-cv/108 (cv) @0x79b3417d7900
+cv/108 (cv) @0x7697d53d7900
   Type: variable definition analyzed
   Visibility: force_output no_reorder public
-  Aux: @0x79b3417d7980
+  Aux: @0x7697d53d7980
   References: 
   Referring: 
   Availability: not-ready
   Varpool flags: initialized
-pv/107 (pv) @0x79b3417d7880
+pv/107 (pv) @0x7697d53d7880
   Type: variable definition analyzed
   Visibility: force_output no_reorder public
-  Aux: @0x79b3417d7900
+  Aux: @0x7697d53d7900
   References: 
   Referring: steadyState/115 (read) 
   Availability: not-ready
   Varpool flags: initialized
-sp/106 (sp) @0x79b3417d7800
+sp/106 (sp) @0x7697d53d7800
   Type: variable definition analyzed
   Visibility: force_output no_reorder public
-  Aux: @0x79b3417d7880
+  Aux: @0x7697d53d7880
   References: 
   Referring: steadyState/115 (read) 
   Availability: not-ready
   Varpool flags: initialized
-refresh_tick/105 (refresh_tick) @0x79b3417d7780
+refresh_tick/105 (refresh_tick) @0x7697d53d7780
   Type: variable definition analyzed
   Visibility: force_output no_reorder public
-  Aux: @0x79b3417d7800
+  Aux: @0x7697d53d7800
   References: 
   Referring: 
   Availability: not-ready
   Varpool flags: initialized
-led_pin/104 (led_pin) @0x79b3417d7700
+led_pin/104 (led_pin) @0x7697d53d7700
   Type: variable definition analyzed
   Visibility: force_output no_reorder
-  Aux: @0x79b3417d7780
+  Aux: @0x7697d53d7780
   References: 
   Referring: controllerInit/110 (write) writeLED/114 (read) 
   Availability: not-ready
   Varpool flags:
-cv_channel/103 (cv_channel) @0x79b3417d7680
+cv_channel/103 (cv_channel) @0x7697d53d7680
   Type: variable definition analyzed
   Visibility: force_output no_reorder
-  Aux: @0x79b3417d7700
+  Aux: @0x7697d53d7700
   References: 
   Referring: controllerInit/110 (write) controllerInit/110 (read) controllerInit/110 (read) writeControlVariable/113 (read) 
   Availability: not-ready
   Varpool flags:
-pv_channel/102 (pv_channel) @0x79b3417d7600
+pv_channel/102 (pv_channel) @0x7697d53d7600
   Type: variable definition analyzed
   Visibility: force_output no_reorder
-  Aux: @0x79b3417d7680
+  Aux: @0x7697d53d7680
   References: 
   Referring: controllerInit/110 (write) controllerInit/110 (read) readProcessVariable/112 (read) 
   Availability: not-ready
   Varpool flags:
-sp_channel/101 (sp_channel) @0x79b3417d7580
+sp_channel/101 (sp_channel) @0x7697d53d7580
   Type: variable definition analyzed
   Visibility: force_output no_reorder
-  Aux: @0x79b3417d7600
+  Aux: @0x7697d53d7600
   References: 
   Referring: controllerInit/110 (write) controllerInit/110 (read) readSetpoint/111 (read) 
   Availability: not-ready
   Varpool flags:
-ctrl_state/100 (ctrl_state) @0x79b3417d7500
+ctrl_state/100 (ctrl_state) @0x7697d53d7500
   Type: variable definition analyzed
   Visibility: force_output no_reorder
-  Aux: @0x79b3417d7580
+  Aux: @0x7697d53d7580
   References: 
   Referring: controllerInit/110 (write) controllerInit/110 (write) controllerInit/110 (write) controlSignalPID/116 (read) controlSignalPID/116 (read) controlSignalPID/116 (write) controlSignalPID/116 (read) controlSignalPID/116 (write) controlSignalPID/116 (read) controlSignalPID/116 (write) controlSignalPID/116 (read) controlSignalPID/116 (read) controlSignalPID/116 (write) 
   Availability: not-ready
   Varpool flags:
-GPIO_ReadPins/99 (GPIO_ReadPins) @0x79b3417d32d0
+GPIO_ReadPins/99 (GPIO_ReadPins) @0x7697d53d32d0
   Type: function definition
   Visibility: no_reorder
   References: 
@@ -236,7 +236,7 @@ GPIO_ReadPins/99 (GPIO_ReadPins) @0x79b3417d32d0
   Function flags:
   Called by: 
   Calls: 
-GPIO_TogglePins/98 (GPIO_TogglePins) @0x79b3417d3168
+GPIO_TogglePins/98 (GPIO_TogglePins) @0x7697d53d3168
   Type: function definition
   Visibility: no_reorder
   References: 
@@ -244,192 +244,192 @@ GPIO_TogglePins/98 (GPIO_TogglePins) @0x79b3417d3168
   Function flags:
   Called by: 
   Calls: 
-GPIO_WritePins/97 (GPIO_WritePins) @0x79b3417d3000
+GPIO_WritePins/97 (GPIO_WritePins) @0x7697d53d3000
   Type: function definition analyzed
   Visibility: no_reorder
-  Aux: @0x79b3417de438
+  Aux: @0x7697d53de438
   References: 
   Referring: 
   Function flags: body
   Called by: writeLED/114 writeLED/114 controllerInit/110 
   Calls: 
-GPIO_MODE_WIREDANDDRIVEPULLUPFILTER/96 (GPIO_MODE_WIREDANDDRIVEPULLUPFILTER) @0x79b3417d2200
+GPIO_MODE_WIREDANDDRIVEPULLUPFILTER/96 (GPIO_MODE_WIREDANDDRIVEPULLUPFILTER) @0x7697d53d2200
   Type: variable definition analyzed
   Visibility: force_output no_reorder
-  Aux: @0x79b3417d7500
+  Aux: @0x7697d53d7500
   References: 
   Referring: 
   Availability: not-ready
   Varpool flags: initialized read-only const-value-known
-GPIO_MODE_WIREDANDDRIVEPULLUP/95 (GPIO_MODE_WIREDANDDRIVEPULLUP) @0x79b3417d2180
+GPIO_MODE_WIREDANDDRIVEPULLUP/95 (GPIO_MODE_WIREDANDDRIVEPULLUP) @0x7697d53d2180
   Type: variable definition analyzed
   Visibility: force_output no_reorder
-  Aux: @0x79b3417d2200
+  Aux: @0x7697d53d2200
   References: 
   Referring: 
   Availability: not-ready
   Varpool flags: initialized read-only const-value-known
-GPIO_MODE_WIREDANDDRIVEFILTER/94 (GPIO_MODE_WIREDANDDRIVEFILTER) @0x79b3417d2100
+GPIO_MODE_WIREDANDDRIVEFILTER/94 (GPIO_MODE_WIREDANDDRIVEFILTER) @0x7697d53d2100
   Type: variable definition analyzed
   Visibility: force_output no_reorder
-  Aux: @0x79b3417d2180
+  Aux: @0x7697d53d2180
   References: 
   Referring: 
   Availability: not-ready
   Varpool flags: initialized read-only const-value-known
-GPIO_MODE_WIREDANDDRIVE/93 (GPIO_MODE_WIREDANDDRIVE) @0x79b3417d2080
+GPIO_MODE_WIREDANDDRIVE/93 (GPIO_MODE_WIREDANDDRIVE) @0x7697d53d2080
   Type: variable definition analyzed
   Visibility: force_output no_reorder
-  Aux: @0x79b3417d2100
+  Aux: @0x7697d53d2100
   References: 
   Referring: 
   Availability: not-ready
   Varpool flags: initialized read-only const-value-known
-GPIO_MODE_WIREDANDPULLUPFILTER/92 (GPIO_MODE_WIREDANDPULLUPFILTER) @0x79b3417d2000
+GPIO_MODE_WIREDANDPULLUPFILTER/92 (GPIO_MODE_WIREDANDPULLUPFILTER) @0x7697d53d2000
   Type: variable definition analyzed
   Visibility: force_output no_reorder
-  Aux: @0x79b3417d2080
+  Aux: @0x7697d53d2080
   References: 
   Referring: 
   Availability: not-ready
   Varpool flags: initialized read-only const-value-known
-GPIO_MODE_WIREDANDPULLUP/91 (GPIO_MODE_WIREDANDPULLUP) @0x79b341b67f80
+GPIO_MODE_WIREDANDPULLUP/91 (GPIO_MODE_WIREDANDPULLUP) @0x7697d5767f80
   Type: variable definition analyzed
   Visibility: force_output no_reorder
-  Aux: @0x79b3417d2000
+  Aux: @0x7697d53d2000
   References: 
   Referring: 
   Availability: not-ready
   Varpool flags: initialized read-only const-value-known
-GPIO_MODE_WIREDANDFILTER/90 (GPIO_MODE_WIREDANDFILTER) @0x79b341b67f00
+GPIO_MODE_WIREDANDFILTER/90 (GPIO_MODE_WIREDANDFILTER) @0x7697d5767f00
   Type: variable definition analyzed
   Visibility: force_output no_reorder
-  Aux: @0x79b341b67f80
+  Aux: @0x7697d5767f80
   References: 
   Referring: 
   Availability: not-ready
   Varpool flags: initialized read-only const-value-known
-GPIO_MODE_WIREDAND/89 (GPIO_MODE_WIREDAND) @0x79b341b67e80
+GPIO_MODE_WIREDAND/89 (GPIO_MODE_WIREDAND) @0x7697d5767e80
   Type: variable definition analyzed
   Visibility: force_output no_reorder
-  Aux: @0x79b341b67f00
+  Aux: @0x7697d5767f00
   References: 
   Referring: 
   Availability: not-ready
   Varpool flags: initialized read-only const-value-known
-GPIO_MODE_WIREDORPULLDOWN/88 (GPIO_MODE_WIREDORPULLDOWN) @0x79b341b67e00
+GPIO_MODE_WIREDORPULLDOWN/88 (GPIO_MODE_WIREDORPULLDOWN) @0x7697d5767e00
   Type: variable definition analyzed
   Visibility: force_output no_reorder
-  Aux: @0x79b341b67e80
+  Aux: @0x7697d5767e80
   References: 
   Referring: 
   Availability: not-ready
   Varpool flags: initialized read-only const-value-known
-GPIO_MODE_WIREDOR/87 (GPIO_MODE_WIREDOR) @0x79b341b67d80
+GPIO_MODE_WIREDOR/87 (GPIO_MODE_WIREDOR) @0x7697d5767d80
   Type: variable definition analyzed
   Visibility: force_output no_reorder
-  Aux: @0x79b341b67e00
+  Aux: @0x7697d5767e00
   References: 
   Referring: 
   Availability: not-ready
   Varpool flags: initialized read-only const-value-known
-GPIO_MODE_PUSHPULLDRIVE/86 (GPIO_MODE_PUSHPULLDRIVE) @0x79b341b67d00
+GPIO_MODE_PUSHPULLDRIVE/86 (GPIO_MODE_PUSHPULLDRIVE) @0x7697d5767d00
   Type: variable definition analyzed
   Visibility: force_output no_reorder
-  Aux: @0x79b341b67d80
+  Aux: @0x7697d5767d80
   References: 
   Referring: 
   Availability: not-ready
   Varpool flags: initialized read-only const-value-known
-GPIO_MODE_PUSHPULL/85 (GPIO_MODE_PUSHPULL) @0x79b341b67c80
+GPIO_MODE_PUSHPULL/85 (GPIO_MODE_PUSHPULL) @0x7697d5767c80
   Type: variable definition analyzed
   Visibility: force_output no_reorder
-  Aux: @0x79b341b67d00
+  Aux: @0x7697d5767d00
   References: 
   Referring: 
   Availability: not-ready
   Varpool flags: initialized read-only const-value-known
-GPIO_MODE_INPUTPULLFILTER/84 (GPIO_MODE_INPUTPULLFILTER) @0x79b341b67c00
+GPIO_MODE_INPUTPULLFILTER/84 (GPIO_MODE_INPUTPULLFILTER) @0x7697d5767c00
   Type: variable definition analyzed
   Visibility: force_output no_reorder
-  Aux: @0x79b341b67c80
+  Aux: @0x7697d5767c80
   References: 
   Referring: 
   Availability: not-ready
   Varpool flags: initialized read-only const-value-known
-GPIO_MODE_INPUTPULL/83 (GPIO_MODE_INPUTPULL) @0x79b341b67b80
+GPIO_MODE_INPUTPULL/83 (GPIO_MODE_INPUTPULL) @0x7697d5767b80
   Type: variable definition analyzed
   Visibility: force_output no_reorder
-  Aux: @0x79b341b67c00
+  Aux: @0x7697d5767c00
   References: 
   Referring: 
   Availability: not-ready
   Varpool flags: initialized read-only const-value-known
-GPIO_MODE_INPUT/82 (GPIO_MODE_INPUT) @0x79b341b67b00
+GPIO_MODE_INPUT/82 (GPIO_MODE_INPUT) @0x7697d5767b00
   Type: variable definition analyzed
   Visibility: force_output no_reorder
-  Aux: @0x79b341b67b80
+  Aux: @0x7697d5767b80
   References: 
   Referring: 
   Availability: not-ready
   Varpool flags: initialized read-only const-value-known
-GPIO_MODE_DISABLE/81 (GPIO_MODE_DISABLE) @0x79b341b67a80
+GPIO_MODE_DISABLE/81 (GPIO_MODE_DISABLE) @0x7697d5767a80
   Type: variable definition analyzed
   Visibility: force_output no_reorder
-  Aux: @0x79b341b67b00
+  Aux: @0x7697d5767b00
   References: 
   Referring: 
   Availability: not-ready
   Varpool flags: initialized read-only const-value-known
-GPIOF/80 (GPIOF) @0x79b341b67a00
+GPIOF/80 (GPIOF) @0x7697d5767a00
   Type: variable definition analyzed
   Visibility: force_output no_reorder
-  Aux: @0x79b341b67a80
+  Aux: @0x7697d5767a80
   References: 
   Referring: 
   Availability: not-ready
   Varpool flags: initialized read-only const-value-known
-GPIOE/79 (GPIOE) @0x79b341b67980
+GPIOE/79 (GPIOE) @0x7697d5767980
   Type: variable definition analyzed
   Visibility: force_output no_reorder
-  Aux: @0x79b341b67a00
+  Aux: @0x7697d5767a00
   References: 
   Referring: 
   Availability: not-ready
   Varpool flags: initialized read-only const-value-known
-GPIOD/78 (GPIOD) @0x79b341b67900
+GPIOD/78 (GPIOD) @0x7697d5767900
   Type: variable definition analyzed
   Visibility: force_output no_reorder
-  Aux: @0x79b341b67980
+  Aux: @0x7697d5767980
   References: 
   Referring: 
   Availability: not-ready
   Varpool flags: initialized read-only const-value-known
-GPIOC/77 (GPIOC) @0x79b341b67880
+GPIOC/77 (GPIOC) @0x7697d5767880
   Type: variable definition analyzed
   Visibility: force_output no_reorder
-  Aux: @0x79b341b67900
+  Aux: @0x7697d5767900
   References: 
   Referring: 
   Availability: not-ready
   Varpool flags: initialized read-only const-value-known
-GPIOB/76 (GPIOB) @0x79b341b67800
+GPIOB/76 (GPIOB) @0x7697d5767800
   Type: variable definition analyzed
   Visibility: force_output no_reorder
-  Aux: @0x79b341b67880
+  Aux: @0x7697d5767880
   References: 
   Referring: 
   Availability: not-ready
   Varpool flags: initialized read-only const-value-known
-GPIOA/75 (GPIOA) @0x79b341b67780
+GPIOA/75 (GPIOA) @0x7697d5767780
   Type: variable definition analyzed
   Visibility: force_output no_reorder
-  Aux: @0x79b341b67800
+  Aux: @0x7697d5767800
   References: 
   Referring: 
   Availability: not-ready
   Varpool flags: initialized read-only const-value-known
-SystemCoreClockUpdate/74 (SystemCoreClockUpdate) @0x79b341b5f2d0
+SystemCoreClockUpdate/74 (SystemCoreClockUpdate) @0x7697d575f2d0
   Type: function definition
   Visibility: no_reorder
   References: 
@@ -437,7 +437,7 @@ SystemCoreClockUpdate/74 (SystemCoreClockUpdate) @0x79b341b5f2d0
   Function flags:
   Called by: 
   Calls: 
-ITM_CheckChar/73 (ITM_CheckChar) @0x79b341b54b40
+ITM_CheckChar/73 (ITM_CheckChar) @0x7697d5754b40
   Type: function definition
   Visibility: no_reorder
   References: 
@@ -445,7 +445,7 @@ ITM_CheckChar/73 (ITM_CheckChar) @0x79b341b54b40
   Function flags:
   Called by: 
   Calls: 
-ITM_ReceiveChar/72 (ITM_ReceiveChar) @0x79b341b549d8
+ITM_ReceiveChar/72 (ITM_ReceiveChar) @0x7697d57549d8
   Type: function definition
   Visibility: no_reorder
   References: 
@@ -453,7 +453,7 @@ ITM_ReceiveChar/72 (ITM_ReceiveChar) @0x79b341b549d8
   Function flags:
   Called by: 
   Calls: 
-ITM_SendChar/71 (ITM_SendChar) @0x79b341b54870
+ITM_SendChar/71 (ITM_SendChar) @0x7697d5754870
   Type: function definition
   Visibility: no_reorder
   References: 
@@ -461,7 +461,7 @@ ITM_SendChar/71 (ITM_SendChar) @0x79b341b54870
   Function flags:
   Called by: 
   Calls: 
-SysTick_Config/70 (SysTick_Config) @0x79b341b545a0
+SysTick_Config/70 (SysTick_Config) @0x7697d57545a0
   Type: function definition
   Visibility: no_reorder
   References: 
@@ -469,7 +469,7 @@ SysTick_Config/70 (SysTick_Config) @0x79b341b545a0
   Function flags:
   Called by: 
   Calls: 
-SCB_GetFPUType/69 (SCB_GetFPUType) @0x79b341b54438
+SCB_GetFPUType/69 (SCB_GetFPUType) @0x7697d5754438
   Type: function definition
   Visibility: no_reorder
   References: 
@@ -477,7 +477,7 @@ SCB_GetFPUType/69 (SCB_GetFPUType) @0x79b341b54438
   Function flags:
   Called by: 
   Calls: 
-ARM_MPU_Load/68 (ARM_MPU_Load) @0x79b341b542d0
+ARM_MPU_Load/68 (ARM_MPU_Load) @0x7697d57542d0
   Type: function definition
   Visibility: no_reorder
   References: 
@@ -485,7 +485,7 @@ ARM_MPU_Load/68 (ARM_MPU_Load) @0x79b341b542d0
   Function flags:
   Called by: 
   Calls: 
-ARM_MPU_OrderedMemcpy/67 (ARM_MPU_OrderedMemcpy) @0x79b341b54168
+ARM_MPU_OrderedMemcpy/67 (ARM_MPU_OrderedMemcpy) @0x7697d5754168
   Type: function definition
   Visibility: no_reorder
   References: 
@@ -493,7 +493,7 @@ ARM_MPU_OrderedMemcpy/67 (ARM_MPU_OrderedMemcpy) @0x79b341b54168
   Function flags:
   Called by: 
   Calls: 
-ARM_MPU_SetRegionEx/66 (ARM_MPU_SetRegionEx) @0x79b341b54000
+ARM_MPU_SetRegionEx/66 (ARM_MPU_SetRegionEx) @0x7697d5754000
   Type: function definition
   Visibility: no_reorder
   References: 
@@ -501,7 +501,7 @@ ARM_MPU_SetRegionEx/66 (ARM_MPU_SetRegionEx) @0x79b341b54000
   Function flags:
   Called by: 
   Calls: 
-ARM_MPU_SetRegion/65 (ARM_MPU_SetRegion) @0x79b341b49e10
+ARM_MPU_SetRegion/65 (ARM_MPU_SetRegion) @0x7697d5749e10
   Type: function definition
   Visibility: no_reorder
   References: 
@@ -509,7 +509,7 @@ ARM_MPU_SetRegion/65 (ARM_MPU_SetRegion) @0x79b341b49e10
   Function flags:
   Called by: 
   Calls: 
-ARM_MPU_ClrRegion/64 (ARM_MPU_ClrRegion) @0x79b341b49ca8
+ARM_MPU_ClrRegion/64 (ARM_MPU_ClrRegion) @0x7697d5749ca8
   Type: function definition
   Visibility: no_reorder
   References: 
@@ -517,7 +517,7 @@ ARM_MPU_ClrRegion/64 (ARM_MPU_ClrRegion) @0x79b341b49ca8
   Function flags:
   Called by: 
   Calls: 
-ARM_MPU_Disable/63 (ARM_MPU_Disable) @0x79b341b49b40
+ARM_MPU_Disable/63 (ARM_MPU_Disable) @0x7697d5749b40
   Type: function definition
   Visibility: no_reorder
   References: 
@@ -525,7 +525,7 @@ ARM_MPU_Disable/63 (ARM_MPU_Disable) @0x79b341b49b40
   Function flags:
   Called by: 
   Calls: 
-ARM_MPU_Enable/62 (ARM_MPU_Enable) @0x79b341b499d8
+ARM_MPU_Enable/62 (ARM_MPU_Enable) @0x7697d57499d8
   Type: function definition
   Visibility: no_reorder
   References: 
@@ -533,7 +533,7 @@ ARM_MPU_Enable/62 (ARM_MPU_Enable) @0x79b341b499d8
   Function flags:
   Called by: 
   Calls: 
-__NVIC_SystemReset/61 (__NVIC_SystemReset) @0x79b341b492d0
+__NVIC_SystemReset/61 (__NVIC_SystemReset) @0x7697d57492d0
   Type: function definition
   Visibility: no_reorder
   References: 
@@ -541,7 +541,7 @@ __NVIC_SystemReset/61 (__NVIC_SystemReset) @0x79b341b492d0
   Function flags:
   Called by: 
   Calls: 
-__NVIC_GetVector/60 (__NVIC_GetVector) @0x79b341b49168
+__NVIC_GetVector/60 (__NVIC_GetVector) @0x7697d5749168
   Type: function definition
   Visibility: no_reorder
   References: 
@@ -549,7 +549,7 @@ __NVIC_GetVector/60 (__NVIC_GetVector) @0x79b341b49168
   Function flags:
   Called by: 
   Calls: 
-__NVIC_SetVector/59 (__NVIC_SetVector) @0x79b341b49000
+__NVIC_SetVector/59 (__NVIC_SetVector) @0x7697d5749000
   Type: function definition
   Visibility: no_reorder
   References: 
@@ -557,7 +557,7 @@ __NVIC_SetVector/59 (__NVIC_SetVector) @0x79b341b49000
   Function flags:
   Called by: 
   Calls: 
-NVIC_DecodePriority/58 (NVIC_DecodePriority) @0x79b341b40e10
+NVIC_DecodePriority/58 (NVIC_DecodePriority) @0x7697d5740e10
   Type: function definition
   Visibility: no_reorder
   References: 
@@ -565,7 +565,7 @@ NVIC_DecodePriority/58 (NVIC_DecodePriority) @0x79b341b40e10
   Function flags:
   Called by: 
   Calls: 
-NVIC_EncodePriority/57 (NVIC_EncodePriority) @0x79b341b40ca8
+NVIC_EncodePriority/57 (NVIC_EncodePriority) @0x7697d5740ca8
   Type: function definition
   Visibility: no_reorder
   References: 
@@ -573,7 +573,7 @@ NVIC_EncodePriority/57 (NVIC_EncodePriority) @0x79b341b40ca8
   Function flags:
   Called by: 
   Calls: 
-__NVIC_GetPriority/56 (__NVIC_GetPriority) @0x79b341b40b40
+__NVIC_GetPriority/56 (__NVIC_GetPriority) @0x7697d5740b40
   Type: function definition
   Visibility: no_reorder
   References: 
@@ -581,7 +581,7 @@ __NVIC_GetPriority/56 (__NVIC_GetPriority) @0x79b341b40b40
   Function flags:
   Called by: 
   Calls: 
-__NVIC_SetPriority/55 (__NVIC_SetPriority) @0x79b341b409d8
+__NVIC_SetPriority/55 (__NVIC_SetPriority) @0x7697d57409d8
   Type: function definition
   Visibility: no_reorder
   References: 
@@ -589,7 +589,7 @@ __NVIC_SetPriority/55 (__NVIC_SetPriority) @0x79b341b409d8
   Function flags:
   Called by: 
   Calls: 
-__NVIC_GetActive/54 (__NVIC_GetActive) @0x79b341b40870
+__NVIC_GetActive/54 (__NVIC_GetActive) @0x7697d5740870
   Type: function definition
   Visibility: no_reorder
   References: 
@@ -597,7 +597,7 @@ __NVIC_GetActive/54 (__NVIC_GetActive) @0x79b341b40870
   Function flags:
   Called by: 
   Calls: 
-__NVIC_ClearPendingIRQ/53 (__NVIC_ClearPendingIRQ) @0x79b341b40708
+__NVIC_ClearPendingIRQ/53 (__NVIC_ClearPendingIRQ) @0x7697d5740708
   Type: function definition
   Visibility: no_reorder
   References: 
@@ -605,7 +605,7 @@ __NVIC_ClearPendingIRQ/53 (__NVIC_ClearPendingIRQ) @0x79b341b40708
   Function flags:
   Called by: 
   Calls: 
-__NVIC_SetPendingIRQ/52 (__NVIC_SetPendingIRQ) @0x79b341b405a0
+__NVIC_SetPendingIRQ/52 (__NVIC_SetPendingIRQ) @0x7697d57405a0
   Type: function definition
   Visibility: no_reorder
   References: 
@@ -613,7 +613,7 @@ __NVIC_SetPendingIRQ/52 (__NVIC_SetPendingIRQ) @0x79b341b405a0
   Function flags:
   Called by: 
   Calls: 
-__NVIC_GetPendingIRQ/51 (__NVIC_GetPendingIRQ) @0x79b341b40438
+__NVIC_GetPendingIRQ/51 (__NVIC_GetPendingIRQ) @0x7697d5740438
   Type: function definition
   Visibility: no_reorder
   References: 
@@ -621,7 +621,7 @@ __NVIC_GetPendingIRQ/51 (__NVIC_GetPendingIRQ) @0x79b341b40438
   Function flags:
   Called by: 
   Calls: 
-__NVIC_DisableIRQ/50 (__NVIC_DisableIRQ) @0x79b341b402d0
+__NVIC_DisableIRQ/50 (__NVIC_DisableIRQ) @0x7697d57402d0
   Type: function definition
   Visibility: no_reorder
   References: 
@@ -629,7 +629,7 @@ __NVIC_DisableIRQ/50 (__NVIC_DisableIRQ) @0x79b341b402d0
   Function flags:
   Called by: 
   Calls: 
-__NVIC_GetEnableIRQ/49 (__NVIC_GetEnableIRQ) @0x79b341b40168
+__NVIC_GetEnableIRQ/49 (__NVIC_GetEnableIRQ) @0x7697d5740168
   Type: function definition
   Visibility: no_reorder
   References: 
@@ -637,7 +637,7 @@ __NVIC_GetEnableIRQ/49 (__NVIC_GetEnableIRQ) @0x79b341b40168
   Function flags:
   Called by: 
   Calls: 
-__NVIC_EnableIRQ/48 (__NVIC_EnableIRQ) @0x79b341b40000
+__NVIC_EnableIRQ/48 (__NVIC_EnableIRQ) @0x7697d5740000
   Type: function definition
   Visibility: no_reorder
   References: 
@@ -645,7 +645,7 @@ __NVIC_EnableIRQ/48 (__NVIC_EnableIRQ) @0x79b341b40000
   Function flags:
   Called by: 
   Calls: 
-__NVIC_GetPriorityGrouping/47 (__NVIC_GetPriorityGrouping) @0x79b341b30e10
+__NVIC_GetPriorityGrouping/47 (__NVIC_GetPriorityGrouping) @0x7697d5730e10
   Type: function definition
   Visibility: no_reorder
   References: 
@@ -653,7 +653,7 @@ __NVIC_GetPriorityGrouping/47 (__NVIC_GetPriorityGrouping) @0x79b341b30e10
   Function flags:
   Called by: 
   Calls: 
-__NVIC_SetPriorityGrouping/46 (__NVIC_SetPriorityGrouping) @0x79b341b30ca8
+__NVIC_SetPriorityGrouping/46 (__NVIC_SetPriorityGrouping) @0x7697d5730ca8
   Type: function definition
   Visibility: no_reorder
   References: 
@@ -661,7 +661,7 @@ __NVIC_SetPriorityGrouping/46 (__NVIC_SetPriorityGrouping) @0x79b341b30ca8
   Function flags:
   Called by: 
   Calls: 
-__set_FPSCR/45 (__set_FPSCR) @0x79b341aeb000
+__set_FPSCR/45 (__set_FPSCR) @0x7697d56eb000
   Type: function definition
   Visibility: no_reorder
   References: 
@@ -669,7 +669,7 @@ __set_FPSCR/45 (__set_FPSCR) @0x79b341aeb000
   Function flags:
   Called by: 
   Calls: 
-__get_FPSCR/44 (__get_FPSCR) @0x79b341ae5e10
+__get_FPSCR/44 (__get_FPSCR) @0x7697d56e5e10
   Type: function definition
   Visibility: no_reorder
   References: 
@@ -677,7 +677,7 @@ __get_FPSCR/44 (__get_FPSCR) @0x79b341ae5e10
   Function flags:
   Called by: 
   Calls: 
-__set_FAULTMASK/43 (__set_FAULTMASK) @0x79b341ae5ca8
+__set_FAULTMASK/43 (__set_FAULTMASK) @0x7697d56e5ca8
   Type: function definition
   Visibility: no_reorder
   References: 
@@ -685,7 +685,7 @@ __set_FAULTMASK/43 (__set_FAULTMASK) @0x79b341ae5ca8
   Function flags:
   Called by: 
   Calls: 
-__get_FAULTMASK/42 (__get_FAULTMASK) @0x79b341ae5b40
+__get_FAULTMASK/42 (__get_FAULTMASK) @0x7697d56e5b40
   Type: function definition
   Visibility: no_reorder
   References: 
@@ -693,7 +693,7 @@ __get_FAULTMASK/42 (__get_FAULTMASK) @0x79b341ae5b40
   Function flags:
   Called by: 
   Calls: 
-__set_BASEPRI_MAX/41 (__set_BASEPRI_MAX) @0x79b341ae59d8
+__set_BASEPRI_MAX/41 (__set_BASEPRI_MAX) @0x7697d56e59d8
   Type: function definition
   Visibility: no_reorder
   References: 
@@ -701,7 +701,7 @@ __set_BASEPRI_MAX/41 (__set_BASEPRI_MAX) @0x79b341ae59d8
   Function flags:
   Called by: 
   Calls: 
-__set_BASEPRI/40 (__set_BASEPRI) @0x79b341ae5870
+__set_BASEPRI/40 (__set_BASEPRI) @0x7697d56e5870
   Type: function definition
   Visibility: no_reorder
   References: 
@@ -709,7 +709,7 @@ __set_BASEPRI/40 (__set_BASEPRI) @0x79b341ae5870
   Function flags:
   Called by: 
   Calls: 
-__get_BASEPRI/39 (__get_BASEPRI) @0x79b341ae5708
+__get_BASEPRI/39 (__get_BASEPRI) @0x7697d56e5708
   Type: function definition
   Visibility: no_reorder
   References: 
@@ -717,7 +717,7 @@ __get_BASEPRI/39 (__get_BASEPRI) @0x79b341ae5708
   Function flags:
   Called by: 
   Calls: 
-__disable_fault_irq/38 (__disable_fault_irq) @0x79b341ae55a0
+__disable_fault_irq/38 (__disable_fault_irq) @0x7697d56e55a0
   Type: function definition
   Visibility: no_reorder
   References: 
@@ -725,7 +725,7 @@ __disable_fault_irq/38 (__disable_fault_irq) @0x79b341ae55a0
   Function flags:
   Called by: 
   Calls: 
-__enable_fault_irq/37 (__enable_fault_irq) @0x79b341ae5438
+__enable_fault_irq/37 (__enable_fault_irq) @0x7697d56e5438
   Type: function definition
   Visibility: no_reorder
   References: 
@@ -733,7 +733,7 @@ __enable_fault_irq/37 (__enable_fault_irq) @0x79b341ae5438
   Function flags:
   Called by: 
   Calls: 
-__set_PRIMASK/36 (__set_PRIMASK) @0x79b341ae52d0
+__set_PRIMASK/36 (__set_PRIMASK) @0x7697d56e52d0
   Type: function definition
   Visibility: no_reorder
   References: 
@@ -741,7 +741,7 @@ __set_PRIMASK/36 (__set_PRIMASK) @0x79b341ae52d0
   Function flags:
   Called by: 
   Calls: 
-__get_PRIMASK/35 (__get_PRIMASK) @0x79b341ae5168
+__get_PRIMASK/35 (__get_PRIMASK) @0x7697d56e5168
   Type: function definition
   Visibility: no_reorder
   References: 
@@ -749,7 +749,7 @@ __get_PRIMASK/35 (__get_PRIMASK) @0x79b341ae5168
   Function flags:
   Called by: 
   Calls: 
-__set_MSP/34 (__set_MSP) @0x79b341ae5000
+__set_MSP/34 (__set_MSP) @0x7697d56e5000
   Type: function definition
   Visibility: no_reorder
   References: 
@@ -757,7 +757,7 @@ __set_MSP/34 (__set_MSP) @0x79b341ae5000
   Function flags:
   Called by: 
   Calls: 
-__get_MSP/33 (__get_MSP) @0x79b341adde10
+__get_MSP/33 (__get_MSP) @0x7697d56dde10
   Type: function definition
   Visibility: no_reorder
   References: 
@@ -765,7 +765,7 @@ __get_MSP/33 (__get_MSP) @0x79b341adde10
   Function flags:
   Called by: 
   Calls: 
-__set_PSP/32 (__set_PSP) @0x79b341addca8
+__set_PSP/32 (__set_PSP) @0x7697d56ddca8
   Type: function definition
   Visibility: no_reorder
   References: 
@@ -773,7 +773,7 @@ __set_PSP/32 (__set_PSP) @0x79b341addca8
   Function flags:
   Called by: 
   Calls: 
-__get_PSP/31 (__get_PSP) @0x79b341addb40
+__get_PSP/31 (__get_PSP) @0x7697d56ddb40
   Type: function definition
   Visibility: no_reorder
   References: 
@@ -781,7 +781,7 @@ __get_PSP/31 (__get_PSP) @0x79b341addb40
   Function flags:
   Called by: 
   Calls: 
-__get_xPSR/30 (__get_xPSR) @0x79b341add9d8
+__get_xPSR/30 (__get_xPSR) @0x7697d56dd9d8
   Type: function definition
   Visibility: no_reorder
   References: 
@@ -789,7 +789,7 @@ __get_xPSR/30 (__get_xPSR) @0x79b341add9d8
   Function flags:
   Called by: 
   Calls: 
-__get_APSR/29 (__get_APSR) @0x79b341add870
+__get_APSR/29 (__get_APSR) @0x7697d56dd870
   Type: function definition
   Visibility: no_reorder
   References: 
@@ -797,7 +797,7 @@ __get_APSR/29 (__get_APSR) @0x79b341add870
   Function flags:
   Called by: 
   Calls: 
-__get_IPSR/28 (__get_IPSR) @0x79b341add708
+__get_IPSR/28 (__get_IPSR) @0x7697d56dd708
   Type: function definition
   Visibility: no_reorder
   References: 
@@ -805,7 +805,7 @@ __get_IPSR/28 (__get_IPSR) @0x79b341add708
   Function flags:
   Called by: 
   Calls: 
-__set_CONTROL/27 (__set_CONTROL) @0x79b341add5a0
+__set_CONTROL/27 (__set_CONTROL) @0x7697d56dd5a0
   Type: function definition
   Visibility: no_reorder
   References: 
@@ -813,7 +813,7 @@ __set_CONTROL/27 (__set_CONTROL) @0x79b341add5a0
   Function flags:
   Called by: 
   Calls: 
-__get_CONTROL/26 (__get_CONTROL) @0x79b341add438
+__get_CONTROL/26 (__get_CONTROL) @0x7697d56dd438
   Type: function definition
   Visibility: no_reorder
   References: 
@@ -821,7 +821,7 @@ __get_CONTROL/26 (__get_CONTROL) @0x79b341add438
   Function flags:
   Called by: 
   Calls: 
-__disable_irq/25 (__disable_irq) @0x79b341add2d0
+__disable_irq/25 (__disable_irq) @0x7697d56dd2d0
   Type: function definition
   Visibility: no_reorder
   References: 
@@ -829,7 +829,7 @@ __disable_irq/25 (__disable_irq) @0x79b341add2d0
   Function flags:
   Called by: 
   Calls: 
-__enable_irq/24 (__enable_irq) @0x79b341add168
+__enable_irq/24 (__enable_irq) @0x7697d56dd168
   Type: function definition
   Visibility: no_reorder
   References: 
@@ -837,7 +837,7 @@ __enable_irq/24 (__enable_irq) @0x79b341add168
   Function flags:
   Called by: 
   Calls: 
-__STRT/23 (__STRT) @0x79b341add000
+__STRT/23 (__STRT) @0x7697d56dd000
   Type: function definition
   Visibility: no_reorder
   References: 
@@ -845,7 +845,7 @@ __STRT/23 (__STRT) @0x79b341add000
   Function flags:
   Called by: 
   Calls: 
-__STRHT/22 (__STRHT) @0x79b341ad2e10
+__STRHT/22 (__STRHT) @0x7697d56d2e10
   Type: function definition
   Visibility: no_reorder
   References: 
@@ -853,7 +853,7 @@ __STRHT/22 (__STRHT) @0x79b341ad2e10
   Function flags:
   Called by: 
   Calls: 
-__STRBT/21 (__STRBT) @0x79b341ad2ca8
+__STRBT/21 (__STRBT) @0x7697d56d2ca8
   Type: function definition
   Visibility: no_reorder
   References: 
@@ -861,7 +861,7 @@ __STRBT/21 (__STRBT) @0x79b341ad2ca8
   Function flags:
   Called by: 
   Calls: 
-__LDRT/20 (__LDRT) @0x79b341ad2b40
+__LDRT/20 (__LDRT) @0x7697d56d2b40
   Type: function definition
   Visibility: no_reorder
   References: 
@@ -869,7 +869,7 @@ __LDRT/20 (__LDRT) @0x79b341ad2b40
   Function flags:
   Called by: 
   Calls: 
-__LDRHT/19 (__LDRHT) @0x79b341ad29d8
+__LDRHT/19 (__LDRHT) @0x7697d56d29d8
   Type: function definition
   Visibility: no_reorder
   References: 
@@ -877,7 +877,7 @@ __LDRHT/19 (__LDRHT) @0x79b341ad29d8
   Function flags:
   Called by: 
   Calls: 
-__LDRBT/18 (__LDRBT) @0x79b341ad2870
+__LDRBT/18 (__LDRBT) @0x7697d56d2870
   Type: function definition
   Visibility: no_reorder
   References: 
@@ -885,7 +885,7 @@ __LDRBT/18 (__LDRBT) @0x79b341ad2870
   Function flags:
   Called by: 
   Calls: 
-__RRX/17 (__RRX) @0x79b341ad2708
+__RRX/17 (__RRX) @0x7697d56d2708
   Type: function definition
   Visibility: no_reorder
   References: 
@@ -893,7 +893,7 @@ __RRX/17 (__RRX) @0x79b341ad2708
   Function flags:
   Called by: 
   Calls: 
-__CLREX/16 (__CLREX) @0x79b341ad25a0
+__CLREX/16 (__CLREX) @0x7697d56d25a0
   Type: function definition
   Visibility: no_reorder
   References: 
@@ -901,7 +901,7 @@ __CLREX/16 (__CLREX) @0x79b341ad25a0
   Function flags:
   Called by: 
   Calls: 
-__STREXW/15 (__STREXW) @0x79b341ad2438
+__STREXW/15 (__STREXW) @0x7697d56d2438
   Type: function definition
   Visibility: no_reorder
   References: 
@@ -909,7 +909,7 @@ __STREXW/15 (__STREXW) @0x79b341ad2438
   Function flags:
   Called by: 
   Calls: 
-__STREXH/14 (__STREXH) @0x79b341ad22d0
+__STREXH/14 (__STREXH) @0x7697d56d22d0
   Type: function definition
   Visibility: no_reorder
   References: 
@@ -917,7 +917,7 @@ __STREXH/14 (__STREXH) @0x79b341ad22d0
   Function flags:
   Called by: 
   Calls: 
-__STREXB/13 (__STREXB) @0x79b341ad2168
+__STREXB/13 (__STREXB) @0x7697d56d2168
   Type: function definition
   Visibility: no_reorder
   References: 
@@ -925,7 +925,7 @@ __STREXB/13 (__STREXB) @0x79b341ad2168
   Function flags:
   Called by: 
   Calls: 
-__LDREXW/12 (__LDREXW) @0x79b341ad2000
+__LDREXW/12 (__LDREXW) @0x7697d56d2000
   Type: function definition
   Visibility: no_reorder
   References: 
@@ -933,7 +933,7 @@ __LDREXW/12 (__LDREXW) @0x79b341ad2000
   Function flags:
   Called by: 
   Calls: 
-__LDREXH/11 (__LDREXH) @0x79b341acce10
+__LDREXH/11 (__LDREXH) @0x7697d56cce10
   Type: function definition
   Visibility: no_reorder
   References: 
@@ -941,7 +941,7 @@ __LDREXH/11 (__LDREXH) @0x79b341acce10
   Function flags:
   Called by: 
   Calls: 
-__LDREXB/10 (__LDREXB) @0x79b341accca8
+__LDREXB/10 (__LDREXB) @0x7697d56ccca8
   Type: function definition
   Visibility: no_reorder
   References: 
@@ -949,7 +949,7 @@ __LDREXB/10 (__LDREXB) @0x79b341accca8
   Function flags:
   Called by: 
   Calls: 
-__CLZ/9 (__CLZ) @0x79b341accb40
+__CLZ/9 (__CLZ) @0x7697d56ccb40
   Type: function definition
   Visibility: no_reorder
   References: 
@@ -957,7 +957,7 @@ __CLZ/9 (__CLZ) @0x79b341accb40
   Function flags:
   Called by: 
   Calls: 
-__RBIT/8 (__RBIT) @0x79b341acc9d8
+__RBIT/8 (__RBIT) @0x7697d56cc9d8
   Type: function definition
   Visibility: no_reorder
   References: 
@@ -965,7 +965,7 @@ __RBIT/8 (__RBIT) @0x79b341acc9d8
   Function flags:
   Called by: 
   Calls: 
-__ROR/7 (__ROR) @0x79b341acc870
+__ROR/7 (__ROR) @0x7697d56cc870
   Type: function definition
   Visibility: no_reorder
   References: 
@@ -973,7 +973,7 @@ __ROR/7 (__ROR) @0x79b341acc870
   Function flags:
   Called by: 
   Calls: 
-__REVSH/6 (__REVSH) @0x79b341acc708
+__REVSH/6 (__REVSH) @0x7697d56cc708
   Type: function definition
   Visibility: no_reorder
   References: 
@@ -981,7 +981,7 @@ __REVSH/6 (__REVSH) @0x79b341acc708
   Function flags:
   Called by: 
   Calls: 
-__REV16/5 (__REV16) @0x79b341acc5a0
+__REV16/5 (__REV16) @0x7697d56cc5a0
   Type: function definition
   Visibility: no_reorder
   References: 
@@ -989,7 +989,7 @@ __REV16/5 (__REV16) @0x79b341acc5a0
   Function flags:
   Called by: 
   Calls: 
-__REV/4 (__REV) @0x79b341acc438
+__REV/4 (__REV) @0x7697d56cc438
   Type: function definition
   Visibility: no_reorder
   References: 
@@ -997,7 +997,7 @@ __REV/4 (__REV) @0x79b341acc438
   Function flags:
   Called by: 
   Calls: 
-__DMB/3 (__DMB) @0x79b341acc2d0
+__DMB/3 (__DMB) @0x7697d56cc2d0
   Type: function definition
   Visibility: no_reorder
   References: 
@@ -1005,7 +1005,7 @@ __DMB/3 (__DMB) @0x79b341acc2d0
   Function flags:
   Called by: 
   Calls: 
-__DSB/2 (__DSB) @0x79b341acc168
+__DSB/2 (__DSB) @0x7697d56cc168
   Type: function definition
   Visibility: no_reorder
   References: 
@@ -1013,7 +1013,7 @@ __DSB/2 (__DSB) @0x79b341acc168
   Function flags:
   Called by: 
   Calls: 
-__ISB/1 (__ISB) @0x79b341acc000
+__ISB/1 (__ISB) @0x7697d56cc000
   Type: function definition
   Visibility: no_reorder
   References: 
@@ -1021,7 +1021,7 @@ __ISB/1 (__ISB) @0x79b341acc000
   Function flags:
   Called by: 
   Calls: 
-__cmsis_start/0 (__cmsis_start) @0x79b341abdca8
+__cmsis_start/0 (__cmsis_start) @0x7697d56bdca8
   Type: function definition
   Visibility: no_reorder
   References: 
@@ -1034,21 +1034,21 @@ Removing unused symbols: GPIO_ReadPins/99 GPIO_TogglePins/98 SystemCoreClockUpda
 
 Reclaimed Symbol table:
 
-STEADY_COUNT_REQUIRED/126 (STEADY_COUNT_REQUIRED) @0x79b3417e5a00
+STEADY_COUNT_REQUIRED/126 (STEADY_COUNT_REQUIRED) @0x7697d53e5a00
   Type: variable definition analyzed
   Visibility: force_output no_reorder
   References: 
   Referring: steadyState/115 (read) 
   Availability: not-ready
   Varpool flags: initialized read-only const-value-known
-steady_counter/125 (steady_counter) @0x79b3417e5900
+steady_counter/125 (steady_counter) @0x7697d53e5900
   Type: variable definition analyzed
   Visibility: force_output no_reorder
   References: 
   Referring: steadyState/115 (read) steadyState/115 (write) steadyState/115 (read) steadyState/115 (write) 
   Availability: not-ready
   Varpool flags: initialized
-ADC_Read/124 (ADC_Read) @0x79b3417ed870
+ADC_Read/124 (ADC_Read) @0x7697d53ed870
   Type: function
   Visibility: external public
   References: 
@@ -1056,7 +1056,7 @@ ADC_Read/124 (ADC_Read) @0x79b3417ed870
   Function flags:
   Called by: readProcessVariable/112 readSetpoint/111 
   Calls: 
-PWM_Start/123 (PWM_Start) @0x79b3417ed708
+PWM_Start/123 (PWM_Start) @0x7697d53ed708
   Type: function
   Visibility: external public
   References: 
@@ -1064,7 +1064,7 @@ PWM_Start/123 (PWM_Start) @0x79b3417ed708
   Function flags:
   Called by: controllerInit/110 
   Calls: 
-PWM_Write/122 (PWM_Write) @0x79b3417ed5a0
+PWM_Write/122 (PWM_Write) @0x7697d53ed5a0
   Type: function
   Visibility: external public
   References: 
@@ -1072,7 +1072,7 @@ PWM_Write/122 (PWM_Write) @0x79b3417ed5a0
   Function flags:
   Called by: writeControlVariable/113 controllerInit/110 
   Calls: 
-PWM_Init/121 (PWM_Init) @0x79b3417ed438
+PWM_Init/121 (PWM_Init) @0x7697d53ed438
   Type: function
   Visibility: external public
   References: 
@@ -1080,7 +1080,7 @@ PWM_Init/121 (PWM_Init) @0x79b3417ed438
   Function flags:
   Called by: controllerInit/110 
   Calls: 
-ADC_ConfigChannel/120 (ADC_ConfigChannel) @0x79b3417ed168
+ADC_ConfigChannel/120 (ADC_ConfigChannel) @0x7697d53ed168
   Type: function
   Visibility: external public
   References: 
@@ -1088,7 +1088,7 @@ ADC_ConfigChannel/120 (ADC_ConfigChannel) @0x79b3417ed168
   Function flags:
   Called by: controllerInit/110 controllerInit/110 
   Calls: 
-ADC_Init/119 (ADC_Init) @0x79b3417ed000
+ADC_Init/119 (ADC_Init) @0x7697d53ed000
   Type: function
   Visibility: external public
   References: 
@@ -1096,7 +1096,7 @@ ADC_Init/119 (ADC_Init) @0x79b3417ed000
   Function flags:
   Called by: controllerInit/110 
   Calls: 
-GPIO_Init/118 (GPIO_Init) @0x79b3417dee10
+GPIO_Init/118 (GPIO_Init) @0x7697d53dee10
   Type: function
   Visibility: external public
   References: 
@@ -1104,7 +1104,7 @@ GPIO_Init/118 (GPIO_Init) @0x79b3417dee10
   Function flags:
   Called by: controllerInit/110 
   Calls: 
-clamper/117 (clamper) @0x79b3417deca8
+clamper/117 (clamper) @0x7697d53deca8
   Type: function definition analyzed
   Visibility: force_output no_reorder
   References: 
@@ -1112,7 +1112,7 @@ clamper/117 (clamper) @0x79b3417deca8
   Function flags: body
   Called by: controlSignalPID/116 controlSignalPID/116 writeControlVariable/113 
   Calls: 
-controlSignalPID/116 (controlSignalPID) @0x79b3417deb40
+controlSignalPID/116 (controlSignalPID) @0x7697d53deb40
   Type: function definition analyzed
   Visibility: force_output no_reorder public
   References: ctrl_state/100 (read) ctrl_state/100 (read) ctrl_state/100 (write) ctrl_state/100 (read) ctrl_state/100 (write) ctrl_state/100 (read) ctrl_state/100 (write) ctrl_state/100 (read) ctrl_state/100 (read) ctrl_state/100 (write) 
@@ -1120,7 +1120,7 @@ controlSignalPID/116 (controlSignalPID) @0x79b3417deb40
   Function flags: body
   Called by: 
   Calls: clamper/117 clamper/117 
-steadyState/115 (steadyState) @0x79b3417de9d8
+steadyState/115 (steadyState) @0x7697d53de9d8
   Type: function definition analyzed
   Visibility: force_output no_reorder public
   References: sp/106 (read) pv/107 (read) steady_counter/125 (read) steady_counter/125 (write) steady_counter/125 (read) STEADY_COUNT_REQUIRED/126 (read) steady_counter/125 (write) 
@@ -1128,7 +1128,7 @@ steadyState/115 (steadyState) @0x79b3417de9d8
   Function flags: body
   Called by: 
   Calls: 
-writeLED/114 (writeLED) @0x79b3417de870
+writeLED/114 (writeLED) @0x7697d53de870
   Type: function definition analyzed
   Visibility: force_output no_reorder public
   References: led_pin/104 (read) 
@@ -1136,7 +1136,7 @@ writeLED/114 (writeLED) @0x79b3417de870
   Function flags: body
   Called by: 
   Calls: GPIO_WritePins/97 GPIO_WritePins/97 
-writeControlVariable/113 (writeControlVariable) @0x79b3417de708
+writeControlVariable/113 (writeControlVariable) @0x7697d53de708
   Type: function definition analyzed
   Visibility: force_output no_reorder public
   References: cv_channel/103 (read) 
@@ -1144,7 +1144,7 @@ writeControlVariable/113 (writeControlVariable) @0x79b3417de708
   Function flags: body
   Called by: 
   Calls: PWM_Write/122 clamper/117 
-readProcessVariable/112 (readProcessVariable) @0x79b3417de5a0
+readProcessVariable/112 (readProcessVariable) @0x7697d53de5a0
   Type: function definition analyzed
   Visibility: force_output no_reorder public
   References: pv_channel/102 (read) 
@@ -1152,7 +1152,7 @@ readProcessVariable/112 (readProcessVariable) @0x79b3417de5a0
   Function flags: body
   Called by: 
   Calls: ADC_Read/124 
-readSetpoint/111 (readSetpoint) @0x79b3417de438
+readSetpoint/111 (readSetpoint) @0x7697d53de438
   Type: function definition analyzed
   Visibility: force_output no_reorder public
   References: sp_channel/101 (read) 
@@ -1160,7 +1160,7 @@ readSetpoint/111 (readSetpoint) @0x79b3417de438
   Function flags: body
   Called by: 
   Calls: ADC_Read/124 
-controllerInit/110 (controllerInit) @0x79b3417de2d0
+controllerInit/110 (controllerInit) @0x7697d53de2d0
   Type: function definition analyzed
   Visibility: force_output no_reorder public
   References: sp_channel/101 (write) pv_channel/102 (write) cv_channel/103 (write) led_pin/104 (write) sp_channel/101 (read) pv_channel/102 (read) cv_channel/103 (read) cv_channel/103 (read) ctrl_state/100 (write) ctrl_state/100 (write) ctrl_state/100 (write) 
@@ -1168,77 +1168,77 @@ controllerInit/110 (controllerInit) @0x79b3417de2d0
   Function flags: body
   Called by: 
   Calls: PWM_Start/123 PWM_Write/122 PWM_Init/121 ADC_ConfigChannel/120 ADC_ConfigChannel/120 ADC_Init/119 GPIO_WritePins/97 GPIO_Init/118 
-gain/109 (gain) @0x79b3417d7980
+gain/109 (gain) @0x7697d53d7980
   Type: variable definition analyzed
   Visibility: force_output no_reorder public
   References: 
   Referring: 
   Availability: not-ready
   Varpool flags: initialized
-cv/108 (cv) @0x79b3417d7900
+cv/108 (cv) @0x7697d53d7900
   Type: variable definition analyzed
   Visibility: force_output no_reorder public
   References: 
   Referring: 
   Availability: not-ready
   Varpool flags: initialized
-pv/107 (pv) @0x79b3417d7880
+pv/107 (pv) @0x7697d53d7880
   Type: variable definition analyzed
   Visibility: force_output no_reorder public
   References: 
   Referring: steadyState/115 (read) 
   Availability: not-ready
   Varpool flags: initialized
-sp/106 (sp) @0x79b3417d7800
+sp/106 (sp) @0x7697d53d7800
   Type: variable definition analyzed
   Visibility: force_output no_reorder public
   References: 
   Referring: steadyState/115 (read) 
   Availability: not-ready
   Varpool flags: initialized
-refresh_tick/105 (refresh_tick) @0x79b3417d7780
+refresh_tick/105 (refresh_tick) @0x7697d53d7780
   Type: variable definition analyzed
   Visibility: force_output no_reorder public
   References: 
   Referring: 
   Availability: not-ready
   Varpool flags: initialized
-led_pin/104 (led_pin) @0x79b3417d7700
+led_pin/104 (led_pin) @0x7697d53d7700
   Type: variable definition analyzed
   Visibility: force_output no_reorder
   References: 
   Referring: controllerInit/110 (write) writeLED/114 (read) 
   Availability: not-ready
   Varpool flags:
-cv_channel/103 (cv_channel) @0x79b3417d7680
+cv_channel/103 (cv_channel) @0x7697d53d7680
   Type: variable definition analyzed
   Visibility: force_output no_reorder
   References: 
   Referring: controllerInit/110 (write) controllerInit/110 (read) controllerInit/110 (read) writeControlVariable/113 (read) 
   Availability: not-ready
   Varpool flags:
-pv_channel/102 (pv_channel) @0x79b3417d7600
+pv_channel/102 (pv_channel) @0x7697d53d7600
   Type: variable definition analyzed
   Visibility: force_output no_reorder
   References: 
   Referring: controllerInit/110 (write) controllerInit/110 (read) readProcessVariable/112 (read) 
   Availability: not-ready
   Varpool flags:
-sp_channel/101 (sp_channel) @0x79b3417d7580
+sp_channel/101 (sp_channel) @0x7697d53d7580
   Type: variable definition analyzed
   Visibility: force_output no_reorder
   References: 
   Referring: controllerInit/110 (write) controllerInit/110 (read) readSetpoint/111 (read) 
   Availability: not-ready
   Varpool flags:
-ctrl_state/100 (ctrl_state) @0x79b3417d7500
+ctrl_state/100 (ctrl_state) @0x7697d53d7500
   Type: variable definition analyzed
   Visibility: force_output no_reorder
   References: 
   Referring: controllerInit/110 (write) controllerInit/110 (write) controllerInit/110 (write) controlSignalPID/116 (read) controlSignalPID/116 (read) controlSignalPID/116 (write) controlSignalPID/116 (read) controlSignalPID/116 (write) controlSignalPID/116 (read) controlSignalPID/116 (write) controlSignalPID/116 (read) controlSignalPID/116 (read) controlSignalPID/116 (write) 
   Availability: not-ready
   Varpool flags:
-GPIO_WritePins/97 (GPIO_WritePins) @0x79b3417d3000
+GPIO_WritePins/97 (GPIO_WritePins) @0x7697d53d3000
   Type: function definition analyzed
   Visibility: no_reorder
   References: 
@@ -1246,154 +1246,154 @@ GPIO_WritePins/97 (GPIO_WritePins) @0x79b3417d3000
   Function flags: body
   Called by: writeLED/114 writeLED/114 controllerInit/110 
   Calls: 
-GPIO_MODE_WIREDANDDRIVEPULLUPFILTER/96 (GPIO_MODE_WIREDANDDRIVEPULLUPFILTER) @0x79b3417d2200
+GPIO_MODE_WIREDANDDRIVEPULLUPFILTER/96 (GPIO_MODE_WIREDANDDRIVEPULLUPFILTER) @0x7697d53d2200
   Type: variable definition analyzed
   Visibility: force_output no_reorder
   References: 
   Referring: 
   Availability: not-ready
   Varpool flags: initialized read-only const-value-known
-GPIO_MODE_WIREDANDDRIVEPULLUP/95 (GPIO_MODE_WIREDANDDRIVEPULLUP) @0x79b3417d2180
+GPIO_MODE_WIREDANDDRIVEPULLUP/95 (GPIO_MODE_WIREDANDDRIVEPULLUP) @0x7697d53d2180
   Type: variable definition analyzed
   Visibility: force_output no_reorder
   References: 
   Referring: 
   Availability: not-ready
   Varpool flags: initialized read-only const-value-known
-GPIO_MODE_WIREDANDDRIVEFILTER/94 (GPIO_MODE_WIREDANDDRIVEFILTER) @0x79b3417d2100
+GPIO_MODE_WIREDANDDRIVEFILTER/94 (GPIO_MODE_WIREDANDDRIVEFILTER) @0x7697d53d2100
   Type: variable definition analyzed
   Visibility: force_output no_reorder
   References: 
   Referring: 
   Availability: not-ready
   Varpool flags: initialized read-only const-value-known
-GPIO_MODE_WIREDANDDRIVE/93 (GPIO_MODE_WIREDANDDRIVE) @0x79b3417d2080
+GPIO_MODE_WIREDANDDRIVE/93 (GPIO_MODE_WIREDANDDRIVE) @0x7697d53d2080
   Type: variable definition analyzed
   Visibility: force_output no_reorder
   References: 
   Referring: 
   Availability: not-ready
   Varpool flags: initialized read-only const-value-known
-GPIO_MODE_WIREDANDPULLUPFILTER/92 (GPIO_MODE_WIREDANDPULLUPFILTER) @0x79b3417d2000
+GPIO_MODE_WIREDANDPULLUPFILTER/92 (GPIO_MODE_WIREDANDPULLUPFILTER) @0x7697d53d2000
   Type: variable definition analyzed
   Visibility: force_output no_reorder
   References: 
   Referring: 
   Availability: not-ready
   Varpool flags: initialized read-only const-value-known
-GPIO_MODE_WIREDANDPULLUP/91 (GPIO_MODE_WIREDANDPULLUP) @0x79b341b67f80
+GPIO_MODE_WIREDANDPULLUP/91 (GPIO_MODE_WIREDANDPULLUP) @0x7697d5767f80
   Type: variable definition analyzed
   Visibility: force_output no_reorder
   References: 
   Referring: 
   Availability: not-ready
   Varpool flags: initialized read-only const-value-known
-GPIO_MODE_WIREDANDFILTER/90 (GPIO_MODE_WIREDANDFILTER) @0x79b341b67f00
+GPIO_MODE_WIREDANDFILTER/90 (GPIO_MODE_WIREDANDFILTER) @0x7697d5767f00
   Type: variable definition analyzed
   Visibility: force_output no_reorder
   References: 
   Referring: 
   Availability: not-ready
   Varpool flags: initialized read-only const-value-known
-GPIO_MODE_WIREDAND/89 (GPIO_MODE_WIREDAND) @0x79b341b67e80
+GPIO_MODE_WIREDAND/89 (GPIO_MODE_WIREDAND) @0x7697d5767e80
   Type: variable definition analyzed
   Visibility: force_output no_reorder
   References: 
   Referring: 
   Availability: not-ready
   Varpool flags: initialized read-only const-value-known
-GPIO_MODE_WIREDORPULLDOWN/88 (GPIO_MODE_WIREDORPULLDOWN) @0x79b341b67e00
+GPIO_MODE_WIREDORPULLDOWN/88 (GPIO_MODE_WIREDORPULLDOWN) @0x7697d5767e00
   Type: variable definition analyzed
   Visibility: force_output no_reorder
   References: 
   Referring: 
   Availability: not-ready
   Varpool flags: initialized read-only const-value-known
-GPIO_MODE_WIREDOR/87 (GPIO_MODE_WIREDOR) @0x79b341b67d80
+GPIO_MODE_WIREDOR/87 (GPIO_MODE_WIREDOR) @0x7697d5767d80
   Type: variable definition analyzed
   Visibility: force_output no_reorder
   References: 
   Referring: 
   Availability: not-ready
   Varpool flags: initialized read-only const-value-known
-GPIO_MODE_PUSHPULLDRIVE/86 (GPIO_MODE_PUSHPULLDRIVE) @0x79b341b67d00
+GPIO_MODE_PUSHPULLDRIVE/86 (GPIO_MODE_PUSHPULLDRIVE) @0x7697d5767d00
   Type: variable definition analyzed
   Visibility: force_output no_reorder
   References: 
   Referring: 
   Availability: not-ready
   Varpool flags: initialized read-only const-value-known
-GPIO_MODE_PUSHPULL/85 (GPIO_MODE_PUSHPULL) @0x79b341b67c80
+GPIO_MODE_PUSHPULL/85 (GPIO_MODE_PUSHPULL) @0x7697d5767c80
   Type: variable definition analyzed
   Visibility: force_output no_reorder
   References: 
   Referring: 
   Availability: not-ready
   Varpool flags: initialized read-only const-value-known
-GPIO_MODE_INPUTPULLFILTER/84 (GPIO_MODE_INPUTPULLFILTER) @0x79b341b67c00
+GPIO_MODE_INPUTPULLFILTER/84 (GPIO_MODE_INPUTPULLFILTER) @0x7697d5767c00
   Type: variable definition analyzed
   Visibility: force_output no_reorder
   References: 
   Referring: 
   Availability: not-ready
   Varpool flags: initialized read-only const-value-known
-GPIO_MODE_INPUTPULL/83 (GPIO_MODE_INPUTPULL) @0x79b341b67b80
+GPIO_MODE_INPUTPULL/83 (GPIO_MODE_INPUTPULL) @0x7697d5767b80
   Type: variable definition analyzed
   Visibility: force_output no_reorder
   References: 
   Referring: 
   Availability: not-ready
   Varpool flags: initialized read-only const-value-known
-GPIO_MODE_INPUT/82 (GPIO_MODE_INPUT) @0x79b341b67b00
+GPIO_MODE_INPUT/82 (GPIO_MODE_INPUT) @0x7697d5767b00
   Type: variable definition analyzed
   Visibility: force_output no_reorder
   References: 
   Referring: 
   Availability: not-ready
   Varpool flags: initialized read-only const-value-known
-GPIO_MODE_DISABLE/81 (GPIO_MODE_DISABLE) @0x79b341b67a80
+GPIO_MODE_DISABLE/81 (GPIO_MODE_DISABLE) @0x7697d5767a80
   Type: variable definition analyzed
   Visibility: force_output no_reorder
   References: 
   Referring: 
   Availability: not-ready
   Varpool flags: initialized read-only const-value-known
-GPIOF/80 (GPIOF) @0x79b341b67a00
+GPIOF/80 (GPIOF) @0x7697d5767a00
   Type: variable definition analyzed
   Visibility: force_output no_reorder
   References: 
   Referring: 
   Availability: not-ready
   Varpool flags: initialized read-only const-value-known
-GPIOE/79 (GPIOE) @0x79b341b67980
+GPIOE/79 (GPIOE) @0x7697d5767980
   Type: variable definition analyzed
   Visibility: force_output no_reorder
   References: 
   Referring: 
   Availability: not-ready
   Varpool flags: initialized read-only const-value-known
-GPIOD/78 (GPIOD) @0x79b341b67900
+GPIOD/78 (GPIOD) @0x7697d5767900
   Type: variable definition analyzed
   Visibility: force_output no_reorder
   References: 
   Referring: 
   Availability: not-ready
   Varpool flags: initialized read-only const-value-known
-GPIOC/77 (GPIOC) @0x79b341b67880
+GPIOC/77 (GPIOC) @0x7697d5767880
   Type: variable definition analyzed
   Visibility: force_output no_reorder
   References: 
   Referring: 
   Availability: not-ready
   Varpool flags: initialized read-only const-value-known
-GPIOB/76 (GPIOB) @0x79b341b67800
+GPIOB/76 (GPIOB) @0x7697d5767800
   Type: variable definition analyzed
   Visibility: force_output no_reorder
   References: 
   Referring: 
   Availability: not-ready
   Varpool flags: initialized read-only const-value-known
-GPIOA/75 (GPIOA) @0x79b341b67780
+GPIOA/75 (GPIOA) @0x7697d5767780
   Type: variable definition analyzed
   Visibility: force_output no_reorder
   References: 
@@ -1404,21 +1404,21 @@ GPIOA/75 (GPIOA) @0x79b341b67780
 
 Initial Symbol table:
 
-STEADY_COUNT_REQUIRED.0/126 (STEADY_COUNT_REQUIRED) @0x79b3417e5a00
+STEADY_COUNT_REQUIRED.0/126 (STEADY_COUNT_REQUIRED) @0x7697d53e5a00
   Type: variable definition analyzed
   Visibility: force_output no_reorder
   References: 
   Referring: steadyState/115 (read) 
   Availability: not-ready
   Varpool flags: initialized read-only const-value-known
-steady_counter.1/125 (steady_counter) @0x79b3417e5900
+steady_counter.1/125 (steady_counter) @0x7697d53e5900
   Type: variable definition analyzed
   Visibility: force_output no_reorder
   References: 
   Referring: steadyState/115 (read) steadyState/115 (write) steadyState/115 (read) steadyState/115 (write) 
   Availability: not-ready
   Varpool flags: initialized
-ADC_Read/124 (ADC_Read) @0x79b3417ed870
+ADC_Read/124 (ADC_Read) @0x7697d53ed870
   Type: function
   Visibility: external public
   References: 
@@ -1426,7 +1426,7 @@ ADC_Read/124 (ADC_Read) @0x79b3417ed870
   Function flags:
   Called by: readProcessVariable/112 readSetpoint/111 
   Calls: 
-PWM_Start/123 (PWM_Start) @0x79b3417ed708
+PWM_Start/123 (PWM_Start) @0x7697d53ed708
   Type: function
   Visibility: external public
   References: 
@@ -1434,7 +1434,7 @@ PWM_Start/123 (PWM_Start) @0x79b3417ed708
   Function flags:
   Called by: controllerInit/110 
   Calls: 
-PWM_Write/122 (PWM_Write) @0x79b3417ed5a0
+PWM_Write/122 (PWM_Write) @0x7697d53ed5a0
   Type: function
   Visibility: external public
   References: 
@@ -1442,7 +1442,7 @@ PWM_Write/122 (PWM_Write) @0x79b3417ed5a0
   Function flags:
   Called by: writeControlVariable/113 controllerInit/110 
   Calls: 
-PWM_Init/121 (PWM_Init) @0x79b3417ed438
+PWM_Init/121 (PWM_Init) @0x7697d53ed438
   Type: function
   Visibility: external public
   References: 
@@ -1450,7 +1450,7 @@ PWM_Init/121 (PWM_Init) @0x79b3417ed438
   Function flags:
   Called by: controllerInit/110 
   Calls: 
-ADC_ConfigChannel/120 (ADC_ConfigChannel) @0x79b3417ed168
+ADC_ConfigChannel/120 (ADC_ConfigChannel) @0x7697d53ed168
   Type: function
   Visibility: external public
   References: 
@@ -1458,7 +1458,7 @@ ADC_ConfigChannel/120 (ADC_ConfigChannel) @0x79b3417ed168
   Function flags:
   Called by: controllerInit/110 controllerInit/110 
   Calls: 
-ADC_Init/119 (ADC_Init) @0x79b3417ed000
+ADC_Init/119 (ADC_Init) @0x7697d53ed000
   Type: function
   Visibility: external public
   References: 
@@ -1466,7 +1466,7 @@ ADC_Init/119 (ADC_Init) @0x79b3417ed000
   Function flags:
   Called by: controllerInit/110 
   Calls: 
-GPIO_Init/118 (GPIO_Init) @0x79b3417dee10
+GPIO_Init/118 (GPIO_Init) @0x7697d53dee10
   Type: function
   Visibility: external public
   References: 
@@ -1474,7 +1474,7 @@ GPIO_Init/118 (GPIO_Init) @0x79b3417dee10
   Function flags:
   Called by: controllerInit/110 
   Calls: 
-clamper/117 (clamper) @0x79b3417deca8
+clamper/117 (clamper) @0x7697d53deca8
   Type: function definition analyzed
   Visibility: force_output no_reorder
   References: 
@@ -1482,7 +1482,7 @@ clamper/117 (clamper) @0x79b3417deca8
   Function flags: body
   Called by: controlSignalPID/116 controlSignalPID/116 writeControlVariable/113 
   Calls: 
-controlSignalPID/116 (controlSignalPID) @0x79b3417deb40
+controlSignalPID/116 (controlSignalPID) @0x7697d53deb40
   Type: function definition analyzed
   Visibility: force_output no_reorder public
   References: ctrl_state/100 (read) ctrl_state/100 (read) ctrl_state/100 (write) ctrl_state/100 (read) ctrl_state/100 (write) ctrl_state/100 (read) ctrl_state/100 (write) ctrl_state/100 (read) ctrl_state/100 (read) ctrl_state/100 (write) 
@@ -1490,7 +1490,7 @@ controlSignalPID/116 (controlSignalPID) @0x79b3417deb40
   Function flags: body
   Called by: 
   Calls: clamper/117 clamper/117 
-steadyState/115 (steadyState) @0x79b3417de9d8
+steadyState/115 (steadyState) @0x7697d53de9d8
   Type: function definition analyzed
   Visibility: force_output no_reorder public
   References: sp/106 (read) pv/107 (read) steady_counter.1/125 (read) steady_counter.1/125 (write) steady_counter.1/125 (read) STEADY_COUNT_REQUIRED.0/126 (read) steady_counter.1/125 (write) 
@@ -1498,7 +1498,7 @@ steadyState/115 (steadyState) @0x79b3417de9d8
   Function flags: body
   Called by: 
   Calls: 
-writeLED/114 (writeLED) @0x79b3417de870
+writeLED/114 (writeLED) @0x7697d53de870
   Type: function definition analyzed
   Visibility: force_output no_reorder public
   References: led_pin/104 (read) 
@@ -1506,7 +1506,7 @@ writeLED/114 (writeLED) @0x79b3417de870
   Function flags: body
   Called by: 
   Calls: GPIO_WritePins/97 GPIO_WritePins/97 
-writeControlVariable/113 (writeControlVariable) @0x79b3417de708
+writeControlVariable/113 (writeControlVariable) @0x7697d53de708
   Type: function definition analyzed
   Visibility: force_output no_reorder public
   References: cv_channel/103 (read) 
@@ -1514,7 +1514,7 @@ writeControlVariable/113 (writeControlVariable) @0x79b3417de708
   Function flags: body
   Called by: 
   Calls: PWM_Write/122 clamper/117 
-readProcessVariable/112 (readProcessVariable) @0x79b3417de5a0
+readProcessVariable/112 (readProcessVariable) @0x7697d53de5a0
   Type: function definition analyzed
   Visibility: force_output no_reorder public
   References: pv_channel/102 (read) 
@@ -1522,7 +1522,7 @@ readProcessVariable/112 (readProcessVariable) @0x79b3417de5a0
   Function flags: body
   Called by: 
   Calls: ADC_Read/124 
-readSetpoint/111 (readSetpoint) @0x79b3417de438
+readSetpoint/111 (readSetpoint) @0x7697d53de438
   Type: function definition analyzed
   Visibility: force_output no_reorder public
   References: sp_channel/101 (read) 
@@ -1530,7 +1530,7 @@ readSetpoint/111 (readSetpoint) @0x79b3417de438
   Function flags: body
   Called by: 
   Calls: ADC_Read/124 
-controllerInit/110 (controllerInit) @0x79b3417de2d0
+controllerInit/110 (controllerInit) @0x7697d53de2d0
   Type: function definition analyzed
   Visibility: force_output no_reorder public
   References: sp_channel/101 (write) pv_channel/102 (write) cv_channel/103 (write) led_pin/104 (write) sp_channel/101 (read) pv_channel/102 (read) cv_channel/103 (read) cv_channel/103 (read) ctrl_state/100 (write) ctrl_state/100 (write) ctrl_state/100 (write) 
@@ -1538,77 +1538,77 @@ controllerInit/110 (controllerInit) @0x79b3417de2d0
   Function flags: body
   Called by: 
   Calls: PWM_Start/123 PWM_Write/122 PWM_Init/121 ADC_ConfigChannel/120 ADC_ConfigChannel/120 ADC_Init/119 GPIO_WritePins/97 GPIO_Init/118 
-gain/109 (gain) @0x79b3417d7980
+gain/109 (gain) @0x7697d53d7980
   Type: variable definition analyzed
   Visibility: force_output no_reorder public
   References: 
   Referring: 
   Availability: not-ready
   Varpool flags: initialized
-cv/108 (cv) @0x79b3417d7900
+cv/108 (cv) @0x7697d53d7900
   Type: variable definition analyzed
   Visibility: force_output no_reorder public
   References: 
   Referring: 
   Availability: not-ready
   Varpool flags: initialized
-pv/107 (pv) @0x79b3417d7880
+pv/107 (pv) @0x7697d53d7880
   Type: variable definition analyzed
   Visibility: force_output no_reorder public
   References: 
   Referring: steadyState/115 (read) 
   Availability: not-ready
   Varpool flags: initialized
-sp/106 (sp) @0x79b3417d7800
+sp/106 (sp) @0x7697d53d7800
   Type: variable definition analyzed
   Visibility: force_output no_reorder public
   References: 
   Referring: steadyState/115 (read) 
   Availability: not-ready
   Varpool flags: initialized
-refresh_tick/105 (refresh_tick) @0x79b3417d7780
+refresh_tick/105 (refresh_tick) @0x7697d53d7780
   Type: variable definition analyzed
   Visibility: force_output no_reorder public
   References: 
   Referring: 
   Availability: not-ready
   Varpool flags: initialized
-led_pin/104 (led_pin) @0x79b3417d7700
+led_pin/104 (led_pin) @0x7697d53d7700
   Type: variable definition analyzed
   Visibility: force_output no_reorder
   References: 
   Referring: controllerInit/110 (write) writeLED/114 (read) 
   Availability: not-ready
   Varpool flags:
-cv_channel/103 (cv_channel) @0x79b3417d7680
+cv_channel/103 (cv_channel) @0x7697d53d7680
   Type: variable definition analyzed
   Visibility: force_output no_reorder
   References: 
   Referring: controllerInit/110 (write) controllerInit/110 (read) controllerInit/110 (read) writeControlVariable/113 (read) 
   Availability: not-ready
   Varpool flags:
-pv_channel/102 (pv_channel) @0x79b3417d7600
+pv_channel/102 (pv_channel) @0x7697d53d7600
   Type: variable definition analyzed
   Visibility: force_output no_reorder
   References: 
   Referring: controllerInit/110 (write) controllerInit/110 (read) readProcessVariable/112 (read) 
   Availability: not-ready
   Varpool flags:
-sp_channel/101 (sp_channel) @0x79b3417d7580
+sp_channel/101 (sp_channel) @0x7697d53d7580
   Type: variable definition analyzed
   Visibility: force_output no_reorder
   References: 
   Referring: controllerInit/110 (write) controllerInit/110 (read) readSetpoint/111 (read) 
   Availability: not-ready
   Varpool flags:
-ctrl_state/100 (ctrl_state) @0x79b3417d7500
+ctrl_state/100 (ctrl_state) @0x7697d53d7500
   Type: variable definition analyzed
   Visibility: force_output no_reorder
   References: 
   Referring: controllerInit/110 (write) controllerInit/110 (write) controllerInit/110 (write) controlSignalPID/116 (read) controlSignalPID/116 (read) controlSignalPID/116 (write) controlSignalPID/116 (read) controlSignalPID/116 (write) controlSignalPID/116 (read) controlSignalPID/116 (write) controlSignalPID/116 (read) controlSignalPID/116 (read) controlSignalPID/116 (write) 
   Availability: not-ready
   Varpool flags:
-GPIO_WritePins/97 (GPIO_WritePins) @0x79b3417d3000
+GPIO_WritePins/97 (GPIO_WritePins) @0x7697d53d3000
   Type: function definition analyzed
   Visibility: no_reorder
   References: 
@@ -1616,154 +1616,154 @@ GPIO_WritePins/97 (GPIO_WritePins) @0x79b3417d3000
   Function flags: body
   Called by: writeLED/114 writeLED/114 controllerInit/110 
   Calls: 
-GPIO_MODE_WIREDANDDRIVEPULLUPFILTER/96 (GPIO_MODE_WIREDANDDRIVEPULLUPFILTER) @0x79b3417d2200
+GPIO_MODE_WIREDANDDRIVEPULLUPFILTER/96 (GPIO_MODE_WIREDANDDRIVEPULLUPFILTER) @0x7697d53d2200
   Type: variable definition analyzed
   Visibility: force_output no_reorder
   References: 
   Referring: 
   Availability: not-ready
   Varpool flags: initialized read-only const-value-known
-GPIO_MODE_WIREDANDDRIVEPULLUP/95 (GPIO_MODE_WIREDANDDRIVEPULLUP) @0x79b3417d2180
+GPIO_MODE_WIREDANDDRIVEPULLUP/95 (GPIO_MODE_WIREDANDDRIVEPULLUP) @0x7697d53d2180
   Type: variable definition analyzed
   Visibility: force_output no_reorder
   References: 
   Referring: 
   Availability: not-ready
   Varpool flags: initialized read-only const-value-known
-GPIO_MODE_WIREDANDDRIVEFILTER/94 (GPIO_MODE_WIREDANDDRIVEFILTER) @0x79b3417d2100
+GPIO_MODE_WIREDANDDRIVEFILTER/94 (GPIO_MODE_WIREDANDDRIVEFILTER) @0x7697d53d2100
   Type: variable definition analyzed
   Visibility: force_output no_reorder
   References: 
   Referring: 
   Availability: not-ready
   Varpool flags: initialized read-only const-value-known
-GPIO_MODE_WIREDANDDRIVE/93 (GPIO_MODE_WIREDANDDRIVE) @0x79b3417d2080
+GPIO_MODE_WIREDANDDRIVE/93 (GPIO_MODE_WIREDANDDRIVE) @0x7697d53d2080
   Type: variable definition analyzed
   Visibility: force_output no_reorder
   References: 
   Referring: 
   Availability: not-ready
   Varpool flags: initialized read-only const-value-known
-GPIO_MODE_WIREDANDPULLUPFILTER/92 (GPIO_MODE_WIREDANDPULLUPFILTER) @0x79b3417d2000
+GPIO_MODE_WIREDANDPULLUPFILTER/92 (GPIO_MODE_WIREDANDPULLUPFILTER) @0x7697d53d2000
   Type: variable definition analyzed
   Visibility: force_output no_reorder
   References: 
   Referring: 
   Availability: not-ready
   Varpool flags: initialized read-only const-value-known
-GPIO_MODE_WIREDANDPULLUP/91 (GPIO_MODE_WIREDANDPULLUP) @0x79b341b67f80
+GPIO_MODE_WIREDANDPULLUP/91 (GPIO_MODE_WIREDANDPULLUP) @0x7697d5767f80
   Type: variable definition analyzed
   Visibility: force_output no_reorder
   References: 
   Referring: 
   Availability: not-ready
   Varpool flags: initialized read-only const-value-known
-GPIO_MODE_WIREDANDFILTER/90 (GPIO_MODE_WIREDANDFILTER) @0x79b341b67f00
+GPIO_MODE_WIREDANDFILTER/90 (GPIO_MODE_WIREDANDFILTER) @0x7697d5767f00
   Type: variable definition analyzed
   Visibility: force_output no_reorder
   References: 
   Referring: 
   Availability: not-ready
   Varpool flags: initialized read-only const-value-known
-GPIO_MODE_WIREDAND/89 (GPIO_MODE_WIREDAND) @0x79b341b67e80
+GPIO_MODE_WIREDAND/89 (GPIO_MODE_WIREDAND) @0x7697d5767e80
   Type: variable definition analyzed
   Visibility: force_output no_reorder
   References: 
   Referring: 
   Availability: not-ready
   Varpool flags: initialized read-only const-value-known
-GPIO_MODE_WIREDORPULLDOWN/88 (GPIO_MODE_WIREDORPULLDOWN) @0x79b341b67e00
+GPIO_MODE_WIREDORPULLDOWN/88 (GPIO_MODE_WIREDORPULLDOWN) @0x7697d5767e00
   Type: variable definition analyzed
   Visibility: force_output no_reorder
   References: 
   Referring: 
   Availability: not-ready
   Varpool flags: initialized read-only const-value-known
-GPIO_MODE_WIREDOR/87 (GPIO_MODE_WIREDOR) @0x79b341b67d80
+GPIO_MODE_WIREDOR/87 (GPIO_MODE_WIREDOR) @0x7697d5767d80
   Type: variable definition analyzed
   Visibility: force_output no_reorder
   References: 
   Referring: 
   Availability: not-ready
   Varpool flags: initialized read-only const-value-known
-GPIO_MODE_PUSHPULLDRIVE/86 (GPIO_MODE_PUSHPULLDRIVE) @0x79b341b67d00
+GPIO_MODE_PUSHPULLDRIVE/86 (GPIO_MODE_PUSHPULLDRIVE) @0x7697d5767d00
   Type: variable definition analyzed
   Visibility: force_output no_reorder
   References: 
   Referring: 
   Availability: not-ready
   Varpool flags: initialized read-only const-value-known
-GPIO_MODE_PUSHPULL/85 (GPIO_MODE_PUSHPULL) @0x79b341b67c80
+GPIO_MODE_PUSHPULL/85 (GPIO_MODE_PUSHPULL) @0x7697d5767c80
   Type: variable definition analyzed
   Visibility: force_output no_reorder
   References: 
   Referring: 
   Availability: not-ready
   Varpool flags: initialized read-only const-value-known
-GPIO_MODE_INPUTPULLFILTER/84 (GPIO_MODE_INPUTPULLFILTER) @0x79b341b67c00
+GPIO_MODE_INPUTPULLFILTER/84 (GPIO_MODE_INPUTPULLFILTER) @0x7697d5767c00
   Type: variable definition analyzed
   Visibility: force_output no_reorder
   References: 
   Referring: 
   Availability: not-ready
   Varpool flags: initialized read-only const-value-known
-GPIO_MODE_INPUTPULL/83 (GPIO_MODE_INPUTPULL) @0x79b341b67b80
+GPIO_MODE_INPUTPULL/83 (GPIO_MODE_INPUTPULL) @0x7697d5767b80
   Type: variable definition analyzed
   Visibility: force_output no_reorder
   References: 
   Referring: 
   Availability: not-ready
   Varpool flags: initialized read-only const-value-known
-GPIO_MODE_INPUT/82 (GPIO_MODE_INPUT) @0x79b341b67b00
+GPIO_MODE_INPUT/82 (GPIO_MODE_INPUT) @0x7697d5767b00
   Type: variable definition analyzed
   Visibility: force_output no_reorder
   References: 
   Referring: 
   Availability: not-ready
   Varpool flags: initialized read-only const-value-known
-GPIO_MODE_DISABLE/81 (GPIO_MODE_DISABLE) @0x79b341b67a80
+GPIO_MODE_DISABLE/81 (GPIO_MODE_DISABLE) @0x7697d5767a80
   Type: variable definition analyzed
   Visibility: force_output no_reorder
   References: 
   Referring: 
   Availability: not-ready
   Varpool flags: initialized read-only const-value-known
-GPIOF/80 (GPIOF) @0x79b341b67a00
+GPIOF/80 (GPIOF) @0x7697d5767a00
   Type: variable definition analyzed
   Visibility: force_output no_reorder
   References: 
   Referring: 
   Availability: not-ready
   Varpool flags: initialized read-only const-value-known
-GPIOE/79 (GPIOE) @0x79b341b67980
+GPIOE/79 (GPIOE) @0x7697d5767980
   Type: variable definition analyzed
   Visibility: force_output no_reorder
   References: 
   Referring: 
   Availability: not-ready
   Varpool flags: initialized read-only const-value-known
-GPIOD/78 (GPIOD) @0x79b341b67900
+GPIOD/78 (GPIOD) @0x7697d5767900
   Type: variable definition analyzed
   Visibility: force_output no_reorder
   References: 
   Referring: 
   Availability: not-ready
   Varpool flags: initialized read-only const-value-known
-GPIOC/77 (GPIOC) @0x79b341b67880
+GPIOC/77 (GPIOC) @0x7697d5767880
   Type: variable definition analyzed
   Visibility: force_output no_reorder
   References: 
   Referring: 
   Availability: not-ready
   Varpool flags: initialized read-only const-value-known
-GPIOB/76 (GPIOB) @0x79b341b67800
+GPIOB/76 (GPIOB) @0x7697d5767800
   Type: variable definition analyzed
   Visibility: force_output no_reorder
   References: 
   Referring: 
   Availability: not-ready
   Varpool flags: initialized read-only const-value-known
-GPIOA/75 (GPIOA) @0x79b341b67780
+GPIOA/75 (GPIOA) @0x7697d5767780
   Type: variable definition analyzed
   Visibility: force_output no_reorder
   References: 
@@ -1775,21 +1775,21 @@ Removing unused symbols:
 
 Reclaimed Symbol table:
 
-STEADY_COUNT_REQUIRED.0/126 (STEADY_COUNT_REQUIRED) @0x79b3417e5a00
+STEADY_COUNT_REQUIRED.0/126 (STEADY_COUNT_REQUIRED) @0x7697d53e5a00
   Type: variable definition analyzed
   Visibility: force_output no_reorder
   References: 
   Referring: steadyState/115 (read) 
   Availability: not-ready
   Varpool flags: initialized read-only const-value-known
-steady_counter.1/125 (steady_counter) @0x79b3417e5900
+steady_counter.1/125 (steady_counter) @0x7697d53e5900
   Type: variable definition analyzed
   Visibility: force_output no_reorder
   References: 
   Referring: steadyState/115 (read) steadyState/115 (write) steadyState/115 (read) steadyState/115 (write) 
   Availability: not-ready
   Varpool flags: initialized
-ADC_Read/124 (ADC_Read) @0x79b3417ed870
+ADC_Read/124 (ADC_Read) @0x7697d53ed870
   Type: function
   Visibility: external public
   References: 
@@ -1797,7 +1797,7 @@ ADC_Read/124 (ADC_Read) @0x79b3417ed870
   Function flags:
   Called by: readProcessVariable/112 readSetpoint/111 
   Calls: 
-PWM_Start/123 (PWM_Start) @0x79b3417ed708
+PWM_Start/123 (PWM_Start) @0x7697d53ed708
   Type: function
   Visibility: external public
   References: 
@@ -1805,7 +1805,7 @@ PWM_Start/123 (PWM_Start) @0x79b3417ed708
   Function flags:
   Called by: controllerInit/110 
   Calls: 
-PWM_Write/122 (PWM_Write) @0x79b3417ed5a0
+PWM_Write/122 (PWM_Write) @0x7697d53ed5a0
   Type: function
   Visibility: external public
   References: 
@@ -1813,7 +1813,7 @@ PWM_Write/122 (PWM_Write) @0x79b3417ed5a0
   Function flags:
   Called by: writeControlVariable/113 controllerInit/110 
   Calls: 
-PWM_Init/121 (PWM_Init) @0x79b3417ed438
+PWM_Init/121 (PWM_Init) @0x7697d53ed438
   Type: function
   Visibility: external public
   References: 
@@ -1821,7 +1821,7 @@ PWM_Init/121 (PWM_Init) @0x79b3417ed438
   Function flags:
   Called by: controllerInit/110 
   Calls: 
-ADC_ConfigChannel/120 (ADC_ConfigChannel) @0x79b3417ed168
+ADC_ConfigChannel/120 (ADC_ConfigChannel) @0x7697d53ed168
   Type: function
   Visibility: external public
   References: 
@@ -1829,7 +1829,7 @@ ADC_ConfigChannel/120 (ADC_ConfigChannel) @0x79b3417ed168
   Function flags:
   Called by: controllerInit/110 controllerInit/110 
   Calls: 
-ADC_Init/119 (ADC_Init) @0x79b3417ed000
+ADC_Init/119 (ADC_Init) @0x7697d53ed000
   Type: function
   Visibility: external public
   References: 
@@ -1837,7 +1837,7 @@ ADC_Init/119 (ADC_Init) @0x79b3417ed000
   Function flags:
   Called by: controllerInit/110 
   Calls: 
-GPIO_Init/118 (GPIO_Init) @0x79b3417dee10
+GPIO_Init/118 (GPIO_Init) @0x7697d53dee10
   Type: function
   Visibility: external public
   References: 
@@ -1845,7 +1845,7 @@ GPIO_Init/118 (GPIO_Init) @0x79b3417dee10
   Function flags:
   Called by: controllerInit/110 
   Calls: 
-clamper/117 (clamper) @0x79b3417deca8
+clamper/117 (clamper) @0x7697d53deca8
   Type: function definition analyzed
   Visibility: force_output no_reorder
   References: 
@@ -1853,7 +1853,7 @@ clamper/117 (clamper) @0x79b3417deca8
   Function flags: body
   Called by: controlSignalPID/116 controlSignalPID/116 writeControlVariable/113 
   Calls: 
-controlSignalPID/116 (controlSignalPID) @0x79b3417deb40
+controlSignalPID/116 (controlSignalPID) @0x7697d53deb40
   Type: function definition analyzed
   Visibility: force_output no_reorder public
   References: ctrl_state/100 (read) ctrl_state/100 (read) ctrl_state/100 (write) ctrl_state/100 (read) ctrl_state/100 (write) ctrl_state/100 (read) ctrl_state/100 (write) ctrl_state/100 (read) ctrl_state/100 (read) ctrl_state/100 (write) 
@@ -1861,7 +1861,7 @@ controlSignalPID/116 (controlSignalPID) @0x79b3417deb40
   Function flags: body
   Called by: 
   Calls: clamper/117 clamper/117 
-steadyState/115 (steadyState) @0x79b3417de9d8
+steadyState/115 (steadyState) @0x7697d53de9d8
   Type: function definition analyzed
   Visibility: force_output no_reorder public
   References: sp/106 (read) pv/107 (read) steady_counter.1/125 (read) steady_counter.1/125 (write) steady_counter.1/125 (read) STEADY_COUNT_REQUIRED.0/126 (read) steady_counter.1/125 (write) 
@@ -1869,7 +1869,7 @@ steadyState/115 (steadyState) @0x79b3417de9d8
   Function flags: body
   Called by: 
   Calls: 
-writeLED/114 (writeLED) @0x79b3417de870
+writeLED/114 (writeLED) @0x7697d53de870
   Type: function definition analyzed
   Visibility: force_output no_reorder public
   References: led_pin/104 (read) 
@@ -1877,7 +1877,7 @@ writeLED/114 (writeLED) @0x79b3417de870
   Function flags: body
   Called by: 
   Calls: GPIO_WritePins/97 GPIO_WritePins/97 
-writeControlVariable/113 (writeControlVariable) @0x79b3417de708
+writeControlVariable/113 (writeControlVariable) @0x7697d53de708
   Type: function definition analyzed
   Visibility: force_output no_reorder public
   References: cv_channel/103 (read) 
@@ -1885,7 +1885,7 @@ writeControlVariable/113 (writeControlVariable) @0x79b3417de708
   Function flags: body
   Called by: 
   Calls: PWM_Write/122 clamper/117 
-readProcessVariable/112 (readProcessVariable) @0x79b3417de5a0
+readProcessVariable/112 (readProcessVariable) @0x7697d53de5a0
   Type: function definition analyzed
   Visibility: force_output no_reorder public
   References: pv_channel/102 (read) 
@@ -1893,7 +1893,7 @@ readProcessVariable/112 (readProcessVariable) @0x79b3417de5a0
   Function flags: body
   Called by: 
   Calls: ADC_Read/124 
-readSetpoint/111 (readSetpoint) @0x79b3417de438
+readSetpoint/111 (readSetpoint) @0x7697d53de438
   Type: function definition analyzed
   Visibility: force_output no_reorder public
   References: sp_channel/101 (read) 
@@ -1901,7 +1901,7 @@ readSetpoint/111 (readSetpoint) @0x79b3417de438
   Function flags: body
   Called by: 
   Calls: ADC_Read/124 
-controllerInit/110 (controllerInit) @0x79b3417de2d0
+controllerInit/110 (controllerInit) @0x7697d53de2d0
   Type: function definition analyzed
   Visibility: force_output no_reorder public
   References: sp_channel/101 (write) pv_channel/102 (write) cv_channel/103 (write) led_pin/104 (write) sp_channel/101 (read) pv_channel/102 (read) cv_channel/103 (read) cv_channel/103 (read) ctrl_state/100 (write) ctrl_state/100 (write) ctrl_state/100 (write) 
@@ -1909,77 +1909,77 @@ controllerInit/110 (controllerInit) @0x79b3417de2d0
   Function flags: body
   Called by: 
   Calls: PWM_Start/123 PWM_Write/122 PWM_Init/121 ADC_ConfigChannel/120 ADC_ConfigChannel/120 ADC_Init/119 GPIO_WritePins/97 GPIO_Init/118 
-gain/109 (gain) @0x79b3417d7980
+gain/109 (gain) @0x7697d53d7980
   Type: variable definition analyzed
   Visibility: force_output no_reorder public
   References: 
   Referring: 
   Availability: not-ready
   Varpool flags: initialized
-cv/108 (cv) @0x79b3417d7900
+cv/108 (cv) @0x7697d53d7900
   Type: variable definition analyzed
   Visibility: force_output no_reorder public
   References: 
   Referring: 
   Availability: not-ready
   Varpool flags: initialized
-pv/107 (pv) @0x79b3417d7880
+pv/107 (pv) @0x7697d53d7880
   Type: variable definition analyzed
   Visibility: force_output no_reorder public
   References: 
   Referring: steadyState/115 (read) 
   Availability: not-ready
   Varpool flags: initialized
-sp/106 (sp) @0x79b3417d7800
+sp/106 (sp) @0x7697d53d7800
   Type: variable definition analyzed
   Visibility: force_output no_reorder public
   References: 
   Referring: steadyState/115 (read) 
   Availability: not-ready
   Varpool flags: initialized
-refresh_tick/105 (refresh_tick) @0x79b3417d7780
+refresh_tick/105 (refresh_tick) @0x7697d53d7780
   Type: variable definition analyzed
   Visibility: force_output no_reorder public
   References: 
   Referring: 
   Availability: not-ready
   Varpool flags: initialized
-led_pin/104 (led_pin) @0x79b3417d7700
+led_pin/104 (led_pin) @0x7697d53d7700
   Type: variable definition analyzed
   Visibility: force_output no_reorder
   References: 
   Referring: controllerInit/110 (write) writeLED/114 (read) 
   Availability: not-ready
   Varpool flags:
-cv_channel/103 (cv_channel) @0x79b3417d7680
+cv_channel/103 (cv_channel) @0x7697d53d7680
   Type: variable definition analyzed
   Visibility: force_output no_reorder
   References: 
   Referring: controllerInit/110 (write) controllerInit/110 (read) controllerInit/110 (read) writeControlVariable/113 (read) 
   Availability: not-ready
   Varpool flags:
-pv_channel/102 (pv_channel) @0x79b3417d7600
+pv_channel/102 (pv_channel) @0x7697d53d7600
   Type: variable definition analyzed
   Visibility: force_output no_reorder
   References: 
   Referring: controllerInit/110 (write) controllerInit/110 (read) readProcessVariable/112 (read) 
   Availability: not-ready
   Varpool flags:
-sp_channel/101 (sp_channel) @0x79b3417d7580
+sp_channel/101 (sp_channel) @0x7697d53d7580
   Type: variable definition analyzed
   Visibility: force_output no_reorder
   References: 
   Referring: controllerInit/110 (write) controllerInit/110 (read) readSetpoint/111 (read) 
   Availability: not-ready
   Varpool flags:
-ctrl_state/100 (ctrl_state) @0x79b3417d7500
+ctrl_state/100 (ctrl_state) @0x7697d53d7500
   Type: variable definition analyzed
   Visibility: force_output no_reorder
   References: 
   Referring: controllerInit/110 (write) controllerInit/110 (write) controllerInit/110 (write) controlSignalPID/116 (read) controlSignalPID/116 (read) controlSignalPID/116 (write) controlSignalPID/116 (read) controlSignalPID/116 (write) controlSignalPID/116 (read) controlSignalPID/116 (write) controlSignalPID/116 (read) controlSignalPID/116 (read) controlSignalPID/116 (write) 
   Availability: not-ready
   Varpool flags:
-GPIO_WritePins/97 (GPIO_WritePins) @0x79b3417d3000
+GPIO_WritePins/97 (GPIO_WritePins) @0x7697d53d3000
   Type: function definition analyzed
   Visibility: no_reorder
   References: 
@@ -1987,154 +1987,154 @@ GPIO_WritePins/97 (GPIO_WritePins) @0x79b3417d3000
   Function flags: body
   Called by: writeLED/114 writeLED/114 controllerInit/110 
   Calls: 
-GPIO_MODE_WIREDANDDRIVEPULLUPFILTER/96 (GPIO_MODE_WIREDANDDRIVEPULLUPFILTER) @0x79b3417d2200
+GPIO_MODE_WIREDANDDRIVEPULLUPFILTER/96 (GPIO_MODE_WIREDANDDRIVEPULLUPFILTER) @0x7697d53d2200
   Type: variable definition analyzed
   Visibility: force_output no_reorder
   References: 
   Referring: 
   Availability: not-ready
   Varpool flags: initialized read-only const-value-known
-GPIO_MODE_WIREDANDDRIVEPULLUP/95 (GPIO_MODE_WIREDANDDRIVEPULLUP) @0x79b3417d2180
+GPIO_MODE_WIREDANDDRIVEPULLUP/95 (GPIO_MODE_WIREDANDDRIVEPULLUP) @0x7697d53d2180
   Type: variable definition analyzed
   Visibility: force_output no_reorder
   References: 
   Referring: 
   Availability: not-ready
   Varpool flags: initialized read-only const-value-known
-GPIO_MODE_WIREDANDDRIVEFILTER/94 (GPIO_MODE_WIREDANDDRIVEFILTER) @0x79b3417d2100
+GPIO_MODE_WIREDANDDRIVEFILTER/94 (GPIO_MODE_WIREDANDDRIVEFILTER) @0x7697d53d2100
   Type: variable definition analyzed
   Visibility: force_output no_reorder
   References: 
   Referring: 
   Availability: not-ready
   Varpool flags: initialized read-only const-value-known
-GPIO_MODE_WIREDANDDRIVE/93 (GPIO_MODE_WIREDANDDRIVE) @0x79b3417d2080
+GPIO_MODE_WIREDANDDRIVE/93 (GPIO_MODE_WIREDANDDRIVE) @0x7697d53d2080
   Type: variable definition analyzed
   Visibility: force_output no_reorder
   References: 
   Referring: 
   Availability: not-ready
   Varpool flags: initialized read-only const-value-known
-GPIO_MODE_WIREDANDPULLUPFILTER/92 (GPIO_MODE_WIREDANDPULLUPFILTER) @0x79b3417d2000
+GPIO_MODE_WIREDANDPULLUPFILTER/92 (GPIO_MODE_WIREDANDPULLUPFILTER) @0x7697d53d2000
   Type: variable definition analyzed
   Visibility: force_output no_reorder
   References: 
   Referring: 
   Availability: not-ready
   Varpool flags: initialized read-only const-value-known
-GPIO_MODE_WIREDANDPULLUP/91 (GPIO_MODE_WIREDANDPULLUP) @0x79b341b67f80
+GPIO_MODE_WIREDANDPULLUP/91 (GPIO_MODE_WIREDANDPULLUP) @0x7697d5767f80
   Type: variable definition analyzed
   Visibility: force_output no_reorder
   References: 
   Referring: 
   Availability: not-ready
   Varpool flags: initialized read-only const-value-known
-GPIO_MODE_WIREDANDFILTER/90 (GPIO_MODE_WIREDANDFILTER) @0x79b341b67f00
+GPIO_MODE_WIREDANDFILTER/90 (GPIO_MODE_WIREDANDFILTER) @0x7697d5767f00
   Type: variable definition analyzed
   Visibility: force_output no_reorder
   References: 
   Referring: 
   Availability: not-ready
   Varpool flags: initialized read-only const-value-known
-GPIO_MODE_WIREDAND/89 (GPIO_MODE_WIREDAND) @0x79b341b67e80
+GPIO_MODE_WIREDAND/89 (GPIO_MODE_WIREDAND) @0x7697d5767e80
   Type: variable definition analyzed
   Visibility: force_output no_reorder
   References: 
   Referring: 
   Availability: not-ready
   Varpool flags: initialized read-only const-value-known
-GPIO_MODE_WIREDORPULLDOWN/88 (GPIO_MODE_WIREDORPULLDOWN) @0x79b341b67e00
+GPIO_MODE_WIREDORPULLDOWN/88 (GPIO_MODE_WIREDORPULLDOWN) @0x7697d5767e00
   Type: variable definition analyzed
   Visibility: force_output no_reorder
   References: 
   Referring: 
   Availability: not-ready
   Varpool flags: initialized read-only const-value-known
-GPIO_MODE_WIREDOR/87 (GPIO_MODE_WIREDOR) @0x79b341b67d80
+GPIO_MODE_WIREDOR/87 (GPIO_MODE_WIREDOR) @0x7697d5767d80
   Type: variable definition analyzed
   Visibility: force_output no_reorder
   References: 
   Referring: 
   Availability: not-ready
   Varpool flags: initialized read-only const-value-known
-GPIO_MODE_PUSHPULLDRIVE/86 (GPIO_MODE_PUSHPULLDRIVE) @0x79b341b67d00
+GPIO_MODE_PUSHPULLDRIVE/86 (GPIO_MODE_PUSHPULLDRIVE) @0x7697d5767d00
   Type: variable definition analyzed
   Visibility: force_output no_reorder
   References: 
   Referring: 
   Availability: not-ready
   Varpool flags: initialized read-only const-value-known
-GPIO_MODE_PUSHPULL/85 (GPIO_MODE_PUSHPULL) @0x79b341b67c80
+GPIO_MODE_PUSHPULL/85 (GPIO_MODE_PUSHPULL) @0x7697d5767c80
   Type: variable definition analyzed
   Visibility: force_output no_reorder
   References: 
   Referring: 
   Availability: not-ready
   Varpool flags: initialized read-only const-value-known
-GPIO_MODE_INPUTPULLFILTER/84 (GPIO_MODE_INPUTPULLFILTER) @0x79b341b67c00
+GPIO_MODE_INPUTPULLFILTER/84 (GPIO_MODE_INPUTPULLFILTER) @0x7697d5767c00
   Type: variable definition analyzed
   Visibility: force_output no_reorder
   References: 
   Referring: 
   Availability: not-ready
   Varpool flags: initialized read-only const-value-known
-GPIO_MODE_INPUTPULL/83 (GPIO_MODE_INPUTPULL) @0x79b341b67b80
+GPIO_MODE_INPUTPULL/83 (GPIO_MODE_INPUTPULL) @0x7697d5767b80
   Type: variable definition analyzed
   Visibility: force_output no_reorder
   References: 
   Referring: 
   Availability: not-ready
   Varpool flags: initialized read-only const-value-known
-GPIO_MODE_INPUT/82 (GPIO_MODE_INPUT) @0x79b341b67b00
+GPIO_MODE_INPUT/82 (GPIO_MODE_INPUT) @0x7697d5767b00
   Type: variable definition analyzed
   Visibility: force_output no_reorder
   References: 
   Referring: 
   Availability: not-ready
   Varpool flags: initialized read-only const-value-known
-GPIO_MODE_DISABLE/81 (GPIO_MODE_DISABLE) @0x79b341b67a80
+GPIO_MODE_DISABLE/81 (GPIO_MODE_DISABLE) @0x7697d5767a80
   Type: variable definition analyzed
   Visibility: force_output no_reorder
   References: 
   Referring: 
   Availability: not-ready
   Varpool flags: initialized read-only const-value-known
-GPIOF/80 (GPIOF) @0x79b341b67a00
+GPIOF/80 (GPIOF) @0x7697d5767a00
   Type: variable definition analyzed
   Visibility: force_output no_reorder
   References: 
   Referring: 
   Availability: not-ready
   Varpool flags: initialized read-only const-value-known
-GPIOE/79 (GPIOE) @0x79b341b67980
+GPIOE/79 (GPIOE) @0x7697d5767980
   Type: variable definition analyzed
   Visibility: force_output no_reorder
   References: 
   Referring: 
   Availability: not-ready
   Varpool flags: initialized read-only const-value-known
-GPIOD/78 (GPIOD) @0x79b341b67900
+GPIOD/78 (GPIOD) @0x7697d5767900
   Type: variable definition analyzed
   Visibility: force_output no_reorder
   References: 
   Referring: 
   Availability: not-ready
   Varpool flags: initialized read-only const-value-known
-GPIOC/77 (GPIOC) @0x79b341b67880
+GPIOC/77 (GPIOC) @0x7697d5767880
   Type: variable definition analyzed
   Visibility: force_output no_reorder
   References: 
   Referring: 
   Availability: not-ready
   Varpool flags: initialized read-only const-value-known
-GPIOB/76 (GPIOB) @0x79b341b67800
+GPIOB/76 (GPIOB) @0x7697d5767800
   Type: variable definition analyzed
   Visibility: force_output no_reorder
   References: 
   Referring: 
   Availability: not-ready
   Varpool flags: initialized read-only const-value-known
-GPIOA/75 (GPIOA) @0x79b341b67780
+GPIOA/75 (GPIOA) @0x7697d5767780
   Type: variable definition analyzed
   Visibility: force_output no_reorder
   References: 
@@ -2147,21 +2147,21 @@ Reclaiming variables:
 Clearing address taken flags:
 Optimized Symbol table:
 
-STEADY_COUNT_REQUIRED.0/126 (STEADY_COUNT_REQUIRED) @0x79b3417e5a00
+STEADY_COUNT_REQUIRED.0/126 (STEADY_COUNT_REQUIRED) @0x7697d53e5a00
   Type: variable definition analyzed
   Visibility: force_output no_reorder prevailing_def_ironly
   References: 
   Referring: steadyState/115 (read) 
   Availability: available
   Varpool flags: initialized read-only const-value-known
-steady_counter.1/125 (steady_counter) @0x79b3417e5900
+steady_counter.1/125 (steady_counter) @0x7697d53e5900
   Type: variable definition analyzed
   Visibility: force_output no_reorder prevailing_def_ironly
   References: 
   Referring: steadyState/115 (read) steadyState/115 (write) steadyState/115 (read) steadyState/115 (write) 
   Availability: available
   Varpool flags: initialized
-ADC_Read/124 (ADC_Read) @0x79b3417ed870
+ADC_Read/124 (ADC_Read) @0x7697d53ed870
   Type: function
   Visibility: external public
   References: 
@@ -2170,7 +2170,7 @@ ADC_Read/124 (ADC_Read) @0x79b3417ed870
   Function flags:
   Called by: readProcessVariable/112 readSetpoint/111 
   Calls: 
-PWM_Start/123 (PWM_Start) @0x79b3417ed708
+PWM_Start/123 (PWM_Start) @0x7697d53ed708
   Type: function
   Visibility: external public
   References: 
@@ -2179,7 +2179,7 @@ PWM_Start/123 (PWM_Start) @0x79b3417ed708
   Function flags:
   Called by: controllerInit/110 
   Calls: 
-PWM_Write/122 (PWM_Write) @0x79b3417ed5a0
+PWM_Write/122 (PWM_Write) @0x7697d53ed5a0
   Type: function
   Visibility: external public
   References: 
@@ -2188,7 +2188,7 @@ PWM_Write/122 (PWM_Write) @0x79b3417ed5a0
   Function flags:
   Called by: writeControlVariable/113 controllerInit/110 
   Calls: 
-PWM_Init/121 (PWM_Init) @0x79b3417ed438
+PWM_Init/121 (PWM_Init) @0x7697d53ed438
   Type: function
   Visibility: external public
   References: 
@@ -2197,7 +2197,7 @@ PWM_Init/121 (PWM_Init) @0x79b3417ed438
   Function flags:
   Called by: controllerInit/110 
   Calls: 
-ADC_ConfigChannel/120 (ADC_ConfigChannel) @0x79b3417ed168
+ADC_ConfigChannel/120 (ADC_ConfigChannel) @0x7697d53ed168
   Type: function
   Visibility: external public
   References: 
@@ -2206,7 +2206,7 @@ ADC_ConfigChannel/120 (ADC_ConfigChannel) @0x79b3417ed168
   Function flags:
   Called by: controllerInit/110 controllerInit/110 
   Calls: 
-ADC_Init/119 (ADC_Init) @0x79b3417ed000
+ADC_Init/119 (ADC_Init) @0x7697d53ed000
   Type: function
   Visibility: external public
   References: 
@@ -2215,7 +2215,7 @@ ADC_Init/119 (ADC_Init) @0x79b3417ed000
   Function flags:
   Called by: controllerInit/110 
   Calls: 
-GPIO_Init/118 (GPIO_Init) @0x79b3417dee10
+GPIO_Init/118 (GPIO_Init) @0x7697d53dee10
   Type: function
   Visibility: external public
   References: 
@@ -2224,7 +2224,7 @@ GPIO_Init/118 (GPIO_Init) @0x79b3417dee10
   Function flags:
   Called by: controllerInit/110 
   Calls: 
-clamper/117 (clamper) @0x79b3417deca8
+clamper/117 (clamper) @0x7697d53deca8
   Type: function definition analyzed
   Visibility: force_output no_reorder prevailing_def_ironly
   References: 
@@ -2233,7 +2233,7 @@ clamper/117 (clamper) @0x79b3417deca8
   Function flags: body
   Called by: controlSignalPID/116 controlSignalPID/116 writeControlVariable/113 
   Calls: 
-controlSignalPID/116 (controlSignalPID) @0x79b3417deb40
+controlSignalPID/116 (controlSignalPID) @0x7697d53deb40
   Type: function definition analyzed
   Visibility: force_output externally_visible no_reorder public
   References: ctrl_state/100 (read) ctrl_state/100 (read) ctrl_state/100 (write) ctrl_state/100 (read) ctrl_state/100 (write) ctrl_state/100 (read) ctrl_state/100 (write) ctrl_state/100 (read) ctrl_state/100 (read) ctrl_state/100 (write) 
@@ -2242,7 +2242,7 @@ controlSignalPID/116 (controlSignalPID) @0x79b3417deb40
   Function flags: body
   Called by: 
   Calls: clamper/117 clamper/117 
-steadyState/115 (steadyState) @0x79b3417de9d8
+steadyState/115 (steadyState) @0x7697d53de9d8
   Type: function definition analyzed
   Visibility: force_output externally_visible no_reorder public
   References: sp/106 (read) pv/107 (read) steady_counter.1/125 (read) steady_counter.1/125 (write) steady_counter.1/125 (read) STEADY_COUNT_REQUIRED.0/126 (read) steady_counter.1/125 (write) 
@@ -2251,7 +2251,7 @@ steadyState/115 (steadyState) @0x79b3417de9d8
   Function flags: body
   Called by: 
   Calls: 
-writeLED/114 (writeLED) @0x79b3417de870
+writeLED/114 (writeLED) @0x7697d53de870
   Type: function definition analyzed
   Visibility: force_output externally_visible no_reorder public
   References: led_pin/104 (read) 
@@ -2260,7 +2260,7 @@ writeLED/114 (writeLED) @0x79b3417de870
   Function flags: body
   Called by: 
   Calls: GPIO_WritePins/97 GPIO_WritePins/97 
-writeControlVariable/113 (writeControlVariable) @0x79b3417de708
+writeControlVariable/113 (writeControlVariable) @0x7697d53de708
   Type: function definition analyzed
   Visibility: force_output externally_visible no_reorder public
   References: cv_channel/103 (read) 
@@ -2269,7 +2269,7 @@ writeControlVariable/113 (writeControlVariable) @0x79b3417de708
   Function flags: body
   Called by: 
   Calls: PWM_Write/122 clamper/117 
-readProcessVariable/112 (readProcessVariable) @0x79b3417de5a0
+readProcessVariable/112 (readProcessVariable) @0x7697d53de5a0
   Type: function definition analyzed
   Visibility: force_output externally_visible no_reorder public
   References: pv_channel/102 (read) 
@@ -2278,7 +2278,7 @@ readProcessVariable/112 (readProcessVariable) @0x79b3417de5a0
   Function flags: body
   Called by: 
   Calls: ADC_Read/124 
-readSetpoint/111 (readSetpoint) @0x79b3417de438
+readSetpoint/111 (readSetpoint) @0x7697d53de438
   Type: function definition analyzed
   Visibility: force_output externally_visible no_reorder public
   References: sp_channel/101 (read) 
@@ -2287,7 +2287,7 @@ readSetpoint/111 (readSetpoint) @0x79b3417de438
   Function flags: body
   Called by: 
   Calls: ADC_Read/124 
-controllerInit/110 (controllerInit) @0x79b3417de2d0
+controllerInit/110 (controllerInit) @0x7697d53de2d0
   Type: function definition analyzed
   Visibility: force_output externally_visible no_reorder public
   References: sp_channel/101 (write) pv_channel/102 (write) cv_channel/103 (write) led_pin/104 (write) sp_channel/101 (read) pv_channel/102 (read) cv_channel/103 (read) cv_channel/103 (read) ctrl_state/100 (write) ctrl_state/100 (write) ctrl_state/100 (write) 
@@ -2296,77 +2296,77 @@ controllerInit/110 (controllerInit) @0x79b3417de2d0
   Function flags: body
   Called by: 
   Calls: PWM_Start/123 PWM_Write/122 PWM_Init/121 ADC_ConfigChannel/120 ADC_ConfigChannel/120 ADC_Init/119 GPIO_WritePins/97 GPIO_Init/118 
-gain/109 (gain) @0x79b3417d7980
+gain/109 (gain) @0x7697d53d7980
   Type: variable definition analyzed
   Visibility: force_output externally_visible no_reorder public
   References: 
   Referring: 
   Availability: available
   Varpool flags: initialized
-cv/108 (cv) @0x79b3417d7900
+cv/108 (cv) @0x7697d53d7900
   Type: variable definition analyzed
   Visibility: force_output externally_visible no_reorder public
   References: 
   Referring: 
   Availability: available
   Varpool flags: initialized
-pv/107 (pv) @0x79b3417d7880
+pv/107 (pv) @0x7697d53d7880
   Type: variable definition analyzed
   Visibility: force_output externally_visible no_reorder public
   References: 
   Referring: steadyState/115 (read) 
   Availability: available
   Varpool flags: initialized
-sp/106 (sp) @0x79b3417d7800
+sp/106 (sp) @0x7697d53d7800
   Type: variable definition analyzed
   Visibility: force_output externally_visible no_reorder public
   References: 
   Referring: steadyState/115 (read) 
   Availability: available
   Varpool flags: initialized
-refresh_tick/105 (refresh_tick) @0x79b3417d7780
+refresh_tick/105 (refresh_tick) @0x7697d53d7780
   Type: variable definition analyzed
   Visibility: force_output externally_visible no_reorder public
   References: 
   Referring: 
   Availability: available
   Varpool flags: initialized
-led_pin/104 (led_pin) @0x79b3417d7700
+led_pin/104 (led_pin) @0x7697d53d7700
   Type: variable definition analyzed
   Visibility: force_output no_reorder prevailing_def_ironly
   References: 
   Referring: controllerInit/110 (write) writeLED/114 (read) 
   Availability: available
   Varpool flags:
-cv_channel/103 (cv_channel) @0x79b3417d7680
+cv_channel/103 (cv_channel) @0x7697d53d7680
   Type: variable definition analyzed
   Visibility: force_output no_reorder prevailing_def_ironly
   References: 
   Referring: controllerInit/110 (read) controllerInit/110 (write) controllerInit/110 (read) writeControlVariable/113 (read) 
   Availability: available
   Varpool flags:
-pv_channel/102 (pv_channel) @0x79b3417d7600
+pv_channel/102 (pv_channel) @0x7697d53d7600
   Type: variable definition analyzed
   Visibility: force_output no_reorder prevailing_def_ironly
   References: 
   Referring: controllerInit/110 (read) controllerInit/110 (write) readProcessVariable/112 (read) 
   Availability: available
   Varpool flags:
-sp_channel/101 (sp_channel) @0x79b3417d7580
+sp_channel/101 (sp_channel) @0x7697d53d7580
   Type: variable definition analyzed
   Visibility: force_output no_reorder prevailing_def_ironly
   References: 
   Referring: controllerInit/110 (read) controllerInit/110 (write) readSetpoint/111 (read) 
   Availability: available
   Varpool flags:
-ctrl_state/100 (ctrl_state) @0x79b3417d7500
+ctrl_state/100 (ctrl_state) @0x7697d53d7500
   Type: variable definition analyzed
   Visibility: force_output no_reorder prevailing_def_ironly
   References: 
   Referring: controllerInit/110 (write) controllerInit/110 (write) controllerInit/110 (write) controlSignalPID/116 (read) controlSignalPID/116 (read) controlSignalPID/116 (write) controlSignalPID/116 (read) controlSignalPID/116 (write) controlSignalPID/116 (read) controlSignalPID/116 (write) controlSignalPID/116 (read) controlSignalPID/116 (read) controlSignalPID/116 (write) 
   Availability: available
   Varpool flags:
-GPIO_WritePins/97 (GPIO_WritePins) @0x79b3417d3000
+GPIO_WritePins/97 (GPIO_WritePins) @0x7697d53d3000
   Type: function definition analyzed
   Visibility: no_reorder prevailing_def_ironly
   References: 
@@ -2375,154 +2375,154 @@ GPIO_WritePins/97 (GPIO_WritePins) @0x79b3417d3000
   Function flags: body local
   Called by: writeLED/114 writeLED/114 controllerInit/110 
   Calls: 
-GPIO_MODE_WIREDANDDRIVEPULLUPFILTER/96 (GPIO_MODE_WIREDANDDRIVEPULLUPFILTER) @0x79b3417d2200
+GPIO_MODE_WIREDANDDRIVEPULLUPFILTER/96 (GPIO_MODE_WIREDANDDRIVEPULLUPFILTER) @0x7697d53d2200
   Type: variable definition analyzed
   Visibility: force_output no_reorder prevailing_def_ironly
   References: 
   Referring: 
   Availability: available
   Varpool flags: initialized read-only const-value-known
-GPIO_MODE_WIREDANDDRIVEPULLUP/95 (GPIO_MODE_WIREDANDDRIVEPULLUP) @0x79b3417d2180
+GPIO_MODE_WIREDANDDRIVEPULLUP/95 (GPIO_MODE_WIREDANDDRIVEPULLUP) @0x7697d53d2180
   Type: variable definition analyzed
   Visibility: force_output no_reorder prevailing_def_ironly
   References: 
   Referring: 
   Availability: available
   Varpool flags: initialized read-only const-value-known
-GPIO_MODE_WIREDANDDRIVEFILTER/94 (GPIO_MODE_WIREDANDDRIVEFILTER) @0x79b3417d2100
+GPIO_MODE_WIREDANDDRIVEFILTER/94 (GPIO_MODE_WIREDANDDRIVEFILTER) @0x7697d53d2100
   Type: variable definition analyzed
   Visibility: force_output no_reorder prevailing_def_ironly
   References: 
   Referring: 
   Availability: available
   Varpool flags: initialized read-only const-value-known
-GPIO_MODE_WIREDANDDRIVE/93 (GPIO_MODE_WIREDANDDRIVE) @0x79b3417d2080
+GPIO_MODE_WIREDANDDRIVE/93 (GPIO_MODE_WIREDANDDRIVE) @0x7697d53d2080
   Type: variable definition analyzed
   Visibility: force_output no_reorder prevailing_def_ironly
   References: 
   Referring: 
   Availability: available
   Varpool flags: initialized read-only const-value-known
-GPIO_MODE_WIREDANDPULLUPFILTER/92 (GPIO_MODE_WIREDANDPULLUPFILTER) @0x79b3417d2000
+GPIO_MODE_WIREDANDPULLUPFILTER/92 (GPIO_MODE_WIREDANDPULLUPFILTER) @0x7697d53d2000
   Type: variable definition analyzed
   Visibility: force_output no_reorder prevailing_def_ironly
   References: 
   Referring: 
   Availability: available
   Varpool flags: initialized read-only const-value-known
-GPIO_MODE_WIREDANDPULLUP/91 (GPIO_MODE_WIREDANDPULLUP) @0x79b341b67f80
+GPIO_MODE_WIREDANDPULLUP/91 (GPIO_MODE_WIREDANDPULLUP) @0x7697d5767f80
   Type: variable definition analyzed
   Visibility: force_output no_reorder prevailing_def_ironly
   References: 
   Referring: 
   Availability: available
   Varpool flags: initialized read-only const-value-known
-GPIO_MODE_WIREDANDFILTER/90 (GPIO_MODE_WIREDANDFILTER) @0x79b341b67f00
+GPIO_MODE_WIREDANDFILTER/90 (GPIO_MODE_WIREDANDFILTER) @0x7697d5767f00
   Type: variable definition analyzed
   Visibility: force_output no_reorder prevailing_def_ironly
   References: 
   Referring: 
   Availability: available
   Varpool flags: initialized read-only const-value-known
-GPIO_MODE_WIREDAND/89 (GPIO_MODE_WIREDAND) @0x79b341b67e80
+GPIO_MODE_WIREDAND/89 (GPIO_MODE_WIREDAND) @0x7697d5767e80
   Type: variable definition analyzed
   Visibility: force_output no_reorder prevailing_def_ironly
   References: 
   Referring: 
   Availability: available
   Varpool flags: initialized read-only const-value-known
-GPIO_MODE_WIREDORPULLDOWN/88 (GPIO_MODE_WIREDORPULLDOWN) @0x79b341b67e00
+GPIO_MODE_WIREDORPULLDOWN/88 (GPIO_MODE_WIREDORPULLDOWN) @0x7697d5767e00
   Type: variable definition analyzed
   Visibility: force_output no_reorder prevailing_def_ironly
   References: 
   Referring: 
   Availability: available
   Varpool flags: initialized read-only const-value-known
-GPIO_MODE_WIREDOR/87 (GPIO_MODE_WIREDOR) @0x79b341b67d80
+GPIO_MODE_WIREDOR/87 (GPIO_MODE_WIREDOR) @0x7697d5767d80
   Type: variable definition analyzed
   Visibility: force_output no_reorder prevailing_def_ironly
   References: 
   Referring: 
   Availability: available
   Varpool flags: initialized read-only const-value-known
-GPIO_MODE_PUSHPULLDRIVE/86 (GPIO_MODE_PUSHPULLDRIVE) @0x79b341b67d00
+GPIO_MODE_PUSHPULLDRIVE/86 (GPIO_MODE_PUSHPULLDRIVE) @0x7697d5767d00
   Type: variable definition analyzed
   Visibility: force_output no_reorder prevailing_def_ironly
   References: 
   Referring: 
   Availability: available
   Varpool flags: initialized read-only const-value-known
-GPIO_MODE_PUSHPULL/85 (GPIO_MODE_PUSHPULL) @0x79b341b67c80
+GPIO_MODE_PUSHPULL/85 (GPIO_MODE_PUSHPULL) @0x7697d5767c80
   Type: variable definition analyzed
   Visibility: force_output no_reorder prevailing_def_ironly
   References: 
   Referring: 
   Availability: available
   Varpool flags: initialized read-only const-value-known
-GPIO_MODE_INPUTPULLFILTER/84 (GPIO_MODE_INPUTPULLFILTER) @0x79b341b67c00
+GPIO_MODE_INPUTPULLFILTER/84 (GPIO_MODE_INPUTPULLFILTER) @0x7697d5767c00
   Type: variable definition analyzed
   Visibility: force_output no_reorder prevailing_def_ironly
   References: 
   Referring: 
   Availability: available
   Varpool flags: initialized read-only const-value-known
-GPIO_MODE_INPUTPULL/83 (GPIO_MODE_INPUTPULL) @0x79b341b67b80
+GPIO_MODE_INPUTPULL/83 (GPIO_MODE_INPUTPULL) @0x7697d5767b80
   Type: variable definition analyzed
   Visibility: force_output no_reorder prevailing_def_ironly
   References: 
   Referring: 
   Availability: available
   Varpool flags: initialized read-only const-value-known
-GPIO_MODE_INPUT/82 (GPIO_MODE_INPUT) @0x79b341b67b00
+GPIO_MODE_INPUT/82 (GPIO_MODE_INPUT) @0x7697d5767b00
   Type: variable definition analyzed
   Visibility: force_output no_reorder prevailing_def_ironly
   References: 
   Referring: 
   Availability: available
   Varpool flags: initialized read-only const-value-known
-GPIO_MODE_DISABLE/81 (GPIO_MODE_DISABLE) @0x79b341b67a80
+GPIO_MODE_DISABLE/81 (GPIO_MODE_DISABLE) @0x7697d5767a80
   Type: variable definition analyzed
   Visibility: force_output no_reorder prevailing_def_ironly
   References: 
   Referring: 
   Availability: available
   Varpool flags: initialized read-only const-value-known
-GPIOF/80 (GPIOF) @0x79b341b67a00
+GPIOF/80 (GPIOF) @0x7697d5767a00
   Type: variable definition analyzed
   Visibility: force_output no_reorder prevailing_def_ironly
   References: 
   Referring: 
   Availability: available
   Varpool flags: initialized read-only const-value-known
-GPIOE/79 (GPIOE) @0x79b341b67980
+GPIOE/79 (GPIOE) @0x7697d5767980
   Type: variable definition analyzed
   Visibility: force_output no_reorder prevailing_def_ironly
   References: 
   Referring: 
   Availability: available
   Varpool flags: initialized read-only const-value-known
-GPIOD/78 (GPIOD) @0x79b341b67900
+GPIOD/78 (GPIOD) @0x7697d5767900
   Type: variable definition analyzed
   Visibility: force_output no_reorder prevailing_def_ironly
   References: 
   Referring: 
   Availability: available
   Varpool flags: initialized read-only const-value-known
-GPIOC/77 (GPIOC) @0x79b341b67880
+GPIOC/77 (GPIOC) @0x7697d5767880
   Type: variable definition analyzed
   Visibility: force_output no_reorder prevailing_def_ironly
   References: 
   Referring: 
   Availability: available
   Varpool flags: initialized read-only const-value-known
-GPIOB/76 (GPIOB) @0x79b341b67800
+GPIOB/76 (GPIOB) @0x7697d5767800
   Type: variable definition analyzed
   Visibility: force_output no_reorder prevailing_def_ironly
   References: 
   Referring: 
   Availability: available
   Varpool flags: initialized read-only const-value-known
-GPIOA/75 (GPIOA) @0x79b341b67780
+GPIOA/75 (GPIOA) @0x7697d5767780
   Type: variable definition analyzed
   Visibility: force_output no_reorder prevailing_def_ironly
   References: 
@@ -2540,7 +2540,7 @@ Removing variables:
 
 Final Symbol table:
 
-STEADY_COUNT_REQUIRED.0/126 (STEADY_COUNT_REQUIRED) @0x79b3417e5a00
+STEADY_COUNT_REQUIRED.0/126 (STEADY_COUNT_REQUIRED) @0x7697d53e5a00
   Type: variable definition analyzed
   Visibility: force_output no_reorder prevailing_def_ironly asm_written section:.rodata.STEADY_COUNT_REQUIRED.0 (implicit_section)
   Aux: @0x1
@@ -2548,15 +2548,15 @@ STEADY_COUNT_REQUIRED.0/126 (STEADY_COUNT_REQUIRED) @0x79b3417e5a00
   Referring: 
   Availability: available
   Varpool flags: initialized read-only const-value-known
-steady_counter.1/125 (steady_counter) @0x79b3417e5900
+steady_counter.1/125 (steady_counter) @0x7697d53e5900
   Type: variable definition analyzed
   Visibility: force_output no_reorder prevailing_def_ironly asm_written section:.bss.steady_counter.1 (implicit_section)
-  Aux: @0x79b3417e5a00
+  Aux: @0x7697d53e5a00
   References: 
   Referring: 
   Availability: available
   Varpool flags: initialized
-ADC_Read/124 (ADC_Read) @0x79b3417ed870
+ADC_Read/124 (ADC_Read) @0x7697d53ed870
   Type: function
   Visibility: external public
   References: 
@@ -2565,7 +2565,7 @@ ADC_Read/124 (ADC_Read) @0x79b3417ed870
   Function flags:
   Called by: 
   Calls: 
-PWM_Start/123 (PWM_Start) @0x79b3417ed708
+PWM_Start/123 (PWM_Start) @0x7697d53ed708
   Type: function
   Visibility: external public
   References: 
@@ -2574,7 +2574,7 @@ PWM_Start/123 (PWM_Start) @0x79b3417ed708
   Function flags:
   Called by: 
   Calls: 
-PWM_Write/122 (PWM_Write) @0x79b3417ed5a0
+PWM_Write/122 (PWM_Write) @0x7697d53ed5a0
   Type: function
   Visibility: external public
   References: 
@@ -2583,7 +2583,7 @@ PWM_Write/122 (PWM_Write) @0x79b3417ed5a0
   Function flags:
   Called by: 
   Calls: 
-PWM_Init/121 (PWM_Init) @0x79b3417ed438
+PWM_Init/121 (PWM_Init) @0x7697d53ed438
   Type: function
   Visibility: external public
   References: 
@@ -2592,7 +2592,7 @@ PWM_Init/121 (PWM_Init) @0x79b3417ed438
   Function flags:
   Called by: 
   Calls: 
-ADC_ConfigChannel/120 (ADC_ConfigChannel) @0x79b3417ed168
+ADC_ConfigChannel/120 (ADC_ConfigChannel) @0x7697d53ed168
   Type: function
   Visibility: external public
   References: 
@@ -2601,7 +2601,7 @@ ADC_ConfigChannel/120 (ADC_ConfigChannel) @0x79b3417ed168
   Function flags:
   Called by: 
   Calls: 
-ADC_Init/119 (ADC_Init) @0x79b3417ed000
+ADC_Init/119 (ADC_Init) @0x7697d53ed000
   Type: function
   Visibility: external public
   References: 
@@ -2610,7 +2610,7 @@ ADC_Init/119 (ADC_Init) @0x79b3417ed000
   Function flags:
   Called by: 
   Calls: 
-GPIO_Init/118 (GPIO_Init) @0x79b3417dee10
+GPIO_Init/118 (GPIO_Init) @0x7697d53dee10
   Type: function
   Visibility: external public
   References: 
@@ -2619,7 +2619,7 @@ GPIO_Init/118 (GPIO_Init) @0x79b3417dee10
   Function flags:
   Called by: 
   Calls: 
-clamper/117 (clamper) @0x79b3417deca8
+clamper/117 (clamper) @0x7697d53deca8
   Type: function definition analyzed
   Visibility: force_output no_reorder prevailing_def_ironly asm_written section:.text.clamper (implicit_section)
   References: 
@@ -2628,7 +2628,7 @@ clamper/117 (clamper) @0x79b3417deca8
   Function flags:
   Called by: 
   Calls: 
-controlSignalPID/116 (controlSignalPID) @0x79b3417deb40
+controlSignalPID/116 (controlSignalPID) @0x7697d53deb40
   Type: function definition analyzed
   Visibility: force_output externally_visible no_reorder asm_written public section:.text.controlSignalPID (implicit_section)
   References: 
@@ -2637,7 +2637,7 @@ controlSignalPID/116 (controlSignalPID) @0x79b3417deb40
   Function flags:
   Called by: 
   Calls: 
-steadyState/115 (steadyState) @0x79b3417de9d8
+steadyState/115 (steadyState) @0x7697d53de9d8
   Type: function definition analyzed
   Visibility: force_output externally_visible no_reorder asm_written public section:.text.steadyState (implicit_section)
   References: 
@@ -2646,7 +2646,7 @@ steadyState/115 (steadyState) @0x79b3417de9d8
   Function flags:
   Called by: 
   Calls: 
-writeLED/114 (writeLED) @0x79b3417de870
+writeLED/114 (writeLED) @0x7697d53de870
   Type: function definition analyzed
   Visibility: force_output externally_visible no_reorder asm_written public section:.text.writeLED (implicit_section)
   References: 
@@ -2655,7 +2655,7 @@ writeLED/114 (writeLED) @0x79b3417de870
   Function flags:
   Called by: 
   Calls: 
-writeControlVariable/113 (writeControlVariable) @0x79b3417de708
+writeControlVariable/113 (writeControlVariable) @0x7697d53de708
   Type: function definition analyzed
   Visibility: force_output externally_visible no_reorder asm_written public section:.text.writeControlVariable (implicit_section)
   References: 
@@ -2664,7 +2664,7 @@ writeControlVariable/113 (writeControlVariable) @0x79b3417de708
   Function flags:
   Called by: 
   Calls: 
-readProcessVariable/112 (readProcessVariable) @0x79b3417de5a0
+readProcessVariable/112 (readProcessVariable) @0x7697d53de5a0
   Type: function definition analyzed
   Visibility: force_output externally_visible no_reorder asm_written public section:.text.readProcessVariable (implicit_section)
   References: 
@@ -2673,7 +2673,7 @@ readProcessVariable/112 (readProcessVariable) @0x79b3417de5a0
   Function flags:
   Called by: 
   Calls: 
-readSetpoint/111 (readSetpoint) @0x79b3417de438
+readSetpoint/111 (readSetpoint) @0x7697d53de438
   Type: function definition analyzed
   Visibility: force_output externally_visible no_reorder asm_written public section:.text.readSetpoint (implicit_section)
   References: 
@@ -2682,7 +2682,7 @@ readSetpoint/111 (readSetpoint) @0x79b3417de438
   Function flags:
   Called by: 
   Calls: 
-controllerInit/110 (controllerInit) @0x79b3417de2d0
+controllerInit/110 (controllerInit) @0x7697d53de2d0
   Type: function definition analyzed
   Visibility: force_output externally_visible no_reorder asm_written public section:.text.controllerInit (implicit_section)
   References: 
@@ -2691,87 +2691,87 @@ controllerInit/110 (controllerInit) @0x79b3417de2d0
   Function flags:
   Called by: 
   Calls: 
-gain/109 (gain) @0x79b3417d7980
+gain/109 (gain) @0x7697d53d7980
   Type: variable definition analyzed
   Visibility: force_output externally_visible no_reorder asm_written public section:.bss.gain (implicit_section)
-  Aux: @0x79b3417e5900
+  Aux: @0x7697d53e5900
   References: 
   Referring: 
   Availability: available
   Varpool flags: initialized
-cv/108 (cv) @0x79b3417d7900
+cv/108 (cv) @0x7697d53d7900
   Type: variable definition analyzed
   Visibility: force_output externally_visible no_reorder asm_written public section:.bss.cv (implicit_section)
-  Aux: @0x79b3417d7980
+  Aux: @0x7697d53d7980
   References: 
   Referring: 
   Availability: available
   Varpool flags: initialized
-pv/107 (pv) @0x79b3417d7880
+pv/107 (pv) @0x7697d53d7880
   Type: variable definition analyzed
   Visibility: force_output externally_visible no_reorder asm_written public section:.bss.pv (implicit_section)
-  Aux: @0x79b3417d7900
+  Aux: @0x7697d53d7900
   References: 
   Referring: 
   Availability: available
   Varpool flags: initialized
-sp/106 (sp) @0x79b3417d7800
+sp/106 (sp) @0x7697d53d7800
   Type: variable definition analyzed
   Visibility: force_output externally_visible no_reorder asm_written public section:.bss.sp (implicit_section)
-  Aux: @0x79b3417d7880
+  Aux: @0x7697d53d7880
   References: 
   Referring: 
   Availability: available
   Varpool flags: initialized
-refresh_tick/105 (refresh_tick) @0x79b3417d7780
+refresh_tick/105 (refresh_tick) @0x7697d53d7780
   Type: variable definition analyzed
   Visibility: force_output externally_visible no_reorder asm_written public section:.bss.refresh_tick (implicit_section)
-  Aux: @0x79b3417d7800
+  Aux: @0x7697d53d7800
   References: 
   Referring: 
   Availability: available
   Varpool flags: initialized
-led_pin/104 (led_pin) @0x79b3417d7700
+led_pin/104 (led_pin) @0x7697d53d7700
   Type: variable definition analyzed
   Visibility: force_output no_reorder prevailing_def_ironly asm_written section:.bss.led_pin (implicit_section)
-  Aux: @0x79b3417d7780
+  Aux: @0x7697d53d7780
   References: 
   Referring: 
   Availability: available
   Varpool flags:
-cv_channel/103 (cv_channel) @0x79b3417d7680
+cv_channel/103 (cv_channel) @0x7697d53d7680
   Type: variable definition analyzed
   Visibility: force_output no_reorder prevailing_def_ironly asm_written section:.bss.cv_channel (implicit_section)
-  Aux: @0x79b3417d7700
+  Aux: @0x7697d53d7700
   References: 
   Referring: 
   Availability: available
   Varpool flags:
-pv_channel/102 (pv_channel) @0x79b3417d7600
+pv_channel/102 (pv_channel) @0x7697d53d7600
   Type: variable definition analyzed
   Visibility: force_output no_reorder prevailing_def_ironly asm_written section:.bss.pv_channel (implicit_section)
-  Aux: @0x79b3417d7680
+  Aux: @0x7697d53d7680
   References: 
   Referring: 
   Availability: available
   Varpool flags:
-sp_channel/101 (sp_channel) @0x79b3417d7580
+sp_channel/101 (sp_channel) @0x7697d53d7580
   Type: variable definition analyzed
   Visibility: force_output no_reorder prevailing_def_ironly asm_written section:.bss.sp_channel (implicit_section)
-  Aux: @0x79b3417d7600
+  Aux: @0x7697d53d7600
   References: 
   Referring: 
   Availability: available
   Varpool flags:
-ctrl_state/100 (ctrl_state) @0x79b3417d7500
+ctrl_state/100 (ctrl_state) @0x7697d53d7500
   Type: variable definition analyzed
   Visibility: force_output no_reorder prevailing_def_ironly asm_written section:.bss.ctrl_state (implicit_section)
-  Aux: @0x79b3417d7580
+  Aux: @0x7697d53d7580
   References: 
   Referring: 
   Availability: available
   Varpool flags:
-GPIO_WritePins/97 (GPIO_WritePins) @0x79b3417d3000
+GPIO_WritePins/97 (GPIO_WritePins) @0x7697d53d3000
   Type: function definition analyzed
   Visibility: no_reorder prevailing_def_ironly asm_written section:.text.GPIO_WritePins (implicit_section)
   References: 
@@ -2780,178 +2780,178 @@ GPIO_WritePins/97 (GPIO_WritePins) @0x79b3417d3000
   Function flags: local
   Called by: 
   Calls: 
-GPIO_MODE_WIREDANDDRIVEPULLUPFILTER/96 (GPIO_MODE_WIREDANDDRIVEPULLUPFILTER) @0x79b3417d2200
+GPIO_MODE_WIREDANDDRIVEPULLUPFILTER/96 (GPIO_MODE_WIREDANDDRIVEPULLUPFILTER) @0x7697d53d2200
   Type: variable definition analyzed
   Visibility: force_output no_reorder prevailing_def_ironly asm_written section:.rodata.GPIO_MODE_WIREDANDDRIVEPULLUPFILTER (implicit_section)
-  Aux: @0x79b3417d7500
+  Aux: @0x7697d53d7500
   References: 
   Referring: 
   Availability: available
   Varpool flags: initialized read-only const-value-known
-GPIO_MODE_WIREDANDDRIVEPULLUP/95 (GPIO_MODE_WIREDANDDRIVEPULLUP) @0x79b3417d2180
+GPIO_MODE_WIREDANDDRIVEPULLUP/95 (GPIO_MODE_WIREDANDDRIVEPULLUP) @0x7697d53d2180
   Type: variable definition analyzed
   Visibility: force_output no_reorder prevailing_def_ironly asm_written section:.rodata.GPIO_MODE_WIREDANDDRIVEPULLUP (implicit_section)
-  Aux: @0x79b3417d2200
+  Aux: @0x7697d53d2200
   References: 
   Referring: 
   Availability: available
   Varpool flags: initialized read-only const-value-known
-GPIO_MODE_WIREDANDDRIVEFILTER/94 (GPIO_MODE_WIREDANDDRIVEFILTER) @0x79b3417d2100
+GPIO_MODE_WIREDANDDRIVEFILTER/94 (GPIO_MODE_WIREDANDDRIVEFILTER) @0x7697d53d2100
   Type: variable definition analyzed
   Visibility: force_output no_reorder prevailing_def_ironly asm_written section:.rodata.GPIO_MODE_WIREDANDDRIVEFILTER (implicit_section)
-  Aux: @0x79b3417d2180
+  Aux: @0x7697d53d2180
   References: 
   Referring: 
   Availability: available
   Varpool flags: initialized read-only const-value-known
-GPIO_MODE_WIREDANDDRIVE/93 (GPIO_MODE_WIREDANDDRIVE) @0x79b3417d2080
+GPIO_MODE_WIREDANDDRIVE/93 (GPIO_MODE_WIREDANDDRIVE) @0x7697d53d2080
   Type: variable definition analyzed
   Visibility: force_output no_reorder prevailing_def_ironly asm_written section:.rodata.GPIO_MODE_WIREDANDDRIVE (implicit_section)
-  Aux: @0x79b3417d2100
+  Aux: @0x7697d53d2100
   References: 
   Referring: 
   Availability: available
   Varpool flags: initialized read-only const-value-known
-GPIO_MODE_WIREDANDPULLUPFILTER/92 (GPIO_MODE_WIREDANDPULLUPFILTER) @0x79b3417d2000
+GPIO_MODE_WIREDANDPULLUPFILTER/92 (GPIO_MODE_WIREDANDPULLUPFILTER) @0x7697d53d2000
   Type: variable definition analyzed
   Visibility: force_output no_reorder prevailing_def_ironly asm_written section:.rodata.GPIO_MODE_WIREDANDPULLUPFILTER (implicit_section)
-  Aux: @0x79b3417d2080
+  Aux: @0x7697d53d2080
   References: 
   Referring: 
   Availability: available
   Varpool flags: initialized read-only const-value-known
-GPIO_MODE_WIREDANDPULLUP/91 (GPIO_MODE_WIREDANDPULLUP) @0x79b341b67f80
+GPIO_MODE_WIREDANDPULLUP/91 (GPIO_MODE_WIREDANDPULLUP) @0x7697d5767f80
   Type: variable definition analyzed
   Visibility: force_output no_reorder prevailing_def_ironly asm_written section:.rodata.GPIO_MODE_WIREDANDPULLUP (implicit_section)
-  Aux: @0x79b3417d2000
+  Aux: @0x7697d53d2000
   References: 
   Referring: 
   Availability: available
   Varpool flags: initialized read-only const-value-known
-GPIO_MODE_WIREDANDFILTER/90 (GPIO_MODE_WIREDANDFILTER) @0x79b341b67f00
+GPIO_MODE_WIREDANDFILTER/90 (GPIO_MODE_WIREDANDFILTER) @0x7697d5767f00
   Type: variable definition analyzed
   Visibility: force_output no_reorder prevailing_def_ironly asm_written section:.rodata.GPIO_MODE_WIREDANDFILTER (implicit_section)
-  Aux: @0x79b341b67f80
+  Aux: @0x7697d5767f80
   References: 
   Referring: 
   Availability: available
   Varpool flags: initialized read-only const-value-known
-GPIO_MODE_WIREDAND/89 (GPIO_MODE_WIREDAND) @0x79b341b67e80
+GPIO_MODE_WIREDAND/89 (GPIO_MODE_WIREDAND) @0x7697d5767e80
   Type: variable definition analyzed
   Visibility: force_output no_reorder prevailing_def_ironly asm_written section:.rodata.GPIO_MODE_WIREDAND (implicit_section)
-  Aux: @0x79b341b67f00
+  Aux: @0x7697d5767f00
   References: 
   Referring: 
   Availability: available
   Varpool flags: initialized read-only const-value-known
-GPIO_MODE_WIREDORPULLDOWN/88 (GPIO_MODE_WIREDORPULLDOWN) @0x79b341b67e00
+GPIO_MODE_WIREDORPULLDOWN/88 (GPIO_MODE_WIREDORPULLDOWN) @0x7697d5767e00
   Type: variable definition analyzed
   Visibility: force_output no_reorder prevailing_def_ironly asm_written section:.rodata.GPIO_MODE_WIREDORPULLDOWN (implicit_section)
-  Aux: @0x79b341b67e80
+  Aux: @0x7697d5767e80
   References: 
   Referring: 
   Availability: available
   Varpool flags: initialized read-only const-value-known
-GPIO_MODE_WIREDOR/87 (GPIO_MODE_WIREDOR) @0x79b341b67d80
+GPIO_MODE_WIREDOR/87 (GPIO_MODE_WIREDOR) @0x7697d5767d80
   Type: variable definition analyzed
   Visibility: force_output no_reorder prevailing_def_ironly asm_written section:.rodata.GPIO_MODE_WIREDOR (implicit_section)
-  Aux: @0x79b341b67e00
+  Aux: @0x7697d5767e00
   References: 
   Referring: 
   Availability: available
   Varpool flags: initialized read-only const-value-known
-GPIO_MODE_PUSHPULLDRIVE/86 (GPIO_MODE_PUSHPULLDRIVE) @0x79b341b67d00
+GPIO_MODE_PUSHPULLDRIVE/86 (GPIO_MODE_PUSHPULLDRIVE) @0x7697d5767d00
   Type: variable definition analyzed
   Visibility: force_output no_reorder prevailing_def_ironly asm_written section:.rodata.GPIO_MODE_PUSHPULLDRIVE (implicit_section)
-  Aux: @0x79b341b67d80
+  Aux: @0x7697d5767d80
   References: 
   Referring: 
   Availability: available
   Varpool flags: initialized read-only const-value-known
-GPIO_MODE_PUSHPULL/85 (GPIO_MODE_PUSHPULL) @0x79b341b67c80
+GPIO_MODE_PUSHPULL/85 (GPIO_MODE_PUSHPULL) @0x7697d5767c80
   Type: variable definition analyzed
   Visibility: force_output no_reorder prevailing_def_ironly asm_written section:.rodata.GPIO_MODE_PUSHPULL (implicit_section)
-  Aux: @0x79b341b67d00
+  Aux: @0x7697d5767d00
   References: 
   Referring: 
   Availability: available
   Varpool flags: initialized read-only const-value-known
-GPIO_MODE_INPUTPULLFILTER/84 (GPIO_MODE_INPUTPULLFILTER) @0x79b341b67c00
+GPIO_MODE_INPUTPULLFILTER/84 (GPIO_MODE_INPUTPULLFILTER) @0x7697d5767c00
   Type: variable definition analyzed
   Visibility: force_output no_reorder prevailing_def_ironly asm_written section:.rodata.GPIO_MODE_INPUTPULLFILTER (implicit_section)
-  Aux: @0x79b341b67c80
+  Aux: @0x7697d5767c80
   References: 
   Referring: 
   Availability: available
   Varpool flags: initialized read-only const-value-known
-GPIO_MODE_INPUTPULL/83 (GPIO_MODE_INPUTPULL) @0x79b341b67b80
+GPIO_MODE_INPUTPULL/83 (GPIO_MODE_INPUTPULL) @0x7697d5767b80
   Type: variable definition analyzed
   Visibility: force_output no_reorder prevailing_def_ironly asm_written section:.rodata.GPIO_MODE_INPUTPULL (implicit_section)
-  Aux: @0x79b341b67c00
+  Aux: @0x7697d5767c00
   References: 
   Referring: 
   Availability: available
   Varpool flags: initialized read-only const-value-known
-GPIO_MODE_INPUT/82 (GPIO_MODE_INPUT) @0x79b341b67b00
+GPIO_MODE_INPUT/82 (GPIO_MODE_INPUT) @0x7697d5767b00
   Type: variable definition analyzed
   Visibility: force_output no_reorder prevailing_def_ironly asm_written section:.rodata.GPIO_MODE_INPUT (implicit_section)
-  Aux: @0x79b341b67b80
+  Aux: @0x7697d5767b80
   References: 
   Referring: 
   Availability: available
   Varpool flags: initialized read-only const-value-known
-GPIO_MODE_DISABLE/81 (GPIO_MODE_DISABLE) @0x79b341b67a80
+GPIO_MODE_DISABLE/81 (GPIO_MODE_DISABLE) @0x7697d5767a80
   Type: variable definition analyzed
   Visibility: force_output no_reorder prevailing_def_ironly asm_written section:.rodata.GPIO_MODE_DISABLE (implicit_section)
-  Aux: @0x79b341b67b00
+  Aux: @0x7697d5767b00
   References: 
   Referring: 
   Availability: available
   Varpool flags: initialized read-only const-value-known
-GPIOF/80 (GPIOF) @0x79b341b67a00
+GPIOF/80 (GPIOF) @0x7697d5767a00
   Type: variable definition analyzed
   Visibility: force_output no_reorder prevailing_def_ironly asm_written section:.rodata.GPIOF (implicit_section)
-  Aux: @0x79b341b67a80
+  Aux: @0x7697d5767a80
   References: 
   Referring: 
   Availability: available
   Varpool flags: initialized read-only const-value-known
-GPIOE/79 (GPIOE) @0x79b341b67980
+GPIOE/79 (GPIOE) @0x7697d5767980
   Type: variable definition analyzed
   Visibility: force_output no_reorder prevailing_def_ironly asm_written section:.rodata.GPIOE (implicit_section)
-  Aux: @0x79b341b67a00
+  Aux: @0x7697d5767a00
   References: 
   Referring: 
   Availability: available
   Varpool flags: initialized read-only const-value-known
-GPIOD/78 (GPIOD) @0x79b341b67900
+GPIOD/78 (GPIOD) @0x7697d5767900
   Type: variable definition analyzed
   Visibility: force_output no_reorder prevailing_def_ironly asm_written section:.rodata.GPIOD (implicit_section)
-  Aux: @0x79b341b67980
+  Aux: @0x7697d5767980
   References: 
   Referring: 
   Availability: available
   Varpool flags: initialized read-only const-value-known
-GPIOC/77 (GPIOC) @0x79b341b67880
+GPIOC/77 (GPIOC) @0x7697d5767880
   Type: variable definition analyzed
   Visibility: force_output no_reorder prevailing_def_ironly asm_written section:.rodata.GPIOC (implicit_section)
-  Aux: @0x79b341b67900
+  Aux: @0x7697d5767900
   References: 
   Referring: 
   Availability: available
   Varpool flags: initialized read-only const-value-known
-GPIOB/76 (GPIOB) @0x79b341b67800
+GPIOB/76 (GPIOB) @0x7697d5767800
   Type: variable definition analyzed
   Visibility: force_output no_reorder prevailing_def_ironly asm_written section:.rodata.GPIOB (implicit_section)
-  Aux: @0x79b341b67880
+  Aux: @0x7697d5767880
   References: 
   Referring: 
   Availability: available
   Varpool flags: initialized read-only const-value-known
-GPIOA/75 (GPIOA) @0x79b341b67780
+GPIOA/75 (GPIOA) @0x7697d5767780
   Type: variable definition analyzed
   Visibility: force_output no_reorder prevailing_def_ironly asm_written section:.rodata.GPIOA (implicit_section)
-  Aux: @0x79b341b67800
+  Aux: @0x7697d5767800
   References: 
   Referring: 
   Availability: available
