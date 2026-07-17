@@ -149,7 +149,7 @@ double controlSignalPID(double sp, double pv, Gain gain) {
     /* Compute error */
     error = sp - pv;
 
-    /* ---------- Integral (with conditional anti-windup) ---------- */
+    /* Integral (with conditional anti-windup) */
 
     double integral_candidate = ctrl_state.integral + error * dt;
 
@@ -165,13 +165,13 @@ double controlSignalPID(double sp, double pv, Gain gain) {
 
     ctrl_state.integral = clamper(ctrl_state.integral, INTEGRAL_MIN, INTEGRAL_MAX);
 
-    /* ---------- Derivative with low-pass filter ---------- */
+    /* Derivative with low-pass filter */
 
     alpha = gain.td / (gain.td + dt);
 
     ctrl_state.derivative = alpha * ctrl_state.derivative + (1.0 - alpha) * derivative_raw;
 
-    /* ---------- Final PID output ---------- */
+    /* Final PID output */
 
     u = gain.kp * error + gain.ki * ctrl_state.integral + gain.kd * ctrl_state.derivative;
 
